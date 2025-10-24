@@ -19,6 +19,10 @@ import TechVA from './TechVA'
 import MortgageVA from './MortgageVA'
 import PricingPage from './PricingPage'
 import OurVAsPage from './pages/OurVAsPage'
+import AboutUs from './AboutUs'
+import ContactUs from './ContactUs'
+import Careers from './Careers'
+import Blogs from './Blogs'
 import Schema from './components/Schema'
 import Footer from './components/Footer'
 
@@ -27,7 +31,7 @@ export default function AppRouter() {
     <BrowserRouter>
       <Schema />
       <Navbar />
-      <main className="min-h-screen">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/insurance" element={<InsurancePage />} />
@@ -58,6 +62,18 @@ export default function AppRouter() {
           <Route path="/insurance-vas" element={<OurVAsPage type="insurance" />} />
           <Route path="/licensed-insurance-agents" element={<OurVAsPage type="licensed" />} />
           <Route path="/executive-admin-vas" element={<OurVAsPage type="executive" />} />
+          
+          {/* About Us Page */}
+          <Route path="/about-us" element={<AboutUs />} />
+          
+          {/* Contact Us Page */}
+          <Route path="/contact-us" element={<ContactUs />} />
+          
+          {/* Careers Page */}
+          <Route path="/careers" element={<Careers />} />
+          
+          {/* Blogs Page */}
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </main>
 

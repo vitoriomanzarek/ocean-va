@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
+  const [openSubmenu, setOpenSubmenu] = useState(null)
 
   const navigation = [
     {
@@ -21,7 +22,7 @@ export default function Navbar() {
     {
       name: 'Industries',
       dropdown: [
-        { name: 'Insurance Virtual Assistant', href: '/insurance' },
+        { name: 'Insurance Virtual Assistant *', href: '/insurance' },
         { name: 'Real Estate Virtual Assistant *', href: '/industries/real-estate-virtual-assistant' },
         { name: 'Small Business Virtual Assistant', href: '/industries/small-business-virtual-assistant' },
         { name: 'E-Commerce Virtual Assistant', href: '/industries/ecommerce-virtual-assistant' },
@@ -37,15 +38,14 @@ export default function Navbar() {
     {
       name: 'Our VAs',
       dropdown: [
-        { name: 'Meet Our VAs', href: '/our-vas' },
-        { name: 'Insurance Virtual Assistants', href: '/insurance-vas' },
+        { name: 'Insurance Virtual Assistant', href: '/our-vas' },
         { name: 'Licensed Insurance Agents', href: '/licensed-insurance-agents' },
-        { name: 'Executive / Admin VAs', href: '/executive-admin-vas' },
+        { name: 'Executive / Admin VA', href: '/executive-admin-vas' }
       ]
     },
-    { name: 'Blogs *', href: 'https://www.oceanvirtualassistant.com/blogs' },
-    { name: 'Careers *', href: 'https://www.oceanvirtualassistant.com/careers' },
-    { name: 'About Us *', href: 'https://www.oceanvirtualassistant.com/about-us' },
+    { name: 'Blogs', href: '/blogs' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'About Us', href: '/about-us' },
   ]
 
   return (
@@ -79,13 +79,34 @@ export default function Navbar() {
                       <div className="absolute left-0 mt-0 pt-2 w-64">
                         <div className="bg-white rounded-lg shadow-xl py-2 border border-gray-100">
                           {item.dropdown.map((subItem) => (
-                            <a
-                              key={subItem.name}
-                              href={subItem.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-ocean-50 hover:text-ocean-700"
-                            >
-                              {subItem.name}
-                            </a>
+                            <div key={subItem.name} className="relative group">
+                              <a
+                                href={subItem.href}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-ocean-50 hover:text-ocean-700 flex justify-between items-center"
+                                onMouseEnter={() => subItem.submenu && setOpenSubmenu(subItem.name)}
+                                onMouseLeave={() => subItem.submenu && setOpenSubmenu(null)}
+                              >
+                                {subItem.name}
+                                {subItem.submenu && (
+                                  <svg className="ml-2 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                  </svg>
+                                )}
+                              </a>
+                              {subItem.submenu && openSubmenu === subItem.name && (
+                                <div className="absolute left-full top-0 ml-1 w-64 bg-white rounded-lg shadow-xl py-2 border border-gray-100 z-10">
+                                  {subItem.submenu.map((submenuItem) => (
+                                    <a
+                                      key={submenuItem.name}
+                                      href={submenuItem.href}
+                                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-ocean-50 hover:text-ocean-700"
+                                    >
+                                      {submenuItem.name}
+                                    </a>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
                           ))}
                         </div>
                       </div>
@@ -106,7 +127,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <a
-              href="https://www.oceanvirtualassistant.com/contact-us"
+              href="/contact-us"
               className="bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Contact Us
@@ -156,13 +177,27 @@ export default function Navbar() {
                     {openDropdown === item.name && (
                       <div className="pl-4 space-y-2 mt-2">
                         {item.dropdown.map((subItem) => (
-                          <a
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="block text-sm text-gray-600 hover:text-ocean-600 py-1"
-                          >
-                            {subItem.name}
-                          </a>
+                          <div key={subItem.name}>
+                            <a
+                              href={subItem.href}
+                              className="block text-sm text-gray-600 hover:text-ocean-600 py-1"
+                            >
+                              {subItem.name}
+                            </a>
+                            {subItem.submenu && (
+                              <div className="pl-4 space-y-1 mt-1">
+                                {subItem.submenu.map((submenuItem) => (
+                                  <a
+                                    key={submenuItem.name}
+                                    href={submenuItem.href}
+                                    className="block text-sm text-gray-500 hover:text-ocean-600 py-0.5"
+                                  >
+                                    {submenuItem.name}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     )}
@@ -178,7 +213,7 @@ export default function Navbar() {
               </div>
             ))}
             <a
-              href="https://www.oceanvirtualassistant.com/contact-us"
+              href="/contact-us"
               className="block w-full text-center bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-3 rounded-lg transition-all mt-4"
             >
               Contact Us
