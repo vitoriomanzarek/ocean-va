@@ -5,7 +5,8 @@ import HeroCTAs from './components/HeroCTAs'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { techFaqs } from './data/faqs'
 
 export default function TechVA() {
   const handleScroll = (e, targetId) => {
@@ -83,7 +84,7 @@ export default function TechVA() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={techFaqs} />
 
       <BookingDemo id="booking" />
 

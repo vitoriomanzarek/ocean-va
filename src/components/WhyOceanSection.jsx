@@ -10,17 +10,17 @@ export default function WhyOceanSection({ subtitle, benefits }) {
     },
     {
       icon: Globe,
-      title: 'Bilingual English–Spanish',
-      description: 'English–Spanish support for customer and vendor communications'
+      title: 'Bilingual English-Spanish',
+      description: 'English-Spanish support for customer and vendor communications'
     },
     {
       icon: DollarSign,
       title: 'Flat Monthly Pricing',
-      description: '$1,300/mo—no surprises, no lock‑ins'
+      description: 'Starting at $1,300/mo - no surprises, no lock-ins'
     },
     {
       icon: Shield,
-      title: 'American‑Owned Operations',
+      title: 'American-Owned Operations',
       description: 'Security, continuity support, and reliable service you can trust'
     }
   ]

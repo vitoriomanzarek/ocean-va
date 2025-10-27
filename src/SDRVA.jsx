@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { sdrFaqs } from './data/faqs'
 
 export default function SDRVA() {
   const handleScroll = (e, targetId) => {
@@ -126,7 +127,7 @@ export default function SDRVA() {
       />
 
       <Pricing />
-      <FAQ />
+      <FAQSection faqs={sdrFaqs} />
       <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">

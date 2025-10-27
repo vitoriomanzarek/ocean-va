@@ -25,6 +25,7 @@ export default function Footer() {
               <li><a href="/services/virtual-administrative-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Administrative Assistant</a></li>
               <li><a href="/services/customer-service-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Customer Service Representative</a></li>
               <li><a href="/services/marketing-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Marketing Assistant</a></li>
+              <li><a href="/services/virtual-receptionist" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Virtual Receptionist</a></li>
               <li><a href="/services/virtual-transaction-coordinator" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Transaction Coordinator</a></li>
               <li><a href="/services/sdr-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Sales, Development & Inside Sales</a></li>
               <li><a href="/services/virtual-assistant-services" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ General Virtual Assistant</a></li>
@@ -36,7 +37,7 @@ export default function Footer() {
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">INDUSTRIES</h3>
             <ul className="space-y-2.5 text-sm">
               <li><a href="/insurance" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Insurance</a></li>
-              <li><a href="/industries/small-business-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Real Estate Virtual Assistant</a></li>
+              <li><a href="/industries/real-estate-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Real Estate Virtual Assistant</a></li>
               <li><a href="/industries/small-business-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Small Business Virtual Assistant</a></li>
               <li><a href="/industries/ecommerce-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ E-Commerce Virtual Assistant</a></li>
               <li><a href="/industries/finance-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Finance Virtual Assistant</a></li>
@@ -52,14 +53,13 @@ export default function Footer() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">OTHER PAGES</h3>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="https://www.oceanvirtualassistant.com/about-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ ABOUT US</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/pricing" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRICING</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/ovas-current-vas" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ OUR VIRTUAL ASSISTANTS</a></li>
-              <li><a href="/faq" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ FAQ</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ BLOGS</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CAREERS</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/privacy-policy" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRIVACY POLICY</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/terms-and-conditions" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ TERMS AND CONDITIONS</a></li>
+              <li><a href="/about-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ ABOUT US</a></li>
+              <li><a href="/pricing" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRICING</a></li>
+              <li><a href="/our-vas" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ OUR VIRTUAL ASSISTANTS</a></li>
+              <li><a href="/faqs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ FAQs</a></li>
+              <li><a href="/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ BLOGS</a></li>
+              <li><a href="/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CAREERS</a></li>
+              <li><a href="/contact-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CONTACT US</a></li>
             </ul>
           </div>
 

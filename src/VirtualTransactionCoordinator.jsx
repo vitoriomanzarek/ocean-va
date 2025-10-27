@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { transactionCoordinatorFaqs } from './data/faqs'
 
 export default function VirtualTransactionCoordinator() {
   const handleScroll = (e, targetId) => {
@@ -150,7 +151,7 @@ export default function VirtualTransactionCoordinator() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={transactionCoordinatorFaqs} />
 
       {/* Booking Demo */}
       <BookingDemo id="booking" />

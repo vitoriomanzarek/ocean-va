@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { propertyManagementFaqs } from './data/faqs'
 
 export default function PropertyManagementVA() {
   const handleScroll = (e, targetId) => {
@@ -84,7 +85,7 @@ export default function PropertyManagementVA() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={propertyManagementFaqs} />
 
       <BookingDemo id="booking" />
 

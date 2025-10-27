@@ -9,7 +9,7 @@ export default function Navbar() {
     {
       name: 'Services',
       dropdown: [
-        { name: 'Insurance Customer Service Representative', href: '/insurance' },
+        { name: 'Insurance Customer Service Representative', href: '/services/insurance-customer-service-representative' },
         { name: 'Administrative Assistant', href: '/services/virtual-administrative-assistant' },
         { name: 'Customer Service Representative', href: '/services/customer-service-virtual-assistant' },
         { name: 'Marketing Assistant', href: '/services/marketing-virtual-assistant' },
@@ -44,6 +44,7 @@ export default function Navbar() {
       ]
     },
     { name: 'Blogs', href: '/blogs' },
+    { name: 'FAQs', href: '/faqs' },
     { name: 'Careers', href: '/careers' },
     { name: 'About Us', href: '/about-us' },
   ]

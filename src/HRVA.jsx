@@ -5,7 +5,8 @@ import HeroCTAs from './components/HeroCTAs'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { hrFaqs } from './data/faqs'
 
 export default function HRVA() {
   const handleScroll = (e, targetId) => {
@@ -83,7 +84,7 @@ export default function HRVA() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={hrFaqs} />
 
       <BookingDemo id="booking" />
 

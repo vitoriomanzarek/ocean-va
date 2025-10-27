@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './Home'
 import InsurancePage from './App'
+import InsuranceCostumerService from './InsuranceCostumerService'
 import VirtualAdminAssistant from './VirtualAdminAssistant'
 import CustomerServiceVA from './CustomerServiceVA'
 import MarketingVA from './MarketingVA'
@@ -17,12 +18,15 @@ import MedicalVA from './MedicalVA'
 import HRVA from './HRVA'
 import TechVA from './TechVA'
 import MortgageVA from './MortgageVA'
+import VirtualReceptionist from './VirtualReceptionist'
+import RealEstateVA from './RealEstateVA'
 import PricingPage from './PricingPage'
 import OurVAsPage from './pages/OurVAsPage'
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import Careers from './Careers'
 import Blogs from './Blogs'
+import FAQsPage from './FAQsPage'
 import Schema from './components/Schema'
 import Footer from './components/Footer'
 
@@ -37,6 +41,7 @@ export default function AppRouter() {
           <Route path="/insurance" element={<InsurancePage />} />
           
           {/* Services Routes */}
+          <Route path="/services/insurance-customer-service-representative" element={<InsuranceCostumerService />} />
           <Route path="/services/virtual-administrative-assistant" element={<VirtualAdminAssistant />} />
           <Route path="/services/customer-service-virtual-assistant" element={<CustomerServiceVA />} />
           <Route path="/services/marketing-virtual-assistant" element={<MarketingVA />} />
@@ -53,6 +58,12 @@ export default function AppRouter() {
           <Route path="/industries/hr-virtual-assistant" element={<HRVA />} />
           <Route path="/industries/tech-virtual-assistant" element={<TechVA />} />
           <Route path="/industries/mortgage-virtual-assistant" element={<MortgageVA />} />
+          
+          {/* Virtual Receptionist */}
+          <Route path="/services/virtual-receptionist" element={<VirtualReceptionist />} />
+          
+          {/* Real Estate Virtual Assistant */}
+          <Route path="/industries/real-estate-virtual-assistant" element={<RealEstateVA />} />
           
           {/* Pricing Page */}
           <Route path="/pricing" element={<PricingPage />} />
@@ -74,6 +85,9 @@ export default function AppRouter() {
           
           {/* Blogs Page */}
           <Route path="/blogs" element={<Blogs />} />
+          
+          {/* FAQs Page */}
+          <Route path="/faqs" element={<FAQsPage />} />
         </Routes>
       </main>
 

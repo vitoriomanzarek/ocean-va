@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { financeFaqs } from './data/faqs'
 
 export default function FinanceVA() {
   const schema = {
@@ -76,7 +77,7 @@ export default function FinanceVA() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={financeFaqs} />
 
       <BookingDemo />
 

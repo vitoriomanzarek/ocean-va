@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { customerServiceFaqs } from './data/faqs'
 
 export default function CustomerServiceVA() {
   const handleScroll = (e, targetId) => {
@@ -150,7 +151,7 @@ export default function CustomerServiceVA() {
 
       <Pricing />
 
-      <FAQ />
+      <FAQSection faqs={customerServiceFaqs} />
 
       {/* Booking Demo */}
       <BookingDemo id="booking" />
