@@ -7,6 +7,7 @@ import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
 import FAQSection from './components/FAQSection'
+import { realEstateFaqs } from './data/faqs'
 
 export default function RealEstateVA() {
   const handleScroll = (e, targetId) => {
@@ -34,20 +35,6 @@ export default function RealEstateVA() {
     }
   }
 
-  const realEstateFaqs = [
-    { q: 'Can a REVA access my MLS?', a: 'Yes, as your assistant with permitted roles. We follow your brokerage rules and access only what\'s needed for listings and transactions.' },
-    { q: 'Do you handle ShowingTime and feedback?', a: 'Yes - scheduling showings and collecting post-showing surveys. Feedback is logged and shared with sellers weekly.' },
-    { q: 'Can you build drip campaigns?', a: 'Yes. We implement and optimize buyer/seller nurture campaigns in your CRM (kvCORE, Follow Up Boss, BoomTown, etc.).' },
-    { q: 'Do you do transaction coordination?', a: 'Yes, including dates/deadlines, document management, e-sign coordination (Dotloop, DocuSign), and stakeholder comms.' },
-    { q: 'Will you call internet leads fast?', a: 'Yes - speed-to-lead within minutes during your business hours. We follow your qualification script.' },
-    { q: 'Are you bilingual?', a: 'Yes - English & Spanish. Many of our REVAs are bilingual and can handle client calls and emails in both languages.' },
-    { q: 'Can you work weekends?', a: 'Yes - set your coverage window. We can work weekends, evenings, or 24/7 with multi-VA coverage.' },
-    { q: 'What about compliance?', a: 'We follow your brokerage and state rules and limit permissions as needed. We handle disclosures, offers, and compliance checklists.' },
-    { q: 'Do you support property management?', a: 'Yes - AppFolio/Buildium/Yardi workflows. We handle tenant inquiries, applications, renewals, and maintenance coordination.' },
-    { q: 'How is performance measured?', a: 'Lead response time, appointments set, deadlines met, client CSAT, and weekly pipeline reviews.' },
-    { q: 'What\'s the contract length?', a: 'Month-to-month. No setup fees or long-term lock-in.' },
-    { q: 'How fast can we start?', a: '2-3 business days. We connect your CRM, MLS, calendar, and e-sign tools, then go live.' },
-  ]
 
   return (
     <>

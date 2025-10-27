@@ -73,6 +73,8 @@ export default function SmallBusinessVA() {
 
       <WhyOceanSection subtitle="Small business support that understands your needs." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that help your small business thrive."
         outcomes={[
@@ -82,11 +84,9 @@ export default function SmallBusinessVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQ />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

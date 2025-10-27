@@ -13,7 +13,7 @@ export default function Navbar() {
         { name: 'Administrative Assistant', href: '/services/virtual-administrative-assistant' },
         { name: 'Customer Service Representative', href: '/services/customer-service-virtual-assistant' },
         { name: 'Marketing Assistant', href: '/services/marketing-virtual-assistant' },
-        { name: 'Virtual Receptionist *', href: '/services/virtual-receptionist' },
+        { name: 'Virtual Receptionist', href: '/services/virtual-receptionist' },
         { name: 'Transaction Coordinator', href: '/services/virtual-transaction-coordinator' },
         { name: 'Sales, Development & Inside Sales', href: '/services/sdr-virtual-assistant' },
         { name: 'General Virtual Assistant', href: '/services/virtual-assistant-services' },
@@ -22,16 +22,16 @@ export default function Navbar() {
     {
       name: 'Industries',
       dropdown: [
-        { name: 'Insurance Virtual Assistant *', href: '/insurance' },
-        { name: 'Real Estate Virtual Assistant *', href: '/industries/real-estate-virtual-assistant' },
-        { name: 'Small Business Virtual Assistant', href: '/industries/small-business-virtual-assistant' },
-        { name: 'E-Commerce Virtual Assistant', href: '/industries/ecommerce-virtual-assistant' },
-        { name: 'Finance Virtual Assistant', href: '/industries/finance-virtual-assistant' },
-        { name: 'Property Management Virtual Assistant', href: '/industries/property-management-virtual-assistant' },
-        { name: 'Healthcare Virtual Assistant', href: '/industries/medical-virtual-assistant' },
-        { name: 'HR Virtual Assistant', href: '/industries/hr-virtual-assistant' },
-        { name: 'Technology Virtual Assistant', href: '/industries/tech-virtual-assistant' },
-        { name: 'Mortgage and Lending Virtual Assistant', href: '/industries/mortgage-virtual-assistant' },
+        { name: 'Insurance', href: '/insurance' },
+        { name: 'Real Estate', href: '/industries/real-estate-virtual-assistant' },
+        { name: 'Small Business', href: '/industries/small-business-virtual-assistant' },
+        { name: 'E-Commerce', href: '/industries/ecommerce-virtual-assistant' },
+        { name: 'Finance', href: '/industries/finance-virtual-assistant' },
+        { name: 'Property Management', href: '/industries/property-management-virtual-assistant' },
+        { name: 'Healthcare', href: '/industries/medical-virtual-assistant' },
+        { name: 'HR', href: '/industries/hr-virtual-assistant' },
+        { name: 'Technology', href: '/industries/tech-virtual-assistant' },
+        { name: 'Mortgage and Lending', href: '/industries/mortgage-virtual-assistant' },
       ]
     },
     { name: 'Pricing', href: '/pricing' },
@@ -44,7 +44,6 @@ export default function Navbar() {
       ]
     },
     { name: 'Blogs', href: '/blogs' },
-    { name: 'FAQs', href: '/faqs' },
     { name: 'Careers', href: '/careers' },
     { name: 'About Us', href: '/about-us' },
   ]

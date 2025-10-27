@@ -97,6 +97,8 @@ export default function CustomerServiceVA() {
 
       <WhyOceanSection subtitle="Professional customer service support that represents your brand perfectly." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Measurable improvements in customer satisfaction and team efficiency."
         outcomes={[
@@ -117,6 +119,9 @@ export default function CustomerServiceVA() {
           }
         ]}
       />
+
+      {/* Booking Demo */}
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="A streamlined process to get your customer service VA up and running."
@@ -149,12 +154,7 @@ export default function CustomerServiceVA() {
         ]}
       />
 
-      <Pricing />
-
       <FAQSection faqs={customerServiceFaqs} />
-
-      {/* Booking Demo */}
-      <BookingDemo id="booking" />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white">

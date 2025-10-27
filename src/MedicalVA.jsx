@@ -73,6 +73,8 @@ export default function MedicalVA() {
 
       <WhyOceanSection subtitle="Healthcare support that keeps patients informed and providers focused on care." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your practice operations."
         outcomes={[
@@ -82,11 +84,9 @@ export default function MedicalVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQSection faqs={medicalFaqs} />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

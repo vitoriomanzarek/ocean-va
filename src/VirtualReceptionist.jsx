@@ -7,6 +7,7 @@ import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
 import FAQSection from './components/FAQSection'
+import { virtualReceptionistFaqs } from './data/faqs'
 
 export default function VirtualReceptionist() {
   const handleScroll = (e, targetId) => {
@@ -34,18 +35,6 @@ export default function VirtualReceptionist() {
     "serviceType": "Virtual Receptionist Services"
   }
 
-  const receptionistFaqs = [
-    { q: 'Do receptionists work in my time zone?', a: 'Yes—your business hours, after-hours, or hybrid coverage. We match your preferred time zone and can arrange 24/7 with multi-VA coverage.' },
-    { q: 'Can they transfer to different departments?', a: 'Yes, with warm or cold transfers plus escalation rules. Your receptionist routes calls intelligently based on your IVR flows.' },
-    { q: 'Can they schedule in my calendar software?', a: 'Yes—Google, Outlook, Calendly, and other calendar platforms are integrated. Appointments sync directly to your system.' },
-    { q: 'Can they qualify leads?', a: 'Yes. We implement your qualification script, capture required fields in your CRM, and log all interactions.' },
-    { q: 'How do you ensure quality?', a: 'Call recording, scorecards, weekly QA reviews, and ongoing coaching. We track KPIs like answer time, call capture, and scheduling compliance.' },
-    { q: 'Is there bilingual coverage?', a: 'Yes—English & Spanish by default. Many of our receptionists are bilingual and can handle customer interactions in both languages.' },
-    { q: 'Do you handle after-hours calls?', a: 'Yes. We can capture messages and text back, or provide 24/7 live answering with multi-VA coverage.' },
-    { q: 'What about HIPAA or PCI compliance?', a: 'We follow your compliance needs and restrict access as required. We support HIPAA-aligned workflows and secure data handling.' },
-    { q: 'What\'s the contract term?', a: 'Month-to-month. No setup fees or long-term lock-in.' },
-    { q: 'How fast can we start?', a: '2–3 business days after onboarding. We connect your numbers, calendars, and CRM, then go live with monitoring.' },
-  ]
 
   return (
     <>
@@ -135,6 +124,8 @@ export default function VirtualReceptionist() {
 
       <WhyOceanSection subtitle="Professional reception support that represents your brand and delights customers." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Measurable improvements in lead capture and customer satisfaction."
         outcomes={[
@@ -155,6 +146,9 @@ export default function VirtualReceptionist() {
           }
         ]}
       />
+
+      {/* Booking Demo */}
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="Get your virtual receptionist live in 2–3 business days."
@@ -207,12 +201,7 @@ export default function VirtualReceptionist() {
         </div>
       </section>
 
-      <Pricing />
-
-      <FAQSection faqs={receptionistFaqs} />
-
-      {/* Booking Demo */}
-      <BookingDemo id="booking" />
+      <FAQSection faqs={virtualReceptionistFaqs} />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white py-20">

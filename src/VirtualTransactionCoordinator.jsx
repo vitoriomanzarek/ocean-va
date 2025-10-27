@@ -97,6 +97,8 @@ export default function VirtualTransactionCoordinator() {
 
       <WhyOceanSection subtitle="Real estate transaction expertise that keeps deals moving smoothly." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Smoother transactions and happier clients from start to finish."
         outcomes={[
@@ -117,6 +119,9 @@ export default function VirtualTransactionCoordinator() {
           }
         ]}
       />
+
+      {/* Booking Demo */}
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="Get your transaction coordinator integrated into your workflow quickly."
@@ -149,12 +154,7 @@ export default function VirtualTransactionCoordinator() {
         ]}
       />
 
-      <Pricing />
-
       <FAQSection faqs={transactionCoordinatorFaqs} />
-
-      {/* Booking Demo */}
-      <BookingDemo id="booking" />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white">

@@ -73,6 +73,8 @@ export default function HRVA() {
 
       <WhyOceanSection subtitle="HR support that keeps your recruiting and people operations running smoothly." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your HR operations."
         outcomes={[
@@ -82,11 +84,9 @@ export default function HRVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQSection faqs={hrFaqs} />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

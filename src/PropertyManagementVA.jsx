@@ -74,6 +74,8 @@ export default function PropertyManagementVA() {
 
       <WhyOceanSection subtitle="Property management expertise that keeps your portfolio running smoothly." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your property operations."
         outcomes={[
@@ -83,11 +85,9 @@ export default function PropertyManagementVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQSection faqs={propertyManagementFaqs} />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

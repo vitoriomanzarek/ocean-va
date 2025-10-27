@@ -1,6 +1,7 @@
 import React from 'react'
 import BookingDemo from './components/BookingDemo'
 import FAQSection from './components/FAQSection'
+import Pricing from './components/Pricing'
 import { insuranceCsrFaqs } from './data/faqs'
 
 function InsuranceCostumerService() {
@@ -132,6 +133,9 @@ function InsuranceCostumerService() {
           ))}
         </div>
       </section>
+
+      {/* Pricing */}
+      <Pricing />
 
       {/* Booking Demo */}
       <BookingDemo />

@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { adminAssistantFaqs } from './data/faqs'
 
 export default function VirtualAdminAssistant() {
   const handleScroll = (e, targetId) => {
@@ -100,6 +101,8 @@ export default function VirtualAdminAssistant() {
 
       <WhyOceanSection subtitle="More than just a service—a dedicated teammate who understands your business." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that transform how you work every day."
         outcomes={[
@@ -120,6 +123,9 @@ export default function VirtualAdminAssistant() {
           }
         ]}
       />
+
+      {/* Booking Demo */}
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="A simple, proven process to get your virtual assistant up and running."
@@ -152,12 +158,7 @@ export default function VirtualAdminAssistant() {
         ]}
       />
 
-      <Pricing />
-
-      <FAQ />
-
-      {/* Booking Demo */}
-      <BookingDemo id="booking" />
+      <FAQSection faqs={adminAssistantFaqs} />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white">

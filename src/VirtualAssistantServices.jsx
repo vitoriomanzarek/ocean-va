@@ -6,7 +6,8 @@ import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { generalVAFaqs } from './data/faqs'
 
 export default function VirtualAssistantServices() {
   const handleScroll = (e, targetId) => {
@@ -73,6 +74,8 @@ export default function VirtualAssistantServices() {
 
       <WhyOceanSection subtitle="Flexible, dedicated support that scales with your business." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real business impact from dedicated virtual assistant support."
         outcomes={[
@@ -81,6 +84,8 @@ export default function VirtualAssistantServices() {
           { icon: '🚀', title: 'More Capacity', description: "Capacity for projects you've postponed" }
         ]}
       />
+
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="A proven process to get your virtual assistant integrated quickly."
@@ -93,11 +98,7 @@ export default function VirtualAssistantServices() {
         ]}
       />
 
-      <Pricing />
-
-      <FAQ />
-
-      <BookingDemo id="booking" />
+      <FAQSection faqs={generalVAFaqs} />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

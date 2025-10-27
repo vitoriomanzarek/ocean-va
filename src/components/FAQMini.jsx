@@ -6,7 +6,7 @@ export default function FAQMini() {
   const faqs = [
     {
       question: 'How fast can we start? Can I really launch in 2-3 days?',
-      answer: 'Yes! Our streamlined process allows most agencies to go live within 2-3 days. Day 0: Share your needs in a 15-min call. Day 1: We match you with pre-vetted candidates. Day 2: Interview 2-3 qualified VAs. Day 3: Your chosen VA starts working.'
+      answer: 'Yes! Our streamlined process allows most agencies to go live within 2-3 days.\n\nDay 0: Share your needs in a 15-min call.\nDay 1: We match you with pre-vetted candidates.\nDay 2: Interview 2-3 qualified VAs.\nDay 3: Your chosen VA starts working.'
     },
     {
       question: 'What\'s included in the $1,300 monthly price?',
@@ -19,6 +19,30 @@ export default function FAQMini() {
     {
       question: 'What if my VA doesn\'t work out?',
       answer: 'We offer a no-cost replacement guarantee. If your VA isn\'t the right fit, we\'ll find you a replacement at no additional charge.'
+    },
+    {
+      question: 'Do you offer bilingual support?',
+      answer: 'Yes. English & Spanish (default). We can route calls, emails, and chats to bilingual VAs to serve your diverse client base.'
+    },
+    {
+      question: 'Which tools and systems do your VAs support?',
+      answer: 'We work with HubSpot, Salesforce, Zoho, Pipedrive, Google Workspace, Microsoft 365, Slack/Teams, Asana, Trello, ClickUp, and many more. If you use it, we can learn it.'
+    },
+    {
+      question: 'Will I work with the same dedicated VA?',
+      answer: 'Yes—you get one dedicated VA who learns your business, systems, and workflow. We never pool your work across a ticket queue.'
+    },
+    {
+      question: 'How do you ensure quality and performance?',
+      answer: 'We use recorded calls (if enabled), scorecards, weekly coaching, KPI reviews, and ongoing quality assurance to keep your VA performing at their best.'
+    },
+    {
+      question: 'Do you require long-term contracts?',
+      answer: 'No. Everything is month-to-month with no lock-in or long-term contracts. Cancel anytime if you\'re not satisfied.'
+    },
+    {
+      question: 'How are your VAs vetted and trained?',
+      answer: 'We hire the top 1% of candidates through multi-stage screening, voice/tone assessments, and scenario testing. Each VA receives 30 days of specialized training before working with you.'
     }
   ]
 
@@ -65,7 +89,7 @@ export default function FAQMini() {
 
         <div className="mt-8 text-center">
           <a 
-            href="/faq" 
+            href="/faqs" 
             className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
           >
             See all FAQs

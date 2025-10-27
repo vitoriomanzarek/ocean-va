@@ -97,6 +97,8 @@ export default function MarketingVA() {
 
       <WhyOceanSection subtitle="Marketing support that aligns with your brand and executes consistently." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Amplify your marketing output without expanding your team."
         outcomes={[
@@ -117,6 +119,9 @@ export default function MarketingVA() {
           }
         ]}
       />
+
+      {/* Booking Demo */}
+      <BookingDemo id="booking" />
 
       <HowItWorksSection 
         subtitle="Get your marketing VA integrated and executing quickly."
@@ -149,12 +154,7 @@ export default function MarketingVA() {
         ]}
       />
 
-      <Pricing />
-
       <FAQSection faqs={marketingFaqs} />
-
-      {/* Booking Demo */}
-      <BookingDemo id="booking" />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white">

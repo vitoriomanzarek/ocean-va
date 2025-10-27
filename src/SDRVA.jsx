@@ -94,6 +94,8 @@ export default function SDRVA() {
 
       <WhyOceanSection subtitle="Sales development support that accelerates your pipeline." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="More meetings, better data, and higher conversion rates."
         outcomes={[
@@ -115,6 +117,8 @@ export default function SDRVA() {
         ]}
       />
 
+      <BookingDemo id="booking" />
+
       <HowItWorksSection 
         subtitle="Get your SDR VA integrated and executing quickly."
         steps={[
@@ -126,9 +130,7 @@ export default function SDRVA() {
         ]}
       />
 
-      <Pricing />
       <FAQSection faqs={sdrFaqs} />
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

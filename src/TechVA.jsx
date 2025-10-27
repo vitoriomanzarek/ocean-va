@@ -73,6 +73,8 @@ export default function TechVA() {
 
       <WhyOceanSection subtitle="Technical support that keeps your engineering teams focused on shipping." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your technical operations."
         outcomes={[
@@ -82,11 +84,9 @@ export default function TechVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQSection faqs={techFaqs} />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

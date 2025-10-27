@@ -73,6 +73,8 @@ export default function EcommerceVA() {
 
       <WhyOceanSection subtitle="Ecommerce expertise that scales with your store." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Measurable improvements in your ecommerce operations."
         outcomes={[
@@ -82,11 +84,9 @@ export default function EcommerceVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQ />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

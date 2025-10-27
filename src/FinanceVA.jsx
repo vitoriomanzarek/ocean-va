@@ -66,6 +66,8 @@ export default function FinanceVA() {
 
       <WhyOceanSection subtitle="Finance expertise that keeps your books accurate and current." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your financial operations."
         outcomes={[
@@ -75,11 +77,9 @@ export default function FinanceVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo />
 
       <FAQSection faqs={financeFaqs} />
-
-      <BookingDemo />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">

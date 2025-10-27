@@ -7,19 +7,19 @@ export default function FAQ() {
   const faqs = [
     {
       q: "What does an insurance virtual assistant do for an agency?",
-      a: "Insurance VAs handle policy servicing (COIs, endorsements, renewals), claims follow-up, customer service, AMS data entry, and back-office tasks—freeing your licensed agents for sales."
+      a: "Insurance VAs handle policy servicing (COIs, endorsements, renewals), claims follow-up, customer service, AMS data entry, and back-office tasks. Freeing your licensed agents for sales."
     },
     {
-      q: "How fast can we launch—can I get started in 2-3 days?",
+      q: "How fast can we launch? Can I get started in 2-3 days?",
       a: "Yes. Day 0: sign agreement. Day 1: meet your VA and grant tool access. Day 2: SOP alignment. Day 3: go live with first tasks."
     },
     {
       q: "How much does an insurance virtual assistant cost per month?",
-      a: "$1,300/month for full-time (40 hours/week). No startup fees, no hidden costs, flat monthly rate. Part-time plans also available—ask us for details."
+      a: "$1,300/month for full-time (40 hours/week). No startup fees, no hidden costs, flat monthly rate. Part-time plans also available. Ask us for details."
     },
     {
       q: "Are your insurance VAs licensed, and what tasks require a licensed agent?",
-      a: "Our VAs are unlicensed and handle administrative tasks. They cannot bind policies, quote coverage, or provide insurance advice—those require a licensed agent."
+      a: "Our VAs are unlicensed and handle administrative tasks. They cannot bind policies, quote coverage, or provide insurance advice. Those require a licensed agent."
     },
     {
       q: "Do you offer bilingual (English/Spanish) insurance virtual assistant services?",
@@ -27,11 +27,11 @@ export default function FAQ() {
     },
     {
       q: "Which systems do your VAs support (Applied Epic, AMS360, EZLynx, QQCatalyst)?",
-      a: "All four. Our experienced VAs know policy entry, COI generation, renewals, endorsements, and reporting in each system—they come with insurance operations experience."
+      a: "All four. Our experienced VAs know policy entry, COI generation, renewals, endorsements, and reporting in each system. They come with insurance operations experience."
     },
     {
       q: "What's your company's insurance background and how does it help my agency?",
-      a: "Ocean Virtual Assistant was founded by insurance agents with 30 years of hands-on P&C experience in policy servicing, claims, renewals, and carrier relationships.\n\nBecause we come from the insurance industry (not just the VA industry), we understand:\n\n→ The difference between an endorsement and a renewal\n→ Why COIs need to be turned around in 24 hours\n→ How AMS360 and Applied Epic actually work in daily operations\n→ The pressure of renewal season and E&O compliance\n\nThis means we hire VAs who already have insurance experience and can hit the ground running—no weeks of training on basic insurance concepts."
+      a: "Ocean Virtual Assistant was founded by insurance agents with 30 years of hands-on P&C experience in policy servicing, claims, renewals, and carrier relationships.\n\nBecause we come from the insurance industry (not just the VA industry), we understand:\n\n- The difference between an endorsement and a renewal\n- Why COIs need to be turned around in 24 hours\n- How AMS360 and Applied Epic actually work in daily operations\n- The pressure of renewal season and E&O compliance\n\nThis means we hire VAs who already have insurance experience and can hit the ground running. No weeks of training on basic insurance concepts."
     },
     {
       q: "How do you ensure data security when a VA accesses our AMS and carrier sites?",
@@ -61,7 +61,7 @@ export default function FAQ() {
 
       <div className="mt-8 text-center">
         <a 
-          href="/faq" 
+          href="/faqs" 
           className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
         >
           See all FAQs

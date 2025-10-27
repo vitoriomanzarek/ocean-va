@@ -12,7 +12,8 @@ import VAShowcase from './components/VAShowcase'
 import Timeline from './components/Timeline'
 import ToolExpertise from './components/ToolExpertise'
 import GoogleReviews from './components/GoogleReviews'
-import FAQ from './components/FAQ'
+import FAQSection from './components/FAQSection'
+import { insuranceVAFaqs } from './data/faqs'
 
 function App() {
   const handleScroll = (e, targetId) => {
@@ -158,60 +159,7 @@ function App() {
         <GoogleReviews />
 
         {/* 6️⃣ CIERRE Y CONVERSIÓN FINAL */}
-        <FAQ />
-
-        {/* Security & Compliance */}
-        <section id="security" className="section-container bg-gray-50">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Security & Compliance: What VAs Can/Can't Do
-          </h2>
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-            <div className="bg-green-50 p-8 rounded-lg border-2 border-green-200">
-              <h3 className="text-2xl font-bold text-green-800 mb-4">✓ VAs CAN Handle</h3>
-              <ul className="space-y-3">
-                {[
-                  'Policy servicing (COIs, endorsements, renewals)',
-                  'Claims data entry & follow-up',
-                  'Customer service & scheduling',
-                  'AMS data entry (Applied, AMS360, EZLynx)',
-                  'Document management & filing',
-                  'Accounting tasks & reporting'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span className="text-green-600 font-bold mr-2">✓</span>
-                    <span className="text-gray-800">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-red-50 p-8 rounded-lg border-2 border-red-200">
-              <h3 className="text-2xl font-bold text-red-800 mb-4">✗ VAs CANNOT Do (Unlicensed)</h3>
-              <ul className="space-y-3">
-                {[
-                  'Bind new policies',
-                  'Quote insurance coverage',
-                  'Provide coverage advice',
-                  'Negotiate policy terms',
-                  'Sign on behalf of the agency',
-                  'Make underwriting decisions'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span className="text-red-600 font-bold mr-2">✗</span>
-                    <span className="text-gray-800">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 max-w-4xl mx-auto p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
-            <h4 className="font-bold text-blue-900 mb-2">🔒 Data Security</h4>
-            <p className="text-gray-800">
-              All VAs work on secure, monitored devices with encrypted connections. Access to your AMS 
-              and carrier portals is controlled via unique credentials with audit trails. We follow 
-              industry best practices for data handling and privacy.
-            </p>
-          </div>
-        </section>
+        <FAQSection faqs={insuranceVAFaqs} />
 
         {/* Final CTA Section */}
         <section className="section-container bg-ocean-700 text-white">

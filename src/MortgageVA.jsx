@@ -73,6 +73,8 @@ export default function MortgageVA() {
 
       <WhyOceanSection subtitle="Mortgage support that keeps your loan pipeline moving and borrowers informed." />
 
+      <Pricing />
+
       <OutcomesSection 
         subtitle="Real results that improve your mortgage operations."
         outcomes={[
@@ -82,11 +84,9 @@ export default function MortgageVA() {
         ]}
       />
 
-      <Pricing />
+      <BookingDemo id="booking" />
 
       <FAQSection faqs={mortgageFaqs} />
-
-      <BookingDemo id="booking" />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
