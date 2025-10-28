@@ -52,6 +52,8 @@ export default function TechVA() {
               <HeroPlaceholder 
                 title="Tech VA Hero Image"
                 description="Technical team collaborating on projects, documentation, and support. (1200x800px recommended)"
+                imageSrc="/images/industries/tech-va-hero.webp"
+                imageAlt="Tech Virtual Assistant supporting engineering team"
               />
             </div>
           </div>

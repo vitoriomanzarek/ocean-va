@@ -53,6 +53,8 @@ export default function PropertyManagementVA() {
               <HeroPlaceholder 
                 title="Property Management VA Hero Image"
                 description="Property management team handling tenant inquiries, maintenance coordination, and listings. (1200x800px recommended)"
+                imageSrc="/images/industries/property-management-va-hero.webp"
+                imageAlt="Property Management Virtual Assistant coordinating operations"
               />
             </div>
           </div>

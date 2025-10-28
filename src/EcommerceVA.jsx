@@ -52,6 +52,8 @@ export default function EcommerceVA() {
               <HeroPlaceholder 
                 title="Ecommerce VA Hero Image"
                 description="Ecommerce operations team managing orders, inventory, and customer service. (1200x800px recommended)"
+                imageSrc="/images/industries/ecommerce-va-hero.webp"
+                imageAlt="Ecommerce Virtual Assistant managing online store operations"
               />
             </div>
           </div>

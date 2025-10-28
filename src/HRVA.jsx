@@ -52,6 +52,8 @@ export default function HRVA() {
               <HeroPlaceholder 
                 title="HR VA Hero Image"
                 description="HR professionals managing recruiting, interviews, and onboarding processes. (1200x800px recommended)"
+                imageSrc="/images/industries/hr-va-hero.webp"
+                imageAlt="HR Virtual Assistant managing recruiting and onboarding"
               />
             </div>
           </div>

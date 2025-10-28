@@ -62,6 +62,8 @@ export default function RealEstateVA() {
               <HeroPlaceholder 
                 title="Real Estate VA Hero Image"
                 description="Professional real estate agents/team working with property listings, showing productivity and teamwork in real estate context. (1200x800px recommended)"
+                imageSrc="/images/industries/real-estate-va-hero.webp"
+                imageAlt="Real Estate Virtual Assistant team collaborating on property deals"
               />
             </div>
           </div>

@@ -55,6 +55,8 @@ export default function MarketingVA() {
               <HeroPlaceholder 
                 title="Marketing VA Hero Image"
                 description="Marketing professionals collaborating on campaigns, social media, content creation with modern tools. (1200x800px recommended)"
+                imageSrc="/images/industries/marketing-va-hero.webp"
+                imageAlt="Marketing Virtual Assistant team managing campaigns"
               />
             </div>
           </div>

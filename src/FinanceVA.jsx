@@ -45,6 +45,8 @@ export default function FinanceVA() {
               <HeroPlaceholder 
                 title="Finance VA Hero Image"
                 description="Finance professional managing books, reconciliations, and reporting with modern tools. (1200x800px recommended)"
+                imageSrc="/images/industries/finance-va-hero.webp"
+                imageAlt="Finance Virtual Assistant managing accounting and reconciliations"
               />
             </div>
           </div>
