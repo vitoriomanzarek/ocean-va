@@ -6,29 +6,29 @@ export default function MediaGallery() {
     {
       id: 1,
       title: 'Insurance VA in Action',
-      description: 'Nuestros Virtual Assistants manejando tareas administrativas complejas con eficiencia y profesionalismo.',
-      placeholder: 'Imagen de VA trabajando en seguros',
+      description: 'Our Virtual Assistants handling complex administrative tasks with efficiency and professionalism.',
+      placeholder: 'Image of VA working on insurance tasks',
       category: 'Operations'
     },
     {
       id: 2,
       title: 'Team Collaboration',
-      description: 'Cómo nuestros VAs se integran perfectamente con tu equipo de seguros existente.',
-      placeholder: 'Imagen de colaboración en equipo',
+      description: 'How our VAs integrate seamlessly with your existing insurance team.',
+      placeholder: 'Image of team collaboration',
       category: 'Team'
     },
     {
       id: 3,
       title: 'Client Success Stories',
-      description: 'Agencias que han transformado su negocio con Ocean VA - resultados reales.',
-      placeholder: 'Imagen de casos de éxito',
+      description: 'Insurance agencies that have transformed their business with Ocean VA - real results.',
+      placeholder: 'Image of success cases',
       category: 'Success'
     },
     {
       id: 4,
       title: 'Technology & Tools',
-      description: 'Nuestros VAs están capacitados en las principales plataformas AMS del mercado.',
-      placeholder: 'Imagen de herramientas y tecnología',
+      description: 'Our VAs are trained in the leading AMS platforms on the market.',
+      placeholder: 'Image of tools and technology',
       category: 'Technology'
     }
   ]
@@ -39,10 +39,10 @@ export default function MediaGallery() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gray-900">
-            Conoce Cómo Trabajamos
+            See How We Work
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubre el día a día de nuestros Virtual Assistants y cómo transforman operaciones de agencias de seguros.
+            Discover the day-to-day operations of our Virtual Assistants and how they transform insurance agency operations.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function MediaGallery() {
               <div className="text-center">
                 <ImageIcon className="w-16 h-16 text-ocean-500 mx-auto mb-3" />
                 <p className="text-lg text-ocean-700 font-medium">
-                  Imagen destacada: Transformación de Agencia
+                  Featured Image: Agency Transformation
                 </p>
               </div>
             </div>
@@ -97,27 +97,27 @@ export default function MediaGallery() {
             {/* Content */}
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Resultados Comprobados
+                Proven Results
               </h3>
               <p className="text-lg text-gray-700 mb-6">
-                Agencias que implementaron Ocean VA reportan:
+                Insurance agencies that implemented Ocean VA report:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-gray-700">Reducción de 70% en costos administrativos</span>
+                  <span className="text-gray-700">70% reduction in administrative costs</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-gray-700">Aumento en productividad de agentes</span>
+                  <span className="text-gray-700">Increased agent productivity</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-gray-700">Mejor satisfacción de clientes</span>
+                  <span className="text-gray-700">Improved customer satisfaction</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
-                  <span className="text-gray-700">Escalabilidad sin incrementar overhead</span>
+                  <span className="text-gray-700">Scalability without increasing overhead</span>
                 </li>
               </ul>
             </div>

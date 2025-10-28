@@ -1,62 +1,62 @@
 # Media Integration Guide - Ocean VA
 
-## Descripción General
-Este documento explica cómo agregar imágenes y contenido multimedia al sitio Ocean VA.
+## Overview
+This document explains how to add images and multimedia content to the Ocean VA website.
 
-## Estructura Actual
+## Current Structure
 
-### Componente MediaGallery
-**Ubicación**: `src/components/MediaGallery.jsx`
-**Integrado en**: `src/Home.jsx` (después de ClientLogos)
+### MediaGallery Component
+**Location**: `src/components/MediaGallery.jsx`
+**Integrated in**: `src/Home.jsx` (after ClientLogos)
 
-El componente tiene dos secciones:
+The component has two sections:
 
-#### 1. Grid de 4 Imágenes (Responsive)
-- **Insurance VA in Action** - Imagen de VA trabajando
-- **Team Collaboration** - Colaboración en equipo
-- **Client Success Stories** - Casos de éxito
-- **Technology & Tools** - Herramientas y plataformas
+#### 1. Responsive 4-Image Grid
+- **Insurance VA in Action** - VA working on insurance tasks
+- **Team Collaboration** - Team collaboration image
+- **Client Success Stories** - Success cases
+- **Technology & Tools** - Tools and platforms
 
-Cada item tiene:
-- Placeholder con icono (ImageIcon de Lucide)
-- Título
-- Descripción
-- Categoría (badge)
+Each item includes:
+- Placeholder with icon (ImageIcon from Lucide)
+- Title
+- Description
+- Category (badge)
 
-#### 2. Sección Destacada (Featured)
-- Imagen grande con descripción
-- Lista de resultados comprobados
-- Diseño 2 columnas (responsive)
+#### 2. Featured Section
+- Large image with description
+- List of proven results
+- 2-column responsive layout
 
-## Cómo Agregar Imágenes
+## How to Add Images
 
-### Paso 1: Preparar las Imágenes
-1. Coloca tus imágenes en `/public/images/`
-2. Formatos recomendados: `.jpg`, `.png`, `.webp`
-3. Tamaños recomendados:
+### Step 1: Prepare Images
+1. Place your images in `/public/images/`
+2. Recommended formats: `.jpg`, `.png`, `.webp`
+3. Recommended sizes:
    - Grid items: 800x600px (aspect-video 16:9)
    - Featured: 1200x800px
 
-### Paso 2: Actualizar MediaGallery.jsx
+### Step 2: Update MediaGallery.jsx
 
-#### Para las 4 imágenes del grid:
-Busca el array `mediaItems` y reemplaza los items:
+#### For the 4 grid images:
+Find the `mediaItems` array and replace the items:
 
 ```jsx
 const mediaItems = [
   {
     id: 1,
     title: 'Insurance VA in Action',
-    description: 'Nuestros Virtual Assistants manejando tareas administrativas complejas...',
-    image: '/images/va-working.jpg',  // ← AGREGAR ESTA LÍNEA
-    placeholder: 'Imagen de VA trabajando en seguros',
+    description: 'Our Virtual Assistants handling complex administrative tasks...',
+    image: '/images/va-working.jpg',  // ← ADD THIS LINE
+    placeholder: 'Image of VA working on insurance tasks',
     category: 'Operations'
   },
-  // ... más items
+  // ... more items
 ]
 ```
 
-Luego actualiza el JSX del placeholder para mostrar la imagen:
+Then update the placeholder JSX to display the image:
 
 ```jsx
 {/* Image Placeholder */}
@@ -78,8 +78,8 @@ Luego actualiza el JSX del placeholder para mostrar la imagen:
 </div>
 ```
 
-#### Para la imagen destacada:
-Busca la sección "Featured Section" y reemplaza:
+#### For the featured image:
+Find the "Featured Section" and replace:
 
 ```jsx
 {/* Image Placeholder */}
@@ -87,22 +87,22 @@ Busca la sección "Featured Section" y reemplaza:
   {featuredImage ? (
     <img 
       src={featuredImage} 
-      alt="Transformación de Agencia"
+      alt="Agency Transformation"
       className="w-full h-full object-cover rounded-lg"
     />
   ) : (
     <div className="text-center">
       <ImageIcon className="w-16 h-16 text-ocean-500 mx-auto mb-3" />
       <p className="text-lg text-ocean-700 font-medium">
-        Imagen destacada: Transformación de Agencia
+        Featured Image: Agency Transformation
       </p>
     </div>
   )}
 </div>
 ```
 
-### Paso 3: Agregar Lazy Loading (Opcional)
-Para optimizar el rendimiento, puedes agregar lazy loading:
+### Step 3: Add Lazy Loading (Optional)
+To optimize performance, you can add lazy loading:
 
 ```jsx
 <img 
@@ -113,7 +113,7 @@ Para optimizar el rendimiento, puedes agregar lazy loading:
 />
 ```
 
-## Estructura de Carpetas Recomendada
+## Recommended Folder Structure
 
 ```
 /public/images/
@@ -124,38 +124,38 @@ Para optimizar el rendimiento, puedes agregar lazy loading:
 └── featured-transformation.jpg (Featured Section)
 ```
 
-## Propiedades de Imagen Optimizadas
+## Optimized Image Properties
 
-### Tailwind Classes Usadas
-- `w-full h-full` - Ancho y alto completo
-- `object-cover` - Mantiene aspect ratio sin distorsión
-- `rounded-lg` - Bordes redondeados
-- `aspect-video` - Ratio 16:9
+### Tailwind Classes Used
+- `w-full h-full` - Full width and height
+- `object-cover` - Maintains aspect ratio without distortion
+- `rounded-lg` - Rounded corners
+- `aspect-video` - 16:9 ratio
 
 ### Responsive Behavior
-El componente es completamente responsive:
-- Mobile: 1 columna
-- Tablet (md): 2 columnas
-- Desktop (lg): 4 columnas (grid items) o 2 columnas (featured)
+The component is fully responsive:
+- Mobile: 1 column
+- Tablet (md): 2 columns
+- Desktop (lg): 4 columns (grid items) or 2 columns (featured)
 
-## Notas Importantes
+## Important Notes
 
-1. **Placeholders**: Mientras no tengas imágenes, los placeholders con iconos se mostrarán automáticamente
-2. **Rutas**: Todas las imágenes deben estar en `/public/images/` para ser accesibles
-3. **Formatos**: Usa WebP para mejor compresión, con fallback a JPG
-4. **Alt Text**: Siempre incluye alt text descriptivo para accesibilidad
-5. **Tamaño**: Optimiza imágenes antes de subir (máx 500KB por imagen)
+1. **Placeholders**: While you don't have images, placeholders with icons will display automatically
+2. **Paths**: All images must be in `/public/images/` to be accessible
+3. **Formats**: Use WebP for better compression, with JPG fallback
+4. **Alt Text**: Always include descriptive alt text for accessibility
+5. **Size**: Optimize images before uploading (max 500KB per image)
 
-## Próximas Mejoras Sugeridas
+## Suggested Future Improvements
 
-- [ ] Agregar galería con modal/lightbox
-- [ ] Implementar image optimization con Next.js Image component (si migras a Next)
-- [ ] Agregar videos embebidos en secciones específicas
-- [ ] Crear carrusel de testimonios con fotos
-- [ ] Agregar animaciones de fade-in al scroll
+- [ ] Add gallery with modal/lightbox
+- [ ] Implement image optimization with Next.js Image component (if migrating to Next)
+- [ ] Add embedded videos in specific sections
+- [ ] Create testimonial carousel with photos
+- [ ] Add fade-in animations on scroll
 
-## Contacto
-Cuando tengas las imágenes listas, simplemente:
-1. Colócalas en `/public/images/`
-2. Actualiza las rutas en `MediaGallery.jsx`
-3. Haz commit y push a la rama `feature/media-content`
+## Getting Started
+When you have images ready, simply:
+1. Place them in `/public/images/`
+2. Update the paths in `MediaGallery.jsx`
+3. Commit and push to the `feature/media-content` branch
