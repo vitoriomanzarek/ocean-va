@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials'
 import BookingDemo from './components/BookingDemo'
 import FAQMini from './components/FAQMini'
 import ServicesGrid from './components/ServicesGrid'
+import MediaGallery from './components/MediaGallery'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroHome />
       <Stats />
       <ClientLogos />
+      <MediaGallery />
       <ComparisonTable />
       <ServicesIndustriesShowcase />
       <Timeline />
