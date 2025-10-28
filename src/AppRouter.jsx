@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './Home'
-import InsurancePage from './App'
+import App from './App'
+import InsuranceVirtualAssistant from './InsuranceVirtualAssistant'
 import InsuranceCostumerService from './InsuranceCostumerService'
 import VirtualAdminAssistant from './VirtualAdminAssistant'
 import CustomerServiceVA from './CustomerServiceVA'
@@ -37,8 +37,8 @@ export default function AppRouter() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/insurance" element={<InsurancePage />} />
+          <Route path="/" element={<App />} />
+          <Route path="/insurance" element={<InsuranceVirtualAssistant />} />
           
           {/* Services Routes */}
           <Route path="/services/insurance-customer-service-representative" element={<InsuranceCostumerService />} />
