@@ -62,6 +62,8 @@ export default function VirtualReceptionist() {
               <HeroPlaceholder 
                 title="Virtual Receptionist Hero Image"
                 description="Professional receptionist answering calls, booking appointments, and greeting clients. (1200x800px recommended)"
+                imageSrc="/images/services/virtual-receptionist-hero.webp"
+                imageAlt="Virtual Receptionist answering calls and booking appointments"
               />
             </div>
           </div>

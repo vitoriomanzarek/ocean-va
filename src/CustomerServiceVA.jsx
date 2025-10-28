@@ -55,6 +55,8 @@ export default function CustomerServiceVA() {
               <HeroPlaceholder 
                 title="Customer Service VA Hero Image"
                 description="Customer service professional handling phone, chat, and email with professionalism and empathy. (1200x800px recommended)"
+                imageSrc="/images/services/customer-service-hero.webp"
+                imageAlt="Customer Service Virtual Assistant handling inquiries"
               />
             </div>
           </div>

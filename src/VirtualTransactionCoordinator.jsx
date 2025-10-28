@@ -55,6 +55,8 @@ export default function VirtualTransactionCoordinator() {
               <HeroPlaceholder 
                 title="Transaction Coordinator Hero Image"
                 description="Transaction coordinator managing contracts, documents, vendor coordination in real estate. (1200x800px recommended)"
+                imageSrc="/images/services/transaction-coordinator-hero.webp"
+                imageAlt="Virtual Transaction Coordinator managing real estate deals"
               />
             </div>
           </div>
