@@ -2,6 +2,7 @@ import React from 'react'
 import { UserPlus, Calendar, FileCheck, DollarSign, MessageSquare } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import Pricing from './components/Pricing'
@@ -34,14 +35,25 @@ export default function MedicalVA() {
       
       <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Medical Virtual Assistant
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-ocean-50 max-w-3xl mx-auto">
-              Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and follow‑ups—so providers can focus on care.
-            </p>
-            <HeroCTAs />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Medical Virtual Assistant
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-ocean-50">
+                Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and follow‑ups—so providers can focus on care.
+              </p>
+              <HeroCTAs />
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="Medical VA Hero Image"
+                description="Healthcare professionals in a modern medical office, showing patient care coordination and administrative support. (1200x800px recommended)"
+              />
+            </div>
           </div>
         </div>
       </section>

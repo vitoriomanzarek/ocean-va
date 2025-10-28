@@ -2,6 +2,7 @@ import React from 'react'
 import { Package, ShoppingCart, MessageSquare, Image, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
@@ -34,14 +35,25 @@ export default function EcommerceVA() {
       
       <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Ecommerce Virtual Assistant
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-ocean-50 max-w-3xl mx-auto">
-              Keep your store fast and accurate. We handle listings, order ops, returns, support, and catalog QA across your platforms.
-            </p>
-            <HeroCTAs />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Ecommerce Virtual Assistant
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-ocean-50">
+                Keep your store fast and accurate. We handle listings, order ops, returns, support, and catalog QA across your platforms.
+              </p>
+              <HeroCTAs />
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="Ecommerce VA Hero Image"
+                description="Ecommerce operations team managing orders, inventory, and customer service. (1200x800px recommended)"
+              />
+            </div>
           </div>
         </div>
       </section>

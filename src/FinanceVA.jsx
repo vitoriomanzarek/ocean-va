@@ -2,6 +2,7 @@ import React from 'react'
 import { Calculator, FileText, DollarSign, BarChart3, Users } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
@@ -27,14 +28,25 @@ export default function FinanceVA() {
       
       <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Finance Virtual Assistant
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-ocean-50 max-w-3xl mx-auto">
-              Keep books current and clients informed. Your finance VA supports reconciliations, AR/AP, reporting, and advisor/client coordination.
-            </p>
-            <HeroCTAs />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Finance Virtual Assistant
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-ocean-50">
+                Keep books current and clients informed. Your finance VA supports reconciliations, AR/AP, reporting, and advisor/client coordination.
+              </p>
+              <HeroCTAs />
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="Finance VA Hero Image"
+                description="Finance professional managing books, reconciliations, and reporting with modern tools. (1200x800px recommended)"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Check, FileCheck, Edit3, Home, Calendar, ClipboardList, Users, Globe, DollarSign, Shield } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
@@ -37,14 +38,25 @@ export default function VirtualTransactionCoordinator() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Virtual Transaction Coordinator (Real Estate)
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-ocean-50 max-w-3xl mx-auto">
-              Contract‑to‑close without the scramble. We handle checklists, docs, signatures, vendor coordination, and reminders—so agents and teams never miss a milestone.
-            </p>
-            <HeroCTAs />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Virtual Transaction Coordinator (Real Estate)
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-ocean-50">
+                Contract‑to‑close without the scramble. We handle checklists, docs, signatures, vendor coordination, and reminders—so agents and teams never miss a milestone.
+              </p>
+              <HeroCTAs />
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="Transaction Coordinator Hero Image"
+                description="Transaction coordinator managing contracts, documents, vendor coordination in real estate. (1200x800px recommended)"
+              />
+            </div>
           </div>
         </div>
       </section>

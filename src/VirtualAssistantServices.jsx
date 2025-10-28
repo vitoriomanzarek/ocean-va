@@ -2,6 +2,7 @@ import React from 'react'
 import { Mail, Phone, Share2, TrendingUp, Database } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import WhyOceanSection from './components/WhyOceanSection'
 import OutcomesSection from './components/OutcomesSection'
 import HowItWorksSection from './components/HowItWorksSection'
@@ -35,14 +36,25 @@ export default function VirtualAssistantServices() {
       
       <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Virtual Assistant Services
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-ocean-50 max-w-3xl mx-auto">
-              One partner, many use cases. Hire a dedicated VA to cover admin, customer service, marketing, sales support, and operations—matched to your tools and SOPs.
-            </p>
-            <HeroCTAs />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Virtual Assistant Services
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-ocean-50">
+                One partner, many use cases. Hire a dedicated VA to cover admin, customer service, marketing, sales support, and operations—matched to your tools and SOPs.
+              </p>
+              <HeroCTAs />
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="VA Services Hero Image"
+                description="Diverse virtual assistant team providing various services (admin, customer service, marketing, sales). (1200x800px recommended)"
+              />
+            </div>
           </div>
         </div>
       </section>
