@@ -3,19 +3,20 @@ import React, { useEffect } from 'react';
 export default function BookingDemo() {
   // Load Calendly widget script
   useEffect(() => {
+    // Check if script already exists
+    if (document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
+      return;
+    }
+
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
   }, []);
 
   return (
     <section id="booking" className="bg-white py-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1280px' }}>
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             READY TO SAVE ON TIME & UP TO 70% ON COSTS?
@@ -26,13 +27,13 @@ export default function BookingDemo() {
         </div>
 
         <div className="space-y-8">
-          {/* Top Section - Booking Info */}
-          <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 max-w-3xl mx-auto">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+          {/* Top Section - Title & Info (Full Width) */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Ocean Virtual Assistant Solutions
             </h3>
             
-            <div className="space-y-3 mb-6">
+            <div className="space-y-3">
               <div className="flex items-center text-gray-700 text-sm">
                 <svg className="w-4 h-4 mr-2 text-ocean-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -46,23 +47,23 @@ export default function BookingDemo() {
                 <span>Video Call or Phone Call</span>
               </div>
             </div>
+          </div>
 
-            <div className="bg-white p-4 rounded-lg border border-gray-200 mb-6">
-              <p className="text-gray-700 text-sm mb-3">
-                Book a discovery call to learn more about our services and how we can help your business grow.
-              </p>
-              <p className="text-gray-700 text-sm">
-                <span className="font-medium">Note:</span> If you're looking for a virtual assistant position, please email us at{' '}
-                <a href="mailto:jointheteam@oceanvirtualassistant.com" className="text-ocean-600 hover:text-ocean-700 font-medium">
-                  jointheteam@oceanvirtualassistant.com
-                </a>
-              </p>
+          {/* Bottom Section - Calendar & Image (Horizontal) */}
+          <div className="grid items-center" style={{ gridTemplateColumns: '70% 30%', gap: '16px' }}>
+            {/* Left - Calendly Widget (70%) */}
+            <div className="calendly-inline-widget" 
+                 data-url="https://calendly.com/ocean-virtual-assistant/30min?hide_event_type_details=1&hide_gdpr_banner=1" 
+                 style={{ minWidth: '320px', height: '500px' }}>
             </div>
 
-            {/* Calendly Inline Widget */}
-            <div className="calendly-inline-widget" 
-                 data-url="https://calendly.com/ocean-virtual-assistant/30min" 
-                 style={{ minWidth: '320px', height: '700px' }}>
+            {/* Right - Image (30%) */}
+            <div className="overflow-hidden rounded-lg aspect-square">
+              <img 
+                src="/images/BookingDemo.jpeg" 
+                alt="Booking Demo" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

@@ -247,11 +247,11 @@ export default function RealEstateVA() {
             </div>
             <div>
               <h4 className="font-bold text-ocean-700 mb-3">Transaction & E-Sign</h4>
-              <p className="text-gray-600 text-sm">Dotloop, DocuSign, Skyslope, ShowingTime</p>
+              <p className="text-gray-600 text-sm">Dotloop, SkySlope, Brokermint, Transaction Desk</p>
             </div>
             <div>
               <h4 className="font-bold text-ocean-700 mb-3">Property Management</h4>
-              <p className="text-gray-600 text-sm">AppFolio, Buildium, Yardi</p>
+              <p className="text-gray-600 text-sm">AppFolio, Slack, Buildium, Podio, Trello</p>
             </div>
           </div>
         </div>

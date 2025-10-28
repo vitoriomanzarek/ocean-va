@@ -1,7 +1,7 @@
 import React from 'react'
-import { Users, Globe, DollarSign, Shield } from 'lucide-react'
+import { Users, Globe, DollarSign, Shield, ImageIcon } from 'lucide-react'
 
-export default function WhyOceanSection({ subtitle, benefits }) {
+export default function WhyOceanSection({ subtitle, benefits, image = '/images/WhyUs.jpg' }) {
   const defaultBenefits = [
     {
       icon: Users,
@@ -36,14 +36,29 @@ export default function WhyOceanSection({ subtitle, benefits }) {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        {items.map((item, idx) => (
-          <div key={idx} className="bg-white p-8 rounded-lg shadow-md">
-            <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">{item.title}</h3>
-            <p className="text-gray-600 text-lg">{item.description}</p>
-          </div>
-        ))}
+      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+        {/* Left - Benefits Cards (Vertical Stack) */}
+        <div className="space-y-6">
+          {items.map((item, idx) => (
+            <div key={idx} className="bg-white p-6 rounded-lg shadow-md">
+              <item.icon className="w-10 h-10 text-ocean-600 mb-3" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+              <p className="text-gray-600">{item.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Right - Image Placeholder */}
+        <div className="bg-gray-100 rounded-lg overflow-hidden aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
+          {image ? (
+            <img src={image} alt="Why Ocean VA" className="w-full h-full object-cover" />
+          ) : (
+            <div className="text-center">
+              <ImageIcon className="w-16 h-16 text-gray-400 mx-auto mb-3" />
+              <p className="text-gray-500 font-medium">Image placeholder</p>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )
