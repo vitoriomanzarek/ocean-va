@@ -28,7 +28,7 @@ export default function ServicesIndustriesShowcase() {
       icon: '📱'
     },
     {
-      title: 'Virtual Receptionist *',
+      title: 'Virtual Receptionist',
       description: 'Professional call handling, appointment scheduling, and message management.',
       href: '/services/virtual-receptionist',
       icon: '📞'
@@ -61,7 +61,7 @@ export default function ServicesIndustriesShowcase() {
       icon: '🛡️'
     },
     {
-      title: 'Real Estate Virtual Assistant *',
+      title: 'Real Estate Virtual Assistant',
       description: 'Transaction coordination, listing management, and client communication support.',
       href: '/industries/real-estate-virtual-assistant',
       icon: '🏡'
