@@ -1,7 +1,7 @@
-# PNG Image Integration Guide
+# WebP Image Integration Guide
 
 ## Overview
-This guide explains how to integrate PNG hero images once they are generated and ready to use.
+This guide explains how to integrate optimized WebP hero images once they are generated and ready to use.
 
 ---
 
@@ -19,26 +19,27 @@ Place your generated PNG files in the appropriate directories:
 **Industries:**
 ```
 /public/images/industries/
-├── real-estate-va-hero.png
-├── medical-va-hero.png
-├── small-business-va-hero.png
-├── ecommerce-va-hero.png
-├── finance-va-hero.png
-├── hr-va-hero.png
-├── tech-va-hero.png
-├── property-management-va-hero.png
-└── mortgage-va-hero.png
+├── real-estate-va-hero.webp
+├── medical-va-hero.webp
+├── small-business-va-hero.webp
+├── marketing-va-hero.webp
+├── ecommerce-va-hero.webp
+├── finance-va-hero.webp
+├── hr-va-hero.webp
+├── tech-va-hero.webp
+├── property-management-va-hero.webp
+└── mortgage-va-hero.webp
 ```
 
 **Services:**
 ```
 /public/images/services/
-├── admin-assistant-hero.png
-├── va-services-hero.png
-├── customer-service-hero.png
-├── virtual-receptionist-hero.png
-├── transaction-coordinator-hero.png
-└── sdr-va-hero.png
+├── admin-assistant-hero.webp
+├── va-services-hero.webp
+├── customer-service-hero.webp
+├── virtual-receptionist-hero.webp
+├── transaction-coordinator-hero.webp
+└── sdr-va-hero.webp
 ```
 
 ---
@@ -54,7 +55,7 @@ For each industry page, add the `imageSrc` prop to the `HeroPlaceholder` compone
 <HeroPlaceholder 
   title="Real Estate VA Hero Image"
   description="Professional real estate agents/team working with property listings, showing productivity and teamwork in real estate context. (1200x800px recommended)"
-  imageSrc="/images/industries/real-estate-va-hero.png"
+  imageSrc="/images/industries/real-estate-va-hero.webp"
   imageAlt="Real Estate Virtual Assistant team collaborating on property deals"
 />
 ```
@@ -63,61 +64,61 @@ For each industry page, add the `imageSrc` prop to the `HeroPlaceholder` compone
 
 **1. RealEstateVA.jsx**
 ```jsx
-imageSrc="/images/industries/real-estate-va-hero.png"
+imageSrc="/images/industries/real-estate-va-hero.webp"
 imageAlt="Real Estate Virtual Assistant team collaborating on property deals"
 ```
 
 **2. MedicalVA.jsx**
 ```jsx
-imageSrc="/images/industries/medical-va-hero.png"
+imageSrc="/images/industries/medical-va-hero.webp"
 imageAlt="Medical Virtual Assistant supporting healthcare team"
 ```
 
 **3. SmallBusinessVA.jsx**
 ```jsx
-imageSrc="/images/industries/small-business-va-hero.png"
+imageSrc="/images/industries/small-business-va-hero.webp"
 imageAlt="Small Business Virtual Assistant team collaborating"
 ```
 
 **4. MarketingVA.jsx**
 ```jsx
-imageSrc="/images/industries/marketing-va-hero.png"
+imageSrc="/images/industries/marketing-va-hero.webp"
 imageAlt="Marketing Virtual Assistant team managing campaigns"
 ```
 
 **5. EcommerceVA.jsx**
 ```jsx
-imageSrc="/images/industries/ecommerce-va-hero.png"
+imageSrc="/images/industries/ecommerce-va-hero.webp"
 imageAlt="Ecommerce Virtual Assistant managing online store operations"
 ```
 
 **6. FinanceVA.jsx**
 ```jsx
-imageSrc="/images/industries/finance-va-hero.png"
+imageSrc="/images/industries/finance-va-hero.webp"
 imageAlt="Finance Virtual Assistant managing accounting and reconciliations"
 ```
 
 **7. HRVA.jsx**
 ```jsx
-imageSrc="/images/industries/hr-va-hero.png"
+imageSrc="/images/industries/hr-va-hero.webp"
 imageAlt="HR Virtual Assistant managing recruiting and onboarding"
 ```
 
 **8. TechVA.jsx**
 ```jsx
-imageSrc="/images/industries/tech-va-hero.png"
+imageSrc="/images/industries/tech-va-hero.webp"
 imageAlt="Tech Virtual Assistant supporting engineering team"
 ```
 
 **9. PropertyManagementVA.jsx**
 ```jsx
-imageSrc="/images/industries/property-management-va-hero.png"
+imageSrc="/images/industries/property-management-va-hero.webp"
 imageAlt="Property Management Virtual Assistant coordinating operations"
 ```
 
 **10. MortgageVA.jsx**
 ```jsx
-imageSrc="/images/industries/mortgage-va-hero.png"
+imageSrc="/images/industries/mortgage-va-hero.webp"
 imageAlt="Mortgage Virtual Assistant managing loan files and documentation"
 ```
 
@@ -129,37 +130,37 @@ imageAlt="Mortgage Virtual Assistant managing loan files and documentation"
 
 **11. VirtualAdminAssistant.jsx**
 ```jsx
-imageSrc="/images/services/admin-assistant-hero.png"
+imageSrc="/images/services/admin-assistant-hero.webp"
 imageAlt="Virtual Administrative Assistant managing inbox and calendar"
 ```
 
 **12. VirtualAssistantServices.jsx**
 ```jsx
-imageSrc="/images/services/va-services-hero.png"
+imageSrc="/images/services/va-services-hero.webp"
 imageAlt="Diverse Virtual Assistant team providing multiple services"
 ```
 
 **13. CustomerServiceVA.jsx**
 ```jsx
-imageSrc="/images/services/customer-service-hero.png"
+imageSrc="/images/services/customer-service-hero.webp"
 imageAlt="Customer Service Virtual Assistant handling inquiries"
 ```
 
 **14. VirtualReceptionist.jsx**
 ```jsx
-imageSrc="/images/services/virtual-receptionist-hero.png"
+imageSrc="/images/services/virtual-receptionist-hero.webp"
 imageAlt="Virtual Receptionist answering calls and booking appointments"
 ```
 
 **15. VirtualTransactionCoordinator.jsx**
 ```jsx
-imageSrc="/images/services/transaction-coordinator-hero.png"
+imageSrc="/images/services/transaction-coordinator-hero.webp"
 imageAlt="Virtual Transaction Coordinator managing real estate deals"
 ```
 
 **16. SDRVA.jsx**
 ```jsx
-imageSrc="/images/services/sdr-va-hero.png"
+imageSrc="/images/services/sdr-va-hero.webp"
 imageAlt="SDR Virtual Assistant researching leads and scheduling meetings"
 ```
 
@@ -173,7 +174,7 @@ Here's a complete example of how the updated HeroPlaceholder component usage loo
 <HeroPlaceholder 
   title="Real Estate VA Hero Image"
   description="Professional real estate agents/team working with property listings, showing productivity and teamwork in real estate context. (1200x800px recommended)"
-  imageSrc="/images/industries/real-estate-va-hero.png"
+  imageSrc="/images/industries/real-estate-va-hero.webp"
   imageAlt="Real Estate Virtual Assistant team collaborating on property deals"
 />
 ```
@@ -181,7 +182,7 @@ Here's a complete example of how the updated HeroPlaceholder component usage loo
 ### Component Props:
 - **title** (string, required): Title shown in placeholder (when no image)
 - **description** (string, required): Description shown in placeholder (when no image)
-- **imageSrc** (string, optional): Path to PNG image. If provided, displays image instead of placeholder
+- **imageSrc** (string, optional): Path to WebP image. If provided, displays image instead of placeholder
 - **imageAlt** (string, optional): Alt text for accessibility. Falls back to title if not provided
 
 ---
@@ -189,18 +190,18 @@ Here's a complete example of how the updated HeroPlaceholder component usage loo
 ## 🎯 Integration Workflow
 
 ### Phase 1: Prepare Images
-- [ ] Generate all 16 PNG images using the prompts in `IMAGE_GENERATION_PROMPTS.md`
+- [ ] Generate all 16 images using the prompts in `IMAGE_GENERATION_PROMPTS.md`
+- [ ] Convert to WebP format for optimal web performance
 - [ ] Verify dimensions: 1200x800px
-- [ ] Verify file format: PNG
-- [ ] Optimize file size (target: <500KB per image)
+- [ ] Optimize file size (target: 500KB-1.5MB per image)
 
 ### Phase 2: Create Directory Structure
 - [ ] Create `/public/images/industries/` directory
 - [ ] Create `/public/images/services/` directory
 
-### Phase 3: Upload PNG Files
-- [ ] Place all industry PNGs in `/public/images/industries/`
-- [ ] Place all service PNGs in `/public/images/services/`
+### Phase 3: Upload WebP Files
+- [ ] Place all industry WebP files in `/public/images/industries/`
+- [ ] Place all service WebP files in `/public/images/services/`
 
 ### Phase 4: Update Components
 - [ ] Update all 16 page files with `imageSrc` props
@@ -218,18 +219,18 @@ Here's a complete example of how the updated HeroPlaceholder component usage loo
 ```bash
 git add public/images/
 git add src/*.jsx
-git commit -m "feat: integrate PNG hero images for all 16 service pages"
+git commit -m "feat: integrate WebP hero images for all 16 service pages"
 ```
 
 ---
 
 ## 🔍 Verification Checklist
 
-- [ ] All 16 PNG files are in correct directories
+- [ ] All 16 WebP files are in correct directories
 - [ ] File names match exactly (case-sensitive)
 - [ ] All images are 1200x800px
-- [ ] All images are PNG format
-- [ ] File sizes are optimized (<500KB each)
+- [ ] All images are WebP format
+- [ ] File sizes are optimized (500KB-1.5MB each)
 - [ ] All 16 pages have `imageSrc` prop added
 - [ ] All pages display images correctly
 - [ ] Alt text is descriptive and accessible
@@ -246,22 +247,22 @@ Once you have all PNG files ready, you can use this as a reference for batch upd
 ```javascript
 // Mapping of pages to image paths
 const imageMapping = {
-  'RealEstateVA.jsx': '/images/industries/real-estate-va-hero.png',
-  'MedicalVA.jsx': '/images/industries/medical-va-hero.png',
-  'SmallBusinessVA.jsx': '/images/industries/small-business-va-hero.png',
-  'MarketingVA.jsx': '/images/industries/marketing-va-hero.png',
-  'EcommerceVA.jsx': '/images/industries/ecommerce-va-hero.png',
-  'FinanceVA.jsx': '/images/industries/finance-va-hero.png',
-  'HRVA.jsx': '/images/industries/hr-va-hero.png',
-  'TechVA.jsx': '/images/industries/tech-va-hero.png',
-  'PropertyManagementVA.jsx': '/images/industries/property-management-va-hero.png',
-  'MortgageVA.jsx': '/images/industries/mortgage-va-hero.png',
-  'VirtualAdminAssistant.jsx': '/images/services/admin-assistant-hero.png',
-  'VirtualAssistantServices.jsx': '/images/services/va-services-hero.png',
-  'CustomerServiceVA.jsx': '/images/services/customer-service-hero.png',
-  'VirtualReceptionist.jsx': '/images/services/virtual-receptionist-hero.png',
-  'VirtualTransactionCoordinator.jsx': '/images/services/transaction-coordinator-hero.png',
-  'SDRVA.jsx': '/images/services/sdr-va-hero.png',
+  'RealEstateVA.jsx': '/images/industries/real-estate-va-hero.webp',
+  'MedicalVA.jsx': '/images/industries/medical-va-hero.webp',
+  'SmallBusinessVA.jsx': '/images/industries/small-business-va-hero.webp',
+  'MarketingVA.jsx': '/images/industries/marketing-va-hero.webp',
+  'EcommerceVA.jsx': '/images/industries/ecommerce-va-hero.webp',
+  'FinanceVA.jsx': '/images/industries/finance-va-hero.webp',
+  'HRVA.jsx': '/images/industries/hr-va-hero.webp',
+  'TechVA.jsx': '/images/industries/tech-va-hero.webp',
+  'PropertyManagementVA.jsx': '/images/industries/property-management-va-hero.webp',
+  'MortgageVA.jsx': '/images/industries/mortgage-va-hero.webp',
+  'VirtualAdminAssistant.jsx': '/images/services/admin-assistant-hero.webp',
+  'VirtualAssistantServices.jsx': '/images/services/va-services-hero.webp',
+  'CustomerServiceVA.jsx': '/images/services/customer-service-hero.webp',
+  'VirtualReceptionist.jsx': '/images/services/virtual-receptionist-hero.webp',
+  'VirtualTransactionCoordinator.jsx': '/images/services/transaction-coordinator-hero.webp',
+  'SDRVA.jsx': '/images/services/sdr-va-hero.webp',
 }
 ```
 
@@ -270,8 +271,8 @@ const imageMapping = {
 ## 📊 Image Optimization Tips
 
 ### File Size Optimization
-- Use PNG compression tools (TinyPNG, ImageOptim)
-- Target: 200-400KB per image
+- WebP format provides excellent compression
+- Target: 500KB-1.5MB per image (already optimized)
 - Maintain quality at 1200x800px
 
 ### Web Performance

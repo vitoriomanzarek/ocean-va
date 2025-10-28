@@ -10,6 +10,7 @@ export default function HeroPlaceholder({ title, description, imageSrc, imageAlt
           src={imageSrc} 
           alt={imageAlt || title}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       </div>
     )
