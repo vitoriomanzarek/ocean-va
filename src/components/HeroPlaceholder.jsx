@@ -1,7 +1,21 @@
 import React from 'react'
 import { ImageIcon } from 'lucide-react'
 
-export default function HeroPlaceholder({ title, description }) {
+export default function HeroPlaceholder({ title, description, imageSrc, imageAlt }) {
+  // If image is provided, display it
+  if (imageSrc) {
+    return (
+      <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+        <img 
+          src={imageSrc} 
+          alt={imageAlt || title}
+          className="w-full h-full object-cover"
+        />
+      </div>
+    )
+  }
+
+  // Otherwise show placeholder
   return (
     <div className="aspect-video rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-ocean-600 to-ocean-500 flex items-center justify-center border-2 border-dashed border-white/30">
       <div className="text-center px-6">

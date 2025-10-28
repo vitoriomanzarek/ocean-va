@@ -355,11 +355,12 @@ Dimensions: 1200x800px, 16:10 aspect ratio.
 ## 📋 Implementation Notes
 
 ### Image Specifications
-- **Format**: JPG or WebP (with JPG fallback)
+- **Format**: PNG (with transparency support)
 - **Dimensions**: 1200x800px (minimum 800x600px)
 - **Aspect Ratio**: 16:10 or 3:2
 - **Quality**: High resolution, professional photography
 - **Style**: Professional, modern, inclusive, diverse representation
+- **Background**: Can include transparency or solid background
 
 ### Diversity & Inclusion Guidelines
 - Mix of genders, ethnicities, ages across all images
@@ -378,22 +379,22 @@ Dimensions: 1200x800px, 16:10 aspect ratio.
 ```
 /public/images/
 ├── industries/
-│   ├── real-estate-va-hero.jpg
-│   ├── medical-va-hero.jpg
-│   ├── small-business-va-hero.jpg
-│   ├── ecommerce-va-hero.jpg
-│   ├── finance-va-hero.jpg
-│   ├── hr-va-hero.jpg
-│   ├── tech-va-hero.jpg
-│   ├── property-management-va-hero.jpg
-│   └── mortgage-va-hero.jpg
+│   ├── real-estate-va-hero.png
+│   ├── medical-va-hero.png
+│   ├── small-business-va-hero.png
+│   ├── ecommerce-va-hero.png
+│   ├── finance-va-hero.png
+│   ├── hr-va-hero.png
+│   ├── tech-va-hero.png
+│   ├── property-management-va-hero.png
+│   └── mortgage-va-hero.png
 └── services/
-    ├── admin-assistant-hero.jpg
-    ├── va-services-hero.jpg
-    ├── customer-service-hero.jpg
-    ├── virtual-receptionist-hero.jpg
-    ├── transaction-coordinator-hero.jpg
-    └── sdr-va-hero.jpg
+    ├── admin-assistant-hero.png
+    ├── va-services-hero.png
+    ├── customer-service-hero.png
+    ├── virtual-receptionist-hero.png
+    ├── transaction-coordinator-hero.png
+    └── sdr-va-hero.png
 ```
 
 ---
