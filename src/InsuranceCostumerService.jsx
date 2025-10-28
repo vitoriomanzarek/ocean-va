@@ -2,6 +2,7 @@ import React from 'react'
 import BookingDemo from './components/BookingDemo'
 import FAQSection from './components/FAQSection'
 import Pricing from './components/Pricing'
+import HeroPlaceholder from './components/HeroPlaceholder'
 import { insuranceCsrFaqs } from './data/faqs'
 
 function InsuranceCostumerService() {
@@ -10,19 +11,32 @@ function InsuranceCostumerService() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-ocean-600 to-ocean-700 text-white py-20">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Elevate Your Customer Experience
-            </h1>
-            <p className="text-xl text-ocean-100 mb-8 leading-relaxed">
-              Save up to 70% on staffing costs while delivering exceptional customer service. Our trained Insurance Customer Service Representatives handle client interactions with professionalism and care.
-            </p>
-            <a 
-              href="/contact-us" 
-              className="inline-block bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              Get Started
-            </a>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                Elevate Your Customer Experience
+              </h1>
+              <p className="text-xl text-ocean-100 mb-8 leading-relaxed">
+                Save up to 70% on staffing costs while delivering exceptional customer service. Our trained Insurance Customer Service Representatives handle client interactions with professionalism and care.
+              </p>
+              <a 
+                href="/contact-us" 
+                className="inline-block bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+              >
+                Get Started
+              </a>
+            </div>
+
+            {/* Right Column - Image Placeholder */}
+            <div>
+              <HeroPlaceholder 
+                title="Insurance Customer Service Representative"
+                description="Professional customer service representative handling insurance inquiries with expertise and care. (1200x800px recommended)"
+                imageSrc="/images/Services/customer-service-hero.webp"
+                imageAlt="Insurance Customer Service Representative handling client interactions"
+              />
+            </div>
           </div>
         </div>
       </section>
