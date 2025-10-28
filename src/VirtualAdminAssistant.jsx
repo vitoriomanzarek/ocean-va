@@ -54,7 +54,7 @@ export default function VirtualAdminAssistant() {
               <HeroPlaceholder 
                 title="Admin Assistant Hero Image"
                 description="Professional administrative assistant managing inbox, calendar, documents, and operations. (1200x800px recommended)"
-                imageSrc="/images/services/admin-assistant-hero.webp"
+                imageSrc="/images/Services/admin-assistant-hero.webp"
                 imageAlt="Virtual Administrative Assistant managing inbox and calendar"
               />
             </div>

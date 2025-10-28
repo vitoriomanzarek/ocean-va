@@ -52,7 +52,7 @@ export default function SmallBusinessVA() {
               <HeroPlaceholder 
                 title="Small Business VA Hero Image"
                 description="Diverse small business team working together, showing productivity, collaboration, and growth. (1200x800px recommended)"
-                imageSrc="/images/industries/small-business-va-hero.webp"
+                imageSrc="/images/Industries/small-business-va-hero.webp"
                 imageAlt="Small Business Virtual Assistant team collaborating"
               />
             </div>

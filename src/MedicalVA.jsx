@@ -52,7 +52,7 @@ export default function MedicalVA() {
               <HeroPlaceholder 
                 title="Medical VA Hero Image"
                 description="Medical office environment or healthcare professionals. (1200x800px recommended)"
-                imageSrc="/images/industries/medical-va-hero.webp"
+                imageSrc="/images/Industries/medical-va-hero.webp"
                 imageAlt="Medical Virtual Assistant supporting healthcare team"
               />
             </div>

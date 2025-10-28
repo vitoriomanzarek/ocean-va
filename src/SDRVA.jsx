@@ -53,7 +53,7 @@ export default function SDRVA() {
               <HeroPlaceholder 
                 title="SDR VA Hero Image"
                 description="Sales development professional researching leads, managing CRM, and scheduling meetings. (1200x800px recommended)"
-                imageSrc="/images/services/sdr-va-hero.webp"
+                imageSrc="/images/Services/sdr-va-hero.webp"
                 imageAlt="SDR Virtual Assistant researching leads and scheduling meetings"
               />
             </div>

@@ -53,7 +53,7 @@ export default function VirtualAssistantServices() {
               <HeroPlaceholder 
                 title="VA Services Hero Image"
                 description="Diverse virtual assistant team providing various services (admin, customer service, marketing, sales). (1200x800px recommended)"
-                imageSrc="/images/services/va-services-hero.webp"
+                imageSrc="/images/Services/va-services-hero.webp"
                 imageAlt="Diverse Virtual Assistant team providing multiple services"
               />
             </div>

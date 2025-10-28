@@ -52,7 +52,7 @@ export default function MortgageVA() {
               <HeroPlaceholder 
                 title="Mortgage VA Hero Image"
                 description="Mortgage professionals managing loan files, documentation, and client coordination. (1200x800px recommended)"
-                imageSrc="/images/industries/mortgage-va-hero.webp"
+                imageSrc="/images/Industries/mortgage-va-hero.webp"
                 imageAlt="Mortgage Virtual Assistant managing loan files and documentation"
               />
             </div>
