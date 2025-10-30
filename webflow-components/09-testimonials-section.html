@@ -1,0 +1,228 @@
+<!-- Testimonials Section for Webflow -->
+<section class="testimonials-section">
+  <style>
+    .testimonials-section {
+      padding: 80px 16px;
+      background-color: #f9fafb;
+    }
+
+    .testimonials-container {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .testimonials-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-title {
+        font-size: 28px;
+      }
+    }
+
+    .testimonials-subtitle {
+      font-size: 18px;
+      color: #4b5563;
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .testimonial-card {
+      background-color: white;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Avatar & Name */
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      background-color: #05bfb9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .testimonial-info {
+      flex: 1;
+    }
+
+    .testimonial-name {
+      font-weight: 700;
+      font-size: 16px;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .testimonial-date {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    /* Stars */
+    .testimonial-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .star {
+      width: 20px;
+      height: 20px;
+      color: #fbbf24;
+      font-size: 16px;
+    }
+
+    /* Text */
+    .testimonial-text {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .testimonial-card {
+        padding: 24px;
+      }
+
+      .testimonial-text {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+  <div class="testimonials-container">
+    <!-- Header -->
+    <div class="testimonials-header">
+      <h2 class="testimonials-title">Trusted for our unmatched expertise</h2>
+      <p class="testimonials-subtitle">Don't just take our word for it</p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">D</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Dustin Lewis</div>
+            <div class="testimonial-date">Oct 7, 2024</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+        </div>
+        <p class="testimonial-text">
+          Ocean VA Solutions has been a game changer for my agency. Their VAs handle complex tasks like COIs and billing audits with ease. They're truly part of my core team—customers even ask for them by name! Great service, unbeatable pricing, and top-notch professionalism. Highly recommend.
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">A</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Albert Johnson III</div>
+            <div class="testimonial-date">Nov 18, 2024</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+        </div>
+        <p class="testimonial-text">
+          Ocean VA has a great addition to our team. Maria is doing an outstanding job with our day to day operations and service to our customers.
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">D</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Donnie Browne</div>
+            <div class="testimonial-date">Apr 4, 2024</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+        </div>
+        <p class="testimonial-text">
+          Running my insurance agency without Ocean VA Solutions would be unimaginable. Our virtual assistant has seamlessly integrated into our team, handling everything from appointment scheduling to policy updates. Their dedication and professionalism have enabled us to deliver exceptional service to our clients.
+        </p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">J</div>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Joan Luistro</div>
+            <div class="testimonial-date">Dec 3, 2024</div>
+          </div>
+        </div>
+        <div class="testimonial-stars">
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+          <span class="star">⭐</span>
+        </div>
+        <p class="testimonial-text">
+          Amazing service! Marketing my listings was always a challenge because I simply didn't have the time. But after hiring a virtual assistant from Ocean VA Solutions, I now have someone who handles all my marketing materials. She creates professional flyers, schedules posts, and even helps with my email campaigns.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

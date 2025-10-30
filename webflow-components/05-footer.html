@@ -1,0 +1,262 @@
+<!-- Footer for Webflow -->
+<footer class="footer-section">
+  <style>
+    .footer-section {
+      background: linear-gradient(180deg, #f9fafb 0%, white 100%);
+      padding: 48px 16px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer-container {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    /* Logo Section */
+    .footer-header {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid #e6fffe;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo img {
+      height: 56px;
+      width: auto;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .footer-description {
+      font-size: 14px;
+      max-width: 500px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    /* Footer Grid */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .footer-column {
+      background-color: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid #f3f4f6;
+      transition: all 0.3s ease;
+    }
+
+    .footer-column:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-column-title {
+      color: #037b77;
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-size: 16px;
+      border-bottom: 2px solid #e6fffe;
+      padding-bottom: 8px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column li {
+      margin-bottom: 10px;
+    }
+
+    .footer-link {
+      color: #374151;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #049d98;
+      transform: translateX(4px);
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #05bfb9 0%, #037b77 100%);
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+    }
+
+    .social-icon:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+      transform: scale(1.1);
+    }
+
+    /* Contact Bar */
+    .footer-contact {
+      background-color: #e6fffe;
+      border-radius: 8px;
+      padding: 24px;
+      border: 1px solid #ccfffe;
+      margin-bottom: 32px;
+    }
+
+    .footer-contact-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    .footer-contact-item {
+      font-size: 14px;
+      color: #374151;
+      font-weight: 500;
+    }
+
+    .footer-contact-email {
+      color: #049d98;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-contact-email:hover {
+      color: #037b77;
+    }
+
+    /* Copyright */
+    .footer-copyright {
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      padding-top: 32px;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+
+  <div class="footer-container">
+    <!-- Logo Section -->
+    <div class="footer-header">
+      <div class="footer-logo">
+        <img src="/images/oceanVALogo.png" alt="Ocean VA" />
+      </div>
+      <p class="footer-description">
+        Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services. From office management to specialized industry support, our bilingual assistants are here to streamline your operations. Contact us today to unlock new opportunities and elevate your business to new heights.
+      </p>
+    </div>
+
+    <!-- Footer Grid -->
+    <div class="footer-grid">
+      <!-- Services -->
+      <div class="footer-column">
+        <h3 class="footer-column-title">SERVICES</h3>
+        <ul>
+          <li><a href="/services/insurance-customer-service-representative" class="footer-link">→ Insurance Customer Service</a></li>
+          <li><a href="/services/virtual-administrative-assistant" class="footer-link">→ Administrative Assistant</a></li>
+          <li><a href="/services/customer-service-virtual-assistant" class="footer-link">→ Customer Service</a></li>
+          <li><a href="/services/marketing-virtual-assistant" class="footer-link">→ Marketing Assistant</a></li>
+          <li><a href="/services/virtual-receptionist" class="footer-link">→ Virtual Receptionist</a></li>
+          <li><a href="/services/virtual-transaction-coordinator" class="footer-link">→ Transaction Coordinator</a></li>
+          <li><a href="/services/sdr-virtual-assistant" class="footer-link">→ Sales & Inside Sales</a></li>
+          <li><a href="/services/virtual-assistant-services" class="footer-link">→ General VA</a></li>
+        </ul>
+      </div>
+
+      <!-- Industries -->
+      <div class="footer-column">
+        <h3 class="footer-column-title">INDUSTRIES</h3>
+        <ul>
+          <li><a href="/insurance" class="footer-link">→ Insurance</a></li>
+          <li><a href="/industries/real-estate-virtual-assistant" class="footer-link">→ Real Estate</a></li>
+          <li><a href="/industries/small-business-virtual-assistant" class="footer-link">→ Small Business</a></li>
+          <li><a href="/industries/ecommerce-virtual-assistant" class="footer-link">→ E-Commerce</a></li>
+          <li><a href="/industries/finance-virtual-assistant" class="footer-link">→ Finance</a></li>
+          <li><a href="/industries/property-management-virtual-assistant" class="footer-link">→ Property Management</a></li>
+          <li><a href="/industries/medical-virtual-assistant" class="footer-link">→ Healthcare</a></li>
+          <li><a href="/industries/hr-virtual-assistant" class="footer-link">→ HR</a></li>
+          <li><a href="/industries/tech-virtual-assistant" class="footer-link">→ Technology</a></li>
+          <li><a href="/industries/mortgage-virtual-assistant" class="footer-link">→ Mortgage & Lending</a></li>
+        </ul>
+      </div>
+
+      <!-- Other Pages -->
+      <div class="footer-column">
+        <h3 class="footer-column-title">OTHER PAGES</h3>
+        <ul>
+          <li><a href="/about-us" class="footer-link">→ About Us</a></li>
+          <li><a href="/pricing" class="footer-link">→ Pricing</a></li>
+          <li><a href="/our-vas" class="footer-link">→ Our VAs</a></li>
+          <li><a href="/faqs" class="footer-link">→ FAQs</a></li>
+          <li><a href="/blogs" class="footer-link">→ Blogs</a></li>
+          <li><a href="/careers" class="footer-link">→ Careers</a></li>
+          <li><a href="/contact-us" class="footer-link">→ Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-column">
+        <h3 class="footer-column-title">SOCIAL LINKS</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/oceanvirtualassistant" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">f</a>
+          <a href="https://www.linkedin.com/company/ocean-virtual-assistant" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">in</a>
+          <a href="https://www.youtube.com/@oceanvirtualassistant" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">▶</a>
+          <a href="https://www.instagram.com/oceanvirtualassistant" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">📷</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Bar -->
+    <div class="footer-contact">
+      <div class="footer-contact-content">
+        <div class="footer-contact-item">📍 Address: 789 SW Federal Highway, Suite 201 Stuart, FL 34994</div>
+        <div class="footer-contact-item">✉️ Email: <a href="mailto:info@oceanvirtualassistant.com" class="footer-contact-email">info@oceanvirtualassistant.com</a></div>
+        <div class="footer-contact-item">📞 Phone: 772-247-0269</div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>&copy; 2025 Ocean Virtual Assistant Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

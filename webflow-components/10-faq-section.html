@@ -1,0 +1,291 @@
+<!-- FAQ Section for Webflow -->
+<section class="faq-section">
+  <style>
+    .faq-section {
+      padding: 80px 16px;
+      background-color: #f9fafb;
+    }
+
+    .faq-container {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    .faq-header {
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .faq-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    @media (max-width: 768px) {
+      .faq-title {
+        font-size: 28px;
+      }
+    }
+
+    .faq-subtitle {
+      font-size: 18px;
+      color: #4b5563;
+    }
+
+    /* FAQ Items */
+    .faq-items {
+      max-width: 800px;
+      margin: 0 auto 48px;
+    }
+
+    .faq-item {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 24px;
+      text-align: left;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .faq-question:hover {
+      background-color: #f9fafb;
+    }
+
+    .faq-toggle {
+      width: 20px;
+      height: 20px;
+      color: #049d98;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background-color: #f9fafb;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 20px 24px;
+      max-height: 500px;
+    }
+
+    .faq-answer-text {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.7;
+      white-space: pre-wrap;
+    }
+
+    /* CTA Button */
+    .faq-cta-wrapper {
+      text-align: center;
+    }
+
+    .faq-cta {
+      display: inline-block;
+      background-color: #049d98;
+      color: white;
+      font-weight: 600;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .faq-cta:hover {
+      background-color: #037b77;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .faq-question {
+        padding: 16px 20px;
+        font-size: 14px;
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+      }
+
+      .faq-item.active .faq-answer {
+        padding: 16px 20px;
+      }
+
+      .faq-answer-text {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+  <div class="faq-container">
+    <!-- Header -->
+    <div class="faq-header">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <p class="faq-subtitle">Quick answers to common questions</p>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="faq-items">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How fast can we start? Can I really launch in 2-3 days?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">Yes! Our streamlined process allows most agencies to go live within 2-3 days.
+
+Day 0: Share your needs in a 15-min call.
+Day 1: We match you with pre-vetted candidates.
+Day 2: Interview 2-3 qualified VAs.
+Day 3: Your chosen VA starts working.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>What's included in the $1,300 monthly price?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">Everything you need: dedicated full-time VA (40h/week), no setup fees, no equipment costs, ongoing support, free replacement if needed, multilingual support (10+ languages available), and no long-term contracts. Part-time plans also available.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Are there any setup fees or hidden costs?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">Absolutely none. $0 setup fees. $0 equipment costs. $0 hidden charges. Just a flat monthly rate.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>What if my VA doesn't work out?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">We offer a no-cost replacement guarantee. If your VA isn't the right fit, we'll find you a replacement at no additional charge.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Do you offer bilingual support?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">Yes. English & Spanish (default). We can route calls, emails, and chats to bilingual VAs to serve your diverse client base.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Which tools and systems do your VAs support?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">We work with HubSpot, Salesforce, Zoho, Pipedrive, Google Workspace, Microsoft 365, Slack/Teams, Asana, Trello, ClickUp, and many more. If you use it, we can learn it.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Will I work with the same dedicated VA?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">Yes—you get one dedicated VA who learns your business, systems, and workflow. We never pool your work across a ticket queue.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do you ensure quality and performance?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">We use recorded calls (if enabled), scorecards, weekly coaching, KPI reviews, and ongoing quality assurance to keep your VA performing at their best.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Do you require long-term contracts?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">No. Everything is month-to-month with no lock-in or long-term contracts. Cancel anytime if you're not satisfied.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How are your VAs vetted and trained?</span>
+          <span class="faq-toggle">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-text">We hire the top 1% of candidates through multi-stage screening, voice/tone assessments, and scenario testing. Each VA receives 30 days of specialized training before working with you.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="faq-cta-wrapper">
+      <a href="/faqs" class="faq-cta">See all FAQs</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(button) {
+      const faqItem = button.closest('.faq-item');
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all other items
+      document.querySelectorAll('.faq-item.active').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+        }
+      });
+      
+      // Toggle current item
+      faqItem.classList.toggle('active');
+    }
+  </script>
+</section>

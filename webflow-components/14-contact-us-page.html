@@ -1,0 +1,455 @@
+<!-- Contact Us Page for Webflow - Calendly Focused -->
+<div class="contact-us-page">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .contact-us-page {
+      width: 100%;
+      background-color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Booking Section */
+    .booking-section {
+      background: white;
+      padding: 48px 20px;
+    }
+
+    .booking-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .booking-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .booking-header h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .booking-header p {
+      font-size: 18px;
+      color: #6b7280;
+    }
+
+    .booking-info {
+      margin-bottom: 32px;
+    }
+
+    .booking-info h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .booking-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .booking-info-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .booking-info-item svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      color: #049d98;
+      flex-shrink: 0;
+    }
+
+    /* Calendly Grid */
+    .calendly-grid {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .calendly-widget-container {
+      min-width: 320px;
+      height: 500px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .calendly-image-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .calendly-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1024px) {
+      .calendly-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calendly-image-container {
+        height: 300px;
+      }
+    }
+
+    /* Google Reviews Section */
+    .reviews-section {
+      background: #f9fafb;
+      padding: 60px 20px;
+    }
+
+    .reviews-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .reviews-header h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .reviews-header p {
+      font-size: 16px;
+      color: #6b7280;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .review-card {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .review-text {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .review-author {
+      font-size: 13px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    /* Timeline Section */
+    .timeline-section {
+      background: white;
+      padding: 60px 20px;
+    }
+
+    .timeline-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .timeline-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .timeline-header h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+
+    .timeline-item {
+      text-align: center;
+    }
+
+    .timeline-number {
+      width: 48px;
+      height: 48px;
+      background: #049d98;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 auto 16px;
+    }
+
+    .timeline-item h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cta-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      color: #ccfffe;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cta-button {
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .cta-button-primary {
+      background: white;
+      color: #049d98;
+    }
+
+    .cta-button-primary:hover {
+      background: #f3f4f6;
+    }
+
+    .cta-button-secondary {
+      background: #049d98;
+      color: white;
+      border-color: white;
+    }
+
+    .cta-button-secondary:hover {
+      background: #037b77;
+    }
+
+    @media (max-width: 768px) {
+      .booking-header h2 {
+        font-size: 24px;
+      }
+
+      .reviews-header h2,
+      .timeline-header h2 {
+        font-size: 24px;
+      }
+
+      .cta-section h2 {
+        font-size: 28px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .cta-button {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <!-- Booking Demo Section -->
+  <div class="booking-section">
+    <div class="booking-container">
+      <div class="booking-header">
+        <h2>READY TO SAVE ON TIME & UP TO 70% ON COSTS?</h2>
+        <p>Find the time that works best for you & book a <strong>FREE</strong> discovery call today.</p>
+      </div>
+
+      <div class="booking-info">
+        <h3>Ocean Virtual Assistant Solutions</h3>
+        <div class="booking-info-list">
+          <div class="booking-info-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>30 min</span>
+          </div>
+          <div class="booking-info-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>Video Call or Phone Call</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendly Widget -->
+      <div class="calendly-grid">
+        <div class="calendly-widget-container">
+          <!-- Calendly inline widget -->
+          <iframe src="https://calendly.com/ocean-virtual-assistant/30min?hide_event_type_details=1&hide_gdpr_banner=1" width="100%" height="100%" frameborder="0" style="border: none;"></iframe>
+        </div>
+        <div class="calendly-image-container">
+          <img src="/images/BookingDemo.jpeg" alt="Booking Demo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <div class="reviews-section">
+    <div class="reviews-container">
+      <div class="reviews-header">
+        <h2>What Our Clients Say</h2>
+        <p>Join hundreds of satisfied clients who've transformed their business</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Ocean VA has been a game-changer for our insurance agency. We've saved thousands and our team is more productive than ever."</p>
+          <p class="review-author">- Sarah Johnson, Agency Owner</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"The quality of VAs is exceptional. They understand our industry and require minimal training. Highly recommended!"</p>
+          <p class="review-author">- Michael Chen, Operations Manager</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Best decision we made this year. Our VA is reliable, professional, and has become an integral part of our team."</p>
+          <p class="review-author">- Jennifer Martinez, CEO</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"The support from Ocean VA team is outstanding. They helped us find the perfect match on the first try."</p>
+          <p class="review-author">- David Thompson, Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline Section -->
+  <div class="timeline-section">
+    <div class="timeline-container">
+      <div class="timeline-header">
+        <h2>How It Works</h2>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-item">
+          <div class="timeline-number">1</div>
+          <h3>Book a Call</h3>
+          <p>Schedule a free 30-minute discovery call with our team to discuss your needs.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">2</div>
+          <h3>Get Matched</h3>
+          <p>We match you with the perfect VA based on your requirements and preferences.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">3</div>
+          <h3>Onboarding</h3>
+          <p>Your VA gets onboarded and trained on your specific processes and workflows.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">4</div>
+          <h3>Start Working</h3>
+          <p>Begin delegating tasks and watch your productivity soar within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <div class="cta-container">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Join hundreds of businesses that have streamlined their operations with Ocean Virtual Assistant. Let's get started today.</p>
+      <div class="cta-buttons">
+        <a href="https://calendly.com/ocean-virtual-assistant/30min" class="cta-button cta-button-primary">Book a Free Call</a>
+        <a href="/pricing" class="cta-button cta-button-secondary">View Pricing</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Load Calendly widget script if not already loaded
+    if (!window.Calendly) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  </script>
+</div>

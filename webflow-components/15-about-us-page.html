@@ -1,0 +1,404 @@
+<!-- About Us Page for Webflow -->
+<div class="about-us-page">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .about-us-page {
+      width: 100%;
+      background-color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Header */
+    .about-header {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .about-header-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .about-header p {
+      font-size: 18px;
+      color: #ccfffe;
+      line-height: 1.6;
+    }
+
+    /* Section */
+    .about-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    /* Mission Section */
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .mission-content h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .mission-content p {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .mission-image {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, #e6fffe 0%, #ccfffe 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      color: #049d98;
+    }
+
+    /* Values Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    .value-card {
+      background: white;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .value-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .value-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .value-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* Team Section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .team-member:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .team-member-image {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(135deg, #e6fffe 0%, #ccfffe 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      color: #049d98;
+    }
+
+    .team-member-content {
+      padding: 24px;
+      text-align: center;
+    }
+
+    .team-member-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .team-member-role {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .team-member-bio {
+      font-size: 14px;
+      color: #9ca3af;
+      line-height: 1.6;
+    }
+
+    /* Stats Section */
+    .stats-section {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 60px 20px;
+      margin: 80px 0;
+    }
+
+    .stats-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .stat-item p {
+      font-size: 16px;
+      color: #ccfffe;
+    }
+
+    /* CTA Section */
+    .about-cta {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-cta h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .about-cta p {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-cta-btn {
+      background: #049d98;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .about-cta-btn:hover {
+      background: #037b77;
+    }
+
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 32px;
+      }
+
+      .about-section h2 {
+        font-size: 28px;
+      }
+
+      .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .mission-image {
+        height: 300px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-item h3 {
+        font-size: 32px;
+      }
+    }
+  </style>
+
+  <!-- Header -->
+  <div class="about-header">
+    <div class="about-header-container">
+      <h1>About Ocean VA</h1>
+      <p>We're on a mission to transform how businesses operate by connecting them with exceptional virtual assistants.</p>
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="about-section">
+    <div class="mission-grid">
+      <div class="mission-content">
+        <h3>Our Mission</h3>
+        <p>At Ocean VA, we believe that every business deserves access to world-class support. We're dedicated to connecting entrepreneurs and companies with highly skilled virtual assistants who can help them focus on what matters most.</p>
+        <p>Our VAs are carefully selected, thoroughly vetted, and trained to deliver exceptional service across a wide range of industries and business needs.</p>
+      </div>
+      <div class="mission-image">🌊</div>
+    </div>
+  </div>
+
+  <!-- Values Section -->
+  <div class="about-section">
+    <h2>Our Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">✨</div>
+        <h3>Excellence</h3>
+        <p>We're committed to delivering the highest quality service and support to our clients and VAs.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🤝</div>
+        <h3>Reliability</h3>
+        <p>You can count on us to be there when you need us, with consistent and dependable support.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌍</div>
+        <h3>Global Perspective</h3>
+        <p>We connect businesses worldwide with talented VAs from diverse backgrounds and cultures.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">💡</div>
+        <h3>Innovation</h3>
+        <p>We continuously improve our processes and tools to better serve our clients.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <h3>Integrity</h3>
+        <p>We operate with transparency and honesty in all our business dealings.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📈</div>
+        <h3>Growth</h3>
+        <p>We invest in the development and success of both our VAs and our clients.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="stats-section">
+    <div class="stats-container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Virtual Assistants</p>
+        </div>
+        <div class="stat-item">
+          <h3>1000+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Industries Served</p>
+        </div>
+        <div class="stat-item">
+          <h3>99%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="about-section">
+    <h2>Meet Our Leadership Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="team-member-image">👔</div>
+        <div class="team-member-content">
+          <div class="team-member-name">John Smith</div>
+          <div class="team-member-role">Founder & CEO</div>
+          <div class="team-member-bio">With 15+ years of business experience, John founded Ocean VA to revolutionize how companies access talent.</div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-member-image">💼</div>
+        <div class="team-member-content">
+          <div class="team-member-name">Maria Garcia</div>
+          <div class="team-member-role">VP of Operations</div>
+          <div class="team-member-bio">Maria ensures our VAs receive the best training and support to deliver exceptional results for our clients.</div>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-member-image">🎯</div>
+        <div class="team-member-content">
+          <div class="team-member-name">David Chen</div>
+          <div class="team-member-role">Head of Client Success</div>
+          <div class="team-member-bio">David leads our client success team, ensuring every client finds the perfect VA match for their needs.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="about-section">
+    <div class="about-cta">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Join hundreds of businesses that have already discovered the power of working with Ocean VA. Let us help you find the perfect virtual assistant for your needs.</p>
+      <button class="about-cta-btn" onclick="window.location.href='/contact-us'">Get Started Today</button>
+    </div>
+  </div>
+</div>

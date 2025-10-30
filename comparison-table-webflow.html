@@ -1,0 +1,279 @@
+<!-- Comparison Table for Webflow - Mobile Optimized -->
+<div class="comparison-table-wrapper">
+  <style>
+    .comparison-table-wrapper {
+      width: 100%;
+      padding: 20px;
+      background: white;
+    }
+
+    .comparison-table-mobile {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Desktop Table */
+    @media (min-width: 768px) {
+      .comparison-table-mobile thead {
+        background: linear-gradient(to right, #049d98, #037b77);
+        color: white;
+      }
+
+      .comparison-table-mobile thead th {
+        padding: 16px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .comparison-table-mobile thead th:nth-child(2) {
+        background-color: #05bfb9;
+      }
+
+      .comparison-table-mobile tbody tr {
+        border-bottom: 1px solid #e5e7eb;
+        transition: background-color 0.2s ease;
+      }
+
+      .comparison-table-mobile tbody tr:hover {
+        background-color: #f9fafb;
+      }
+
+      .comparison-table-mobile tbody td {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .comparison-table-mobile tbody td:nth-child(1) {
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .comparison-table-mobile tbody td:nth-child(2) {
+        background-color: #e6fffe;
+        color: #1f2937;
+        font-weight: 500;
+      }
+
+      .comparison-table-mobile tbody td:nth-child(3) {
+        color: #4b5563;
+      }
+    }
+
+    /* Mobile Stack View */
+    @media (max-width: 767px) {
+      .comparison-table-mobile {
+        display: none;
+      }
+    }
+
+    /* Mobile Card View */
+    @media (max-width: 767px) {
+      .comparison-table-wrapper {
+        padding: 0;
+      }
+
+      .mobile-cards {
+        display: block;
+        width: 100%;
+      }
+
+      .mobile-card {
+        margin-bottom: 16px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .mobile-card-feature {
+        background-color: #f9fafb;
+        padding: 14px 16px;
+        font-weight: 700;
+        color: #111827;
+        font-size: 14px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .mobile-card-row {
+        display: flex;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .mobile-card-row:last-child {
+        border-bottom: none;
+      }
+
+      .mobile-card-label {
+        flex: 0 0 35%;
+        background-color: #f3f4f6;
+        padding: 12px 12px;
+        font-weight: 600;
+        color: #049d98;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+      }
+
+      .mobile-card-value {
+        flex: 1;
+        padding: 12px 12px;
+        font-size: 13px;
+        color: #1f2937;
+        display: flex;
+        align-items: center;
+      }
+
+      .mobile-card-row:nth-child(1) .mobile-card-value {
+        background-color: #e6fffe;
+        font-weight: 500;
+      }
+    }
+
+    /* Checkmark styling */
+    .checkmark {
+      color: #049d98;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Desktop Table -->
+  <table class="comparison-table-mobile">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Ocean VA</th>
+        <th>Typical VA Companies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Talent Selection</td>
+        <td><span class="checkmark">✓</span> Top 1% only</td>
+        <td>Varies (3-10%)</td>
+      </tr>
+      <tr>
+        <td>Start Time</td>
+        <td><span class="checkmark">✓</span> 2-3 days</td>
+        <td>1-2 weeks</td>
+      </tr>
+      <tr>
+        <td>Pricing</td>
+        <td><span class="checkmark">✓</span> Starting at: $1,300 (transparent)</td>
+        <td>Hidden/Variable</td>
+      </tr>
+      <tr>
+        <td>Setup Fees</td>
+        <td><span class="checkmark">✓</span> $0</td>
+        <td>$500-2,000</td>
+      </tr>
+      <tr>
+        <td>Language Support</td>
+        <td><span class="checkmark">✓</span> 10+ Languages</td>
+        <td>Limited</td>
+      </tr>
+      <tr>
+        <td>Education</td>
+        <td><span class="checkmark">✓</span> Trained and specialized professionals</td>
+        <td>Not required</td>
+      </tr>
+      <tr>
+        <td>HIPAA Compliance</td>
+        <td><span class="checkmark">✓</span> Fully compliant</td>
+        <td>Only a few</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Mobile Cards -->
+  <div class="mobile-cards">
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Talent Selection</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> Top 1% only</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">Varies (3-10%)</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Start Time</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> 2-3 days</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">1-2 weeks</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Pricing</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> Starting at: $1,300 (transparent)</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">Hidden/Variable</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Setup Fees</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> $0</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">$500-2,000</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Language Support</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> 10+ Languages</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">Limited</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">Education</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> Trained and specialized professionals</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">Not required</div>
+      </div>
+    </div>
+
+    <div class="mobile-card">
+      <div class="mobile-card-feature">HIPAA Compliance</div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Ocean VA</div>
+        <div class="mobile-card-value"><span class="checkmark">✓</span> Fully compliant</div>
+      </div>
+      <div class="mobile-card-row">
+        <div class="mobile-card-label">Typical VA</div>
+        <div class="mobile-card-value">Only a few</div>
+      </div>
+    </div>
+  </div>
+</div>
