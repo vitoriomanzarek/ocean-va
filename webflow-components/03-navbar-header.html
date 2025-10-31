@@ -7,11 +7,17 @@
       box-sizing: border-box;
     }
 
+    body {
+      padding-top: 80px;
+    }
+
     .navbar-wrapper {
       background-color: white;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       z-index: 50;
       width: 100%;
     }
@@ -227,12 +233,12 @@
 
     .mobile-nav-item {
       display: block;
-      padding: 12px 0;
+      padding: 16px 0;
       color: #374151;
       text-decoration: none;
       font-weight: 500;
-      font-size: 14px;
-      border-bottom: 1px solid #f3f4f6;
+      font-size: 15px;
+      border-bottom: none;
       transition: color 0.2s ease;
     }
 
@@ -256,13 +262,76 @@
     .mobile-cta:hover {
       background-color: #037b77;
     }
+
+    /* Mobile Dropdown */
+    .mobile-dropdown {
+      border-bottom: none;
+    }
+
+    .mobile-dropdown-trigger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .mobile-dropdown-trigger:hover {
+      color: #049d98;
+    }
+
+    .mobile-dropdown-arrow {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.3s ease;
+      color: #6b7280;
+    }
+
+    .mobile-dropdown-trigger:hover .mobile-dropdown-arrow {
+      color: #049d98;
+    }
+
+    .mobile-dropdown.active .mobile-dropdown-arrow {
+      transform: rotate(-180deg);
+    }
+
+    .mobile-dropdown-menu {
+      display: none;
+      padding-left: 0;
+      background-color: white;
+    }
+
+    .mobile-dropdown.active .mobile-dropdown-menu {
+      display: block;
+    }
+
+    .mobile-dropdown-item {
+      display: block;
+      padding: 12px 0;
+      padding-left: 16px;
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      border-bottom: none;
+      transition: color 0.2s ease;
+    }
+
+    .mobile-dropdown-item:hover {
+      color: #049d98;
+    }
   </style>
 
   <div class="navbar-container">
     <!-- Logo -->
     <div class="navbar-logo">
       <a href="/">
-        <img src="/images/oceanVALogo.png" alt="Ocean VA" />
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png" alt="Ocean VA" />
       </a>
     </div>
 
@@ -275,14 +344,14 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
         <div class="dropdown-menu">
-          <a href="/services/insurance-customer-service-representative" class="dropdown-item">Insurance Customer Service Representative</a>
-          <a href="/services/virtual-administrative-assistant" class="dropdown-item">Administrative Assistant</a>
-          <a href="/services/customer-service-virtual-assistant" class="dropdown-item">Customer Service Representative</a>
-          <a href="/services/marketing-virtual-assistant" class="dropdown-item">Marketing Assistant</a>
-          <a href="/services/virtual-receptionist" class="dropdown-item">Virtual Receptionist</a>
-          <a href="/services/virtual-transaction-coordinator" class="dropdown-item">Transaction Coordinator</a>
-          <a href="/services/sdr-virtual-assistant" class="dropdown-item">Sales, Development & Inside Sales</a>
-          <a href="/services/virtual-assistant-services" class="dropdown-item">General Virtual Assistant</a>
+          <a href="https://www.oceanvirtualassistant.com/services/insurance-customer-service-representative" class="dropdown-item">Insurance Customer Service Representative</a>
+          <a href="https://www.oceanvirtualassistant.com/services/administrative-assistant" class="dropdown-item">Administrative Assistant</a>
+          <a href="https://www.oceanvirtualassistant.com/services/customer-service-representative" class="dropdown-item">Customer Service Representative</a>
+          <a href="https://www.oceanvirtualassistant.com/services/marketing-assistant" class="dropdown-item">Marketing Assistant</a>
+          <a href="https://www.oceanvirtualassistant.com/services/virtual-receptionist" class="dropdown-item">Virtual Receptionist</a>
+          <a href="https://www.oceanvirtualassistant.com/services/transaction-coordinator" class="dropdown-item">Transaction Coordinator</a>
+          <a href="https://www.oceanvirtualassistant.com/services/sales-development-inside-sales" class="dropdown-item">Sales, Development & Inside Sales</a>
+          <a href="https://www.oceanvirtualassistant.com/services/general-virtual-assistant" class="dropdown-item">General Virtual Assistant</a>
         </div>
       </div>
 
@@ -293,21 +362,21 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
         <div class="dropdown-menu">
-          <a href="/insurance" class="dropdown-item">Insurance</a>
-          <a href="/industries/real-estate-virtual-assistant" class="dropdown-item">Real Estate</a>
-          <a href="/industries/small-business-virtual-assistant" class="dropdown-item">Small Business</a>
-          <a href="/industries/ecommerce-virtual-assistant" class="dropdown-item">E-Commerce</a>
-          <a href="/industries/finance-virtual-assistant" class="dropdown-item">Finance</a>
-          <a href="/industries/property-management-virtual-assistant" class="dropdown-item">Property Management</a>
-          <a href="/industries/medical-virtual-assistant" class="dropdown-item">Healthcare</a>
-          <a href="/industries/hr-virtual-assistant" class="dropdown-item">HR</a>
-          <a href="/industries/tech-virtual-assistant" class="dropdown-item">Technology</a>
-          <a href="/industries/mortgage-virtual-assistant" class="dropdown-item">Mortgage and Lending</a>
+          <a href="https://www.oceanvirtualassistant.com/insurance" class="dropdown-item">Insurance</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/real-estate-virtual-assistant" class="dropdown-item">Real Estate</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/small-business" class="dropdown-item">Small Business</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/e-commerce" class="dropdown-item">E-Commerce</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/finance" class="dropdown-item">Finance</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/property-management" class="dropdown-item">Property Management</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/healthcare" class="dropdown-item">Healthcare</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/hr" class="dropdown-item">HR</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/technology" class="dropdown-item">Technology</a>
+          <a href="https://www.oceanvirtualassistant.com/industries/mortgage-and-lending" class="dropdown-item">Mortgage and Lending</a>
         </div>
       </div>
 
       <!-- Pricing -->
-      <a href="/pricing" class="nav-item">Pricing</a>
+      <a href="https://www.oceanvirtualassistant.com/pricing" class="nav-item">Pricing</a>
 
       <!-- Our VAs -->
       <div class="nav-item dropdown-trigger">
@@ -316,25 +385,25 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
         <div class="dropdown-menu">
-          <a href="/our-vas" class="dropdown-item">Insurance Virtual Assistant</a>
-          <a href="/licensed-insurance-agents" class="dropdown-item">Licensed Insurance Agents</a>
-          <a href="/executive-admin-vas" class="dropdown-item">Executive / Admin VA</a>
+          <a href="https://www.oceanvirtualassistant.com/ovas-current-vas" class="dropdown-item">Current VAs</a>
+          <a href="https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents" class="dropdown-item">Licensed Insurance Agents</a>
+          <a href="https://www.oceanvirtualassistant.com/ovas-executive-admin-virtual-assistant" class="dropdown-item">Executive / Admin VA</a>
         </div>
       </div>
 
       <!-- Blogs -->
-      <a href="/blogs" class="nav-item">Blogs</a>
+      <a href="https://www.oceanvirtualassistant.com/blogs" class="nav-item">Blogs</a>
 
       <!-- Careers -->
-      <a href="/careers" class="nav-item">Careers</a>
+      <a href="https://www.oceanvirtualassistant.com/careers" class="nav-item">Careers</a>
 
       <!-- About Us -->
-      <a href="/about-us" class="nav-item">About Us</a>
+      <a href="https://www.oceanvirtualassistant.com/about-us" class="nav-item">About Us</a>
     </div>
 
     <!-- CTA Button -->
     <div class="navbar-cta">
-      <a href="/contact-us" class="cta-button">Contact Us</a>
+      <a href="https://www.oceanvirtualassistant.com/contact-us" class="cta-button">Contact Us</a>
     </div>
 
     <!-- Mobile Menu Toggle -->
@@ -349,15 +418,76 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/services/insurance-customer-service-representative" class="mobile-nav-item">Insurance Customer Service</a>
-    <a href="/services/virtual-administrative-assistant" class="mobile-nav-item">Administrative Assistant</a>
-    <a href="/services/customer-service-virtual-assistant" class="mobile-nav-item">Customer Service</a>
-    <a href="/services/marketing-virtual-assistant" class="mobile-nav-item">Marketing Assistant</a>
-    <a href="/services/virtual-receptionist" class="mobile-nav-item">Virtual Receptionist</a>
+    <!-- Services Dropdown -->
+    <div class="mobile-dropdown">
+      <div class="mobile-dropdown-trigger" onclick="toggleMobileDropdown(this)">
+        <span>Services</span>
+        <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <div class="mobile-dropdown-menu">
+        <a href="/services/insurance-customer-service-representative" class="mobile-dropdown-item">Insurance Customer Service</a>
+        <a href="/services/virtual-administrative-assistant" class="mobile-dropdown-item">Administrative Assistant</a>
+        <a href="/services/customer-service-virtual-assistant" class="mobile-dropdown-item">Customer Service</a>
+        <a href="/services/marketing-virtual-assistant" class="mobile-dropdown-item">Marketing Assistant</a>
+        <a href="/services/virtual-receptionist" class="mobile-dropdown-item">Virtual Receptionist</a>
+        <a href="/services/virtual-transaction-coordinator" class="mobile-dropdown-item">Transaction Coordinator</a>
+        <a href="/services/sdr-virtual-assistant" class="mobile-dropdown-item">Sales & Inside Sales</a>
+        <a href="/services/virtual-assistant-services" class="mobile-dropdown-item">General VA</a>
+      </div>
+    </div>
+
+    <!-- Industries Dropdown -->
+    <div class="mobile-dropdown">
+      <div class="mobile-dropdown-trigger" onclick="toggleMobileDropdown(this)">
+        <span>Industries</span>
+        <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <div class="mobile-dropdown-menu">
+        <a href="/insurance" class="mobile-dropdown-item">Insurance</a>
+        <a href="/industries/real-estate-virtual-assistant" class="mobile-dropdown-item">Real Estate</a>
+        <a href="/industries/small-business-virtual-assistant" class="mobile-dropdown-item">Small Business</a>
+        <a href="/industries/ecommerce-virtual-assistant" class="mobile-dropdown-item">E-Commerce</a>
+        <a href="/industries/finance-virtual-assistant" class="mobile-dropdown-item">Finance</a>
+        <a href="/industries/property-management-virtual-assistant" class="mobile-dropdown-item">Property Management</a>
+        <a href="/industries/medical-virtual-assistant" class="mobile-dropdown-item">Healthcare</a>
+        <a href="/industries/hr-virtual-assistant" class="mobile-dropdown-item">HR</a>
+        <a href="/industries/tech-virtual-assistant" class="mobile-dropdown-item">Technology</a>
+        <a href="/industries/mortgage-virtual-assistant" class="mobile-dropdown-item">Mortgage & Lending</a>
+      </div>
+    </div>
+
+    <!-- Pricing -->
     <a href="/pricing" class="mobile-nav-item">Pricing</a>
+
+    <!-- Our VAs Dropdown -->
+    <div class="mobile-dropdown">
+      <div class="mobile-dropdown-trigger" onclick="toggleMobileDropdown(this)">
+        <span>Our VAs</span>
+        <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <div class="mobile-dropdown-menu">
+        <a href="/our-vas" class="mobile-dropdown-item">Insurance Virtual Assistant</a>
+        <a href="/licensed-insurance-agents" class="mobile-dropdown-item">Licensed Insurance Agents</a>
+        <a href="/executive-admin-vas" class="mobile-dropdown-item">Executive / Admin VA</a>
+      </div>
+    </div>
+
+    <!-- Blogs -->
     <a href="/blogs" class="mobile-nav-item">Blogs</a>
+
+    <!-- Careers -->
     <a href="/careers" class="mobile-nav-item">Careers</a>
+
+    <!-- About Us -->
     <a href="/about-us" class="mobile-nav-item">About Us</a>
+
+    <!-- Contact Us CTA -->
     <a href="/contact-us" class="mobile-cta">Contact Us</a>
   </div>
 </nav>
@@ -368,12 +498,21 @@
     mobileMenu.classList.toggle('active');
   }
 
+  function toggleMobileDropdown(element) {
+    const dropdown = element.parentElement;
+    dropdown.classList.toggle('active');
+  }
+
   // Close mobile menu when clicking outside
   document.addEventListener('click', function(event) {
     const navbar = document.querySelector('.navbar-wrapper');
     if (!navbar.contains(event.target)) {
       const mobileMenu = document.getElementById('mobileMenu');
       mobileMenu.classList.remove('active');
+      // Close all dropdowns
+      document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+        dropdown.classList.remove('active');
+      });
     }
   });
 </script>

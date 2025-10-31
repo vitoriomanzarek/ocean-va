@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactHero from './components/ContactHero'
 import BookingDemo from './components/BookingDemo'
 import GoogleReviews from './components/GoogleReviews'
 import Timeline from './components/Timeline'
@@ -6,6 +7,9 @@ import Timeline from './components/Timeline'
 export default function ContactUs() {
   return (
     <>
+      {/* Contact Hero Section */}
+      <ContactHero />
+
       {/* Booking Demo Section */}
       <BookingDemo />
 

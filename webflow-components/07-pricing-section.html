@@ -79,14 +79,16 @@
     }
 
     .pricing-label {
-      font-size: 12px;
+      font-size: 14px;
       color: #4b5563;
-      margin-bottom: 4px;
+      margin-bottom: 24px;
+      display: block;
+      font-weight: 500;
     }
 
     .pricing-price {
-      font-size: 48px;
-      font-weight: 700;
+      font-size: 56px;
+      font-weight: 800;
       color: #037b77;
       display: inline;
     }
@@ -95,12 +97,13 @@
       color: #4b5563;
       margin-left: 8px;
       font-size: 16px;
+      font-weight: 500;
     }
 
     .pricing-hours {
       font-size: 16px;
       color: #4b5563;
-      font-weight: 500;
+      font-weight: 600;
       margin-top: 8px;
     }
 
@@ -115,22 +118,23 @@
       display: flex;
       align-items: center;
       padding: 12px 0;
-      font-size: 14px;
+      font-size: 16px;
       color: #374151;
+      font-weight: 500;
     }
 
     .pricing-feature-icon {
       width: 20px;
       height: 20px;
-      background-color: #10b981;
+      background-color: transparent;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: #049d98;
       margin-right: 12px;
       flex-shrink: 0;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: bold;
     }
 
@@ -142,13 +146,13 @@
       background-color: #049d98;
       color: white;
       font-weight: 700;
-      padding: 16px 24px;
+      padding: 18px 24px;
       border-radius: 8px;
       text-decoration: none;
       transition: all 0.2s ease;
       border: none;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 18px;
       margin-bottom: 24px;
     }
 
@@ -219,6 +223,7 @@
       color: #037b77;
       margin-top: 16px;
       margin-bottom: 16px;
+      line-height: 1.6;
     }
 
     .roi-link {
@@ -236,6 +241,20 @@
     @media (max-width: 768px) {
       .roi-box {
         padding: 24px;
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 0;
+        max-width: 100vw;
+      }
+
+      .roi-header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .roi-icon {
+        order: -1;
+        margin-bottom: 8px;
       }
 
       .pricing-card {

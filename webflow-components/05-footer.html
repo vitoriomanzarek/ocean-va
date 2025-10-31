@@ -1,95 +1,117 @@
 <!-- Footer for Webflow -->
 <footer class="footer-section">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     .footer-section {
-      background: linear-gradient(180deg, #f9fafb 0%, white 100%);
-      padding: 48px 16px;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+      background-color: #f3f4f6;
+      color: #111827;
+      padding: 60px 20px 40px;
     }
 
     .footer-container {
-      max-width: 80rem;
+      max-width: 1280px;
       margin: 0 auto;
     }
 
-    /* Logo Section */
+    /* Header Section */
     .footer-header {
-      margin-bottom: 40px;
-      padding-bottom: 32px;
-      border-bottom: 2px solid #e6fffe;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+      align-items: flex-start;
     }
 
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
+    @media (max-width: 768px) {
+      .footer-header {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 40px;
+      }
     }
 
     .footer-logo img {
-      height: 56px;
+      height: 48px;
       width: auto;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
 
     .footer-description {
-      font-size: 14px;
-      max-width: 500px;
-      color: #374151;
-      line-height: 1.6;
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.7;
     }
 
     /* Footer Grid */
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 32px;
-      margin-bottom: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 60px;
     }
 
     .footer-column {
       background-color: white;
       padding: 24px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      border: 1px solid #f3f4f6;
-      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .footer-column:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
     }
 
     .footer-column-title {
-      color: #037b77;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 800;
+      color: #049d98;
       margin-bottom: 16px;
-      font-size: 16px;
-      border-bottom: 2px solid #e6fffe;
-      padding-bottom: 8px;
+      padding-bottom: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #e5e7eb;
     }
 
     .footer-column ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .footer-column li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .footer-link {
-      color: #374151;
+      font-size: 15px;
+      color: #6b7280;
       text-decoration: none;
-      font-size: 14px;
+      transition: all 0.3s ease;
+      position: relative;
       display: inline-block;
-      transition: all 0.2s ease;
     }
 
     .footer-link:hover {
@@ -100,63 +122,61 @@
     /* Social Links */
     .social-links {
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 16px;
     }
 
     .social-icon {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(135deg, #05bfb9 0%, #037b77 100%);
-      color: white;
-      border-radius: 8px;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #049d98;
+      border-radius: 8px;
+      color: white;
       text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      font-size: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.2s ease;
     }
 
     .social-icon:hover {
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-      transform: scale(1.1);
+      background-color: #037b77;
+      color: white;
     }
 
     /* Contact Bar */
     .footer-contact {
-      background-color: #e6fffe;
-      border-radius: 8px;
+      background-color: #ccfffe;
       padding: 24px;
-      border: 1px solid #ccfffe;
-      margin-bottom: 32px;
+      border-radius: 8px;
+      margin-bottom: 24px;
     }
 
     .footer-contact-content {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       .footer-contact-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        gap: 12px;
       }
     }
 
     .footer-contact-item {
       font-size: 14px;
-      color: #374151;
-      font-weight: 500;
+      color: #111827;
+      display: flex;
+      align-items: center;
     }
 
     .footer-contact-email {
       color: #049d98;
       text-decoration: none;
+      transition: color 0.2s ease;
       font-weight: 600;
     }
 
@@ -167,18 +187,17 @@
     /* Copyright */
     .footer-copyright {
       text-align: center;
-      font-size: 14px;
-      color: #6b7280;
-      padding-top: 32px;
+      font-size: 12px;
+      color: #9ca3af;
+      padding-top: 24px;
       border-top: 1px solid #e5e7eb;
     }
   </style>
-
   <div class="footer-container">
     <!-- Logo Section -->
     <div class="footer-header">
       <div class="footer-logo">
-        <img src="/images/oceanVALogo.png" alt="Ocean VA" />
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png" alt="Ocean VA" />
       </div>
       <p class="footer-description">
         Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services. From office management to specialized industry support, our bilingual assistants are here to streamline your operations. Contact us today to unlock new opportunities and elevate your business to new heights.
