@@ -1,0 +1,196 @@
+<!-- Real Estate VA - Why Ocean VA Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-why-ocean-section">
+  <div class="re-why-ocean-container">
+    <!-- Section Header -->
+    <div class="re-why-ocean-header">
+      <h2 class="re-why-ocean-title">Why Ocean VA</h2>
+      <p class="re-why-ocean-subtitle">Real estate expertise that keeps deals moving and clients delighted.</p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="re-why-ocean-grid">
+      <!-- Left Column - Benefits -->
+      <div class="re-why-ocean-benefits">
+        <!-- Dedicated Teammate -->
+        <div class="re-why-ocean-card">
+          <div class="re-why-ocean-card-icon">👥</div>
+          <h3 class="re-why-ocean-card-title">Dedicated Teammate</h3>
+          <p class="re-why-ocean-card-description">Aligned to your preferences and tools, working as an extension of your team</p>
+        </div>
+
+        <!-- Bilingual Support -->
+        <div class="re-why-ocean-card">
+          <div class="re-why-ocean-card-icon">🌐</div>
+          <h3 class="re-why-ocean-card-title">Bilingual English-Spanish</h3>
+          <p class="re-why-ocean-card-description">English-Spanish support for customer and vendor communications</p>
+        </div>
+
+        <!-- Flat Monthly Pricing -->
+        <div class="re-why-ocean-card">
+          <div class="re-why-ocean-card-icon">💰</div>
+          <h3 class="re-why-ocean-card-title">Flat Monthly Pricing</h3>
+          <p class="re-why-ocean-card-description">Starting at $1,300/mo - no surprises, no lock-ins</p>
+        </div>
+
+        <!-- American-Owned Operations -->
+        <div class="re-why-ocean-card">
+          <div class="re-why-ocean-card-icon">🛡️</div>
+          <h3 class="re-why-ocean-card-title">American-Owned Operations</h3>
+          <p class="re-why-ocean-card-description">Security, continuity support, and reliable service you can trust</p>
+        </div>
+      </div>
+
+      <!-- Right Column - Image -->
+      <div class="re-why-ocean-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/WhyUs.jpg" alt="Why Ocean VA" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-why-ocean-section {
+    background: #f9fafb;
+    padding: 80px 20px;
+  }
+
+  .re-why-ocean-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .re-why-ocean-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .re-why-ocean-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .re-why-ocean-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .re-why-ocean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .re-why-ocean-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .re-why-ocean-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .re-why-ocean-card:hover {
+    box-shadow: 0 8px 16px rgba(4, 157, 152, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .re-why-ocean-card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+
+  .re-why-ocean-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+  }
+
+  .re-why-ocean-card-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .re-why-ocean-image {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .re-why-ocean-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .re-why-ocean-section {
+      padding: 48px 20px;
+    }
+
+    .re-why-ocean-header {
+      margin-bottom: 48px;
+    }
+
+    .re-why-ocean-title {
+      font-size: 28px;
+    }
+
+    .re-why-ocean-subtitle {
+      font-size: 16px;
+    }
+
+    .re-why-ocean-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .re-why-ocean-benefits {
+      gap: 16px;
+    }
+
+    .re-why-ocean-card {
+      padding: 20px;
+    }
+
+    .re-why-ocean-card-icon {
+      font-size: 24px;
+    }
+
+    .re-why-ocean-card-title {
+      font-size: 16px;
+    }
+
+    .re-why-ocean-card-description {
+      font-size: 13px;
+    }
+
+    .re-why-ocean-image {
+      aspect-ratio: auto;
+      min-height: 300px;
+    }
+  }
+</style>
