@@ -1,0 +1,264 @@
+<!-- Real Estate VA - FAQs Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-faqs-section">
+  <div class="re-faqs-container">
+    <!-- Section Header -->
+    <div class="re-faqs-header">
+      <h2 class="re-faqs-title">Frequently Asked Questions</h2>
+    </div>
+
+    <!-- FAQs Accordion -->
+    <div class="re-faqs-list">
+      <!-- FAQ 1 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">What does a REVA handle day-to-day?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Lead intake and speed-to-lead, listings/MLS updates, showing coordination, feedback, offer packets, transaction coordination, and client updates.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Do you call new internet leads fast?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. &lt;5-minute speed-to-lead during coverage, with call/SMS/email touches logged in your CRM.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Which real estate CRMs do you support?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>kvCORE, Follow Up Boss, BoomTown, Chime, Sierra, LionDesk, RealtyJuggernaut (and others).</p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Can you manage listings in the MLS?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. data entry, photos, remarks, private remarks, status changes—per broker permissions.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Do you schedule and confirm showings?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. ShowingTime (or your tool), agent notifications, and feedback surveys after showings.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Do you prepare offer or listing packets?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. Dotloop, DocuSign, Skyslope templates, disclosures, initials, and routing for signatures.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Will you track dates and deadlines?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. earnest money, inspections, appraisal, loan milestones, HOA docs, CD/ALTA—no missed deadlines.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">What's the pricing?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Starting at $1,300/mo (40h/week), month-to-month, no setup fees.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">Do you replace if it's not a fit?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Yes. no-cost replacement and retraining aligned to your playbook.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 10 -->
+      <div class="re-faq-item">
+        <button class="re-faq-button" onclick="toggleFaq(this)">
+          <span class="re-faq-question">How do we start?</span>
+          <span class="re-faq-chevron">▼</span>
+        </button>
+        <div class="re-faq-answer">
+          <p>Discovery call → playbooks/templates → connect tools → launch in 2–3 days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-faqs-section {
+    background: #f9fafb;
+    padding: 80px 20px;
+  }
+
+  .re-faqs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .re-faqs-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .re-faqs-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .re-faqs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .re-faq-item {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .re-faq-item:hover {
+    border-color: #b3e5db;
+  }
+
+  .re-faq-button {
+    width: 100%;
+    padding: 20px 24px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .re-faq-button:hover {
+    background: #f9fafb;
+  }
+
+  .re-faq-question {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .re-faq-chevron {
+    font-size: 12px;
+    color: #049d98;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .re-faq-item.active .re-faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .re-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .re-faq-item.active .re-faq-answer {
+    max-height: 500px;
+  }
+
+  .re-faq-answer p {
+    padding: 0 24px 20px 24px;
+    margin: 0;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .re-faqs-section {
+      padding: 48px 20px;
+    }
+
+    .re-faqs-header {
+      margin-bottom: 48px;
+    }
+
+    .re-faqs-title {
+      font-size: 28px;
+    }
+
+    .re-faqs-list {
+      gap: 8px;
+    }
+
+    .re-faq-button {
+      padding: 16px 20px;
+    }
+
+    .re-faq-question {
+      font-size: 14px;
+    }
+
+    .re-faq-answer p {
+      padding: 0 20px 16px 20px;
+      font-size: 13px;
+    }
+  }
+</style>
+
+<!-- JavaScript for accordion functionality -->
+<script>
+  function toggleFaq(button) {
+    const faqItem = button.parentElement;
+    faqItem.classList.toggle('active');
+  }
+</script>
