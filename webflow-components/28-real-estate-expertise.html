@@ -1,0 +1,183 @@
+<!-- Real Estate VA - Real Estate Expertise Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-expertise-section">
+  <div class="re-expertise-container">
+    <!-- Section Header -->
+    <div class="re-expertise-header">
+      <h2 class="re-expertise-title">Real Estate Expertise</h2>
+      <p class="re-expertise-subtitle">We know real estate workflows, tools, and compliance inside and out.</p>
+    </div>
+
+    <!-- Expertise Grid -->
+    <div class="re-expertise-grid">
+      <!-- Lead Management -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">🏠</div>
+        <h3 class="re-expertise-card-title">Lead Management</h3>
+        <p class="re-expertise-card-description">Speed-to-lead, qualification, CRM logging, and drip campaigns</p>
+      </div>
+
+      <!-- Transaction Docs -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">📋</div>
+        <h3 class="re-expertise-card-title">Transaction Docs</h3>
+        <p class="re-expertise-card-description">E-sign coordination, offer packets, compliance checklists</p>
+      </div>
+
+      <!-- Showing Coordination -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">📅</div>
+        <h3 class="re-expertise-card-title">Showing Coordination</h3>
+        <p class="re-expertise-card-description">Schedule showings, collect feedback, weekly seller reports</p>
+      </div>
+
+      <!-- Stakeholder Comms -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">👥</div>
+        <h3 class="re-expertise-card-title">Stakeholder Comms</h3>
+        <p class="re-expertise-card-description">Coordinate with lenders, title, escrow, HOA, and tenants</p>
+      </div>
+
+      <!-- Bilingual Support -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">💬</div>
+        <h3 class="re-expertise-card-title">Bilingual Support</h3>
+        <p class="re-expertise-card-description">English & Spanish for calls, emails, SMS, and chat</p>
+      </div>
+
+      <!-- Pipeline & Reporting -->
+      <div class="re-expertise-card">
+        <div class="re-expertise-icon">📊</div>
+        <h3 class="re-expertise-card-title">Pipeline & Reporting</h3>
+        <p class="re-expertise-card-description">Weekly summaries, KPI tracking, and performance dashboards</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-expertise-section {
+    background: white;
+    padding: 80px 20px;
+  }
+
+  .re-expertise-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .re-expertise-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .re-expertise-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .re-expertise-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .re-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .re-expertise-card {
+    background: #f9fafb;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .re-expertise-card:hover {
+    border-color: #049d98;
+    box-shadow: 0 10px 25px rgba(4, 157, 152, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .re-expertise-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+
+  .re-expertise-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+  }
+
+  .re-expertise-card-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .re-expertise-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .re-expertise-section {
+      padding: 48px 20px;
+    }
+
+    .re-expertise-header {
+      margin-bottom: 48px;
+    }
+
+    .re-expertise-title {
+      font-size: 28px;
+    }
+
+    .re-expertise-subtitle {
+      font-size: 16px;
+    }
+
+    .re-expertise-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .re-expertise-card {
+      padding: 24px;
+    }
+
+    .re-expertise-icon {
+      font-size: 28px;
+    }
+
+    .re-expertise-card-title {
+      font-size: 16px;
+    }
+
+    .re-expertise-card-description {
+      font-size: 13px;
+    }
+  }
+</style>
