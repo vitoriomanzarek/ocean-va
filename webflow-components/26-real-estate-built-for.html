@@ -1,0 +1,138 @@
+<!-- Real Estate VA - Built For Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="built-for-section">
+  <div class="built-for-container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">Built for Agents, Teams & Property Managers</h2>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="features-grid">
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Lead capture, speed-to-lead & nurturing</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Listing coordination & MLS updates</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Showings scheduling & feedback collection</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Offer packets, disclosures & compliance checklists</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Transaction coordination with lenders, title & escrow</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Tenant screening, renewals & maintenance tickets (for PMs)</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span class="feature-text">Bilingual client comms (EN/ES) via phone, SMS, email, chat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .built-for-section {
+    background: white;
+    padding: 64px 20px;
+  }
+
+  .built-for-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item:hover {
+    background: #f3f4f6;
+    border-color: #049d98;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 157, 152, 0.1);
+  }
+
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background: #e6fffe;
+    color: #037b77;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .feature-text {
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .built-for-section {
+      padding: 48px 20px;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .feature-item {
+      padding: 12px;
+    }
+
+    .feature-text {
+      font-size: 14px;
+    }
+  }
+</style>
