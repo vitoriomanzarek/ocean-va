@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/services/marketing-assistant",
+  "description": "Hire a marketing virtual assistant to handle content creation, social media management, email campaigns, and marketing coordination. Bilingual support and cost-effective solutions for small businesses.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "areaServed": "US",
+  "priceRange": "$1,300 - $3,000+",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "description": "Starting at $1,300/mo (40h/week). No setup fees. Month-to-month."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Marketing Assistant Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Social Media Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Content Creation & Scheduling"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Email Campaign Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Blog & Website Updates"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "CRM Management"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150"
+  }
+}

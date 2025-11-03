@@ -1,0 +1,144 @@
+<!-- Customer Service Virtual Assistant - What We Do Section for Webflow -->
+<section class="customer-service-what-we-do">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .customer-service-what-we-do {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .customer-service-what-we-do-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .customer-service-what-we-do-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .customer-service-what-we-do-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .customer-service-what-we-do-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .customer-service-what-we-do-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .customer-service-what-we-do-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .customer-service-what-we-do-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .customer-service-what-we-do-header h2 {
+        font-size: 28px;
+      }
+
+      .customer-service-what-we-do-header p {
+        font-size: 16px;
+      }
+    }
+
+    .service-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: #ccfffe;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="customer-service-what-we-do-container">
+    <!-- Header -->
+    <div class="customer-service-what-we-do-header">
+      <h2>What We Do</h2>
+      <p>Your customer service VA provides responsive, professional support across all channels.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="customer-service-what-we-do-grid">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <span class="service-icon">☎️</span>
+        <h3>Phone Coverage</h3>
+        <p>Phone coverage, call notes, and ticket creation</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <span class="service-icon">💬</span>
+        <h3>Live Chat & Email</h3>
+        <p>Live chat and email responses with SLA targets</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <span class="service-icon">📦</span>
+        <h3>Order & Billing Support</h3>
+        <p>Order status, billing questions, appointment booking</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <span class="service-icon">⚠️</span>
+        <h3>Escalations</h3>
+        <p>Escalations and handoffs per your playbooks</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <span class="service-icon">📊</span>
+        <h3>QA & Reporting</h3>
+        <p>QA checks, CSAT/NPS follow‑ups, and reporting</p>
+      </div>
+    </div>
+  </div>
+</section>

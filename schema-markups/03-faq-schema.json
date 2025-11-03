@@ -1,0 +1,70 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Virtual Assistant do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Virtual Assistants handle administrative tasks, customer service, marketing, sales support, operations, data entry, vendor coordination, and light bookkeeping. They can manage multiple areas of your business including inbox, calendar, customer service, marketing, sales support, and operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Ocean VA cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ocean VA uses a simple flat monthly rate starting at $1,300/mo (40h/week) with no setup fees, no lock-in contracts, and free replacements if not a good fit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to sign a long-term contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Everything is month-to-month. No lock-in or long-term contracts. You can cancel anytime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your Virtual Assistants bilingual?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many of our assistants are bilingual (English and Spanish). All VAs are fluent in professional English."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discovery call → shortlist candidates → interviews → onboarding → go live in 2–3 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I have a dedicated Virtual Assistant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it secure to share sensitive information with a Virtual Assistant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the Virtual Assistant isn't a fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We replace and retrain at no cost. Your satisfaction is our priority."
+      }
+    }
+  ]
+}

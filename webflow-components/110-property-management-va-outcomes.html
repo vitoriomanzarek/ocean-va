@@ -1,0 +1,130 @@
+<!-- Property Management VA - Outcomes Section for Webflow -->
+<section class="property-management-va-outcomes">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .property-management-va-outcomes {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .property-management-va-outcomes-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .property-management-va-outcomes-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .property-management-va-outcomes-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .property-management-va-outcomes-header p {
+      font-size: 18px;
+      color: #ccfffe;
+    }
+
+    .property-management-va-outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .property-management-va-outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .property-management-va-outcomes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .property-management-va-outcomes-header h2 {
+        font-size: 28px;
+      }
+
+      .property-management-va-outcomes-header p {
+        font-size: 16px;
+      }
+    }
+
+    .outcome-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 32px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .outcome-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .outcome-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .outcome-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .outcome-card p {
+      font-size: 15px;
+      color: #ccfffe;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="property-management-va-outcomes-container">
+    <!-- Header -->
+    <div class="property-management-va-outcomes-header">
+      <h2>Outcomes You Can Expect</h2>
+      <p>Real results that improve your property operations.</p>
+    </div>
+
+    <!-- Outcomes Grid -->
+    <div class="property-management-va-outcomes-grid">
+      <!-- Outcome 1 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">⚡</span>
+        <h3>Faster Response Times</h3>
+        <p>Faster response times and happier residents</p>
+      </div>
+
+      <!-- Outcome 2 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">📁</span>
+        <h3>Clean Unit Files</h3>
+        <p>Clean unit files and on-time renewals</p>
+      </div>
+
+      <!-- Outcome 3 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">✅</span>
+        <h3>Less Chaos</h3>
+        <p>Less chaos for property managers</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ocean Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com",
+  "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png",
+  "description": "Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services. From office management to specialized industry support, our bilingual assistants are here to streamline your operations.",
+  "sameAs": [
+    "https://www.facebook.com/oceanvirtualassistant",
+    "https://www.linkedin.com/company/ocean-virtual-assistant",
+    "https://www.youtube.com/@oceanvirtualassistant",
+    "https://www.instagram.com/oceanvirtualassistant"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+1-772-247-0269",
+    "email": "info@oceanvirtualassistant.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "789 SW Federal Highway, Suite 201",
+    "addressLocality": "Stuart",
+    "addressRegion": "FL",
+    "postalCode": "34994",
+    "addressCountry": "US"
+  },
+  "areaServed": "US",
+  "priceRange": "$$",
+  "knowsAbout": [
+    "Virtual Assistant Services",
+    "Insurance Virtual Assistant",
+    "Real Estate Virtual Assistant",
+    "Administrative Assistant",
+    "Customer Service Representative",
+    "Marketing Assistant",
+    "Virtual Receptionist",
+    "Transaction Coordinator",
+    "Sales Development",
+    "General Virtual Assistant"
+  ]
+}

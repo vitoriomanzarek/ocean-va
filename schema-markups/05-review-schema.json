@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AggregateRating",
+  "ratingValue": "4.9",
+  "bestRating": "5",
+  "worstRating": "1",
+  "ratingCount": "150",
+  "reviewCount": "150",
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  }
+}

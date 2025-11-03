@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Hire a Virtual Assistant with Ocean VA",
+  "description": "Step-by-step guide to hiring a virtual assistant through Ocean Virtual Assistant",
+  "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Schedule a Discovery Call",
+      "description": "Book a free discovery call with our team to discuss your business needs, goals, and the type of virtual assistant that would be the best fit."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Receive Candidate Shortlist",
+      "description": "We vet the top 1% of applicants and provide you with a curated shortlist of qualified candidates who match your requirements."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Conduct Interviews",
+      "description": "Interview your top candidates and select the virtual assistant who best fits your team and business culture."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Onboarding & Setup",
+      "description": "We handle the onboarding process, including access setup, SOP documentation, and initial training on your systems and workflows."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Go Live & Start Getting Results",
+      "description": "Your dedicated VA is ready to work. Ongoing support and quality assurance ensure continued success."
+    }
+  ],
+  "totalTime": "P3D"
+}

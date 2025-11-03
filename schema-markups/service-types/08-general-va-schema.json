@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "General Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/services/general-virtual-assistant",
+  "description": "Versatile general virtual assistants who handle admin tasks, customer support, marketing, sales support, operations, data entry, vendor coordination, and light bookkeeping.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "areaServed": "US",
+  "priceRange": "$1,300 - $3,000+",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "description": "Starting at $1,300/mo (40h/week). No setup fees. Month-to-month."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "General Virtual Assistant Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Administrative Tasks"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customer Support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Marketing Support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sales Support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Operations Management"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150"
+  }
+}

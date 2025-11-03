@@ -1,0 +1,144 @@
+<!-- Transaction Coordinator - What We Do Section for Webflow -->
+<section class="transaction-coordinator-what-we-do">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .transaction-coordinator-what-we-do {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .transaction-coordinator-what-we-do-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .transaction-coordinator-what-we-do-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .transaction-coordinator-what-we-do-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .transaction-coordinator-what-we-do-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .transaction-coordinator-what-we-do-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .transaction-coordinator-what-we-do-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .transaction-coordinator-what-we-do-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .transaction-coordinator-what-we-do-header h2 {
+        font-size: 28px;
+      }
+
+      .transaction-coordinator-what-we-do-header p {
+        font-size: 16px;
+      }
+    }
+
+    .service-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: #ccfffe;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="transaction-coordinator-what-we-do-container">
+    <!-- Header -->
+    <div class="transaction-coordinator-what-we-do-header">
+      <h2>What We Do</h2>
+      <p>Your transaction coordinator keeps every deal on track from contract to close.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="transaction-coordinator-what-we-do-grid">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <span class="service-icon">📋</span>
+        <h3>File Setup</h3>
+        <p>Open file, verify contract terms, and create checklists</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <span class="service-icon">✍️</span>
+        <h3>Signatures & Disclosures</h3>
+        <p>Coordinate signatures and disclosures (DocuSign, Dotloop, etc.)</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <span class="service-icon">🏠</span>
+        <h3>Vendor Coordination</h3>
+        <p>Order inspections, appraisals, title/escrow, and HOA docs</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <span class="service-icon">📅</span>
+        <h3>Deadline Tracking</h3>
+        <p>Track contingencies and dates; send reminders to all parties</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <span class="service-icon">📊</span>
+        <h3>Status Updates</h3>
+        <p>Update MLS/CRM and deliver weekly status summaries</p>
+      </div>
+    </div>
+  </div>
+</section>

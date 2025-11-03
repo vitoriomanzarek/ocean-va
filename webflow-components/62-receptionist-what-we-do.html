@@ -1,0 +1,151 @@
+<!-- Virtual Receptionist - What We Do Section for Webflow -->
+<section class="receptionist-what-we-do">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .receptionist-what-we-do {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .receptionist-what-we-do-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .receptionist-what-we-do-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .receptionist-what-we-do-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .receptionist-what-we-do-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .receptionist-what-we-do-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .receptionist-what-we-do-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .receptionist-what-we-do-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .receptionist-what-we-do-header h2 {
+        font-size: 28px;
+      }
+
+      .receptionist-what-we-do-header p {
+        font-size: 16px;
+      }
+    }
+
+    .service-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: #ccfffe;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="receptionist-what-we-do-container">
+    <!-- Header -->
+    <div class="receptionist-what-we-do-header">
+      <h2>What Your Virtual Receptionist Will Do</h2>
+      <p>Professional front-desk support that scales with your business.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="receptionist-what-we-do-grid">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <span class="service-icon">☎️</span>
+        <h3>Live Call Answering</h3>
+        <p>Answer calls within 3 rings, manage callbacks, route intelligently</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <span class="service-icon">👥</span>
+        <h3>Lead Intake & CRM Logging</h3>
+        <p>Capture new leads, qualify, and log in HubSpot, Salesforce, Zoho, Pipedrive</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <span class="service-icon">📅</span>
+        <h3>Calendar & Appointment Booking</h3>
+        <p>Manage Google/Outlook/Calendly, schedule appointments, send confirmations</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <span class="service-icon">💬</span>
+        <h3>Chat & Email Triage</h3>
+        <p>Handle website chat, shared inbox, WhatsApp Business, email responses</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <span class="service-icon">✓</span>
+        <h3>Warm Transfers & Routing</h3>
+        <p>Route calls to the right person, escalate priority issues, handle after-hours</p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card">
+        <span class="service-icon">❓</span>
+        <h3>FAQ & Policy Guidance</h3>
+        <p>Answer common questions, provide pricing info, handle billing lookups</p>
+      </div>
+    </div>
+  </div>
+</section>

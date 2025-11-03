@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Virtual Administrative Assistant",
+  "url": "https://www.oceanvirtualassistant.com/services/administrative-assistant",
+  "description": "Hire a dedicated virtual administrative assistant to manage your calendar, inbox, travel, documents, and more. Bilingual support, flat monthly pricing, and American-owned operations.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "areaServed": "US",
+  "priceRange": "$1,300 - $3,000+",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "description": "Starting at $1,300/mo (40h/week). No setup fees. Month-to-month."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Administrative Assistant Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Calendar & Inbox Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Travel Coordination"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Document Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Research & Data Entry"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vendor Coordination"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150"
+  }
+}

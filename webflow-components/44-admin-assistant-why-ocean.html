@@ -1,0 +1,165 @@
+<!-- Virtual Administrative Assistant - Why Ocean Section for Webflow -->
+<section class="admin-assistant-why-ocean">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .admin-assistant-why-ocean {
+      background-color: #f9fafb;
+      padding: 80px 20px;
+    }
+
+    .admin-assistant-why-ocean-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .admin-assistant-why-ocean-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .admin-assistant-why-ocean-header h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .admin-assistant-why-ocean-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .admin-assistant-why-ocean-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .admin-assistant-why-ocean-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .admin-assistant-why-ocean-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .admin-assistant-why-ocean-header h2 {
+        font-size: 28px;
+      }
+
+      .admin-assistant-why-ocean-header p {
+        font-size: 16px;
+      }
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .benefit-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .benefit-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #049d98;
+      margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="admin-assistant-why-ocean-container">
+    <!-- Header -->
+    <div class="admin-assistant-why-ocean-header">
+      <h2>Why Choose Ocean VA?</h2>
+      <p>More than just a service—a dedicated teammate who understands your business.</p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="admin-assistant-why-ocean-grid">
+      <!-- Benefit 1 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">🎯</span>
+        <h3>Dedicated Support</h3>
+        <p>One dedicated VA who learns your systems, preferences, and business goals.</p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">⚡</span>
+        <h3>Fast Onboarding</h3>
+        <p>Get up and running in days, not weeks, with our streamlined process.</p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">💼</span>
+        <h3>Industry Experience</h3>
+        <p>Our VAs are trained in business operations and understand your workflow.</p>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">🌍</span>
+        <h3>Global Talent Pool</h3>
+        <p>Access top-tier talent from Mexico, Philippines, and LATAM regions.</p>
+      </div>
+
+      <!-- Benefit 5 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">💰</span>
+        <h3>Transparent Pricing</h3>
+        <p>Flat monthly rate with no setup fees, no hidden costs, no surprises.</p>
+      </div>
+
+      <!-- Benefit 6 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">✅</span>
+        <h3>Quality Guaranteed</h3>
+        <p>30-day vetting process ensures you get the best match for your needs.</p>
+      </div>
+
+      <!-- Benefit 7 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">🔄</span>
+        <h3>Free Replacements</h3>
+        <p>If it's not the right fit, we replace your VA at no additional cost.</p>
+      </div>
+
+      <!-- Benefit 8 -->
+      <div class="benefit-card">
+        <span class="benefit-icon">📞</span>
+        <h3>Ongoing Support</h3>
+        <p>Our team provides continuous support and quality assurance.</p>
+      </div>
+    </div>
+  </div>
+</section>

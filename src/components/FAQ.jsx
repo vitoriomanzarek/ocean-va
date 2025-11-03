@@ -6,36 +6,36 @@ export default function FAQ() {
   
   const faqs = [
     {
-      q: "What does an insurance virtual assistant do for an agency?",
-      a: "Insurance VAs handle policy servicing (COIs, endorsements, renewals), claims follow-up, customer service, AMS data entry, and back-office tasks. Freeing your licensed agents for sales."
+      q: "What does a virtual assistant from Ocean VA do?",
+      a: "Our VAs handle administrative tasks, customer service, scheduling, data entry, document management, and coordination—freeing your team to focus on high-value work. Services vary by role (Insurance, Admin, Customer Service, etc.)."
     },
     {
       q: "How fast can we launch? Can I get started in 2-3 days?",
       a: "Yes. Day 0: sign agreement. Day 1: meet your VA and grant tool access. Day 2: SOP alignment. Day 3: go live with first tasks."
     },
     {
-      q: "How much does an insurance virtual assistant cost per month?",
-      a: "$1,300/month for full-time (40 hours/week). No startup fees, no hidden costs, flat monthly rate. Part-time plans also available. Ask us for details."
+      q: "What's the pricing? Are there hidden fees?",
+      a: "No hidden fees. Simple flat monthly rates starting at $750/month for specialized roles (medical, tech, HR) and $1,300/month for full-time (40 hours/week). Month-to-month, no contracts, no setup fees."
     },
     {
-      q: "Are your insurance VAs licensed, and what tasks require a licensed agent?",
-      a: "Our VAs are unlicensed and handle administrative tasks. They cannot bind policies, quote coverage, or provide insurance advice. Those require a licensed agent."
+      q: "Can I scale up or down as my business needs change?",
+      a: "Yes. Adjust hours, pause, or cancel anytime. Month-to-month flexibility with no penalties. Many clients scale during peak seasons or growth phases."
     },
     {
-      q: "Do you offer bilingual (English/Spanish) insurance virtual assistant services?",
-      a: "Yes. Our bilingual VAs handle renewal calls, COI requests, policy questions, and claims intake in both English and Spanish."
+      q: "Do you offer bilingual (English/Spanish) virtual assistants?",
+      a: "Yes. Our bilingual VAs handle customer calls, emails, and support in both English and Spanish across all service lines."
     },
     {
-      q: "Which systems do your VAs support (Applied Epic, AMS360, EZLynx, QQCatalyst)?",
-      a: "All four. Our experienced VAs know policy entry, COI generation, renewals, endorsements, and reporting in each system. They come with insurance operations experience."
+      q: "Which tools and systems do your VAs support?",
+      a: "We work with most common business tools: CRMs (HubSpot, Salesforce, Zoho), project management (Asana, Monday.com, Jira), accounting (QuickBooks, Xero), and industry-specific platforms. Ask about your specific tools."
     },
     {
-      q: "What's your company's insurance background and how does it help my agency?",
-      a: "Ocean Virtual Assistant was founded by insurance agents with 30 years of hands-on P&C experience in policy servicing, claims, renewals, and carrier relationships.\n\nBecause we come from the insurance industry (not just the VA industry), we understand:\n\n- The difference between an endorsement and a renewal\n- Why COIs need to be turned around in 24 hours\n- How AMS360 and Applied Epic actually work in daily operations\n- The pressure of renewal season and E&O compliance\n\nThis means we hire VAs who already have insurance experience and can hit the ground running. No weeks of training on basic insurance concepts."
+      q: "Will I have a dedicated VA or will my work be shared?",
+      a: "You get one dedicated VA who learns your business, systems, and workflows. We never pool work across a ticket queue. Your VA is your VA."
     },
     {
-      q: "How do you ensure data security when a VA accesses our AMS and carrier sites?",
-      a: "VAs work on secure, monitored devices with encrypted connections. Access is controlled via unique credentials with audit trails."
+      q: "How do you ensure data security and confidentiality?",
+      a: "VAs work on secure, monitored devices with encrypted connections. Access is controlled via unique credentials with audit trails. We follow strict data-security practices and can align to your compliance requirements."
     }
   ]
 

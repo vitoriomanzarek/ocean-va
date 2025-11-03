@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Sales Development Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/services/sales-development",
+  "description": "Professional SDR virtual assistants who research leads, build lists, run outbound campaigns, make discovery calls, and set appointments. Improve your sales pipeline with dedicated support.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "areaServed": "US",
+  "priceRange": "$1,300 - $3,000+",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "description": "Starting at $1,300/mo (40h/week). No setup fees. Month-to-month."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sales Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lead Research & List Building"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Outbound Email Campaigns"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "LinkedIn Outreach"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Discovery Calls"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Appointment Setting"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150"
+  }
+}

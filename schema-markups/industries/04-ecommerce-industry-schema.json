@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "E-Commerce Virtual Assistant Services",
+  "url": "https://www.oceanvirtualassistant.com/industries/ecommerce-virtual-assistant",
+  "description": "Virtual assistant services for e-commerce businesses. Manage inventory, process orders, handle customer service, manage returns, and coordinate fulfillment.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "areaServed": "US",
+  "priceRange": "$1,300 - $5,000+",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "description": "Starting at $1,300/mo (40h/week). No setup fees. Month-to-month."
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "E-Commerce VA Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Inventory Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Order Processing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customer Service"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Returns Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fulfillment Coordination"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150"
+  }
+}

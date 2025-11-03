@@ -1,0 +1,353 @@
+<style>
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #0d9488;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .legacy-card {
+            background: linear-gradient(to right, #f0fdfa, #eff6ff);
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 48px;
+        }
+
+        .legacy-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .legacy-header span {
+            font-size: 32px;
+        }
+
+        .legacy-header h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .legacy-text {
+            color: #374151;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .legacy-text strong {
+            color: #0d9488;
+            font-weight: 700;
+        }
+
+        .legacy-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .legacy-item {
+            display: flex;
+            gap: 12px;
+            color: #374151;
+            font-size: 13px;
+            line-height: 1.5;
+            word-break: break-word;
+        }
+
+        .legacy-item span {
+            color: #0d9488;
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .legacy-quote {
+            border-left: 4px solid #0d9488;
+            padding-left: 24px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            color: #374151;
+            font-style: italic;
+        }
+
+        .content-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+
+        .content-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #0d9488, #14b8a6);
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            margin: -32px -32px 24px -32px;
+            padding: 16px 32px;
+        }
+
+        .content-header span {
+            font-size: 24px;
+        }
+
+        .content-header h3 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .content-text {
+            color: #374151;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .content-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .challenges-list {
+            color: #374151;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .content-card ul {
+            list-style: none;
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+
+        .content-card li {
+            padding: 8px 0 8px 30px;
+            position: relative;
+            color: #374151;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .content-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0d9488;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .remove-card {
+            background: #fef2f2;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 32px;
+        }
+
+        .remove-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 24px;
+        }
+
+        .remove-card h3 span {
+            font-size: 24px;
+        }
+
+        .remove-card ul {
+            list-style: none;
+        }
+
+        .remove-card li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            color: #374151;
+        }
+
+        .remove-card li:before {
+            content: "✕";
+            position: absolute;
+            left: 0;
+            color: #ef4444;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .gain-card {
+            background: #f0fdf4;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 32px;
+        }
+
+        .gain-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 24px;
+        }
+
+        .gain-card h3 span {
+            font-size: 24px;
+        }
+
+        .gain-card ul {
+            list-style: none;
+        }
+
+        .gain-card li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            color: #374151;
+        }
+
+        .gain-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0d9488;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .legacy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+<section class="section">
+        <h2 class="section-title">What sets us apart</h2>
+        <p class="section-subtitle">Built on real agency tenure</p>
+
+        <!-- Walker Insurance Legacy -->
+        <div class="legacy-card">
+            <div class="legacy-header">
+                <span>🏢</span>
+                <h3>Walker Insurance Legacy</h3>
+            </div>
+            <p class="legacy-text">
+                Walker Insurance has managed over <strong>$100M in premiums</strong> across <strong>17 years</strong>. Led by Pam Walker with <strong>25+ years</strong> in agency operations. Based in Florida.
+            </p>
+            <div class="legacy-grid">
+                <div class="legacy-item">
+                    <span>✓</span>
+                    <span>Deep expertise in Homeowners, Auto, Flood, and Commercial</span>
+                </div>
+                <div class="legacy-item">
+                    <span>✓</span>
+                    <span>Appointed with Progressive, AAA, Travelers</span>
+                </div>
+                <div class="legacy-item">
+                    <span>✓</span>
+                    <span>Partnerships with Safeco | Liberty Mutual</span>
+                </div>
+                <div class="legacy-item">
+                    <span>✓</span>
+                    <span>Working with Allstate and Allied | Nationwide</span>
+                </div>
+            </div>
+            <div class="legacy-quote">
+                "Walker Insurance brings over three decades of insurance experience in managing one of Florida's largest independent agencies."
+            </div>
+        </div>
+
+        <!-- Why OVAS Exists -->
+        <div class="content-card">
+            <div class="content-header">
+                <span>✓</span>
+                <h3>Why OVAS exists</h3>
+            </div>
+            <p class="content-text">
+                We needed reliable virtual assistants for our own agency. Walker Insurance was an early mover to remote work and VA leverage, becoming one of Florida's most profitable agencies.
+            </p>
+            <p class="content-text">
+                For years we shared our blueprint with peers. The results for our agency and for those who adopted the model led us to launch OVAS, so any agency can deploy the same system at scale.
+            </p>
+        </div>
+
+        <!-- Built for Florida's Reality -->
+        <div class="content-card">
+            <div class="content-header">
+                <span>📈</span>
+                <h3>Built for Florida's reality</h3>
+            </div>
+            <p class="challenges-list">We have lived the state's pressures first-hand:</p>
+            <ul>
+                <li>Lower commission levels</li>
+                <li>Extreme price increases driving more rewrites</li>
+                <li>Heavy retention workload to keep clients</li>
+                <li>Difficulty sourcing motivated staff</li>
+                <li>Rising costs: wages, rent, benefits, PTO, HR, workers' comp</li>
+            </ul>
+        </div>
+
+        <!-- Remove & Gain Grid -->
+        <div class="grid-2">
+            <div class="remove-card">
+                <h3><span>⊘</span> What you remove with OVAS</h3>
+                <ul>
+                    <li>Payroll taxes, equipment spend, and HR overhead</li>
+                    <li>Hiring churn and vacancy lag</li>
+                    <li>Fixed office costs</li>
+                </ul>
+            </div>
+            <div class="gain-card">
+                <h3><span>✓</span> What you gain</h3>
+                <ul>
+                    <li>Seasoned insurance VAs aligned to your book</li>
+                    <li>Stable throughput on service, renewals, and rewrites</li>
+                    <li>A flat-fee model that protects margin</li>
+                </ul>
+            </div>
+        </div>
+</section>

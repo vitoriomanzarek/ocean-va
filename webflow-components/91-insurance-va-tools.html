@@ -1,0 +1,120 @@
+<!-- Insurance Virtual Assistant - Tool Expertise Section for Webflow -->
+<section class="insurance-va-tools" id="tools">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .insurance-va-tools {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .insurance-va-tools-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .insurance-va-tools-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .insurance-va-tools-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .insurance-va-tools-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .insurance-va-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1200px) {
+      .insurance-va-tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .insurance-va-tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insurance-va-tools-header h2 {
+        font-size: 28px;
+      }
+
+      .insurance-va-tools-header p {
+        font-size: 16px;
+      }
+    }
+
+    .tool-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border: 2px solid #b3e5db;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .tool-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #049d98;
+    }
+  </style>
+
+  <div class="insurance-va-tools-container">
+    <!-- Header -->
+    <div class="insurance-va-tools-header">
+      <h2>Your VAs Already Know Your Software Stack</h2>
+      <p>No training delays. No learning curves. Our VAs come with hands-on experience in the exact systems your agency uses daily.</p>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="insurance-va-tools-grid">
+      <!-- Tool 1 -->
+      <div class="tool-card">
+        <h3>Applied Epic</h3>
+      </div>
+
+      <!-- Tool 2 -->
+      <div class="tool-card">
+        <h3>AMS360</h3>
+      </div>
+
+      <!-- Tool 3 -->
+      <div class="tool-card">
+        <h3>EZLynx</h3>
+      </div>
+
+      <!-- Tool 4 -->
+      <div class="tool-card">
+        <h3>QQCatalyst</h3>
+      </div>
+    </div>
+  </div>
+</section>

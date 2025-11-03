@@ -2,73 +2,77 @@
 <section class="faq-section">
   <style>
     .faq-section {
-      padding: 80px 16px;
-      background-color: #f9fafb;
+      background: white;
+      padding: 80px 20px;
     }
 
     .faq-container {
-      max-width: 80rem;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
     .faq-header {
       text-align: center;
-      margin-bottom: 48px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 64px;
     }
 
     .faq-title {
       font-size: 36px;
       font-weight: 700;
-      margin-bottom: 16px;
       color: #111827;
-    }
-
-    @media (max-width: 768px) {
-      .faq-title {
-        font-size: 28px;
-      }
+      margin: 0 0 16px 0;
+      line-height: 1.2;
     }
 
     .faq-subtitle {
-      font-size: 18px;
-      color: #4b5563;
+      font-size: 16px;
+      color: #6b7280;
+      margin: 0;
     }
 
-    /* FAQ Items */
     .faq-items {
-      max-width: 800px;
-      margin: 0 auto 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 48px;
     }
 
     .faq-item {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      margin-bottom: 16px;
+      background: white;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
       overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      border-color: #b3e5db;
     }
 
     .faq-question {
       width: 100%;
       padding: 20px 24px;
       text-align: left;
-      background-color: white;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      background: transparent;
       border: none;
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: all 0.2s ease;
-      font-size: 16px;
-      font-weight: 600;
-      color: #111827;
+      transition: all 0.3s ease;
     }
 
     .faq-question:hover {
-      background-color: #f9fafb;
+      background: #f9fafb;
+    }
+
+    .faq-question span:first-child {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1.5;
+      flex: 1;
     }
 
     .faq-toggle {
@@ -76,11 +80,8 @@
       height: 20px;
       color: #049d98;
       flex-shrink: 0;
-      transition: transform 0.2s ease;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      transition: transform 0.3s ease;
+      display: inline-block;
     }
 
     .faq-item.active .faq-toggle {
@@ -88,26 +89,24 @@
     }
 
     .faq-answer {
-      padding: 0 24px;
       max-height: 0;
       overflow: hidden;
-      transition: all 0.3s ease;
-      background-color: white;
+      transition: max-height 0.3s ease;
     }
 
     .faq-item.active .faq-answer {
-      padding: 20px 24px;
       max-height: 500px;
     }
 
     .faq-answer-text {
+      padding: 32px 24px 20px 24px;
+      margin: 0;
+      border-top: 1px solid #e5e7eb;
       font-size: 14px;
-      color: #374151;
-      line-height: 1.7;
-      white-space: pre-wrap;
+      color: #6b7280;
+      line-height: 1.6;
     }
 
-    /* CTA Button */
     .faq-cta-wrapper {
       text-align: center;
     }
@@ -132,20 +131,32 @@
     }
 
     @media (max-width: 768px) {
+      .faq-section {
+        padding: 48px 20px;
+      }
+
+      .faq-header {
+        margin-bottom: 48px;
+      }
+
+      .faq-title {
+        font-size: 28px;
+      }
+
+      .faq-items {
+        gap: 8px;
+      }
+
       .faq-question {
         padding: 16px 20px;
+      }
+
+      .faq-question span:first-child {
         font-size: 14px;
       }
 
-      .faq-answer {
-        padding: 0 20px;
-      }
-
-      .faq-item.active .faq-answer {
-        padding: 16px 20px;
-      }
-
       .faq-answer-text {
+        padding: 24px 20px 16px 20px;
         font-size: 13px;
       }
     }
@@ -163,7 +174,9 @@
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>How fast can we start? Can I really launch in 2-3 days?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">Yes! Our streamlined process allows most agencies to go live within 2-3 days.
@@ -178,7 +191,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>What's included in the $1,300 monthly price?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">Everything you need: dedicated full-time VA (40h/week), no setup fees, no equipment costs, ongoing support, free replacement if needed, multilingual support (10+ languages available), and no long-term contracts. Part-time plans also available.</div>
@@ -188,7 +203,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>Are there any setup fees or hidden costs?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">Absolutely none. $0 setup fees. $0 equipment costs. $0 hidden charges. Just a flat monthly rate.</div>
@@ -198,7 +215,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>What if my VA doesn't work out?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">We offer a no-cost replacement guarantee. If your VA isn't the right fit, we'll find you a replacement at no additional charge.</div>
@@ -208,7 +227,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>Do you offer bilingual support?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">Yes. English & Spanish (default). We can route calls, emails, and chats to bilingual VAs to serve your diverse client base.</div>
@@ -218,7 +239,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>Which tools and systems do your VAs support?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">We work with HubSpot, Salesforce, Zoho, Pipedrive, Google Workspace, Microsoft 365, Slack/Teams, Asana, Trello, ClickUp, and many more. If you use it, we can learn it.</div>
@@ -228,7 +251,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>Will I work with the same dedicated VA?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">Yes—you get one dedicated VA who learns your business, systems, and workflow. We never pool your work across a ticket queue.</div>
@@ -238,7 +263,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>How do you ensure quality and performance?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">We use recorded calls (if enabled), scorecards, weekly coaching, KPI reviews, and ongoing quality assurance to keep your VA performing at their best.</div>
@@ -248,7 +275,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>Do you require long-term contracts?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">No. Everything is month-to-month with no lock-in or long-term contracts. Cancel anytime if you're not satisfied.</div>
@@ -258,7 +287,9 @@ Day 3: Your chosen VA starts working.</div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
           <span>How are your VAs vetted and trained?</span>
-          <span class="faq-toggle">▲</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-text">We hire the top 1% of candidates through multi-stage screening, voice/tone assessments, and scenario testing. Each VA receives 30 days of specialized training before working with you.</div>

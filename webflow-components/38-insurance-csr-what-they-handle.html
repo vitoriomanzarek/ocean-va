@@ -1,0 +1,193 @@
+<!-- Insurance CSR What They Handle Section for Webflow -->
+<section class="insurance-csr-what-handle">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .insurance-csr-what-handle {
+      background-color: #f9fafb;
+      padding: 80px 20px;
+    }
+
+    .insurance-csr-what-handle-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .insurance-csr-what-handle-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .insurance-csr-what-handle-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .insurance-csr-what-handle-header p {
+      font-size: 18px;
+      color: #6b7280;
+    }
+
+    .insurance-csr-what-handle-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .insurance-csr-what-handle-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .insurance-csr-what-handle-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insurance-csr-what-handle-header h2 {
+        font-size: 28px;
+      }
+
+      .insurance-csr-what-handle-header p {
+        font-size: 16px;
+      }
+    }
+
+    .task-card {
+      background: white;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .task-card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .task-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .task-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #049d98;
+      margin-bottom: 16px;
+    }
+
+    .task-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .task-list li {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .task-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .task-list li::before {
+      content: "✓";
+      color: #049d98;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+  </style>
+
+  <div class="insurance-csr-what-handle-container">
+    <!-- Header -->
+    <div class="insurance-csr-what-handle-header">
+      <h2>What Our Insurance CSRs Handle</h2>
+      <p>Customer-Facing Tasks Our CSRs Excel At</p>
+    </div>
+
+    <!-- Tasks Grid -->
+    <div class="insurance-csr-what-handle-grid">
+      <!-- Task 1 -->
+      <div class="task-card">
+        <span class="task-icon">💬</span>
+        <h3>Client Inquiries & Communication</h3>
+        <ul class="task-list">
+          <li>Answering policy questions</li>
+          <li>Providing coverage information</li>
+          <li>Explaining policy details</li>
+        </ul>
+      </div>
+
+      <!-- Task 2 -->
+      <div class="task-card">
+        <span class="task-icon">🔧</span>
+        <h3>Issue Resolution</h3>
+        <ul class="task-list">
+          <li>Addressing complaints</li>
+          <li>Resolving billing disputes</li>
+          <li>Handling claims inquiries</li>
+        </ul>
+      </div>
+
+      <!-- Task 3 -->
+      <div class="task-card">
+        <span class="task-icon">📄</span>
+        <h3>Policy Management</h3>
+        <ul class="task-list">
+          <li>Processing policy changes</li>
+          <li>Managing renewals</li>
+          <li>Coordinating endorsements</li>
+        </ul>
+      </div>
+
+      <!-- Task 4 -->
+      <div class="task-card">
+        <span class="task-icon">📋</span>
+        <h3>Document Requests</h3>
+        <ul class="task-list">
+          <li>ID card requests</li>
+          <li>Dec Page copies</li>
+          <li>Certificates of insurance</li>
+        </ul>
+      </div>
+
+      <!-- Task 5 -->
+      <div class="task-card">
+        <span class="task-icon">📅</span>
+        <h3>Appointment Management</h3>
+        <ul class="task-list">
+          <li>Scheduling meetings</li>
+          <li>Following up on quotes</li>
+          <li>Managing reminders</li>
+        </ul>
+      </div>
+
+      <!-- Task 6 -->
+      <div class="task-card">
+        <span class="task-icon">❤️</span>
+        <h3>Retention & Care</h3>
+        <ul class="task-list">
+          <li>Proactive outreach</li>
+          <li>Relationship building</li>
+          <li>Cross-sell support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

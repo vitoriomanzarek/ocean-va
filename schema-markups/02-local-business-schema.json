@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Ocean Virtual Assistant",
+  "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png",
+  "description": "Professional virtual assistant services for businesses. Bilingual support, flexible pricing, and industry expertise.",
+  "url": "https://www.oceanvirtualassistant.com",
+  "telephone": "+1-772-247-0269",
+  "email": "info@oceanvirtualassistant.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "789 SW Federal Highway, Suite 201",
+    "addressLocality": "Stuart",
+    "addressRegion": "FL",
+    "postalCode": "34994",
+    "addressCountry": "US"
+  },
+  "priceRange": "$1,300 - $5,000+",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/oceanvirtualassistant",
+    "https://www.linkedin.com/company/ocean-virtual-assistant",
+    "https://www.youtube.com/@oceanvirtualassistant",
+    "https://www.instagram.com/oceanvirtualassistant"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}

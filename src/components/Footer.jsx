@@ -60,6 +60,8 @@ export default function Footer() {
               <li><a href="/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ BLOGS</a></li>
               <li><a href="/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CAREERS</a></li>
               <li><a href="/contact-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CONTACT US</a></li>
+              <li><a href="https://www.oceanvirtualassistant.com/terms-and-conditions" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ TERMS & CONDITIONS</a></li>
+              <li><a href="https://www.oceanvirtualassistant.com/privacy-policy" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRIVACY POLICY</a></li>
             </ul>
           </div>
 
