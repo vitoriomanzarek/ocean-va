@@ -495,19 +495,6 @@ export const vasData = [
   },
   {
     id: 39,
-    nombre: "Day",
-    idiomas: "English",
-    años_experiencia: 2,
-    especialización: ["Home", "Auto Insurance"],
-    nivel_inglés: "Proficient",
-    disponibilidad: "Assigned",
-    horario: "",
-    categorías: ["Insurance VA"],
-    slug: "day-ocean-va-profile",
-    imagen: "/images/VAs/Day.webp"
-  },
-  {
-    id: 40,
     nombre: "Ellen",
     idiomas: "English",
     años_experiencia: 2,

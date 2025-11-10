@@ -170,7 +170,7 @@ function AppContent() {
           <Route path="/rona-mae-ocean-va-profile" element={<RonaMaeProfile />} />
           <Route path="/gizelle-ocean-va-profile" element={<GizelleProfile />} />
           <Route path="/jasmine-ocean-va-profile" element={<JasmineProfile />} />
-          <Route path="/jill-nicole-ocean-va-profile" element={<JillNicoleProfile />} />
+          <Route path="/jill-ocean-va-profile" element={<JillNicoleProfile />} />
           <Route path="/pavel-ocean-va-profile" element={<PavelProfile />} />
           <Route path="/ana-s-ocean-va-profile" element={<AnaProfile />} />
           <Route path="/ana-victoria-ocean-va-profile" element={<AnaVictoriaProfile />} />
