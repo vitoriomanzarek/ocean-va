@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, MessageSquare, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
+import VAStickyCTA from '../components/OurVAs/VAStickyCTA';
 
 const OurVAsPage = () => {
   const { type } = useParams();
@@ -746,29 +747,55 @@ const OurVAsPage = () => {
   const pageDescription = pageDescriptions[type] || pageDescriptions['default'];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-ocean-700 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center mb-6">
-            <Link to="/" className="flex items-center text-ocean-200 hover:text-white mr-6">
-              <ArrowLeft size={20} className="mr-2" />
-              Back to Home
-            </Link>
+    <>
+      <div className="min-h-screen bg-gray-50">
+        {/* Hero Section */}
+        <header 
+          className="relative bg-cover bg-center text-white py-20 md:py-32"
+          style={{
+            backgroundImage: 'url(/images/VAs/our-va-hero.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-2xl">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet our Virtual Assistants</h1>
+              
+              {/* Category Buttons */}
+              <div className="flex flex-wrap gap-3 mb-8">
+                <Link 
+                  to="/our-vas"
+                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+                >
+                  Insurance Virtual Assistants
+                </Link>
+                <Link 
+                  to="/licensed-insurance-agents"
+                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+                >
+                  Licensed Insurance Agents
+                </Link>
+                <Link 
+                  to="/executive-admin-vas"
+                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+                >
+                  Executive / Admin VAs
+                </Link>
+              </div>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{pageTitle}</h1>
-          <p className="text-xl text-ocean-200 max-w-3xl">
-            {pageDescription}
-          </p>
-        </div>
-      </header>
+        </header>
 
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
-        {/* Filters */}
-        <div className="mb-12 bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-6">Find Your Perfect VA Match</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Main Content */}
+        <main className="container mx-auto px-4 py-12 pb-40">
+          {/* Filters */}
+          <div className="mb-12 bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-6">Find Your Perfect VA Match</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label className="block text-gray-700 mb-2">Availability</label>
               <select 
@@ -838,11 +865,11 @@ const OurVAsPage = () => {
               </div>
             </div>
           </div>
-        </div>
+          </div>
 
-        {/* VA Grid */}
-        {filteredVAs.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* VA Grid */}
+          {filteredVAs.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVAs.map((va) => (
             <div key={va.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="relative">
@@ -921,7 +948,11 @@ const OurVAsPage = () => {
           </button>
         </div>
       </section>
-    </div>
+      </div>
+
+      {/* Sticky CTA */}
+      <VAStickyCTA />
+    </>
   );
 };
 

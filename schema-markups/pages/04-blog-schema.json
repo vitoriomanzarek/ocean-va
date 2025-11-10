@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Ocean VA Blog",
+  "url": "https://www.oceanvirtualassistant.com/blogs",
+  "description": "Read insights, tips, and best practices about virtual assistants, business efficiency, and industry trends from Ocean Virtual Assistant.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Virtual Assistant Industry Insights",
+      "description": "Explore the latest trends and best practices in virtual assistance",
+      "url": "https://www.oceanvirtualassistant.com/blogs",
+      "datePublished": "2024-01-01",
+      "author": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant"
+      }
+    }
+  ]
+}
+</script>

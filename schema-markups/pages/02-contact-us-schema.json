@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Ocean Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/contact-us",
+  "description": "Get in touch with Ocean Virtual Assistant. Schedule a discovery call to discuss your virtual assistant needs.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+1-772-247-0269",
+      "email": "info@oceanvirtualassistant.com",
+      "contactOption": "TelephoneNumberAvailable"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "789 SW Federal Highway, Suite 201",
+      "addressLocality": "Stuart",
+      "addressRegion": "FL",
+      "postalCode": "34994",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>

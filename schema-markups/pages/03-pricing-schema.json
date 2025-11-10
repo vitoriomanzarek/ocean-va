@@ -1,0 +1,45 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PriceSpecification",
+  "name": "Ocean VA Pricing",
+  "url": "https://www.oceanvirtualassistant.com/pricing",
+  "description": "Transparent, flat-rate pricing for virtual assistant services. No setup fees, no long-term contracts, month-to-month flexibility.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "40 Hours/Week Virtual Assistant",
+      "description": "Dedicated virtual assistant for 40 hours per week",
+      "price": "1300",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock",
+      "eligibleCustomerType": "Business"
+    },
+    {
+      "@type": "Offer",
+      "name": "20 Hours/Week Virtual Assistant",
+      "description": "Part-time virtual assistant for 20 hours per week",
+      "price": "650",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock",
+      "eligibleCustomerType": "Business"
+    },
+    {
+      "@type": "Offer",
+      "name": "Custom Hours Virtual Assistant",
+      "description": "Flexible hours tailored to your business needs",
+      "price": "Contact for pricing",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "eligibleCustomerType": "Business"
+    }
+  ]
+}
+</script>

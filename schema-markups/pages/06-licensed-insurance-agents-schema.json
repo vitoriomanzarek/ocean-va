@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Licensed Insurance Agents",
+  "url": "https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents",
+  "description": "Meet our licensed insurance agents who specialize in insurance industry support. Fully licensed and trained to handle complex insurance operations.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "mainEntity": {
+    "@type": "ProfessionalService",
+    "name": "Licensed Insurance Agent Support",
+    "description": "Professional insurance agents providing specialized support for insurance agencies",
+    "url": "https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents",
+    "areaServed": "US",
+    "serviceType": "Insurance Support",
+    "provider": {
+      "@type": "Organization",
+      "name": "Ocean Virtual Assistant"
+    }
+  }
+}
+</script>

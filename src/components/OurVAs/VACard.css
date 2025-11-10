@@ -1,0 +1,315 @@
+.va-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.va-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 25px 70px rgba(0, 0, 0, 0.15),
+    0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Image section - Top */
+.va-card-image-section {
+  width: 100%;
+  height: 200px;
+  background: 
+    radial-gradient(ellipse at 50% 30%, rgba(180, 255, 240, 0.8) 0%, transparent 60%),
+    radial-gradient(ellipse at 60% 70%, rgba(100, 220, 200, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 30% 50%, rgba(120, 235, 215, 0.4) 0%, transparent 55%),
+    linear-gradient(180deg, #6de5d0 0%, #4dd4bf 30%, #3ec4b0 60%, #2fb09d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(93, 217, 193, 0.2);
+  flex-shrink: 0;
+  clip-path: none;
+  border-radius: 25px 25px 0 0;
+}
+
+.va-card-image-container {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.va-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.va-availability-badge {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  z-index: 10;
+}
+
+/* Mobile - keep badge higher */
+@media (max-width: 768px) {
+  .va-availability-badge {
+    top: 4px;
+  }
+}
+
+.badge-full-time {
+  color: #05bfb9;
+}
+
+.badge-full-time::before {
+  content: "✓";
+  font-weight: bold;
+}
+
+.badge-part-time {
+  color: #f59e0b;
+}
+
+.badge-part-time::before {
+  content: "◐";
+}
+
+.badge-assigned {
+  color: #8b5cf6;
+}
+
+.badge-assigned::before {
+  content: "✓";
+  font-weight: bold;
+}
+
+/* Content section - Bottom */
+.va-card-content {
+  flex: 1;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 25px 25px;
+}
+
+/* Card header */
+.va-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.va-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Name */
+.va-card-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a8b7e;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* Role badge */
+.va-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8f9f6;
+  color: #1a8b7e;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 8px;
+  border: 1.5px solid #1eb8a6;
+}
+
+.va-role-badge svg {
+  flex-shrink: 0;
+}
+
+/* Info row */
+.va-info-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.va-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.va-info-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #1eb8a6;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.va-info-value {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.va-info-value svg {
+  color: #1eb8a6;
+  flex-shrink: 0;
+}
+
+/* Chips container - keeping for compatibility */
+.va-chips-container {
+  display: none;
+}
+
+/* Specialization section */
+.va-specialization {
+  margin-bottom: 0;
+}
+
+.va-specialization-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: #1eb8a6;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.va-tags-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.va-tag {
+  background: #c8f0e8;
+  color: #1a8b7e;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #a8e5d8;
+}
+
+.va-tag-more {
+  display: none;
+}
+
+/* Buttons container */
+.va-buttons-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.va-button {
+  background: #1eb8a6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: inherit;
+  flex: 1;
+}
+
+.va-button:hover {
+  background: #189e8f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 184, 166, 0.3);
+}
+
+.va-button-primary {
+  background: #1eb8a6;
+}
+
+.va-button-primary:hover {
+  background: #189e8f;
+}
+
+.va-button-secondary {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 0;
+  flex: 0 0 auto;
+  color: #1eb8a6;
+  font-size: 16px;
+}
+
+.va-button-secondary:hover {
+  border-color: #1eb8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 184, 166, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .va-card {
+    max-width: 100%;
+  }
+
+  .va-card-image-section {
+    height: 180px;
+  }
+
+  .va-card-name {
+    font-size: 22px;
+  }
+
+  .va-card-content {
+    padding: 16px;
+  }
+}

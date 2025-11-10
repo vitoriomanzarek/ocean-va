@@ -1,0 +1,149 @@
+<!-- Property Management VA - Hero Section -->
+<style>
+  .pm-hero-container {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 50%, #003d7a 100%);
+    color: white;
+    padding: 80px 20px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+
+  .pm-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .pm-hero-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white !important;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .pm-hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 32px;
+  }
+
+  .pm-hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .pm-hero-button {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+
+  .pm-hero-button-primary {
+    background-color: white;
+    color: #0066cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .pm-hero-button-primary:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .pm-hero-button-secondary {
+    background-color: rgba(0, 102, 204, 0.2);
+    color: white;
+    border: 2px solid white;
+  }
+
+  .pm-hero-button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .pm-hero-image {
+    width: 100%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+
+  .pm-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pm-hero-image-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .pm-hero-image-placeholder p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .pm-hero-content {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .pm-hero-text h1 {
+      font-size: 36px;
+    }
+
+    .pm-hero-text p {
+      font-size: 16px;
+    }
+
+    .pm-hero-buttons {
+      flex-direction: column;
+    }
+
+    .pm-hero-button {
+      width: 100%;
+    }
+
+    .pm-hero-image {
+      height: 300px;
+    }
+  }
+</style>
+
+<div class="pm-hero-container">
+  <div class="pm-hero-content">
+    <div class="pm-hero-text">
+      <h1>Property Management Virtual Assistant</h1>
+      <p>Respond faster to tenants and vendors, keep listings fresh, and coordinate maintenance—all without adding office overhead.</p>
+      <div class="pm-hero-buttons">
+        <a href="#booking-demo" class="pm-hero-button pm-hero-button-primary">Book a Discovery Call</a>
+        <a href="#pricing" class="pm-hero-button pm-hero-button-secondary">View Pricing</a>
+      </div>
+    </div>
+    <div class="pm-hero-image">
+      <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690382792b5a1d11467c2037_property-management-va-hero.webp" alt="Property Management Virtual Assistant">
+    </div>
+  </div>
+</div>

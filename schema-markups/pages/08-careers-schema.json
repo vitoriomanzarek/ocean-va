@@ -1,0 +1,52 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "name": "Careers at Ocean Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/careers",
+  "description": "Join our team! We're hiring talented virtual assistants. Explore career opportunities and apply to become part of Ocean VA.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "sameAs": [
+      "https://www.facebook.com/oceanvirtualassistant",
+      "https://www.linkedin.com/company/ocean-virtual-assistant",
+      "https://www.youtube.com/@oceanvirtualassistant",
+      "https://www.instagram.com/oceanvirtualassistant"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Human Resources",
+      "email": "careers@oceanvirtualassistant.com"
+    }
+  },
+  "jobLocationType": "RemotePosition",
+  "applicantLocationRequirements": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "employmentType": [
+    "FULL_TIME",
+    "PART_TIME",
+    "CONTRACT"
+  ],
+  "baseSalary": {
+    "@type": "PriceSpecification",
+    "priceCurrency": "USD",
+    "price": "Competitive"
+  },
+  "benefits": [
+    "Remote Work",
+    "Flexible Schedule",
+    "Professional Development",
+    "Bilingual Opportunities"
+  ]
+}
+</script>

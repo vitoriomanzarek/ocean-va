@@ -1,0 +1,70 @@
+.our-current-vas-page {
+  width: 100%;
+}
+
+/* Hero Section */
+.our-vas-hero {
+  background: linear-gradient(135deg, #05bfb9 0%, #049d98 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.our-vas-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.our-vas-hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.our-vas-hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Results info */
+.va-results-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 32px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .our-vas-hero {
+    padding: 60px 20px;
+  }
+
+  .our-vas-hero-title {
+    font-size: 36px;
+  }
+
+  .our-vas-hero-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-vas-hero {
+    padding: 40px 16px;
+  }
+
+  .our-vas-hero-title {
+    font-size: 28px;
+  }
+
+  .our-vas-hero-subtitle {
+    font-size: 14px;
+  }
+}

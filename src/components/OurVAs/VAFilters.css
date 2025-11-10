@@ -1,0 +1,94 @@
+.va-filters {
+  background: white;
+  padding: 32px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.va-filters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.va-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.va-filter-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: 0.5px;
+}
+
+.va-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.va-filter-button {
+  padding: 8px 16px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.va-filter-button:hover {
+  border-color: #05bfb9;
+  color: #05bfb9;
+}
+
+.va-filter-button.active {
+  background: linear-gradient(135deg, #05bfb9 0%, #049d98 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.va-search-input {
+  padding: 10px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.va-search-input:focus {
+  outline: none;
+  border-color: #05bfb9;
+  box-shadow: 0 0 0 3px rgba(5, 191, 185, 0.1);
+}
+
+.va-search-input::placeholder {
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .va-filters-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .va-filter-options {
+    gap: 6px;
+  }
+
+  .va-filter-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

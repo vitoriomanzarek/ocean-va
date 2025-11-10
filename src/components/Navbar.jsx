@@ -38,7 +38,7 @@ export default function Navbar() {
     {
       name: 'Our VAs',
       dropdown: [
-        { name: 'Insurance Virtual Assistant', href: '/our-vas' },
+        { name: 'Insurance Virtual Assistant', href: '/ovas-current-vas' },
         { name: 'Licensed Insurance Agents', href: '/licensed-insurance-agents' },
         { name: 'Executive / Admin VA', href: '/executive-admin-vas' }
       ]

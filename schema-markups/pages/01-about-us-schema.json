@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Ocean Virtual Assistant",
+  "url": "https://www.oceanvirtualassistant.com/about-us",
+  "description": "Learn about Ocean Virtual Assistant's mission, values, and commitment to providing top-quality virtual assistant services to businesses worldwide.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "description": "American-owned virtual assistant company providing bilingual support and specialized industry expertise.",
+    "url": "https://www.oceanvirtualassistant.com",
+    "foundingDate": "2020",
+    "areaServed": "US",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+1-772-247-0269",
+      "email": "info@oceanvirtualassistant.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "789 SW Federal Highway, Suite 201",
+      "addressLocality": "Stuart",
+      "addressRegion": "FL",
+      "postalCode": "34994",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>

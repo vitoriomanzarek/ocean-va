@@ -1,0 +1,39 @@
+.va-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 32px;
+  row-gap: 48px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+
+.va-grid-loading,
+.va-grid-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #64748b;
+  font-size: 16px;
+  grid-column: 1 / -1;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .va-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 28px;
+    row-gap: 40px;
+    max-width: 1000px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .va-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    row-gap: 32px;
+    padding: 0 20px 60px;
+  }
+}

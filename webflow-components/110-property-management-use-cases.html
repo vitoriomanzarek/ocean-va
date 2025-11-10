@@ -1,0 +1,134 @@
+<!-- Property Management VA - Use Cases Section -->
+<style>
+  .pm-use-cases-container {
+    background: white;
+    padding: 80px 20px;
+  }
+
+  .pm-use-cases-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pm-use-cases-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .pm-use-cases-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+  }
+
+  .pm-use-cases-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .pm-use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
+
+  .pm-use-case-card {
+    background: #f9fafb;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+  }
+
+  .pm-use-case-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    border-color: #0066cc;
+  }
+
+  .pm-use-case-icon {
+    width: 48px;
+    height: 48px;
+    background: #e0eeff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .pm-use-case-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+
+  .pm-use-case-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .pm-use-cases-container {
+      padding: 60px 20px;
+    }
+
+    .pm-use-cases-header h2 {
+      font-size: 28px;
+    }
+
+    .pm-use-cases-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+</style>
+
+<div class="pm-use-cases-container">
+  <div class="pm-use-cases-content">
+    <div class="pm-use-cases-header">
+      <h2>Use Cases</h2>
+      <p>Your property management VA handles daily operations across your portfolio.</p>
+    </div>
+
+    <div class="pm-use-cases-grid">
+      <div class="pm-use-case-card">
+        <div class="pm-use-case-icon">🏠</div>
+        <h3>Tenant Communications</h3>
+        <p>Tenant calls, emails, and showings coordination</p>
+      </div>
+
+      <div class="pm-use-case-card">
+        <div class="pm-use-case-icon">🔧</div>
+        <h3>Maintenance Coordination</h3>
+        <p>Maintenance requests, vendor scheduling, and updates</p>
+      </div>
+
+      <div class="pm-use-case-card">
+        <div class="pm-use-case-icon">📄</div>
+        <h3>Listings & Applications</h3>
+        <p>Listings and lead follow-ups; application processing</p>
+      </div>
+
+      <div class="pm-use-case-card">
+        <div class="pm-use-case-icon">📅</div>
+        <h3>Move-In/Out</h3>
+        <p>Move-in/out checklists and deposit paperwork</p>
+      </div>
+
+      <div class="pm-use-case-card">
+        <div class="pm-use-case-icon">💰</div>
+        <h3>Accounting Support</h3>
+        <p>Light accounting support: charges, receipts, and reports</p>
+      </div>
+    </div>
+  </div>
+</div>

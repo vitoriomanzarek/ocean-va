@@ -1,0 +1,259 @@
+================================================================================
+OCEAN VA - PAGES METADATA (TITLES & META DESCRIPTIONS)
+Updated: November 4, 2025
+================================================================================
+
+1. HOME PAGE
+================================================================================
+Title: Virtual Assistant Services | Ocean VA - Outsource Smarter, Achieve More
+Meta Description: Hire top-tier virtual assistants for your business. Specialized VAs for insurance, real estate, finance, and more. Start in 2-3 days. No setup fees.
+URL: https://www.oceanvirtualassistant.com
+
+2. ABOUT US PAGE
+================================================================================
+Title: About Ocean VA | Our Story, Mission & Leadership Team
+Meta Description: Learn about Ocean VA's journey, mission, and leadership team. Discover how we're transforming virtual assistance with experienced professionals and proven results.
+URL: https://www.oceanvirtualassistant.com/about-us
+
+3. PRICING PAGE
+================================================================================
+Title: Virtual Assistant Pricing | Flexible Plans Starting at $1,300/month
+Meta Description: Transparent pricing for virtual assistants. Flexible plans with no setup fees, no long-term contracts. Choose your hours and budget. Month-to-month flexibility.
+URL: https://www.oceanvirtualassistant.com/pricing
+
+4. BLOG PAGE
+================================================================================
+Title: Virtual Assistant Blog | Tips, Insights & Industry News
+Meta Description: Read our latest articles on virtual assistants, business efficiency, and industry trends. Expert insights to help you grow your business.
+URL: https://www.oceanvirtualassistant.com/blogs
+
+5. OUR VAs PAGE (CURRENT VAs)
+================================================================================
+Title: Meet Our Virtual Assistants | Current VAs Available
+Meta Description: Browse our team of experienced virtual assistants. Find the perfect VA for your business needs with detailed profiles and specializations.
+URL: https://www.oceanvirtualassistant.com/ovas-current-vas
+
+6. LICENSED INSURANCE AGENTS PAGE
+================================================================================
+Title: Licensed Insurance Agents | Specialized VA Support
+Meta Description: Hire licensed insurance agents as virtual assistants. Expert support for insurance agencies with deep industry knowledge and credentials.
+URL: https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents
+
+7. EXECUTIVE ADMIN VA PAGE
+================================================================================
+Title: Executive Administrative Virtual Assistant | Premium Support
+Meta Description: Premium executive and administrative virtual assistant services. Specialized support for C-suite executives and high-level operations.
+URL: https://www.oceanvirtualassistant.com/ovas-executive-admin-virtual-assistant
+
+8. CAREERS PAGE
+================================================================================
+Title: Careers at Ocean VA | Join Our Team
+Meta Description: Explore career opportunities at Ocean VA. We're hiring talented virtual assistants. Apply now to join our growing team.
+URL: https://www.oceanvirtualassistant.com/careers
+
+9. CONTACT US PAGE
+================================================================================
+Title: Contact Ocean VA | Get in Touch
+Meta Description: Contact Ocean VA for inquiries, support, or to schedule a discovery call. We're here to help you find the perfect virtual assistant solution.
+URL: https://www.oceanvirtualassistant.com/contact-us
+
+================================================================================
+SERVICES PAGES
+================================================================================
+
+10. INSURANCE CUSTOMER SERVICE REPRESENTATIVE
+================================================================================
+Title: Insurance Customer Service Representative | Virtual Assistant
+Meta Description: Virtual assistants for insurance agencies. Policy servicing, claims support, and customer service. Specialized insurance industry expertise.
+URL: https://www.oceanvirtualassistant.com/services/insurance-customer-service-representative
+
+11. ADMINISTRATIVE ASSISTANT
+================================================================================
+Title: Virtual Administrative Assistant | Executive Support Services
+Meta Description: Professional administrative virtual assistants. Inbox, calendar, documents, travel, research, and operations support for busy executives.
+URL: https://www.oceanvirtualassistant.com/services/administrative-assistant
+
+12. CUSTOMER SERVICE REPRESENTATIVE
+================================================================================
+Title: Customer Service Virtual Assistant | Phone, Chat & Email Support
+Meta Description: Bilingual customer service virtual assistants. Phone, chat, and email support with professional communication skills.
+URL: https://www.oceanvirtualassistant.com/services/customer-service-representative
+
+13. MARKETING ASSISTANT
+================================================================================
+Title: Marketing Virtual Assistant | Content & Social Media Support
+Meta Description: Marketing virtual assistants for content creation, social media management, email campaigns, and reporting support.
+URL: https://www.oceanvirtualassistant.com/services/marketing-assistant
+
+14. VIRTUAL RECEPTIONIST
+================================================================================
+Title: Virtual Receptionist | Professional Call Handling & Scheduling
+Meta Description: Professional virtual receptionist services. Call handling, appointment scheduling, and message management for your business.
+URL: https://www.oceanvirtualassistant.com/services/virtual-receptionist
+
+15. TRANSACTION COORDINATOR
+================================================================================
+Title: Virtual Transaction Coordinator | Real Estate Support
+Meta Description: Virtual transaction coordinators for real estate. Contract-to-close coordination and document management for real estate professionals.
+URL: https://www.oceanvirtualassistant.com/services/transaction-coordinator
+
+16. SALES, DEVELOPMENT & INSIDE SALES
+================================================================================
+Title: Sales Development Virtual Assistant | Lead Generation & Prospecting
+Meta Description: Sales development and inside sales virtual assistants. Lead generation, prospecting, and sales pipeline management support.
+URL: https://www.oceanvirtualassistant.com/services/sales-development-inside-sales
+
+17. GENERAL VIRTUAL ASSISTANT
+================================================================================
+Title: General Virtual Assistant | Comprehensive Business Support
+Meta Description: General virtual assistants for comprehensive support. Admin, customer service, marketing, and sales assistance for your business.
+URL: https://www.oceanvirtualassistant.com/services/general-virtual-assistant
+
+================================================================================
+INDUSTRIES PAGES
+================================================================================
+
+18. INSURANCE INDUSTRY
+================================================================================
+Title: Virtual Assistants for Insurance Agencies | Industry-Specific Support
+Meta Description: Specialized virtual assistants for insurance agencies. Policy management, claims processing, and customer service expertise.
+URL: https://www.oceanvirtualassistant.com/industries/insurance-virtual-assistant
+
+19. REAL ESTATE INDUSTRY
+================================================================================
+Title: Virtual Assistants for Real Estate | Transaction & Listing Support
+Meta Description: Virtual assistants for real estate professionals. Transaction coordination, listing management, and client communication support.
+URL: https://www.oceanvirtualassistant.com/industries/real-estate-virtual-assistant
+
+20. SMALL BUSINESS INDUSTRY
+================================================================================
+Title: Virtual Assistants for Small Business | Affordable Support Services
+Meta Description: Virtual assistants for small businesses. Phone, scheduling, billing, marketing, and admin support to help you grow.
+URL: https://www.oceanvirtualassistant.com/industries/small-business
+
+21. E-COMMERCE INDUSTRY
+================================================================================
+Title: Virtual Assistants for E-Commerce | Order & Catalog Management
+Meta Description: Virtual assistants for e-commerce businesses. Product listings, order operations, customer support, and catalog management.
+URL: https://www.oceanvirtualassistant.com/industries/e-commerce
+
+22. FINANCE INDUSTRY
+================================================================================
+Title: Virtual Assistants for Finance | Bookkeeping & Accounting Support
+Meta Description: Virtual assistants for finance professionals. Bookkeeping, reconciliations, AR/AP, reporting, and advisor support services.
+URL: https://www.oceanvirtualassistant.com/industries/finance
+
+23. PROPERTY MANAGEMENT INDUSTRY
+================================================================================
+Title: Property Management Virtual Assistant | Tenant & Operations Support
+Meta Description: Virtual assistants for property management. Tenant communications, maintenance coordination, and accounting support for portfolio management.
+URL: https://www.oceanvirtualassistant.com/industries/property-management
+
+24. HEALTHCARE INDUSTRY
+================================================================================
+Title: Virtual Assistants for Healthcare | Medical Support Services
+Meta Description: Virtual assistants for healthcare professionals. Appointment scheduling, patient communication, and medical records management.
+URL: https://www.oceanvirtualassistant.com/industries/healthcare
+
+25. HR INDUSTRY
+================================================================================
+Title: Virtual Assistants for HR | Recruitment & Onboarding Support
+Meta Description: Virtual assistants for HR departments. Recruitment support, employee onboarding, and HR administration services.
+URL: https://www.oceanvirtualassistant.com/industries/hr
+
+26. TECHNOLOGY INDUSTRY
+================================================================================
+Title: Virtual Assistants for Tech Companies | Technical Support Services
+Meta Description: Virtual assistants for technology companies. Tech support, data entry, and administrative support for tech professionals.
+URL: https://www.oceanvirtualassistant.com/industries/technology
+
+27. MORTGAGE & LENDING INDUSTRY
+================================================================================
+Title: Virtual Assistants for Mortgage & Lending | Loan Processing Support
+Meta Description: Virtual assistants for mortgage and lending professionals. Loan processing, document management, and client communication support.
+URL: https://www.oceanvirtualassistant.com/industries/mortgage-and-lending
+
+================================================================================
+NAVIGATION COMPONENTS
+================================================================================
+
+28. NAVBAR (03-navbar-header.html)
+================================================================================
+- Logo: Ocean VA
+- Desktop Menu: Services, Industries, Pricing, Our VAs, Blogs, Careers, About Us
+- CTA Button: Contact Us (Color: #049d98 Teal, Hover: Text changes to #111827)
+- Mobile Menu: Identical to desktop menu with full URLs
+- All links updated with correct slugs and full domain URLs
+
+29. FOOTER (05-footer.html)
+================================================================================
+- Logo: Ocean VA
+- Services Column: 8 service links
+- Industries Column: 10 industry links (Insurance slug updated to /industries/insurance-virtual-assistant)
+- Other Pages: About Us, Pricing, Our VAs, FAQs, Blogs, Careers, Contact Us, Terms, Privacy
+- Social Links: Facebook, LinkedIn, YouTube, Instagram
+- Contact Info: Address, Email, Phone
+
+================================================================================
+SCHEMA MARKUPS
+================================================================================
+
+30. PAGE SCHEMAS (schema-markups/pages/)
+================================================================================
+- 01-about-us-schema.json: AboutPage schema
+- 02-contact-us-schema.json: ContactPage schema
+- 03-pricing-schema.json: PriceSpecification schema with offers
+- 04-blog-schema.json: Blog schema with sample posts
+- 05-our-vas-schema.json: CollectionPage schema for VAs
+- 06-licensed-insurance-agents-schema.json: CollectionPage for agents
+- 07-executive-admin-va-schema.json: Service schema
+- 08-careers-schema.json: JobPosting schema
+
+================================================================================
+WEBFLOW COMPONENTS CREATED
+================================================================================
+
+PROPERTY MANAGEMENT VA:
+- 109-property-management-hero.html
+- 110-property-management-use-cases.html
+- 111-property-management-why-ocean.html
+- 112-property-management-outcomes.html
+- 113-property-management-faqs.html
+- 114-property-management-cta.html
+
+ABOUT US (FIXES):
+- 151-about-us-what-sets-apart.html (Fixed h3 color conflicts)
+
+================================================================================
+KEY UPDATES & FIXES
+================================================================================
+
+1. Insurance Industry Link Update:
+   - Old: /insurance
+   - New: /industries/insurance-virtual-assistant
+   - Updated in: Navbar, Footer, Home Industries Section
+
+2. Navbar CTA Button:
+   - Color: #049d98 (Teal)
+   - Hover: Text changes to #111827 (Dark Gray)
+   - No background color change on hover
+
+3. Mobile Menu Alignment:
+   - All URLs now match desktop menu
+   - Full domain URLs (https://www.oceanvirtualassistant.com)
+   - Correct slugs for all services and industries
+   - "Our VAs" items updated to match desktop
+
+4. About Us Style Fixes:
+   - Fixed h3 color conflicts in gradient sections
+   - Renamed classes: .remove-card-title, .gain-card-title
+   - Added color: white !important to .content-header h3
+
+5. Font Weight Standards:
+   - Section titles: 700 weight (not 800)
+   - Hero/CTA titles: 800 weight with white !important
+   - Specific class names for all hero/CTA titles
+
+================================================================================
+END OF DOCUMENT
+================================================================================

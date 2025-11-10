@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Our Virtual Assistants",
+  "url": "https://www.oceanvirtualassistant.com/ovas-current-vas",
+  "description": "Meet our team of talented, bilingual virtual assistants. Each VA is carefully vetted and trained to provide exceptional support.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "url": "https://www.oceanvirtualassistant.com",
+    "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Ocean Virtual Assistant",
+    "description": "Team of professional, bilingual virtual assistants ready to support your business",
+    "url": "https://www.oceanvirtualassistant.com",
+    "knowsAbout": [
+      "Virtual Assistant Services",
+      "Administrative Support",
+      "Customer Service",
+      "Marketing Support",
+      "Sales Support"
+    ]
+  }
+}
+</script>
