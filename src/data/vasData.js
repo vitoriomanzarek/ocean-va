@@ -62,7 +62,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "joana-ocean-va-profile",
-    imagen: "/images/VAs/Johana.webp"
+    imagen: "/images/VAs/Joana.webp"
   },
   {
     id: 6,
@@ -322,7 +322,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "raydon-ocean-va-profile",
-    imagen: "/images/VAs/Raidon.webp"
+    imagen: "/images/VAs/Raydon.webp"
   },
   {
     id: 26,
@@ -400,7 +400,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "ana-s-ocean-va-profile",
-    imagen: "/images/VAs/Anna.webp"
+    imagen: "/images/VAs/Ana.webp"
   },
   {
     id: 32,
@@ -413,7 +413,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ana-victoria-ocean-va-profile",
-    imagen: "/images/VAs/Anna Victoria.webp"
+    imagen: "/images/VAs/Ana Victoria.webp"
   },
   {
     id: 33,
@@ -495,6 +495,19 @@ export const vasData = [
   },
   {
     id: 39,
+    nombre: "Day",
+    idiomas: "English",
+    años_experiencia: 2,
+    especialización: ["Home", "Auto Insurance"],
+    nivel_inglés: "Proficient",
+    disponibilidad: "Assigned",
+    horario: "",
+    categorías: ["Insurance VA"],
+    slug: "day-ocean-va-profile",
+    imagen: "/images/VAs/Day.webp"
+  },
+  {
+    id: 40,
     nombre: "Ellen",
     idiomas: "English",
     años_experiencia: 2,
@@ -569,7 +582,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Real Estate", "Executive VA"],
     slug: "janice-ocean-va-profile",
-    imagen: "/images/VAs/Janet.webp"
+    imagen: "/images/VAs/Janice.webp"
   },
   {
     id: 45,

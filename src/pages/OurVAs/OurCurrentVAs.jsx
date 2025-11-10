@@ -63,7 +63,7 @@ export default function OurCurrentVAs() {
             {/* Category Buttons */}
             <div className="flex flex-wrap gap-3 mb-8">
               <Link 
-                to="/our-vas"
+                to="/ovas-current-vas"
                 className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
               >
                 Insurance Virtual Assistants
