@@ -56,18 +56,29 @@ export default function VAProfilePage({ vaData }) {
 
           {/* Bottom Row - Tools, Equipment, and Video */}
           <div className="bg-white bg-opacity-10 p-8 rounded-lg">
-            <div className="grid md:grid-cols-3 gap-8 mb-8 items-start">
+            <div className={`grid ${vaData.tools.length > 6 ? 'md:grid-cols-4' : 'md:grid-cols-3'} gap-8 mb-8 items-start`}>
               {/* Tools */}
-              <div>
+              <div className={vaData.tools.length > 6 ? 'md:col-span-2' : ''}>
                 <h3 className="font-bold text-lg mb-4 text-white uppercase">TOOLS</h3>
-                <ul className="space-y-2 text-sm text-white">
-                  {vaData.tools.map((tool, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="mr-2">✓</span>
-                      <span>{tool}</span>
-                    </li>
-                  ))}
-                </ul>
+                {vaData.tools.length > 6 ? (
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                    {vaData.tools.map((tool, idx) => (
+                      <div key={idx} className="flex items-start">
+                        <span className="mr-2 text-white">✓</span>
+                        <span className="text-sm text-white">{tool}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <ul className="space-y-2 text-sm text-white">
+                    {vaData.tools.map((tool, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="mr-2">✓</span>
+                        <span>{tool}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               {/* Equipment */}
               <div>
