@@ -25,7 +25,8 @@
         counter.id = 'va-results-counter';
         counter.style.cssText = `
           text-align: center;
-          padding: 16px 20px;
+          padding: 24px 20px;
+          margin-bottom: 20px;
           font-size: 14px;
           color: #6b7280;
           font-weight: 500;

@@ -5,31 +5,36 @@
   .hero-section {
     background-image: url('https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690377013fb1b091b9741802_our-va-hero.png');
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
-    padding: 80px 20px;
+    padding: 120px 20px 80px 20px;
     position: relative;
+    min-height: 500px;
   }
 
   @media (max-width: 768px) {
     .hero-section {
-      padding: 60px 20px;
+      padding: 100px 20px 60px 20px;
+      min-height: 400px;
     }
   }
 
   @media (max-width: 640px) {
     .hero-section {
-      padding: 48px 16px;
+      padding: 80px 16px 48px 16px;
+      min-height: 350px;
     }
   }
 
   .hero-container {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 20px;
   }
 
   .hero-content {
-    max-width: 600px;
+    max-width: 700px;
+    text-align: left;
   }
 
   .hero-title {
@@ -59,6 +64,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .hero-btn {
