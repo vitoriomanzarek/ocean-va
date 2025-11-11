@@ -109,7 +109,6 @@ function generateVACard(va) {
       
       <div class="va-grid-card-footer">
         <a href="/${slug}" class="va-grid-btn">View Profile →</a>
-        <button class="va-grid-btn-secondary" title="Share">▶</button>
       </div>
     </div>`;
 }
@@ -297,7 +296,8 @@ const cssTemplate = `<style>
   }
 
   .va-grid-btn:hover {
-    background: #037b77;
+    background: #1eb8a6;
+    color: white;
     transform: translateX(2px);
   }
 

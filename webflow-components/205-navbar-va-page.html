@@ -1,14 +1,8 @@
-<!-- NAVBAR FOR OUR CURRENT VAs PAGE -->
-<!-- Based on OurCurrentVAs.jsx component -->
+<!-- NAVBAR VA FOR OUR CURRENT VAs PAGE -->
+<!-- Based on NavbarVA.jsx component -->
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .navbar-container {
+  .navbar-va {
     background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -16,401 +10,337 @@
     z-index: 50;
   }
 
-  .navbar {
-    max-width: 1400px;
+  .navbar-va-container {
+    max-width: 80rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
   }
 
-  .navbar-logo {
+  .navbar-va-logo {
     flex-shrink: 0;
   }
 
-  .navbar-logo a {
+  .navbar-va-logo a {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
 
-  .navbar-logo img {
+  .navbar-va-logo img {
     height: 48px;
     width: auto;
   }
 
-  .navbar-menu {
+  /* Desktop Navigation */
+  .navbar-va-menu {
     display: none;
-    list-style: none;
-    gap: 32px;
     align-items: center;
+    gap: 16px;
   }
 
-  .navbar-menu.active {
-    display: flex;
+  @media (min-width: 1024px) {
+    .navbar-va-menu {
+      display: flex;
+    }
   }
 
-  .navbar-item {
+  .navbar-va-btn {
+    background: #0d9488;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .navbar-va-btn:hover {
+    background: #14b8a6;
+    color: white;
+  }
+
+  /* Dropdown */
+  .navbar-va-dropdown-container {
     position: relative;
   }
 
-  .navbar-link {
-    color: #374151;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-
-  .navbar-link:hover {
-    color: #049d98;
-  }
-
-  .navbar-dropdown-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-  }
-
-  .navbar-dropdown {
+  .navbar-va-dropdown {
     position: absolute;
     top: 100%;
     left: 0;
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    min-width: 280px;
+    min-width: 256px;
+    margin-top: 8px;
     padding: 8px 0;
     border: 1px solid #e5e7eb;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.2s ease;
-    margin-top: 8px;
+    display: none;
+    z-index: 100;
   }
 
-  .navbar-item:hover .navbar-dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .navbar-dropdown-item {
+  .navbar-va-dropdown.active {
     display: block;
-    padding: 10px 16px;
+  }
+
+  .navbar-va-dropdown-item {
+    display: block;
+    padding: 8px 16px;
     color: #374151;
     text-decoration: none;
-    font-size: 13px;
-    transition: all 0.2s ease;
+    font-size: 14px;
+    transition: all 0.2s;
   }
 
-  .navbar-dropdown-item:hover {
-    background: #f0fffe;
-    color: #049d98;
+  .navbar-va-dropdown-item:hover {
+    background: #f0fdf4;
+    color: #0d9488;
   }
 
-  .navbar-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
+  /* Mobile menu button */
+  .navbar-va-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    color: #374151;
+    padding: 0;
   }
 
-  .navbar-toggle span {
+  .navbar-va-toggle svg {
     width: 24px;
-    height: 2px;
-    background: #374151;
-    transition: all 0.3s ease;
+    height: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    .navbar-va-toggle {
+      display: none;
+    }
+  }
+
+  /* Mobile Menu */
+  .navbar-va-mobile {
+    display: none;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 16px;
+  }
+
+  .navbar-va-mobile.active {
     display: block;
   }
 
-  .navbar-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
+  @media (min-width: 1024px) {
+    .navbar-va-mobile {
+      display: none !important;
+    }
   }
 
-  .navbar-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-
-  .navbar-cta {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .navbar-btn {
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 14px;
+  .navbar-va-mobile-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #0d9488;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
     text-decoration: none;
-    cursor: pointer;
     border: none;
-    transition: all 0.2s ease;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 12px;
   }
 
-  .navbar-btn-secondary {
-    background: white;
-    color: #049d98;
-    border: 2px solid #049d98;
+  .navbar-va-mobile-item:hover {
+    background: #0f766e;
   }
 
-  .navbar-btn-secondary:hover {
-    background: #f0fffe;
+  .navbar-va-mobile-dropdown {
+    display: none;
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 12px;
   }
 
-  .navbar-btn-primary {
-    background: #049d98;
+  .navbar-va-mobile-dropdown.active {
+    display: block;
+  }
+
+  .navbar-va-mobile-dropdown-item {
+    display: block;
+    padding: 8px 0;
+    color: #374151;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .navbar-va-mobile-dropdown-item:hover {
+    color: #0d9488;
+  }
+
+  .navbar-va-mobile-btn-dropdown {
+    width: 100%;
+    background: #0d9488;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .navbar-va-mobile-btn-dropdown:hover {
+    background: #14b8a6;
     color: white;
   }
 
-  .navbar-btn-primary:hover {
-    background: #037b77;
+  .navbar-va-chevron {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s;
   }
 
-  /* Mobile Styles */
-  @media (max-width: 1024px) {
-    .navbar {
-      height: 64px;
-      padding: 0 16px;
-    }
-
-    .navbar-logo img {
-      height: 40px;
-    }
-
-    .navbar-menu {
-      display: none;
-      position: absolute;
-      top: 64px;
-      left: 0;
-      right: 0;
-      background: white;
-      flex-direction: column;
-      gap: 0;
-      border-bottom: 1px solid #e5e7eb;
-      max-height: calc(100vh - 64px);
-      overflow-y: auto;
-    }
-
-    .navbar-menu.active {
-      display: flex;
-    }
-
-    .navbar-item {
-      width: 100%;
-      border-bottom: 1px solid #f3f4f6;
-    }
-
-    .navbar-link {
-      padding: 16px;
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .navbar-dropdown {
-      position: static;
-      opacity: 0;
-      visibility: hidden;
-      max-height: 0;
-      overflow: hidden;
-      box-shadow: none;
-      border: none;
-      background: #f9fafb;
-      margin-top: 0;
-      border-radius: 0;
-      transform: none;
-      transition: all 0.3s ease;
-    }
-
-    .navbar-item.active .navbar-dropdown {
-      opacity: 1;
-      visibility: visible;
-      max-height: 500px;
-    }
-
-    .navbar-dropdown-item {
-      padding: 12px 16px 12px 32px;
-    }
-
-    .navbar-toggle {
-      display: flex;
-    }
-
-    .navbar-cta {
-      display: none;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .navbar {
-      height: 56px;
-      padding: 0 12px;
-    }
-
-    .navbar-logo img {
-      height: 36px;
-    }
-
-    .navbar-link {
-      font-size: 13px;
-    }
-
-    .navbar-dropdown-item {
-      font-size: 12px;
-    }
+  .navbar-va-chevron.rotated {
+    transform: rotate(180deg);
   }
 </style>
 
-<div class="navbar-container">
-  <div class="navbar">
+<nav class="navbar-va">
+  <div class="navbar-va-container">
     <!-- Logo -->
-    <div class="navbar-logo">
+    <div class="navbar-va-logo">
       <a href="/">
-        <img src="/img/oceanVALogo.png" alt="Ocean VA">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png" alt="Ocean VA">
       </a>
     </div>
 
-    <!-- Desktop Navigation -->
-    <ul class="navbar-menu" id="navbarMenu">
-      <!-- Services -->
-      <li class="navbar-item">
-        <a href="#" class="navbar-link">
-          Services
-          <svg class="navbar-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    <!-- Desktop Menu -->
+    <div class="navbar-va-menu" id="navbarVAMenu">
+      <!-- BOOK A DISCOVERY CALL -->
+      <a href="/contact-us" class="navbar-va-btn">BOOK A DISCOVERY CALL</a>
+
+      <!-- VA CATEGORIES Dropdown -->
+      <div class="navbar-va-dropdown-container" id="categoriesContainer">
+        <button class="navbar-va-btn" id="categoriesBtn">
+          VA CATEGORIES
+          <svg class="navbar-va-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
-        </a>
-        <div class="navbar-dropdown">
-          <a href="/services/insurance-customer-service-representative" class="navbar-dropdown-item">Insurance Customer Service Representative</a>
-          <a href="/services/virtual-administrative-assistant" class="navbar-dropdown-item">Administrative Assistant</a>
-          <a href="/services/customer-service-virtual-assistant" class="navbar-dropdown-item">Customer Service Representative</a>
-          <a href="/services/marketing-virtual-assistant" class="navbar-dropdown-item">Marketing Assistant</a>
-          <a href="/services/virtual-receptionist" class="navbar-dropdown-item">Virtual Receptionist</a>
-          <a href="/services/virtual-transaction-coordinator" class="navbar-dropdown-item">Transaction Coordinator</a>
-          <a href="/services/sdr-virtual-assistant" class="navbar-dropdown-item">Sales, Development & Inside Sales</a>
-          <a href="/services/virtual-assistant-services" class="navbar-dropdown-item">General Virtual Assistant</a>
+        </button>
+        <div class="navbar-va-dropdown" id="categoriesDropdown">
+          <a href="/ovas-current-vas" class="navbar-va-dropdown-item">Insurance Virtual Assistant</a>
+          <a href="/licensed-insurance-agents" class="navbar-va-dropdown-item">Licensed Insurance Agents</a>
+          <a href="/executive-admin-vas" class="navbar-va-dropdown-item">Executive / Admin VA</a>
         </div>
-      </li>
+      </div>
 
-      <!-- Industries -->
-      <li class="navbar-item">
-        <a href="#" class="navbar-link">
-          Industries
-          <svg class="navbar-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </a>
-        <div class="navbar-dropdown">
-          <a href="/insurance" class="navbar-dropdown-item">Insurance</a>
-          <a href="/industries/real-estate-virtual-assistant" class="navbar-dropdown-item">Real Estate</a>
-          <a href="/industries/small-business-virtual-assistant" class="navbar-dropdown-item">Small Business</a>
-          <a href="/industries/ecommerce-virtual-assistant" class="navbar-dropdown-item">E-Commerce</a>
-          <a href="/industries/finance-virtual-assistant" class="navbar-dropdown-item">Finance</a>
-          <a href="/industries/property-management-virtual-assistant" class="navbar-dropdown-item">Property Management</a>
-          <a href="/industries/medical-virtual-assistant" class="navbar-dropdown-item">Healthcare</a>
-          <a href="/industries/hr-virtual-assistant" class="navbar-dropdown-item">HR</a>
-          <a href="/industries/tech-virtual-assistant" class="navbar-dropdown-item">Technology</a>
-          <a href="/industries/mortgage-virtual-assistant" class="navbar-dropdown-item">Mortgage and Lending</a>
-        </div>
-      </li>
+      <!-- FAQ -->
+      <a href="/faq-va-interview" class="navbar-va-btn">FAQ</a>
 
-      <!-- Pricing -->
-      <li class="navbar-item">
-        <a href="/pricing" class="navbar-link">Pricing</a>
-      </li>
-
-      <!-- Our VAs -->
-      <li class="navbar-item">
-        <a href="#" class="navbar-link">
-          Our VAs
-          <svg class="navbar-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </a>
-        <div class="navbar-dropdown">
-          <a href="/ovas-current-vas" class="navbar-dropdown-item">Insurance Virtual Assistant</a>
-          <a href="/licensed-insurance-agents" class="navbar-dropdown-item">Licensed Insurance Agents</a>
-          <a href="/executive-admin-vas" class="navbar-dropdown-item">Executive / Admin VA</a>
-        </div>
-      </li>
-
-      <!-- Blogs -->
-      <li class="navbar-item">
-        <a href="/blogs" class="navbar-link">Blogs</a>
-      </li>
-
-      <!-- Careers -->
-      <li class="navbar-item">
-        <a href="/careers" class="navbar-link">Careers</a>
-      </li>
-
-      <!-- About Us -->
-      <li class="navbar-item">
-        <a href="/about-us" class="navbar-link">About Us</a>
-      </li>
-    </ul>
-
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <!-- CTA Buttons -->
-    <div class="navbar-cta">
-      <a href="/contact" class="navbar-btn navbar-btn-secondary">Contact Us</a>
-      <a href="/book-demo" class="navbar-btn navbar-btn-primary">Book a Demo</a>
+      <!-- NEXT STEPS -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMTLuUz2zGYGYgapBoxur4g5W1TYNqYD96SaT0Z_itmJxqXg/viewform" target="_blank" rel="noopener noreferrer" class="navbar-va-btn">NEXT STEPS</a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="navbar-va-toggle" id="navbarVAToggle">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
   </div>
-</div>
+
+  <!-- Mobile Menu -->
+  <div class="navbar-va-mobile" id="navbarVAMobile">
+    <!-- BOOK A DISCOVERY CALL -->
+    <a href="/contact-us" class="navbar-va-mobile-item">BOOK A DISCOVERY CALL</a>
+
+    <!-- VA CATEGORIES -->
+    <button class="navbar-va-mobile-btn-dropdown" id="mobileCategories">
+      VA CATEGORIES
+      <svg class="navbar-va-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </button>
+    <div class="navbar-va-mobile-dropdown" id="mobileCategoriesDropdown">
+      <a href="/ovas-current-vas" class="navbar-va-mobile-dropdown-item">Insurance Virtual Assistant</a>
+      <a href="/licensed-insurance-agents" class="navbar-va-mobile-dropdown-item">Licensed Insurance Agents</a>
+      <a href="/executive-admin-vas" class="navbar-va-mobile-dropdown-item">Executive / Admin VA</a>
+    </div>
+
+    <!-- FAQ -->
+    <a href="/faq-va-interview" class="navbar-va-mobile-item">FAQ</a>
+
+    <!-- NEXT STEPS -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMTLuUz2zGYGYgapBoxur4g5W1TYNqYD96SaT0Z_itmJxqXg/viewform" target="_blank" rel="noopener noreferrer" class="navbar-va-mobile-item">NEXT STEPS</a>
+  </div>
+</nav>
 
 <script>
-  // Mobile menu toggle
-  const navbarToggle = document.getElementById('navbarToggle');
-  const navbarMenu = document.getElementById('navbarMenu');
+  // Desktop dropdown
+  const categoriesBtn = document.getElementById('categoriesBtn');
+  const categoriesDropdown = document.getElementById('categoriesDropdown');
+  const categoriesContainer = document.getElementById('categoriesContainer');
 
-  if (navbarToggle) {
-    navbarToggle.addEventListener('click', () => {
-      navbarToggle.classList.toggle('active');
-      navbarMenu.classList.toggle('active');
-    });
-  }
-
-  // Close menu when clicking on a link
-  const navbarLinks = document.querySelectorAll('.navbar-link');
-  navbarLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      if (link.href === '#') {
-        e.preventDefault();
-        const item = link.closest('.navbar-item');
-        item.classList.toggle('active');
-      } else {
-        navbarToggle?.classList.remove('active');
-        navbarMenu?.classList.remove('active');
-      }
-    });
+  categoriesBtn.addEventListener('click', () => {
+    categoriesDropdown.classList.toggle('active');
   });
 
-  // Close menu when clicking outside
+  // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.navbar')) {
-      navbarToggle?.classList.remove('active');
-      navbarMenu?.classList.remove('active');
+    if (!e.target.closest('#categoriesContainer')) {
+      categoriesDropdown.classList.remove('active');
     }
+  });
+
+  // Mobile menu
+  const navbarVAToggle = document.getElementById('navbarVAToggle');
+  const navbarVAMobile = document.getElementById('navbarVAMobile');
+
+  navbarVAToggle.addEventListener('click', () => {
+    navbarVAMobile.classList.toggle('active');
+  });
+
+  // Mobile dropdown
+  const mobileCategories = document.getElementById('mobileCategories');
+  const mobileCategoriesDropdown = document.getElementById('mobileCategoriesDropdown');
+  const chevron = mobileCategories.querySelector('.navbar-va-chevron');
+
+  mobileCategories.addEventListener('click', () => {
+    mobileCategoriesDropdown.classList.toggle('active');
+    chevron.classList.toggle('rotated');
+  });
+
+  // Close mobile menu when clicking on links
+  const mobileLinks = document.querySelectorAll('.navbar-va-mobile-dropdown-item, .navbar-va-mobile-item');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbarVAMobile.classList.remove('active');
+      mobileCategoriesDropdown.classList.remove('active');
+      chevron.classList.remove('rotated');
+    });
   });
 </script>
