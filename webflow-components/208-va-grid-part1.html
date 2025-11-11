@@ -20,53 +20,66 @@
 
   .va-grid-card {
     background: white;
-    border-radius: 16px;
+    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.1),
+      0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
   .va-grid-card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+    box-shadow: 
+      0 25px 70px rgba(0, 0, 0, 0.15),
+      0 15px 40px rgba(0, 0, 0, 0.08);
   }
 
   .va-grid-card-image {
     width: 100%;
-    height: 280px;
-    background: linear-gradient(135deg, #05bfb9 0%, #049d98 100%);
+    height: 200px;
+    background: 
+      radial-gradient(ellipse at 50% 30%, rgba(180, 255, 240, 0.8) 0%, transparent 60%),
+      radial-gradient(ellipse at 60% 70%, rgba(100, 220, 200, 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 30% 50%, rgba(120, 235, 215, 0.4) 0%, transparent 55%),
+      linear-gradient(180deg, #6de5d0 0%, #4dd4bf 30%, #3ec4b0 60%, #2fb09d 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 20px rgba(93, 217, 193, 0.2);
+    border-radius: 25px 25px 0 0;
   }
 
   .va-grid-card-image img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 6px solid white;
+    border: 6px solid rgba(255, 255, 255, 0.4);
     object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 
   .va-grid-availability {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
     background: white;
-    color: #049d98;
+    color: #05bfb9;
     padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     gap: 4px;
+    z-index: 10;
   }
 
   .va-grid-card-body {
@@ -77,24 +90,26 @@
   }
 
   .va-grid-card-name {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
-    color: #049d98;
+    color: #1a8b7e;
     margin-bottom: 12px;
+    line-height: 1.2;
   }
 
   .va-grid-card-role {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    background: #e8f7f6;
-    color: #049d98;
-    padding: 6px 12px;
+    gap: 8px;
+    background: #e8f9f6;
+    color: #1a8b7e;
+    padding: 8px 16px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 600;
     width: fit-content;
     margin-bottom: 16px;
+    border: 1.5px solid #1eb8a6;
   }
 
   .va-grid-card-info {
@@ -147,13 +162,13 @@
   }
 
   .va-grid-tag {
-    background: #e8f7f6;
-    color: #049d98;
-    padding: 6px 12px;
+    background: #c8f0e8;
+    color: #1a8b7e;
+    padding: 6px 14px;
     border-radius: 16px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
-    border: 1px solid #b3e5e0;
+    border: 1px solid #a8e5d8;
   }
 
   .va-grid-card-footer {
@@ -165,47 +180,51 @@
 
   .va-grid-btn {
     flex: 1;
-    padding: 12px 16px;
-    background: #049d98;
+    padding: 12px 20px;
+    background: #1eb8a6;
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 20px;
+    font-size: 13px;
     font-weight: 600;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
   }
 
   .va-grid-btn:hover {
-    background: #1eb8a6;
+    background: #189e8f;
     color: white;
-    transform: translateX(2px);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 184, 166, 0.3);
   }
 
   .va-grid-btn-secondary {
     width: 44px;
     height: 44px;
     padding: 0;
-    background: #f3f4f6;
-    color: #049d98;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
+    background: white;
+    color: #1eb8a6;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     font-size: 16px;
+    flex: 0 0 auto;
   }
 
   .va-grid-btn-secondary:hover {
-    background: #e5e7eb;
+    border-color: #1eb8a6;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 184, 166, 0.2);
   }
 
   @media (max-width: 768px) {

@@ -1,41 +1,71 @@
 <!-- FILTERS SECTION FOR OUR CURRENT VAs PAGE -->
-<!-- Based on VAFilters.jsx component -->
+<!-- Based on VAFilters.jsx component - Updated with button toggles -->
 
 <style>
-  .filters-section {
+  .va-filters {
     background: white;
     padding: 32px 20px;
     border-bottom: 1px solid #e5e7eb;
   }
 
-  .filters-container {
+  .va-filters-container {
     max-width: 1400px;
     margin: 0 auto;
-  }
-
-  .filters-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    gap: 16px;
-    align-items: flex-end;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
   }
 
-  .filter-group {
+  .va-filter-group {
     display: flex;
     flex-direction: column;
   }
 
-  .filter-label {
+  .va-filter-label {
     font-size: 12px;
     font-weight: 700;
     color: #6b7280;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
-  .filter-input,
-  .filter-select {
+  .va-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-filter-button {
+    padding: 8px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: white;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .va-filter-button:hover {
+    border-color: #049d98;
+    color: #049d98;
+  }
+
+  .va-filter-button.active {
+    background: #049d98;
+    color: white;
+    border-color: #049d98;
+  }
+
+  .va-filter-button.active:hover {
+    background: #037b77;
+    border-color: #037b77;
+  }
+
+  .va-search-input {
     padding: 10px 12px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
@@ -46,177 +76,88 @@
     color: #374151;
   }
 
-  .filter-input:focus,
-  .filter-select:focus {
+  .va-search-input:focus {
     outline: none;
     border-color: #049d98;
     box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
   }
 
-  .filter-input::placeholder {
+  .va-search-input::placeholder {
     color: #9ca3af;
-  }
-
-  .filter-select {
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    padding-right: 32px;
-  }
-
-  .filter-buttons {
-    display: flex;
-    gap: 8px;
-    align-items: flex-end;
-  }
-
-  .filter-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-  }
-
-  .filter-btn-apply {
-    background: #049d98;
-    color: white;
-  }
-
-  .filter-btn-apply:hover {
-    background: #037b77;
-  }
-
-  .filter-btn-apply:active {
-    transform: scale(0.98);
-  }
-
-  .filter-btn-clear {
-    background: #f3f4f6;
-    color: #374151;
-    border: 1px solid #d1d5db;
-  }
-
-  .filter-btn-clear:hover {
-    background: #e5e7eb;
-  }
-
-  .filter-btn-clear:active {
-    transform: scale(0.98);
   }
 
   /* Tablet */
   @media (max-width: 1024px) {
-    .filters-wrapper {
+    .va-filters-container {
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .filter-buttons {
-      grid-column: 1 / -1;
-      justify-content: flex-start;
-    }
-
-    .filter-btn {
-      flex: 1;
+      gap: 24px;
     }
   }
 
   /* Mobile */
   @media (max-width: 640px) {
-    .filters-section {
+    .va-filters {
       padding: 24px 16px;
     }
 
-    .filters-wrapper {
+    .va-filters-container {
       grid-template-columns: 1fr;
-      gap: 12px;
+      gap: 20px;
     }
 
-    .filter-group {
-      width: 100%;
+    .va-filter-options {
+      gap: 6px;
     }
 
-    .filter-input,
-    .filter-select {
-      width: 100%;
-    }
-
-    .filter-buttons {
-      grid-column: 1 / -1;
-      gap: 8px;
-    }
-
-    .filter-btn {
-      flex: 1;
-      padding: 10px 16px;
+    .va-filter-button {
+      padding: 8px 12px;
       font-size: 13px;
     }
   }
 </style>
 
-<section class="filters-section">
-  <div class="filters-container">
-    <form class="filters-wrapper" id="filtersForm">
-      <!-- Search Input -->
-      <div class="filter-group">
-        <label class="filter-label">Search by Name</label>
-        <input 
-          type="text" 
-          class="filter-input" 
-          id="searchInput" 
-          placeholder="e.g., Adrian, Maria..."
-          autocomplete="off"
-        >
+<section class="va-filters">
+  <div class="va-filters-container">
+    <!-- Availability Filter -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Availability</label>
+      <div class="va-filter-options" id="availabilityOptions">
+        <button type="button" class="va-filter-button active" data-filter="availability" data-value="All">All</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Full Time">Full Time</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Part Time">Part Time</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Assigned">Assigned</button>
       </div>
+    </div>
 
-      <!-- Availability Dropdown -->
-      <div class="filter-group">
-        <label class="filter-label">Availability</label>
-        <select class="filter-select" id="availabilitySelect">
-          <option value="All">All</option>
-          <option value="Full Time">Full Time</option>
-          <option value="Part Time">Part Time</option>
-          <option value="Assigned">Assigned</option>
-        </select>
+    <!-- Language Filter -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Language</label>
+      <div class="va-filter-options" id="languageOptions">
+        <button type="button" class="va-filter-button active" data-filter="language" data-value="All">All</button>
+        <button type="button" class="va-filter-button" data-filter="language" data-value="English">English</button>
+        <button type="button" class="va-filter-button" data-filter="language" data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button>
       </div>
+    </div>
 
-      <!-- Language Dropdown -->
-      <div class="filter-group">
-        <label class="filter-label">Language</label>
-        <select class="filter-select" id="languageSelect">
-          <option value="All">All</option>
-          <option value="English">English</option>
-          <option value="Bilingual (EN-ES)">Bilingual (EN-ES)</option>
-        </select>
-      </div>
-
-      <!-- Buttons -->
-      <div class="filter-buttons">
-        <button type="button" class="filter-btn filter-btn-apply" id="applyBtn">
-          Apply Filters
-        </button>
-        <button type="button" class="filter-btn filter-btn-clear" id="clearBtn">
-          Clear
-        </button>
-      </div>
-    </form>
+    <!-- Search Input -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Search by Name</label>
+      <input 
+        type="text" 
+        class="va-search-input" 
+        id="searchInput" 
+        placeholder="Search VA name..."
+        autocomplete="off"
+      >
+    </div>
   </div>
 </section>
 
 <script>
   // Get filter elements
   const searchInput = document.getElementById('searchInput');
-  const availabilitySelect = document.getElementById('availabilitySelect');
-  const languageSelect = document.getElementById('languageSelect');
-  const applyBtn = document.getElementById('applyBtn');
-  const clearBtn = document.getElementById('clearBtn');
-  const filtersForm = document.getElementById('filtersForm');
+  const availabilityButtons = document.querySelectorAll('[data-filter="availability"]');
+  const languageButtons = document.querySelectorAll('[data-filter="language"]');
 
   // Store current filters
   let currentFilters = {
@@ -225,65 +166,67 @@
     language: 'All'
   };
 
-  // Apply filters
-  function applyFilters() {
-    currentFilters = {
-      search: searchInput.value.trim(),
-      availability: availabilitySelect.value,
-      language: languageSelect.value
-    };
-
-    // Dispatch custom event with filters
-    const event = new CustomEvent('filtersChanged', {
-      detail: currentFilters
+  // Function to dispatch filter change event
+  function dispatchFilterChange() {
+    const event = new CustomEvent('vaFiltersChanged', {
+      detail: currentFilters,
+      bubbles: true
     });
     document.dispatchEvent(event);
-
-    console.log('Filters applied:', currentFilters);
+    console.log('Filters changed:', currentFilters);
   }
 
-  // Clear filters
-  function clearFilters() {
-    searchInput.value = '';
-    availabilitySelect.value = 'All';
-    languageSelect.value = 'All';
-    
-    currentFilters = {
-      search: '',
-      availability: 'All',
-      language: 'All'
-    };
-
-    // Dispatch custom event
-    const event = new CustomEvent('filtersChanged', {
-      detail: currentFilters
+  // Handle availability button clicks
+  availabilityButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Remove active class from all availability buttons
+      availabilityButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update filter
+      currentFilters.availability = button.dataset.value;
+      
+      // Dispatch event
+      dispatchFilterChange();
     });
-    document.dispatchEvent(event);
-
-    console.log('Filters cleared');
-  }
-
-  // Event listeners
-  applyBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    applyFilters();
   });
 
-  clearBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    clearFilters();
+  // Handle language button clicks
+  languageButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Remove active class from all language buttons
+      languageButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update filter
+      currentFilters.language = button.dataset.value;
+      
+      // Dispatch event
+      dispatchFilterChange();
+    });
   });
 
-  // Allow Enter key to apply filters
-  filtersForm.addEventListener('keypress', (e) => {
+  // Handle search input - real-time filtering
+  searchInput.addEventListener('input', (e) => {
+    currentFilters.search = e.target.value.trim();
+    dispatchFilterChange();
+  });
+
+  // Allow Enter key in search
+  searchInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      applyFilters();
+      dispatchFilterChange();
     }
   });
 
-  // Real-time search (optional - uncomment to enable)
-  // searchInput.addEventListener('input', applyFilters);
-  // availabilitySelect.addEventListener('change', applyFilters);
-  // languageSelect.addEventListener('change', applyFilters);
+  console.log('VA Filters initialized');
 </script>
