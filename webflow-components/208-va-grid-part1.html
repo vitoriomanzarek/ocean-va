@@ -1,0 +1,1330 @@
+<!-- VA GRID - PART 1 of 2 -->
+<!-- Based on OurCurrentVAs.jsx and VAGrid.jsx -->
+
+<style>
+  .va-grid-section {
+    background: #f9fafb;
+    padding: 40px 20px;
+  }
+
+  .va-grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .va-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+  }
+
+  .va-grid-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .va-grid-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+  }
+
+  .va-grid-card-image {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #05bfb9 0%, #049d98 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .va-grid-card-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+  }
+
+  .va-grid-availability {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: white;
+    color: #049d98;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .va-grid-card-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-grid-card-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #049d98;
+    margin-bottom: 12px;
+  }
+
+  .va-grid-card-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .va-grid-card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .va-grid-info-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-grid-info-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .va-grid-info-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .va-grid-specialization {
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .va-grid-spec-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .va-grid-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-grid-tag {
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #b3e5e0;
+  }
+
+  .va-grid-card-footer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0 24px 24px 24px;
+  }
+
+  .va-grid-btn {
+    flex: 1;
+    padding: 12px 16px;
+    background: #049d98;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .va-grid-btn:hover {
+    background: #037b77;
+    transform: translateX(2px);
+  }
+
+  .va-grid-btn-secondary {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #f3f4f6;
+    color: #049d98;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+  }
+
+  .va-grid-btn-secondary:hover {
+    background: #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .va-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .va-grid-section {
+      padding: 24px 16px;
+    }
+
+    .va-grid-card-image {
+      height: 240px;
+    }
+
+    .va-grid-card-image img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .va-grid-card-body {
+      padding: 20px;
+    }
+
+    .va-grid-card-name {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .va-grid-section {
+      padding: 16px 12px;
+    }
+
+    .va-grid-card-image {
+      height: 220px;
+    }
+
+    .va-grid-card-image img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .va-grid-card-body {
+      padding: 16px;
+    }
+
+    .va-grid-card-footer {
+      padding: 0 16px 16px 16px;
+    }
+  }
+</style>
+
+<section class="va-grid-section">
+  <div class="va-grid-container">
+    <div class="va-grid">
+    <!-- Adrian -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d41f7b9bba8c7a930b_Adrian.webp" alt="Adrian" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Adrian</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/adrian-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Alejandro -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d4cd15fbec43d91276_Alejandro.webp" alt="Alejandro" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Alejandro</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2.5 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Life</span>
+            <span class="va-grid-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/alejandro-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Dafne -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d53cbf1ca607b02b2d_Dafne.webp" alt="Dafne" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Dafne</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/dafne-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Ivan -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d6b37f8c43bae099f6_Ivan.webp" alt="Ivan" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Ivan</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/ivan-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Joana -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joana" alt="Joana" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Joana</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 Trained</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/joana-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Karen -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d7cc9f336cba3243d1_Karen.webp" alt="Karen" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Karen</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 4 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/karen-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Maria Paula -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d832a39b976f928efd_Maria.webp Paula" alt="Maria Paula" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Maria Paula</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Medical Admin (HIPAA Compliant)</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/maria-paula-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Moises -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d82ea0944cf9a27fad_Moises.webp" alt="Moises" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Moises</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 Bilingual (EN-ES)</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">U.S. Commercial Trucking Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/moises-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Abigail -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d48591ce6093bdf2c2_Abigail.webp" alt="Abigail" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Abigail</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/abigail-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Antonio -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d51f3842a99b786f41_Antonio.webp" alt="Antonio" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Antonio</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/antonio-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Cherry Mae -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69127dbc3d850f85a5ac7854_Cherry%20Mae.webp" alt="Cherry Mae" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Cherry Mae</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/cherry-mae-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Emmanuel -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d603e4c20b7c797f5f_Emmanuel.webp" alt="Emmanuel" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Emmanuel</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 6 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal</span>
+            <span class="va-grid-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/emmanuel-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Francis -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d6663e37de486152d3_Francis.webp" alt="Francis" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Francis</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 6 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Health</span>
+            <span class="va-grid-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/francis-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Geraldine -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d6ad9bbbbea950cd39_Geraldine.webp" alt="Geraldine" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Geraldine</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Commercial Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/geraldine-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Jay Alvin -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d7b62ec13fcdb2352e_Jay%20Alvin.webp" alt="Jay Alvin" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Jay Alvin</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 5 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal</span>
+            <span class="va-grid-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/jay-alvin-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Javier -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d74162d50e2a4cf540_Javier.webp" alt="Javier" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Javier</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/javier-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Jerome -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d7756529b8d6f82e64_Jerome.webp" alt="Jerome" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Jerome</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/jerome-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Jimmy -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d755a86cdc95a748bb_Jimmy.webp" alt="Jimmy" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Jimmy</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/jimmy-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Joel -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d790d2b6dd52e49d1d_Joel.webp" alt="Joel" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Joel</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 3 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal</span>
+            <span class="va-grid-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/joel-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Joji Marie -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d7bfb51d07abc54804_Joji%20Marie.webp" alt="Joji Marie" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Joji Marie</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 4 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto</span>
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Commercial</span>
+            <span class="va-grid-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/joji-marie-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Laurice -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d7d6b8bb8899b909af_Laurice.webp" alt="Laurice" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Laurice</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1.4 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/laurice-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Lorenz -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d808ab483ef413b5a4_Lorenz.webp" alt="Lorenz" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Lorenz</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/lorenz-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Ma. Venus -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ma. Venus" alt="Ma. Venus" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Ma. Venus</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1.5 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/ma-venus-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Michelle -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d8a2c4eaefc8bdf89b_Michelle.webp" alt="Michelle" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Michelle</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 1 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Home</span>
+            <span class="va-grid-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/michelle-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Raydon -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Raydon" alt="Raydon" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Raydon</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 4 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal</span>
+            <span class="va-grid-tag">Property Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/raydon-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Rona Mae -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d4cf44374e7f56a63e_Rona%20Mae.webp" alt="Rona Mae" loading="lazy">
+        <span class="va-grid-availability">✓ Full Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Rona Mae</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 2 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/rona-mae-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Gizelle -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d6d2c85bb443792446_Gizelle.webp" alt="Gizelle" loading="lazy">
+        <span class="va-grid-availability">✓ Part Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Gizelle</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 8 years</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/gizelle-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+
+    <!-- Jasmine -->
+    <div class="va-grid-card">
+      <div class="va-grid-card-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690ca8d6e926a944fc9b3bdd_Jasmine.webp" alt="Jasmine" loading="lazy">
+        <span class="va-grid-availability">✓ Part Time</span>
+      </div>
+      <div class="va-grid-card-body">
+        <h3 class="va-grid-card-name">Jasmine</h3>
+        <div class="va-grid-card-role">
+          ⊙ Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-grid-card-info">
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Experience</span>
+            <span class="va-grid-info-value">📅 Trained</span>
+          </div>
+          <div class="va-grid-info-item">
+            <span class="va-grid-info-label">Language</span>
+            <span class="va-grid-info-value">🌐 English</span>
+          </div>
+        </div>
+
+        <div class="va-grid-specialization">
+          <div class="va-grid-spec-label">Specialization</div>
+          <div class="va-grid-tags">
+            <span class="va-grid-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="va-grid-card-footer">
+        <a href="/jasmine-ocean-va-profile" class="va-grid-btn">View Profile →</a>
+        <button class="va-grid-btn-secondary" title="Share">▶</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,261 @@
+<!-- VA FILTERS COMPONENT - SEARCH & FILTER OPTIONS -->
+<!-- This component provides filtering capabilities for VA grid -->
+
+<style>
+  .va-filters-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .va-filters-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+  }
+
+  .va-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .va-filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-filter-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .va-filter-input,
+  .va-filter-select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111827;
+    background: white;
+    transition: all 0.2s ease;
+  }
+
+  .va-filter-input:focus,
+  .va-filter-select:focus {
+    outline: none;
+    border-color: #049d98;
+    box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
+  }
+
+  .va-filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .va-filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: white;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .va-filter-btn:hover {
+    border-color: #049d98;
+    color: #049d98;
+  }
+
+  .va-filter-btn.active {
+    background: #049d98;
+    color: white;
+    border-color: #049d98;
+  }
+
+  .va-filters-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .va-btn-apply,
+  .va-btn-reset {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .va-btn-apply {
+    background: #049d98;
+    color: white;
+  }
+
+  .va-btn-apply:hover {
+    background: #037b77;
+  }
+
+  .va-btn-reset {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .va-btn-reset:hover {
+    background: #e5e7eb;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .va-filters-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .va-filters-container {
+      padding: 16px;
+    }
+  }
+</style>
+
+<div class="va-filters-container">
+  <div class="va-filters-title">Filter Virtual Assistants</div>
+
+  <div class="va-filters-grid">
+    <!-- Search Input -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Search by Name</label>
+      <input 
+        type="text" 
+        class="va-filter-input" 
+        placeholder="Enter VA name..." 
+        id="va-search"
+      >
+    </div>
+
+    <!-- Availability Filter -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Availability</label>
+      <select class="va-filter-select" id="va-availability">
+        <option value="">All Availability</option>
+        <option value="Full Time">Full Time</option>
+        <option value="Part Time">Part Time</option>
+        <option value="Assigned">Assigned</option>
+      </select>
+    </div>
+
+    <!-- Language Filter -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Language</label>
+      <select class="va-filter-select" id="va-language">
+        <option value="">All Languages</option>
+        <option value="Bilingual">Bilingual (EN-ES)</option>
+        <option value="English">English Only</option>
+      </select>
+    </div>
+
+    <!-- Experience Filter -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">Experience</label>
+      <select class="va-filter-select" id="va-experience">
+        <option value="">All Experience Levels</option>
+        <option value="0-2">0-2 years</option>
+        <option value="2-4">2-4 years</option>
+        <option value="4+">4+ years</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Specialization Filter -->
+  <div class="va-filter-group" style="margin-top: 16px;">
+    <label class="va-filter-label">Specialization</label>
+    <div class="va-filter-buttons">
+      <button class="va-filter-btn" data-spec="Insurance">Insurance</button>
+      <button class="va-filter-btn" data-spec="Executive">Executive</button>
+      <button class="va-filter-btn" data-spec="Healthcare">Healthcare</button>
+      <button class="va-filter-btn" data-spec="Real Estate">Real Estate</button>
+      <button class="va-filter-btn" data-spec="Marketing">Marketing</button>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="va-filters-actions">
+    <button class="va-btn-apply" onclick="applyFilters()">Apply Filters</button>
+    <button class="va-btn-reset" onclick="resetFilters()">Reset</button>
+  </div>
+</div>
+
+<script>
+  // Filter functions (basic implementation)
+  function applyFilters() {
+    const search = document.getElementById('va-search').value;
+    const availability = document.getElementById('va-availability').value;
+    const language = document.getElementById('va-language').value;
+    const experience = document.getElementById('va-experience').value;
+
+    console.log('Filters applied:', {
+      search,
+      availability,
+      language,
+      experience
+    });
+
+    // TODO: Implement actual filtering logic
+    // This would filter the VA grid based on selected criteria
+  }
+
+  function resetFilters() {
+    document.getElementById('va-search').value = '';
+    document.getElementById('va-availability').value = '';
+    document.getElementById('va-language').value = '';
+    document.getElementById('va-experience').value = '';
+    
+    // Remove active state from specialization buttons
+    document.querySelectorAll('.va-filter-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    console.log('Filters reset');
+  }
+
+  // Toggle specialization buttons
+  document.querySelectorAll('.va-filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  });
+</script>
+
+<!-- INSTRUCTIONS FOR WEBFLOW:
+1. Copy this entire component
+2. Paste into an HTML Embed ABOVE the VA grid
+3. The filters will appear above the grid
+4. Users can select filters and click "Apply Filters"
+
+NOTE: This is a UI component. To make it fully functional:
+- You'll need to add JavaScript to filter the VA grid
+- Or use Webflow Collections with dynamic filtering
+- Or implement server-side filtering
+
+FILTER OPTIONS:
+- Search by name
+- Availability (Full Time, Part Time, Assigned)
+- Language (Bilingual, English)
+- Experience (0-2, 2-4, 4+ years)
+- Specialization (Insurance, Executive, Healthcare, Real Estate, Marketing)
+-->

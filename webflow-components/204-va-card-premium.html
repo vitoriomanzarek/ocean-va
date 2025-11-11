@@ -1,0 +1,291 @@
+<!-- VA CARD COMPONENT - PREMIUM DESIGN (Matches JSX) -->
+<!-- This is a single VA card component with premium styling -->
+
+<style>
+  .va-card-premium {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .va-card-premium:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+  }
+
+  .va-card-image-premium {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #049d98 0%, #037b77 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .va-card-image-premium img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+  }
+
+  .va-availability-badge-premium {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: white;
+    color: #049d98;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .va-card-content-premium {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-card-name-premium {
+    font-size: 22px;
+    font-weight: 700;
+    color: #049d98;
+    margin-bottom: 12px;
+  }
+
+  .va-card-role-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .va-card-info-premium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .va-info-block-premium {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-info-label-premium {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .va-info-value-premium {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .va-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  .va-specialization-premium {
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .va-spec-title-premium {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .va-tags-premium {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-tag-premium {
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #b3e5e0;
+  }
+
+  .va-card-footer-premium {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .va-btn-premium {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .va-btn-primary-premium {
+    background: #049d98;
+    color: white;
+  }
+
+  .va-btn-primary-premium:hover {
+    background: #037b77;
+    transform: translateX(2px);
+  }
+
+  .va-btn-secondary-premium {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #f3f4f6;
+    color: #049d98;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .va-btn-secondary-premium:hover {
+    background: #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .va-card-image-premium {
+      height: 240px;
+    }
+
+    .va-card-image-premium img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .va-card-content-premium {
+      padding: 20px;
+    }
+
+    .va-card-name-premium {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<!-- EXAMPLE CARD - Alejandro -->
+<div class="va-card-premium">
+  <div class="va-card-image-premium">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alejandro" alt="Alejandro" loading="lazy">
+    <span class="va-availability-badge-premium">Full Time</span>
+  </div>
+  <div class="va-card-content-premium">
+    <h3 class="va-card-name-premium">Alejandro</h3>
+    <div class="va-card-role-premium">
+      🎯 Insurance Virtual Assistant
+    </div>
+    
+    <div class="va-card-info-premium">
+      <div class="va-info-block-premium">
+        <div class="va-info-label-premium">Experience</div>
+        <div class="va-info-value-premium">
+          📅 2.5 years
+        </div>
+      </div>
+      <div class="va-info-block-premium">
+        <div class="va-info-label-premium">Language</div>
+        <div class="va-info-value-premium">
+          🌐 Bilingual (EN-ES)
+        </div>
+      </div>
+    </div>
+
+    <div class="va-specialization-premium">
+      <div class="va-spec-title-premium">Specialization</div>
+      <div class="va-tags-premium">
+        <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Life</span>
+        <span class="va-tag-premium">Commercial Insurance</span>
+      </div>
+    </div>
+  </div>
+  
+  <div style="padding: 0 24px 24px 24px;">
+    <div class="va-card-footer-premium">
+      <a href="/alejandro-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+        View Profile →
+      </a>
+      <button class="va-btn-secondary-premium" title="Share">
+        ▶
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- INSTRUCTIONS FOR WEBFLOW:
+1. Copy this entire component
+2. Paste into an HTML Embed in Webflow
+3. Duplicate the card div for each VA
+4. Update the following for each VA:
+   - Image src (seed parameter)
+   - va-card-name-premium (VA name)
+   - Experience value
+   - Language value
+   - Specialization tags
+   - Availability badge
+   - Profile link href
+
+FEATURES:
+- Circular image with white border
+- Teal color scheme matching JSX
+- Icons for experience and language
+- Teal badge for role
+- Teal tags for specialization
+- Better spacing and typography
+- Premium look and feel
+- Hover effects
+-->

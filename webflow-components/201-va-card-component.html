@@ -1,0 +1,207 @@
+<!-- VA CARD COMPONENT - REUSABLE MODULE -->
+<!-- This is a single VA card component that can be duplicated and customized -->
+
+<style>
+  .va-card-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .va-card-wrapper:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .va-card-image {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .va-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .va-availability-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: white;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .va-card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-card-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+
+  .va-card-role {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+
+  .va-card-info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+
+  .va-info-label {
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .va-info-value {
+    color: #6b7280;
+  }
+
+  .va-specialization {
+    margin-bottom: 16px;
+    flex: 1;
+  }
+
+  .va-spec-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .va-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .va-tag {
+    background: #e5e7eb;
+    color: #374151;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .va-card-footer {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .va-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .va-btn-primary {
+    background: #049d98;
+    color: white;
+  }
+
+  .va-btn-primary:hover {
+    background: #037b77;
+  }
+
+  .va-btn-secondary {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .va-btn-secondary:hover {
+    background: #e5e7eb;
+  }
+</style>
+
+<!-- EXAMPLE CARD - Adrian -->
+<div class="va-card-wrapper">
+  <div class="va-card-image">
+    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Adrian" alt="Adrian" loading="lazy">
+    <span class="va-availability-badge">Full Time</span>
+  </div>
+  <div class="va-card-content">
+    <h3 class="va-card-name">Adrian</h3>
+    <p class="va-card-role">Insurance Virtual Assistant</p>
+    <div class="va-card-info">
+      <span><span class="va-info-label">Experience:</span> <span class="va-info-value">2 years</span></span>
+      <span><span class="va-info-label">Language:</span> <span class="va-info-value">Bilingual (EN-ES)</span></span>
+    </div>
+    <div class="va-specialization">
+      <div class="va-spec-title">Specialization</div>
+      <div class="va-tags">
+        <span class="va-tag">Auto</span>
+        <span class="va-tag">Home</span>
+        <span class="va-tag">Life Insurance</span>
+      </div>
+    </div>
+  </div>
+  <div class="va-card-footer">
+    <a href="/adrian-ocean-va-profile" class="va-btn va-btn-primary">View Profile</a>
+  </div>
+</div>
+
+<!-- INSTRUCTIONS FOR WEBFLOW:
+1. Copy this entire component
+2. Paste into an HTML Embed in Webflow
+3. Duplicate the card div for each VA
+4. Update the following for each VA:
+   - Image src (seed parameter)
+   - va-card-name (VA name)
+   - va-card-role (role)
+   - Experience value
+   - Language value
+   - Specialization tags
+   - Availability badge
+   - Profile link href
+
+EXAMPLE STRUCTURE FOR MULTIPLE CARDS:
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+  [CARD 1]
+  [CARD 2]
+  [CARD 3]
+  ...
+</div>
+-->
