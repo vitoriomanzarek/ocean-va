@@ -13,6 +13,39 @@
     language: 'All'
   };
 
+  // Function to update results counter
+  function updateResultsCounter(visibleCount, totalCount) {
+    let counter = document.getElementById('va-results-counter');
+    
+    if (!counter) {
+      // Create counter element if it doesn't exist
+      const gridSection = document.querySelector('.va-grid-section');
+      if (gridSection) {
+        counter = document.createElement('div');
+        counter.id = 'va-results-counter';
+        counter.style.cssText = `
+          text-align: center;
+          padding: 16px 20px;
+          font-size: 14px;
+          color: #6b7280;
+          font-weight: 500;
+          border-bottom: 1px solid #e5e7eb;
+        `;
+        gridSection.insertBefore(counter, gridSection.querySelector('.va-grid-container'));
+      }
+    }
+    
+    if (counter) {
+      if (visibleCount === 0) {
+        counter.textContent = 'No VAs found matching your filters';
+        counter.style.color = '#ef4444';
+      } else {
+        counter.textContent = `Showing ${visibleCount} of ${totalCount} VA${totalCount !== 1 ? 's' : ''}`;
+        counter.style.color = '#6b7280';
+      }
+    }
+  }
+
   // Function to filter VA cards
   function filterVACards() {
     const cards = document.querySelectorAll('.va-grid-card');
@@ -43,6 +76,8 @@
       }
     });
 
+    // Update counter
+    updateResultsCounter(visibleCount, cards.length);
     console.log(`Showing ${visibleCount} out of ${cards.length} VA cards`);
   }
 
