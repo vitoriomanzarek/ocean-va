@@ -5,9 +5,12 @@
   .navbar-va {
     background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 50;
+    width: 100%;
   }
 
   .navbar-va-container {
@@ -73,6 +76,8 @@
   /* Dropdown */
   .navbar-va-dropdown-container {
     position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .navbar-va-dropdown {
@@ -168,6 +173,10 @@
     margin-bottom: 12px;
   }
 
+  .navbar-va-mobile-item.navbar-va-next-steps {
+    margin-top: 12px;
+  }
+
   .navbar-va-mobile-item:hover {
     background: #0f766e;
   }
@@ -253,8 +262,8 @@
         </button>
         <div class="navbar-va-dropdown" id="categoriesDropdown">
           <a href="/ovas-current-vas" class="navbar-va-dropdown-item">Insurance Virtual Assistant</a>
-          <a href="/licensed-insurance-agents" class="navbar-va-dropdown-item">Licensed Insurance Agents</a>
-          <a href="/executive-admin-vas" class="navbar-va-dropdown-item">Executive / Admin VA</a>
+          <a href="/ovas-licensed-insurance-agents" class="navbar-va-dropdown-item">Licensed Insurance Agents</a>
+          <a href="/ovas-executive-admin-virtual-assistant" class="navbar-va-dropdown-item">Executive / Admin VA</a>
         </div>
       </div>
 
@@ -287,15 +296,15 @@
     </button>
     <div class="navbar-va-mobile-dropdown" id="mobileCategoriesDropdown">
       <a href="/ovas-current-vas" class="navbar-va-mobile-dropdown-item">Insurance Virtual Assistant</a>
-      <a href="/licensed-insurance-agents" class="navbar-va-mobile-dropdown-item">Licensed Insurance Agents</a>
-      <a href="/executive-admin-vas" class="navbar-va-mobile-dropdown-item">Executive / Admin VA</a>
+      <a href="/ovas-licensed-insurance-agents" class="navbar-va-mobile-dropdown-item">Licensed Insurance Agents</a>
+      <a href="/ovas-executive-admin-virtual-assistant" class="navbar-va-mobile-dropdown-item">Executive / Admin VA</a>
     </div>
 
     <!-- FAQ -->
     <a href="/faq-va-interview" class="navbar-va-mobile-item">FAQ</a>
 
     <!-- NEXT STEPS -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMTLuUz2zGYGYgapBoxur4g5W1TYNqYD96SaT0Z_itmJxqXg/viewform" target="_blank" rel="noopener noreferrer" class="navbar-va-mobile-item">NEXT STEPS</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMTLuUz2zGYGYgapBoxur4g5W1TYNqYD96SaT0Z_itmJxqXg/viewform" target="_blank" rel="noopener noreferrer" class="navbar-va-mobile-item navbar-va-next-steps">NEXT STEPS</a>
   </div>
 </nav>
 

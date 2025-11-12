@@ -80,8 +80,8 @@ export default function KevinProfile() {
       { label: 'A1', active: false, description: 'Can understand and use familiar everyday expressions and basic questions about personal details.' },
       { label: 'A2', active: false, description: 'Can have very short social exchanges and give information on familiar and routine matters when traveling.' },
       { label: 'B1', active: false, description: 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages.' },
-      { label: 'B2', active: true, description: 'Can communicate confidently in a variety of academic and professional environments.' },
-      { label: 'C1', active: false, description: 'Can use the language flexibly and effectively for social, academic and professional purposes.' },
+      { label: 'B2', active: false, description: 'Can communicate confidently in a variety of academic and professional environments.' },
+      { label: 'C1', active: true, description: 'Can use the language flexibly and effectively for social, academic and professional purposes.' },
       { label: 'C2', active: false, description: 'Can understand with ease virtually everything heard or read and can summarize information from different sources.' }
     ],
     
