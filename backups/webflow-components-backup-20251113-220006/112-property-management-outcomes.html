@@ -1,0 +1,127 @@
+<!-- Property Management VA - Outcomes Section -->
+<style>
+  .pm-outcomes-container {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 50%, #003d7a 100%);
+    color: white;
+    padding: 80px 20px;
+  }
+
+  .pm-outcomes-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pm-outcomes-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .pm-outcomes-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  .pm-outcomes-header p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .pm-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
+
+  .pm-outcome-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .pm-outcome-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-4px);
+  }
+
+  .pm-outcome-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .pm-outcome-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  .pm-outcome-card p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .pm-outcomes-container {
+      padding: 60px 20px;
+    }
+
+    .pm-outcomes-header h2 {
+      font-size: 28px;
+    }
+
+    .pm-outcomes-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .pm-outcome-card {
+      padding: 32px;
+    }
+
+    .pm-outcome-icon {
+      font-size: 40px;
+    }
+  }
+</style>
+
+<div class="pm-outcomes-container">
+  <div class="pm-outcomes-content">
+    <div class="pm-outcomes-header">
+      <h2>Real Results</h2>
+      <p>Real results that improve your property operations.</p>
+    </div>
+
+    <div class="pm-outcomes-grid">
+      <div class="pm-outcome-card">
+        <span class="pm-outcome-icon">⚡</span>
+        <h3>Faster Response Times</h3>
+        <p>Faster response times and happier residents</p>
+      </div>
+
+      <div class="pm-outcome-card">
+        <span class="pm-outcome-icon">📁</span>
+        <h3>Clean Unit Files</h3>
+        <p>Clean unit files and on-time renewals</p>
+      </div>
+
+      <div class="pm-outcome-card">
+        <span class="pm-outcome-icon">✅</span>
+        <h3>Less Chaos</h3>
+        <p>Less chaos for property managers</p>
+      </div>
+    </div>
+  </div>
+</div>

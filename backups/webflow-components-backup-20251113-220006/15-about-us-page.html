@@ -1,0 +1,585 @@
+<!-- About Us Page for Webflow - Based on AboutUs.jsx -->
+<section class="about-us-page">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .about-us-page {
+      width: 100%;
+      background-color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Hero Section */
+    .about-hero {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .about-hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+      .about-hero-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .about-hero-content h1 {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .about-hero-content .subtitle {
+      font-size: 24px;
+      color: #ccfffe;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .about-hero-content p {
+      font-size: 16px;
+      color: #ccfffe;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .about-hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .about-hero-button {
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .about-hero-button-primary {
+      background: white;
+      color: #037b77;
+    }
+
+    .about-hero-button-primary:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-hero-button-secondary {
+      background: transparent;
+      color: white;
+      border-color: white;
+    }
+
+    .about-hero-button-secondary:hover {
+      background: white;
+      color: #037b77;
+      transform: translateY(-2px);
+    }
+
+    .about-hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .about-hero-content h1 {
+        font-size: 36px;
+      }
+
+      .about-hero-content .subtitle {
+        font-size: 18px;
+      }
+
+      .about-hero-buttons {
+        flex-direction: column;
+      }
+
+      .about-hero-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Mission Section */
+    .about-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .mission-content {
+      background-color: #f9fafb;
+      padding: 60px 40px;
+      border-radius: 12px;
+      margin-bottom: 48px;
+    }
+
+    .mission-content p {
+      font-size: 18px;
+      color: #6b7280;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mission-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .mission-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .stat-card {
+      background: white;
+      padding: 32px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: 800;
+      color: #049d98;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    /* Why Choose Us Section */
+    .why-choose-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    .why-choose-item {
+      display: flex;
+      gap: 24px;
+    }
+
+    .why-choose-icon {
+      font-size: 48px;
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .why-choose-content h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .why-choose-content p {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+
+    /* Leadership Section */
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 1024px) {
+      .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .leadership-grid:nth-child(even) {
+      direction: rtl;
+    }
+
+    .leadership-grid:nth-child(even) > * {
+      direction: ltr;
+    }
+
+    .leadership-image {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .leadership-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .leadership-content h3 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .leadership-position {
+      font-size: 18px;
+      color: #049d98;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .leadership-quote {
+      font-size: 18px;
+      color: #6b7280;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* Promise Section */
+    .promise-section {
+      background: linear-gradient(135deg, #f0fffe 0%, #e6fffe 100%);
+      border: 2px solid #ccfffe;
+      border-radius: 12px;
+      padding: 48px;
+      margin: 80px 0;
+    }
+
+    .promise-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .promise-item {
+      display: flex;
+      gap: 20px;
+    }
+
+    .promise-icon {
+      font-size: 24px;
+      color: #049d98;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .promise-content h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .promise-content p {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    .promise-closing {
+      font-size: 18px;
+      color: #6b7280;
+      text-align: center;
+      line-height: 1.8;
+      margin-top: 32px;
+    }
+
+    /* CTA Section */
+    .about-cta {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .about-cta-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about-cta h2 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .about-cta p {
+      font-size: 18px;
+      color: #ccfffe;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .about-cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .about-cta-button {
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .about-cta-button-primary {
+      background: white;
+      color: #037b77;
+    }
+
+    .about-cta-button-primary:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+    }
+
+    .about-cta-button-secondary {
+      background: transparent;
+      color: white;
+      border-color: white;
+    }
+
+    .about-cta-button-secondary:hover {
+      background: white;
+      color: #037b77;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 60px 20px;
+      }
+
+      .about-section h2 {
+        font-size: 28px;
+      }
+
+      .mission-content {
+        padding: 40px 20px;
+      }
+
+      .about-cta h2 {
+        font-size: 28px;
+      }
+
+      .about-cta-buttons {
+        flex-direction: column;
+      }
+
+      .about-cta-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <div class="about-hero">
+    <div class="about-hero-container">
+      <div class="about-hero-content">
+        <h1>Discover Ocean Virtual Assistant</h1>
+        <p class="subtitle">Rooted in Insurance Expertise, Focused on Your Business Success</p>
+        <p>At Ocean Virtual Assistant, we specialize in providing exceptional virtual assistant services to the insurance industry and small businesses. Our roots trace back to Walker Insurance Agency, where we built our foundation. As a leading agency in the insurance sector, we not only run a successful insurance business but also train and vet our virtual assistants through real-world industry experience. This unique background enables us to offer specialized services tailored to your business needs.</p>
+        <div class="about-hero-buttons">
+          <a href="https://www.oceanvirtualassistant.com/contact-us" class="about-hero-button about-hero-button-primary">Book a Free Call</a>
+          <a href="https://www.oceanvirtualassistant.com/pricing" class="about-hero-button about-hero-button-secondary">Plans & Pricing</a>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6787e552daeb32661d2f8ebe_222222.png" alt="Walker Family" class="about-hero-image" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="about-section">
+    <h2>Our Mission</h2>
+    <div class="mission-content">
+      <p>We aim to help insurance agencies and small businesses streamline operations and reduce costs with highly skilled virtual assistants. By leveraging our industry expertise, we deliver cost-effective solutions that let you focus on growth while saving up to 70% in staffing expenses.</p>
+      <div class="mission-stats">
+        <div class="stat-card">
+          <div class="stat-number">70%</div>
+          <div class="stat-label">Potential Cost Savings</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1%</div>
+          <div class="stat-label">Top Talent Selection</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30</div>
+          <div class="stat-label">Days Comprehensive Vetting</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div class="about-section">
+    <h2>Why Choose Us?</h2>
+    <div class="why-choose-grid">
+      <div class="why-choose-item">
+        <div class="why-choose-icon">🏆</div>
+        <div class="why-choose-content">
+          <h3>Industry Roots</h3>
+          <p>Built on the success of Walker Insurance Agency, we deeply understand the challenges of insurance businesses.</p>
+        </div>
+      </div>
+      <div class="why-choose-item">
+        <div class="why-choose-icon">👥</div>
+        <div class="why-choose-content">
+          <h3>Top Talent</h3>
+          <p>We hire only the top 1% of applicants, and every VA undergoes a comprehensive 30-day vetting process.</p>
+        </div>
+      </div>
+      <div class="why-choose-item">
+        <div class="why-choose-icon">📈</div>
+        <div class="why-choose-content">
+          <h3>Cost Savings</h3>
+          <p>Enjoy no equipment fees, no payroll taxes, and no hidden costs.</p>
+        </div>
+      </div>
+      <div class="why-choose-item">
+        <div class="why-choose-icon">🌍</div>
+        <div class="why-choose-content">
+          <h3>Ongoing Training & Global Expertise</h3>
+          <p>Our VAs undergo continuous training and offer bilingual support from Mexico, the Philippines, and LATAM.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leadership Section -->
+  <div class="about-section">
+    <h2>Leadership & Vision</h2>
+    <div class="leadership-grid">
+      <div class="leadership-content">
+        <h3>Zack Walker</h3>
+        <p class="leadership-position">CEO</p>
+        <p class="leadership-quote">"To maintain our high standards, we use independent third-party verification tools like Speechace, a cutting-edge AI-powered language assessment tool. This ensures our Virtual Assistants can speak and write English at a professional level."</p>
+      </div>
+      <div class="leadership-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6787dfdb3dffd93ab48404e0_Frame%20123.png" alt="Zack Walker">
+      </div>
+    </div>
+
+    <div class="leadership-grid">
+      <div class="leadership-image">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6787e0b17360d973850d3199_Frame%20124.png" alt="Logan Walker">
+      </div>
+      <div class="leadership-content">
+        <h3>Logan Walker</h3>
+        <p class="leadership-position">CSO</p>
+        <p class="leadership-quote">"We prioritize finding you the right VA for your specific needs and agency culture. Although we have a very high success rate it does not mean that the first VA chosen is the best fit."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promise Section -->
+  <div class="about-section">
+    <h2>Our Promise</h2>
+    <div class="promise-section">
+      <div class="promise-items">
+        <div class="promise-item">
+          <div class="promise-icon">✓</div>
+          <div class="promise-content">
+            <h4>Flat Monthly Fee</h4>
+            <p>No start-up costs, no hidden fees. Transparent pricing you can count on.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">✓</div>
+          <div class="promise-content">
+            <h4>Satisfaction Guaranteed</h4>
+            <p>Your satisfaction is guaranteed, and we are dedicated to delivering the highest-quality service.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">✓</div>
+          <div class="promise-content">
+            <h4>Trusted Partner</h4>
+            <p>From inbox management to specialized industry support, our bilingual assistants are here to streamline your operations.</p>
+          </div>
+        </div>
+      </div>
+      <p class="promise-closing">Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services. Contact us today to unlock new opportunities and elevate your business to new heights.</p>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="about-cta">
+    <div class="about-cta-container">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Join hundreds of businesses that have streamlined their operations with Ocean Virtual Assistant. Let us help you find the perfect virtual assistant for your needs.</p>
+      <div class="about-cta-buttons">
+        <a href="https://www.oceanvirtualassistant.com/contact-us" class="about-cta-button about-cta-button-primary">Book a Free Call</a>
+        <a href="https://www.oceanvirtualassistant.com/pricing" class="about-cta-button about-cta-button-secondary">View Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>

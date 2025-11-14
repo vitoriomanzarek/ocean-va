@@ -1,0 +1,144 @@
+<!-- Ecommerce VA - Use Cases Section for Webflow -->
+<section class="ecommerce-va-use-cases">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .ecommerce-va-use-cases {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .ecommerce-va-use-cases-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .ecommerce-va-use-cases-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .ecommerce-va-use-cases-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .ecommerce-va-use-cases-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .ecommerce-va-use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .ecommerce-va-use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ecommerce-va-use-cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ecommerce-va-use-cases-header h2 {
+        font-size: 28px;
+      }
+
+      .ecommerce-va-use-cases-header p {
+        font-size: 16px;
+      }
+    }
+
+    .use-case-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .use-case-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .use-case-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .use-case-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .use-case-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="ecommerce-va-use-cases-container">
+    <!-- Header -->
+    <div class="ecommerce-va-use-cases-header">
+      <h2>Use Cases</h2>
+      <p>Your ecommerce VA keeps your store running smoothly across all platforms.</p>
+    </div>
+
+    <!-- Use Cases Grid -->
+    <div class="ecommerce-va-use-cases-grid">
+      <!-- Use Case 1 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">📦</span>
+        <h3>Product Listings</h3>
+        <p>Product listings, variations, and merchandising updates</p>
+      </div>
+
+      <!-- Use Case 2 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">🛒</span>
+        <h3>Order Operations</h3>
+        <p>Order status, returns/exchanges, and RMA coordination</p>
+      </div>
+
+      <!-- Use Case 3 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">💬</span>
+        <h3>Marketplace Support</h3>
+        <p>Marketplace messaging (Amazon/eBay/etc.) and store chat/email</p>
+      </div>
+
+      <!-- Use Case 4 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">🖼️</span>
+        <h3>Catalog QA</h3>
+        <p>Catalog QA—images, attributes, tags, and redirects</p>
+      </div>
+
+      <!-- Use Case 5 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">📊</span>
+        <h3>Ads & Promos</h3>
+        <p>Basic ads/reporting support and promo updates</p>
+      </div>
+    </div>
+  </div>
+</section>

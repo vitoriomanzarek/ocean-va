@@ -1,0 +1,200 @@
+<!-- Real Estate VA Hero Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-hero-section">
+  <div class="re-hero-container">
+    <!-- Content -->
+    <div class="re-hero-content">
+      <h1 class="re-hero-title">
+        Real Estate
+        <span class="re-hero-title-highlight">Virtual Assistant</span>
+      </h1>
+
+      <p class="re-hero-description">
+        From lead intake to closing day, your REVA keeps deals moving and clients delighted—while you focus on showings and negotiations.
+      </p>
+
+      <!-- Trust Badges - Real Estate Specific -->
+      <div class="re-trust-badges">
+        <div class="re-trust-badge">
+          <span class="re-trust-badge-icon">🏠</span>
+          <span>Lead Management</span>
+        </div>
+        <div class="re-trust-badge">
+          <span class="re-trust-badge-icon">📋</span>
+          <span>Transaction Support</span>
+        </div>
+        <div class="re-trust-badge">
+          <span class="re-trust-badge-icon">⚡</span>
+          <span>MLS Updates</span>
+        </div>
+        <div class="re-trust-badge">
+          <span class="re-trust-badge-icon">🌐</span>
+          <span>Bilingual Support</span>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="re-hero-buttons">
+        <a href="#booking" class="re-hero-button re-hero-button-primary">Book a Discovery Call</a>
+        <a href="#pricing" class="re-hero-button re-hero-button-secondary">View Pricing</a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="re-hero-image">
+      <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690382799038b74b3745919f_real-estate-va-hero.webp" alt="Real Estate Virtual Assistant team collaborating on property deals" />
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-hero-section {
+    background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%);
+    padding: 80px 20px;
+    color: white;
+  }
+
+  .re-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .re-hero-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .re-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .re-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .re-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: white;
+  }
+
+  .re-hero-title-highlight {
+    display: block;
+    background: linear-gradient(135deg, #ccfffe 0%, #e6fffe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .re-hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e6fffe;
+    margin: 0;
+  }
+
+  .re-trust-badges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .re-trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .re-trust-badge-icon {
+    font-size: 18px;
+  }
+
+  .re-hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .re-hero-button {
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid transparent;
+  }
+
+  .re-hero-button-primary {
+    background: white;
+    color: #037b77;
+  }
+
+  .re-hero-button-primary:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .re-hero-button-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+  }
+
+  .re-hero-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .re-hero-container {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding: 0;
+    }
+
+    .re-hero-title {
+      font-size: 32px;
+    }
+
+    .re-hero-description {
+      font-size: 16px;
+    }
+
+    .re-trust-badges {
+      grid-template-columns: 1fr;
+    }
+
+    .re-hero-buttons {
+      flex-direction: column;
+    }
+
+    .re-hero-button {
+      width: 100%;
+    }
+  }
+</style>

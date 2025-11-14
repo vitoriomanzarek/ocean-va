@@ -1,0 +1,144 @@
+<!-- Tech VA - Use Cases Section for Webflow -->
+<section class="tech-va-use-cases">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .tech-va-use-cases {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .tech-va-use-cases-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .tech-va-use-cases-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .tech-va-use-cases-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .tech-va-use-cases-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .tech-va-use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .tech-va-use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .tech-va-use-cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tech-va-use-cases-header h2 {
+        font-size: 28px;
+      }
+
+      .tech-va-use-cases-header p {
+        font-size: 16px;
+      }
+    }
+
+    .use-case-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .use-case-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .use-case-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .use-case-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .use-case-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="tech-va-use-cases-container">
+    <!-- Header -->
+    <div class="tech-va-use-cases-header">
+      <h2>Use Cases</h2>
+      <p>Your tech VA handles the coordination that keeps your technical operations running smoothly.</p>
+    </div>
+
+    <!-- Use Cases Grid -->
+    <div class="tech-va-use-cases-grid">
+      <!-- Use Case 1 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">🎫</span>
+        <h3>Support Triage</h3>
+        <p>Ticket triage, prioritization, and stakeholder updates</p>
+      </div>
+
+      <!-- Use Case 2 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">📄</span>
+        <h3>Documentation</h3>
+        <p>Release notes, documentation, and knowledge base upkeep</p>
+      </div>
+
+      <!-- Use Case 3 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">🌐</span>
+        <h3>Content Updates</h3>
+        <p>Light website/content updates in your CMS</p>
+      </div>
+
+      <!-- Use Case 4 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">✅</span>
+        <h3>QA Support</h3>
+        <p>QA checklists, regression logs, and bug reproduction steps</p>
+      </div>
+
+      <!-- Use Case 5 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">📦</span>
+        <h3>Vendor Coordination</h3>
+        <p>Vendor coordination, licensing, renewals, and asset tracking</p>
+      </div>
+    </div>
+  </div>
+</section>

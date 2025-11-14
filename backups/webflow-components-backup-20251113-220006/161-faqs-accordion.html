@@ -1,0 +1,264 @@
+<style>
+    .faq-section {
+        background: #f9fafb;
+        padding: 80px 20px;
+    }
+
+    .faq-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .faq-category {
+        margin-bottom: 16px;
+    }
+
+    .faq-category-button {
+        width: 100%;
+        padding: 20px 24px;
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .faq-category-button:hover {
+        background: #f0fdfa;
+        border-color: #14b8a6;
+    }
+
+    .faq-category-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d9488;
+        margin: 0;
+    }
+
+    .faq-category-count {
+        font-size: 14px;
+        color: #6b7280;
+        margin: 4px 0 0 0;
+    }
+
+    .faq-chevron {
+        width: 24px;
+        height: 24px;
+        color: #0d9488;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-chevron.expanded {
+        transform: rotate(180deg);
+    }
+
+    .faq-items {
+        margin-top: 8px;
+        margin-left: 24px;
+        background: white;
+        border: 2px solid #14b8a6;
+        border-radius: 8px;
+        overflow: hidden;
+        display: none;
+    }
+
+    .faq-items.expanded {
+        display: block;
+    }
+
+    .faq-item {
+        padding: 16px;
+        border-bottom: 1px solid #e5e7eb;
+        transition: background-color 0.2s ease;
+    }
+
+    .faq-item:last-child {
+        border-bottom: none;
+    }
+
+    .faq-item:hover {
+        background: #f0fdfa;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1f2937;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .faq-question-text {
+        flex: 1;
+        line-height: 1.6;
+    }
+
+    .faq-answer {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #374151;
+        line-height: 1.7;
+        display: none;
+    }
+
+    .faq-answer.expanded {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .faq-section {
+            padding: 60px 20px;
+        }
+
+        .faq-category-button {
+            padding: 16px 20px;
+        }
+
+        .faq-category-title {
+            font-size: 16px;
+        }
+
+        .faq-items {
+            margin-left: 0;
+        }
+    }
+</style>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <!-- Insurance Virtual Assistant -->
+        <div class="faq-category">
+            <button class="faq-category-button" onclick="toggleCategory(this)">
+                <div>
+                    <h3 class="faq-category-title">Insurance Virtual Assistant</h3>
+                    <p class="faq-category-count">10 questions</p>
+                </div>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">What does an Insurance Virtual Assistant do?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Handle policy servicing, customer service, back office operations, AMS data entry, document management, and multilingual support.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Can a VA manage policy servicing and renewals?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. COIs, endorsements, renewals, mortgagee changes, loss runs, and claims documentation.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Do you handle AMS and CRM systems?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. Applied Epic, AMS360, EZLynx, and other insurance software.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Can a VA provide customer service for insurance clients?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. Inbound calls, emails, policy questions, payment processing, and appointment scheduling.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Do you support multilingual operations?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. 10+ languages including English & Spanish for diverse client bases.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Can a VA help with back office and accounting?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. Document management, accounting tasks, reconciliation, reporting, and database cleanup.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Are your VAs familiar with insurance processes?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Yes. Trained in insurance terminology, compliance, and industry best practices.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">What's the pricing?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Starting at $1,300/mo (40h/week). No setup fees. Month-to-month.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">What if the VA isn't a fit?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">We replace and retrain at no cost.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">How do we get started?</span>
+                        <svg style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <p class="faq-answer">Discovery call → shortlist candidates → interviews → onboarding → go live in 2–3 days.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleCategory(button) {
+        const items = button.nextElementSibling;
+        const chevron = button.querySelector('.faq-chevron');
+        
+        items.classList.toggle('expanded');
+        chevron.classList.toggle('expanded');
+    }
+
+    function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const chevron = button.querySelector('svg');
+        
+        answer.classList.toggle('expanded');
+        if (chevron) {
+            chevron.style.transform = answer.classList.contains('expanded') ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+    }
+</script>

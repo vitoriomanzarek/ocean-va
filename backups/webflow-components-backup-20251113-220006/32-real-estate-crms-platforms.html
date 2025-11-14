@@ -1,0 +1,117 @@
+<!-- Real Estate VA - CRMs & Platforms Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-crms-section">
+  <div class="re-crms-container">
+    <!-- Section Header -->
+    <div class="re-crms-header">
+      <h2 class="re-crms-title">CRMs & Platforms We Use</h2>
+    </div>
+
+    <!-- CRMs Grid -->
+    <div class="re-crms-grid">
+      <!-- Real Estate CRM -->
+      <div class="re-crms-card">
+        <h3 class="re-crms-card-title">Real Estate CRM</h3>
+        <p class="re-crms-card-description">kvCORE, Follow Up Boss, BoomTown, Chime, LionDesk, Sierra, RealtyJuggernaut</p>
+      </div>
+
+      <!-- Transaction & E-Sign -->
+      <div class="re-crms-card">
+        <h3 class="re-crms-card-title">Transaction & E-Sign</h3>
+        <p class="re-crms-card-description">Dotloop, SkySlope, Brokermint, Transaction Desk</p>
+      </div>
+
+      <!-- Property Management -->
+      <div class="re-crms-card">
+        <h3 class="re-crms-card-title">Property Management</h3>
+        <p class="re-crms-card-description">AppFolio, Slack, Buildium, Podio, Trello</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-crms-section {
+    background: #f9fafb;
+    padding: 80px 20px;
+  }
+
+  .re-crms-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .re-crms-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .re-crms-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .re-crms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .re-crms-card {
+    text-align: center;
+  }
+
+  .re-crms-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #049d98;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+  }
+
+  .re-crms-card-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .re-crms-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .re-crms-section {
+      padding: 48px 20px;
+    }
+
+    .re-crms-header {
+      margin-bottom: 48px;
+    }
+
+    .re-crms-title {
+      font-size: 24px;
+    }
+
+    .re-crms-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .re-crms-card-title {
+      font-size: 15px;
+    }
+
+    .re-crms-card-description {
+      font-size: 13px;
+    }
+  }
+</style>

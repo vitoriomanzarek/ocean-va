@@ -1,0 +1,1551 @@
+<!-- OUR CURRENT VAs - PREMIUM GRID COMPONENT FOR WEBFLOW -->
+<!-- This component displays all Virtual Assistants with premium design -->
+<!-- Matches the JSX design with circular images, teal colors, and icons -->
+<!-- Generated: 2025-11-10T23:34:38.834Z -->
+<!-- Total VAs: 56 -->
+
+<style>
+  .ova-grid-premium {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+  }
+
+  .ova-header-premium {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ova-header-premium h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+
+  .ova-header-premium p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ova-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .va-card-premium {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .va-card-premium:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+  }
+
+  .va-card-image-premium {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #049d98 0%, #037b77 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .va-card-image-premium img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+  }
+
+  .va-availability-badge-premium {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: white;
+    color: #049d98;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .va-card-content-premium {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-card-name-premium {
+    font-size: 22px;
+    font-weight: 700;
+    color: #049d98;
+    margin-bottom: 12px;
+  }
+
+  .va-card-role-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .va-card-info-premium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .va-info-block-premium {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-info-label-premium {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .va-info-value-premium {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .va-specialization-premium {
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .va-spec-title-premium {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .va-tags-premium {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-tag-premium {
+    background: #e8f7f6;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #b3e5e0;
+  }
+
+  .va-card-footer-premium {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .va-btn-premium {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .va-btn-primary-premium {
+    background: #049d98;
+    color: white;
+  }
+
+  .va-btn-primary-premium:hover {
+    background: #037b77;
+    transform: translateX(2px);
+  }
+
+  .va-btn-secondary-premium {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #f3f4f6;
+    color: #049d98;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+  }
+
+  .va-btn-secondary-premium:hover {
+    background: #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .ova-cards-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .va-card-image-premium {
+      height: 240px;
+    }
+
+    .va-card-image-premium img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .va-card-content-premium {
+      padding: 20px;
+    }
+
+    .va-card-name-premium {
+      font-size: 20px;
+    }
+
+    .ova-header-premium h2 {
+      font-size: 24px;
+    }
+
+    .ova-grid-premium {
+      padding: 24px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ova-cards-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .va-card-image-premium {
+      height: 220px;
+    }
+
+    .va-card-image-premium img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .ova-header-premium h2 {
+      font-size: 20px;
+    }
+
+    .ova-grid-premium {
+      padding: 16px 12px;
+    }
+  }
+</style>
+
+<div class="ova-grid-premium">
+  <div class="ova-header-premium">
+    <h2>Meet Our Virtual Assistants</h2>
+    <p>Highly skilled professionals ready to support your business needs. Each assistant is pre-vetted and trained to deliver exceptional service.</p>
+  </div>
+
+  <div class="ova-cards-grid">
+    <!-- Adrian -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Adrian" alt="Adrian" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Adrian</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/adrian-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alejandro -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alejandro" alt="Alejandro" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Alejandro</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2.5 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Life</span>
+        <span class="va-tag-premium">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/alejandro-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dafne -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dafne" alt="Dafne" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Dafne</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/dafne-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ivan -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ivan" alt="Ivan" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Ivan</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/ivan-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Joana -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joana" alt="Joana" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Joana</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 Trained
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/joana-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karen -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Karen" alt="Karen" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Karen</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 4 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/karen-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maria Paula -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria Paula" alt="Maria Paula" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Maria Paula</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Medical Admin (HIPAA Compliant)</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/maria-paula-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Moises -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Moises" alt="Moises" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Moises</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 Bilingual (EN-ES)
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">U.S. Commercial Trucking Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/moises-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abigail -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Abigail" alt="Abigail" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Abigail</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/abigail-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Antonio -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Antonio" alt="Antonio" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Antonio</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/antonio-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cherry Mae -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Cherry Mae" alt="Cherry Mae" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Cherry Mae</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/cherry-mae-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emmanuel -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emmanuel" alt="Emmanuel" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Emmanuel</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 6 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal</span>
+        <span class="va-tag-premium">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/emmanuel-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Francis -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Francis" alt="Francis" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Francis</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 6 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Health</span>
+        <span class="va-tag-premium">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/francis-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Geraldine -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Geraldine" alt="Geraldine" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Geraldine</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Commercial Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/geraldine-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jay Alvin -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jay Alvin" alt="Jay Alvin" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Jay Alvin</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 5 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal</span>
+        <span class="va-tag-premium">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/jay-alvin-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javier -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Javier" alt="Javier" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Javier</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/javier-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jerome -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jerome" alt="Jerome" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Jerome</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/jerome-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jimmy -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jimmy" alt="Jimmy" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Jimmy</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/jimmy-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Joel -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joel" alt="Joel" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Joel</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 3 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal</span>
+        <span class="va-tag-premium">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/joel-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Joji Marie -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joji Marie" alt="Joji Marie" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Joji Marie</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 4 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto</span>
+        <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Commercial</span>
+        <span class="va-tag-premium">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/joji-marie-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Laurice -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Laurice" alt="Laurice" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Laurice</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1.4 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/laurice-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lorenz -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lorenz" alt="Lorenz" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Lorenz</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/lorenz-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ma. Venus -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ma. Venus" alt="Ma. Venus" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Ma. Venus</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1.5 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/ma-venus-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Michelle -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michelle" alt="Michelle" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Michelle</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 1 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Home</span>
+        <span class="va-tag-premium">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/michelle-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Raydon -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Raydon" alt="Raydon" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Raydon</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 4 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal</span>
+        <span class="va-tag-premium">Property Lines</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/raydon-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rona Mae -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rona Mae" alt="Rona Mae" loading="lazy">
+        <span class="va-availability-badge-premium">Full Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Rona Mae</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>
+        
+        <div class="va-card-info-premium">
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Experience</div>
+            <div class="va-info-value-premium">
+              📅 2 years
+            </div>
+          </div>
+          <div class="va-info-block-premium">
+            <div class="va-info-label-premium">Language</div>
+            <div class="va-info-value-premium">
+              🌐 English
+            </div>
+          </div>
+        </div>
+
+        <div class="va-specialization-premium">
+          <div class="va-spec-title-premium">Specialization</div>
+          <div class="va-tags-premium">
+            <span class="va-tag-premium">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="padding: 0 24px 24px 24px;">
+        <div class="va-card-footer-premium">
+          <a href="/rona-mae-ocean-va-profile" class="va-btn-premium va-btn-primary-premium">
+            View Profile →
+          </a>
+          <button class="va-btn-secondary-premium" title="Share">
+            ▶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gizelle -->
+    <div class="va-card-premium">
+      <div class="va-card-image-premium">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gizelle" alt="Gizelle" loading="lazy">
+        <span class="va-availability-badge-premium">Part Time</span>
+      </div>
+      <div class="va-card-content-premium">
+        <h3 class="va-card-name-premium">Gizelle</h3>
+        <div class="va-card-role-premium">
+          🎯 Insurance Virtual Assistant
+        </div>

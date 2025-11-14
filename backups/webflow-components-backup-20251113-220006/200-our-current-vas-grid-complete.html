@@ -1,0 +1,1666 @@
+<!-- OUR CURRENT VAs - GRID COMPONENT FOR WEBFLOW -->
+<!-- This component displays all Virtual Assistants in a responsive grid -->
+<!-- Generated: 2025-11-10T23:27:03.102Z -->
+<!-- Total VAs: 56 -->
+
+<style>
+  .ova-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+  }
+
+  .ova-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ova-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+
+  .ova-header p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ova-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .ova-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ova-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .ova-card-image {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ova-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ova-availability-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: white;
+    color: #049d98;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .ova-card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ova-card-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+
+  .ova-card-role {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+
+  .ova-card-info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .ova-info-item {
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .ova-info-label {
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .ova-specialization {
+    margin-bottom: 16px;
+    flex: 1;
+  }
+
+  .ova-spec-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ova-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .ova-tag {
+    background: #e5e7eb;
+    color: #374151;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .ova-card-footer {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .ova-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .ova-btn-primary {
+    background: #049d98;
+    color: white;
+  }
+
+  .ova-btn-primary:hover {
+    background: #037b77;
+  }
+
+  .ova-btn-secondary {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .ova-btn-secondary:hover {
+    background: #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .ova-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+    }
+
+    .ova-header h2 {
+      font-size: 24px;
+    }
+
+    .ova-container {
+      padding: 24px 16px;
+    }
+  }
+</style>
+
+<div class="ova-container">
+  <div class="ova-header">
+    <h2>Meet Our Virtual Assistants</h2>
+    <p>Highly skilled professionals ready to support your business needs. Each assistant is pre-vetted and trained to deliver exceptional service.</p>
+  </div>
+
+  <div class="ova-grid">
+    <!-- Adrian -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Adrian" alt="Adrian" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Adrian</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/adrian-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Alejandro -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alejandro" alt="Alejandro" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Alejandro</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2.5 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Life</span>
+            <span class="ova-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/alejandro-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Dafne -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dafne" alt="Dafne" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Dafne</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/dafne-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ivan -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ivan" alt="Ivan" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ivan</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ivan-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Joana -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joana" alt="Joana" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Joana</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/joana-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Karen -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Karen" alt="Karen" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Karen</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 4 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/karen-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Maria Paula -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria Paula" alt="Maria Paula" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Maria Paula</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Medical Admin (HIPAA Compliant)</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/maria-paula-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Moises -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Moises" alt="Moises" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Moises</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> Bilingual (EN-ES)</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">U.S. Commercial Trucking Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/moises-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Abigail -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Abigail" alt="Abigail" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Abigail</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/abigail-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Antonio -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Antonio" alt="Antonio" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Antonio</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/antonio-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Cherry Mae -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Cherry Mae" alt="Cherry Mae" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Cherry Mae</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/cherry-mae-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Emmanuel -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emmanuel" alt="Emmanuel" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Emmanuel</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/emmanuel-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Francis -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Francis" alt="Francis" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Francis</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Health</span>
+            <span class="ova-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/francis-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Geraldine -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Geraldine" alt="Geraldine" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Geraldine</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Commercial Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/geraldine-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Jay Alvin -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jay Alvin" alt="Jay Alvin" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Jay Alvin</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 5 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/jay-alvin-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Javier -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Javier" alt="Javier" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Javier</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/javier-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Jerome -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jerome" alt="Jerome" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Jerome</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/jerome-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Jimmy -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jimmy" alt="Jimmy" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Jimmy</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/jimmy-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Joel -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joel" alt="Joel" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Joel</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/joel-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Joji Marie -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Joji Marie" alt="Joji Marie" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Joji Marie</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 4 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Commercial</span>
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/joji-marie-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Laurice -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Laurice" alt="Laurice" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Laurice</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1.4 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/laurice-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Lorenz -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lorenz" alt="Lorenz" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Lorenz</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/lorenz-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ma. Venus -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ma. Venus" alt="Ma. Venus" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ma. Venus</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1.5 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ma-venus-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Michelle -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michelle" alt="Michelle" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Michelle</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/michelle-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Raydon -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Raydon" alt="Raydon" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Raydon</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 4 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Property Lines</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/raydon-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Rona Mae -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rona Mae" alt="Rona Mae" loading="lazy">
+        <span class="ova-availability-badge">Full Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Rona Mae</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/rona-mae-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Gizelle -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gizelle" alt="Gizelle" loading="lazy">
+        <span class="ova-availability-badge">Part Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Gizelle</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 8 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/gizelle-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Jasmine -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jasmine" alt="Jasmine" loading="lazy">
+        <span class="ova-availability-badge">Part Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Jasmine</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/jasmine-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Jill -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jill" alt="Jill" loading="lazy">
+        <span class="ova-availability-badge">Part Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Jill</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/jill-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Pavel -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Pavel" alt="Pavel" loading="lazy">
+        <span class="ova-availability-badge">Part Time</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Pavel</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Marketing</span>
+            <span class="ova-tag">Graphic Design</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/pavel-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ana -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ana" alt="Ana" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ana</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+            <span class="ova-tag">Real Estate</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ana-s-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ana Victoria -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ana Victoria" alt="Ana Victoria" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ana Victoria</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Commercial Line Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ana-victoria-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Balbina -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Balbina" alt="Balbina" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Balbina</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/balbina-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Brandon L. -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Brandon L." alt="Brandon L." loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Brandon L.</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Health</span>
+            <span class="ova-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/brandon-l-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Carolina -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Carolina" alt="Carolina" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Carolina</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/carolina-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Christine -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Christine" alt="Christine" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Christine</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/christine-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Dawn -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dawn" alt="Dawn" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Dawn</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 7 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/dawn-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Dayana -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dayana" alt="Dayana" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Dayana</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/dayana-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ellen -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ellen" alt="Ellen" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ellen</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ellen-rose-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Fernanda -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Fernanda" alt="Fernanda" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Fernanda</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+            <span class="ova-tag">Key Account Management</span>
+            <span class="ova-tag">Marketing</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/fernanda-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Gonzalo -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gonzalo" alt="Gonzalo" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Gonzalo</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Health Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/gonzalo-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Guillermo -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Guillermo" alt="Guillermo" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Guillermo</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Renters</span>
+            <span class="ova-tag">Condo</span>
+            <span class="ova-tag">Umbrella</span>
+            <span class="ova-tag">Earthquake</span>
+            <span class="ova-tag">Watercraft</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/guillermo-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Israel -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Israel" alt="Israel" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Israel</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Health</span>
+            <span class="ova-tag">Life Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/israel-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Janice -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Janice" alt="Janice" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Janice</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> Trained</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Executive Assistant</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/janice-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Kevin -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Kevin" alt="Kevin" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Kevin</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Trained Insurance Professional</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/kevin-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Lois -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lois" alt="Lois" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Lois</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/lois-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Maria D. -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria D." alt="Maria D." loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Maria D.</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 3 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines</span>
+            <span class="ova-tag">Commercial Lines</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/maria-d-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Maria -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria" alt="Maria" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Maria</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/maria-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Melissa -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Melissa" alt="Melissa" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Melissa</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 1 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Auto</span>
+            <span class="ova-tag">Home Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/melissa-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Patricia -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Patricia" alt="Patricia" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Patricia</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 5 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">U.S. Personal</span>
+            <span class="ova-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/patricia-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Rafael -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rafael" alt="Rafael" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Rafael</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 6 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Healthcare Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/rafael-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Rainier -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rainier" alt="Rainier" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Rainier</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 7 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/rainier-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Rejean -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rejean" alt="Rejean" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Rejean</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Commercial</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/rejean-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Rochelle -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rochelle" alt="Rochelle" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Rochelle</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 4 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal</span>
+            <span class="ova-tag">Commercial Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/rochelle-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Sandra -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sandra" alt="Sandra" loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Sandra</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Personal Lines Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/sandra-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Ximena G. -->
+    <div class="ova-card">
+      <div class="ova-card-image">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ximena G." alt="Ximena G." loading="lazy">
+        <span class="ova-availability-badge">Assigned</span>
+      </div>
+      <div class="ova-card-content">
+        <h3 class="ova-card-name">Ximena G.</h3>
+        <p class="ova-card-role">Insurance Virtual Assistant</p>
+        <div class="ova-card-info">
+          <span class="ova-info-item"><span class="ova-info-label">Experience:</span> 2 years</span>
+          <span class="ova-info-item"><span class="ova-info-label">Language:</span> English</span>
+        </div>
+        <div class="ova-specialization">
+          <div class="ova-spec-title">Specialization</div>
+          <div class="ova-tags">
+            <span class="ova-tag">Home</span>
+            <span class="ova-tag">Auto Insurance</span>
+          </div>
+        </div>
+      </div>
+      <div class="ova-card-footer">
+        <a href="/ximena-g-ocean-va-profile" class="ova-btn ova-btn-primary">View Profile</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,135 @@
+<!-- Transaction Coordinator Hero Section for Webflow -->
+<section class="transaction-coordinator-hero">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .transaction-coordinator-hero {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .transaction-coordinator-hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+      .transaction-coordinator-hero-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .transaction-coordinator-hero-title {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.2;
+      color: white !important;
+    }
+
+    .transaction-coordinator-hero-content p {
+      font-size: 18px;
+      color: #ccfffe;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .transaction-coordinator-hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .transaction-coordinator-hero-button {
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .transaction-coordinator-hero-button-primary {
+      background: white;
+      color: #037b77;
+    }
+
+    .transaction-coordinator-hero-button-primary:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .transaction-coordinator-hero-button-secondary {
+      background: transparent;
+      color: white;
+      border-color: white;
+    }
+
+    .transaction-coordinator-hero-button-secondary:hover {
+      background: white;
+      color: #037b77;
+      transform: translateY(-2px);
+    }
+
+    .transaction-coordinator-hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .transaction-coordinator-hero-title {
+        font-size: 36px;
+      }
+
+      .transaction-coordinator-hero-content p {
+        font-size: 16px;
+      }
+
+      .transaction-coordinator-hero-buttons {
+        flex-direction: column;
+      }
+
+      .transaction-coordinator-hero-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <div class="transaction-coordinator-hero-container">
+    <!-- Left Column - Content -->
+    <div class="transaction-coordinator-hero-content">
+      <h1 class="transaction-coordinator-hero-title">Virtual Transaction Coordinator (Real Estate)</h1>
+      <p>Contract‑to‑close without the scramble. We handle checklists, docs, signatures, vendor coordination, and reminders—so agents and teams never miss a milestone.</p>
+      <div class="transaction-coordinator-hero-buttons">
+        <a href="#booking" class="transaction-coordinator-hero-button transaction-coordinator-hero-button-primary">Book a Discovery Call</a>
+        <a href="#pricing" class="transaction-coordinator-hero-button transaction-coordinator-hero-button-secondary">View Pricing</a>
+      </div>
+    </div>
+
+    <!-- Right Column - Image -->
+    <div>
+      <img 
+        src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690382901903c22b836cf050_transaction-coordinator-hero.webp" 
+        alt="Virtual Transaction Coordinator managing real estate deals" 
+        class="transaction-coordinator-hero-image"
+      >
+    </div>
+  </div>
+</section>

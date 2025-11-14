@@ -1,0 +1,121 @@
+<style>
+    .info-section {
+        background: white;
+        padding: 80px 20px;
+    }
+
+    .info-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .info-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #111827;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+    }
+
+    .info-card {
+        background: #f0fdfa;
+        padding: 32px;
+        border-radius: 8px;
+    }
+
+    .info-card-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d9488;
+        margin-bottom: 16px;
+    }
+
+    .info-card-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-card-item {
+        font-size: 14px;
+        color: #374151;
+        line-height: 1.8;
+        margin-bottom: 12px;
+    }
+
+    .info-card-item:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .info-section {
+            padding: 60px 20px;
+        }
+
+        .info-title {
+            font-size: 32px;
+        }
+
+        .info-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+</style>
+
+<section class="info-section">
+    <div class="info-container">
+        <h2 class="info-title">General Information</h2>
+        <div class="info-grid">
+            <!-- Pricing & Contracts -->
+            <div class="info-card">
+                <h3 class="info-card-title">Pricing & Contracts</h3>
+                <ul class="info-card-list">
+                    <li class="info-card-item">✓ Flat monthly rate with no setup fees</li>
+                    <li class="info-card-item">✓ No long-term contracts—month-to-month flexibility</li>
+                    <li class="info-card-item">✓ Free replacements if not a good fit</li>
+                    <li class="info-card-item">✓ Tailored quotes after discovery call</li>
+                </ul>
+            </div>
+
+            <!-- Dedication & Support -->
+            <div class="info-card">
+                <h3 class="info-card-title">Dedication & Support</h3>
+                <ul class="info-card-list">
+                    <li class="info-card-item">✓ One dedicated VA per client</li>
+                    <li class="info-card-item">✓ Never pooled across ticket queues</li>
+                    <li class="info-card-item">✓ Ongoing account support & check-ins</li>
+                    <li class="info-card-item">✓ Quick replacement if needed</li>
+                </ul>
+            </div>
+
+            <!-- Vetting & Training -->
+            <div class="info-card">
+                <h3 class="info-card-title">Vetting & Training</h3>
+                <ul class="info-card-list">
+                    <li class="info-card-item">✓ Top 1% of applicants vetted</li>
+                    <li class="info-card-item">✓ ~30-day vetting process</li>
+                    <li class="info-card-item">✓ Industry-specific training</li>
+                    <li class="info-card-item">✓ Ongoing coaching from our team</li>
+                </ul>
+            </div>
+
+            <!-- Security & Compliance -->
+            <div class="info-card">
+                <h3 class="info-card-title">Security & Compliance</h3>
+                <ul class="info-card-list">
+                    <li class="info-card-item">✓ Principle-of-least-access</li>
+                    <li class="info-card-item">✓ NDA/SOP adherence</li>
+                    <li class="info-card-item">✓ Secure tools & audit-friendly workflows</li>
+                    <li class="info-card-item">✓ HIPAA-compliant where applicable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

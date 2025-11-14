@@ -1,0 +1,144 @@
+<!-- Medical VA - Use Cases Section for Webflow -->
+<section class="medical-va-use-cases">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .medical-va-use-cases {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .medical-va-use-cases-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .medical-va-use-cases-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .medical-va-use-cases-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .medical-va-use-cases-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .medical-va-use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .medical-va-use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .medical-va-use-cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .medical-va-use-cases-header h2 {
+        font-size: 28px;
+      }
+
+      .medical-va-use-cases-header p {
+        font-size: 16px;
+      }
+    }
+
+    .use-case-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .use-case-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .use-case-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .use-case-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .use-case-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="medical-va-use-cases-container">
+    <!-- Header -->
+    <div class="medical-va-use-cases-header">
+      <h2>Use Cases</h2>
+      <p>Your medical VA handles the tasks that keep your practice running smoothly.</p>
+    </div>
+
+    <!-- Use Cases Grid -->
+    <div class="medical-va-use-cases-grid">
+      <!-- Use Case 1 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">👤</span>
+        <h3>Patient Intake</h3>
+        <p>New patient intake and records requests</p>
+      </div>
+
+      <!-- Use Case 2 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">📅</span>
+        <h3>Scheduling</h3>
+        <p>Scheduling, reminders, and waitlist management</p>
+      </div>
+
+      <!-- Use Case 3 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">✅</span>
+        <h3>Eligibility Checks</h3>
+        <p>Insurance eligibility/benefit checks and prior auth coordination</p>
+      </div>
+
+      <!-- Use Case 4 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">💵</span>
+        <h3>Billing Support</h3>
+        <p>Billing questions and follow-ups; payment plan reminders</p>
+      </div>
+
+      <!-- Use Case 5 -->
+      <div class="use-case-card">
+        <span class="use-case-icon">💬</span>
+        <h3>Patient Outreach</h3>
+        <p>Portal messages and post-visit outreach per your scripts</p>
+      </div>
+    </div>
+  </div>
+</section>

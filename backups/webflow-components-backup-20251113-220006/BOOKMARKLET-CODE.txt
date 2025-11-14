@@ -1,0 +1,49 @@
+WEBFLOW VALIDATOR BOOKMARKLET - CÓDIGO PARA COPIAR
+
+INSTRUCCIONES:
+1. Selecciona TODO el código de abajo (desde "javascript:" hasta el último "}")
+2. Cópialo (Ctrl+C)
+3. Crea un bookmarklet en tu navegador con este código
+4. Úsalo en Webflow haciendo clic en él
+
+================================================================================
+
+javascript:(function(){const report={components:[],errors:[],warnings:[],images:[],links:[]};const components=['navbar-wrapper','hero-container','carousel-wrapper','client-logos-title','comparison-table','stats-section','pricing-section','timeline-section','testimonials-section','faq-section','showcase-section','va-showcase-section','footer-container'];components.forEach(cls=>{const el=document.querySelector('.'+cls);if(el){report.components.push({name:cls,found:true,visible:el.offsetHeight>0})}else{report.components.push({name:cls,found:false,visible:false})}});const imgs=document.querySelectorAll('img');imgs.forEach(img=>{const src=img.src;const alt=img.alt;const loaded=img.complete&&img.naturalHeight>0;report.images.push({src:src,alt:alt||'SIN ALT',loaded:loaded,error:!loaded})});const links=document.querySelectorAll('a[href]');links.forEach(link=>{const href=link.href;const text=link.textContent.trim();const valid=href.length>0;report.links.push({href:href,text:text||'SIN TEXTO',valid:valid})});const styles=window.getComputedStyle(document.body);const colors=['ocean-50','ocean-100','ocean-500','ocean-600','ocean-700','ocean-900'];colors.forEach(color=>{const els=document.querySelectorAll('[class*="'+color+'"]');if(els.length===0){report.warnings.push('Color '+color+' no encontrado en el DOM')}});const html=`<div style="position:fixed;top:10px;right:10px;width:500px;max-height:90vh;background:white;border:2px solid #049d98;border-radius:8px;padding:20px;font-family:monospace;font-size:12px;z-index:99999;overflow-y:auto;box-shadow:0 10px 25px rgba(0,0,0,0.2)"><h2 style="margin:0 0 15px 0;color:#049d98">Webflow Validator Report</h2><div style="margin-bottom:15px"><h3 style="margin:0 0 10px 0;color:#111827">✅ Componentes ('+report.components.filter(c=>c.found).length+'/'+report.components.length+')</h3><div style="background:#f9fafb;padding:10px;border-radius:4px;max-height:150px;overflow-y:auto">'+report.components.map(c=>'<div style="color:'+(c.found?'#10b981':'#ef4444')+'">'+(c.found?'✓':'✗')+' '+c.name+'</div>').join('')+'</div></div><div style="margin-bottom:15px"><h3 style="margin:0 0 10px 0;color:#111827">🖼️ Imágenes ('+report.images.filter(i=>i.loaded).length+'/'+report.images.length+')</h3><div style="background:#f9fafb;padding:10px;border-radius:4px;max-height:150px;overflow-y:auto">'+report.images.map(i=>'<div style="color:'+(i.loaded?'#10b981':'#ef4444')+';word-break:break-all"><small>'+(i.loaded?'✓':'✗')+' '+i.src.substring(0,50)+'...</small></div>').join('')+'</div></div><div style="margin-bottom:15px"><h3 style="margin:0 0 10px 0;color:#111827">🔗 Links ('+report.links.filter(l=>l.valid).length+'/'+report.links.length+')</h3><div style="background:#f9fafb;padding:10px;border-radius:4px;max-height:150px;overflow-y:auto">'+report.links.map(l=>'<div style="color:'+(l.valid?'#10b981':'#ef4444')+'"><small>'+(l.valid?'✓':'✗')+' '+l.text.substring(0,30)+'</small></div>').join('')+'</div></div><div style="margin-bottom:15px"><h3 style="margin:0 0 10px 0;color:#111827">⚠️ Advertencias ('+report.warnings.length+')</h3><div style="background:#f9fafb;padding:10px;border-radius:4px;max-height:150px;overflow-y:auto">'+report.warnings.map(w=>'<div style="color:#f59e0b"><small>⚠️ '+w+'</small></div>').join('')+'</div></div><div style="margin-top:15px;padding-top:15px;border-top:1px solid #e5e7eb"><button onclick="this.parentElement.parentElement.remove()" style="background:#049d98;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;font-weight:bold">Cerrar</button><button onclick="console.log(JSON.stringify('+JSON.stringify(report)+',null,2))" style="background:#374151;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;margin-left:10px;font-weight:bold">Ver JSON</button></div></div>`;document.body.insertAdjacentHTML('beforeend',html);console.log('Webflow Validator Report:',report)})();
+
+================================================================================
+
+CÓMO CREAR EL BOOKMARKLET:
+
+CHROME/EDGE/BRAVE:
+1. Ctrl+Shift+B (abre gestor de marcadores)
+2. Haz clic derecho en la barra de marcadores
+3. Selecciona "Agregar página"
+4. Nombre: "Webflow Validator"
+5. URL: [Pega el código de arriba]
+6. Guardar
+
+FIREFOX:
+1. Ctrl+Shift+B (abre gestor de marcadores)
+2. Haz clic derecho en "Barra de Herramientas"
+3. Selecciona "Nuevo marcador"
+4. Nombre: "Webflow Validator"
+5. Ubicación: [Pega el código de arriba]
+6. Guardar
+
+SAFARI:
+1. Cmd+, (abre preferencias)
+2. Ve a "Marcadores"
+3. Safari → Marcadores → Agregar marcador
+4. Nombre: "Webflow Validator"
+5. URL: [Pega el código de arriba]
+6. Agregar
+
+CÓMO USAR:
+1. Ve a tu página en Webflow
+2. Haz clic en el bookmarklet "Webflow Validator"
+3. Aparecerá un reporte en la esquina superior derecha
+4. Revisa los resultados (✓ = bien, ✗ = problema)
+
+================================================================================
+
+ÚLTIMA ACTUALIZACIÓN: Oct 29, 2025

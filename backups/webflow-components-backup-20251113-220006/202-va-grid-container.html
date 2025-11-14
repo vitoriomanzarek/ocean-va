@@ -1,0 +1,128 @@
+<!-- VA GRID CONTAINER - RESPONSIVE LAYOUT -->
+<!-- This component provides the grid layout for VA cards -->
+
+<style>
+  .va-grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+  }
+
+  .va-grid-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .va-grid-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+
+  .va-grid-header p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .va-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) {
+    .va-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .va-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+    }
+
+    .va-grid-header h2 {
+      font-size: 24px;
+    }
+
+    .va-grid-container {
+      padding: 24px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .va-grid-header h2 {
+      font-size: 20px;
+    }
+
+    .va-grid-container {
+      padding: 16px 12px;
+    }
+  }
+
+  /* Loading state */
+  .va-grid-loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6b7280;
+  }
+
+  /* Empty state */
+  .va-grid-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6b7280;
+  }
+</style>
+
+<div class="va-grid-container">
+  <div class="va-grid-header">
+    <h2>Meet Our Virtual Assistants</h2>
+    <p>Highly skilled professionals ready to support your business needs. Each assistant is pre-vetted and trained to deliver exceptional service.</p>
+  </div>
+
+  <div class="va-grid">
+    <!-- VA CARDS GO HERE -->
+    <!-- Each card should have the structure from 201-va-card-component.html -->
+    <!-- Paste individual card components inside this grid -->
+  </div>
+</div>
+
+<!-- INSTRUCTIONS FOR WEBFLOW:
+1. Copy this container component
+2. Paste into an HTML Embed in Webflow
+3. Inside the .va-grid div, paste all individual VA cards
+4. The grid will automatically arrange them responsively
+
+EXAMPLE STRUCTURE:
+<div class="va-grid-container">
+  <div class="va-grid-header">
+    ...
+  </div>
+  <div class="va-grid">
+    [CARD 1 - Adrian]
+    [CARD 2 - Alejandro]
+    [CARD 3 - Dafne]
+    ...
+  </div>
+</div>
+
+RESPONSIVE BEHAVIOR:
+- Desktop (1024px+): 3-4 columns
+- Tablet (768px-1023px): 2-3 columns
+- Mobile (480px-767px): 2 columns
+- Small Mobile (<480px): 1 column
+-->

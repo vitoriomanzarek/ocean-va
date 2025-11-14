@@ -1,0 +1,514 @@
+<!-- Our Virtual Assistants Page for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<div class="our-vas-page">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .our-vas-page {
+      width: 100%;
+      background-color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Header */
+    .vas-header {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .vas-header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .vas-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .vas-header p {
+      font-size: 18px;
+      color: #ccfffe;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .vas-header h1 {
+        font-size: 32px;
+      }
+
+      .vas-header p {
+        font-size: 16px;
+      }
+    }
+
+    /* Filters Section */
+    .vas-filters {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .vas-filters h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111827;
+    }
+
+    .filters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .filter-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+
+    .filter-group select,
+    .filter-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    .filter-group select:focus,
+    .filter-group input:focus {
+      outline: none;
+      border-color: #049d98;
+      box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
+    }
+
+    /* VA Grid */
+    .vas-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .vas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 32px;
+    }
+
+    /* VA Card */
+    .va-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .va-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .va-image {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      background: #e5e7eb;
+      overflow: hidden;
+    }
+
+    .va-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .va-status {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #10b981;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .va-status.on-assignment {
+      background: #f59e0b;
+    }
+
+    .va-rating {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: white;
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #f59e0b;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .va-content {
+      padding: 24px;
+    }
+
+    .va-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .va-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .va-experience-badge {
+      background: #e6fffe;
+      color: #024a47;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .va-position {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .va-meta {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .va-languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .va-language-tag {
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .va-skills {
+      margin-bottom: 16px;
+    }
+
+    .va-skills h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .va-skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .va-skill-tag {
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    .va-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .va-message-btn {
+      background: none;
+      border: none;
+      color: #049d98;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .va-message-btn:hover {
+      color: #037b77;
+    }
+
+    .va-hire-btn {
+      background: #049d98;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .va-hire-btn:hover {
+      background: #037b77;
+    }
+
+    /* Empty State */
+    .vas-empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: #6b7280;
+    }
+
+    .vas-empty p {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    /* CTA Section */
+    .vas-cta {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .vas-cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .vas-cta h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .vas-cta p {
+      font-size: 18px;
+      color: #ccfffe;
+      margin-bottom: 32px;
+    }
+
+    .vas-cta-btn {
+      background: white;
+      color: #049d98;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .vas-cta-btn:hover {
+      background: #f3f4f6;
+    }
+
+    @media (max-width: 768px) {
+      .vas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .filters-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .vas-cta h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+
+  <!-- Header -->
+  <div class="vas-header">
+    <div class="vas-header-container">
+      <h1>Meet Our Virtual Assistants</h1>
+      <p>Our VAs are highly skilled professionals ready to support your business needs. Each assistant is pre-vetted and trained to deliver exceptional service.</p>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="vas-filters">
+    <h2>Find Your Perfect VA Match</h2>
+    <div class="filters-grid">
+      <div class="filter-group">
+        <label>Availability</label>
+        <select id="availabilityFilter">
+          <option value="">All Availabilities</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Minimum Experience</label>
+        <select id="experienceFilter">
+          <option value="">Any Experience</option>
+          <option value="3">3+ years</option>
+          <option value="5">5+ years</option>
+          <option value="7">7+ years</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Minimum Rating</label>
+        <select id="ratingFilter">
+          <option value="">Any Rating</option>
+          <option value="4">4.0+</option>
+          <option value="4.5">4.5+</option>
+          <option value="4.8">4.8+</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Search by Name</label>
+        <input type="text" id="searchFilter" placeholder="Enter VA name...">
+      </div>
+    </div>
+  </div>
+
+  <!-- VA Grid -->
+  <div class="vas-container">
+    <div class="vas-grid" id="vasGrid">
+      <!-- VA cards will be generated here -->
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="vas-empty" id="emptyState" style="display: none;">
+    <p>No VAs found matching your criteria.</p>
+    <p>Please try different filters or contact us for custom VA matching.</p>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="vas-cta">
+    <div class="vas-cta-container">
+      <h2>Can't Find What You're Looking For?</h2>
+      <p>We have more VAs with diverse skills. Let us help you find the perfect match for your specific needs.</p>
+      <button class="vas-cta-btn" onclick="window.location.href='/contact-us'">Contact Us for Custom VA Matching</button>
+    </div>
+  </div>
+
+  <script>
+    // Sample VA data
+    const allVAs = [
+      { id: 1, name: 'Alejandro', position: 'Bilingual Insurance Specialist', experience: 5, skills: ['Bilingual Support', 'Policy Management', 'Customer Service'], languages: ['English', 'Spanish'], availability: 'Full-time', rating: 4.8, status: 'Available' },
+      { id: 2, name: 'Branko', position: 'Bilingual Customer Service Rep', experience: 4, skills: ['Bilingual Support', 'Client Relations', 'Policy Information'], languages: ['English', 'Spanish'], availability: 'Full-time', rating: 4.7, status: 'Available' },
+      { id: 3, name: 'Dafne', position: 'Bilingual Insurance Agent', experience: 6, skills: ['Bilingual Support', 'Policy Sales', 'Client Consultations'], languages: ['English', 'Spanish'], availability: 'Full-time', rating: 4.9, status: 'Available' },
+      { id: 4, name: 'Ivan', position: 'Bilingual Claims Specialist', experience: 5, skills: ['Bilingual Support', 'Claims Processing', 'Documentation'], languages: ['English', 'Spanish'], availability: 'Full-time', rating: 4.8, status: 'Available' },
+      { id: 5, name: 'Joana', position: 'Bilingual Customer Support', experience: 3, skills: ['Bilingual Support', 'Customer Service', 'Policy Information'], languages: ['English', 'Spanish'], availability: 'Full-time', rating: 4.6, status: 'Available' },
+      { id: 6, name: 'Abigail', position: 'Insurance Customer Service Rep', experience: 4, skills: ['Customer Support', 'Policy Information', 'Claims Assistance'], languages: ['English'], availability: 'Full-time', rating: 4.7, status: 'Available' },
+      { id: 7, name: 'Adrian', position: 'Insurance Specialist', experience: 5, skills: ['Policy Management', 'Client Consultations', 'Renewals'], languages: ['English'], availability: 'Full-time', rating: 4.8, status: 'Available' },
+      { id: 8, name: 'Angelica', position: 'Customer Support Representative', experience: 3, skills: ['Client Communication', 'Policy Information', 'Appointment Setting'], languages: ['English'], availability: 'Full-time', rating: 4.6, status: 'Available' },
+    ];
+
+    function renderVAs(vas) {
+      const grid = document.getElementById('vasGrid');
+      const emptyState = document.getElementById('emptyState');
+
+      if (vas.length === 0) {
+        grid.style.display = 'none';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      grid.style.display = 'grid';
+      emptyState.style.display = 'none';
+
+      grid.innerHTML = vas.map(va => `
+        <div class="va-card">
+          <div class="va-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #e6fffe 0%, #ccfffe 100%); display: flex; align-items: center; justify-content: center; font-size: 48px; color: #049d98;">
+              ${va.name.charAt(0)}
+            </div>
+            <div class="va-status ${va.status === 'On Assignment' ? 'on-assignment' : ''}">
+              ● ${va.status}
+            </div>
+            <div class="va-rating">⭐ ${va.rating}</div>
+          </div>
+          <div class="va-content">
+            <div class="va-header">
+              <div class="va-name">${va.name}</div>
+              <div class="va-experience-badge">${va.experience}+ yrs</div>
+            </div>
+            <div class="va-position">${va.position}</div>
+            <div class="va-meta">${va.experience}+ years • ${va.availability}</div>
+            <div class="va-languages">
+              ${va.languages.map(lang => `<span class="va-language-tag">${lang}</span>`).join('')}
+            </div>
+            <div class="va-skills">
+              <h4>Skills</h4>
+              <div class="va-skills-list">
+                ${va.skills.map(skill => `<span class="va-skill-tag">${skill}</span>`).join('')}
+              </div>
+            </div>
+            <div class="va-actions">
+              <button class="va-message-btn">💬 Message</button>
+              <button class="va-hire-btn">Hire Now</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterVAs() {
+      const availability = document.getElementById('availabilityFilter').value;
+      const experience = parseInt(document.getElementById('experienceFilter').value) || 0;
+      const rating = parseFloat(document.getElementById('ratingFilter').value) || 0;
+      const search = document.getElementById('searchFilter').value.toLowerCase();
+
+      const filtered = allVAs.filter(va => {
+        if (availability && va.availability !== availability) return false;
+        if (experience && va.experience < experience) return false;
+        if (rating && va.rating < rating) return false;
+        if (search && !va.name.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      renderVAs(filtered);
+    }
+
+    // Event listeners
+    document.getElementById('availabilityFilter').addEventListener('change', filterVAs);
+    document.getElementById('experienceFilter').addEventListener('change', filterVAs);
+    document.getElementById('ratingFilter').addEventListener('change', filterVAs);
+    document.getElementById('searchFilter').addEventListener('input', filterVAs);
+
+    // Initial render
+    renderVAs(allVAs);
+  </script>
+</div>

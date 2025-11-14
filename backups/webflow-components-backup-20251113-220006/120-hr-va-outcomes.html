@@ -1,0 +1,130 @@
+<!-- HR VA - Outcomes Section for Webflow -->
+<section class="hr-va-outcomes">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .hr-va-outcomes {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .hr-va-outcomes-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .hr-va-outcomes-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .hr-va-outcomes-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .hr-va-outcomes-header p {
+      font-size: 18px;
+      color: #ccfffe;
+    }
+
+    .hr-va-outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .hr-va-outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hr-va-outcomes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hr-va-outcomes-header h2 {
+        font-size: 28px;
+      }
+
+      .hr-va-outcomes-header p {
+        font-size: 16px;
+      }
+    }
+
+    .outcome-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 32px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .outcome-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .outcome-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .outcome-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .outcome-card p {
+      font-size: 15px;
+      color: #ccfffe;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="hr-va-outcomes-container">
+    <!-- Header -->
+    <div class="hr-va-outcomes-header">
+      <h2>Outcomes You Can Expect</h2>
+      <p>Real results that improve your HR operations.</p>
+    </div>
+
+    <!-- Outcomes Grid -->
+    <div class="hr-va-outcomes-grid">
+      <!-- Outcome 1 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">⚡</span>
+        <h3>Faster Hiring</h3>
+        <p>Faster time-to-interview and fewer no-shows</p>
+      </div>
+
+      <!-- Outcome 2 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">📁</span>
+        <h3>Clean Files</h3>
+        <p>Clean, compliant files</p>
+      </div>
+
+      <!-- Outcome 3 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">⭐</span>
+        <h3>Better Experience</h3>
+        <p>Better candidate experience and manager satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>

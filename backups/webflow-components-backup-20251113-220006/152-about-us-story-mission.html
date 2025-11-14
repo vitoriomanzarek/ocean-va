@@ -1,0 +1,164 @@
+<style>
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .about-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 32px;
+        }
+
+        .about-card-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .about-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0d9488;
+            margin-bottom: 16px;
+        }
+
+        .about-card p {
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .values-section {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 48px 32px;
+        }
+
+        .values-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .value-item {
+            display: block;
+        }
+
+        .value-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0d9488;
+            margin-bottom: 6px;
+            margin-top: 0;
+        }
+
+        .value-item p {
+            color: #374151;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+<section class="section">
+        <h2 class="section-title">About Us</h2>
+
+        <!-- Story, Mission, Approach Cards -->
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-card-icon">📖</div>
+                <h3>Our Story</h3>
+                <p>OVAS was founded with one clear goal — to make business support simple, personal, and dependable. We saw how companies struggled to find consistent, skilled virtual assistants and set out to change that.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🎯</div>
+                <h3>Our Mission</h3>
+                <p>To empower businesses with dependable, professional virtual assistants while creating meaningful opportunities for talented individuals worldwide. At OVAS, success is built on trust, teamwork, and shared goals.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🤝</div>
+                <h3>Our Approach</h3>
+                <p>By focusing on long-term partnerships instead of quick placements, OVAS connects clients with dedicated professionals who become an integral part of their daily operations.</p>
+            </div>
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="values-section">
+            <h2 class="values-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h4>Integrity</h4>
+                    <p>We honor our commitments to clients and VAs.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Excellence</h4>
+                    <p>We hold ourselves to the highest professional standards.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Collaboration</h4>
+                    <p>We believe strong relationships drive great results.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Reliability</h4>
+                    <p>We deliver consistent, dependable support every day.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Growth</h4>
+                    <p>We create opportunities for clients and virtual assistants alike to succeed.</p>
+                </div>
+                <div class="value-item">
+                    <h4>Trust</h4>
+                    <p>Built on genuine teamwork and communication.</p>
+                </div>
+            </div>
+        </div>
+</section>

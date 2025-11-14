@@ -1,0 +1,130 @@
+<!-- Marketing Virtual Assistant - Outcomes Section for Webflow -->
+<section class="marketing-outcomes">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .marketing-outcomes {
+      background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .marketing-outcomes-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .marketing-outcomes-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .marketing-outcomes-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .marketing-outcomes-header p {
+      font-size: 18px;
+      color: #ccfffe;
+    }
+
+    .marketing-outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .marketing-outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .marketing-outcomes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .marketing-outcomes-header h2 {
+        font-size: 28px;
+      }
+
+      .marketing-outcomes-header p {
+        font-size: 16px;
+      }
+    }
+
+    .outcome-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 32px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .outcome-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .outcome-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .outcome-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .outcome-card p {
+      font-size: 15px;
+      color: #ccfffe;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="marketing-outcomes-container">
+    <!-- Header -->
+    <div class="marketing-outcomes-header">
+      <h2>Outcomes You Can Expect</h2>
+      <p>Amplify your marketing output without expanding your team.</p>
+    </div>
+
+    <!-- Outcomes Grid -->
+    <div class="marketing-outcomes-grid">
+      <!-- Outcome 1 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">📈</span>
+        <h3>More Output</h3>
+        <p>More output from your existing strategy</p>
+      </div>
+
+      <!-- Outcome 2 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">✅</span>
+        <h3>On-Time Execution</h3>
+        <p>Cleaner, on‑time campaign execution</p>
+      </div>
+
+      <!-- Outcome 3 -->
+      <div class="outcome-card">
+        <span class="outcome-icon">📊</span>
+        <h3>Consistent Reporting</h3>
+        <p>Consistent reporting and insight loops</p>
+      </div>
+    </div>
+  </div>
+</section>

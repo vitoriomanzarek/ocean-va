@@ -1,0 +1,144 @@
+<!-- Marketing Virtual Assistant - What We Do Section for Webflow -->
+<section class="marketing-what-we-do">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .marketing-what-we-do {
+      background-color: white;
+      padding: 80px 20px;
+    }
+
+    .marketing-what-we-do-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .marketing-what-we-do-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .marketing-what-we-do-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .marketing-what-we-do-header p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .marketing-what-we-do-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .marketing-what-we-do-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .marketing-what-we-do-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .marketing-what-we-do-header h2 {
+        font-size: 28px;
+      }
+
+      .marketing-what-we-do-header p {
+        font-size: 16px;
+      }
+    }
+
+    .service-card {
+      background: #f9fafb;
+      padding: 32px;
+      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: #ccfffe;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="marketing-what-we-do-container">
+    <!-- Header -->
+    <div class="marketing-what-we-do-header">
+      <h2>What We Do</h2>
+      <p>Your marketing VA handles execution so your team can focus on strategy and growth.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="marketing-what-we-do-grid">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <span class="service-icon">📱</span>
+        <h3>Social Media</h3>
+        <p>Social content scheduling and community responses</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <span class="service-icon">📝</span>
+        <h3>Content & SEO</h3>
+        <p>Blog drafting, repurposing, and on‑page updates (SEO‑friendly)</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <span class="service-icon">✉️</span>
+        <h3>Email Marketing</h3>
+        <p>Email builds, lists, segmentation, and QA</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <span class="service-icon">🎨</span>
+        <h3>Creative & Web</h3>
+        <p>Basic creative in Canva/Figma; landing page updates in your CMS</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <span class="service-icon">📊</span>
+        <h3>Reporting</h3>
+        <p>Reporting snapshots (traffic, leads, pipeline proxies)</p>
+      </div>
+    </div>
+  </div>
+</section>

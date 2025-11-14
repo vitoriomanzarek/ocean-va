@@ -1,0 +1,112 @@
+<!-- Virtual Receptionist - Tools We Handle Section for Webflow -->
+<section class="receptionist-tools">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .receptionist-tools {
+      background-color: #f9fafb;
+      padding: 80px 20px;
+    }
+
+    .receptionist-tools-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .receptionist-tools-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .receptionist-tools-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0;
+    }
+
+    .receptionist-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      .receptionist-tools-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .receptionist-tools {
+        padding: 60px 20px;
+      }
+
+      .receptionist-tools-header h2 {
+        font-size: 28px;
+      }
+
+      .receptionist-tools-grid {
+        gap: 32px;
+      }
+    }
+
+    .tool-category {
+      text-align: center;
+    }
+
+    .tool-category h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #049d98;
+      margin-bottom: 12px;
+    }
+
+    .tool-category p {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="receptionist-tools-container">
+    <!-- Header -->
+    <div class="receptionist-tools-header">
+      <h2>Tools We Handle</h2>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="receptionist-tools-grid">
+      <!-- Phone & Communication -->
+      <div class="tool-category">
+        <h3>Phone & Communication</h3>
+        <p>RingCentral, 8x8, Aircall, Grasshopper, Zoom Phone</p>
+      </div>
+
+      <!-- Calendar & Scheduling -->
+      <div class="tool-category">
+        <h3>Calendar & Scheduling</h3>
+        <p>Google Calendar, Outlook, Calendly</p>
+      </div>
+
+      <!-- CRM & Lead Management -->
+      <div class="tool-category">
+        <h3>CRM & Lead Management</h3>
+        <p>HubSpot, Salesforce, Zoho, Pipedrive</p>
+      </div>
+
+      <!-- Chat & Support -->
+      <div class="tool-category">
+        <h3>Chat & Support</h3>
+        <p>Intercom, Drift, Zendesk, Front, Slack/Teams</p>
+      </div>
+    </div>
+  </div>
+</section>

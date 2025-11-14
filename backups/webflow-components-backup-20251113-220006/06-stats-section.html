@@ -1,0 +1,170 @@
+<!-- Stats Section for Webflow -->
+<section class="stats-section">
+  <style>
+    .stats-section {
+      background-color: #037b77;
+      color: white;
+      padding: 80px 16px;
+    }
+
+    .stats-container {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    .stats-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .stats-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .stats-title {
+        font-size: 28px;
+      }
+    }
+
+    .stats-subtitle {
+      font-size: 20px;
+      color: #e6fffe;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #ccfffe;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: #b3f0ed;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .feature-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .feature-description {
+      font-size: 14px;
+      color: #ccfffe;
+      line-height: 1.6;
+    }
+  </style>
+
+  <div class="stats-container">
+    <!-- Header -->
+    <div class="stats-header">
+      <h2 class="stats-title">Expert Virtual Assistants for Your Business</h2>
+      <p class="stats-subtitle">Specialized professionals ready to help your business grow and succeed.</p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">70%</div>
+        <div class="stat-label">Cost Savings</div>
+        <p class="stat-description">Save up to 70% on staffing costs</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">95%</div>
+        <div class="stat-label">Retention Rate</div>
+        <p class="stat-description">Industry-leading employee retention</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">100+</div>
+        <div class="stat-label">Businesses Served</div>
+        <p class="stat-description">Clients across multiple industries</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">10+</div>
+        <div class="stat-label">Languages</div>
+        <p class="stat-description">English & Spanish Native VAs</p>
+      </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3 class="feature-title">Global Talent Network</h3>
+        <p class="feature-description">Tap into top-tier talent from regions like Mexico, the Philippines and LATAM.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⭐</div>
+        <h3 class="feature-title">Rigorous Vetting</h3>
+        <p class="feature-description">30-day vetting process ensures your VA is trained, experienced, and ready to excel.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3 class="feature-title">Flexible Pricing</h3>
+        <p class="feature-description">Flat monthly rate with no hidden fees. Interview candidates and choose your price.</p>
+      </div>
+    </div>
+  </div>
+</section>

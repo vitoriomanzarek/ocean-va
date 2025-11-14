@@ -1,0 +1,114 @@
+<style>
+    .contact-cta-section {
+        background: #0f766e;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .contact-cta-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-cta-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white !important;
+        margin-bottom: 24px;
+        line-height: 1.2;
+    }
+
+    .contact-cta-text {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 32px;
+        line-height: 1.8;
+    }
+
+    .contact-cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-cta-button {
+        display: inline-block;
+        padding: 16px 40px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-cta-button-primary {
+        background: white;
+        color: #0f766e;
+    }
+
+    .contact-cta-button-primary:hover {
+        background: #f3f4f6;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-cta-button-secondary {
+        background: #0d9488;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .contact-cta-button-secondary:hover {
+        background: #0b7a73;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .contact-cta-section {
+            padding: 60px 20px;
+        }
+
+        .contact-cta-title {
+            font-size: 32px;
+        }
+
+        .contact-cta-text {
+            font-size: 16px;
+        }
+
+        .contact-cta-buttons {
+            flex-direction: column;
+        }
+
+        .contact-cta-button {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+    @media (min-width: 640px) {
+        .contact-cta-buttons {
+            flex-direction: row;
+        }
+
+        .contact-cta-button {
+            display: inline-block;
+        }
+    }
+</style>
+
+<section class="contact-cta-section">
+    <div class="contact-cta-container">
+        <h2 class="contact-cta-title">Ready to Transform Your Business?</h2>
+        <p class="contact-cta-text">Join hundreds of businesses that have streamlined their operations with Ocean Virtual Assistant. Let's get started today.</p>
+        <div class="contact-cta-buttons">
+            <a href="#booking-demo" class="contact-cta-button contact-cta-button-primary">Book a Free Call</a>
+            <a href="#pricing" class="contact-cta-button contact-cta-button-secondary">View Pricing</a>
+        </div>
+    </div>
+</section>

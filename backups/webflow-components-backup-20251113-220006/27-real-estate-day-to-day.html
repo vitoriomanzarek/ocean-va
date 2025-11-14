@@ -1,0 +1,181 @@
+<!-- Real Estate VA - Day-to-Day Tasks Section for Webflow -->
+<!-- Note: CSS styles are loaded from design-system.css in Webflow Project Settings -->
+<section class="re-tasks-section">
+  <div class="re-tasks-container">
+    <!-- Section Header -->
+    <div class="re-tasks-header">
+      <h2 class="re-tasks-title">Day-to-Day Tasks We Handle</h2>
+      <p class="re-tasks-subtitle">Your REVA manages the operational details so you can focus on relationships and closings.</p>
+    </div>
+
+    <!-- Tasks Grid -->
+    <div class="re-tasks-grid">
+      <!-- Lead & Marketing -->
+      <div class="re-task-column">
+        <h3 class="re-task-column-title">Lead & Marketing</h3>
+        <ul class="re-task-list">
+          <li>✓ Speed-to-lead calling/texting within minutes</li>
+          <li>✓ Buyer/seller intake & pre-qualification</li>
+          <li>✓ Drip campaigns & nurture sequences</li>
+          <li>✓ Open house follow-up & review requests</li>
+          <li>✓ Social posting & DM responses</li>
+        </ul>
+      </div>
+
+      <!-- Listings & Showings -->
+      <div class="re-task-column">
+        <h3 class="re-task-column-title">Listings & Showings</h3>
+        <ul class="re-task-list">
+          <li>✓ MLS data entry, photos, remarks</li>
+          <li>✓ Lockbox codes & showing windows</li>
+          <li>✓ Feedback surveys & weekly seller reports</li>
+          <li>✓ Showing coordination & confirmations</li>
+        </ul>
+      </div>
+
+      <!-- Transactions -->
+      <div class="re-task-column">
+        <h3 class="re-task-column-title">Transactions</h3>
+        <ul class="re-task-list">
+          <li>✓ Offer templates & e-sign packets</li>
+          <li>✓ Dates & deadlines management</li>
+          <li>✓ Contingency tracking</li>
+          <li>✓ Coordination with lender/title/HOA</li>
+          <li>✓ CD/ALTA milestone reminders</li>
+        </ul>
+      </div>
+
+      <!-- Property Management -->
+      <div class="re-task-column">
+        <h3 class="re-task-column-title">Property Management (Optional)</h3>
+        <ul class="re-task-list">
+          <li>✓ Tenant inquiries & application screening</li>
+          <li>✓ Lease prep & onboarding</li>
+          <li>✓ Renewal notices</li>
+          <li>✓ Work orders & vendor dispatch</li>
+          <li>✓ Resident updates & follow-ups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styling (if not using design-system.css) -->
+<style>
+  .re-tasks-section {
+    background: #f9fafb;
+    padding: 80px 20px;
+  }
+
+  .re-tasks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .re-tasks-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .re-tasks-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .re-tasks-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .re-tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 64px;
+  }
+
+  .re-task-column {
+    background: transparent;
+    padding: 0 24px;
+    border-radius: 0;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .re-task-column:hover {
+    border-color: transparent;
+    box-shadow: none;
+    transform: translateX(4px);
+  }
+
+  .re-task-column-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #049d98;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+  }
+
+  .re-task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .re-task-list li {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .re-task-list li::before {
+    content: '';
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .re-tasks-section {
+      padding: 48px 20px;
+    }
+
+    .re-tasks-header {
+      margin-bottom: 48px;
+    }
+
+    .re-tasks-title {
+      font-size: 28px;
+    }
+
+    .re-tasks-subtitle {
+      font-size: 16px;
+    }
+
+    .re-tasks-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .re-task-column {
+      padding: 24px;
+    }
+
+    .re-task-column-title {
+      font-size: 16px;
+    }
+
+    .re-task-list li {
+      font-size: 13px;
+    }
+  }
+</style>
