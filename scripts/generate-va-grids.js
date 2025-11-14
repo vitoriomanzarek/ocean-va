@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import VA data
-import { vasData } from './src/data/vasData.js';
+import { vasData } from '../src/data/vasData.js';
 
 const outputPath = path.join(__dirname, 'webflow-components');
 
