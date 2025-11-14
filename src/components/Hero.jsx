@@ -3,7 +3,15 @@ import { Clock, DollarSign, Award, Globe } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white">
+    <section 
+      className="bg-gradient-to-br from-ocean-700 via-ocean-600 to-ocean-500 text-white bg-cover bg-right-top bg-no-repeat"
+      style={{
+        backgroundImage: 'url("https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/68793e45e2a031f46862bfb4_insurance%20va.png")',
+        paddingTop: '120px',
+        paddingBottom: '80px',
+        minHeight: '500px'
+      }}
+    >
       <div className="section-container">
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
