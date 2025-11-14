@@ -1,0 +1,7 @@
+{
+  "library": {
+    "name": "Ocean VA Components",
+    "components": ["./src/components/CodeComponents/**/*.webflow.jsx"],
+    "bundleConfig": "./webpack.webflow.js"
+  }
+}
