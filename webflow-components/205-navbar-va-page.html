@@ -2,6 +2,16 @@
 <!-- Based on NavbarVA.jsx component -->
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
   .navbar-va {
     background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -42,7 +52,7 @@
   .navbar-va-menu {
     display: none;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
   }
 
   @media (min-width: 1024px) {
@@ -76,8 +86,6 @@
   /* Dropdown */
   .navbar-va-dropdown-container {
     position: relative;
-    margin-top: 16px;
-    margin-bottom: 16px;
   }
 
   .navbar-va-dropdown {
@@ -140,14 +148,16 @@
 
   /* Mobile Menu */
   .navbar-va-mobile {
-    display: none;
+    display: none !important;
     background: white;
     border-top: 1px solid #e5e7eb;
     padding: 16px;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .navbar-va-mobile.active {
-    display: block;
+    display: flex !important;
   }
 
   @media (min-width: 1024px) {
@@ -170,11 +180,6 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s;
-    margin-bottom: 12px;
-  }
-
-  .navbar-va-mobile-item.navbar-va-next-steps {
-    margin-top: 12px;
   }
 
   .navbar-va-mobile-item:hover {
@@ -184,8 +189,6 @@
   .navbar-va-mobile-dropdown {
     display: none;
     padding-left: 16px;
-    margin-top: 8px;
-    margin-bottom: 12px;
   }
 
   .navbar-va-mobile-dropdown.active {

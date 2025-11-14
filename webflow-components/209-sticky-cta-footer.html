@@ -63,6 +63,27 @@
   body {
     padding-bottom: 60px;
   }
+
+  .sticky-cta-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .sticky-cta-container {
+    flex-direction: column;
+    padding: 12px 16px;
+  }
+  
+  .sticky-cta-text {
+    margin-bottom: 8px;
+  }
+}
 </style>
 
 <div class="sticky-cta-footer" id="stickyCTAFooter">

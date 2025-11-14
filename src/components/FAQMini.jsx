@@ -89,7 +89,7 @@ export default function FAQMini() {
 
         <div className="mt-8 text-center">
           <a 
-            href="/faqs" 
+            href="/faq" 
             className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
           >
             See all FAQs

@@ -135,18 +135,18 @@
     }
 
     /* CTA Button */
-    .navbar-cta {
+    .navbar-cta-wrapper {
       display: none;
       margin-left: 24px;
     }
 
     @media (min-width: 1024px) {
-      .navbar-cta {
+      .navbar-cta-wrapper {
         display: inline-block;
       }
     }
 
-    .cta-button {
+    .navbar-cta-btn {
       background-color: #049d98;
       color: white;
       font-weight: 600;
@@ -162,9 +162,9 @@
       white-space: nowrap;
     }
 
-    .cta-button:hover {
-      background-color: #049d98;
-      color: #111827;
+    .navbar-cta-btn:hover {
+      background-color: #037b77;
+      color: white;
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
     }
 
@@ -386,7 +386,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
         <div class="dropdown-menu">
-          <a href="https://www.oceanvirtualassistant.com/ovas-current-vas" class="dropdown-item">Current VAs</a>
+          <a href="https://www.oceanvirtualassistant.com/ovas-current-vas" class="dropdown-item">Insurance Experience Virtual Assistants</a>
           <a href="https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents" class="dropdown-item">Licensed Insurance Agents</a>
           <a href="https://www.oceanvirtualassistant.com/ovas-executive-admin-virtual-assistant" class="dropdown-item">Executive / Admin VA</a>
         </div>
@@ -403,8 +403,8 @@
     </div>
 
     <!-- CTA Button -->
-    <div class="navbar-cta">
-      <a href="https://www.oceanvirtualassistant.com/contact-us" class="cta-button">Contact Us</a>
+    <div class="navbar-cta-wrapper">
+      <a href="https://www.oceanvirtualassistant.com/contact-us" class="navbar-cta-btn">Contact Us</a>
     </div>
 
     <!-- Mobile Menu Toggle -->
@@ -473,7 +473,7 @@
         </svg>
       </div>
       <div class="mobile-dropdown-menu">
-        <a href="https://www.oceanvirtualassistant.com/ovas-current-vas" class="mobile-dropdown-item">Current VAs</a>
+        <a href="https://www.oceanvirtualassistant.com/ovas-current-vas" class="mobile-dropdown-item">Insurance Experience Virtual Assistants</a>
         <a href="https://www.oceanvirtualassistant.com/ovas-licensed-insurance-agents" class="mobile-dropdown-item">Licensed Insurance Agents</a>
         <a href="https://www.oceanvirtualassistant.com/ovas-executive-admin-virtual-assistant" class="mobile-dropdown-item">Executive / Admin VA</a>
       </div>

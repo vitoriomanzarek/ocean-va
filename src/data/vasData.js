@@ -726,5 +726,31 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ximena-g-ocean-va-profile",
     imagen: "/images/VAs/Ximena G.webp"
+  },
+  {
+    id: 57,
+    nombre: "Tricia",
+    idiomas: "English",
+    años_experiencia: 2,
+    especialización: ["Home Insurance", "Auto Insurance"],
+    nivel_inglés: "Proficient",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Insurance VA"],
+    slug: "tricia-ocean-va-profile",
+    imagen: "/images/VAs/Tricia.webp"
+  },
+  {
+    id: 58,
+    nombre: "Yojaira",
+    idiomas: "Bilingual (EN-ES)",
+    años_experiencia: 4,
+    especialización: ["Homeowners Insurance"],
+    nivel_inglés: "Proficient",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Insurance VA"],
+    slug: "yojaira-ocean-va-profile",
+    imagen: "/images/VAs/Yojaira.webp"
   }
 ];

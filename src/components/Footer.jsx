@@ -56,7 +56,7 @@ export default function Footer() {
               <li><a href="/about-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ ABOUT US</a></li>
               <li><a href="/pricing" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRICING</a></li>
               <li><a href="/ovas-current-vas" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ OUR VIRTUAL ASSISTANTS</a></li>
-              <li><a href="/faqs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ FAQs</a></li>
+              <li><a href="/faq" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ FAQs</a></li>
               <li><a href="/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ BLOGS</a></li>
               <li><a href="/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CAREERS</a></li>
               <li><a href="/contact-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CONTACT US</a></li>

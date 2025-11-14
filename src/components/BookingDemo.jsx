@@ -60,7 +60,7 @@ export default function BookingDemo() {
             {/* Right - Image (30%) */}
             <div className="overflow-hidden rounded-lg aspect-square">
               <img 
-                src="/images/BookingDemo.jpeg" 
+                src="/images/booking-demo.png" 
                 alt="Booking Demo" 
                 className="w-full h-full object-cover"
               />

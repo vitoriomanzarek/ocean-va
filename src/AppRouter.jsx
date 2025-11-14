@@ -213,7 +213,7 @@ function AppContent() {
           <Route path="/blogs" element={<Blogs />} />
           
           {/* FAQs Page */}
-          <Route path="/faqs" element={<FAQsPage />} />
+          <Route path="/faq" element={<FAQsPage />} />
         </Routes>
       </main>
 
