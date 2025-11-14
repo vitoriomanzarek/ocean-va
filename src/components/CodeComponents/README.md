@@ -126,12 +126,46 @@ Props can be customized in Webflow Designer:
 3. Changes apply immediately
 4. Publish when ready
 
+### VAShowcase
+Virtual Assistants showcase component with pagination.
+
+**Props:**
+- `title` (string) - Section title
+- `subtitle` (string) - Section subtitle
+- `vas` (array) - Virtual Assistants data
+- `itemsPerPage` (number) - Items to show per page
+
+**VA Object:**
+```javascript
+{
+  id: 1,
+  name: 'Maria Garcia',
+  image: 'https://...',
+  specialization: 'Insurance Processing',
+  languages: ['English', 'Spanish'],
+  experience: '5+ years',
+  rating: 4.9,
+  reviews: 24,
+  available: true
+}
+```
+
+**Example:**
+```jsx
+<VAShowcase 
+  title="Meet Our Virtual Assistants"
+  subtitle="Expert professionals"
+  vas={[...]}
+  itemsPerPage={3}
+/>
+```
+
 ## Next Steps
 
 1. ✅ Create Hero component
 2. ✅ Create Navbar component
 3. ✅ Create Pricing component
-4. ⏳ Create VAShowcase component
+4. ✅ Create VAShowcase component
 5. ⏳ Export to Webflow
 6. ⏳ Integrate in Webflow Designer
 7. ⏳ Testing
@@ -142,6 +176,7 @@ Props can be customized in Webflow Designer:
 - `Hero.jsx` - Hero component
 - `Navbar.jsx` - Navigation component
 - `Pricing.jsx` - Pricing component
+- `VAShowcase.jsx` - Virtual Assistants showcase component
 - `index.js` - Exports all components
 - `README.md` - This file
 
