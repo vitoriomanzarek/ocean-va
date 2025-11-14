@@ -1,0 +1,133 @@
+<!-- Hero Code Component for Webflow -->
+<!-- Copy this entire code and paste in Webflow Designer as HTML Embed -->
+
+<section 
+  class="hero relative w-full overflow-hidden"
+  style="
+    background-image: url('https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/68793e45e2a031f46862bfb4_insurance%20va.png');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  "
+>
+  <!-- Overlay -->
+  <div 
+    style="
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(5, 191, 185, 0.9), rgba(4, 157, 152, 0.9), transparent);
+      opacity: 0.9;
+      z-index: 1;
+    "
+  />
+  
+  <!-- Content -->
+  <div style="
+    position: relative;
+    z-index: 10;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  ">
+    <!-- Title -->
+    <h1 style="
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    ">
+      Welcome to Ocean VA
+    </h1>
+    
+    <!-- Subtitle -->
+    <p style="
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 3rem;
+      line-height: 1.5;
+    ">
+      Expert Virtual Assistants for Your Business
+    </p>
+    
+    <!-- CTA Button -->
+    <a 
+      href="#contact"
+      style="
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 1.125rem;
+        transition: all 0.3s ease;
+        background-color: white;
+        color: #049d98;
+        text-decoration: none;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      "
+      onmouseover="this.style.backgroundColor='#f3f4f6'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1.05)';"
+      onmouseout="this.style.backgroundColor='white'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.1)'; this.style.transform='scale(1)';"
+    >
+      Book a Free Call
+    </a>
+  </div>
+
+  <!-- Responsive Styles -->
+  <style>
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 400px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.125rem;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .hero {
+        min-height: 350px;
+        background-attachment: scroll;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</section>
+
+<!-- 
+CUSTOMIZATION GUIDE:
+
+1. TITLE: Change "Welcome to Ocean VA" to your desired title
+2. SUBTITLE: Change "Expert Virtual Assistants for Your Business" to your subtitle
+3. BACKGROUND IMAGE: Replace the URL in background-image style
+4. BUTTON TEXT: Change "Book a Free Call" to your CTA text
+5. BUTTON LINK: Change "#contact" to your desired link
+6. COLORS: Adjust the gradient colors (currently using Ocean VA colors)
+
+COLORS USED:
+- Primary: #05bfb9 (Ocean Turquoise)
+- Secondary: #049d98 (Ocean Dark)
+- Text: white
+
+HOW TO USE IN WEBFLOW:
+1. Copy this entire code
+2. In Webflow Designer, go to "Copy of Ocean VA" → Staging
+3. Create new page or edit existing
+4. Add HTML Embed element
+5. Paste this code
+6. Customize values above
+7. Publish to staging
+8. Test on mobile, tablet, desktop
+-->
