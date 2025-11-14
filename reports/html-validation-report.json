@@ -1,0 +1,3233 @@
+{
+  "timestamp": "2025-11-14T04:13:49.900Z",
+  "totalFiles": 159,
+  "totalSize": 1158992,
+  "components": [
+    {
+      "file": "01-comparison-table.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/01-comparison-table.html",
+      "size": 7776,
+      "sizeKB": "7.59",
+      "lines": 280,
+      "lastModified": "2025-11-01T20:27:04.250Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.250Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 73,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "01-contact-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/01-contact-hero.html",
+      "size": 3044,
+      "sizeKB": "2.97",
+      "lines": 119,
+      "lastModified": "2025-11-05T01:37:39.692Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.692Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 7,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "02-client-logos-carousel.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/02-client-logos-carousel.html",
+      "size": 5332,
+      "sizeKB": "5.21",
+      "lines": 192,
+      "lastModified": "2025-11-01T20:27:04.251Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.251Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 14,
+        "hasLinks": 0,
+        "hasClasses": 22,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "03-navbar-header.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/03-navbar-header.html",
+      "size": 17735,
+      "sizeKB": "17.32",
+      "lines": 520,
+      "lastModified": "2025-11-14T01:05:33.512Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.512Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 53,
+        "hasClasses": 81,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "04-contact-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/04-contact-cta.html",
+      "size": 2799,
+      "sizeKB": "2.73",
+      "lines": 115,
+      "lastModified": "2025-11-05T01:37:39.693Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.693Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 7,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "04-hero-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/04-hero-section.html",
+      "size": 1579,
+      "sizeKB": "1.54",
+      "lines": 49,
+      "lastModified": "2025-11-01T20:27:04.254Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.254Z",
+      "analysis": {
+        "hasStyle": false,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 0,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "05-footer.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/05-footer.html",
+      "size": 9950,
+      "sizeKB": "9.72",
+      "lines": 284,
+      "lastModified": "2025-11-14T01:05:33.542Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.542Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 32,
+        "hasClasses": 53,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "06-stats-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/06-stats-section.html",
+      "size": 4301,
+      "sizeKB": "4.20",
+      "lines": 171,
+      "lastModified": "2025-11-01T20:27:04.263Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.263Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 35,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "07-pricing-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/07-pricing-section.html",
+      "size": 8155,
+      "sizeKB": "7.96",
+      "lines": 359,
+      "lastModified": "2025-11-05T01:37:39.697Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.697Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 3,
+        "hasClasses": 42,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "08-timeline-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/08-timeline-section.html",
+      "size": 4710,
+      "sizeKB": "4.60",
+      "lines": 191,
+      "lastModified": "2025-11-01T20:27:04.264Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.264Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 29,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "09-testimonials-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/09-testimonials-section.html",
+      "size": 6552,
+      "sizeKB": "6.40",
+      "lines": 229,
+      "lastModified": "2025-11-01T20:27:04.265Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.265Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 58,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "10-faq-section.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/10-faq-section.html",
+      "size": 10071,
+      "sizeKB": "9.83",
+      "lines": 323,
+      "lastModified": "2025-11-14T01:05:33.546Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.546Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 58,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "100-ecommerce-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/100-ecommerce-va-outcomes.html",
+      "size": 2933,
+      "sizeKB": "2.86",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.699Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.699Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "101-ecommerce-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/101-ecommerce-va-cta.html",
+      "size": 2962,
+      "sizeKB": "2.89",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.700Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.700Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "103-finance-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/103-finance-va-hero.html",
+      "size": 3309,
+      "sizeKB": "3.23",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.702Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.702Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "104-finance-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/104-finance-va-use-cases.html",
+      "size": 3291,
+      "sizeKB": "3.21",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.702Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.702Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "105-finance-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/105-finance-va-outcomes.html",
+      "size": 2918,
+      "sizeKB": "2.85",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.702Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.702Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "106-finance-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/106-finance-va-cta.html",
+      "size": 2911,
+      "sizeKB": "2.84",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.703Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.703Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "107-finance-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/107-finance-va-faqs.html",
+      "size": 10029,
+      "sizeKB": "9.79",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.704Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.704Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "108-property-management-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/108-property-management-va-hero.html",
+      "size": 3642,
+      "sizeKB": "3.56",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.705Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.705Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "109-property-management-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/109-property-management-hero.html",
+      "size": 3308,
+      "sizeKB": "3.23",
+      "lines": 150,
+      "lastModified": "2025-11-10T20:48:34.644Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.644Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 7,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "109-property-management-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/109-property-management-va-use-cases.html",
+      "size": 3537,
+      "sizeKB": "3.45",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.705Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.705Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "11-services-industries-showcase.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/11-services-industries-showcase.html",
+      "size": 13420,
+      "sizeKB": "13.11",
+      "lines": 442,
+      "lastModified": "2025-11-10T20:48:34.646Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.646Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 18,
+        "hasClasses": 123,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "110-property-management-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/110-property-management-use-cases.html",
+      "size": 2983,
+      "sizeKB": "2.91",
+      "lines": 135,
+      "lastModified": "2025-11-10T20:48:34.647Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.647Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "111-property-management-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/111-property-management-va-cta.html",
+      "size": 3238,
+      "sizeKB": "3.16",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.706Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.706Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "111-property-management-why-ocean.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/111-property-management-why-ocean.html",
+      "size": 2915,
+      "sizeKB": "2.85",
+      "lines": 120,
+      "lastModified": "2025-11-10T20:48:34.647Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.647Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "112-property-management-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/112-property-management-outcomes.html",
+      "size": 2670,
+      "sizeKB": "2.61",
+      "lines": 128,
+      "lastModified": "2025-11-10T20:48:34.647Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.647Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "113-medical-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/113-medical-va-hero.html",
+      "size": 3311,
+      "sizeKB": "3.23",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.708Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.708Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "113-property-management-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/113-property-management-faqs.html",
+      "size": 4866,
+      "sizeKB": "4.75",
+      "lines": 182,
+      "lastModified": "2025-11-10T20:48:34.648Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.648Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 27,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "114-medical-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/114-medical-va-use-cases.html",
+      "size": 3342,
+      "sizeKB": "3.26",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.711Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.711Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "114-property-management-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/114-property-management-cta.html",
+      "size": 2285,
+      "sizeKB": "2.23",
+      "lines": 108,
+      "lastModified": "2025-11-10T20:48:34.648Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.648Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 7,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "115-medical-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/115-medical-va-outcomes.html",
+      "size": 2923,
+      "sizeKB": "2.85",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.712Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.712Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "116-medical-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/116-medical-va-cta.html",
+      "size": 2927,
+      "sizeKB": "2.86",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.713Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.713Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "118-hr-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/118-hr-va-hero.html",
+      "size": 3163,
+      "sizeKB": "3.09",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.714Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.714Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "119-hr-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/119-hr-va-use-cases.html",
+      "size": 3260,
+      "sizeKB": "3.18",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.714Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.714Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "12-va-showcase.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/12-va-showcase.html",
+      "size": 4786,
+      "sizeKB": "4.67",
+      "lines": 201,
+      "lastModified": "2025-11-01T20:27:04.266Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.266Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 3,
+        "hasLinks": 1,
+        "hasClasses": 22,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "120-hr-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/120-hr-va-outcomes.html",
+      "size": 2831,
+      "sizeKB": "2.76",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.716Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.716Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "121-hr-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/121-hr-va-cta.html",
+      "size": 2784,
+      "sizeKB": "2.72",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.716Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.716Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "122-hr-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/122-hr-va-faqs.html",
+      "size": 9522,
+      "sizeKB": "9.30",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.717Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.717Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "123-tech-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/123-tech-va-hero.html",
+      "size": 3211,
+      "sizeKB": "3.14",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.718Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.718Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "124-tech-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/124-tech-va-use-cases.html",
+      "size": 3319,
+      "sizeKB": "3.24",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.718Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.718Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "125-tech-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/125-tech-va-outcomes.html",
+      "size": 2895,
+      "sizeKB": "2.83",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.719Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.719Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "126-tech-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/126-tech-va-cta.html",
+      "size": 2841,
+      "sizeKB": "2.77",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.723Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.723Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "127-tech-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/127-tech-va-faqs.html",
+      "size": 9720,
+      "sizeKB": "9.49",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.724Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.724Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "128-mortgage-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/128-mortgage-va-hero.html",
+      "size": 3339,
+      "sizeKB": "3.26",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.725Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.725Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "129-mortgage-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/129-mortgage-va-use-cases.html",
+      "size": 3320,
+      "sizeKB": "3.24",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.725Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.725Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "13-our-vas-page.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/13-our-vas-page.html",
+      "size": 14377,
+      "sizeKB": "14.04",
+      "lines": 515,
+      "lastModified": "2025-11-01T20:27:04.267Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.267Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 33,
+        "hasIds": 6,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "130-mortgage-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/130-mortgage-va-outcomes.html",
+      "size": 2933,
+      "sizeKB": "2.86",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.725Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.725Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "131-mortgage-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/131-mortgage-va-cta.html",
+      "size": 2944,
+      "sizeKB": "2.88",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.726Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.726Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "132-mortgage-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/132-mortgage-va-faqs.html",
+      "size": 10120,
+      "sizeKB": "9.88",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.726Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.726Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "133-pricing-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/133-pricing-hero.html",
+      "size": 1283,
+      "sizeKB": "1.25",
+      "lines": 62,
+      "lastModified": "2025-11-05T01:37:39.727Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.727Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 3,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "14-contact-us-page.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/14-contact-us-page.html",
+      "size": 5618,
+      "sizeKB": "5.49",
+      "lines": 136,
+      "lastModified": "2025-11-01T20:27:04.267Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.267Z",
+      "analysis": {
+        "hasStyle": false,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 2,
+        "hasLinks": 2,
+        "hasClasses": 48,
+        "hasIds": 0,
+        "styleLines": 0,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "15-about-us-page.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/15-about-us-page.html",
+      "size": 15556,
+      "sizeKB": "15.19",
+      "lines": 586,
+      "lastModified": "2025-11-01T20:27:04.269Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.269Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 3,
+        "hasLinks": 4,
+        "hasClasses": 64,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "150-about-us-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/150-about-us-hero.html",
+      "size": 2377,
+      "sizeKB": "2.32",
+      "lines": 90,
+      "lastModified": "2025-11-05T01:37:39.727Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.727Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "151-about-us-what-sets-apart.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/151-about-us-what-sets-apart.html",
+      "size": 9964,
+      "sizeKB": "9.73",
+      "lines": 355,
+      "lastModified": "2025-11-10T20:48:34.650Z",
+      "lastModifiedDate": "2025-11-10T20:48:34.650Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 24,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "152-about-us-story-mission.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/152-about-us-story-mission.html",
+      "size": 4981,
+      "sizeKB": "4.86",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.729Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.729Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 18,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "153-about-us-leadership.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/153-about-us-leadership.html",
+      "size": 4762,
+      "sizeKB": "4.65",
+      "lines": 135,
+      "lastModified": "2025-11-05T01:37:39.729Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.729Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 2,
+        "hasLinks": 0,
+        "hasClasses": 13,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "154-about-us-team.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/154-about-us-team.html",
+      "size": 6479,
+      "sizeKB": "6.33",
+      "lines": 166,
+      "lastModified": "2025-11-05T01:37:39.730Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.730Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 4,
+        "hasLinks": 0,
+        "hasClasses": 20,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "155-about-us-commitment-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/155-about-us-commitment-cta.html",
+      "size": 4541,
+      "sizeKB": "4.43",
+      "lines": 168,
+      "lastModified": "2025-11-05T01:37:39.730Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.730Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 12,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "16-home-page.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/16-home-page.html",
+      "size": 12253,
+      "sizeKB": "11.97",
+      "lines": 534,
+      "lastModified": "2025-11-01T20:27:04.269Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.269Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 4,
+        "hasClasses": 53,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "160-faqs-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/160-faqs-hero.html",
+      "size": 1816,
+      "sizeKB": "1.77",
+      "lines": 72,
+      "lastModified": "2025-11-05T01:37:39.730Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.730Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 5,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "161-faqs-accordion-part1.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/161-faqs-accordion-part1.html",
+      "size": 21229,
+      "sizeKB": "20.73",
+      "lines": 355,
+      "lastModified": "2025-11-05T01:37:39.731Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.731Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 6,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "161-faqs-accordion-part2.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/161-faqs-accordion-part2.html",
+      "size": 22162,
+      "sizeKB": "21.64",
+      "lines": 353,
+      "lastModified": "2025-11-05T01:37:39.733Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.733Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 6,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "161-faqs-accordion.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/161-faqs-accordion.html",
+      "size": 10707,
+      "sizeKB": "10.46",
+      "lines": 265,
+      "lastModified": "2025-11-05T01:37:39.746Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.746Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 48,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "162-faqs-info.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/162-faqs-info.html",
+      "size": 3761,
+      "sizeKB": "3.67",
+      "lines": 122,
+      "lastModified": "2025-11-05T01:37:39.746Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.746Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 32,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "163-faqs-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/163-faqs-cta.html",
+      "size": 1678,
+      "sizeKB": "1.64",
+      "lines": 69,
+      "lastModified": "2025-11-05T01:37:39.747Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.747Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 5,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "17-hero-home.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/17-hero-home.html",
+      "size": 4799,
+      "sizeKB": "4.69",
+      "lines": 219,
+      "lastModified": "2025-11-01T20:27:04.270Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.270Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "18-stats.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/18-stats.html",
+      "size": 3897,
+      "sizeKB": "3.81",
+      "lines": 161,
+      "lastModified": "2025-11-01T20:27:04.270Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.270Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 28,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "20-media-gallery.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/20-media-gallery.html",
+      "size": 7205,
+      "sizeKB": "7.04",
+      "lines": 274,
+      "lastModified": "2025-11-01T20:27:04.271Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.271Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 5,
+        "hasLinks": 0,
+        "hasClasses": 34,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "200-our-current-vas-grid-complete.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/200-our-current-vas-grid-complete.html",
+      "size": 65476,
+      "sizeKB": "63.94",
+      "lines": 1666,
+      "lastModified": "2025-11-10T23:27:03.122Z",
+      "lastModifiedDate": "2025-11-10T23:27:03.122Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "hasClasses": 1006,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "200-our-current-vas-grid-premium-PART1.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/200-our-current-vas-grid-premium-PART1.html",
+      "size": 49721,
+      "sizeKB": "48.56",
+      "lines": 1551,
+      "lastModified": "2025-11-10T23:45:18.021Z",
+      "lastModifiedDate": "2025-11-10T23:45:18.021Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 27,
+        "hasLinks": 26,
+        "hasClasses": 552,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "200-our-current-vas-grid-premium-PART2.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/200-our-current-vas-grid-premium-PART2.html",
+      "size": 49677,
+      "sizeKB": "48.51",
+      "lines": 1429,
+      "lastModified": "2025-11-10T23:45:18.022Z",
+      "lastModifiedDate": "2025-11-10T23:45:18.022Z",
+      "analysis": {
+        "hasStyle": false,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 29,
+        "hasLinks": 30,
+        "hasClasses": 622,
+        "hasIds": 0,
+        "styleLines": 0,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "200-our-current-vas-grid-premium.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/200-our-current-vas-grid-premium.html",
+      "size": 99398,
+      "sizeKB": "97.07",
+      "lines": 2979,
+      "lastModified": "2025-11-10T23:34:38.875Z",
+      "lastModifiedDate": "2025-11-10T23:34:38.875Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "hasClasses": 1174,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "201-va-card-component.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/201-va-card-component.html",
+      "size": 4398,
+      "sizeKB": "4.29",
+      "lines": 208,
+      "lastModified": "2025-11-10T22:39:30.870Z",
+      "lastModifiedDate": "2025-11-10T22:39:30.870Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "202-va-grid-container.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/202-va-grid-container.html",
+      "size": 2649,
+      "sizeKB": "2.59",
+      "lines": 129,
+      "lastModified": "2025-11-10T22:39:41.831Z",
+      "lastModifiedDate": "2025-11-10T22:39:41.831Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "203-va-filters-component.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/203-va-filters-component.html",
+      "size": 6723,
+      "sizeKB": "6.57",
+      "lines": 262,
+      "lastModified": "2025-11-10T22:39:57.895Z",
+      "lastModifiedDate": "2025-11-10T22:39:57.895Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 26,
+        "hasIds": 4,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "204-va-card-premium.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/204-va-card-premium.html",
+      "size": 6343,
+      "sizeKB": "6.19",
+      "lines": 292,
+      "lastModified": "2025-11-10T23:33:59.741Z",
+      "lastModifiedDate": "2025-11-10T23:33:59.741Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "hasClasses": 23,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "207-filters-va-page.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/207-filters-va-page.html",
+      "size": 5949,
+      "sizeKB": "5.81",
+      "lines": 233,
+      "lastModified": "2025-11-14T01:05:33.580Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.580Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 18,
+        "hasIds": 3,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "208-original-va-grid.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/208-original-va-grid.html",
+      "size": 97597,
+      "sizeKB": "95.31",
+      "lines": 2704,
+      "lastModified": "2025-11-14T01:05:33.586Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.586Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "hasClasses": 1172,
+        "hasIds": 0,
+        "styleLines": 2,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "21-comparison-table.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/21-comparison-table.html",
+      "size": 4530,
+      "sizeKB": "4.42",
+      "lines": 204,
+      "lastModified": "2025-11-01T20:27:04.271Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.271Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 9,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "210 VA-profile-sticky-footer.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/210 VA-profile-sticky-footer.html",
+      "size": 6426,
+      "sizeKB": "6.28",
+      "lines": 275,
+      "lastModified": "2025-11-14T01:05:33.607Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.607Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 6,
+        "hasClasses": 13,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "210-VA-profile-styles.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/210-VA-profile-styles.html",
+      "size": 14473,
+      "sizeKB": "14.13",
+      "lines": 808,
+      "lastModified": "2025-11-14T01:05:33.608Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.608Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 0,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "210-adrian-styles.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/210-adrian-styles.html",
+      "size": 13166,
+      "sizeKB": "12.86",
+      "lines": 738,
+      "lastModified": "2025-11-14T01:05:33.609Z",
+      "lastModifiedDate": "2025-11-14T01:05:33.609Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 0,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "23-services-grid.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/23-services-grid.html",
+      "size": 6100,
+      "sizeKB": "5.96",
+      "lines": 232,
+      "lastModified": "2025-11-01T20:27:04.279Z",
+      "lastModifiedDate": "2025-11-01T20:27:04.279Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 54,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "24-contact-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/24-contact-hero.html",
+      "size": 2770,
+      "sizeKB": "2.71",
+      "lines": 119,
+      "lastModified": "2025-11-05T01:37:39.749Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.749Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "25-real-estate-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/25-real-estate-hero.html",
+      "size": 4646,
+      "sizeKB": "4.54",
+      "lines": 201,
+      "lastModified": "2025-11-01T20:27:20.029Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.029Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "26-real-estate-built-for.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/26-real-estate-built-for.html",
+      "size": 3303,
+      "sizeKB": "3.23",
+      "lines": 138,
+      "lastModified": "2025-11-01T20:27:20.030Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.030Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 26,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "27-real-estate-day-to-day.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/27-real-estate-day-to-day.html",
+      "size": 4296,
+      "sizeKB": "4.20",
+      "lines": 182,
+      "lastModified": "2025-11-01T20:27:20.034Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.034Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 18,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "28-real-estate-expertise.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/28-real-estate-expertise.html",
+      "size": 4520,
+      "sizeKB": "4.41",
+      "lines": 178,
+      "lastModified": "2025-11-01T20:27:20.035Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.035Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 30,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "30-real-estate-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/30-real-estate-outcomes.html",
+      "size": 3817,
+      "sizeKB": "3.73",
+      "lines": 166,
+      "lastModified": "2025-11-01T20:27:20.037Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.037Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 18,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "32-real-estate-crms-platforms.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/32-real-estate-crms-platforms.html",
+      "size": 2523,
+      "sizeKB": "2.46",
+      "lines": 118,
+      "lastModified": "2025-11-01T20:27:20.040Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.040Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "33-real-estate-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/33-real-estate-faqs.html",
+      "size": 8585,
+      "sizeKB": "8.38",
+      "lines": 286,
+      "lastModified": "2025-11-01T20:27:20.041Z",
+      "lastModifiedDate": "2025-11-01T20:27:20.041Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "34-real-estate-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/34-real-estate-cta.html",
+      "size": 2554,
+      "sizeKB": "2.49",
+      "lines": 121,
+      "lastModified": "2025-11-05T01:37:39.749Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.749Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "35-insurance-csr-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/35-insurance-csr-hero.html",
+      "size": 3424,
+      "sizeKB": "3.34",
+      "lines": 132,
+      "lastModified": "2025-11-05T01:37:39.750Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.750Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "36-insurance-csr-benefits.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/36-insurance-csr-benefits.html",
+      "size": 2936,
+      "sizeKB": "2.87",
+      "lines": 126,
+      "lastModified": "2025-11-05T01:37:39.750Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.750Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 12,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "37-insurance-csr-about.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/37-insurance-csr-about.html",
+      "size": 1950,
+      "sizeKB": "1.90",
+      "lines": 74,
+      "lastModified": "2025-11-05T01:37:39.751Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.751Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 3,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "38-insurance-csr-what-they-handle.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/38-insurance-csr-what-they-handle.html",
+      "size": 4490,
+      "sizeKB": "4.38",
+      "lines": 194,
+      "lastModified": "2025-11-05T01:37:39.752Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.752Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 22,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "39-insurance-csr-stand-out.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/39-insurance-csr-stand-out.html",
+      "size": 3318,
+      "sizeKB": "3.24",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.752Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.752Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 12,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "40-insurance-csr-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/40-insurance-csr-faqs.html",
+      "size": 11914,
+      "sizeKB": "11.63",
+      "lines": 311,
+      "lastModified": "2025-11-05T01:37:39.753Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.753Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 65,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "41-insurance-csr-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/41-insurance-csr-cta.html",
+      "size": 2772,
+      "sizeKB": "2.71",
+      "lines": 117,
+      "lastModified": "2025-11-05T01:37:39.754Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.754Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "42-admin-assistant-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/42-admin-assistant-hero.html",
+      "size": 3493,
+      "sizeKB": "3.41",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.754Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.754Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "45-admin-assistant-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/45-admin-assistant-outcomes.html",
+      "size": 3029,
+      "sizeKB": "2.96",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.758Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.758Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "46-admin-assistant-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/46-admin-assistant-how-it-works.html",
+      "size": 3787,
+      "sizeKB": "3.70",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.759Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.759Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "47-admin-assistant-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/47-admin-assistant-faqs.html",
+      "size": 9295,
+      "sizeKB": "9.08",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.759Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.759Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "48-admin-assistant-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/48-admin-assistant-cta.html",
+      "size": 2955,
+      "sizeKB": "2.89",
+      "lines": 121,
+      "lastModified": "2025-11-05T01:37:39.759Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.759Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "49-customer-service-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/49-customer-service-hero.html",
+      "size": 3506,
+      "sizeKB": "3.42",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.760Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.760Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "50-customer-service-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/50-customer-service-what-we-do.html",
+      "size": 3436,
+      "sizeKB": "3.36",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.760Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.760Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "51-customer-service-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/51-customer-service-outcomes.html",
+      "size": 3050,
+      "sizeKB": "2.98",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.761Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.761Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "52-customer-service-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/52-customer-service-how-it-works.html",
+      "size": 3771,
+      "sizeKB": "3.68",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.761Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.761Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "53-customer-service-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/53-customer-service-faqs.html",
+      "size": 10461,
+      "sizeKB": "10.22",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.762Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.762Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "54-customer-service-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/54-customer-service-cta.html",
+      "size": 2410,
+      "sizeKB": "2.35",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.762Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.762Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "55-marketing-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/55-marketing-hero.html",
+      "size": 3311,
+      "sizeKB": "3.23",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.766Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.766Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "56-marketing-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/56-marketing-what-we-do.html",
+      "size": 3346,
+      "sizeKB": "3.27",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.767Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.767Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "57-marketing-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/57-marketing-outcomes.html",
+      "size": 2925,
+      "sizeKB": "2.86",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.769Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.769Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "58-marketing-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/58-marketing-how-it-works.html",
+      "size": 3660,
+      "sizeKB": "3.57",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.770Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.770Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "59-marketing-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/59-marketing-faqs.html",
+      "size": 9837,
+      "sizeKB": "9.61",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.773Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.773Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "60-marketing-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/60-marketing-cta.html",
+      "size": 2229,
+      "sizeKB": "2.18",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.773Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.773Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "61-receptionist-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/61-receptionist-hero.html",
+      "size": 3398,
+      "sizeKB": "3.32",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.774Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.774Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "61b-receptionist-highlights.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/61b-receptionist-highlights.html",
+      "size": 3801,
+      "sizeKB": "3.71",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.774Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.774Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 13,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "62-receptionist-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/62-receptionist-what-we-do.html",
+      "size": 3774,
+      "sizeKB": "3.69",
+      "lines": 152,
+      "lastModified": "2025-11-05T01:37:39.774Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.774Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 16,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "63-receptionist-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/63-receptionist-outcomes.html",
+      "size": 3013,
+      "sizeKB": "2.94",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.775Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.775Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "64-receptionist-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/64-receptionist-how-it-works.html",
+      "size": 3412,
+      "sizeKB": "3.33",
+      "lines": 156,
+      "lastModified": "2025-11-05T01:37:39.775Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.775Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 16,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "64b-receptionist-tools.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/64b-receptionist-tools.html",
+      "size": 2388,
+      "sizeKB": "2.33",
+      "lines": 113,
+      "lastModified": "2025-11-05T01:37:39.776Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.776Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "65-receptionist-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/65-receptionist-faqs.html",
+      "size": 9197,
+      "sizeKB": "8.98",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.780Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.780Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "66-receptionist-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/66-receptionist-cta.html",
+      "size": 2268,
+      "sizeKB": "2.21",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.780Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.780Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "67-transaction-coordinator-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/67-transaction-coordinator-hero.html",
+      "size": 3711,
+      "sizeKB": "3.62",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.781Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.781Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "68-transaction-coordinator-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/68-transaction-coordinator-what-we-do.html",
+      "size": 3571,
+      "sizeKB": "3.49",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.785Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.785Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "69-transaction-coordinator-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/69-transaction-coordinator-outcomes.html",
+      "size": 3150,
+      "sizeKB": "3.08",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.786Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.786Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "70-transaction-coordinator-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/70-transaction-coordinator-how-it-works.html",
+      "size": 3841,
+      "sizeKB": "3.75",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.786Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.786Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "71-transaction-coordinator-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/71-transaction-coordinator-faqs.html",
+      "size": 10990,
+      "sizeKB": "10.73",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.787Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.787Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "72-transaction-coordinator-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/72-transaction-coordinator-cta.html",
+      "size": 2489,
+      "sizeKB": "2.43",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.787Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.787Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "73-sdr-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/73-sdr-hero.html",
+      "size": 3136,
+      "sizeKB": "3.06",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.788Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.788Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "74-sdr-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/74-sdr-what-we-do.html",
+      "size": 3217,
+      "sizeKB": "3.14",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.788Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.788Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "75-sdr-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/75-sdr-outcomes.html",
+      "size": 2837,
+      "sizeKB": "2.77",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.789Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.789Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "76-sdr-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/76-sdr-how-it-works.html",
+      "size": 3550,
+      "sizeKB": "3.47",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.790Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.790Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "78-sdr-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/78-sdr-cta.html",
+      "size": 2096,
+      "sizeKB": "2.05",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.792Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.792Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "79-va-services-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/79-va-services-hero.html",
+      "size": 3368,
+      "sizeKB": "3.29",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.793Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.793Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "80-va-services-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/80-va-services-what-we-do.html",
+      "size": 3290,
+      "sizeKB": "3.21",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.793Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.793Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "81-va-services-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/81-va-services-outcomes.html",
+      "size": 2948,
+      "sizeKB": "2.88",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.793Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.793Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "82-va-services-how-it-works.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/82-va-services-how-it-works.html",
+      "size": 3649,
+      "sizeKB": "3.56",
+      "lines": 165,
+      "lastModified": "2025-11-05T01:37:39.794Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.794Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 19,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "84-va-services-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/84-va-services-cta.html",
+      "size": 2269,
+      "sizeKB": "2.22",
+      "lines": 95,
+      "lastModified": "2025-11-05T01:37:39.796Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.796Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "hasClasses": 6,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "85-insurance-va-what-we-do.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/85-insurance-va-what-we-do.html",
+      "size": 10247,
+      "sizeKB": "10.01",
+      "lines": 353,
+      "lastModified": "2025-11-05T01:37:39.797Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.797Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 82,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "86-insurance-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/86-insurance-va-cta.html",
+      "size": 3020,
+      "sizeKB": "2.95",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.797Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.797Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "87-insurance-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/87-insurance-va-hero.html",
+      "size": 6120,
+      "sizeKB": "5.98",
+      "lines": 240,
+      "lastModified": "2025-11-05T01:37:39.798Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.798Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 26,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "88-insurance-va-challenges.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/88-insurance-va-challenges.html",
+      "size": 3557,
+      "sizeKB": "3.47",
+      "lines": 148,
+      "lastModified": "2025-11-05T01:37:39.799Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.799Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "89-insurance-va-why-ocean.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/89-insurance-va-why-ocean.html",
+      "size": 7312,
+      "sizeKB": "7.14",
+      "lines": 247,
+      "lastModified": "2025-11-05T01:37:39.800Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.800Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 27,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "90-insurance-va-stats.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/90-insurance-va-stats.html",
+      "size": 3553,
+      "sizeKB": "3.47",
+      "lines": 157,
+      "lastModified": "2025-11-05T01:37:39.800Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.800Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 13,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "91-insurance-va-tools.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/91-insurance-va-tools.html",
+      "size": 2570,
+      "sizeKB": "2.51",
+      "lines": 121,
+      "lastModified": "2025-11-05T01:37:39.801Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.801Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 8,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "92-insurance-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/92-insurance-va-faqs.html",
+      "size": 9223,
+      "sizeKB": "9.01",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.801Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.801Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "93-small-business-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/93-small-business-va-hero.html",
+      "size": 3521,
+      "sizeKB": "3.44",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.804Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.804Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "94-small-business-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/94-small-business-va-use-cases.html",
+      "size": 3421,
+      "sizeKB": "3.34",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.805Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.805Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "95-small-business-va-outcomes.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/95-small-business-va-outcomes.html",
+      "size": 3025,
+      "sizeKB": "2.95",
+      "lines": 131,
+      "lastModified": "2025-11-05T01:37:39.805Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.805Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 10,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "96-small-business-va-cta.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/96-small-business-va-cta.html",
+      "size": 3108,
+      "sizeKB": "3.04",
+      "lines": 124,
+      "lastModified": "2025-11-05T01:37:39.806Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.806Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "97-small-business-va-faqs.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/97-small-business-va-faqs.html",
+      "size": 9459,
+      "sizeKB": "9.24",
+      "lines": 285,
+      "lastModified": "2025-11-05T01:37:39.807Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.807Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 55,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    },
+    {
+      "file": "98-ecommerce-va-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/98-ecommerce-va-hero.html",
+      "size": 3350,
+      "sizeKB": "3.27",
+      "lines": 136,
+      "lastModified": "2025-11-05T01:37:39.807Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.807Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "hasClasses": 8,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "99-ecommerce-va-use-cases.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/99-ecommerce-va-use-cases.html",
+      "size": 3375,
+      "sizeKB": "3.30",
+      "lines": 145,
+      "lastModified": "2025-11-05T01:37:39.810Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.810Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 14,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "client-logos-carousel-webflow.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/client-logos-carousel-webflow.html",
+      "size": 5360,
+      "sizeKB": "5.23",
+      "lines": 179,
+      "lastModified": "2025-11-01T20:27:03.725Z",
+      "lastModifiedDate": "2025-11-01T20:27:03.725Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 14,
+        "hasLinks": 0,
+        "hasClasses": 21,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "comparison-table-webflow.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/comparison-table-webflow.html",
+      "size": 7776,
+      "sizeKB": "7.59",
+      "lines": 280,
+      "lastModified": "2025-11-01T20:27:03.726Z",
+      "lastModifiedDate": "2025-11-01T20:27:03.726Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 73,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    {
+      "file": "navbar-header-webflow.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/navbar-header-webflow.html",
+      "size": 10530,
+      "sizeKB": "10.28",
+      "lines": 372,
+      "lastModified": "2025-11-01T20:27:03.728Z",
+      "lastModifiedDate": "2025-11-01T20:27:03.728Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": true,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 37,
+        "hasClasses": 53,
+        "hasIds": 1,
+        "styleLines": 1,
+        "scriptLines": 1
+      }
+    }
+  ],
+  "summary": {
+    "withStyle": 156,
+    "withScript": 25,
+    "withWebflowCDN": 29,
+    "averageSize": "7289.26",
+    "largestFile": {
+      "file": "200-our-current-vas-grid-premium.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/200-our-current-vas-grid-premium.html",
+      "size": 99398,
+      "sizeKB": "97.07",
+      "lines": 2979,
+      "lastModified": "2025-11-10T23:34:38.875Z",
+      "lastModifiedDate": "2025-11-10T23:34:38.875Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "hasClasses": 1174,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    },
+    "smallestFile": {
+      "file": "133-pricing-hero.html",
+      "path": "/Users/victor/CascadeProjects/ocean-va/webflow-components/133-pricing-hero.html",
+      "size": 1283,
+      "sizeKB": "1.25",
+      "lines": 62,
+      "lastModified": "2025-11-05T01:37:39.727Z",
+      "lastModifiedDate": "2025-11-05T01:37:39.727Z",
+      "analysis": {
+        "hasStyle": true,
+        "hasScript": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "hasClasses": 3,
+        "hasIds": 0,
+        "styleLines": 1,
+        "scriptLines": 0
+      }
+    }
+  }
+}
