@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Read vasData.js
-const vasDataPath = path.join(__dirname, '..', 'src', 'data', 'vasData.js');
+const vasDataPath = path.join(__dirname, 'src', 'data', 'vasData.js');
 const vasDataContent = fs.readFileSync(vasDataPath, 'utf-8');
 
 // Manual parsing
@@ -419,10 +419,10 @@ ${part2Cards}
 </section>`;
 
 // Write files
-const part1Path = path.join(__dirname, '..', 'webflow-components', '200-our-current-vas-grid-premium-PART1.html');
+const part1Path = path.join(__dirname, 'webflow-components', '208-va-grid-part1.html');
 fs.writeFileSync(part1Path, part1HTML, 'utf-8');
 
-const part2Path = path.join(__dirname, '..', 'webflow-components', '200-our-current-vas-grid-premium-PART2.html');
+const part2Path = path.join(__dirname, 'webflow-components', '208-va-grid-part2.html');
 fs.writeFileSync(part2Path, part2HTML, 'utf-8');
 
 console.log(`\n✅ VA Grid generated successfully!\n`);

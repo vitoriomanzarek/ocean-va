@@ -487,7 +487,7 @@ export const vasData = [
     años_experiencia: 1,
     especialización: ["Auto", "Health Insurance"],
     nivel_inglés: "Advanced",
-    disponibilidad: "Full Time",
+    disponibilidad: "Assigned",
     horario: "",
     categorías: ["Insurance VA"],
     slug: "dayana-ocean-va-profile",
