@@ -8,6 +8,18 @@ Convertir campos PlainText a Option Fields en Webflow Designer para habilitar fi
 
 ## 📋 CAMPOS A CONVERTIR
 
+### 0. IMAGE (Imagen de Perfil) ⭐ IMPORTANTE
+**Ubicación**: Collections → Virtual Assistants → Fields → Image URL
+
+**Cambios**:
+- Cambiar nombre: "Image URL" → "Image"
+- Cambiar tipo: PlainText → Image
+- Esto permitirá mostrar imágenes en Webflow Designer
+
+**Nota**: Las URLs ya están en `/images/VAs/[nombre].webp`
+
+---
+
 ### 1. ROLE (Rol)
 **Ubicación**: Collections → Virtual Assistants → Fields → Title
 
@@ -170,6 +182,7 @@ Convertir valores existentes a opciones:
 
 ## ✅ CHECKLIST
 
+- [ ] Cambiar "Image URL" a "Image" (Image Field) ⭐
 - [ ] Cambiar "Title" a "Role" (Option Field)
 - [ ] Cambiar "Availability" a Option Field
 - [ ] Cambiar "Languages" a Multi-select Option Field
@@ -221,7 +234,8 @@ Una vez que hayas convertido todos los campos:
 
 ## 📝 TIEMPO ESTIMADO
 
-- Cambiar campos: 10 minutos
+- Cambiar Image URL a Image field: 2 minutos ⭐
+- Cambiar campos a Option Fields: 10 minutos
 - Agregar opciones: 15 minutos
 - Actualizar 58 items: 30-45 minutos
 - **Total: ~1 hora**
