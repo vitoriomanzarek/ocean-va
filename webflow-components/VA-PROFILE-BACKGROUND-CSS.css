@@ -1,0 +1,108 @@
+/* ============================================
+   VA PROFILE PAGE - BACKGROUND GRADIENT CSS
+   For Webflow Native Implementation
+   ============================================ */
+
+/* Main Page Background with Gradient Fade */
+.va-profile-page {
+  background: linear-gradient(
+    to bottom,
+    #0B9B8F 0%,      /* Ocean Teal - Top */
+    #067A8F 25%,     /* Ocean Blue - Upper Mid */
+    #045C8B 50%,     /* Deep Ocean Blue - Middle */
+    #034563 75%,     /* Dark Ocean Blue - Lower Mid */
+    #011F2A 100%     /* Almost Black - Bottom */
+  );
+  min-height: 100vh;
+  padding-bottom: 128px;
+}
+
+/* Alternative: Smoother Gradient (5 stops) */
+.va-profile-page-smooth {
+  background: linear-gradient(
+    to bottom,
+    #0B9B8F 0%,
+    #0A8A96 20%,
+    #067A8F 40%,
+    #045C8B 60%,
+    #034563 80%,
+    #011F2A 100%
+  );
+  min-height: 100vh;
+  padding-bottom: 128px;
+}
+
+/* Alternative: Radial Gradient (for more depth) */
+.va-profile-page-radial {
+  background: 
+    radial-gradient(
+      ellipse at center top,
+      #0B9B8F 0%,
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      #067A8F 0%,
+      #045C8B 50%,
+      #011F2A 100%
+    );
+  min-height: 100vh;
+  padding-bottom: 128px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .va-profile-page,
+  .va-profile-page-smooth,
+  .va-profile-page-radial {
+    padding-bottom: 96px;
+  }
+}
+
+@media (max-width: 480px) {
+  .va-profile-page,
+  .va-profile-page-smooth,
+  .va-profile-page-radial {
+    padding-bottom: 64px;
+  }
+}
+
+/* ============================================
+   IMPLEMENTATION GUIDE FOR WEBFLOW
+   ============================================
+
+1. OPTION A - Simple Gradient (Recommended)
+   - Use class: "va-profile-page"
+   - Best for: Clean, professional look
+   - Performance: Excellent
+
+2. OPTION B - Smooth Gradient
+   - Use class: "va-profile-page-smooth"
+   - Best for: More gradual color transitions
+   - Performance: Excellent
+
+3. OPTION C - Radial + Linear Gradient
+   - Use class: "va-profile-page-radial"
+   - Best for: More depth and visual interest
+   - Performance: Good
+
+IMPLEMENTATION STEPS:
+1. Create a new section/div for the page background
+2. Add the CSS to Webflow's custom CSS section
+3. Apply the class to your page container
+4. All content will sit on top of the gradient
+
+COLOR PALETTE:
+- #0B9B8F - Ocean Teal (Primary)
+- #067A8F - Ocean Blue (Secondary)
+- #045C8B - Deep Ocean Blue (Tertiary)
+- #034563 - Dark Ocean Blue (Quaternary)
+- #011F2A - Almost Black (Base)
+
+CUSTOMIZATION:
+- Change percentages (0%, 25%, 50%, 75%, 100%) for different fade speeds
+- Adjust colors for different themes
+- Add more stops for smoother transitions
+- Use radial-gradient for circular effects
+
+============================================ */

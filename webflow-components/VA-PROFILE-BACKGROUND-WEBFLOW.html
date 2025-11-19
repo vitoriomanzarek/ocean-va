@@ -1,0 +1,141 @@
+<!-- VA PROFILE PAGE - BACKGROUND GRADIENT FOR WEBFLOW -->
+<!-- Copy this CSS into Webflow's Custom CSS section -->
+
+<style>
+  /* Main Page Background with Gradient Fade */
+  .va-profile-page {
+    background: linear-gradient(
+      to bottom,
+      #0B9B8F 0%,      /* Ocean Teal - Top */
+      #067A8F 25%,     /* Ocean Blue - Upper Mid */
+      #045C8B 50%,     /* Deep Ocean Blue - Middle */
+      #034563 75%,     /* Dark Ocean Blue - Lower Mid */
+      #011F2A 100%     /* Almost Black - Bottom */
+    );
+    min-height: 100vh;
+    padding-bottom: 128px;
+  }
+
+  /* Alternative: Smoother Gradient (5 stops) */
+  .va-profile-page-smooth {
+    background: linear-gradient(
+      to bottom,
+      #0B9B8F 0%,
+      #0A8A96 20%,
+      #067A8F 40%,
+      #045C8B 60%,
+      #034563 80%,
+      #011F2A 100%
+    );
+    min-height: 100vh;
+    padding-bottom: 128px;
+  }
+
+  /* Alternative: Radial Gradient (for more depth) */
+  .va-profile-page-radial {
+    background: 
+      radial-gradient(
+        ellipse at center top,
+        #0B9B8F 0%,
+        transparent 70%
+      ),
+      linear-gradient(
+        to bottom,
+        #067A8F 0%,
+        #045C8B 50%,
+        #011F2A 100%
+      );
+    min-height: 100vh;
+    padding-bottom: 128px;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .va-profile-page,
+    .va-profile-page-smooth,
+    .va-profile-page-radial {
+      padding-bottom: 96px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-profile-page,
+    .va-profile-page-smooth,
+    .va-profile-page-radial {
+      padding-bottom: 64px;
+    }
+  }
+</style>
+
+<!-- IMPLEMENTATION INSTRUCTIONS FOR WEBFLOW
+
+STEP 1: Add Custom CSS
+- Go to Project Settings → Custom Code → Head Code
+- Paste the <style> section above
+- Save
+
+STEP 2: Create Page Structure
+- Create a new page for VA Profile
+- Add a Section/Div as the main container
+- Add class: "va-profile-page" (or choose alternative)
+
+STEP 3: Add Content
+- Add all VA profile content inside the gradient container
+- Content will automatically sit on top of the gradient
+
+STEP 4: Test
+- Preview the page
+- Check on mobile devices
+- Adjust padding if needed
+
+THREE GRADIENT OPTIONS:
+
+OPTION A - Simple Gradient (RECOMMENDED)
+Class: "va-profile-page"
+- Clean, professional look
+- 4 color stops
+- Best performance
+- Use this for most cases
+
+OPTION B - Smooth Gradient
+Class: "va-profile-page-smooth"
+- More gradual transitions
+- 6 color stops
+- Slightly smoother fade
+- Use for premium feel
+
+OPTION C - Radial + Linear
+Class: "va-profile-page-radial"
+- Radial effect from top
+- More depth and dimension
+- Slightly more processing
+- Use for visual impact
+
+COLOR PALETTE REFERENCE:
+#0B9B8F - Ocean Teal (Primary)
+#067A8F - Ocean Blue (Secondary)
+#045C8B - Deep Ocean Blue (Tertiary)
+#034563 - Dark Ocean Blue (Quaternary)
+#011F2A - Almost Black (Base)
+
+CUSTOMIZATION TIPS:
+1. Change color stops for different fade speeds
+2. Adjust percentages (0%, 25%, 50%, etc.)
+3. Add more stops for smoother transitions
+4. Modify colors for different themes
+5. Adjust padding-bottom for different layouts
+
+TROUBLESHOOTING:
+- If gradient doesn't show: Check class name is applied correctly
+- If content is cut off: Increase padding-bottom value
+- If gradient looks different: Check browser compatibility
+- If mobile looks wrong: Adjust @media queries
+
+BROWSER SUPPORT:
+- Chrome: ✅ Full support
+- Firefox: ✅ Full support
+- Safari: ✅ Full support
+- Edge: ✅ Full support
+- IE11: ⚠️ Limited support (use fallback color)
+
+-->
