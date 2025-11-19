@@ -1,0 +1,267 @@
+<!-- VA PROFILE PAGE - GLASSMORPHISM EFFECT FOR WEBFLOW -->
+<!-- Copy this CSS into Webflow's Custom CSS section -->
+
+<style>
+  /* Main Info Box - Glassmorphism Effect */
+  .va-info-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 24px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  /* Alternative: Stronger Blur Effect */
+  .va-info-box-strong {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 24px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  /* Alternative: Subtle Blur Effect */
+  .va-info-box-subtle {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 24px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  /* Bottom Section - Glassmorphism */
+  .va-bottom-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  /* Thumbnail Box - Glassmorphism */
+  .va-thumbnail-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  /* Skills Container - Glassmorphism */
+  .va-skills-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Generic Glassmorphism Container */
+  .glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  /* Glassmorphism Variants */
+
+  /* Light Glass */
+  .glass-light {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Medium Glass */
+  .glass-medium {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Strong Glass */
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Dark Glass (for darker backgrounds) */
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hover Effects */
+  .glass-container:hover,
+  .va-info-box:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .va-info-box,
+    .va-bottom-section,
+    .glass-container {
+      padding: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-info-box,
+    .va-bottom-section,
+    .glass-container {
+      padding: 12px;
+    }
+  }
+</style>
+
+<!-- IMPLEMENTATION INSTRUCTIONS FOR WEBFLOW
+
+WHAT IS GLASSMORPHISM?
+Glassmorphism is a design trend that combines:
+1. Semi-transparent background (rgba)
+2. Blur effect (backdrop-filter)
+3. Subtle border
+4. Creates a "frosted glass" appearance
+
+STEP 1: Add Custom CSS
+- Go to Project Settings → Custom Code → Head Code
+- Paste the <style> section above
+- Save
+
+STEP 2: Apply to Elements
+- Select your container element (div, section)
+- Add class: "va-info-box" (or choose alternative)
+- Save
+
+STEP 3: Add Content
+- Add text, images, buttons inside
+- Content will sit on top of the blurred background
+
+STEP 4: Test
+- Preview the page
+- Check on mobile devices
+- Adjust opacity/blur if needed
+
+FOUR GLASSMORPHISM OPTIONS:
+
+OPTION A - Standard (RECOMMENDED)
+Class: "va-info-box" or "glass-medium"
+- Opacity: 10%
+- Blur: 10px
+- Best for: Most use cases
+- Visual: Moderate transparency with clear blur
+
+OPTION B - Strong
+Class: "va-info-box-strong" or "glass-strong"
+- Opacity: 15%
+- Blur: 20px
+- Best for: More opaque, more blur
+- Visual: More visible, stronger effect
+
+OPTION C - Subtle
+Class: "va-info-box-subtle" or "glass-light"
+- Opacity: 8%
+- Blur: 5px
+- Best for: Minimal effect
+- Visual: Very subtle, almost transparent
+
+OPTION D - Dark
+Class: "glass-dark"
+- Uses dark background instead of white
+- Opacity: 20%
+- Blur: 10px
+- Best for: Lighter gradient backgrounds
+- Visual: Darkens content, adds contrast
+
+KEY CSS PROPERTIES:
+
+1. background: rgba(255, 255, 255, 0.1)
+   - White (255, 255, 255)
+   - 10% opacity (0.1)
+   - Adjust opacity: 0.05 (5%) to 0.2 (20%)
+
+2. backdrop-filter: blur(10px)
+   - Blurs everything behind the element
+   - Adjust blur: 5px (subtle) to 20px (strong)
+
+3. -webkit-backdrop-filter: blur(10px)
+   - Safari and iOS compatibility
+   - Always include both
+
+4. border: 1px solid rgba(255, 255, 255, 0.2)
+   - Defines the edge
+   - Adjust opacity for more/less visibility
+
+CUSTOMIZATION EXAMPLES:
+
+More Transparent:
+- Change opacity from 0.1 to 0.05
+- Change blur from 10px to 5px
+
+More Opaque:
+- Change opacity from 0.1 to 0.2
+- Change blur from 10px to 15px
+
+Different Color:
+- Change rgba(255, 255, 255, 0.1) to rgba(0, 0, 0, 0.1)
+- Use any RGB color
+
+BROWSER SUPPORT:
+- Chrome: ✅ Full support
+- Firefox: ✅ Full support
+- Safari: ✅ Full support (with -webkit)
+- Edge: ✅ Full support
+- Mobile: ✅ Full support
+
+PERFORMANCE TIPS:
+1. Use blur sparingly (10-15px optimal)
+2. Avoid too many blurred elements
+3. Test on mobile devices
+4. Monitor performance on older devices
+5. Use backdrop-filter only on necessary elements
+
+TROUBLESHOOTING:
+- Blur not showing: Check -webkit prefix is included
+- Too transparent: Increase opacity value
+- Not transparent enough: Decrease opacity value
+- Looks different on mobile: Check responsive media queries
+- Performance issues: Reduce blur amount or number of elements
+
+REAL-WORLD EXAMPLE:
+<div class="va-info-box">
+  <h2>VA Name</h2>
+  <p>VA Description</p>
+  <div class="va-skills-container">
+    <span>Skill 1</span>
+    <span>Skill 2</span>
+  </div>
+</div>
+
+This creates a frosted glass effect with the gradient
+showing through, making content readable and beautiful.
+
+-->
