@@ -12,7 +12,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "adrian-ocean-va-profile",
     imagen: "/images/VAs/Adrian.webp",
-    videoUrl: "https://www.youtube.com/embed/k5OatPLSORw"
+    videoUrl: "https://www.youtube.com/embed/k5OatPLSORw",
+    youtubeUrl: "https://youtu.be/k5OatPLSORw"
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "alejandro-ocean-va-profile",
     imagen: "/images/VAs/Alejandro.webp",
-    videoUrl: "https://www.youtube.com/embed/a_cRiGRSLEs"
+    videoUrl: "https://www.youtube.com/embed/a_cRiGRSLEs",
+    youtubeUrl: "https://youtu.be/a_cRiGRSLEs"
   },
   {
     id: 3,
@@ -42,7 +44,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "dafne-ocean-va-profile",
     imagen: "/images/VAs/Dafne.webp",
-    videoUrl: "https://www.youtube.com/embed/habJY_0mpjs"
+    videoUrl: "https://www.youtube.com/embed/habJY_0mpjs",
+    youtubeUrl: "https://youtu.be/habJY_0mpjs"
   },
   {
     id: 4,
@@ -57,7 +60,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ivan-ocean-va-profile",
     imagen: "/images/VAs/Ivan.webp",
-    videoUrl: "https://www.youtube.com/embed/dHojsDPmfHc"
+    videoUrl: "https://www.youtube.com/embed/dHojsDPmfHc",
+    youtubeUrl: "https://youtu.be/dHojsDPmfHc"
   },
   {
     id: 5,
@@ -72,7 +76,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA"],
     slug: "joana-ocean-va-profile",
     imagen: "/images/VAs/Joana.webp",
-    videoUrl: "https://www.youtube.com/embed/PrZ7xZryyjQ"
+    videoUrl: "https://www.youtube.com/embed/PrZ7xZryyjQ",
+    youtubeUrl: "https://youtu.be/PrZ7xZryyjQ"
   },
   {
     id: 6,
@@ -87,7 +92,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "karen-ocean-va-profile",
     imagen: "/images/VAs/Karen.webp",
-    videoUrl: "https://www.youtube.com/embed/TXb9ONnF310"
+    videoUrl: "https://www.youtube.com/embed/TXb9ONnF310",
+    youtubeUrl: "https://youtu.be/TXb9ONnF310"
   },
   {
     id: 7,
@@ -102,7 +108,8 @@ export const vasData = [
     categorías: ["Healthcare VA"],
     slug: "maria-paula-ocean-va-profile",
     imagen: "/images/VAs/Maria Paula.webp",
-    videoUrl: "https://www.youtube.com/embed/yxgaoJEpdGg"
+    videoUrl: "https://www.youtube.com/embed/yxgaoJEpdGg",
+    youtubeUrl: "https://youtu.be/yxgaoJEpdGg"
   },
   {
     id: 8,
@@ -117,7 +124,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "moises-ocean-va-profile",
     imagen: "/images/VAs/Moises.webp",
-    videoUrl: "https://www.youtube.com/embed/tbz0iRIWaps"
+    videoUrl: "https://www.youtube.com/embed/tbz0iRIWaps",
+    youtubeUrl: "https://youtu.be/tbz0iRIWaps"
   },
   {
     id: 9,
@@ -132,7 +140,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA"],
     slug: "abigail-ocean-va-profile",
     imagen: "/images/VAs/Abigail.webp",
-    videoUrl: "https://www.youtube.com/embed/z3hiwu0mPc8"
+    videoUrl: "https://www.youtube.com/embed/z3hiwu0mPc8",
+    youtubeUrl: "https://youtu.be/z3hiwu0mPc8"
   },
   {
     id: 10,
@@ -147,7 +156,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "antonio-ocean-va-profile",
     imagen: "/images/VAs/Antonio.webp",
-    videoUrl: "https://www.youtube.com/embed/3b3R9YoLumE"
+    videoUrl: "https://www.youtube.com/embed/3b3R9YoLumE",
+    youtubeUrl: "https://youtu.be/3b3R9YoLumE"
   },
   {
     id: 11,
@@ -162,7 +172,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "cherry-mae-ocean-va-profile",
     imagen: "/images/VAs/Cherry Mae.webp",
-    videoUrl: "https://www.youtube.com/embed/DIfncidHCpY"
+    videoUrl: "https://www.youtube.com/embed/DIfncidHCpY",
+    youtubeUrl: "https://youtu.be/DIfncidHCpY"
   },
   {
     id: 12,
@@ -177,7 +188,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "emmanuel-ocean-va-profile",
     imagen: "/images/VAs/Emmanuel.webp",
-    videoUrl: "https://www.youtube.com/embed/dZaAfgmaQwk"
+    videoUrl: "https://www.youtube.com/embed/dZaAfgmaQwk",
+    youtubeUrl: "https://youtu.be/dZaAfgmaQwk"
   },
   {
     id: 13,
@@ -192,7 +204,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "francis-ocean-va-profile",
     imagen: "/images/VAs/Francis.webp",
-    videoUrl: "https://www.youtube.com/embed/Atdu3qVBHLs"
+    videoUrl: "https://www.youtube.com/embed/Atdu3qVBHLs",
+    youtubeUrl: "https://youtu.be/Atdu3qVBHLs"
   },
   {
     id: 14,
@@ -207,7 +220,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "geraldine-ocean-va-profile",
     imagen: "/images/VAs/Geraldine.webp",
-    videoUrl: "https://www.youtube.com/embed/OAEGigybmFM"
+    videoUrl: "https://www.youtube.com/embed/OAEGigybmFM",
+    youtubeUrl: "https://youtu.be/OAEGigybmFM"
   },
   {
     id: 15,
@@ -222,7 +236,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "jay-alvin-ocean-va-profile",
     imagen: "/images/VAs/Jay Alvin.webp",
-    videoUrl: "https://www.youtube.com/embed/GUe3uCkW8-4"
+    videoUrl: "https://www.youtube.com/embed/GUe3uCkW8-4",
+    youtubeUrl: "https://youtu.be/GUe3uCkW8-4"
   },
   {
     id: 16,
@@ -237,7 +252,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "javier-ocean-va-profile",
     imagen: "/images/VAs/Javier.webp",
-    videoUrl: "https://www.youtube.com/embed/UCqesVIO_7M"
+    videoUrl: "https://www.youtube.com/embed/UCqesVIO_7M",
+    youtubeUrl: "https://youtu.be/UCqesVIO_7M"
   },
   {
     id: 17,
@@ -252,7 +268,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "jerome-ocean-va-profile",
     imagen: "/images/VAs/Jerome.webp",
-    videoUrl: "https://www.youtube.com/embed/aomGUtRlOiE"
+    videoUrl: "https://www.youtube.com/embed/aomGUtRlOiE",
+    youtubeUrl: "https://youtu.be/aomGUtRlOiE"
   },
   {
     id: 18,
@@ -267,7 +284,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "jimmy-ocean-va-profile",
     imagen: "/images/VAs/Jimmy.webp",
-    videoUrl: "https://www.youtube.com/embed/rKDnjVB-dxE"
+    videoUrl: "https://www.youtube.com/embed/rKDnjVB-dxE",
+    youtubeUrl: "https://youtu.be/rKDnjVB-dxE"
   },
   {
     id: 19,
@@ -282,7 +300,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "joel-ocean-va-profile",
     imagen: "/images/VAs/Joel.webp",
-    videoUrl: "https://www.youtube.com/embed/5n99ZiMc0fs"
+    videoUrl: "https://www.youtube.com/embed/5n99ZiMc0fs",
+    youtubeUrl: "https://youtu.be/5n99ZiMc0fs"
   },
   {
     id: 20,
@@ -297,7 +316,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "joji-marie-ocean-va-profile",
     imagen: "/images/VAs/Joji Marie.webp",
-    videoUrl: "https://www.youtube.com/embed/5N_z80i4KrQ"
+    videoUrl: "https://www.youtube.com/embed/5N_z80i4KrQ",
+    youtubeUrl: "https://youtu.be/5N_z80i4KrQ"
   },
   {
     id: 21,
@@ -312,7 +332,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "laurice-ocean-va-profile",
     imagen: "/images/VAs/Laurice.webp",
-    videoUrl: "https://www.youtube.com/embed/9cz71wjqIX8"
+    videoUrl: "https://www.youtube.com/embed/9cz71wjqIX8",
+    youtubeUrl: "https://youtu.be/9cz71wjqIX8"
   },
   {
     id: 22,
@@ -327,7 +348,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "lorenz-ocean-va-profile",
     imagen: "/images/VAs/Lorenz.webp",
-    videoUrl: "https://www.youtube.com/embed/3if5VzuvLNc"
+    videoUrl: "https://www.youtube.com/embed/3if5VzuvLNc",
+    youtubeUrl: "https://youtu.be/3if5VzuvLNc"
   },
   {
     id: 23,
@@ -342,7 +364,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ma-venus-ocean-va-profile",
     imagen: "/images/VAs/Ma Venus.webp",
-    videoUrl: "https://www.youtube.com/embed/AgUkZKEWzkw"
+    videoUrl: "https://www.youtube.com/embed/AgUkZKEWzkw",
+    youtubeUrl: "https://youtu.be/AgUkZKEWzkw"
   },
   {
     id: 24,
@@ -357,7 +380,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "michelle-ocean-va-profile",
     imagen: "/images/VAs/Michelle.webp",
-    videoUrl: "https://www.youtube.com/embed/sjVqZfkunbY"
+    videoUrl: "https://www.youtube.com/embed/sjVqZfkunbY",
+    youtubeUrl: "https://youtu.be/sjVqZfkunbY"
   },
   {
     id: 25,
@@ -372,7 +396,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "raydon-ocean-va-profile",
     imagen: "/images/VAs/Raydon.webp",
-    videoUrl: "https://www.youtube.com/embed/2OIkxzcz-pw"
+    videoUrl: "https://www.youtube.com/embed/2OIkxzcz-pw",
+    youtubeUrl: "https://youtu.be/2OIkxzcz-pw"
   },
   {
     id: 26,
@@ -387,7 +412,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "rona-mae-ocean-va-profile",
     imagen: "/images/VAs/Rona Mae.webp",
-    videoUrl: "https://www.youtube.com/embed/eHrDpnlAeoc"
+    videoUrl: "https://www.youtube.com/embed/eHrDpnlAeoc",
+    youtubeUrl: "https://youtu.be/eHrDpnlAeoc"
   },
   {
     id: 27,
@@ -402,7 +428,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "gizelle-ocean-va-profile",
     imagen: "/images/VAs/Gizelle.webp",
-    videoUrl: "https://www.youtube.com/embed/xkbMKgYarbk"
+    videoUrl: "https://www.youtube.com/embed/xkbMKgYarbk",
+    youtubeUrl: "https://youtu.be/xkbMKgYarbk"
   },
   {
     id: 28,
@@ -417,7 +444,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA", "Medical VA"],
     slug: "jasmine-ocean-va-profile",
     imagen: "/images/VAs/Jasmine.webp",
-    videoUrl: "https://www.youtube.com/embed/WhdFCM1GABs"
+    videoUrl: "https://www.youtube.com/embed/WhdFCM1GABs",
+    youtubeUrl: "https://youtu.be/WhdFCM1GABs"
   },
   {
     id: 29,
@@ -432,7 +460,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA"],
     slug: "jill-ocean-va-profile",
     imagen: "/images/VAs/Jill.webp",
-    videoUrl: "https://www.youtube.com/embed/7yREE7oxSu0"
+    videoUrl: "https://www.youtube.com/embed/7yREE7oxSu0",
+    youtubeUrl: "https://youtu.be/7yREE7oxSu0"
   },
   {
     id: 30,
@@ -447,7 +476,8 @@ export const vasData = [
     categorías: ["Insurance VA", "General VA", "Marketing", "Graphic Design"],
     slug: "pavel-ocean-va-profile",
     imagen: "/images/VAs/Pavel.webp",
-    videoUrl: "https://www.youtube.com/embed/_reMSeE_gyY"
+    videoUrl: "https://www.youtube.com/embed/_reMSeE_gyY",
+    youtubeUrl: "https://youtu.be/_reMSeE_gyY"
   },
   {
     id: 31,
@@ -462,7 +492,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA"],
     slug: "ana-s-ocean-va-profile",
     imagen: "/images/VAs/Ana.webp",
-    videoUrl: "https://www.youtube.com/embed/XloA9MBGtGA"
+    videoUrl: "https://www.youtube.com/embed/XloA9MBGtGA",
+    youtubeUrl: "https://youtu.be/XloA9MBGtGA"
   },
   {
     id: 32,
@@ -477,7 +508,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ana-victoria-ocean-va-profile",
     imagen: "/images/VAs/Ana Victoria.webp",
-    videoUrl: "https://www.youtube.com/embed/1d4dWgjd0fE"
+    videoUrl: "https://www.youtube.com/embed/1d4dWgjd0fE",
+    youtubeUrl: "https://youtu.be/1d4dWgjd0fE"
   },
   {
     id: 33,
@@ -492,7 +524,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Executive VA"],
     slug: "balbina-ocean-va-profile",
     imagen: "/images/VAs/Balbina.webp",
-    videoUrl: "https://www.youtube.com/embed/sESom3C4Tjk"
+    videoUrl: "https://www.youtube.com/embed/sESom3C4Tjk",
+    youtubeUrl: "https://youtu.be/sESom3C4Tjk"
   },
   {
     id: 34,
@@ -507,7 +540,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "brandon-l-ocean-va-profile",
     imagen: "/images/VAs/Brandon L.webp",
-    videoUrl: "https://www.youtube.com/embed/PVmxKa19Mz0"
+    videoUrl: "https://www.youtube.com/embed/PVmxKa19Mz0",
+    youtubeUrl: "https://youtu.be/PVmxKa19Mz0"
   },
   {
     id: 35,
@@ -522,7 +556,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "carolina-ocean-va-profile",
     imagen: "/images/VAs/Carolina.webp",
-    videoUrl: "https://www.youtube.com/embed/_3cmkdxncdg"
+    videoUrl: "https://www.youtube.com/embed/_3cmkdxncdg",
+    youtubeUrl: "https://youtu.be/_3cmkdxncdg"
   },
   {
     id: 36,
@@ -537,7 +572,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "christine-ocean-va-profile",
     imagen: "/images/VAs/Christine.webp",
-    videoUrl: "https://www.youtube.com/embed/m0n5unGQ1Bk"
+    videoUrl: "https://www.youtube.com/embed/m0n5unGQ1Bk",
+    youtubeUrl: "https://youtu.be/m0n5unGQ1Bk"
   },
   {
     id: 37,
@@ -552,7 +588,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "dawn-ocean-va-profile",
     imagen: "/images/VAs/Dawn.webp",
-    videoUrl: "https://www.youtube.com/embed/fMWR-UrNXAg"
+    videoUrl: "https://www.youtube.com/embed/fMWR-UrNXAg",
+    youtubeUrl: "https://youtu.be/fMWR-UrNXAg"
   },
   {
     id: 38,
@@ -567,7 +604,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "dayana-ocean-va-profile",
     imagen: "/images/VAs/Dayana.webp",
-    videoUrl: "https://www.youtube.com/embed/1xTnx_3MRPA"
+    videoUrl: "https://www.youtube.com/embed/1xTnx_3MRPA",
+    youtubeUrl: "https://youtu.be/1xTnx_3MRPA"
   },
   {
     id: 39,
@@ -582,7 +620,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ellen-rose-ocean-va-profile",
     imagen: "/images/VAs/Ellen.webp",
-    videoUrl: "https://www.youtube.com/embed/zgEzkCfI3Pw"
+    videoUrl: "https://www.youtube.com/embed/zgEzkCfI3Pw",
+    youtubeUrl: "https://youtu.be/zgEzkCfI3Pw"
   },
   {
     id: 40,
@@ -597,7 +636,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Graphic Design", "Marketing VA"],
     slug: "fernanda-ocean-va-profile",
     imagen: "/images/VAs/Fernanda.webp",
-    videoUrl: "https://www.youtube.com/embed/7ngbNodl3es"
+    videoUrl: "https://www.youtube.com/embed/7ngbNodl3es",
+    youtubeUrl: "https://youtu.be/7ngbNodl3es"
   },
   {
     id: 41,
@@ -612,7 +652,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "gonzalo-ocean-va-profile",
     imagen: "/images/VAs/Gonzalo.webp",
-    videoUrl: "https://www.youtube.com/embed/DYky1VhKGNQ"
+    videoUrl: "https://www.youtube.com/embed/DYky1VhKGNQ",
+    youtubeUrl: "https://youtu.be/DYky1VhKGNQ"
   },
   {
     id: 42,
@@ -627,7 +668,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "guillermo-ocean-va-profile",
     imagen: "/images/VAs/Guillermo.webp",
-    videoUrl: "https://www.youtube.com/embed/sLtVFyK2b7s"
+    videoUrl: "https://www.youtube.com/embed/sLtVFyK2b7s",
+    youtubeUrl: "https://youtu.be/sLtVFyK2b7s"
   },
   {
     id: 43,
@@ -642,7 +684,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "israel-ocean-va-profile",
     imagen: "/images/VAs/Israel.webp",
-    videoUrl: "https://www.youtube.com/embed/aSLhEc15mN4"
+    videoUrl: "https://www.youtube.com/embed/aSLhEc15mN4",
+    youtubeUrl: "https://youtu.be/aSLhEc15mN4"
   },
   {
     id: 44,
@@ -657,7 +700,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Real Estate", "Executive VA"],
     slug: "janice-ocean-va-profile",
     imagen: "/images/VAs/Janice.webp",
-    videoUrl: "https://www.youtube.com/embed/P8gcQHNJwsk"
+    videoUrl: "https://www.youtube.com/embed/P8gcQHNJwsk",
+    youtubeUrl: "https://youtu.be/P8gcQHNJwsk"
   },
   {
     id: 45,
@@ -672,7 +716,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Graphic Design", "Marketing VA"],
     slug: "kevin-ocean-va-profile",
     imagen: "/images/VAs/Kevin.webp",
-    videoUrl: "https://www.youtube.com/embed/MnlRVthsUYE"
+    videoUrl: "https://www.youtube.com/embed/MnlRVthsUYE",
+    youtubeUrl: "https://youtu.be/MnlRVthsUYE"
   },
   {
     id: 46,
@@ -687,7 +732,8 @@ export const vasData = [
     categorías: ["Insurance VA", "Marketing VA"],
     slug: "lois-ocean-va-profile",
     imagen: "/images/VAs/Lois.webp",
-    videoUrl: "https://www.youtube.com/embed/HSCzM1jVsaE"
+    videoUrl: "https://www.youtube.com/embed/HSCzM1jVsaE",
+    youtubeUrl: "https://youtu.be/HSCzM1jVsaE"
   },
   {
     id: 47,
@@ -702,7 +748,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "maria-d-ocean-va-profile",
     imagen: "/images/VAs/Maria D.webp",
-    videoUrl: "https://www.youtube.com/embed/ALQNI3jsBLs"
+    videoUrl: "https://www.youtube.com/embed/ALQNI3jsBLs",
+    youtubeUrl: "https://youtu.be/ALQNI3jsBLs"
   },
   {
     id: 48,
@@ -731,7 +778,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "melissa-ocean-va-profile",
     imagen: "/images/VAs/Melissa.webp",
-    videoUrl: "https://www.youtube.com/embed/6dB2M8wAkjE"
+    videoUrl: "https://www.youtube.com/embed/6dB2M8wAkjE",
+    youtubeUrl: "https://youtu.be/6dB2M8wAkjE"
   },
   {
     id: 50,
@@ -760,7 +808,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "rafael-ocean-va-profile",
     imagen: "/images/VAs/Rafael.webp",
-    videoUrl: "https://www.youtube.com/embed/S19B0sRiohI"
+    videoUrl: "https://www.youtube.com/embed/S19B0sRiohI",
+    youtubeUrl: "https://youtu.be/S19B0sRiohI"
   },
   {
     id: 52,
@@ -775,7 +824,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "rainier-ocean-va-profile",
     imagen: "/images/VAs/Rainier.webp",
-    videoUrl: "https://www.youtube.com/embed/Gl_Rijv44Ec"
+    videoUrl: "https://www.youtube.com/embed/Gl_Rijv44Ec",
+    youtubeUrl: "https://youtu.be/Gl_Rijv44Ec"
   },
   {
     id: 53,
@@ -790,7 +840,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "rejean-ocean-va-profile",
     imagen: "/images/VAs/Rejean.webp",
-    videoUrl: "https://www.youtube.com/embed/yeJ_lskQovU"
+    videoUrl: "https://www.youtube.com/embed/yeJ_lskQovU",
+    youtubeUrl: "https://youtu.be/yeJ_lskQovU"
   },
   {
     id: 54,
@@ -805,7 +856,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "rochelle-ocean-va-profile",
     imagen: "/images/VAs/Rochelle.webp",
-    videoUrl: "https://www.youtube.com/embed/aCJyNu79nto"
+    videoUrl: "https://www.youtube.com/embed/aCJyNu79nto",
+    youtubeUrl: "https://youtu.be/aCJyNu79nto"
   },
   {
     id: 55,
@@ -820,7 +872,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "sandra-ocean-va-profile",
     imagen: "/images/VAs/Sandra.webp",
-    videoUrl: "https://www.youtube.com/embed/xrNMiTNBkcg"
+    videoUrl: "https://www.youtube.com/embed/xrNMiTNBkcg",
+    youtubeUrl: "https://youtu.be/xrNMiTNBkcg"
   },
   {
     id: 56,
@@ -835,7 +888,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "ximena-g-ocean-va-profile",
     imagen: "/images/VAs/Ximena G.webp",
-    videoUrl: "https://www.youtube.com/embed/UQ2JcPPjEnE"
+    videoUrl: "https://www.youtube.com/embed/UQ2JcPPjEnE",
+    youtubeUrl: "https://youtu.be/UQ2JcPPjEnE"
   },
   {
     id: 57,
@@ -850,7 +904,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "tricia-ocean-va-profile",
     imagen: "/images/VAs/Tricia.webp",
-    videoUrl: "https://www.youtube.com/embed/VClb24kDU7s"
+    videoUrl: "https://www.youtube.com/embed/VClb24kDU7s",
+    youtubeUrl: "https://youtu.be/VClb24kDU7s"
   },
   {
     id: 58,
@@ -879,7 +934,8 @@ export const vasData = [
     categorías: ["Mortgage Specialist"],
     slug: "yvette-ocean-va-profile",
     imagen: "/images/VAs/Yvette.webp",
-    videoUrl: "https://www.youtube.com/embed/oiZlHPfAjbg"
+    videoUrl: "https://www.youtube.com/embed/oiZlHPfAjbg",
+    youtubeUrl: "https://youtu.be/oiZlHPfAjbg"
   },
   {
     id: 60,
@@ -894,7 +950,8 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "grace-carmel-ocean-va-profile",
     imagen: "/images/VAs/Grace.webp",
-    videoUrl: "https://www.youtube.com/embed/J08tAud6nTQ"
+    videoUrl: "https://www.youtube.com/embed/J08tAud6nTQ",
+    youtubeUrl: "https://youtu.be/J08tAud6nTQ"
   },
   {
     id: 61,
@@ -909,7 +966,8 @@ export const vasData = [
     categorías: ["Mortgage VA"],
     slug: "ac-ocean-va-profile",
     imagen: "/images/VAs/AC.webp",
-    videoUrl: "https://www.youtube.com/embed/mfyGOi9mo58"
+    videoUrl: "https://www.youtube.com/embed/mfyGOi9mo58",
+    youtubeUrl: "https://youtu.be/mfyGOi9mo58"
   },
   {
     id: 62,
@@ -924,6 +982,7 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "mina-ocean-va-profile",
     imagen: "/images/VAs/Mina.webp",
-    videoUrl: "https://www.youtube.com/embed/k4jmdy8ifrE"
+    videoUrl: "https://www.youtube.com/embed/k4jmdy8ifrE",
+    youtubeUrl: "https://youtu.be/k4jmdy8ifrE"
   }
 ];
