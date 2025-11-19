@@ -11,20 +11,27 @@
 ### Virtual Assistants Collection (Existing)
 **Collection ID**: `691b82a97542c69f3f77fa76`
 
-**Current Fields** (13 total):
-1. ✅ Name (PlainText) - `name`
-2. ✅ Title (PlainText) - `title`
-3. ✅ Experience Years (PlainText) - `experience-years`
-4. ✅ Languages (PlainText) - `languages`
-5. ✅ Specializations (PlainText) - `specializations`
-6. ✅ Availability (PlainText) - `availability`
-7. ✅ Image URL (PlainText) - `image-url`
-8. ✅ Video URL (PlainText) - `video-url`
-9. ✅ Video Thumbnail (PlainText) - `video-thumbnail`
-10. ✅ Summary (Rich Text) - `summary`
-11. ✅ Tagline (PlainText) - `tagline`
-12. ✅ Thumbnail Description (PlainText) - `thumbnail-description`
-13. ✅ Profile Slug (PlainText) - `profile-slug`
+**Current Fields** (15 total - from Webflow Designer):
+
+**Basic Info** (Auto-generated):
+1. ✅ Name (Plain text) - Required Field
+2. ✅ Slug (Plain text) - Required Field
+
+**Custom Fields**:
+3. ✅ Name (Plain text) - `name`
+4. ✅ Title (Plain text) - `title`
+5. ✅ Main Category (Plain text) - `main-category`
+6. ✅ Experience [Years] (Plain text) - `experience-years`
+7. ✅ Languages (Plain text) - `languages`
+8. ✅ Availability (Plain text) - `availability`
+9. ✅ Video Thumbnail (Plain text) - `video-thumbnail`
+10. ✅ Summary (Rich text) - `summary`
+11. ✅ Tagline (Plain text) - `tagline`
+12. ✅ Thumbnail Description (Plain text) - `thumbnail-description`
+13. ✅ VA Image (Image) - `va-image`
+14. ✅ Profile Slug (Link) - `profile-slug`
+15. ✅ Video URL (Video link) - `video-url`
+16. ✅ Specialization (Multi-reference) - `specialization` → VA Specializations collection
 
 ### VA Specializations Collection (Existing)
 **Status**: ✅ Already exists
@@ -40,52 +47,52 @@ Based on extracted profile data from `data/va-profiles-complete.json`, we need:
 ### SECTION 1: Summary & Skills ⚠️ PARTIALLY COMPLETE
 
 **Current**:
-- ✅ Summary (Rich Text) - Already exists
+- ✅ Summary (Rich text) - Already exists
 
 **Missing**:
-- ❌ Skills (Multi-Reference) - NEW COLLECTION NEEDED
+- ❌ Skills (Multi-reference) - NEW COLLECTION NEEDED
 
 **Action**:
 1. Create "Skills" collection
-2. Add Multi-Reference field to Virtual Assistants
+2. Add Multi-reference field to Virtual Assistants
 
 ---
 
 ### SECTION 2: Tools & Equipment ❌ MISSING
 
 **Missing**:
-- ❌ Tools (Multi-Reference) - NEW COLLECTION NEEDED
-- ❌ Equipment (Multi-Reference) - NEW COLLECTION NEEDED
+- ❌ Tools (Multi-reference) - NEW COLLECTION NEEDED
+- ❌ Equipment (Multi-reference) - NEW COLLECTION NEEDED
 
 **Action**:
 1. Create "Tools" collection
 2. Create "Equipment" collection
-3. Add Multi-Reference fields to Virtual Assistants
+3. Add Multi-reference fields to Virtual Assistants
 
 ---
 
 ### SECTION 3: Employment History ❌ MISSING
 
 **Missing**:
-- ❌ Employment History (Multi-Reference) - NEW COLLECTION NEEDED
+- ❌ Employment History (Multi-reference) - NEW COLLECTION NEEDED
 
 **Employment Collection Fields**:
-- Company (PlainText)
-- Position (PlainText)
-- Period (PlainText)
-- Description (Rich Text)
+- Company (Plain text)
+- Position (Plain text)
+- Period (Plain text)
+- Description (Rich text)
 
 **Action**:
 1. Create "Employment" collection
-2. Add Multi-Reference field to Virtual Assistants
+2. Add Multi-reference field to Virtual Assistants
 
 ---
 
 ### SECTION 4: DISC Assessment ❌ MISSING
 
 **Missing**:
-- ❌ DISC Badge (Option Field) - NEW FIELD
-- ❌ DISC Description (Rich Text) - NEW FIELD
+- ❌ DISC Badge (Option) - NEW FIELD
+- ❌ DISC Description (Rich text) - NEW FIELD
 
 **DISC Badge Options**:
 - D (Dominant/Driver)
@@ -103,8 +110,8 @@ Based on extracted profile data from `data/va-profiles-complete.json`, we need:
 ### SECTION 5: English Proficiency ❌ MISSING
 
 **Missing**:
-- ❌ English Score (Option Field) - NEW FIELD
-- ❌ English Description (Rich Text) - NEW FIELD
+- ❌ English Score (Option) - NEW FIELD
+- ❌ English Description (Rich text) - NEW FIELD
 
 **English Score Options** (CEFR Levels):
 - A1 - Beginner
@@ -123,46 +130,45 @@ Based on extracted profile data from `data/va-profiles-complete.json`, we need:
 ### SECTION 6: Education ❌ MISSING
 
 **Missing**:
-- ❌ Education (Multi-Reference) - NEW COLLECTION NEEDED
+- ❌ Education (Multi-reference) - NEW COLLECTION NEEDED
 
 **Education Collection Fields**:
-- School (PlainText)
-- Degree (PlainText)
-- Year (PlainText)
+- School (Plain text)
+- Degree (Plain text)
+- Year (Plain text)
 
 **Action**:
 1. Create "Education" collection
-2. Add Multi-Reference field to Virtual Assistants
+2. Add Multi-reference field to Virtual Assistants
 
 ---
 
 ## 🎯 COMPLETE CMS STRUCTURE NEEDED
 
-### Collections to Create (6 NEW)
+### Collections to Create (5 NEW)
 
 | Collection | Fields | Purpose |
 |-----------|--------|---------|
-| **Skills** | Name (PlainText), Category (Option) | Reusable skills list |
-| **Tools** | Name (PlainText), Category (Option) | Reusable tools list |
-| **Equipment** | Name (PlainText), Category (Option) | Reusable equipment list |
+| **Skills** | Name (Plain text), Category (Option) | Reusable skills list |
+| **Tools** | Name (Plain text), Category (Option) | Reusable tools list |
+| **Equipment** | Name (Plain text), Category (Option) | Reusable equipment list |
 | **Employment** | Company, Position, Period, Description | Employment history entries |
 | **Education** | School, Degree, Year | Education entries |
-| **VA Specializations** | ✅ Already exists | Specializations reference |
 
 ### Fields to Add to Virtual Assistants (10 NEW)
 
 | Field Name | Type | Collection Reference | Purpose |
 |-----------|------|----------------------|---------|
-| Skills | Multi-Reference | Skills | Link to skills |
-| Tools | Multi-Reference | Tools | Link to tools |
-| Equipment | Multi-Reference | Equipment | Link to equipment |
-| Employment History | Multi-Reference | Employment | Link to employment entries |
+| Skills | Multi-reference | Skills | Link to skills |
+| Tools | Multi-reference | Tools | Link to tools |
+| Equipment | Multi-reference | Equipment | Link to equipment |
+| Employment History | Multi-reference | Employment | Link to employment entries |
 | DISC Badge | Option | - | D, I, S, C, combinations |
-| DISC Description | Rich Text | - | Explanation of DISC type |
+| DISC Description | Rich text | - | Explanation of DISC type |
 | English Score | Option | - | A1-C2 levels |
-| English Description | Rich Text | - | English proficiency details |
-| Education | Multi-Reference | Education | Link to education entries |
-| YouTube URL | PlainText | - | Direct YouTube link (youtu.be) |
+| English Description | Rich text | - | English proficiency details |
+| Education | Multi-reference | Education | Link to education entries |
+| YouTube URL | Plain text | - | Direct YouTube link (youtu.be) |
 
 ---
 
@@ -195,16 +201,16 @@ Based on extracted profile data from `data/va-profiles-complete.json`, we need:
 
 ### Phase 2: Add Fields to Virtual Assistants Collection
 
-- [ ] Add Skills (Multi-Reference to Skills collection)
-- [ ] Add Tools (Multi-Reference to Tools collection)
-- [ ] Add Equipment (Multi-Reference to Equipment collection)
-- [ ] Add Employment History (Multi-Reference to Employment collection)
+- [ ] Add Skills (Multi-reference to Skills collection)
+- [ ] Add Tools (Multi-reference to Tools collection)
+- [ ] Add Equipment (Multi-reference to Equipment collection)
+- [ ] Add Employment History (Multi-reference to Employment collection)
 - [ ] Add DISC Badge (Option: D, I, S, C, D+I, S+I, S+C)
-- [ ] Add DISC Description (Rich Text)
+- [ ] Add DISC Description (Rich text)
 - [ ] Add English Score (Option: A1, A2, B1, B2, C1, C2)
-- [ ] Add English Description (Rich Text)
-- [ ] Add Education (Multi-Reference to Education collection)
-- [ ] Add YouTube URL (PlainText) - for youtu.be links
+- [ ] Add English Description (Rich text)
+- [ ] Add Education (Multi-reference to Education collection)
+- [ ] Add YouTube URL (Plain text) - for youtu.be links
 
 ### Phase 3: Populate Collections with Data
 
@@ -230,17 +236,17 @@ Based on extracted profile data from `data/va-profiles-complete.json`, we need:
 
 ```
 Virtual Assistants (Main Collection)
-├── Multi-Reference to VA Specializations ✅ (Already exists)
-├── Multi-Reference to Skills (NEW)
-├── Multi-Reference to Tools (NEW)
-├── Multi-Reference to Equipment (NEW)
-├── Multi-Reference to Employment (NEW)
-├── Multi-Reference to Education (NEW)
-├── Option Field: DISC Badge (NEW)
-├── Rich Text: DISC Description (NEW)
-├── Option Field: English Score (NEW)
-├── Rich Text: English Description (NEW)
-└── PlainText: YouTube URL (NEW)
+├── Multi-reference to VA Specializations ✅ (Already exists)
+├── Multi-reference to Skills (NEW)
+├── Multi-reference to Tools (NEW)
+├── Multi-reference to Equipment (NEW)
+├── Multi-reference to Employment (NEW)
+├── Multi-reference to Education (NEW)
+├── Option: DISC Badge (NEW)
+├── Rich text: DISC Description (NEW)
+├── Option: English Score (NEW)
+├── Rich text: English Description (NEW)
+└── Plain text: YouTube URL (NEW)
 ```
 
 ---
