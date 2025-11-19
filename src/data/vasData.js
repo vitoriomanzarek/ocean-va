@@ -147,7 +147,7 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "antonio-ocean-va-profile",
     imagen: "/images/VAs/Antonio.webp",
-    videoUrl: "https://www.youtube.com/embed/3b3R9YoLumE?t=2s"
+    videoUrl: "https://www.youtube.com/embed/3b3R9YoLumE"
   },
   {
     id: 11,
@@ -192,7 +192,7 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "francis-ocean-va-profile",
     imagen: "/images/VAs/Francis.webp",
-    videoUrl: "https://www.youtube.com/embed/Atdu3qVBHLs?t=1s"
+    videoUrl: "https://www.youtube.com/embed/Atdu3qVBHLs"
   },
   {
     id: 14,
@@ -206,7 +206,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "geraldine-ocean-va-profile",
-    imagen: "/images/VAs/Geraldine.webp"
+    imagen: "/images/VAs/Geraldine.webp",
+    videoUrl: "https://www.youtube.com/embed/OAEGigybmFM"
   },
   {
     id: 15,
@@ -296,7 +297,7 @@ export const vasData = [
     categorías: ["Insurance VA"],
     slug: "joji-marie-ocean-va-profile",
     imagen: "/images/VAs/Joji Marie.webp",
-    videoUrl: "https://www.youtube.com/embed/5N_z80i4KrQ?t=1s"
+    videoUrl: "https://www.youtube.com/embed/5N_z80i4KrQ"
   },
   {
     id: 21,
@@ -340,7 +341,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ma-venus-ocean-va-profile",
-    imagen: "/images/VAs/Ma Venus.webp"
+    imagen: "/images/VAs/Ma Venus.webp",
+    videoUrl: "https://www.youtube.com/embed/AgUkZKEWzkw"
   },
   {
     id: 24,
@@ -429,7 +431,8 @@ export const vasData = [
     horario: "9AM-12PM EST",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "jill-ocean-va-profile",
-    imagen: "/images/VAs/Jill.webp"
+    imagen: "/images/VAs/Jill.webp",
+    videoUrl: "https://www.youtube.com/embed/7yREE7oxSu0"
   },
   {
     id: 30,
@@ -503,7 +506,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "brandon-l-ocean-va-profile",
-    imagen: "/images/VAs/Brandon L.webp"
+    imagen: "/images/VAs/Brandon L.webp",
+    videoUrl: "https://www.youtube.com/embed/PVmxKa19Mz0"
   },
   {
     id: 35,
@@ -577,7 +581,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ellen-rose-ocean-va-profile",
-    imagen: "/images/VAs/Ellen.webp"
+    imagen: "/images/VAs/Ellen.webp",
+    videoUrl: "https://www.youtube.com/embed/zgEzkCfI3Pw"
   },
   {
     id: 40,
@@ -696,7 +701,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "maria-d-ocean-va-profile",
-    imagen: "/images/VAs/Maria D.webp"
+    imagen: "/images/VAs/Maria D.webp",
+    videoUrl: "https://www.youtube.com/embed/ALQNI3jsBLs"
   },
   {
     id: 48,
@@ -783,7 +789,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "rejean-ocean-va-profile",
-    imagen: "/images/VAs/Rejean.webp"
+    imagen: "/images/VAs/Rejean.webp",
+    videoUrl: "https://www.youtube.com/embed/yeJ_lskQovU"
   },
   {
     id: 54,
@@ -827,7 +834,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ximena-g-ocean-va-profile",
-    imagen: "/images/VAs/Ximena G.webp"
+    imagen: "/images/VAs/Ximena G.webp",
+    videoUrl: "https://www.youtube.com/embed/UQ2JcPPjEnE"
   },
   {
     id: 57,
@@ -841,7 +849,8 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "tricia-ocean-va-profile",
-    imagen: "/images/VAs/Tricia.webp"
+    imagen: "/images/VAs/Tricia.webp",
+    videoUrl: "https://www.youtube.com/embed/VClb24kDU7s"
   },
   {
     id: 58,
@@ -899,7 +908,8 @@ export const vasData = [
     horario: "",
     categorías: ["Mortgage VA"],
     slug: "ac-ocean-va-profile",
-    imagen: "/images/VAs/AC.webp"
+    imagen: "/images/VAs/AC.webp",
+    videoUrl: "https://www.youtube.com/embed/mfyGOi9mo58"
   },
   {
     id: 62,
@@ -913,6 +923,7 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "mina-ocean-va-profile",
-    imagen: "/images/VAs/Mina.webp"
+    imagen: "/images/VAs/Mina.webp",
+    videoUrl: "https://www.youtube.com/embed/k4jmdy8ifrE"
   }
 ];
