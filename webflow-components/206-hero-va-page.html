@@ -1,0 +1,128 @@
+<!-- HERO SECTION FOR OUR CURRENT VAs PAGE -->
+<!-- Based on OurCurrentVAs.jsx component -->
+
+<style>
+  .hero-section {
+    background-image: url('https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/68793e45e2a031f46862bfb4_insurance%20va.png');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 120px 20px 80px 20px;
+    position: relative;
+    min-height: 500px;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 100px 20px 60px 20px;
+      min-height: 400px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-section {
+      padding: 80px 16px 48px 16px;
+      min-height: 350px;
+    }
+  }
+
+  .hero-container {
+    max-width: 1400px;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .hero-btn {
+    background: #049d98;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(4, 157, 152, 0.3);
+    display: inline-block;
+  }
+
+  .hero-btn:hover {
+    background: #1eb8a6;
+    box-shadow: 0 6px 16px rgba(4, 157, 152, 0.4);
+    transform: translateY(-2px);
+    color: white;
+  }
+
+  .hero-btn:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 640px) {
+    .hero-buttons {
+      gap: 8px;
+    }
+
+    .hero-btn {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+  }
+</style>
+
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">Meet our Virtual Assistants</h1>
+      
+      <div class="hero-buttons">
+        <a href="/ovas-current-vas" class="hero-btn">
+          Insurance Virtual Assistants
+        </a>
+        <a href="/ovas-licensed-insurance-agents" class="hero-btn">
+          Licensed Insurance Agents
+        </a>
+        <a href="/ovas-executive-admin-virtual-assistant" class="hero-btn">
+          Executive / Admin VAs
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -66,11 +66,12 @@ async function main() {
       console.log(`📤 Updating ${va.nombre}...`);
 
       try {
-        // Update profile-slug as Link field - try with object format
+        // Update profile-slug as Link field - send URL directly as string
+        // Note: The field slug is 'profile-slug-2' not 'profile-slug'
+        // Format: /NOMBRE-ocean-va-profile (without /va-profiles/)
+        const profileUrl = `/${va.slug}`;
         const fieldData = {
-          'profile-slug': {
-            url: va.slug,
-          },
+          'profile-slug-2': profileUrl,
         };
 
         await client.updateCollectionItem(vaCollection.id, webflowVA.id, fieldData, {
@@ -79,9 +80,15 @@ async function main() {
 
         console.log(`   ✅ Updated successfully\n`);
         successCount++;
+        
+        // Add delay to respect rate limiting (100ms between requests)
+        await new Promise(resolve => setTimeout(resolve, 100));
       } catch (error) {
         console.error(`   ❌ Error: ${error.message}\n`);
         failCount++;
+        
+        // Add delay even on error
+        await new Promise(resolve => setTimeout(resolve, 100));
       }
     }
 

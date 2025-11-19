@@ -153,19 +153,6 @@
   </div>
 </section>
 
-<!-- Specialization Filter -->
-<section class="va-filters" style="padding: 20px;">
-  <div class="va-filters-container" style="grid-template-columns: 1fr;">
-    <div class="va-filter-group">
-      <label class="va-filter-label">Specialization</label>
-      <select id="specializationSelect" class="va-search-input" style="max-width: 300px;">
-        <option value="All">All Specializations</option>
-        <!-- Options will be populated dynamically -->
-      </select>
-    </div>
-  </div>
-</section>
-
 <!-- Results Counter -->
 <div id="va-results-counter" style="
   text-align: center;
@@ -184,14 +171,12 @@
   const searchInput = document.getElementById('searchInput');
   const availabilityButtons = document.querySelectorAll('[data-filter="availability"]');
   const languageButtons = document.querySelectorAll('[data-filter="language"]');
-  const specializationButtons = document.querySelectorAll('[data-filter="specialization"]');
 
   // Store current filters
   let currentFilters = {
     search: '',
     availability: 'All',
-    language: 'All',
-    specialization: 'All'
+    language: 'All'
   };
 
   // Function to dispatch filter change event
@@ -256,15 +241,6 @@
     }
   });
 
-  // Handle specialization dropdown change
-  const specSelect = document.getElementById('specializationSelect');
-  if (specSelect) {
-    specSelect.addEventListener('change', (e) => {
-      currentFilters.specialization = e.target.value;
-      dispatchFilterChange();
-    });
-  }
-
   console.log('VA Filters initialized');
 </script>
 
@@ -282,13 +258,9 @@
   let activeFilters = {
     search: '',
     availability: 'All',
-    language: 'All',
-    specialization: 'All'
+    language: 'All'
   };
   
-  // Store all unique specializations
-  let allSpecializations = new Set();
-
   // Function to update results counter
   function updateResultsCounter(visibleCount, totalCount) {
     let counter = document.getElementById('va-results-counter');
@@ -425,44 +397,8 @@
       const languageMatch = activeFilters.language === 'All' || 
                            language.includes(activeFilters.language);
 
-      // Get specializations - look for SPECIALIZATION label
-      let specializations = '';
-      const textContent = card.textContent;
-      const specIndex = textContent.indexOf('SPECIALIZATION');
-      if (specIndex !== -1) {
-        const afterSpec = textContent.substring(specIndex + 14).trim();
-        // Get text until next label (usually "EXPERIENCE" or end)
-        const nextLabel = afterSpec.search(/EXPERIENCE|AVAILABILITY/);
-        let rawSpec = nextLabel > 0 ? afterSpec.substring(0, nextLabel).trim() : afterSpec.substring(0, 200).trim();
-        
-        // Clean up: remove "No items found", "View Profile", arrows, etc.
-        rawSpec = rawSpec.replace(/No items found\.?/gi, '');
-        rawSpec = rawSpec.replace(/View Profile\s*→/gi, '');
-        rawSpec = rawSpec.replace(/→/g, '');
-        rawSpec = rawSpec.trim();
-        
-        // Split by common delimiters and clean each specialization
-        if (rawSpec) {
-          // Try to split by common patterns (comma, newline, or consecutive capital letters)
-          const specs = rawSpec.split(/,|[\n\r]+|(?=[A-Z][a-z])/);
-          
-          specs.forEach(spec => {
-            const trimmed = spec.trim();
-            // Only add if it's not empty and doesn't contain unwanted text
-            if (trimmed && trimmed.length > 2 && !trimmed.includes('No items') && !trimmed.includes('View')) {
-              allSpecializations.add(trimmed);
-              specializations += (specializations ? ', ' : '') + trimmed;
-            }
-          });
-        }
-      }
-
-      // Check specialization filter
-      const specializationMatch = activeFilters.specialization === 'All' || 
-                                 specializations.includes(activeFilters.specialization);
-      
       // Show/hide card based on all filters
-      const shouldShow = searchMatch && availabilityMatch && languageMatch && specializationMatch;
+      const shouldShow = searchMatch && availabilityMatch && languageMatch;
       
       if (shouldShow) {
         card.style.display = '';
@@ -475,36 +411,6 @@
     // Update counter
     updateResultsCounter(visibleCount, cards.length);
     console.log(`Showing ${visibleCount} out of ${cards.length} VA cards`);
-    
-    // Generate specialization buttons dynamically
-    if (allSpecializations.size > 0) {
-      generateSpecializationButtons();
-    }
-  }
-
-  // Function to generate specialization dropdown options dynamically
-  function generateSpecializationButtons() {
-    const specSelect = document.getElementById('specializationSelect');
-    if (!specSelect) return;
-    
-    // Get all existing options except the first "All" option
-    const existingOptions = specSelect.querySelectorAll('option:not([value="All"])');
-    
-    // Only generate if we haven't already
-    if (existingOptions.length === 0 && allSpecializations.size > 0) {
-      // Sort specializations alphabetically
-      const sortedSpecs = Array.from(allSpecializations).sort();
-      
-      // Create options for each specialization
-      sortedSpecs.forEach(spec => {
-        const option = document.createElement('option');
-        option.value = spec;
-        option.textContent = spec;
-        specSelect.appendChild(option);
-      });
-      
-      console.log(`Generated ${sortedSpecs.length} specialization options:`, sortedSpecs);
-    }
   }
 
   // Listen for filter changes
