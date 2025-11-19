@@ -1,0 +1,1231 @@
+{
+  "timestamp": "2025-11-18T19:50:30.787Z",
+  "siteId": "66e9b3f71eb321a17e92218a",
+  "collectionId": "691b82a97542c69f3f77fa76",
+  "totalVAs": 62,
+  "vas": [
+    {
+      "id": "691cc053ad37be937376f569",
+      "name": "Mina",
+      "slug": "mina",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Mina",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Commercial Insurance, General Liability, Motor Truck Cargo",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Mina.webp",
+        "profile-slug": "mina-ocean-va-profile",
+        "slug": "mina",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691cc052138d8a985cc7c691",
+      "name": "AC",
+      "slug": "ac",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "AC",
+        "title": "Mortgage Specialist",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Mortgage Operations, Loan Underwriting, Compliance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/AC.webp",
+        "profile-slug": "ac-ocean-va-profile",
+        "slug": "ac",
+        "main-category": "Mortgage Specialist"
+      }
+    },
+    {
+      "id": "691cc051fafd92a39e7269c5",
+      "name": "Grace",
+      "slug": "grace",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Grace",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Home Insurance, Auto Insurance, Renters Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Grace.webp",
+        "profile-slug": "grace-carmel-ocean-va-profile",
+        "video-url": "https://www.youtube.com/embed/J08tAud6nTQ",
+        "slug": "grace",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691cc0517c622857f4bb8f27",
+      "name": "Yvette",
+      "slug": "yvette",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Yvette",
+        "title": "Mortgage Specialist",
+        "experience-years": "12 years",
+        "languages": "English",
+        "specializations": "Loan Processing, Mortgage Processing, Compliance Review",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Yvette.webp",
+        "profile-slug": "yvette-ocean-va-profile",
+        "video-url": "https://www.youtube.com/embed/oiZlHPfAjbg",
+        "slug": "yvette",
+        "main-category": "Mortgage Specialist"
+      }
+    },
+    {
+      "id": "691cc050fafd92a39e726909",
+      "name": "Anahi",
+      "slug": "anahi",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Anahi",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "4 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Homeowners Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Anahi.webp",
+        "profile-slug": "anahi-ocean-va-profile",
+        "slug": "anahi",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a173297968c5ed5977a",
+      "name": "Tricia",
+      "slug": "tricia",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Tricia",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Home Insurance, Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Tricia.webp",
+        "profile-slug": "tricia-ocean-va-profile",
+        "slug": "tricia",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a166363a512c63ab178",
+      "name": "Ximena G.",
+      "slug": "ximena",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ximena G.",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Home, Auto Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Ximena G.webp",
+        "profile-slug": "ximena-g-ocean-va-profile",
+        "slug": "ximena",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a1676470b927f67f195",
+      "name": "Sandra",
+      "slug": "sandra",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Sandra",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Personal Lines Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Sandra.webp",
+        "video-url": "https://www.youtube.com/embed/xrNMiTNBkcg",
+        "profile-slug": "sandra-ocean-va-profile",
+        "slug": "sandra",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a1673a372902012f13c",
+      "name": "Rochelle",
+      "slug": "rochelle",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Rochelle",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "4 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Rochelle.webp",
+        "video-url": "https://www.youtube.com/embed/aCJyNu79nto",
+        "profile-slug": "rochelle-ocean-va-profile",
+        "slug": "rochelle",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a15f0e2ab9fb3ed29ca",
+      "name": "Rejean",
+      "slug": "rejean",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Rejean",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Commercial, Auto Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Rejean.webp",
+        "profile-slug": "rejean-ocean-va-profile",
+        "slug": "rejean",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a15cb665bff98aba813",
+      "name": "Rainier",
+      "slug": "rainier",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Rainier",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "7 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Rainier.webp",
+        "video-url": "https://www.youtube.com/embed/Gl_Rijv44Ec",
+        "profile-slug": "rainier-ocean-va-profile",
+        "slug": "rainier",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a153f849707c908757e",
+      "name": "Rafael",
+      "slug": "rafael",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Rafael",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Personal, Healthcare Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Rafael.webp",
+        "video-url": "https://www.youtube.com/embed/S19B0sRiohI",
+        "profile-slug": "rafael-ocean-va-profile",
+        "slug": "rafael",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a146363a512c63aaf87",
+      "name": "Patricia",
+      "slug": "patricia",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Patricia",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "5 years",
+        "languages": "English",
+        "specializations": "U.S. Personal, Commercial Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Patricia.webp",
+        "profile-slug": "patricia-ocean-va-profile",
+        "slug": "patricia",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a1406c5b174787e6f7a",
+      "name": "Melissa",
+      "slug": "melissa",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Melissa",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Auto, Home Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Melissa.webp",
+        "video-url": "https://www.youtube.com/embed/6dB2M8wAkjE",
+        "profile-slug": "melissa-ocean-va-profile",
+        "slug": "melissa",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a137bbc6e74fefb276d",
+      "name": "Maria",
+      "slug": "maria",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Maria",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Auto, Home Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Maria.webp",
+        "profile-slug": "maria-ocean-va-profile",
+        "slug": "maria",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a122c4d3609e83d3517",
+      "name": "Maria D.",
+      "slug": "maria-d",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Maria D.",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Personal Lines, Commercial Lines",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Maria D.webp",
+        "profile-slug": "maria-d-ocean-va-profile",
+        "slug": "maria-d"
+      }
+    },
+    {
+      "id": "691b8a122c4d3609e83d3505",
+      "name": "Lois",
+      "slug": "lois",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Lois",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Personal Lines Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Lois.webp",
+        "video-url": "https://www.youtube.com/embed/HSCzM1jVsaE",
+        "profile-slug": "lois-ocean-va-profile",
+        "slug": "lois",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a110ed00c53499d1ca7",
+      "name": "Kevin",
+      "slug": "kevin",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Kevin",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Trained Insurance Professional",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Kevin.webp",
+        "video-url": "https://www.youtube.com/embed/MnlRVthsUYE",
+        "profile-slug": "kevin-ocean-va-profile",
+        "slug": "kevin",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a116363a512c63aad54",
+      "name": "Janice",
+      "slug": "janice",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Janice",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Janice.webp",
+        "video-url": "https://www.youtube.com/embed/P8gcQHNJwsk",
+        "profile-slug": "janice-ocean-va-profile",
+        "slug": "janice",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a116363a512c63aad24",
+      "name": "Israel",
+      "slug": "israel",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Israel",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Health, Life Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Israel.webp",
+        "video-url": "https://www.youtube.com/embed/aSLhEc15mN4",
+        "profile-slug": "israel-ocean-va-profile",
+        "slug": "israel",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a10cb665bff98aba584",
+      "name": "Guillermo",
+      "slug": "guillermo",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Guillermo",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Auto, Home, Renters, Condo, Umbrella, Earthquake, Watercraft",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Guillermo.webp",
+        "video-url": "https://www.youtube.com/embed/sLtVFyK2b7s",
+        "profile-slug": "guillermo-ocean-va-profile",
+        "slug": "guillermo",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a102c4d3609e83d348c",
+      "name": "Gonzalo",
+      "slug": "gonzalo",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Gonzalo",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Auto, Home, Health Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Gonzalo.webp",
+        "video-url": "https://www.youtube.com/embed/DYky1VhKGNQ",
+        "profile-slug": "gonzalo-ocean-va-profile",
+        "slug": "gonzalo",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0f0ed00c53499d1c3e",
+      "name": "Fernanda",
+      "slug": "fernanda",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Fernanda",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant, Key Account Management, Marketing",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Fernanda.webp",
+        "video-url": "https://www.youtube.com/embed/7ngbNodl3es",
+        "profile-slug": "fernanda-ocean-va-profile",
+        "slug": "fernanda",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0f1cb39e61086359cf",
+      "name": "Ellen",
+      "slug": "ellen",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ellen",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Home, Health Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Ellen.webp",
+        "profile-slug": "ellen-rose-ocean-va-profile",
+        "slug": "ellen",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0fe352cae9bc806982",
+      "name": "Dayana",
+      "slug": "dayana",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Dayana",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Auto, Health Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Dayana.webp",
+        "video-url": "https://www.youtube.com/embed/1xTnx_3MRPA",
+        "profile-slug": "dayana-ocean-va-profile",
+        "slug": "dayana",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0f3f849707c90873a1",
+      "name": "Dawn",
+      "slug": "dawn",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Dawn",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "7 years",
+        "languages": "English",
+        "specializations": "Auto, Home Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Dawn.webp",
+        "video-url": "https://www.youtube.com/embed/fMWR-UrNXAg",
+        "profile-slug": "dawn-ocean-va-profile",
+        "slug": "dawn",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0e3297968c5ed594df",
+      "name": "Christine",
+      "slug": "christine",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Christine",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Lines",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Christine.webp",
+        "video-url": "https://www.youtube.com/embed/m0n5unGQ1Bk",
+        "profile-slug": "christine-ocean-va-profile",
+        "slug": "christine",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0e3297968c5ed594b7",
+      "name": "Carolina",
+      "slug": "carolina",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Carolina",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Auto, Home Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Carolina.webp",
+        "video-url": "https://www.youtube.com/embed/_3cmkdxncdg",
+        "profile-slug": "carolina-ocean-va-profile",
+        "slug": "carolina",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0df83ddf1a08c15961",
+      "name": "Brandon L.",
+      "slug": "brandon",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Brandon L.",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Health, Life Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Brandon L.webp",
+        "profile-slug": "brandon-l-ocean-va-profile",
+        "slug": "brandon",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0d89b222b6b472933c",
+      "name": "Balbina",
+      "slug": "balbina",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Balbina",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Balbina.webp",
+        "video-url": "https://www.youtube.com/embed/sESom3C4Tjk",
+        "profile-slug": "balbina-ocean-va-profile",
+        "slug": "balbina",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0d1cb39e610863582d",
+      "name": "Ana Victoria",
+      "slug": "ana-victoria",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ana Victoria",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Commercial Line Insurance",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Ana Victoria.webp",
+        "video-url": "https://www.youtube.com/embed/1d4dWgjd0fE",
+        "profile-slug": "ana-victoria-ocean-va-profile",
+        "slug": "ana-victoria"
+      }
+    },
+    {
+      "id": "691b8a0c0569661eecba9e82",
+      "name": "Ana",
+      "slug": "ana",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ana",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant, Real Estate",
+        "availability": "Assigned",
+        "image-url": "/images/VAs/Ana.webp",
+        "video-url": "https://www.youtube.com/embed/XloA9MBGtGA",
+        "profile-slug": "ana-s-ocean-va-profile",
+        "slug": "ana",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0b59789e6de7cf8158",
+      "name": "Pavel",
+      "slug": "pavel",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Pavel",
+        "title": "Marketing Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Marketing, Graphic Design",
+        "availability": "Part Time",
+        "image-url": "/images/VAs/Pavel.webp",
+        "video-url": "https://www.youtube.com/embed/_reMSeE_gyY",
+        "profile-slug": "pavel-ocean-va-profile",
+        "slug": "pavel",
+        "main-category": "Marketing Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0be00a0398d8a56cbf",
+      "name": "Jill",
+      "slug": "jill",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Jill",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant",
+        "availability": "Part Time",
+        "image-url": "/images/VAs/Jill.webp",
+        "profile-slug": "jill-ocean-va-profile",
+        "slug": "jill",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0bcd945b1d360713e6",
+      "name": "Jasmine",
+      "slug": "jasmine",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Jasmine",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "English",
+        "specializations": "Executive Assistant",
+        "availability": "Part Time",
+        "image-url": "/images/VAs/Jasmine.webp",
+        "video-url": "https://www.youtube.com/embed/WhdFCM1GABs",
+        "profile-slug": "jasmine-ocean-va-profile",
+        "slug": "jasmine",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0a0ed00c53499d1af9",
+      "name": "Gizelle",
+      "slug": "gizelle",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Gizelle",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "8 years",
+        "languages": "English",
+        "specializations": "Health Insurance",
+        "availability": "Part Time",
+        "image-url": "/images/VAs/Gizelle.webp",
+        "video-url": "https://www.youtube.com/embed/xkbMKgYarbk",
+        "profile-slug": "gizelle-ocean-va-profile",
+        "slug": "gizelle",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0ae00a0398d8a56c88",
+      "name": "Rona Mae",
+      "slug": "rona",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Rona Mae",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Personal Lines Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Rona Mae.webp",
+        "video-url": "https://www.youtube.com/embed/eHrDpnlAeoc",
+        "profile-slug": "rona-mae-ocean-va-profile",
+        "slug": "rona",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0a6363a512c63aa8f3",
+      "name": "Raydon",
+      "slug": "raydon",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Raydon",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "4 years",
+        "languages": "English",
+        "specializations": "Personal, Property Lines",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Raydon.webp",
+        "video-url": "https://www.youtube.com/embed/2OIkxzcz-pw",
+        "profile-slug": "raydon-ocean-va-profile",
+        "slug": "raydon",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a09cb665bff98aba0ca",
+      "name": "Michelle",
+      "slug": "michelle",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Michelle",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Home, Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Michelle.webp",
+        "video-url": "https://www.youtube.com/embed/sjVqZfkunbY",
+        "profile-slug": "michelle-ocean-va-profile",
+        "slug": "michelle",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0806c5b174787e6bfc",
+      "name": "Ma. Venus",
+      "slug": "ma",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ma. Venus",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1.5 years",
+        "languages": "English",
+        "specializations": "Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Ma Venus.webp",
+        "profile-slug": "ma-venus-ocean-va-profile",
+        "slug": "ma",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a08e352cae9bc806861",
+      "name": "Lorenz",
+      "slug": "lorenz",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Lorenz",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Home, Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Lorenz.webp",
+        "video-url": "https://www.youtube.com/embed/3if5VzuvLNc",
+        "profile-slug": "lorenz-ocean-va-profile",
+        "slug": "lorenz",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0759789e6de7cf80ad",
+      "name": "Laurice",
+      "slug": "laurice",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Laurice",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1.4 years",
+        "languages": "English",
+        "specializations": "Home Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Laurice.webp",
+        "video-url": "https://www.youtube.com/embed/9cz71wjqIX8",
+        "profile-slug": "laurice-ocean-va-profile",
+        "slug": "laurice",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a073297968c5ed59133",
+      "name": "Joji Marie",
+      "slug": "joji",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Joji Marie",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "4 years",
+        "languages": "English",
+        "specializations": "Auto, Home, Commercial, Health Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Joji Marie.webp",
+        "video-url": "https://www.youtube.com/embed/5N_z80i4KrQ?t=1s",
+        "profile-slug": "joji-marie-ocean-va-profile",
+        "slug": "joji",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a066363a512c63aa688",
+      "name": "Joel",
+      "slug": "joel",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Joel",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Joel.webp",
+        "video-url": "https://www.youtube.com/embed/5n99ZiMc0fs",
+        "profile-slug": "joel-ocean-va-profile",
+        "slug": "joel",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a066363a512c63aa61c",
+      "name": "Jimmy",
+      "slug": "jimmy",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Jimmy",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "English",
+        "specializations": "Personal Lines Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Jimmy.webp",
+        "video-url": "https://www.youtube.com/embed/rKDnjVB-dxE",
+        "profile-slug": "jimmy-ocean-va-profile",
+        "slug": "jimmy",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a066363a512c63aa5e1",
+      "name": "Jerome",
+      "slug": "jerome",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Jerome",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Home, Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Jerome.webp",
+        "video-url": "https://www.youtube.com/embed/aomGUtRlOiE",
+        "profile-slug": "jerome-ocean-va-profile",
+        "slug": "jerome",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a051d8feff943c71247",
+      "name": "Javier",
+      "slug": "javier",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Javier",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Javier.webp",
+        "video-url": "https://www.youtube.com/embed/UCqesVIO_7M",
+        "profile-slug": "javier-ocean-va-profile",
+        "slug": "javier",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a05f83ddf1a08c15210",
+      "name": "Jay Alvin",
+      "slug": "jay",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Jay Alvin",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "5 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Lines",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Jay Alvin.webp",
+        "video-url": "https://www.youtube.com/embed/GUe3uCkW8-4",
+        "profile-slug": "jay-alvin-ocean-va-profile",
+        "slug": "jay",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a043297968c5ed58f4e",
+      "name": "Geraldine",
+      "slug": "geraldine",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Geraldine",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Auto, Home, Commercial Lines Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Geraldine.webp",
+        "profile-slug": "geraldine-ocean-va-profile",
+        "slug": "geraldine",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a04cb665bff98ab9f04",
+      "name": "Francis",
+      "slug": "francis",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Francis",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Auto, Home, Health, Life Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Francis.webp",
+        "video-url": "https://www.youtube.com/embed/Atdu3qVBHLs?t=1s",
+        "profile-slug": "francis-ocean-va-profile",
+        "slug": "francis",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a043297968c5ed58e6d",
+      "name": "Emmanuel",
+      "slug": "emmanuel",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Emmanuel",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "6 years",
+        "languages": "English",
+        "specializations": "Personal, Commercial Lines",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Emmanuel.webp",
+        "video-url": "https://www.youtube.com/embed/dZaAfgmaQwk",
+        "profile-slug": "emmanuel-ocean-va-profile",
+        "slug": "emmanuel",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a036363a512c63aa36e",
+      "name": "Cherry Mae",
+      "slug": "cherry",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Cherry Mae",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "English",
+        "specializations": "Personal Lines Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Cherry Mae.webp",
+        "video-url": "https://www.youtube.com/embed/DIfncidHCpY",
+        "profile-slug": "cherry-mae-ocean-va-profile",
+        "slug": "cherry",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a030ed00c53499d1879",
+      "name": "Antonio",
+      "slug": "antonio",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Antonio",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Auto, Home Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Antonio.webp",
+        "video-url": "https://www.youtube.com/embed/3b3R9YoLumE?t=2s",
+        "profile-slug": "antonio-ocean-va-profile",
+        "slug": "antonio",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a02cd945b1d36071152",
+      "name": "Abigail",
+      "slug": "abigail",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Abigail",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "English",
+        "specializations": "Health Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Abigail.webp",
+        "video-url": "https://www.youtube.com/embed/z3hiwu0mPc8",
+        "profile-slug": "abigail-ocean-va-profile",
+        "slug": "abigail",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a014c78138967234375",
+      "name": "Moises",
+      "slug": "moises",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Moises",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "U.S. Commercial Trucking Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Moises.webp",
+        "video-url": "https://www.youtube.com/embed/tbz0iRIWaps",
+        "profile-slug": "moises-ocean-va-profile",
+        "slug": "moises",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a013297968c5ed58c1c",
+      "name": "Maria Paula",
+      "slug": "maria-paula",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Maria Paula",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "3 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Medical Admin (HIPAA Compliant)",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Maria Paula.webp",
+        "video-url": "https://www.youtube.com/embed/yxgaoJEpdGg",
+        "profile-slug": "maria-paula-ocean-va-profile",
+        "slug": "maria-paula"
+      }
+    },
+    {
+      "id": "691b8a003f849707c9086eb4",
+      "name": "Karen",
+      "slug": "karen",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Karen",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "4 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Home Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Karen.webp",
+        "video-url": "https://www.youtube.com/embed/TXb9ONnF310",
+        "profile-slug": "karen-ocean-va-profile",
+        "slug": "karen",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a0076470b927f67e85d",
+      "name": "Joana",
+      "slug": "joana",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Joana",
+        "title": "Executive Virtual Assistant",
+        "experience-years": "null years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Executive Assistant",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Joana.webp",
+        "video-url": "https://www.youtube.com/embed/PrZ7xZryyjQ",
+        "profile-slug": "joana-ocean-va-profile",
+        "slug": "joana",
+        "main-category": "Executive Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b8a00f0e2ab9fb3ed2103",
+      "name": "Ivan",
+      "slug": "ivan",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Ivan",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Auto, Health Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Ivan.webp",
+        "video-url": "https://www.youtube.com/embed/dHojsDPmfHc",
+        "profile-slug": "ivan-ocean-va-profile",
+        "slug": "ivan",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b89fff0e2ab9fb3ed20f1",
+      "name": "Dafne",
+      "slug": "dafne",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Dafne",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "1 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Home, Auto Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Dafne.webp",
+        "video-url": "https://www.youtube.com/embed/habJY_0mpjs",
+        "profile-slug": "dafne-ocean-va-profile",
+        "slug": "dafne",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b89ff35de2e0351765716",
+      "name": "Alejandro",
+      "slug": "alejandro",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Alejandro",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2.5 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Auto, Home, Life, Commercial Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Alejandro.webp",
+        "video-url": "https://www.youtube.com/embed/a_cRiGRSLEs",
+        "profile-slug": "alejandro-ocean-va-profile",
+        "slug": "alejandro",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    },
+    {
+      "id": "691b89fef0e2ab9fb3ed20b4",
+      "name": "Adrian",
+      "slug": "adrian",
+      "isDraft": false,
+      "isArchived": false,
+      "fieldData": {
+        "name": "Adrian",
+        "title": "Insurance Virtual Assistant",
+        "experience-years": "2 years",
+        "languages": "Bilingual (EN-ES)",
+        "specializations": "Auto, Home, Life Insurance",
+        "availability": "Full Time",
+        "image-url": "/images/VAs/Adrian.webp",
+        "video-url": "https://www.youtube.com/embed/k5OatPLSORw",
+        "profile-slug": "adrian-ocean-va-profile",
+        "slug": "adrian",
+        "main-category": "Insurance Virtual Assistant"
+      }
+    }
+  ]
+}

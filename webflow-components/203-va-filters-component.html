@@ -1,27 +1,19 @@
-<!-- VA FILTERS COMPONENT - SEARCH & FILTER OPTIONS -->
-<!-- This component provides filtering capabilities for VA grid -->
+<!-- FILTERS SECTION FOR OUR CURRENT VAs PAGE -->
+<!-- Based on VAFilters.jsx component - Updated with button toggles -->
 
 <style>
+  .va-filters {
+    background: white;
+    padding: 32px 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
   .va-filters-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    margin-bottom: 30px;
-  }
-
-  .va-filters-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 16px;
-  }
-
-  .va-filters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
   }
 
   .va-filter-group {
@@ -30,232 +22,504 @@
   }
 
   .va-filter-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b7280;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-bottom: 12px;
   }
 
-  .va-filter-input,
-  .va-filter-select {
-    padding: 10px 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #111827;
-    background: white;
-    transition: all 0.2s ease;
-  }
-
-  .va-filter-input:focus,
-  .va-filter-select:focus {
-    outline: none;
-    border-color: #049d98;
-    box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
-  }
-
-  .va-filter-buttons {
+  .va-filter-options {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
-  .va-filter-btn {
+  .va-filter-button {
     padding: 8px 16px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
     background: white;
     color: #374151;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
+    white-space: nowrap;
   }
 
-  .va-filter-btn:hover {
+  .va-filter-button:hover {
     border-color: #049d98;
     color: #049d98;
   }
 
-  .va-filter-btn.active {
+  .va-filter-button.active {
     background: #049d98;
     color: white;
     border-color: #049d98;
   }
 
-  .va-filters-actions {
-    display: flex;
-    gap: 8px;
-    margin-top: 16px;
+  .va-filter-button.active:hover {
+    background: #037b77;
+    border-color: #037b77;
   }
 
-  .va-btn-apply,
-  .va-btn-reset {
-    padding: 10px 20px;
-    border: none;
+  .va-search-input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
     border-radius: 6px;
     font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
+    font-family: inherit;
     transition: all 0.2s ease;
-  }
-
-  .va-btn-apply {
-    background: #049d98;
-    color: white;
-  }
-
-  .va-btn-apply:hover {
-    background: #037b77;
-  }
-
-  .va-btn-reset {
-    background: #f3f4f6;
+    background: white;
     color: #374151;
-    border: 1px solid #d1d5db;
   }
 
-  .va-btn-reset:hover {
-    background: #e5e7eb;
+  .va-search-input:focus {
+    outline: none;
+    border-color: #049d98;
+    box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
   }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .va-filters-grid {
-      grid-template-columns: 1fr;
+  .va-search-input::placeholder {
+    color: #9ca3af;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .va-filters-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .va-filters {
+      padding: 24px 16px;
     }
 
     .va-filters-container {
-      padding: 16px;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .va-filter-options {
+      gap: 6px;
+    }
+
+    .va-filter-button {
+      padding: 8px 12px;
+      font-size: 13px;
     }
   }
 </style>
 
-<div class="va-filters-container">
-  <div class="va-filters-title">Filter Virtual Assistants</div>
-
-  <div class="va-filters-grid">
-    <!-- Search Input -->
-    <div class="va-filter-group">
-      <label class="va-filter-label">Search by Name</label>
-      <input 
-        type="text" 
-        class="va-filter-input" 
-        placeholder="Enter VA name..." 
-        id="va-search"
-      >
-    </div>
-
+<section class="va-filters">
+  <div class="va-filters-container">
     <!-- Availability Filter -->
     <div class="va-filter-group">
       <label class="va-filter-label">Availability</label>
-      <select class="va-filter-select" id="va-availability">
-        <option value="">All Availability</option>
-        <option value="Full Time">Full Time</option>
-        <option value="Part Time">Part Time</option>
-        <option value="Assigned">Assigned</option>
-      </select>
+      <div class="va-filter-options" id="availabilityOptions">
+        <button type="button" class="va-filter-button active" data-filter="availability" data-value="All">All</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Full Time">Full Time</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Part Time">Part Time</button>
+        <button type="button" class="va-filter-button" data-filter="availability" data-value="Assigned">Assigned</button>
+      </div>
     </div>
 
     <!-- Language Filter -->
     <div class="va-filter-group">
       <label class="va-filter-label">Language</label>
-      <select class="va-filter-select" id="va-language">
-        <option value="">All Languages</option>
-        <option value="Bilingual">Bilingual (EN-ES)</option>
-        <option value="English">English Only</option>
-      </select>
+      <div class="va-filter-options" id="languageOptions">
+        <button type="button" class="va-filter-button active" data-filter="language" data-value="All">All</button>
+        <button type="button" class="va-filter-button" data-filter="language" data-value="English">English</button>
+        <button type="button" class="va-filter-button" data-filter="language" data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button>
+      </div>
     </div>
 
-    <!-- Experience Filter -->
+    <!-- Search Input -->
     <div class="va-filter-group">
-      <label class="va-filter-label">Experience</label>
-      <select class="va-filter-select" id="va-experience">
-        <option value="">All Experience Levels</option>
-        <option value="0-2">0-2 years</option>
-        <option value="2-4">2-4 years</option>
-        <option value="4+">4+ years</option>
+      <label class="va-filter-label">Search by Name</label>
+      <input 
+        type="text" 
+        class="va-search-input" 
+        id="searchInput" 
+        placeholder="Search VA name..."
+        autocomplete="off"
+      >
+    </div>
+  </div>
+</section>
+
+<!-- Specialization Filter -->
+<section class="va-filters" style="padding: 20px;">
+  <div class="va-filters-container" style="grid-template-columns: 1fr;">
+    <div class="va-filter-group">
+      <label class="va-filter-label">Specialization</label>
+      <select id="specializationSelect" class="va-search-input" style="max-width: 300px;">
+        <option value="All">All Specializations</option>
+        <!-- Options will be populated dynamically -->
       </select>
     </div>
   </div>
+</section>
 
-  <!-- Specialization Filter -->
-  <div class="va-filter-group" style="margin-top: 16px;">
-    <label class="va-filter-label">Specialization</label>
-    <div class="va-filter-buttons">
-      <button class="va-filter-btn" data-spec="Insurance">Insurance</button>
-      <button class="va-filter-btn" data-spec="Executive">Executive</button>
-      <button class="va-filter-btn" data-spec="Healthcare">Healthcare</button>
-      <button class="va-filter-btn" data-spec="Real Estate">Real Estate</button>
-      <button class="va-filter-btn" data-spec="Marketing">Marketing</button>
-    </div>
-  </div>
-
-  <!-- Action Buttons -->
-  <div class="va-filters-actions">
-    <button class="va-btn-apply" onclick="applyFilters()">Apply Filters</button>
-    <button class="va-btn-reset" onclick="resetFilters()">Reset</button>
-  </div>
+<!-- Results Counter -->
+<div id="va-results-counter" style="
+  text-align: center;
+  padding: 24px 20px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e7eb;
+">
+  Showing 62 of 62 VAs
 </div>
 
 <script>
-  // Filter functions (basic implementation)
-  function applyFilters() {
-    const search = document.getElementById('va-search').value;
-    const availability = document.getElementById('va-availability').value;
-    const language = document.getElementById('va-language').value;
-    const experience = document.getElementById('va-experience').value;
+  // Get filter elements
+  const searchInput = document.getElementById('searchInput');
+  const availabilityButtons = document.querySelectorAll('[data-filter="availability"]');
+  const languageButtons = document.querySelectorAll('[data-filter="language"]');
+  const specializationButtons = document.querySelectorAll('[data-filter="specialization"]');
 
-    console.log('Filters applied:', {
-      search,
-      availability,
-      language,
-      experience
+  // Store current filters
+  let currentFilters = {
+    search: '',
+    availability: 'All',
+    language: 'All',
+    specialization: 'All'
+  };
+
+  // Function to dispatch filter change event
+  function dispatchFilterChange() {
+    const event = new CustomEvent('vaFiltersChanged', {
+      detail: currentFilters,
+      bubbles: true
     });
-
-    // TODO: Implement actual filtering logic
-    // This would filter the VA grid based on selected criteria
+    document.dispatchEvent(event);
+    console.log('Filters changed:', currentFilters);
   }
 
-  function resetFilters() {
-    document.getElementById('va-search').value = '';
-    document.getElementById('va-availability').value = '';
-    document.getElementById('va-language').value = '';
-    document.getElementById('va-experience').value = '';
-    
-    // Remove active state from specialization buttons
-    document.querySelectorAll('.va-filter-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
-
-    console.log('Filters reset');
-  }
-
-  // Toggle specialization buttons
-  document.querySelectorAll('.va-filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      this.classList.toggle('active');
+  // Handle availability button clicks
+  availabilityButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Remove active class from all availability buttons
+      availabilityButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update filter
+      currentFilters.availability = button.dataset.value;
+      
+      // Dispatch event
+      dispatchFilterChange();
     });
   });
+
+  // Handle language button clicks
+  languageButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Remove active class from all language buttons
+      languageButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update filter
+      currentFilters.language = button.dataset.value;
+      
+      // Dispatch event
+      dispatchFilterChange();
+    });
+  });
+
+  // Handle search input - real-time filtering
+  searchInput.addEventListener('input', (e) => {
+    currentFilters.search = e.target.value.trim();
+    dispatchFilterChange();
+  });
+
+  // Allow Enter key in search
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      dispatchFilterChange();
+    }
+  });
+
+  // Handle specialization dropdown change
+  const specSelect = document.getElementById('specializationSelect');
+  if (specSelect) {
+    specSelect.addEventListener('change', (e) => {
+      currentFilters.specialization = e.target.value;
+      dispatchFilterChange();
+    });
+  }
+
+  console.log('VA Filters initialized');
 </script>
 
-<!-- INSTRUCTIONS FOR WEBFLOW:
-1. Copy this entire component
-2. Paste into an HTML Embed ABOVE the VA grid
-3. The filters will appear above the grid
-4. Users can select filters and click "Apply Filters"
+<script>
+/**
+ * VA Grid Filter Listener - Webflow Native Collections
+ * Listens to filter changes and filters Webflow collection cards
+ * 
+ * Works with Webflow CMS collection items displayed as cards
+ * Reads data from Webflow field attributes
+ */
 
-NOTE: This is a UI component. To make it fully functional:
-- You'll need to add JavaScript to filter the VA grid
-- Or use Webflow Collections with dynamic filtering
-- Or implement server-side filtering
+(function() {
+  // Store current filters
+  let activeFilters = {
+    search: '',
+    availability: 'All',
+    language: 'All',
+    specialization: 'All'
+  };
+  
+  // Store all unique specializations
+  let allSpecializations = new Set();
 
-FILTER OPTIONS:
-- Search by name
-- Availability (Full Time, Part Time, Assigned)
-- Language (Bilingual, English)
-- Experience (0-2, 2-4, 4+ years)
-- Specialization (Insurance, Executive, Healthcare, Real Estate, Marketing)
--->
+  // Function to update results counter
+  function updateResultsCounter(visibleCount, totalCount) {
+    let counter = document.getElementById('va-results-counter');
+    
+    if (!counter) {
+      // Try multiple selectors to find collection wrapper
+      let collectionWrapper = document.querySelector('.w-dyn-list') || 
+                             document.querySelector('[data-w-id]') ||
+                             document.querySelector('[role="region"]') ||
+                             document.querySelector('main') ||
+                             document.body;
+      
+      if (collectionWrapper) {
+        counter = document.createElement('div');
+        counter.id = 'va-results-counter';
+        counter.style.cssText = `
+          text-align: center;
+          padding: 24px 20px;
+          margin: 20px 0;
+          font-size: 14px;
+          color: #6b7280;
+          font-weight: 500;
+          border-bottom: 1px solid #e5e7eb;
+        `;
+        
+        // Insert before the collection wrapper or at the top
+        if (collectionWrapper.parentNode) {
+          collectionWrapper.parentNode.insertBefore(counter, collectionWrapper);
+        } else {
+          collectionWrapper.insertBefore(counter, collectionWrapper.firstChild);
+        }
+      }
+    }
+    
+    if (counter) {
+      if (visibleCount === 0) {
+        counter.textContent = 'No VAs found matching your filters';
+        counter.style.color = '#ef4444';
+      } else {
+        counter.textContent = `Showing ${visibleCount} of ${totalCount} VA${totalCount !== 1 ? 's' : ''}`;
+        counter.style.color = '#6b7280';
+      }
+    }
+  }
+
+  // Function to get field value from Webflow card
+  function getFieldValue(card, fieldClass) {
+    // Try multiple selectors for flexibility
+    const element = card.querySelector(`[data-field="${fieldClass}"]`) || 
+                   card.querySelector(`.${fieldClass}`) ||
+                   card.querySelector(`[class*="${fieldClass}"]`);
+    
+    if (!element) return '';
+    
+    let text = element.textContent.trim();
+    
+    // Remove common icons and emojis
+    text = text.replace(/[\u{1F300}-\u{1F9FF}]/gu, ''); // Emojis
+    text = text.replace(/[🌐📍💼🎯📅]/g, ''); // Specific icons
+    text = text.replace(/^\s+|\s+$/g, ''); // Trim again after removing icons
+    
+    return text;
+  }
+
+  // Function to filter VA cards
+  function filterVACards() {
+    // Find all Webflow collection items - be more specific to avoid counting other collections
+    // Look for VA cards that have the name field
+    const cards = Array.from(document.querySelectorAll('.w-dyn-item')).filter(card => {
+      // Only count cards that have VA-specific fields (name field)
+      return card.textContent.includes('EXPERIENCE') && card.textContent.includes('LANGUAGE');
+    });
+    
+    let visibleCount = 0;
+
+    if (cards.length === 0) {
+      console.warn('No VA collection items found. Make sure your collection is rendered.');
+      return;
+    }
+
+    // Debug: Log first card structure
+    if (cards.length > 0) {
+      console.log('First card HTML:', cards[0].innerHTML);
+      console.log('First card classes:', cards[0].className);
+      console.log('All text content:', cards[0].textContent);
+    }
+
+    cards.forEach((card, index) => {
+      // Get VA data from Webflow fields
+      // Adjust these selectors based on your Webflow collection structure
+      const name = getFieldValue(card, 'name').toLowerCase();
+      const availability = getFieldValue(card, 'availability');
+      
+      // Language field - try multiple approaches
+      let language = getFieldValue(card, 'languages') || getFieldValue(card, 'language');
+      
+      // If still empty, extract from text content after "LANGUAGE" label
+      if (!language) {
+        const textContent = card.textContent;
+        const languageIndex = textContent.indexOf('LANGUAGE');
+        if (languageIndex !== -1) {
+          const afterLanguage = textContent.substring(languageIndex + 8).trim();
+          // Extract language - look for common patterns
+          if (afterLanguage.includes('Bilingual')) {
+            language = 'Bilingual (EN-ES)';
+          } else if (afterLanguage.includes('English')) {
+            language = 'English';
+          } else {
+            // Fallback: get first 50 chars
+            language = afterLanguage.substring(0, 50).trim();
+          }
+        }
+      }
+      
+      const mainCategory = getFieldValue(card, 'main-category');
+
+      // Debug first card
+      if (index === 0) {
+        console.log('Card 0 - name:', name);
+        console.log('Card 0 - availability:', availability);
+        console.log('Card 0 - language (extracted):', language);
+        console.log('Card 0 - mainCategory:', mainCategory);
+      }
+
+      // Check search filter (search in name or main category)
+      const searchTerm = activeFilters.search.toLowerCase();
+      const searchMatch = name.includes(searchTerm) || mainCategory.toLowerCase().includes(searchTerm);
+
+      // Check availability filter
+      const availabilityMatch = activeFilters.availability === 'All' || 
+                               availability.includes(activeFilters.availability);
+
+      // Check language filter
+      const languageMatch = activeFilters.language === 'All' || 
+                           language.includes(activeFilters.language);
+
+      // Get specializations - look for SPECIALIZATION label
+      let specializations = '';
+      const textContent = card.textContent;
+      const specIndex = textContent.indexOf('SPECIALIZATION');
+      if (specIndex !== -1) {
+        const afterSpec = textContent.substring(specIndex + 14).trim();
+        // Get text until next label (usually "EXPERIENCE" or end)
+        const nextLabel = afterSpec.search(/EXPERIENCE|AVAILABILITY/);
+        let rawSpec = nextLabel > 0 ? afterSpec.substring(0, nextLabel).trim() : afterSpec.substring(0, 200).trim();
+        
+        // Clean up: remove "No items found", "View Profile", arrows, etc.
+        rawSpec = rawSpec.replace(/No items found\.?/gi, '');
+        rawSpec = rawSpec.replace(/View Profile\s*→/gi, '');
+        rawSpec = rawSpec.replace(/→/g, '');
+        rawSpec = rawSpec.trim();
+        
+        // Split by common delimiters and clean each specialization
+        if (rawSpec) {
+          // Try to split by common patterns (comma, newline, or consecutive capital letters)
+          const specs = rawSpec.split(/,|[\n\r]+|(?=[A-Z][a-z])/);
+          
+          specs.forEach(spec => {
+            const trimmed = spec.trim();
+            // Only add if it's not empty and doesn't contain unwanted text
+            if (trimmed && trimmed.length > 2 && !trimmed.includes('No items') && !trimmed.includes('View')) {
+              allSpecializations.add(trimmed);
+              specializations += (specializations ? ', ' : '') + trimmed;
+            }
+          });
+        }
+      }
+
+      // Check specialization filter
+      const specializationMatch = activeFilters.specialization === 'All' || 
+                                 specializations.includes(activeFilters.specialization);
+      
+      // Show/hide card based on all filters
+      const shouldShow = searchMatch && availabilityMatch && languageMatch && specializationMatch;
+      
+      if (shouldShow) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update counter
+    updateResultsCounter(visibleCount, cards.length);
+    console.log(`Showing ${visibleCount} out of ${cards.length} VA cards`);
+    
+    // Generate specialization buttons dynamically
+    if (allSpecializations.size > 0) {
+      generateSpecializationButtons();
+    }
+  }
+
+  // Function to generate specialization dropdown options dynamically
+  function generateSpecializationButtons() {
+    const specSelect = document.getElementById('specializationSelect');
+    if (!specSelect) return;
+    
+    // Get all existing options except the first "All" option
+    const existingOptions = specSelect.querySelectorAll('option:not([value="All"])');
+    
+    // Only generate if we haven't already
+    if (existingOptions.length === 0 && allSpecializations.size > 0) {
+      // Sort specializations alphabetically
+      const sortedSpecs = Array.from(allSpecializations).sort();
+      
+      // Create options for each specialization
+      sortedSpecs.forEach(spec => {
+        const option = document.createElement('option');
+        option.value = spec;
+        option.textContent = spec;
+        specSelect.appendChild(option);
+      });
+      
+      console.log(`Generated ${sortedSpecs.length} specialization options:`, sortedSpecs);
+    }
+  }
+
+  // Listen for filter changes
+  document.addEventListener('vaFiltersChanged', (e) => {
+    activeFilters = e.detail;
+    console.log('Grid received filter update:', activeFilters);
+    filterVACards();
+  });
+
+  // Initial filter on page load
+  window.addEventListener('load', () => {
+    filterVACards();
+  });
+
+  console.log('VA Grid Filter Listener initialized for Webflow collections');
+})();
+
+</script>

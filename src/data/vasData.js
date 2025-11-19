@@ -2,6 +2,7 @@ export const vasData = [
   {
     id: 1,
     nombre: "Adrian",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Auto", "Home", "Life Insurance"],
@@ -10,12 +11,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "adrian-ocean-va-profile",
-    imagen: "/images/VAs/Adrian.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/k5OatPLSORw'},
+    imagen: "/images/VAs/Adrian.webp",
+    videoUrl: "https://www.youtube.com/embed/k5OatPLSORw"
+  },
   {
     id: 2,
     nombre: "Alejandro",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2.5,
     especialización: ["Auto", "Home", "Life", "Commercial Insurance"],
@@ -24,12 +26,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "alejandro-ocean-va-profile",
-    imagen: "/images/VAs/Alejandro.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/a_cRiGRSLEs'},
+    imagen: "/images/VAs/Alejandro.webp",
+    videoUrl: "https://www.youtube.com/embed/a_cRiGRSLEs"
+  },
   {
     id: 3,
     nombre: "Dafne",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -38,12 +41,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "dafne-ocean-va-profile",
-    imagen: "/images/VAs/Dafne.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/habJY_0mpjs'},
+    imagen: "/images/VAs/Dafne.webp",
+    videoUrl: "https://www.youtube.com/embed/habJY_0mpjs"
+  },
   {
     id: 4,
     nombre: "Ivan",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Auto", "Health Insurance"],
@@ -52,12 +56,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ivan-ocean-va-profile",
-    imagen: "/images/VAs/Ivan.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/dHojsDPmfHc'},
+    imagen: "/images/VAs/Ivan.webp",
+    videoUrl: "https://www.youtube.com/embed/dHojsDPmfHc"
+  },
   {
     id: 5,
     nombre: "Joana",
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -66,12 +71,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "joana-ocean-va-profile",
-    imagen: "/images/VAs/Joana.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/PrZ7xZryyjQ'},
+    imagen: "/images/VAs/Joana.webp",
+    videoUrl: "https://www.youtube.com/embed/PrZ7xZryyjQ"
+  },
   {
     id: 6,
     nombre: "Karen",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Home Insurance"],
@@ -80,12 +86,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "karen-ocean-va-profile",
-    imagen: "/images/VAs/Karen.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/TXb9ONnF310'},
+    imagen: "/images/VAs/Karen.webp",
+    videoUrl: "https://www.youtube.com/embed/TXb9ONnF310"
+  },
   {
     id: 7,
     nombre: "Maria Paula",
+    categoría_principal: "Healthcare Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Medical Admin (HIPAA Compliant)"],
@@ -94,12 +101,13 @@ export const vasData = [
     horario: "",
     categorías: ["Healthcare VA"],
     slug: "maria-paula-ocean-va-profile",
-    imagen: "/images/VAs/Maria Paula.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/yxgaoJEpdGg'},
+    imagen: "/images/VAs/Maria Paula.webp",
+    videoUrl: "https://www.youtube.com/embed/yxgaoJEpdGg"
+  },
   {
     id: 8,
     nombre: "Moises",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["U.S. Commercial Trucking Insurance"],
@@ -108,12 +116,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "moises-ocean-va-profile",
-    imagen: "/images/VAs/Moises.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/tbz0iRIWaps'},
+    imagen: "/images/VAs/Moises.webp",
+    videoUrl: "https://www.youtube.com/embed/tbz0iRIWaps"
+  },
   {
     id: 9,
     nombre: "Abigail",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Health Insurance"],
@@ -122,12 +131,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "abigail-ocean-va-profile",
-    imagen: "/images/VAs/Abigail.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/z3hiwu0mPc8'},
+    imagen: "/images/VAs/Abigail.webp",
+    videoUrl: "https://www.youtube.com/embed/z3hiwu0mPc8"
+  },
   {
     id: 10,
     nombre: "Antonio",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home Insurance"],
@@ -136,12 +146,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "antonio-ocean-va-profile",
-    imagen: "/images/VAs/Antonio.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/3b3R9YoLumE?t=2s'},
+    imagen: "/images/VAs/Antonio.webp",
+    videoUrl: "https://www.youtube.com/embed/3b3R9YoLumE?t=2s"
+  },
   {
     id: 11,
     nombre: "Cherry Mae",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Personal Lines Insurance"],
@@ -150,12 +161,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "cherry-mae-ocean-va-profile",
-    imagen: "/images/VAs/Cherry Mae.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/DIfncidHCpY'},
+    imagen: "/images/VAs/Cherry Mae.webp",
+    videoUrl: "https://www.youtube.com/embed/DIfncidHCpY"
+  },
   {
     id: 12,
     nombre: "Emmanuel",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal", "Commercial Lines"],
@@ -164,12 +176,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "emmanuel-ocean-va-profile",
-    imagen: "/images/VAs/Emmanuel.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/dZaAfgmaQwk'},
+    imagen: "/images/VAs/Emmanuel.webp",
+    videoUrl: "https://www.youtube.com/embed/dZaAfgmaQwk"
+  },
   {
     id: 13,
     nombre: "Francis",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Auto", "Home", "Health", "Life Insurance"],
@@ -178,12 +191,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "francis-ocean-va-profile",
-    imagen: "/images/VAs/Francis.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/Atdu3qVBHLs?t=1s'},
+    imagen: "/images/VAs/Francis.webp",
+    videoUrl: "https://www.youtube.com/embed/Atdu3qVBHLs?t=1s"
+  },
   {
     id: 14,
     nombre: "Geraldine",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home", "Commercial Lines Insurance"],
@@ -197,6 +211,7 @@ export const vasData = [
   {
     id: 15,
     nombre: "Jay Alvin",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["Personal", "Commercial Lines"],
@@ -205,12 +220,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "jay-alvin-ocean-va-profile",
-    imagen: "/images/VAs/Jay Alvin.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/GUe3uCkW8-4'},
+    imagen: "/images/VAs/Jay Alvin.webp",
+    videoUrl: "https://www.youtube.com/embed/GUe3uCkW8-4"
+  },
   {
     id: 16,
     nombre: "Javier",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto Insurance"],
@@ -219,12 +235,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "javier-ocean-va-profile",
-    imagen: "/images/VAs/Javier.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/UCqesVIO_7M'},
+    imagen: "/images/VAs/Javier.webp",
+    videoUrl: "https://www.youtube.com/embed/UCqesVIO_7M"
+  },
   {
     id: 17,
     nombre: "Jerome",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -233,12 +250,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "jerome-ocean-va-profile",
-    imagen: "/images/VAs/Jerome.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/aomGUtRlOiE'},
+    imagen: "/images/VAs/Jerome.webp",
+    videoUrl: "https://www.youtube.com/embed/aomGUtRlOiE"
+  },
   {
     id: 18,
     nombre: "Jimmy",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -247,12 +265,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "jimmy-ocean-va-profile",
-    imagen: "/images/VAs/Jimmy.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/rKDnjVB-dxE'},
+    imagen: "/images/VAs/Jimmy.webp",
+    videoUrl: "https://www.youtube.com/embed/rKDnjVB-dxE"
+  },
   {
     id: 19,
     nombre: "Joel",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Personal", "Commercial Insurance"],
@@ -261,12 +280,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "joel-ocean-va-profile",
-    imagen: "/images/VAs/Joel.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/5n99ZiMc0fs'},
+    imagen: "/images/VAs/Joel.webp",
+    videoUrl: "https://www.youtube.com/embed/5n99ZiMc0fs"
+  },
   {
     id: 20,
     nombre: "Joji Marie",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Auto", "Home", "Commercial", "Health Insurance"],
@@ -275,12 +295,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "joji-marie-ocean-va-profile",
-    imagen: "/images/VAs/Joji Marie.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/5N_z80i4KrQ?t=1s'},
+    imagen: "/images/VAs/Joji Marie.webp",
+    videoUrl: "https://www.youtube.com/embed/5N_z80i4KrQ?t=1s"
+  },
   {
     id: 21,
     nombre: "Laurice",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1.4,
     especialización: ["Home Insurance"],
@@ -289,12 +310,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "laurice-ocean-va-profile",
-    imagen: "/images/VAs/Laurice.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/9cz71wjqIX8'},
+    imagen: "/images/VAs/Laurice.webp",
+    videoUrl: "https://www.youtube.com/embed/9cz71wjqIX8"
+  },
   {
     id: 22,
     nombre: "Lorenz",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Auto Insurance"],
@@ -303,12 +325,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "lorenz-ocean-va-profile",
-    imagen: "/images/VAs/Lorenz.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/3if5VzuvLNc'},
+    imagen: "/images/VAs/Lorenz.webp",
+    videoUrl: "https://www.youtube.com/embed/3if5VzuvLNc"
+  },
   {
     id: 23,
     nombre: "Ma. Venus",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1.5,
     especialización: ["Auto Insurance"],
@@ -322,6 +345,7 @@ export const vasData = [
   {
     id: 24,
     nombre: "Michelle",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -330,12 +354,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "michelle-ocean-va-profile",
-    imagen: "/images/VAs/Michelle.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/sjVqZfkunbY'},
+    imagen: "/images/VAs/Michelle.webp",
+    videoUrl: "https://www.youtube.com/embed/sjVqZfkunbY"
+  },
   {
     id: 25,
     nombre: "Raydon",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Personal", "Property Lines"],
@@ -344,12 +369,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "raydon-ocean-va-profile",
-    imagen: "/images/VAs/Raydon.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/2OIkxzcz-pw'},
+    imagen: "/images/VAs/Raydon.webp",
+    videoUrl: "https://www.youtube.com/embed/2OIkxzcz-pw"
+  },
   {
     id: 26,
     nombre: "Rona Mae",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -358,12 +384,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "rona-mae-ocean-va-profile",
-    imagen: "/images/VAs/Rona Mae.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/eHrDpnlAeoc'},
+    imagen: "/images/VAs/Rona Mae.webp",
+    videoUrl: "https://www.youtube.com/embed/eHrDpnlAeoc"
+  },
   {
     id: 27,
     nombre: "Gizelle",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 8,
     especialización: ["Health Insurance"],
@@ -372,12 +399,13 @@ export const vasData = [
     horario: "8AM-12PM EST",
     categorías: ["Insurance VA"],
     slug: "gizelle-ocean-va-profile",
-    imagen: "/images/VAs/Gizelle.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/xkbMKgYarbk'},
+    imagen: "/images/VAs/Gizelle.webp",
+    videoUrl: "https://www.youtube.com/embed/xkbMKgYarbk"
+  },
   {
     id: 28,
     nombre: "Jasmine",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -386,12 +414,13 @@ export const vasData = [
     horario: "8AM-12PM EST",
     categorías: ["Insurance VA", "Executive VA", "Medical VA"],
     slug: "jasmine-ocean-va-profile",
-    imagen: "/images/VAs/Jasmine.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/WhdFCM1GABs'},
+    imagen: "/images/VAs/Jasmine.webp",
+    videoUrl: "https://www.youtube.com/embed/WhdFCM1GABs"
+  },
   {
     id: 29,
     nombre: "Jill",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -405,6 +434,7 @@ export const vasData = [
   {
     id: 30,
     nombre: "Pavel",
+    categoría_principal: "Marketing Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Marketing", "Graphic Design"],
@@ -413,12 +443,13 @@ export const vasData = [
     horario: "1PM-5PM MST",
     categorías: ["Insurance VA", "General VA", "Marketing", "Graphic Design"],
     slug: "pavel-ocean-va-profile",
-    imagen: "/images/VAs/Pavel.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/_reMSeE_gyY'},
+    imagen: "/images/VAs/Pavel.webp",
+    videoUrl: "https://www.youtube.com/embed/_reMSeE_gyY"
+  },
   {
     id: 31,
     nombre: "Ana",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant", "Real Estate"],
@@ -427,12 +458,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "ana-s-ocean-va-profile",
-    imagen: "/images/VAs/Ana.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/XloA9MBGtGA'},
+    imagen: "/images/VAs/Ana.webp",
+    videoUrl: "https://www.youtube.com/embed/XloA9MBGtGA"
+  },
   {
     id: 32,
     nombre: "Ana Victoria",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Commercial Line Insurance"],
@@ -441,12 +473,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "ana-victoria-ocean-va-profile",
-    imagen: "/images/VAs/Ana Victoria.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/1d4dWgjd0fE'},
+    imagen: "/images/VAs/Ana Victoria.webp",
+    videoUrl: "https://www.youtube.com/embed/1d4dWgjd0fE"
+  },
   {
     id: 33,
     nombre: "Balbina",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -455,12 +488,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Executive VA"],
     slug: "balbina-ocean-va-profile",
-    imagen: "/images/VAs/Balbina.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/sESom3C4Tjk'},
+    imagen: "/images/VAs/Balbina.webp",
+    videoUrl: "https://www.youtube.com/embed/sESom3C4Tjk"
+  },
   {
     id: 34,
     nombre: "Brandon L.",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Health", "Life Insurance"],
@@ -474,6 +508,7 @@ export const vasData = [
   {
     id: 35,
     nombre: "Carolina",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Auto", "Home Insurance"],
@@ -482,12 +517,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "carolina-ocean-va-profile",
-    imagen: "/images/VAs/Carolina.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/_3cmkdxncdg'},
+    imagen: "/images/VAs/Carolina.webp",
+    videoUrl: "https://www.youtube.com/embed/_3cmkdxncdg"
+  },
   {
     id: 36,
     nombre: "Christine",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Personal", "Commercial Lines"],
@@ -496,12 +532,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "christine-ocean-va-profile",
-    imagen: "/images/VAs/Christine.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/m0n5unGQ1Bk'},
+    imagen: "/images/VAs/Christine.webp",
+    videoUrl: "https://www.youtube.com/embed/m0n5unGQ1Bk"
+  },
   {
     id: 37,
     nombre: "Dawn",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 7,
     especialización: ["Auto", "Home Insurance"],
@@ -510,12 +547,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "dawn-ocean-va-profile",
-    imagen: "/images/VAs/Dawn.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/fMWR-UrNXAg'},
+    imagen: "/images/VAs/Dawn.webp",
+    videoUrl: "https://www.youtube.com/embed/fMWR-UrNXAg"
+  },
   {
     id: 38,
     nombre: "Dayana",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Auto", "Health Insurance"],
@@ -524,12 +562,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "dayana-ocean-va-profile",
-    imagen: "/images/VAs/Dayana.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/1xTnx_3MRPA'},
+    imagen: "/images/VAs/Dayana.webp",
+    videoUrl: "https://www.youtube.com/embed/1xTnx_3MRPA"
+  },
   {
     id: 39,
     nombre: "Ellen",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Health Insurance"],
@@ -543,6 +582,7 @@ export const vasData = [
   {
     id: 40,
     nombre: "Fernanda",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant", "Key Account Management", "Marketing"],
@@ -551,12 +591,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Graphic Design", "Marketing VA"],
     slug: "fernanda-ocean-va-profile",
-    imagen: "/images/VAs/Fernanda.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/7ngbNodl3es'},
+    imagen: "/images/VAs/Fernanda.webp",
+    videoUrl: "https://www.youtube.com/embed/7ngbNodl3es"
+  },
   {
     id: 41,
     nombre: "Gonzalo",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home", "Health Insurance"],
@@ -565,12 +606,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "gonzalo-ocean-va-profile",
-    imagen: "/images/VAs/Gonzalo.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/DYky1VhKGNQ'},
+    imagen: "/images/VAs/Gonzalo.webp",
+    videoUrl: "https://www.youtube.com/embed/DYky1VhKGNQ"
+  },
   {
     id: 42,
     nombre: "Guillermo",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Auto", "Home", "Renters", "Condo", "Umbrella", "Earthquake", "Watercraft"],
@@ -579,12 +621,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "guillermo-ocean-va-profile",
-    imagen: "/images/VAs/Guillermo.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/sLtVFyK2b7s'},
+    imagen: "/images/VAs/Guillermo.webp",
+    videoUrl: "https://www.youtube.com/embed/sLtVFyK2b7s"
+  },
   {
     id: 43,
     nombre: "Israel",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Health", "Life Insurance"],
@@ -593,12 +636,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "israel-ocean-va-profile",
-    imagen: "/images/VAs/Israel.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/aSLhEc15mN4'},
+    imagen: "/images/VAs/Israel.webp",
+    videoUrl: "https://www.youtube.com/embed/aSLhEc15mN4"
+  },
   {
     id: 44,
     nombre: "Janice",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -607,12 +651,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Real Estate", "Executive VA"],
     slug: "janice-ocean-va-profile",
-    imagen: "/images/VAs/Janice.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/P8gcQHNJwsk'},
+    imagen: "/images/VAs/Janice.webp",
+    videoUrl: "https://www.youtube.com/embed/P8gcQHNJwsk"
+  },
   {
     id: 45,
     nombre: "Kevin",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Trained Insurance Professional"],
@@ -621,12 +666,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Graphic Design", "Marketing VA"],
     slug: "kevin-ocean-va-profile",
-    imagen: "/images/VAs/Kevin.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/MnlRVthsUYE'},
+    imagen: "/images/VAs/Kevin.webp",
+    videoUrl: "https://www.youtube.com/embed/MnlRVthsUYE"
+  },
   {
     id: 46,
     nombre: "Lois",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal Lines Insurance"],
@@ -635,12 +681,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA", "Marketing VA"],
     slug: "lois-ocean-va-profile",
-    imagen: "/images/VAs/Lois.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/HSCzM1jVsaE'},
+    imagen: "/images/VAs/Lois.webp",
+    videoUrl: "https://www.youtube.com/embed/HSCzM1jVsaE"
+  },
   {
     id: 47,
     nombre: "Maria D.",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Personal Lines", "Commercial Lines"],
@@ -654,6 +701,7 @@ export const vasData = [
   {
     id: 48,
     nombre: "Maria",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Auto", "Home Insurance"],
@@ -667,6 +715,7 @@ export const vasData = [
   {
     id: 49,
     nombre: "Melissa",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Auto", "Home Insurance"],
@@ -675,12 +724,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "melissa-ocean-va-profile",
-    imagen: "/images/VAs/Melissa.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/6dB2M8wAkjE'},
+    imagen: "/images/VAs/Melissa.webp",
+    videoUrl: "https://www.youtube.com/embed/6dB2M8wAkjE"
+  },
   {
     id: 50,
     nombre: "Patricia",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["U.S. Personal", "Commercial Insurance"],
@@ -694,6 +744,7 @@ export const vasData = [
   {
     id: 51,
     nombre: "Rafael",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal", "Healthcare Insurance"],
@@ -702,12 +753,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "rafael-ocean-va-profile",
-    imagen: "/images/VAs/Rafael.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/S19B0sRiohI'},
+    imagen: "/images/VAs/Rafael.webp",
+    videoUrl: "https://www.youtube.com/embed/S19B0sRiohI"
+  },
   {
     id: 52,
     nombre: "Rainier",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 7,
     especialización: ["Personal", "Commercial Insurance"],
@@ -716,12 +768,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "rainier-ocean-va-profile",
-    imagen: "/images/VAs/Rainier.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/Gl_Rijv44Ec'},
+    imagen: "/images/VAs/Rainier.webp",
+    videoUrl: "https://www.youtube.com/embed/Gl_Rijv44Ec"
+  },
   {
     id: 53,
     nombre: "Rejean",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Commercial", "Auto Insurance"],
@@ -735,6 +788,7 @@ export const vasData = [
   {
     id: 54,
     nombre: "Rochelle",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Personal", "Commercial Insurance"],
@@ -743,12 +797,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "rochelle-ocean-va-profile",
-    imagen: "/images/VAs/Rochelle.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/aCJyNu79nto'},
+    imagen: "/images/VAs/Rochelle.webp",
+    videoUrl: "https://www.youtube.com/embed/aCJyNu79nto"
+  },
   {
     id: 55,
     nombre: "Sandra",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -757,12 +812,13 @@ export const vasData = [
     horario: "",
     categorías: ["Insurance VA"],
     slug: "sandra-ocean-va-profile",
-    imagen: "/images/VAs/Sandra.webp"
-  ,
-    videoUrl: 'https://www.youtube.com/embed/xrNMiTNBkcg'},
+    imagen: "/images/VAs/Sandra.webp",
+    videoUrl: "https://www.youtube.com/embed/xrNMiTNBkcg"
+  },
   {
     id: 56,
     nombre: "Ximena G.",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Auto Insurance"],
@@ -776,6 +832,7 @@ export const vasData = [
   {
     id: 57,
     nombre: "Tricia",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home Insurance", "Auto Insurance"],
@@ -788,7 +845,8 @@ export const vasData = [
   },
   {
     id: 58,
-    nombre: "Yojaira",
+    nombre: "Anahi",
+    categoría_principal: "Insurance Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Homeowners Insurance"],
@@ -796,7 +854,65 @@ export const vasData = [
     disponibilidad: "Full Time",
     horario: "",
     categorías: ["Insurance VA"],
-    slug: "yojaira-ocean-va-profile",
-    imagen: "/images/VAs/Yojaira.webp"
+    slug: "anahi-ocean-va-profile",
+    imagen: "/images/VAs/Anahi.webp"
+  },
+  {
+    id: 59,
+    nombre: "Yvette",
+    categoría_principal: "Mortgage Specialist",
+    idiomas: "English",
+    años_experiencia: 12,
+    especialización: ["Loan Processing", "Mortgage Processing", "Compliance Review"],
+    nivel_inglés: "Proficient",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Mortgage Specialist"],
+    slug: "yvette-ocean-va-profile",
+    imagen: "/images/VAs/Yvette.webp",
+    videoUrl: "https://www.youtube.com/embed/oiZlHPfAjbg"
+  },
+  {
+    id: 60,
+    nombre: "Grace",
+    categoría_principal: "Insurance Virtual Assistant",
+    idiomas: "English",
+    años_experiencia: 3,
+    especialización: ["Home Insurance", "Auto Insurance", "Renters Insurance"],
+    nivel_inglés: "Advanced",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Insurance VA"],
+    slug: "grace-carmel-ocean-va-profile",
+    imagen: "/images/VAs/Grace.webp",
+    videoUrl: "https://www.youtube.com/embed/J08tAud6nTQ"
+  },
+  {
+    id: 61,
+    nombre: "AC",
+    categoría_principal: "Mortgage Specialist",
+    idiomas: "English",
+    años_experiencia: 3,
+    especialización: ["Mortgage Operations", "Loan Underwriting", "Compliance"],
+    nivel_inglés: "Fluent",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Mortgage VA"],
+    slug: "ac-ocean-va-profile",
+    imagen: "/images/VAs/AC.webp"
+  },
+  {
+    id: 62,
+    nombre: "Mina",
+    categoría_principal: "Insurance Virtual Assistant",
+    idiomas: "English",
+    años_experiencia: 3,
+    especialización: ["Commercial Insurance", "General Liability", "Motor Truck Cargo"],
+    nivel_inglés: "Intermediate",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Insurance VA"],
+    slug: "mina-ocean-va-profile",
+    imagen: "/images/VAs/Mina.webp"
   }
 ];

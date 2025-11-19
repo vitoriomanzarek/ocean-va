@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Auto",
+    "slug": "auto"
+  },
+  {
+    "name": "Auto Insurance",
+    "slug": "auto-insurance"
+  },
+  {
+    "name": "Commercial",
+    "slug": "commercial"
+  },
+  {
+    "name": "Commercial Insurance",
+    "slug": "commercial-insurance"
+  },
+  {
+    "name": "Commercial Line Insurance",
+    "slug": "commercial-line-insurance"
+  },
+  {
+    "name": "Commercial Lines",
+    "slug": "commercial-lines"
+  },
+  {
+    "name": "Commercial Lines Insurance",
+    "slug": "commercial-lines-insurance"
+  },
+  {
+    "name": "Compliance",
+    "slug": "compliance"
+  },
+  {
+    "name": "Compliance Review",
+    "slug": "compliance-review"
+  },
+  {
+    "name": "Condo",
+    "slug": "condo"
+  },
+  {
+    "name": "Earthquake",
+    "slug": "earthquake"
+  },
+  {
+    "name": "Executive Assistant",
+    "slug": "executive-assistant"
+  },
+  {
+    "name": "General Liability",
+    "slug": "general-liability"
+  },
+  {
+    "name": "Graphic Design",
+    "slug": "graphic-design"
+  },
+  {
+    "name": "Health",
+    "slug": "health"
+  },
+  {
+    "name": "Health Insurance",
+    "slug": "health-insurance"
+  },
+  {
+    "name": "Healthcare Insurance",
+    "slug": "healthcare-insurance"
+  },
+  {
+    "name": "Home",
+    "slug": "home"
+  },
+  {
+    "name": "Home Insurance",
+    "slug": "home-insurance"
+  },
+  {
+    "name": "Homeowners Insurance",
+    "slug": "homeowners-insurance"
+  },
+  {
+    "name": "Key Account Management",
+    "slug": "key-account-management"
+  },
+  {
+    "name": "Life",
+    "slug": "life"
+  },
+  {
+    "name": "Life Insurance",
+    "slug": "life-insurance"
+  },
+  {
+    "name": "Loan Processing",
+    "slug": "loan-processing"
+  },
+  {
+    "name": "Loan Underwriting",
+    "slug": "loan-underwriting"
+  },
+  {
+    "name": "Marketing",
+    "slug": "marketing"
+  },
+  {
+    "name": "Medical Admin (HIPAA Compliant)",
+    "slug": "medical-admin-hipaa-compliant"
+  },
+  {
+    "name": "Mortgage Operations",
+    "slug": "mortgage-operations"
+  },
+  {
+    "name": "Mortgage Processing",
+    "slug": "mortgage-processing"
+  },
+  {
+    "name": "Motor Truck Cargo",
+    "slug": "motor-truck-cargo"
+  },
+  {
+    "name": "Personal",
+    "slug": "personal"
+  },
+  {
+    "name": "Personal Lines",
+    "slug": "personal-lines"
+  },
+  {
+    "name": "Personal Lines Insurance",
+    "slug": "personal-lines-insurance"
+  },
+  {
+    "name": "Property Lines",
+    "slug": "property-lines"
+  },
+  {
+    "name": "Real Estate",
+    "slug": "real-estate"
+  },
+  {
+    "name": "Renters",
+    "slug": "renters"
+  },
+  {
+    "name": "Renters Insurance",
+    "slug": "renters-insurance"
+  },
+  {
+    "name": "Trained Insurance Professional",
+    "slug": "trained-insurance-professional"
+  },
+  {
+    "name": "U.S. Commercial Trucking Insurance",
+    "slug": "us-commercial-trucking-insurance"
+  },
+  {
+    "name": "U.S. Personal",
+    "slug": "us-personal"
+  },
+  {
+    "name": "Umbrella",
+    "slug": "umbrella"
+  },
+  {
+    "name": "Watercraft",
+    "slug": "watercraft"
+  }
+]

@@ -1,0 +1,119 @@
+/**
+ * Update Video URLs to Webflow for VAs that have them
+ * Run with: node scripts/updateVideoUrlsToWebflow.js
+ */
+
+import dotenv from 'dotenv';
+import WebflowApiClient from '../src/webflow/webflowApiClient.js';
+import { vasData } from '../src/data/vasData.js';
+import fs from 'fs';
+
+dotenv.config();
+
+const token = process.env.WEBFLOW_API_TOKEN;
+if (!token) {
+  console.error('❌ WEBFLOW_API_TOKEN not found in .env');
+  process.exit(1);
+}
+
+const client = new WebflowApiClient(token);
+
+async function main() {
+  try {
+    console.log('🎬 Updating Video URLs to Webflow...\n');
+
+    // Get sites and collection ID
+    const sitesResponse = await client.getSites();
+    const site = sitesResponse.sites[0];
+
+    if (!site) {
+      console.error('❌ No sites found');
+      process.exit(1);
+    }
+
+    const collectionsResponse = await client.getCollections(site.id);
+    const vaCollection = collectionsResponse.collections.find(
+      (col) => col.slug === 'virtual-assistants'
+    );
+
+    if (!vaCollection) {
+      console.error('❌ Virtual Assistants collection not found');
+      process.exit(1);
+    }
+
+    console.log(`📍 Site: ${site.displayName || site.name}`);
+    console.log(`📍 Collection ID: ${vaCollection.id}\n`);
+
+    // Read the webflow export file
+    const webflowExport = JSON.parse(fs.readFileSync('webflow-vas-export.json', 'utf-8'));
+
+    // Filter VAs with video URLs
+    const vasWithVideos = vasData.filter((va) => va.videoUrl && va.videoUrl.trim() !== '');
+    const vasWithoutVideos = vasData.filter((va) => !va.videoUrl || va.videoUrl.trim() === '');
+
+    console.log(`📊 VAs to update: ${vasWithVideos.length}`);
+    console.log(`⏭️  VAs without videos (will skip): ${vasWithoutVideos.length}\n`);
+
+    let successCount = 0;
+    let failCount = 0;
+    let skippedCount = 0;
+
+    for (const va of vasWithVideos) {
+      // Find corresponding Webflow VA
+      const webflowVA = webflowExport.vas.find((wva) => wva.fieldData.name === va.nombre);
+
+      if (!webflowVA) {
+        console.log(`⚠️  ${va.nombre} not found in Webflow (skipping)`);
+        skippedCount++;
+        continue;
+      }
+
+      console.log(`📤 Updating ${va.nombre}...`);
+
+      try {
+        // Clean video URL - remove query parameters that might cause validation issues
+        let cleanVideoUrl = va.videoUrl;
+        if (cleanVideoUrl && cleanVideoUrl.includes('?')) {
+          cleanVideoUrl = cleanVideoUrl.split('?')[0];
+        }
+        
+        // Update the new "Video" field (Link type)
+        const fieldData = {
+          'video': cleanVideoUrl,
+        };
+
+        await client.updateCollectionItem(vaCollection.id, webflowVA.id, fieldData, {
+          isDraft: false, // Keep published
+        });
+
+        console.log(`   ✅ Updated successfully\n`);
+        successCount++;
+      } catch (error) {
+        console.error(`   ❌ Error: ${error.message}\n`);
+        failCount++;
+      }
+    }
+
+    // Summary
+    console.log('═'.repeat(80));
+    console.log('\n📋 SUMMARY:\n');
+    console.log(`  Successfully updated: ${successCount}`);
+    console.log(`  Failed: ${failCount}`);
+    console.log(`  Skipped (no video URL): ${skippedCount}`);
+    console.log(`  Total: ${successCount + failCount + skippedCount}\n`);
+
+    if (failCount === 0) {
+      console.log('✅ All video URLs updated successfully!\n');
+    } else {
+      console.log('⚠️  Some VAs failed to update. Review the errors above.\n');
+    }
+
+    console.log('═'.repeat(80));
+
+  } catch (error) {
+    console.error('❌ Error:', error.message);
+    process.exit(1);
+  }
+}
+
+main();

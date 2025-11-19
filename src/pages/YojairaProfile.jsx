@@ -1,10 +1,10 @@
 import React from 'react';
 
-const YojairaProfile = () => {
+const AnahiProfile = () => {
   const vaData = {
-    nombre: 'Yojaira',
+    nombre: 'Anahi',
     titulo: 'BILINGUAL VA | INSURANCE SUPPORT SPECIALIST',
-    resumen: 'Anahi Adame is an insurance professional with four years of experience supporting U.S. homeowners insurance agencies across 20 states. She manages endorsements, renewals, new business reviews, and policy updates while ensuring compliance and accurate documentation. Skilled in handling mortgage updates, cancellations, billing, and proof of insurance, Ana combines technical accuracy with strong coordination and adaptability across regulatory environments.',
+    resumen: 'Anahi Adame is an insurance professional with four years of experience supporting U.S. homeowners insurance agencies across 20 states. She manages endorsements, renewals, new business reviews, and policy updates while ensuring compliance and accurate documentation. Skilled in handling mortgage updates, cancellations, billing, and proof of insurance, Anahi combines technical accuracy with strong coordination and adaptability across regulatory environments.',
     
     skills: [
       'Quoting',
@@ -65,7 +65,7 @@ const YojairaProfile = () => {
 
     disc: {
       type: 'C+S',
-      description: 'Conscientiousness (C) - Detail-oriented and organized. Yojaira structures systems and maintains structured systems and delivers high-quality work. Steadiness (S) - Dependable and patient. Yojaira provides consistent support, builds strong client relationships and adaptable smooth workflows.'
+      description: 'Conscientiousness (C) - Detail-oriented and organized. Anahi structures systems and maintains structured systems and delivers high-quality work. Steadiness (S) - Dependable and patient. Anahi provides consistent support, builds strong client relationships and adaptable smooth workflows.'
     },
 
     english: {
@@ -95,8 +95,8 @@ const YojairaProfile = () => {
     años_experiencia: 4,
     especialización: ['Homeowners Insurance'],
     nivel_inglés: 'Proficient',
-    slug: 'yojaira-ocean-va-profile',
-    imagen: '/images/VAs/Yojaira.webp'
+    slug: 'anahi-ocean-va-profile',
+    imagen: '/images/VAs/Anahi.webp'
   };
 
   return (
@@ -107,4 +107,4 @@ const YojairaProfile = () => {
   );
 };
 
-export default YojairaProfile;
+export default AnahiProfile;
