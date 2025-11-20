@@ -2,7 +2,7 @@ export const vasData = [
   {
     id: 1,
     nombre: "Adrian",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Auto", "Home", "Life Insurance"],
@@ -18,7 +18,7 @@ export const vasData = [
   {
     id: 2,
     nombre: "Alejandro",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2.5,
     especialización: ["Auto", "Home", "Life", "Commercial Insurance"],
@@ -34,7 +34,7 @@ export const vasData = [
   {
     id: 3,
     nombre: "Dafne",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -50,7 +50,7 @@ export const vasData = [
   {
     id: 4,
     nombre: "Ivan",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Auto", "Health Insurance"],
@@ -66,7 +66,7 @@ export const vasData = [
   {
     id: 5,
     nombre: "Joana",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -82,7 +82,7 @@ export const vasData = [
   {
     id: 6,
     nombre: "Karen",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Home Insurance"],
@@ -98,7 +98,7 @@ export const vasData = [
   {
     id: 7,
     nombre: "Maria Paula",
-    categoría_principal: "Healthcare Virtual Assistant",
+    categoría_principal: ["Healthcare Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Medical Admin (HIPAA Compliant)"],
@@ -114,7 +114,7 @@ export const vasData = [
   {
     id: 8,
     nombre: "Moises",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["U.S. Commercial Trucking Insurance"],
@@ -130,7 +130,7 @@ export const vasData = [
   {
     id: 9,
     nombre: "Abigail",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Health Insurance"],
@@ -146,7 +146,7 @@ export const vasData = [
   {
     id: 10,
     nombre: "Antonio",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home Insurance"],
@@ -162,7 +162,7 @@ export const vasData = [
   {
     id: 11,
     nombre: "Cherry Mae",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Personal Lines Insurance"],
@@ -178,7 +178,7 @@ export const vasData = [
   {
     id: 12,
     nombre: "Emmanuel",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal", "Commercial Lines"],
@@ -194,7 +194,7 @@ export const vasData = [
   {
     id: 13,
     nombre: "Francis",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Auto", "Home", "Health", "Life Insurance"],
@@ -210,7 +210,7 @@ export const vasData = [
   {
     id: 14,
     nombre: "Geraldine",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home", "Commercial Lines Insurance"],
@@ -226,7 +226,7 @@ export const vasData = [
   {
     id: 15,
     nombre: "Jay Alvin",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["Personal", "Commercial Lines"],
@@ -242,7 +242,7 @@ export const vasData = [
   {
     id: 16,
     nombre: "Javier",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto Insurance"],
@@ -258,7 +258,7 @@ export const vasData = [
   {
     id: 17,
     nombre: "Jerome",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -274,7 +274,7 @@ export const vasData = [
   {
     id: 18,
     nombre: "Jimmy",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -290,7 +290,7 @@ export const vasData = [
   {
     id: 19,
     nombre: "Joel",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Personal", "Commercial Insurance"],
@@ -306,7 +306,7 @@ export const vasData = [
   {
     id: 20,
     nombre: "Joji Marie",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Auto", "Home", "Commercial", "Health Insurance"],
@@ -322,7 +322,7 @@ export const vasData = [
   {
     id: 21,
     nombre: "Laurice",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1.4,
     especialización: ["Home Insurance"],
@@ -338,7 +338,7 @@ export const vasData = [
   {
     id: 22,
     nombre: "Lorenz",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Auto Insurance"],
@@ -354,7 +354,7 @@ export const vasData = [
   {
     id: 23,
     nombre: "Ma. Venus",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1.5,
     especialización: ["Auto Insurance"],
@@ -370,7 +370,7 @@ export const vasData = [
   {
     id: 24,
     nombre: "Michelle",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Home", "Auto Insurance"],
@@ -386,7 +386,7 @@ export const vasData = [
   {
     id: 25,
     nombre: "Raydon",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Personal", "Property Lines"],
@@ -402,7 +402,7 @@ export const vasData = [
   {
     id: 26,
     nombre: "Rona Mae",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -418,7 +418,7 @@ export const vasData = [
   {
     id: 27,
     nombre: "Gizelle",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 8,
     especialización: ["Health Insurance"],
@@ -434,7 +434,7 @@ export const vasData = [
   {
     id: 28,
     nombre: "Jasmine",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -450,7 +450,7 @@ export const vasData = [
   {
     id: 29,
     nombre: "Jill",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -466,7 +466,7 @@ export const vasData = [
   {
     id: 30,
     nombre: "Pavel",
-    categoría_principal: "Marketing Virtual Assistant",
+    categoría_principal: ["Marketing Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Marketing", "Graphic Design"],
@@ -482,7 +482,7 @@ export const vasData = [
   {
     id: 31,
     nombre: "Ana",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant", "Real Estate"],
@@ -498,7 +498,7 @@ export const vasData = [
   {
     id: 32,
     nombre: "Ana Victoria",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Commercial Line Insurance"],
@@ -514,7 +514,7 @@ export const vasData = [
   {
     id: 33,
     nombre: "Balbina",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -530,7 +530,7 @@ export const vasData = [
   {
     id: 34,
     nombre: "Brandon L.",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Health", "Life Insurance"],
@@ -546,7 +546,7 @@ export const vasData = [
   {
     id: 35,
     nombre: "Carolina",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Auto", "Home Insurance"],
@@ -562,7 +562,7 @@ export const vasData = [
   {
     id: 36,
     nombre: "Christine",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Personal", "Commercial Lines"],
@@ -578,7 +578,7 @@ export const vasData = [
   {
     id: 37,
     nombre: "Dawn",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 7,
     especialización: ["Auto", "Home Insurance"],
@@ -594,7 +594,7 @@ export const vasData = [
   {
     id: 38,
     nombre: "Dayana",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Auto", "Health Insurance"],
@@ -610,7 +610,7 @@ export const vasData = [
   {
     id: 39,
     nombre: "Ellen",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Health Insurance"],
@@ -626,7 +626,7 @@ export const vasData = [
   {
     id: 40,
     nombre: "Fernanda",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant", "Key Account Management", "Marketing"],
@@ -642,7 +642,7 @@ export const vasData = [
   {
     id: 41,
     nombre: "Gonzalo",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Auto", "Home", "Health Insurance"],
@@ -658,7 +658,7 @@ export const vasData = [
   {
     id: 42,
     nombre: "Guillermo",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Auto", "Home", "Renters", "Condo", "Umbrella", "Earthquake", "Watercraft"],
@@ -674,7 +674,7 @@ export const vasData = [
   {
     id: 43,
     nombre: "Israel",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Health", "Life Insurance"],
@@ -690,7 +690,7 @@ export const vasData = [
   {
     id: 44,
     nombre: "Janice",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -706,7 +706,7 @@ export const vasData = [
   {
     id: 45,
     nombre: "Kevin",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Trained Insurance Professional"],
@@ -722,7 +722,7 @@ export const vasData = [
   {
     id: 46,
     nombre: "Lois",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal Lines Insurance"],
@@ -738,7 +738,7 @@ export const vasData = [
   {
     id: 47,
     nombre: "Maria D.",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Personal Lines", "Commercial Lines"],
@@ -754,7 +754,7 @@ export const vasData = [
   {
     id: 48,
     nombre: "Maria",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Auto", "Home Insurance"],
@@ -768,7 +768,7 @@ export const vasData = [
   {
     id: 49,
     nombre: "Melissa",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 1,
     especialización: ["Auto", "Home Insurance"],
@@ -784,7 +784,7 @@ export const vasData = [
   {
     id: 50,
     nombre: "Patricia",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["U.S. Personal", "Commercial Insurance"],
@@ -798,7 +798,7 @@ export const vasData = [
   {
     id: 51,
     nombre: "Rafael",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Personal", "Healthcare Insurance"],
@@ -814,7 +814,7 @@ export const vasData = [
   {
     id: 52,
     nombre: "Rainier",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 7,
     especialización: ["Personal", "Commercial Insurance"],
@@ -830,7 +830,7 @@ export const vasData = [
   {
     id: 53,
     nombre: "Rejean",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Commercial", "Auto Insurance"],
@@ -846,7 +846,7 @@ export const vasData = [
   {
     id: 54,
     nombre: "Rochelle",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Personal", "Commercial Insurance"],
@@ -862,7 +862,7 @@ export const vasData = [
   {
     id: 55,
     nombre: "Sandra",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Personal Lines Insurance"],
@@ -878,7 +878,7 @@ export const vasData = [
   {
     id: 56,
     nombre: "Ximena G.",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home", "Auto Insurance"],
@@ -894,7 +894,7 @@ export const vasData = [
   {
     id: 57,
     nombre: "Tricia",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 2,
     especialización: ["Home Insurance", "Auto Insurance"],
@@ -910,7 +910,7 @@ export const vasData = [
   {
     id: 58,
     nombre: "Anahi",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Homeowners Insurance"],
@@ -924,7 +924,7 @@ export const vasData = [
   {
     id: 59,
     nombre: "Yvette",
-    categoría_principal: "Mortgage Specialist",
+    categoría_principal: ["Mortgage Specialist"],
     idiomas: "English",
     años_experiencia: 12,
     especialización: ["Loan Processing", "Mortgage Processing", "Compliance Review"],
@@ -940,7 +940,7 @@ export const vasData = [
   {
     id: 60,
     nombre: "Grace",
-    categoría_principal: "Insurance Virtual Assistant",
+    categoría_principal: ["Insurance Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Home Insurance", "Auto Insurance", "Renters Insurance"],
@@ -957,7 +957,7 @@ export const vasData = [
   {
     id: 61,
     nombre: "Ana Gabriela",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Calendar Management", "Email Management"],
@@ -971,7 +971,7 @@ export const vasData = [
   {
     id: 62,
     nombre: "Angel",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Project Coordination", "Administrative Support"],
@@ -985,7 +985,7 @@ export const vasData = [
   {
     id: 63,
     nombre: "Branko",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Client Relations", "Administrative Operations"],
@@ -999,7 +999,7 @@ export const vasData = [
   {
     id: 64,
     nombre: "Fabiola",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Scheduling"],
@@ -1013,7 +1013,7 @@ export const vasData = [
   {
     id: 65,
     nombre: "Gael",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Process Improvement", "Administrative Support"],
@@ -1027,7 +1027,7 @@ export const vasData = [
   {
     id: 66,
     nombre: "Hugo",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Calendar Management", "Client Support"],
@@ -1041,7 +1041,7 @@ export const vasData = [
   {
     id: 67,
     nombre: "Jomer",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Executive Assistant", "Administrative Support", "Email Management"],
@@ -1055,7 +1055,7 @@ export const vasData = [
   {
     id: 68,
     nombre: "Jose Luis",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Project Management", "Administrative Operations"],
@@ -1069,7 +1069,7 @@ export const vasData = [
   {
     id: 69,
     nombre: "Marco",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Client Relations", "Scheduling"],
@@ -1083,7 +1083,7 @@ export const vasData = [
   {
     id: 70,
     nombre: "Patricio",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Administrative Support", "Process Improvement"],
@@ -1097,7 +1097,7 @@ export const vasData = [
   {
     id: 71,
     nombre: "Samantha",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Client Support"],
@@ -1111,7 +1111,7 @@ export const vasData = [
   {
     id: 72,
     nombre: "Ximena",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Administrative Operations", "Scheduling"],
@@ -1126,7 +1126,7 @@ export const vasData = [
   {
     id: 73,
     nombre: "Joan Rose",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Calendar Management", "Administrative Support"],
@@ -1140,7 +1140,7 @@ export const vasData = [
   {
     id: 74,
     nombre: "Joy",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Client Relations"],
@@ -1154,7 +1154,7 @@ export const vasData = [
   {
     id: 75,
     nombre: "Jane",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Project Coordination", "Administrative Operations"],
@@ -1168,7 +1168,7 @@ export const vasData = [
   {
     id: 76,
     nombre: "Maridel",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Scheduling", "Administrative Support"],
@@ -1182,7 +1182,7 @@ export const vasData = [
   {
     id: 77,
     nombre: "Randean",
-    categoría_principal: "Executive Virtual Assistant",
+    categoría_principal: ["Executive Virtual Assistant"],
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Process Improvement"],
