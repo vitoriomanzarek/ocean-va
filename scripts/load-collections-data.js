@@ -74,29 +74,71 @@ async function apiCall(method, endpoint, body = null) {
   }
 }
 
+// Sleep function
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 // Load items into collection
 async function loadItemsToCollection(collectionId, items, collectionName) {
   console.log(`📝 Loading ${items.length} items to ${collectionName}...`)
 
   let loaded = 0
   let failed = 0
+  let retries = 0
 
   for (const item of items) {
     try {
+      // Filter out empty or invalid items
+      if (!item || !item.name) {
+        failed++
+        continue
+      }
+
       const body = {
         fieldData: item
       }
 
       await apiCall('POST', `/collections/${collectionId}/items`, body)
       loaded++
+      retries = 0 // Reset retries on success
 
       // Show progress every 10 items
       if (loaded % 10 === 0) {
         console.log(`  ✅ ${loaded}/${items.length} loaded`)
       }
+
+      // Add delay to avoid rate limiting (100ms between requests)
+      await sleep(100)
     } catch (error) {
-      failed++
-      console.error(`  ❌ Failed to load item: ${JSON.stringify(item)}`)
+      if (error.message.includes('429')) {
+        // Rate limited - wait longer
+        console.log(`  ⏳ Rate limited, waiting 5 seconds...`)
+        await sleep(5000)
+        retries++
+        
+        // Retry the item
+        if (retries < 3) {
+          try {
+            const body = {
+              fieldData: item
+            }
+            await apiCall('POST', `/collections/${collectionId}/items`, body)
+            loaded++
+            retries = 0
+          } catch (retryError) {
+            failed++
+          }
+        } else {
+          failed++
+        }
+      } else {
+        failed++
+        // Only log first 5 errors to avoid spam
+        if (failed <= 5) {
+          console.error(`  ❌ Failed to load item: ${JSON.stringify(item).substring(0, 50)}... - ${error.message}`)
+        }
+      }
     }
   }
 

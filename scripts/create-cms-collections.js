@@ -314,7 +314,7 @@ async function addFieldToCollection(collectionId, fieldDef) {
 }
 
 // Add field to Virtual Assistants
-async function addFieldToVirtualAssistants(vaCollectionId, fieldDef) {
+async function addFieldToVirtualAssistants(vaCollectionId, fieldDef, createdCollections) {
   console.log(`  📌 Adding field to VA: ${fieldDef.name}...`)
 
   const body = {
@@ -330,7 +330,14 @@ async function addFieldToVirtualAssistants(vaCollectionId, fieldDef) {
   }
 
   if (fieldDef.type === 'multiReference' && fieldDef.collectionSlug) {
-    body.collectionSlug = fieldDef.collectionSlug
+    // Get the actual collection ID from createdCollections
+    const collectionId = createdCollections[fieldDef.collectionSlug]
+    if (collectionId) {
+      body.collectionId = collectionId
+    } else {
+      console.error(`  ❌ Collection ID not found for ${fieldDef.collectionSlug}`)
+      throw new Error(`Collection ID not found for ${fieldDef.collectionSlug}`)
+    }
   }
 
   try {
@@ -382,7 +389,7 @@ async function main() {
     console.log('\n🔨 PHASE 2: Adding fields to Virtual Assistants...\n')
     for (const fieldDef of vaFields) {
       try {
-        await addFieldToVirtualAssistants(vaCollection.id, fieldDef)
+        await addFieldToVirtualAssistants(vaCollection.id, fieldDef, createdCollections)
       } catch (error) {
         console.error(`Failed to add field ${fieldDef.name}`)
       }
