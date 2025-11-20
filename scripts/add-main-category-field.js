@@ -86,8 +86,10 @@ async function main() {
     const fieldBody = {
       displayName: 'Main Categories',
       slug: 'main-categories',
-      type: 'multiReference',
-      collectionId: mainCategoryCollectionId
+      type: 'MultiReference',
+      metadata: {
+        collectionId: mainCategoryCollectionId
+      }
     }
 
     try {
