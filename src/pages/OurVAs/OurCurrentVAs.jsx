@@ -80,6 +80,18 @@ export default function OurCurrentVAs() {
               >
                 Executive / Admin VAs
               </Link>
+              <Link 
+                to="/ovas-mortgage-processing-assistant"
+                className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+              >
+                Mortgage Processing Assistant
+              </Link>
+              <Link 
+                to="/ovas-medical-assistant"
+                className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+              >
+                Medical Assistant Specialist
+              </Link>
             </div>
           </div>
         </div>
