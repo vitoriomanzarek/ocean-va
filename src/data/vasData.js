@@ -1240,6 +1240,7 @@ export const vasData = [
     id: 77,
     nombre: "Randean",
     categoría_principal: "Executive Virtual Assistant",
+    mainCategory: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Process Improvement"],
@@ -1249,5 +1250,20 @@ export const vasData = [
     categorías: ["Executive VA"],
     slug: "randean-ocean-va-profile",
     imagen: "/images/VAs/Randean.webp"
+  },
+  {
+    id: 78,
+    nombre: "AC",
+    categoría_principal: "Mortgage Specialist",
+    mainCategory: "Mortgage Specialist",
+    idiomas: "English",
+    años_experiencia: 3,
+    especialización: ["Mortgage Operations", "Loan Underwriting", "Compliance"],
+    nivel_inglés: "Proficient",
+    disponibilidad: "Full Time",
+    horario: "",
+    categorías: ["Mortgage Specialist"],
+    slug: "ac-ocean-va-profile",
+    imagen: "/images/VAs/AC.webp"
   }
 ];
