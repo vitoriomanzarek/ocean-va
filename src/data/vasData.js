@@ -70,7 +70,7 @@ export const vasData = [
   {
     id: 5,
     nombre: "Joana",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: null,
     especialización: ["Executive Assistant"],
@@ -103,7 +103,7 @@ export const vasData = [
   {
     id: 7,
     nombre: "Maria Paula",
-    categoría_principal: ["Healthcare Virtual Assistant"],
+    categoría_principal: "Healthcare Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Medical Admin (HIPAA Compliant)"],
@@ -493,7 +493,7 @@ export const vasData = [
   {
     id: 30,
     nombre: "Pavel",
-    categoría_principal: ["Marketing Virtual Assistant"],
+    categoría_principal: "Marketing Virtual Assistant",
     idiomas: "English",
     años_experiencia: 6,
     especialización: ["Marketing", "Graphic Design"],
@@ -979,7 +979,8 @@ export const vasData = [
   {
     id: 59,
     nombre: "Yvette",
-    categoría_principal: ["Mortgage Specialist"],
+    categoría_principal: "Mortgage Specialist",
+    mainCategory: "Mortgage Specialist",
     idiomas: "English",
     años_experiencia: 12,
     especialización: ["Loan Processing", "Mortgage Processing", "Compliance Review"],
@@ -1013,7 +1014,7 @@ export const vasData = [
   {
     id: 61,
     nombre: "Ana Gabriela",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Calendar Management", "Email Management"],
@@ -1027,7 +1028,7 @@ export const vasData = [
   {
     id: 62,
     nombre: "Angel",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Project Coordination", "Administrative Support"],
@@ -1041,7 +1042,7 @@ export const vasData = [
   {
     id: 63,
     nombre: "Branko",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Client Relations", "Administrative Operations"],
@@ -1055,7 +1056,7 @@ export const vasData = [
   {
     id: 64,
     nombre: "Fabiola",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Scheduling"],
@@ -1069,7 +1070,7 @@ export const vasData = [
   {
     id: 65,
     nombre: "Gael",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Process Improvement", "Administrative Support"],
@@ -1083,7 +1084,7 @@ export const vasData = [
   {
     id: 66,
     nombre: "Hugo",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Calendar Management", "Client Support"],
@@ -1097,7 +1098,7 @@ export const vasData = [
   {
     id: 67,
     nombre: "Jomer",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 2,
     especialización: ["Executive Assistant", "Administrative Support", "Email Management"],
@@ -1111,7 +1112,7 @@ export const vasData = [
   {
     id: 68,
     nombre: "Jose Luis",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Project Management", "Administrative Operations"],
@@ -1125,7 +1126,7 @@ export const vasData = [
   {
     id: 69,
     nombre: "Marco",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Client Relations", "Scheduling"],
@@ -1139,7 +1140,7 @@ export const vasData = [
   {
     id: 70,
     nombre: "Patricio",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Administrative Support", "Process Improvement"],
@@ -1153,7 +1154,7 @@ export const vasData = [
   {
     id: 71,
     nombre: "Samantha",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Client Support"],
@@ -1167,7 +1168,7 @@ export const vasData = [
   {
     id: 72,
     nombre: "Ximena",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "Bilingual (EN-ES)",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Administrative Operations", "Scheduling"],
@@ -1182,7 +1183,7 @@ export const vasData = [
   {
     id: 73,
     nombre: "Joan Rose",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Calendar Management", "Administrative Support"],
@@ -1196,7 +1197,7 @@ export const vasData = [
   {
     id: 74,
     nombre: "Joy",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Client Relations"],
@@ -1210,7 +1211,7 @@ export const vasData = [
   {
     id: 75,
     nombre: "Jane",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 5,
     especialización: ["Executive Assistant", "Project Coordination", "Administrative Operations"],
@@ -1224,7 +1225,7 @@ export const vasData = [
   {
     id: 76,
     nombre: "Maridel",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 4,
     especialización: ["Executive Assistant", "Scheduling", "Administrative Support"],
@@ -1238,7 +1239,7 @@ export const vasData = [
   {
     id: 77,
     nombre: "Randean",
-    categoría_principal: ["Executive Virtual Assistant"],
+    categoría_principal: "Executive Virtual Assistant",
     idiomas: "English",
     años_experiencia: 3,
     especialización: ["Executive Assistant", "Email Management", "Process Improvement"],
