@@ -1,68 +1,79 @@
 Name,Slug
 Administrative Operations,administrative-operations
 Administrative Support,administrative-support
-Auto,auto
 Auto & Home Insurance,auto-&-home-insurance
 Auto Insurance,auto-insurance
+Auto, Home & Umbrella Insurance,auto,-home-&-umbrella-insurance
+Auto, Home, Umbrella, Property, Commercial Building & Liability,auto,-home,-umbrella,-property,-commercial-building-&-liability
+Auto, Umbrella, Secondary Homes, General Liability,auto,-umbrella,-secondary-homes,-general-liability
+Auto,auto
 Ca,ca
 Calendar Management,calendar-management
 Casualty,casualty
 Client Relations,client-relations
 Client Support,client-support
-Commercial,commercial
 Commercial & General Liability Insurance,commercial-&-general-liability-insurance
 Commercial Building & Liability,commercial-building-&-liability
 Commercial Home,commercial-home
 Commercial Insurance,commercial-insurance
 Commercial Line Insurance,commercial-line-insurance
-Commercial Lines,commercial-lines
 Commercial Lines Insurance,commercial-lines-insurance
-Compliance,compliance
+Commercial Lines,commercial-lines
+Commercial,commercial
 Compliance Review,compliance-review
+Compliance,compliance
 Condo,condo
 Earthquake,earthquake
 Email Management,email-management
 Executive Assistant,executive-assistant
-General Liability,general-liability
 General Liability & Commercial Insurance,general-liability-&-commercial-insurance
+General Liability,general-liability
 Georgia,georgia
 Graphic Design,graphic-design
-Health,health
 Health Insurance,health-insurance
+Health,health
 Healthcare Insurance,healthcare-insurance
-Home,home
 Home & Auto Insurance,home-&-auto-insurance
 Home & Umbrella Insurance,home-&-umbrella-insurance
 Home Insurance,home-insurance
-Homeowners,homeowners
+Home,home
 Homeowners Insurance,homeowners-insurance
+Homeowners, Auto Insurance,homeowners,-auto-insurance
+Homeowners,homeowners
 Iowa,iowa
 Key Account Management,key-account-management
-Life,life
 Life & Health Insurance,life-&-health-insurance
 Life Insurance,life-insurance
+Life,life
 Loan Processing,loan-processing
 Loan Underwriting,loan-underwriting
 Ma,ma
 Marketing,marketing
+Medical Admin (HIPAA Compliant),medical-admin-hipaa-compliant
 Medical Admin Hipaa Compliant,medical-admin-hipaa-compliant
 Mortgage Operations,mortgage-operations
 Mortgage Processing,mortgage-processing
 Motor Truck Cargo,motor-truck-cargo
 Motorcycle Insurance,motorcycle-insurance
-Personal,personal
-Personal Lines,personal-lines
 Personal Lines Insurance,personal-lines-insurance
+Personal Lines, Auto & Home Insurance,personal-lines,-auto-&-home-insurance
+Personal Lines, Auto Insurance,personal-lines,-auto-insurance
+Personal Lines, Home & Auto Insurance,personal-lines,-home-&-auto-insurance
+Personal Lines,personal-lines
+Personal, Commercial & Health Insurance,personal,-commercial-&-health-insurance
+Personal, Commercial Home, Motorcycle Insurance,personal,-commercial-home,-motorcycle-insurance
+Personal,personal
 Process Improvement,process-improvement
 Project Coordination,project-coordination
 Project Management,project-management
-Property,property
-Property & Casualty,property-&-casualty
 Property & Casualty Insurance,property-&-casualty-insurance
+Property & Casualty,property-&-casualty
 Property Lines,property-lines
+Property, Casualty, Life & Health Insurance,property,-casualty,-life-&-health-insurance
+Property,property
 Real Estate,real-estate
-Renters,renters
 Renters Insurance,renters-insurance
+Renters,renters
 Scheduling,scheduling
 Secondary Homes,secondary-homes
 State License   Alabama,state-license---alabama
@@ -78,7 +89,23 @@ State License   Nebraska,state-license---nebraska
 State License   Oklahoma,state-license---oklahoma
 State License   Texas,state-license---texas
 State License   Utah,state-license---utah
+State License - Alabama, Georgia,state-license---alabama,-georgia
+State License - All States,state-license---all-states
+State License - California,state-license---california
+State License - CT, CA, MA,state-license---ct,-ca,-ma
+State License - Florida,state-license---florida
+State License - Georgia,state-license---georgia
+State License - Illinois,state-license---illinois
+State License - Michigan,state-license---michigan
+State License - Multiple States,state-license---multiple-states
+State License - Nebraska, Iowa,state-license---nebraska,-iowa
+State License - Nebraska,state-license---nebraska
+State License - Oklahoma,state-license---oklahoma
+State License - Texas,state-license---texas
+State License - Utah,state-license---utah
 Trained Insurance Professional,trained-insurance-professional
+U.S. Commercial Trucking Insurance,u.s.-commercial-trucking-insurance
+U.S. Personal,u.s.-personal
 Umbrella,umbrella
 Us Commercial Trucking Insurance,us-commercial-trucking-insurance
 Us Personal,us-personal
