@@ -7,8 +7,8 @@ export default function JanetProfile() {
     image: '/images/VAs/Janet.webp',
     summary: 'Janet Balderas brings close to two years of experience in the banking sector as a Credit Underwriting Specialist, where she evaluated credit cards, personal loans, salary loans, and mortgage applications. She reviewed and verified borrower documentation, assessed creditworthiness and financial capacity, analyzed income and collateral, detected fraud indicators, and ensured lending decisions aligned with internal risk and compliance policies. Her responsibilities also included coordinating with brokers, validating requirements, tracking loan documentation, and maintaining accuracy throughout the lending process.',
     tagline: 'Janet brings a strong blend of underwriting accuracy, documentation validation, and end-to-end lending support. She evaluates borrowers and manages loan files with precision in high-volume banking environments. Her coordination with brokers and underwriters ensures smooth, compliant workflows across the lending process.',
-    videoUrl: '',
-    videoThumbnail: '',
+    videoUrl: 'https://www.youtube.com/embed/ifyF-owgkDw',
+    videoThumbnail: 'https://img.youtube.com/vi/ifyF-owgkDw/maxresdefault.jpg',
     thumbnail: '2 YEARS OF Credit Underwriting Specialist LOAN & MORTGAGE PROCESSING, FRAUD DETECTION',
     
     skills: [
