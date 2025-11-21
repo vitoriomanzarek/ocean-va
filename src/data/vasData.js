@@ -3005,5 +3005,32 @@ export const vasData = [
     "profileSlug": "and mortgage applications. She reviewed and verified borrower documentation",
     "itemId": "jb7k2m9nq4r8s5t1u2v3w4x5",
     "collectionId": "691b82a97542c69f3f77fa76"
+  },
+  {
+    "id": 108,
+    "nombre": "Albert John D. Carpio",
+    "slug": "albert-carpio",
+    "categoría_principal": "Insurance Specialist",
+    "categorías": [
+      "general liability"
+    ],
+    "idiomas": "English",
+    "años_experiencia": 3,
+    "especialización": [
+      "condo"
+    ],
+    "nivel_inglés": "farm",
+    "disponibilidad": "Full Time",
+    "horario": "",
+    "imagen": "COIs",
+    "videoUrl": "auto",
+    "youtubeUrl": "dwelling fire",
+    "summary": "Albert has three years of experience supporting U.S. insurance agencies in both personal and commercial lines. His work covers quoting",
+    "tagline": "renewals",
+    "thumbnail": "endorsements",
+    "discResult": "mobile homes",
+    "profileSlug": "and servicing for home",
+    "itemId": "ac1k3m7nq9r2s8t4u5v6w7x8",
+    "collectionId": "691b82a97542c69f3f77fa76"
   }
 ];
