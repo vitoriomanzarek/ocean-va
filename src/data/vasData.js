@@ -2978,5 +2978,32 @@ export const vasData = [
     "profileSlug": "/tyneisha-ocean-va-profile",
     "itemId": "385pd49m7dfvmdo7kom5jce8",
     "collectionId": "691b82a97542c69f3f77fa76"
+  },
+  {
+    "id": 107,
+    "nombre": "Janet Balderas",
+    "slug": "janet-balderas",
+    "categoría_principal": "Mortgage Specialist",
+    "categorías": [
+      "and maintaining accuracy throughout the lending process."
+    ],
+    "idiomas": "English",
+    "años_experiencia": 2,
+    "especialización": [
+      "analyzed income and collateral"
+    ],
+    "nivel_inglés": "validating requirements",
+    "disponibilidad": "Full Time",
+    "horario": "",
+    "imagen": "salary loans",
+    "videoUrl": "assessed creditworthiness and financial capacity",
+    "youtubeUrl": "tracking loan documentation",
+    "summary": "Janet Balderas brings close to two years of experience in the banking sector as a Credit Underwriting Specialist",
+    "tagline": "where she evaluated credit cards",
+    "thumbnail": "personal loans",
+    "discResult": "and ensured lending decisions aligned with internal risk and compliance policies. Her responsibilities also included coordinating with brokers",
+    "profileSlug": "and mortgage applications. She reviewed and verified borrower documentation",
+    "itemId": "jb7k2m9nq4r8s5t1u2v3w4x5",
+    "collectionId": "691b82a97542c69f3f77fa76"
   }
 ];

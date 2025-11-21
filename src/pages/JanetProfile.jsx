@@ -2,27 +2,28 @@ import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 export default function JanetProfile() {
   const janetData = {
-    name: 'JANET',
-    title: 'ENGLISH-SPEAKING VA | CREDIT & INSURANCE SUPPORT',
+    name: 'JANET BALDERAS',
+    title: 'ENGLISH-SPEAKING VA | LOAN & MORTGAGE PROCESSING',
     image: '/images/VAs/Janet.webp',
-    summary: 'Janet has nearly two years of experience in the banking sector as a Credit Underwriting Specialist and Virtual Assistant for compliance. She is skilled in reviewing and managing loan applications, coordinating with underwriters, and handling back-office insurance accounts. She brings strong expertise in data insurance accounts, handling endorsements, COIs, renewals, and coverage verification through AMS360.',
-    tagline: 'Janet\'s banking and underwriting experience provides a strong foundation in analytical, compliant, and detail-oriented loan and insurance processing. Her versatility makes her a dependable asset for any team.',
-    videoUrl: 'https://www.youtube.com/embed/ifyF-owgkDw',
-    videoThumbnail: 'https://img.youtube.com/vi/ifyF-owgkDw/maxresdefault.jpg',
-    thumbnail: 'Credit underwriting, Insurance support, Compliance expertise',
+    summary: 'Janet Balderas brings close to two years of experience in the banking sector as a Credit Underwriting Specialist, where she evaluated credit cards, personal loans, salary loans, and mortgage applications. She reviewed and verified borrower documentation, assessed creditworthiness and financial capacity, analyzed income and collateral, detected fraud indicators, and ensured lending decisions aligned with internal risk and compliance policies. Her responsibilities also included coordinating with brokers, validating requirements, tracking loan documentation, and maintaining accuracy throughout the lending process.',
+    tagline: 'Janet brings a strong blend of underwriting accuracy, documentation validation, and end-to-end lending support. She evaluates borrowers and manages loan files with precision in high-volume banking environments. Her coordination with brokers and underwriters ensures smooth, compliant workflows across the lending process.',
+    videoUrl: '',
+    videoThumbnail: '',
+    thumbnail: '2 YEARS OF Credit Underwriting Specialist LOAN & MORTGAGE PROCESSING, FRAUD DETECTION',
     
     skills: [
       'Credit Underwriting',
-      'Compliance',
-      'Auto Insurance',
-      'COIs',
-      'Loan Review',
-      'Fraud Verification',
-      'Endorsements',
-      'Renewals',
-      'Mortgage Review',
+      'Loan Application',
+      'Mortgage Processing',
       'Document Verification',
-      'Home Insurance'
+      'Financial Capacity Analysis',
+      'Collateral Assessment',
+      'Fraud Detection',
+      'Credit Card Underwriting',
+      'Quality Control',
+      'Lending Compliance',
+      'Workflow Tracking',
+      'Record Management'
     ],
     
     tools: [
@@ -35,7 +36,8 @@ export default function JanetProfile() {
       'ACSR',
       'Nuance',
       'Slack',
-      'Microsoft Teams'
+      'Microsoft Teams',
+      'G Suite'
     ],
     
     equipment: [
@@ -84,18 +86,18 @@ export default function JanetProfile() {
       }
     ],
     
-    discResult: 'S',
-    discResultDescription: 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
+    discResult: '',
+    discResultDescription: '',
     
-    englishScore: '8.4/9',
-    englishDescription: 'Demonstrates excellent fluency and clear pronunciation with natural pacing and tone. Uses advanced vocabulary and complex grammar structures with precision to express ideas confidently and effectively.',
+    englishScore: 'Advanced',
+    englishDescription: 'Advanced English proficiency with clear communication, strong vocabulary, and professional fluency.',
     
     cefr: [
       { label: 'A1', active: false, description: 'Can understand and use familiar everyday expressions and basic questions about personal details.' },
       { label: 'A2', active: false, description: 'Can have very short social exchanges and give information on familiar and routine matters when traveling.' },
       { label: 'B1', active: false, description: 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages.' },
-      { label: 'B2', active: false, description: 'Can communicate confidently in a variety of academic and professional environments.' },
-      { label: 'C1', active: true, description: 'Can use the language flexibly and effectively for social, academic and professional purposes.' },
+      { label: 'B2', active: true, description: 'Can communicate confidently in a variety of academic and professional environments.' },
+      { label: 'C1', active: false, description: 'Can use the language flexibly and effectively for social, academic and professional purposes.' },
       { label: 'C2', active: false, description: 'Can understand with ease virtually everything heard or read and can summarize information from different sources.' }
     ],
     
