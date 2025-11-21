@@ -86,11 +86,11 @@ export default function JanetProfile() {
       }
     ],
     
-    discResult: '',
-    discResultDescription: '',
+    discResult: 'S',
+    discResultDescription: 'Steadiness (S) - Dependable and patient, S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
     
-    englishScore: 'Advanced',
-    englishDescription: 'Advanced English proficiency with clear communication, strong vocabulary, and professional fluency.',
+    englishScore: '8.4/9',
+    englishDescription: 'Demonstrates excellent fluency and clear pronunciation with natural pacing and tone. Uses advanced vocabulary and complex grammar structures with precision to express ideas confidently and effectively.',
     
     cefr: [
       { label: 'A1', active: false, description: 'Can understand and use familiar everyday expressions and basic questions about personal details.' },
