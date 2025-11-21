@@ -3032,5 +3032,32 @@ export const vasData = [
     "profileSlug": "and servicing for home",
     "itemId": "ac1k3m7nq9r2s8t4u5v6w7x8",
     "collectionId": "691b82a97542c69f3f77fa76"
+  },
+  {
+    "id": 109,
+    "nombre": "Marie Kathleen S. Moreno",
+    "slug": "kathleen-moreno",
+    "categoría_principal": "Loan Services VA",
+    "categorías": [
+      "5 YEARS OF EXPERIENCE • LOAN OPERATIONS • DOCUMENT COMPLIANCE • CLIENT COORDINATION • FUNDS RESEARCH • APPLICATION PROCESSING"
+    ],
+    "idiomas": "English",
+    "años_experiencia": 5,
+    "especialización": [
+      "account maintenance"
+    ],
+    "nivel_inglés": "Kathleen brings a detail-oriented",
+    "disponibilidad": "Full Time",
+    "horario": "",
+    "imagen": "fund investigations",
+    "videoUrl": "as well as overseeing loan documentation",
+    "youtubeUrl": "compliance-driven approach to loan servicing and financial operations. Her experience supporting U.S. banking workflows makes her a strong choice for teams seeking a reliable and structured virtual assistant.",
+    "summary": "Kathleen has over five years of experience supporting U.S. clients in the loan services division of a major bank. She handled credit card support",
+    "tagline": "loan eligibility reviews",
+    "thumbnail": "and document verification while coordinating directly with bankers and clients. Her background includes wire transfers",
+    "discResult": "and compliance tracking through the bank's internal systems.",
+    "profileSlug": "and transaction reconciliation",
+    "itemId": "mk2m5n8pq1r4s7t0u3v6w9x2",
+    "collectionId": "691b82a97542c69f3f77fa76"
   }
 ];
