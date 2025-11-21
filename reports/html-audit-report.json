@@ -1,0 +1,3623 @@
+{
+  "timestamp": "2025-11-14T04:13:13.225Z",
+  "components": [
+    {
+      "name": "01-comparison-table.html",
+      "type": "html",
+      "file": "01-comparison-table.html",
+      "analysis": {
+        "size": 7776,
+        "lines": 280,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.250Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "01-contact-hero.html",
+      "type": "html",
+      "file": "01-contact-hero.html",
+      "analysis": {
+        "size": 3044,
+        "lines": 119,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.692Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "02-client-logos-carousel.html",
+      "type": "html",
+      "file": "02-client-logos-carousel.html",
+      "analysis": {
+        "size": 5332,
+        "lines": 192,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 14,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.251Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "03-navbar-header.html",
+      "type": "html",
+      "file": "03-navbar-header.html",
+      "analysis": {
+        "size": 17735,
+        "lines": 520,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 53,
+        "lastModified": "2025-11-14T01:05:33.512Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "04-contact-cta.html",
+      "type": "html",
+      "file": "04-contact-cta.html",
+      "analysis": {
+        "size": 2799,
+        "lines": 115,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.693Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "04-hero-section.html",
+      "type": "html",
+      "file": "04-hero-section.html",
+      "analysis": {
+        "size": 1579,
+        "lines": 49,
+        "hasStyle": false,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-01T20:27:04.254Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "05-footer.html",
+      "type": "html",
+      "file": "05-footer.html",
+      "analysis": {
+        "size": 9950,
+        "lines": 284,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 32,
+        "lastModified": "2025-11-14T01:05:33.542Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "06-stats-section.html",
+      "type": "html",
+      "file": "06-stats-section.html",
+      "analysis": {
+        "size": 4301,
+        "lines": 171,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.263Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "07-pricing-section.html",
+      "type": "html",
+      "file": "07-pricing-section.html",
+      "analysis": {
+        "size": 8155,
+        "lines": 359,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 3,
+        "lastModified": "2025-11-05T01:37:39.697Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "08-timeline-section.html",
+      "type": "html",
+      "file": "08-timeline-section.html",
+      "analysis": {
+        "size": 4710,
+        "lines": 191,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.264Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "09-testimonials-section.html",
+      "type": "html",
+      "file": "09-testimonials-section.html",
+      "analysis": {
+        "size": 6552,
+        "lines": 229,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.265Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "10-faq-section.html",
+      "type": "html",
+      "file": "10-faq-section.html",
+      "analysis": {
+        "size": 10071,
+        "lines": 323,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-14T01:05:33.546Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "100-ecommerce-va-outcomes.html",
+      "type": "html",
+      "file": "100-ecommerce-va-outcomes.html",
+      "analysis": {
+        "size": 2933,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.699Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "101-ecommerce-va-cta.html",
+      "type": "html",
+      "file": "101-ecommerce-va-cta.html",
+      "analysis": {
+        "size": 2962,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.700Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "103-finance-va-hero.html",
+      "type": "html",
+      "file": "103-finance-va-hero.html",
+      "analysis": {
+        "size": 3309,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.702Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "104-finance-va-use-cases.html",
+      "type": "html",
+      "file": "104-finance-va-use-cases.html",
+      "analysis": {
+        "size": 3291,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.702Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "105-finance-va-outcomes.html",
+      "type": "html",
+      "file": "105-finance-va-outcomes.html",
+      "analysis": {
+        "size": 2918,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.702Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "106-finance-va-cta.html",
+      "type": "html",
+      "file": "106-finance-va-cta.html",
+      "analysis": {
+        "size": 2911,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.703Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "107-finance-va-faqs.html",
+      "type": "html",
+      "file": "107-finance-va-faqs.html",
+      "analysis": {
+        "size": 10029,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.704Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "108-property-management-va-hero.html",
+      "type": "html",
+      "file": "108-property-management-va-hero.html",
+      "analysis": {
+        "size": 3642,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.705Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "109-property-management-hero.html",
+      "type": "html",
+      "file": "109-property-management-hero.html",
+      "analysis": {
+        "size": 3308,
+        "lines": 150,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-10T20:48:34.644Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "109-property-management-va-use-cases.html",
+      "type": "html",
+      "file": "109-property-management-va-use-cases.html",
+      "analysis": {
+        "size": 3537,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.705Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "11-services-industries-showcase.html",
+      "type": "html",
+      "file": "11-services-industries-showcase.html",
+      "analysis": {
+        "size": 13420,
+        "lines": 442,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 18,
+        "lastModified": "2025-11-10T20:48:34.646Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "110-property-management-use-cases.html",
+      "type": "html",
+      "file": "110-property-management-use-cases.html",
+      "analysis": {
+        "size": 2983,
+        "lines": 135,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T20:48:34.647Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "111-property-management-va-cta.html",
+      "type": "html",
+      "file": "111-property-management-va-cta.html",
+      "analysis": {
+        "size": 3238,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.706Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "111-property-management-why-ocean.html",
+      "type": "html",
+      "file": "111-property-management-why-ocean.html",
+      "analysis": {
+        "size": 2915,
+        "lines": 120,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T20:48:34.647Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "112-property-management-outcomes.html",
+      "type": "html",
+      "file": "112-property-management-outcomes.html",
+      "analysis": {
+        "size": 2670,
+        "lines": 128,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T20:48:34.647Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "113-medical-va-hero.html",
+      "type": "html",
+      "file": "113-medical-va-hero.html",
+      "analysis": {
+        "size": 3311,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.708Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "113-property-management-faqs.html",
+      "type": "html",
+      "file": "113-property-management-faqs.html",
+      "analysis": {
+        "size": 4866,
+        "lines": 182,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T20:48:34.648Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "114-medical-va-use-cases.html",
+      "type": "html",
+      "file": "114-medical-va-use-cases.html",
+      "analysis": {
+        "size": 3342,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.711Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "114-property-management-cta.html",
+      "type": "html",
+      "file": "114-property-management-cta.html",
+      "analysis": {
+        "size": 2285,
+        "lines": 108,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-10T20:48:34.648Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "115-medical-va-outcomes.html",
+      "type": "html",
+      "file": "115-medical-va-outcomes.html",
+      "analysis": {
+        "size": 2923,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.712Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "116-medical-va-cta.html",
+      "type": "html",
+      "file": "116-medical-va-cta.html",
+      "analysis": {
+        "size": 2927,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.713Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "118-hr-va-hero.html",
+      "type": "html",
+      "file": "118-hr-va-hero.html",
+      "analysis": {
+        "size": 3163,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.714Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "119-hr-va-use-cases.html",
+      "type": "html",
+      "file": "119-hr-va-use-cases.html",
+      "analysis": {
+        "size": 3260,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.714Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "12-va-showcase.html",
+      "type": "html",
+      "file": "12-va-showcase.html",
+      "analysis": {
+        "size": 4786,
+        "lines": 201,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 3,
+        "hasLinks": 1,
+        "lastModified": "2025-11-01T20:27:04.266Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "120-hr-va-outcomes.html",
+      "type": "html",
+      "file": "120-hr-va-outcomes.html",
+      "analysis": {
+        "size": 2831,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.716Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "121-hr-va-cta.html",
+      "type": "html",
+      "file": "121-hr-va-cta.html",
+      "analysis": {
+        "size": 2784,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.716Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "122-hr-va-faqs.html",
+      "type": "html",
+      "file": "122-hr-va-faqs.html",
+      "analysis": {
+        "size": 9522,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.717Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "123-tech-va-hero.html",
+      "type": "html",
+      "file": "123-tech-va-hero.html",
+      "analysis": {
+        "size": 3211,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.718Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "124-tech-va-use-cases.html",
+      "type": "html",
+      "file": "124-tech-va-use-cases.html",
+      "analysis": {
+        "size": 3319,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.718Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "125-tech-va-outcomes.html",
+      "type": "html",
+      "file": "125-tech-va-outcomes.html",
+      "analysis": {
+        "size": 2895,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.719Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "126-tech-va-cta.html",
+      "type": "html",
+      "file": "126-tech-va-cta.html",
+      "analysis": {
+        "size": 2841,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.723Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "127-tech-va-faqs.html",
+      "type": "html",
+      "file": "127-tech-va-faqs.html",
+      "analysis": {
+        "size": 9720,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.724Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "128-mortgage-va-hero.html",
+      "type": "html",
+      "file": "128-mortgage-va-hero.html",
+      "analysis": {
+        "size": 3339,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.725Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "129-mortgage-va-use-cases.html",
+      "type": "html",
+      "file": "129-mortgage-va-use-cases.html",
+      "analysis": {
+        "size": 3320,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.725Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "13-our-vas-page.html",
+      "type": "html",
+      "file": "13-our-vas-page.html",
+      "analysis": {
+        "size": 14377,
+        "lines": 515,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-01T20:27:04.267Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "130-mortgage-va-outcomes.html",
+      "type": "html",
+      "file": "130-mortgage-va-outcomes.html",
+      "analysis": {
+        "size": 2933,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.725Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "131-mortgage-va-cta.html",
+      "type": "html",
+      "file": "131-mortgage-va-cta.html",
+      "analysis": {
+        "size": 2944,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.726Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "132-mortgage-va-faqs.html",
+      "type": "html",
+      "file": "132-mortgage-va-faqs.html",
+      "analysis": {
+        "size": 10120,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.726Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "133-pricing-hero.html",
+      "type": "html",
+      "file": "133-pricing-hero.html",
+      "analysis": {
+        "size": 1283,
+        "lines": 62,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.727Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "14-contact-us-page.html",
+      "type": "html",
+      "file": "14-contact-us-page.html",
+      "analysis": {
+        "size": 5618,
+        "lines": 136,
+        "hasStyle": false,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 2,
+        "hasLinks": 2,
+        "lastModified": "2025-11-01T20:27:04.267Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "15-about-us-page.html",
+      "type": "html",
+      "file": "15-about-us-page.html",
+      "analysis": {
+        "size": 15556,
+        "lines": 586,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": true,
+        "hasWebflowCDN": true,
+        "hasImages": 3,
+        "hasLinks": 4,
+        "lastModified": "2025-11-01T20:27:04.269Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "150-about-us-hero.html",
+      "type": "html",
+      "file": "150-about-us-hero.html",
+      "analysis": {
+        "size": 2377,
+        "lines": 90,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.727Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "151-about-us-what-sets-apart.html",
+      "type": "html",
+      "file": "151-about-us-what-sets-apart.html",
+      "analysis": {
+        "size": 9964,
+        "lines": 355,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T20:48:34.650Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "152-about-us-story-mission.html",
+      "type": "html",
+      "file": "152-about-us-story-mission.html",
+      "analysis": {
+        "size": 4981,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.729Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "153-about-us-leadership.html",
+      "type": "html",
+      "file": "153-about-us-leadership.html",
+      "analysis": {
+        "size": 4762,
+        "lines": 135,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 2,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.729Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "154-about-us-team.html",
+      "type": "html",
+      "file": "154-about-us-team.html",
+      "analysis": {
+        "size": 6479,
+        "lines": 166,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 4,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.730Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "155-about-us-commitment-cta.html",
+      "type": "html",
+      "file": "155-about-us-commitment-cta.html",
+      "analysis": {
+        "size": 4541,
+        "lines": 168,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.730Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "16-home-page.html",
+      "type": "html",
+      "file": "16-home-page.html",
+      "analysis": {
+        "size": 12253,
+        "lines": 534,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 4,
+        "lastModified": "2025-11-01T20:27:04.269Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "160-faqs-hero.html",
+      "type": "html",
+      "file": "160-faqs-hero.html",
+      "analysis": {
+        "size": 1816,
+        "lines": 72,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.730Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "161-faqs-accordion-part1.html",
+      "type": "html",
+      "file": "161-faqs-accordion-part1.html",
+      "analysis": {
+        "size": 21229,
+        "lines": 355,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.731Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "161-faqs-accordion-part2.html",
+      "type": "html",
+      "file": "161-faqs-accordion-part2.html",
+      "analysis": {
+        "size": 22162,
+        "lines": 353,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.733Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "161-faqs-accordion.html",
+      "type": "html",
+      "file": "161-faqs-accordion.html",
+      "analysis": {
+        "size": 10707,
+        "lines": 265,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.746Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "162-faqs-info.html",
+      "type": "html",
+      "file": "162-faqs-info.html",
+      "analysis": {
+        "size": 3761,
+        "lines": 122,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.746Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "163-faqs-cta.html",
+      "type": "html",
+      "file": "163-faqs-cta.html",
+      "analysis": {
+        "size": 1678,
+        "lines": 69,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.747Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "17-hero-home.html",
+      "type": "html",
+      "file": "17-hero-home.html",
+      "analysis": {
+        "size": 4799,
+        "lines": 219,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-01T20:27:04.270Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "18-stats.html",
+      "type": "html",
+      "file": "18-stats.html",
+      "analysis": {
+        "size": 3897,
+        "lines": 161,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.270Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "20-media-gallery.html",
+      "type": "html",
+      "file": "20-media-gallery.html",
+      "analysis": {
+        "size": 7205,
+        "lines": 274,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 5,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.271Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "200-our-current-vas-grid-complete.html",
+      "type": "html",
+      "file": "200-our-current-vas-grid-complete.html",
+      "analysis": {
+        "size": 65476,
+        "lines": 1666,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "lastModified": "2025-11-10T23:27:03.122Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "200-our-current-vas-grid-premium-PART1.html",
+      "type": "html",
+      "file": "200-our-current-vas-grid-premium-PART1.html",
+      "analysis": {
+        "size": 49721,
+        "lines": 1551,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 27,
+        "hasLinks": 26,
+        "lastModified": "2025-11-10T23:45:18.021Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "200-our-current-vas-grid-premium-PART2.html",
+      "type": "html",
+      "file": "200-our-current-vas-grid-premium-PART2.html",
+      "analysis": {
+        "size": 49677,
+        "lines": 1429,
+        "hasStyle": false,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 29,
+        "hasLinks": 30,
+        "lastModified": "2025-11-10T23:45:18.022Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "200-our-current-vas-grid-premium.html",
+      "type": "html",
+      "file": "200-our-current-vas-grid-premium.html",
+      "analysis": {
+        "size": 99398,
+        "lines": 2979,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "lastModified": "2025-11-10T23:34:38.875Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "201-va-card-component.html",
+      "type": "html",
+      "file": "201-va-card-component.html",
+      "analysis": {
+        "size": 4398,
+        "lines": 208,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "lastModified": "2025-11-10T22:39:30.870Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "202-va-grid-container.html",
+      "type": "html",
+      "file": "202-va-grid-container.html",
+      "analysis": {
+        "size": 2649,
+        "lines": 129,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T22:39:41.831Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "203-va-filters-component.html",
+      "type": "html",
+      "file": "203-va-filters-component.html",
+      "analysis": {
+        "size": 6723,
+        "lines": 262,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-10T22:39:57.895Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "204-va-card-premium.html",
+      "type": "html",
+      "file": "204-va-card-premium.html",
+      "analysis": {
+        "size": 6343,
+        "lines": 292,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 1,
+        "lastModified": "2025-11-10T23:33:59.741Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "207-filters-va-page.html",
+      "type": "html",
+      "file": "207-filters-va-page.html",
+      "analysis": {
+        "size": 5949,
+        "lines": 233,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": true,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-14T01:05:33.580Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "208-original-va-grid.html",
+      "type": "html",
+      "file": "208-original-va-grid.html",
+      "analysis": {
+        "size": 97597,
+        "lines": 2704,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": true,
+        "hasWebflowCDN": true,
+        "hasImages": 56,
+        "hasLinks": 56,
+        "lastModified": "2025-11-14T01:05:33.586Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "21-comparison-table.html",
+      "type": "html",
+      "file": "21-comparison-table.html",
+      "analysis": {
+        "size": 4530,
+        "lines": 204,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-01T20:27:04.271Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "210-adrian-styles.html",
+      "type": "html",
+      "file": "210-adrian-styles.html",
+      "analysis": {
+        "size": 13166,
+        "lines": 738,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-14T01:05:33.609Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "23-services-grid.html",
+      "type": "html",
+      "file": "23-services-grid.html",
+      "analysis": {
+        "size": 6100,
+        "lines": 232,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:04.279Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "24-contact-hero.html",
+      "type": "html",
+      "file": "24-contact-hero.html",
+      "analysis": {
+        "size": 2770,
+        "lines": 119,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.749Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "25-real-estate-hero.html",
+      "type": "html",
+      "file": "25-real-estate-hero.html",
+      "analysis": {
+        "size": 4646,
+        "lines": 201,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-01T20:27:20.029Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "26-real-estate-built-for.html",
+      "type": "html",
+      "file": "26-real-estate-built-for.html",
+      "analysis": {
+        "size": 3303,
+        "lines": 138,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.030Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "27-real-estate-day-to-day.html",
+      "type": "html",
+      "file": "27-real-estate-day-to-day.html",
+      "analysis": {
+        "size": 4296,
+        "lines": 182,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.034Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "28-real-estate-expertise.html",
+      "type": "html",
+      "file": "28-real-estate-expertise.html",
+      "analysis": {
+        "size": 4520,
+        "lines": 178,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.035Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "30-real-estate-outcomes.html",
+      "type": "html",
+      "file": "30-real-estate-outcomes.html",
+      "analysis": {
+        "size": 3817,
+        "lines": 166,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.037Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "32-real-estate-crms-platforms.html",
+      "type": "html",
+      "file": "32-real-estate-crms-platforms.html",
+      "analysis": {
+        "size": 2523,
+        "lines": 118,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.040Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "33-real-estate-faqs.html",
+      "type": "html",
+      "file": "33-real-estate-faqs.html",
+      "analysis": {
+        "size": 8585,
+        "lines": 286,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:20.041Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "34-real-estate-cta.html",
+      "type": "html",
+      "file": "34-real-estate-cta.html",
+      "analysis": {
+        "size": 2554,
+        "lines": 121,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.749Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "35-insurance-csr-hero.html",
+      "type": "html",
+      "file": "35-insurance-csr-hero.html",
+      "analysis": {
+        "size": 3424,
+        "lines": 132,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.750Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "36-insurance-csr-benefits.html",
+      "type": "html",
+      "file": "36-insurance-csr-benefits.html",
+      "analysis": {
+        "size": 2936,
+        "lines": 126,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.750Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "37-insurance-csr-about.html",
+      "type": "html",
+      "file": "37-insurance-csr-about.html",
+      "analysis": {
+        "size": 1950,
+        "lines": 74,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.751Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "38-insurance-csr-what-they-handle.html",
+      "type": "html",
+      "file": "38-insurance-csr-what-they-handle.html",
+      "analysis": {
+        "size": 4490,
+        "lines": 194,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.752Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "39-insurance-csr-stand-out.html",
+      "type": "html",
+      "file": "39-insurance-csr-stand-out.html",
+      "analysis": {
+        "size": 3318,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.752Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "40-insurance-csr-faqs.html",
+      "type": "html",
+      "file": "40-insurance-csr-faqs.html",
+      "analysis": {
+        "size": 11914,
+        "lines": 311,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.753Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "41-insurance-csr-cta.html",
+      "type": "html",
+      "file": "41-insurance-csr-cta.html",
+      "analysis": {
+        "size": 2772,
+        "lines": 117,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.754Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "42-admin-assistant-hero.html",
+      "type": "html",
+      "file": "42-admin-assistant-hero.html",
+      "analysis": {
+        "size": 3493,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.754Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "45-admin-assistant-outcomes.html",
+      "type": "html",
+      "file": "45-admin-assistant-outcomes.html",
+      "analysis": {
+        "size": 3029,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.758Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "46-admin-assistant-how-it-works.html",
+      "type": "html",
+      "file": "46-admin-assistant-how-it-works.html",
+      "analysis": {
+        "size": 3787,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.759Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "47-admin-assistant-faqs.html",
+      "type": "html",
+      "file": "47-admin-assistant-faqs.html",
+      "analysis": {
+        "size": 9295,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.759Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "48-admin-assistant-cta.html",
+      "type": "html",
+      "file": "48-admin-assistant-cta.html",
+      "analysis": {
+        "size": 2955,
+        "lines": 121,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.759Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "49-customer-service-hero.html",
+      "type": "html",
+      "file": "49-customer-service-hero.html",
+      "analysis": {
+        "size": 3506,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.760Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "50-customer-service-what-we-do.html",
+      "type": "html",
+      "file": "50-customer-service-what-we-do.html",
+      "analysis": {
+        "size": 3436,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.760Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "51-customer-service-outcomes.html",
+      "type": "html",
+      "file": "51-customer-service-outcomes.html",
+      "analysis": {
+        "size": 3050,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.761Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "52-customer-service-how-it-works.html",
+      "type": "html",
+      "file": "52-customer-service-how-it-works.html",
+      "analysis": {
+        "size": 3771,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.761Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "53-customer-service-faqs.html",
+      "type": "html",
+      "file": "53-customer-service-faqs.html",
+      "analysis": {
+        "size": 10461,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.762Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "54-customer-service-cta.html",
+      "type": "html",
+      "file": "54-customer-service-cta.html",
+      "analysis": {
+        "size": 2410,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.762Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "55-marketing-hero.html",
+      "type": "html",
+      "file": "55-marketing-hero.html",
+      "analysis": {
+        "size": 3311,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.766Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "56-marketing-what-we-do.html",
+      "type": "html",
+      "file": "56-marketing-what-we-do.html",
+      "analysis": {
+        "size": 3346,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.767Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "57-marketing-outcomes.html",
+      "type": "html",
+      "file": "57-marketing-outcomes.html",
+      "analysis": {
+        "size": 2925,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.769Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "58-marketing-how-it-works.html",
+      "type": "html",
+      "file": "58-marketing-how-it-works.html",
+      "analysis": {
+        "size": 3660,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.770Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "59-marketing-faqs.html",
+      "type": "html",
+      "file": "59-marketing-faqs.html",
+      "analysis": {
+        "size": 9837,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.773Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "60-marketing-cta.html",
+      "type": "html",
+      "file": "60-marketing-cta.html",
+      "analysis": {
+        "size": 2229,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.773Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "61-receptionist-hero.html",
+      "type": "html",
+      "file": "61-receptionist-hero.html",
+      "analysis": {
+        "size": 3398,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.774Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "61b-receptionist-highlights.html",
+      "type": "html",
+      "file": "61b-receptionist-highlights.html",
+      "analysis": {
+        "size": 3801,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.774Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "62-receptionist-what-we-do.html",
+      "type": "html",
+      "file": "62-receptionist-what-we-do.html",
+      "analysis": {
+        "size": 3774,
+        "lines": 152,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.774Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "63-receptionist-outcomes.html",
+      "type": "html",
+      "file": "63-receptionist-outcomes.html",
+      "analysis": {
+        "size": 3013,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.775Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "64-receptionist-how-it-works.html",
+      "type": "html",
+      "file": "64-receptionist-how-it-works.html",
+      "analysis": {
+        "size": 3412,
+        "lines": 156,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.775Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "64b-receptionist-tools.html",
+      "type": "html",
+      "file": "64b-receptionist-tools.html",
+      "analysis": {
+        "size": 2388,
+        "lines": 113,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.776Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "65-receptionist-faqs.html",
+      "type": "html",
+      "file": "65-receptionist-faqs.html",
+      "analysis": {
+        "size": 9197,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.780Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "66-receptionist-cta.html",
+      "type": "html",
+      "file": "66-receptionist-cta.html",
+      "analysis": {
+        "size": 2268,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.780Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "67-transaction-coordinator-hero.html",
+      "type": "html",
+      "file": "67-transaction-coordinator-hero.html",
+      "analysis": {
+        "size": 3711,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.781Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "68-transaction-coordinator-what-we-do.html",
+      "type": "html",
+      "file": "68-transaction-coordinator-what-we-do.html",
+      "analysis": {
+        "size": 3571,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.785Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "69-transaction-coordinator-outcomes.html",
+      "type": "html",
+      "file": "69-transaction-coordinator-outcomes.html",
+      "analysis": {
+        "size": 3150,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.786Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "70-transaction-coordinator-how-it-works.html",
+      "type": "html",
+      "file": "70-transaction-coordinator-how-it-works.html",
+      "analysis": {
+        "size": 3841,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.786Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "71-transaction-coordinator-faqs.html",
+      "type": "html",
+      "file": "71-transaction-coordinator-faqs.html",
+      "analysis": {
+        "size": 10990,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.787Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "72-transaction-coordinator-cta.html",
+      "type": "html",
+      "file": "72-transaction-coordinator-cta.html",
+      "analysis": {
+        "size": 2489,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.787Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "73-sdr-hero.html",
+      "type": "html",
+      "file": "73-sdr-hero.html",
+      "analysis": {
+        "size": 3136,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.788Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "74-sdr-what-we-do.html",
+      "type": "html",
+      "file": "74-sdr-what-we-do.html",
+      "analysis": {
+        "size": 3217,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.788Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "75-sdr-outcomes.html",
+      "type": "html",
+      "file": "75-sdr-outcomes.html",
+      "analysis": {
+        "size": 2837,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.789Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "76-sdr-how-it-works.html",
+      "type": "html",
+      "file": "76-sdr-how-it-works.html",
+      "analysis": {
+        "size": 3550,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.790Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "78-sdr-cta.html",
+      "type": "html",
+      "file": "78-sdr-cta.html",
+      "analysis": {
+        "size": 2096,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.792Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "79-va-services-hero.html",
+      "type": "html",
+      "file": "79-va-services-hero.html",
+      "analysis": {
+        "size": 3368,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.793Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "80-va-services-what-we-do.html",
+      "type": "html",
+      "file": "80-va-services-what-we-do.html",
+      "analysis": {
+        "size": 3290,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.793Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "81-va-services-outcomes.html",
+      "type": "html",
+      "file": "81-va-services-outcomes.html",
+      "analysis": {
+        "size": 2948,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.793Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "82-va-services-how-it-works.html",
+      "type": "html",
+      "file": "82-va-services-how-it-works.html",
+      "analysis": {
+        "size": 3649,
+        "lines": 165,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.794Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "84-va-services-cta.html",
+      "type": "html",
+      "file": "84-va-services-cta.html",
+      "analysis": {
+        "size": 2269,
+        "lines": 95,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 1,
+        "lastModified": "2025-11-05T01:37:39.796Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "85-insurance-va-what-we-do.html",
+      "type": "html",
+      "file": "85-insurance-va-what-we-do.html",
+      "analysis": {
+        "size": 10247,
+        "lines": 353,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.797Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "86-insurance-va-cta.html",
+      "type": "html",
+      "file": "86-insurance-va-cta.html",
+      "analysis": {
+        "size": 3020,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.797Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "87-insurance-va-hero.html",
+      "type": "html",
+      "file": "87-insurance-va-hero.html",
+      "analysis": {
+        "size": 6120,
+        "lines": 240,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.798Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "88-insurance-va-challenges.html",
+      "type": "html",
+      "file": "88-insurance-va-challenges.html",
+      "analysis": {
+        "size": 3557,
+        "lines": 148,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.799Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "89-insurance-va-why-ocean.html",
+      "type": "html",
+      "file": "89-insurance-va-why-ocean.html",
+      "analysis": {
+        "size": 7312,
+        "lines": 247,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.800Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "90-insurance-va-stats.html",
+      "type": "html",
+      "file": "90-insurance-va-stats.html",
+      "analysis": {
+        "size": 3553,
+        "lines": 157,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.800Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "91-insurance-va-tools.html",
+      "type": "html",
+      "file": "91-insurance-va-tools.html",
+      "analysis": {
+        "size": 2570,
+        "lines": 121,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.801Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "92-insurance-va-faqs.html",
+      "type": "html",
+      "file": "92-insurance-va-faqs.html",
+      "analysis": {
+        "size": 9223,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.801Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "93-small-business-va-hero.html",
+      "type": "html",
+      "file": "93-small-business-va-hero.html",
+      "analysis": {
+        "size": 3521,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.804Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "94-small-business-va-use-cases.html",
+      "type": "html",
+      "file": "94-small-business-va-use-cases.html",
+      "analysis": {
+        "size": 3421,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.805Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "95-small-business-va-outcomes.html",
+      "type": "html",
+      "file": "95-small-business-va-outcomes.html",
+      "analysis": {
+        "size": 3025,
+        "lines": 131,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.805Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "96-small-business-va-cta.html",
+      "type": "html",
+      "file": "96-small-business-va-cta.html",
+      "analysis": {
+        "size": 3108,
+        "lines": 124,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.806Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "97-small-business-va-faqs.html",
+      "type": "html",
+      "file": "97-small-business-va-faqs.html",
+      "analysis": {
+        "size": 9459,
+        "lines": 285,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.807Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "98-ecommerce-va-hero.html",
+      "type": "html",
+      "file": "98-ecommerce-va-hero.html",
+      "analysis": {
+        "size": 3350,
+        "lines": 136,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": true,
+        "hasImages": 1,
+        "hasLinks": 2,
+        "lastModified": "2025-11-05T01:37:39.807Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "99-ecommerce-va-use-cases.html",
+      "type": "html",
+      "file": "99-ecommerce-va-use-cases.html",
+      "analysis": {
+        "size": 3375,
+        "lines": 145,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-05T01:37:39.810Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "client-logos-carousel-webflow.html",
+      "type": "html",
+      "file": "client-logos-carousel-webflow.html",
+      "analysis": {
+        "size": 5360,
+        "lines": 179,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 14,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:03.725Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "comparison-table-webflow.html",
+      "type": "html",
+      "file": "comparison-table-webflow.html",
+      "analysis": {
+        "size": 7776,
+        "lines": 280,
+        "hasStyle": true,
+        "hasScript": false,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 0,
+        "hasLinks": 0,
+        "lastModified": "2025-11-01T20:27:03.726Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    },
+    {
+      "name": "navbar-header-webflow.html",
+      "type": "html",
+      "file": "navbar-header-webflow.html",
+      "analysis": {
+        "size": 10530,
+        "lines": 372,
+        "hasStyle": true,
+        "hasScript": true,
+        "hasReact": false,
+        "hasWebflowCDN": false,
+        "hasImages": 1,
+        "hasLinks": 37,
+        "lastModified": "2025-11-01T20:27:03.728Z"
+      },
+      "paired": false,
+      "reactFile": null,
+      "reactAnalysis": null,
+      "status": "unmapped",
+      "notes": [
+        "⚠️ No React mapping found"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 157,
+    "htmlOnly": 157,
+    "reactOnly": 0,
+    "paired": 0,
+    "needsReview": 0
+  }
+}

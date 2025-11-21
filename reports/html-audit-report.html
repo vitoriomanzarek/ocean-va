@@ -1,0 +1,2118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Components Audit Report</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 30px; }
+    h1 { color: #049d98; margin-bottom: 10px; }
+    .timestamp { color: #666; font-size: 14px; margin-bottom: 20px; }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+    .summary-card { background: #f9f9f9; padding: 15px; border-radius: 6px; border-left: 4px solid #049d98; }
+    .summary-card h3 { font-size: 14px; color: #666; margin-bottom: 5px; }
+    .summary-card .value { font-size: 28px; font-weight: bold; color: #049d98; }
+    .summary-card.warning { border-left-color: #f59e0b; }
+    .summary-card.warning .value { color: #f59e0b; }
+    .summary-card.error { border-left-color: #ef4444; }
+    .summary-card.error .value { color: #ef4444; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th { background: #049d98; color: white; padding: 12px; text-align: left; font-weight: 600; }
+    td { padding: 12px; border-bottom: 1px solid #eee; }
+    tr:hover { background: #f9f9f9; }
+    .status { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+    .status.paired { background: #d1fae5; color: #065f46; }
+    .status.needs-review { background: #fef3c7; color: #92400e; }
+    .status.missing-react { background: #fee2e2; color: #991b1b; }
+    .status.unmapped { background: #e5e7eb; color: #374151; }
+    .notes { font-size: 12px; color: #666; margin-top: 5px; }
+    .note { display: block; margin: 3px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 HTML Components Audit Report</h1>
+    <p class="timestamp">Generated: 2025-11-14T04:13:13.225Z</p>
+    
+    <div class="summary">
+      <div class="summary-card">
+        <h3>Total Components</h3>
+        <div class="value">157</div>
+      </div>
+      <div class="summary-card">
+        <h3>Paired</h3>
+        <div class="value">0</div>
+      </div>
+      <div class="summary-card warning">
+        <h3>Needs Review</h3>
+        <div class="value">0</div>
+      </div>
+      <div class="summary-card error">
+        <h3>HTML Only</h3>
+        <div class="value">157</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>HTML File</th>
+          <th>React File</th>
+          <th>Status</th>
+          <th>HTML Size</th>
+          <th>React Size</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td><strong>01-comparison-table.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>7.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>01-contact-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>02-client-logos-carousel.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>5.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>03-navbar-header.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>17.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>04-contact-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>04-hero-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>1.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>05-footer.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>06-stats-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>07-pricing-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>8.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>08-timeline-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>09-testimonials-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>10-faq-section.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>100-ecommerce-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>101-ecommerce-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>103-finance-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>104-finance-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>105-finance-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>106-finance-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>107-finance-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>108-property-management-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>109-property-management-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>109-property-management-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>11-services-industries-showcase.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>13.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>110-property-management-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>111-property-management-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>111-property-management-why-ocean.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>112-property-management-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>113-medical-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>113-property-management-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>114-medical-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>114-property-management-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>115-medical-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>116-medical-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>118-hr-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>119-hr-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>12-va-showcase.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>120-hr-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>121-hr-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>122-hr-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>123-tech-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>124-tech-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>125-tech-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>126-tech-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>127-tech-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>128-mortgage-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>129-mortgage-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>13-our-vas-page.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>14.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>130-mortgage-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>131-mortgage-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>132-mortgage-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>133-pricing-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>1.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>14-contact-us-page.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>5.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>15-about-us-page.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>15.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>150-about-us-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>151-about-us-what-sets-apart.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>152-about-us-story-mission.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>153-about-us-leadership.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>154-about-us-team.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>155-about-us-commitment-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>16-home-page.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>12.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>160-faqs-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>1.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>161-faqs-accordion-part1.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>20.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>161-faqs-accordion-part2.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>21.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>161-faqs-accordion.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>10.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>162-faqs-info.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>163-faqs-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>1.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>17-hero-home.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>18-stats.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>20-media-gallery.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>7.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>200-our-current-vas-grid-complete.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>63.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>200-our-current-vas-grid-premium-PART1.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>48.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>200-our-current-vas-grid-premium-PART2.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>48.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>200-our-current-vas-grid-premium.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>97.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>201-va-card-component.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>202-va-grid-container.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>203-va-filters-component.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>204-va-card-premium.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>207-filters-va-page.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>5.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>208-original-va-grid.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>95.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>21-comparison-table.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>210-adrian-styles.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>12.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>23-services-grid.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>24-contact-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>25-real-estate-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>26-real-estate-built-for.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>27-real-estate-day-to-day.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>28-real-estate-expertise.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>30-real-estate-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>32-real-estate-crms-platforms.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>33-real-estate-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>8.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>34-real-estate-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>35-insurance-csr-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>36-insurance-csr-benefits.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>37-insurance-csr-about.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>1.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>38-insurance-csr-what-they-handle.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>4.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>39-insurance-csr-stand-out.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>40-insurance-csr-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>11.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>41-insurance-csr-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>42-admin-assistant-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>45-admin-assistant-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>46-admin-assistant-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>47-admin-assistant-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>48-admin-assistant-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>49-customer-service-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>50-customer-service-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>51-customer-service-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>52-customer-service-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>53-customer-service-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>10.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>54-customer-service-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>55-marketing-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>56-marketing-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>57-marketing-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>58-marketing-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>59-marketing-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>60-marketing-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>61-receptionist-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>61b-receptionist-highlights.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>62-receptionist-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>63-receptionist-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>64-receptionist-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>64b-receptionist-tools.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>65-receptionist-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>66-receptionist-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>67-transaction-coordinator-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>68-transaction-coordinator-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>69-transaction-coordinator-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>70-transaction-coordinator-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>71-transaction-coordinator-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>10.7 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>72-transaction-coordinator-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>73-sdr-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>74-sdr-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>75-sdr-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.8 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>76-sdr-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>78-sdr-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>79-va-services-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>80-va-services-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>81-va-services-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>82-va-services-how-it-works.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>84-va-services-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>85-insurance-va-what-we-do.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>10.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>86-insurance-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.9 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>87-insurance-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>6.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>88-insurance-va-challenges.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>89-insurance-va-why-ocean.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>7.1 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>90-insurance-va-stats.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>91-insurance-va-tools.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>2.5 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>92-insurance-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>93-small-business-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.4 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>94-small-business-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>95-small-business-va-outcomes.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>96-small-business-va-cta.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.0 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>97-small-business-va-faqs.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>9.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>98-ecommerce-va-hero.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>99-ecommerce-va-use-cases.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>3.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>client-logos-carousel-webflow.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>5.2 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>comparison-table-webflow.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>7.6 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+          <tr>
+            <td><strong>navbar-header-webflow.html</strong></td>
+            <td>—</td>
+            <td><span class="status unmapped">UNMAPPED</span></td>
+            <td>10.3 KB</td>
+            <td>—</td>
+            <td>
+              <div class="notes">
+                <span class="note">⚠️ No React mapping found</span>
+              </div>
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+  
