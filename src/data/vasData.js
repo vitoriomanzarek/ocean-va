@@ -3012,24 +3012,29 @@ export const vasData = [
     "slug": "albert-carpio",
     "categoría_principal": "Insurance Specialist",
     "categorías": [
-      "general liability"
+      "insurance-virtual-assistant"
     ],
     "idiomas": "English",
     "años_experiencia": 3,
     "especialización": [
-      "condo"
+      "personal-lines",
+      "commercial-lines",
+      "quotations",
+      "renewals",
+      "endorsements",
+      "policy-servicing"
     ],
-    "nivel_inglés": "farm",
+    "nivel_inglés": "Proficient",
     "disponibilidad": "Full Time",
     "horario": "",
-    "imagen": "COIs",
-    "videoUrl": "auto",
-    "youtubeUrl": "dwelling fire",
-    "summary": "Albert has three years of experience supporting U.S. insurance agencies in both personal and commercial lines. His work covers quoting",
-    "tagline": "renewals",
-    "thumbnail": "endorsements",
-    "discResult": "mobile homes",
-    "profileSlug": "and servicing for home",
+    "imagen": "/images/VAs/Albert.webp",
+    "videoUrl": "",
+    "youtubeUrl": "https://youtu.be/4sfqBgJ6h3w",
+    "summary": "Albert has three years of experience supporting U.S. insurance agencies in both personal and commercial lines. His work covers quoting, renewals, endorsements, COIs, and servicing for home, auto, condo, renters, mobile homes, farm, dwelling fire, general liability, commercial auto, trucking, inland marine, and commercial package. He is highly proficient in EZLynx and Applied Epic. His experience also includes manual quoting, ACORD 125/126 preparation, and direct-to-underwriter submissions through Tarmica.",
+    "tagline": "Albert is an excellent option for agencies seeking a highly trained VA who can independently manage personal and commercial insurance workflows, support licensed agents, and deliver high-quality quoting and policy servicing with consistency and accuracy.",
+    "thumbnail": "3 YEARS INSURANCE EXPERIENCE • PERSONAL & COMMERCIAL LINES • EZLYNX & APPLIED EPIC EXPERT • OHIO & PENNSYLVANIA INSURANCE",
+    "discResult": "C+S",
+    "profileSlug": "/albert-carpio-ocean-va-profile",
     "itemId": "ac1k3m7nq9r2s8t4u5v6w7x8",
     "collectionId": "691b82a97542c69f3f77fa76"
   },
@@ -3039,24 +3044,31 @@ export const vasData = [
     "slug": "kathleen-moreno",
     "categoría_principal": "Loan Services VA",
     "categorías": [
-      "5 YEARS OF EXPERIENCE • LOAN OPERATIONS • DOCUMENT COMPLIANCE • CLIENT COORDINATION • FUNDS RESEARCH • APPLICATION PROCESSING"
+      "loan-services-va"
     ],
     "idiomas": "English",
     "años_experiencia": 5,
     "especialización": [
-      "account maintenance"
+      "loan-application",
+      "document-verification",
+      "compliance",
+      "client-communication",
+      "loan-tracking",
+      "wire-transfer",
+      "funds-research",
+      "account-maintenance"
     ],
-    "nivel_inglés": "Kathleen brings a detail-oriented",
+    "nivel_inglés": "Proficient",
     "disponibilidad": "Full Time",
     "horario": "",
-    "imagen": "fund investigations",
-    "videoUrl": "as well as overseeing loan documentation",
-    "youtubeUrl": "compliance-driven approach to loan servicing and financial operations. Her experience supporting U.S. banking workflows makes her a strong choice for teams seeking a reliable and structured virtual assistant.",
-    "summary": "Kathleen has over five years of experience supporting U.S. clients in the loan services division of a major bank. She handled credit card support",
-    "tagline": "loan eligibility reviews",
-    "thumbnail": "and document verification while coordinating directly with bankers and clients. Her background includes wire transfers",
-    "discResult": "and compliance tracking through the bank's internal systems.",
-    "profileSlug": "and transaction reconciliation",
+    "imagen": "/images/VAs/Kathleen.webp",
+    "videoUrl": "",
+    "youtubeUrl": "https://youtu.be/t84q0i_wMfs",
+    "summary": "Kathleen has over five years of experience supporting U.S. clients in the loan services division of a major bank. She handled credit card support, loan eligibility reviews, and document verification while coordinating directly with bankers and clients. Her background includes wire transfers, fund investigations, and transaction reconciliation, as well as overseeing loan documentation, account maintenance, client communication, and compliance tracking through the bank's internal systems.",
+    "tagline": "Kathleen brings a detail-oriented, compliance-driven approach to loan servicing and financial operations. Her experience supporting U.S. banking workflows makes her a strong choice for teams seeking a reliable and structured virtual assistant.",
+    "thumbnail": "5 YEARS OF EXPERIENCE • LOAN OPERATIONS • DOCUMENT COMPLIANCE • CLIENT COORDINATION • FUNDS RESEARCH • APPLICATION PROCESSING",
+    "discResult": "S+C",
+    "profileSlug": "/kathleen-moreno-ocean-va-profile",
     "itemId": "mk2m5n8pq1r4s7t0u3v6w9x2",
     "collectionId": "691b82a97542c69f3f77fa76"
   }
