@@ -273,3 +273,4 @@ console.log(`   - Divs extra eliminados: ${fixesApplied.divsExtra}`);
 console.log(`\n💾 Backup disponible en: ${backupDir}`);
 console.log('\n✨ ¡Corrección completada!');
 
+

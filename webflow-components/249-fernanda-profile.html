@@ -105,16 +105,28 @@
           </div>
 
           <!-- Video -->
-          <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/7ngbNodl3es/maxresdefault.jpg')">
-            <div class="va-video-overlay">
-              <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
-              </svg>
-              <p class="va-video-text">CLICK HERE</p>
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/7ngbNodl3es/hqdefault.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 208px; cursor: pointer;" onclick="document.getElementById('va-video-modal-7ngbNodl3es').style.display='flex'">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Modal -->
+            <div id="va-video-modal-7ngbNodl3es" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7ngbNodl3es" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button onclick="document.getElementById('va-video-modal-7ngbNodl3es').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+              </div>
             </div>
           </div>
         </div>
-
         <!-- Thumbnail Box -->
         <div class="va-thumbnail-box">
           <p class="va-thumbnail-text">Account management, Sales operations, Marketing coordination</p>
@@ -140,19 +152,19 @@
           <h4 class="va-employment-company">INMERA</h4>
           <p class="va-employment-position">Key Account Manager</p>
           <p class="va-employment-period">JUL 2021 - SEP 2023</p>
-          <p class="va-employment-description">• Craft persuasive proposals tailored to customers specific needs and preferences\n• Drafting professional, visually engaging sales material with great attention to detail using Canva and similar tools\n• Prepare detailed reports and sales metrics to track performance and drive strategic decisions.\n• Pivot table management.\n• Handle and solve clients complaints by providing resourceful solutions and responding effectively to client requirements.</p>
+          <p class="va-employment-description">• Craft persuasive proposals tailored to customers specific needs and preferences<br>• Drafting professional, visually engaging sales material with great attention to detail using Canva and similar tools<br>• Prepare detailed reports and sales metrics to track performance and drive strategic decisions.<br>• Pivot table management.<br>• Handle and solve clients complaints by providing resourceful solutions and responding effectively to client requirements.</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">TOTTO</h4>
           <p class="va-employment-position">Sales Assistant</p>
           <p class="va-employment-period">AUG 2014 - NOV 2020</p>
-          <p class="va-employment-description">• Submit KPIs and relevant business metrics to track performance and client satisfaction.\n• Address client requirements promptly, identifying plan points and providing effective solutions.\n• Manage the onboarding process for sales agents</p>
+          <p class="va-employment-description">• Submit KPIs and relevant business metrics to track performance and client satisfaction.<br>• Address client requirements promptly, identifying plan points and providing effective solutions.<br>• Manage the onboarding process for sales agents</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">TOTTO</h4>
           <p class="va-employment-position">Marketing Assistant</p>
           <p class="va-employment-period">OCT 2011 - AUG 2014</p>
-          <p class="va-employment-description">• Coordinate and Communicate effectively with agencies and suppliers to ensure smooth operations.\n• Analyze and track marketing metrics to measure campaign performance and optimize strategies.\n• Design professional advertisements with a strong visual impact and attention to detail.\n• Support lead generation efforts by carrying out engaging potential customers.</p>
+          <p class="va-employment-description">• Coordinate and Communicate effectively with agencies and suppliers to ensure smooth operations.<br>• Analyze and track marketing metrics to measure campaign performance and optimize strategies.<br>• Design professional advertisements with a strong visual impact and attention to detail.<br>• Support lead generation efforts by carrying out engaging potential customers.</p>
         </div>
       </div>
     </div>
@@ -168,7 +180,7 @@
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">DISC PERSONALITY RESULT</h3>
           <div class="va-disc-result">
             <div class="va-disc-badge">I+S</div>
-            <p class="va-disc-description">Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nSteadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.</p>
+            <p class="va-disc-description">Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.<br><br>Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.</p>
           </div>
         </div>
       </section>

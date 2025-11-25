@@ -101,16 +101,28 @@
           </div>
 
           <!-- Video -->
-          <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/PVmxKa19Mz0/maxresdefault.jpg')">
-            <div class="va-video-overlay">
-              <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
-              </svg>
-              <p class="va-video-text">CLICK HERE</p>
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/PVmxKa19Mz0/hqdefault.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 208px; cursor: pointer;" onclick="document.getElementById('va-video-modal-PVmxKa19Mz0').style.display='flex'">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Modal -->
+            <div id="va-video-modal-PVmxKa19Mz0" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PVmxKa19Mz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button onclick="document.getElementById('va-video-modal-PVmxKa19Mz0').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+              </div>
             </div>
           </div>
         </div>
-
         <!-- Thumbnail Box -->
         <div class="va-thumbnail-box">
           <p class="va-thumbnail-text">Property management, Customer service, Administrative support</p>
@@ -136,13 +148,13 @@
           <h4 class="va-employment-company">PORCH</h4>
           <p class="va-employment-position">Lead Verification Agent</p>
           <p class="va-employment-period">JAN 2022 - MAY 2023</p>
-          <p class="va-employment-description">• Lead verification, for home improvement services\n• De-escalated frustrated customers, resolving their concerns and ensuring their satisfaction with the company\</p>
+          <p class="va-employment-description">• Lead verification, for home improvement services<br>• De-escalated frustrated customers, resolving their concerns and ensuring their satisfaction with the company\</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">TRUE WORK</h4>
           <p class="va-employment-position">Logistics</p>
           <p class="va-employment-period">MAY 2023 - JUL 2024</p>
-          <p class="va-employment-description">• Enter service requesting software and respond immediately by phone to reside\n• Follow up with residents on completed work orders\n• Schedule and track vacant unit turns</p>
+          <p class="va-employment-description">• Enter service requesting software and respond immediately by phone to reside<br>• Follow up with residents on completed work orders<br>• Schedule and track vacant unit turns</p>
         </div>
       </div>
     </div>
@@ -158,7 +170,7 @@
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">DISC PERSONALITY RESULT</h3>
           <div class="va-disc-result">
             <div class="va-disc-badge">S+I</div>
-            <p class="va-disc-description">Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.</p>
+            <p class="va-disc-description">Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.<br><br>Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.</p>
           </div>
         </div>
       </section>

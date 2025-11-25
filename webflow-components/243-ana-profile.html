@@ -104,16 +104,28 @@
           </div>
 
           <!-- Video -->
-          <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/XloA9MBGtGA/maxresdefault.jpg')">
-            <div class="va-video-overlay">
-              <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
-              </svg>
-              <p class="va-video-text">CLICK HERE</p>
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <div class="va-video-container" style="background-image: url('https://img.youtube.com/vi/XloA9MBGtGA/hqdefault.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 208px; cursor: pointer;" onclick="document.getElementById('va-video-modal-XloA9MBGtGA').style.display='flex'">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Modal -->
+            <div id="va-video-modal-XloA9MBGtGA" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XloA9MBGtGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button onclick="document.getElementById('va-video-modal-XloA9MBGtGA').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+              </div>
             </div>
           </div>
         </div>
-
         <!-- Thumbnail Box -->
         <div class="va-thumbnail-box">
           <p class="va-thumbnail-text">Bilingual support, Customer service, Administrative expertise</p>
@@ -139,25 +151,25 @@
           <h4 class="va-employment-company">GIBSON HOTEL</h4>
           <p class="va-employment-position">Reservations Agent</p>
           <p class="va-employment-period">JUL 2023 - DEC 2023</p>
-          <p class="va-employment-description">• Project Management: Managed multi-channel guest reservations to a high standard while multitasking customer interactions and administrative tasks.\n• Customer Centric & Communication: Successfully closed international sales by understanding client needs and effectively communicating with relevant teams for seamless services.\n• Administrative Functions: Managed the entire reservation process, coordinated with departments, ensured timely and accurate administrative work, and maintained the sales/events calendar for strategic alignment.\n• Technology Savvy: Improved booking processes and customer satisfaction by utilizing new technologies and quickly adapting to various software systems.</p>
+          <p class="va-employment-description">• Project Management: Managed multi-channel guest reservations to a high standard while multitasking customer interactions and administrative tasks.<br>• Customer Centric & Communication: Successfully closed international sales by understanding client needs and effectively communicating with relevant teams for seamless services.<br>• Administrative Functions: Managed the entire reservation process, coordinated with departments, ensured timely and accurate administrative work, and maintained the sales/events calendar for strategic alignment.<br>• Technology Savvy: Improved booking processes and customer satisfaction by utilizing new technologies and quickly adapting to various software systems.</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">HILTON DUBLIN HOTEL</h4>
           <p class="va-employment-position">Front Office</p>
           <p class="va-employment-period">MAR 2022 - JUN 2023</p>
-          <p class="va-employment-description">• Strategic & Communication Skills: Effectively coordinated with various departments to achieve desired guest experiences, demonstrating a customer-focused approach and clear communication with the sales team and other departments in support of the hotels strategic objectives.\n• Multitasking & Process Control: Managed check-ins/outs, customer complaints, and administrative tasks, ensuring smooth operations and control of the entire process.\n• Support to Executive Level: Provided support to senior management by ensuring that all guest-related operations were aligned with the broader business strategy.</p>
+          <p class="va-employment-description">• Strategic & Communication Skills: Effectively coordinated with various departments to achieve desired guest experiences, demonstrating a customer-focused approach and clear communication with the sales team and other departments in support of the hotels strategic objectives.<br>• Multitasking & Process Control: Managed check-ins/outs, customer complaints, and administrative tasks, ensuring smooth operations and control of the entire process.<br>• Support to Executive Level: Provided support to senior management by ensuring that all guest-related operations were aligned with the broader business strategy.</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">SMART FIT DUBLIN</h4>
           <p class="va-employment-position">Front Office</p>
           <p class="va-employment-period">APR 2019 - JAN 2022</p>
-          <p class="va-employment-description">• Cross-Cultural Communication & Customer Centric: Communicated effectively with diverse clients, ensuring excellent customer service. Promoted the brand via social media and used tailored marketing for different cultures.\n• Administrative Functions & Technology Savvy: Produced detailed daily/weekly sales reports for strategic insights. Reconciled accounts, managed payments, and used CRM/technology to improve operations and customer relations.</p>
+          <p class="va-employment-description">• Cross-Cultural Communication & Customer Centric: Communicated effectively with diverse clients, ensuring excellent customer service. Promoted the brand via social media and used tailored marketing for different cultures.<br>• Administrative Functions & Technology Savvy: Produced detailed daily/weekly sales reports for strategic insights. Reconciled accounts, managed payments, and used CRM/technology to improve operations and customer relations.</p>
         </div>
         <div class="va-employment-item">
           <h4 class="va-employment-company">AMEX ASSURANCE COMPANY</h4>
           <p class="va-employment-position">Claims Assessor</p>
           <p class="va-employment-period">JUN 2018 - FEB 2019</p>
-          <p class="va-employment-description">• Customer Centric & Communication: Actively listened to customer calls, providing accurate and efficient service based on customer experiences.\n• Administrative Functions: Prepared and recorded insurance policy/claims data in the database accurately and compliantly.\n• Process Control: Completed tasks on time, meeting customer expectations and maintaining high service standards.</p>
+          <p class="va-employment-description">• Customer Centric & Communication: Actively listened to customer calls, providing accurate and efficient service based on customer experiences.<br>• Administrative Functions: Prepared and recorded insurance policy/claims data in the database accurately and compliantly.<br>• Process Control: Completed tasks on time, meeting customer expectations and maintaining high service standards.</p>
         </div>
       </div>
     </div>
@@ -173,7 +185,7 @@
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">DISC PERSONALITY RESULT</h3>
           <div class="va-disc-result">
             <div class="va-disc-badge">S+C</div>
-            <p class="va-disc-description">Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.</p>
+            <p class="va-disc-description">Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.<br><br>Conscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.</p>
           </div>
         </div>
       </section>
