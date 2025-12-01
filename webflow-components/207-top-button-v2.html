@@ -1,0 +1,183 @@
+<!-- TOP BUTTON - Sticky scroll to top button -->
+<!-- Appears in bottom right corner when user scrolls down -->
+
+<style>
+  .va-top-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #049d98;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(4, 157, 152, 0.3);
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .va-top-button.hidden {
+    display: none;
+    opacity: 0;
+  }
+
+  .va-top-button:hover {
+    background: #037b77;
+    box-shadow: 0 6px 16px rgba(4, 157, 152, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .va-top-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(4, 157, 152, 0.3);
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .va-top-button {
+      bottom: 90px;
+      right: 16px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .va-top-button {
+      bottom: 80px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+    }
+  }
+</style>
+
+<a 
+  href="#"
+  class="va-top-button" 
+  id="vaTopButton"
+  aria-label="Scroll to top"
+  title="Scroll to top"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+
+<script>
+  (function() {
+    console.log('Top button script starting...');
+    
+    function initButton() {
+      const topButton = document.getElementById('vaTopButton');
+      
+      if (!topButton) {
+        console.error('Button not found!');
+        return;
+      }
+      
+      console.log('Button found!', topButton);
+
+      // Detect footer height to position button above it
+      function getFooterHeight() {
+        const footer = document.querySelector('footer') || 
+                      document.querySelector('.footer') ||
+                      document.querySelector('[class*="footer"]');
+        
+        if (footer) {
+          const height = footer.offsetHeight || footer.clientHeight;
+          if (height > 0) return height;
+        }
+        
+        return 80;
+      }
+
+      // Update button position based on footer
+      function updateButtonPosition() {
+        const footerHeight = getFooterHeight();
+        topButton.style.bottom = (footerHeight + 20) + 'px';
+      }
+
+      // Show/hide button based on scroll position
+      function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const showThreshold = 300;
+
+        console.log('Scroll:', scrollTop, 'Threshold:', showThreshold);
+
+        if (scrollTop > showThreshold) {
+          topButton.classList.remove('hidden');
+          console.log('Button shown');
+        } else {
+          topButton.classList.add('hidden');
+          console.log('Button hidden');
+        }
+      }
+
+      // Smooth scroll to top - simple and direct
+      function scrollToTop() {
+        console.log('Scrolling to top');
+        
+        // Simple direct scroll
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Event listener - simple click handler
+      topButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToTop();
+      });
+
+      // Scroll handler
+      window.addEventListener('scroll', function() {
+        handleScroll();
+      }, { passive: true });
+
+      // Update position on resize
+      window.addEventListener('resize', function() {
+        updateButtonPosition();
+        handleScroll();
+      });
+
+      // Initialize - start hidden
+      topButton.classList.add('hidden');
+      updateButtonPosition();
+      handleScroll();
+
+      // Re-check after page fully loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          updateButtonPosition();
+          handleScroll();
+          console.log('Top button fully initialized');
+        }, 500);
+      });
+
+      console.log('Top button initialized');
+    }
+
+    // Wait for DOM
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initButton);
+    } else {
+      initButton();
+    }
+  })();
+</script>

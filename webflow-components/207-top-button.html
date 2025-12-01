@@ -1,0 +1,205 @@
+<!-- TOP BUTTON - Sticky scroll to top button -->
+<!-- Appears in bottom right corner when user scrolls down -->
+
+<style>
+  .va-top-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #049d98;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(4, 157, 152, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    padding: 0;
+  }
+
+  .va-top-button-icon {
+    width: 20px;
+    height: 20px;
+    stroke: white;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+  }
+
+  .va-top-button.visible {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .va-top-button:hover {
+    background: #037b77;
+    box-shadow: 0 6px 16px rgba(4, 157, 152, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .va-top-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(4, 157, 152, 0.3);
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .va-top-button {
+      bottom: 90px;
+      right: 16px;
+      width: 48px;
+      height: 48px;
+    }
+
+    .va-top-button-icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .va-top-button {
+      bottom: 80px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+    }
+
+    .va-top-button-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+</style>
+
+<button 
+  type="button" 
+  class="va-top-button" 
+  id="vaTopButton"
+  aria-label="Scroll to top"
+  title="Scroll to top"
+>
+  <svg class="va-top-button-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+</button>
+
+<script>
+  (function() {
+    const topButton = document.getElementById('vaTopButton');
+    if (!topButton) return;
+
+    // Detect footer height to position button above it
+    function getFooterHeight() {
+      const footer = document.querySelector('footer') || 
+                    document.querySelector('.footer') ||
+                    document.querySelector('[class*="footer"]');
+      
+      if (footer) {
+        const height = footer.offsetHeight || footer.clientHeight;
+        if (height > 0) return height;
+      }
+      
+      // Default fallback - adjust based on your footer
+      return 80;
+    }
+
+    // Update button position based on footer
+    function updateButtonPosition() {
+      const footerHeight = getFooterHeight();
+      topButton.style.bottom = (footerHeight + 20) + 'px';
+    }
+
+    // Show/hide button based on scroll position
+    function handleScroll() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const showThreshold = 100; // Show button after scrolling 100px
+
+      const shouldShow = scrollTop > showThreshold;
+      
+      if (shouldShow) {
+        topButton.classList.add('visible');
+      } else {
+        topButton.classList.remove('visible');
+      }
+      
+      // Debug log
+      if (shouldShow && !topButton.classList.contains('visible')) {
+        console.log('Button should be visible but class not added', {
+          scrollTop,
+          threshold: showThreshold,
+          buttonExists: !!topButton
+        });
+      }
+    }
+
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Event listeners
+    topButton.addEventListener('click', scrollToTop);
+
+    // Throttled scroll handler
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Update position on resize (footer might change)
+    window.addEventListener('resize', () => {
+      updateButtonPosition();
+    });
+
+    // Initialize
+    function init() {
+      updateButtonPosition();
+      handleScroll();
+      console.log('Top button initialized', {
+        button: topButton,
+        position: topButton.style.bottom,
+        visible: topButton.classList.contains('visible')
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    // Re-check after page fully loads (footer might load late)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        updateButtonPosition();
+        handleScroll();
+      }, 500);
+    });
+
+    console.log('Top button script loaded');
+  })();
+</script>
+
