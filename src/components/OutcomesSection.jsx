@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function OutcomesSection({ subtitle, outcomes }) {
+export default function OutcomesSection({ subtitle, outcomes, noBackground = false }) {
   return (
-    <section className="section-container bg-ocean-600 text-white">
+    <section className={`${noBackground ? '' : 'section-container bg-ocean-600'} text-white`}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Outcomes You Can Expect</h2>

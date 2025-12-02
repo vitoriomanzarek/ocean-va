@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
-export default function FAQSection({ faqs = [] }) {
+export default function FAQSection({ faqs = [], noBackground = false }) {
   const [expandedFaq, setExpandedFaq] = useState(null)
 
   if (!faqs || faqs.length === 0) {
@@ -13,7 +13,7 @@ export default function FAQSection({ faqs = [] }) {
   }
 
   return (
-    <section className="section-container bg-gray-50 py-20">
+    <section className={`${noBackground ? '' : 'section-container bg-gray-50'} py-20`}>
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           Frequently Asked Questions

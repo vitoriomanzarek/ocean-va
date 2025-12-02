@@ -1,7 +1,7 @@
 import React from 'react'
 import { Users, Globe, DollarSign, Shield, ImageIcon } from 'lucide-react'
 
-export default function WhyOceanSection({ subtitle, benefits, image = '/images/WhyUs.jpg' }) {
+export default function WhyOceanSection({ subtitle, benefits, image = '/images/WhyUs.jpg', noBackground = false }) {
   const defaultBenefits = [
     {
       icon: Users,
@@ -28,7 +28,7 @@ export default function WhyOceanSection({ subtitle, benefits, image = '/images/W
   const items = benefits || defaultBenefits
 
   return (
-    <section className="section-container bg-gray-50">
+    <section className={`${noBackground ? '' : 'section-container bg-gray-50'}`}>
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">Why Ocean VA</h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">

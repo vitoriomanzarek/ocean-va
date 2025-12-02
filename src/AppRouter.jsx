@@ -19,6 +19,7 @@ import MedicalVA from './MedicalVA'
 import HRVA from './HRVA'
 import TechVA from './TechVA'
 import MortgageVA from './MortgageVA'
+import MortgageVAv2 from './MortgageVA-v2'
 import VirtualReceptionist from './VirtualReceptionist'
 import RealEstateVA from './RealEstateVA'
 import PricingPage from './PricingPage'
@@ -124,6 +125,7 @@ function AppContent() {
           <Route path="/industries/hr-virtual-assistant" element={<HRVA />} />
           <Route path="/industries/tech-virtual-assistant" element={<TechVA />} />
           <Route path="/industries/mortgage-virtual-assistant" element={<MortgageVA />} />
+          <Route path="/industries/mortgage-and-lending" element={<MortgageVAv2 />} />
           
           {/* Virtual Receptionist */}
           <Route path="/services/virtual-receptionist" element={<VirtualReceptionist />} />
