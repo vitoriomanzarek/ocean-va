@@ -6,7 +6,9 @@
   .va-profile-page {
     background: linear-gradient(to bottom, #0B9B8F 0%, #067A8F 25%, #045C8B 50%, #034563 75%, #011F2A 100%);
     min-height: 100vh;
+    padding: 0;
     padding-bottom: 128px;
+    margin: 0;
   }
 
   /* Back Link */
@@ -384,6 +386,126 @@
     color: white;
     line-height: 1.6;
     margin: 0;
+  }
+
+  /* Employment Accordion Styles (for pages with accordion structure) */
+  .va-employment-accordion {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #5eead4;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .va-employment-accordion:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .va-employment-accordion-header {
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: background-color 0.2s ease;
+    user-select: none;
+  }
+
+  .va-employment-accordion-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .va-employment-accordion-header.active {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .va-employment-accordion-title {
+    flex: 1;
+  }
+
+  .va-employment-accordion-company {
+    font-size: 14px;
+    font-weight: 700;
+    color: #99f6e4;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+  }
+
+  .va-employment-accordion-position {
+    font-size: 13px;
+    color: #d1fae5;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+  }
+
+  .va-employment-accordion-period {
+    font-size: 12px;
+    color: #d1fae5;
+    margin: 0;
+  }
+
+  .va-employment-accordion-icon {
+    width: 20px;
+    height: 20px;
+    color: #5eead4;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+
+  .va-employment-accordion-header.active .va-employment-accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .va-employment-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+  }
+
+  .va-employment-accordion-content.active {
+    max-height: 2000px;
+    padding: 24px 24px 24px 24px;
+  }
+
+  .va-employment-accordion-icon.hide-icon {
+    display: none;
+  }
+
+  .va-employment-accordion-header.no-content {
+    cursor: default;
+  }
+
+  .va-employment-accordion-header.no-content:hover {
+    background: transparent;
+  }
+
+  .va-employment-accordion-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .va-employment-accordion-header {
+      padding: 16px;
+    }
+
+    .va-employment-accordion-content.active {
+      padding: 20px 16px 16px 16px;
+    }
+
+    .va-employment-accordion-company {
+      font-size: 14px;
+    }
+
+    .va-employment-accordion-position {
+      font-size: 13px;
+    }
   }
 
   /* DISC & English Results Row */
