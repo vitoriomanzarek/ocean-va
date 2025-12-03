@@ -329,12 +329,6 @@ export default function VAProfilePage({ vaData }) {
               Insurance Virtual Assistants
             </a>
             <a
-              href="/ovas-licensed-insurance-agents"
-              className="bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-2 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              Licensed Insurance Agents
-            </a>
-            <a
               href="/ovas-executive-admin-virtual-assistant"
               className="bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-2 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg"
             >
@@ -364,13 +358,6 @@ export default function VAProfilePage({ vaData }) {
                   className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200 border-b border-gray-200"
                 >
                   Insurance Virtual Assistants
-                </a>
-                <a
-                  href="/ovas-licensed-insurance-agents"
-                  onClick={() => setShowCTAMenu(false)}
-                  className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200 border-b border-gray-200"
-                >
-                  Licensed Insurance Agents
                 </a>
                 <a
                   href="/ovas-executive-admin-virtual-assistant"

@@ -40,7 +40,7 @@ const TriciaProfile = () => {
         position: 'INSURANCE VIRTUAL ASSISTANT',
         period: 'APRIL 2023 - SEPTEMBER 2025',
         description: [
-          'Assists the Account Manager and other Licensed Insurance Agents when it comes to quoting home, auto, umbrella and other policies.',
+          'Assists the Account Manager with quoting home, auto, umbrella and other policies.',
           'Also process servicing tasks such as mortgagee updates, lienholder change, cross referencing and sending emails to the insured.'
         ]
       },

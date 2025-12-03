@@ -69,12 +69,6 @@ export default function OurCurrentVAs() {
                 Insurance Virtual Assistants
               </Link>
               <Link 
-                to="/licensed-insurance-agents"
-                className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
-              >
-                Licensed Insurance Agents
-              </Link>
-              <Link 
                 to="/executive-admin-vas"
                 className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
               >

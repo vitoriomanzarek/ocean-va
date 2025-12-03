@@ -17,7 +17,7 @@ export default function WhyOceanVA() {
           {
             icon: '🏢',
             headline: 'Founded by Insurance Professionals',
-            body: "Ocean VA was built by licensed insurance agents with 30 years of real-world P&C experience—not tech entrepreneurs who think insurance is 'just data entry.' We've lived your world: the panic of renewal season backlogs, the 2pm COI emergency, the carrier portal that logs you out mid-endorsement, and the client who doesn't understand why their premium went up.",
+            body: "Ocean VA was built by insurance professionals with 30 years of real-world P&C experience—not tech entrepreneurs who think insurance is 'just data entry.' We've lived your world: the panic of renewal season backlogs, the 2pm COI emergency, the carrier portal that logs you out mid-endorsement, and the client who doesn't understand why their premium went up.",
             benefit: "We understand your pain points because we've lived them—from renewal chaos to COI emergencies to E&O anxiety."
           },
           {

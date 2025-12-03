@@ -1,0 +1,658 @@
+[
+  {
+    "name": "Karen",
+    "slug": "karen",
+    "itemId": "691b8a003f849707c9086eb4",
+    "esNuevo": false,
+    "cambios": {
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Karen",
+      "slug": "karen",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/TXb9ONnF310",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00d9df3b2cbf3b543e7d_Karen.webp",
+      "profile-slug-2": "/karen-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Joana",
+    "slug": "joana",
+    "itemId": "691b8a0076470b927f67e85d",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Joana",
+      "slug": "joana",
+      "experience-years": "Trained Assistant",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/PrZ7xZryyjQ",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00e08c377cb123ea65c0_Joana.webp",
+      "profile-slug-2": "/joana-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Abigail",
+    "slug": "abigail",
+    "itemId": "691b8a02cd945b1d36071152",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "main-categories"
+      ]
+    },
+    "fieldData": {
+      "name": "Abigail",
+      "slug": "abigail",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/z3hiwu0mPc8",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00bc95e79d5e69274efb_Abigail.webp",
+      "profile-slug-2": "/abigail-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "insurance-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "health-insurance"
+    ]
+  },
+  {
+    "name": "Jasmine",
+    "slug": "jasmine",
+    "itemId": "691b8a0bcd945b1d360713e6",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Jasmine",
+      "slug": "jasmine",
+      "experience-years": "Trained Assistant",
+      "languages": "English",
+      "availability": "Part Time",
+      "video": "https://youtu.be/WhdFCM1GABs",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffde142c4013f3773a65_Jasmine.webp",
+      "profile-slug-2": "/jasmine-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Jill",
+    "slug": "jill",
+    "itemId": "691b8a0be00a0398d8a56cbf",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Jill",
+      "slug": "jill",
+      "experience-years": "Trained Assistant",
+      "languages": "English",
+      "availability": "Part Time",
+      "video": "https://youtu.be/7yREE7oxSu0",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffd08ac4932a549ff849_Jill.webp",
+      "profile-slug-2": "/jill-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Ana",
+    "slug": "ana",
+    "itemId": "691b8a0c0569661eecba9e82",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Ana",
+      "slug": "ana",
+      "experience-years": "Trained Assistant",
+      "languages": "English",
+      "availability": "Assigned",
+      "video": "real-estate",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffbca07b481ffc0e81fb_Ana.webp",
+      "profile-slug-2": "/ana-s-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Balbina",
+    "slug": "balbina",
+    "itemId": "691b8a0d89b222b6b472933c",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Balbina",
+      "slug": "balbina",
+      "experience-years": "Trained Assistant",
+      "languages": "English",
+      "availability": "Assigned",
+      "video": "https://youtu.be/sESom3C4Tjk",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffa59017228f265d156e_Balbina.webp",
+      "profile-slug-2": "/balbina-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Brandon L.",
+    "slug": "brandon",
+    "itemId": "691b8a0df83ddf1a08c15961",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "all"
+      ]
+    },
+    "fieldData": {
+      "name": "Brandon L.",
+      "slug": "brandon",
+      "experience-years": "2 years",
+      "languages": "English",
+      "availability": "Assigned",
+      "video": "real-estate",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff9acc8058348f30ae01_Brandon%20L.webp",
+      "profile-slug-2": "/brandon-l-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [],
+    "specializationRaw": [
+      "executive-assistant"
+    ]
+  },
+  {
+    "name": "Janice",
+    "slug": "janice",
+    "itemId": "691b8a116363a512c63aad54",
+    "esNuevo": false,
+    "cambios": {
+      "updateFields": [
+        "experience-years"
+      ],
+      "skipFields": [
+        "main-category",
+        "main-categories",
+        "specialization"
+      ]
+    },
+    "fieldData": {
+      "name": "Janice",
+      "slug": "janice",
+      "experience-years": "Trained Assistant",
+      "languages": "English",
+      "availability": "Assigned",
+      "video": "https://youtu.be/P8gcQHNJwsk",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff26333a2214cc2eee14_Janice.webp",
+      "profile-slug-2": "/janice-ocean-va-profile"
+    }
+  },
+  {
+    "name": "Ana Gabriela",
+    "slug": "ana-gabriela",
+    "itemId": "k7hsyw8yyv98i11roba82c80",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Ana Gabriela",
+      "slug": "ana-gabriela",
+      "experience-years": "3 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/npu-s5q1i3g",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e3ff186bd6ac7f13c8e4_Ana%20Gabriela.webp",
+      "profile-slug-2": "/ana-gabriela-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Protocol Development"
+    ]
+  },
+  {
+    "name": "Angel",
+    "slug": "angel",
+    "itemId": "m65p0u1roco633ibryram7ns",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Angel",
+      "slug": "angel",
+      "experience-years": "4 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/Owvvup1s1YM",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e3ffa602e6816d33c4e9_Angel.webp",
+      "profile-slug-2": "/angel-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Amazon",
+      "Wordpress",
+      "Mailchimp",
+      "Semrush"
+    ]
+  },
+  {
+    "name": "Branko",
+    "slug": "branko",
+    "itemId": "xxbdyd8thxdtvelvwg4zifad",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Branko",
+      "slug": "branko",
+      "experience-years": "5 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/nGI5xLNM",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400d6f14fd3a4b9a65a_Branko.webp",
+      "profile-slug-2": "/branko-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "With Mortgage And Lead-Gen Experience"
+    ]
+  },
+  {
+    "name": "Fabiola",
+    "slug": "fabiola",
+    "itemId": "ajgxjf1l50rqv4nj3qj9caj8",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Fabiola",
+      "slug": "fabiola",
+      "experience-years": "3 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/3ZajTF8-OrM",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400ad068a182e9c76b6_Fabiola.webp",
+      "profile-slug-2": "/fabiola-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Wordpress",
+      "Salesforce",
+      "Asana",
+      "Semrush"
+    ]
+  },
+  {
+    "name": "Gael",
+    "slug": "gael",
+    "itemId": "09138wavrosf8mlqgr52c1sj",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Gael",
+      "slug": "gael",
+      "experience-years": "4 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/ve0Wkpkpuh0",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400ba887b4427c6e98b_Gael.webp",
+      "profile-slug-2": "/gael-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Wordpress",
+      "Shopify"
+    ]
+  },
+  {
+    "name": "Hugo",
+    "slug": "hugo",
+    "itemId": "bpqblfidat21yqta7auny302",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Hugo",
+      "slug": "hugo",
+      "experience-years": "3 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/V_OCQi_k9tg",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400df2c7f8d1fd11413_Hugo.webp",
+      "profile-slug-2": "/hugo-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Wordpress",
+      "Seo",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Jomer",
+    "slug": "jomer-daniel",
+    "itemId": "61ncrl5qbdkhxqhrooixlptb",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Jomer",
+      "slug": "jomer-daniel",
+      "experience-years": "2 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/E5hCtCVYZCA",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400804ea898e017d499_Jomer%20Daniel.webp",
+      "profile-slug-2": "/jomer-daniel-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Wordpress",
+      "Shopify"
+    ]
+  },
+  {
+    "name": "Jose Luis",
+    "slug": "jose-luis",
+    "itemId": "s8x5d6jferurolpp1oug0nm8",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Jose Luis",
+      "slug": "jose-luis",
+      "experience-years": "4 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/d1kaFwMps4M",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4003d90422fd7955013_Jose%20Luis.webp",
+      "profile-slug-2": "/jose-luis-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Semrush",
+      "Google Ads",
+      "Meta Business Suite"
+    ]
+  },
+  {
+    "name": "Marco",
+    "slug": "marco",
+    "itemId": "gensqb2e2u9ycvmz8pawqzfl",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Marco",
+      "slug": "marco",
+      "experience-years": "3 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/vORSwa7MKZk",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4001a352ee4b5a3bb4f_Marco.webp",
+      "profile-slug-2": "/marco-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Wordpress",
+      "Google Ads",
+      "Meta Ads",
+      "Asana"
+    ]
+  },
+  {
+    "name": "Patricio",
+    "slug": "patricio",
+    "itemId": "1bbrjim6xb54uvyjldg9q52r",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Patricio",
+      "slug": "patricio",
+      "experience-years": "5 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/U7bLbb9XqoQ",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925f858c8a331263df8b3dd_Patricio.webp",
+      "profile-slug-2": "/patricio-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Wordpress",
+      "Google Ads",
+      "Meta Business Suite"
+    ]
+  },
+  {
+    "name": "Samantha",
+    "slug": "samantha",
+    "itemId": "3uexwddsea1yq08cpfah8h0c",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Samantha",
+      "slug": "samantha",
+      "experience-years": "3 years",
+      "languages": "Bilingual (EN-ES)",
+      "availability": "Full Time",
+      "video": "https://youtu.be/8wbHfjJ0ZCM",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4010636a15e21ea43b1_Samantha.webp",
+      "profile-slug-2": "/samantha-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Wordpress",
+      "Asana",
+      "Semrush",
+      "Meta Business Suite"
+    ]
+  },
+  {
+    "name": "Ximena",
+    "slug": "ximena",
+    "itemId": null,
+    "esNuevo": true,
+    "cambios": null,
+    "fieldData": {
+      "name": "Ximena",
+      "slug": "ximena",
+      "experience-years": "3 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/2CCpjQR5eO4",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4013a172c1563abbd18_Ximena.webp",
+      "profile-slug-2": "/ximena-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Aws",
+      "Salesforce",
+      "Customer Service"
+    ]
+  },
+  {
+    "name": "Joan Rose",
+    "slug": "joan-rose",
+    "itemId": "uvnf1j8wk848az5kg0xyapnp",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Joan Rose",
+      "slug": "joan-rose",
+      "experience-years": "4 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "calendar-management",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e40023e3a0634335b7da_Joan%20Rose.webp",
+      "profile-slug-2": "/joan-rose-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [],
+    "specializationRaw": [
+      "executive-assistant"
+    ]
+  },
+  {
+    "name": "Joy",
+    "slug": "joy",
+    "itemId": "jkgw3za4wo6ljgjwddgnfe9y",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Joy",
+      "slug": "joy",
+      "experience-years": "3 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/3UFjywIi89w",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400928724d6ef14d34a_Joy.webp",
+      "profile-slug-2": "/joy-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Funnel",
+      "Social Media",
+      "Hubspot",
+      "Figma"
+    ]
+  },
+  {
+    "name": "Jane",
+    "slug": "jane",
+    "itemId": "uq8fgzptakz3h8ulh9yrfrg5",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Jane",
+      "slug": "jane",
+      "experience-years": "5 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/h9_pwiuwUFU",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e400d36c1986e40d6de6_Jane.webp",
+      "profile-slug-2": "/jane-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Wordpress",
+      "Wix",
+      "Shopify",
+      "Figma"
+    ]
+  },
+  {
+    "name": "Maridel",
+    "slug": "maridel",
+    "itemId": "sn6nbv6b646qjbwg7np9undg",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Maridel",
+      "slug": "maridel",
+      "experience-years": "4 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/umEKzjx9998",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4014e7c8c834ed95927_Maridel.webp",
+      "profile-slug-2": "/maridel-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Shopify",
+      "Zendesk",
+      "Quickbooks",
+      "Photoshop"
+    ]
+  },
+  {
+    "name": "Randean",
+    "slug": "randean",
+    "itemId": "t68x9151gfx7e5uyywcbf2ss",
+    "esNuevo": false,
+    "cambios": null,
+    "fieldData": {
+      "name": "Randean",
+      "slug": "randean",
+      "experience-years": "3 years",
+      "languages": "English",
+      "availability": "Full Time",
+      "video": "https://youtu.be/fCALjhTtCnw",
+      "image": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6925e4015b94b1a24f71aa17_Randean.webp",
+      "profile-slug-2": "/randean-ocean-va-profile"
+    },
+    "mainCategoriesRaw": [
+      "executive-virtual-assistant"
+    ],
+    "specializationRaw": [
+      "Asana",
+      "Salesforce",
+      "Ring Central"
+    ]
+  }
+]

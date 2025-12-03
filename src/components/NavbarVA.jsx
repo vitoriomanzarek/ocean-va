@@ -7,7 +7,6 @@ export default function NavbarVA() {
 
   const vaCategories = [
     { name: 'Insurance Virtual Assistant', href: '/our-vas' },
-    { name: 'Licensed Insurance Agents', href: '/licensed-insurance-agents' },
     { name: 'Executive / Admin VA', href: '/executive-admin-vas' },
     { name: 'Mortgage Processing Assistant', href: '/ovas-mortgage-processing-assistant' },
     { name: 'Medical Assistant Specialist', href: '/ovas-medical-assistant' }

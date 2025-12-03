@@ -731,14 +731,12 @@ const OurVAsPage = () => {
   // Page title and description based on type
   const pageTitles = {
     'insurance': 'Insurance Virtual Assistants',
-    'licensed': 'Licensed Insurance Agents',
     'executive': 'Executive & Admin Virtual Assistants',
     'default': 'Meet Our Virtual Assistants'
   };
   
   const pageDescriptions = {
     'insurance': 'Our specialized insurance VAs are trained to handle policy management, claims processing, and customer service for insurance agencies.',
-    'licensed': 'Our team includes licensed insurance professionals who can handle complex insurance tasks and provide expert support.',
     'executive': 'Professional executive and administrative VAs ready to support your business operations and management needs.',
     'default': 'Our VAs are highly skilled professionals ready to support your business needs. Each assistant is pre-vetted and trained to deliver exceptional service.'
   };
@@ -772,12 +770,6 @@ const OurVAsPage = () => {
                   className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
                 >
                   Insurance Virtual Assistants
-                </Link>
-                <Link 
-                  to="/licensed-insurance-agents"
-                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
-                >
-                  Licensed Insurance Agents
                 </Link>
                 <Link 
                   to="/executive-admin-vas"
