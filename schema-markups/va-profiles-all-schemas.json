@@ -1,0 +1,1955 @@
+{
+  "category_pages": {
+    "insurance": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ovas-insurance-virtual-assistant",
+      "description": "Professional insurance virtual assistants trained in policy management, claims processing, customer service, and insurance industry best practices. Bilingual support for insurance agencies across the United States.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com",
+        "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+      },
+      "areaServed": "US",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Insurance Virtual Assistant Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Policy Management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Claims Processing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Customer Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Quote Generation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Underwriting Support"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Renewal Management"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "150"
+      }
+    },
+    "executive": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Executive Administrative Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ovas-executive-admin-virtual-assistant",
+      "description": "Premium executive-level virtual assistants for C-suite executives and business leaders. Expert-level administrative support, calendar management, and strategic coordination.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com",
+        "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+      },
+      "areaServed": "US",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Executive Administrative Virtual Assistant Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Calendar Management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strategic Coordination"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Board Meeting Preparation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Travel Coordination"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Confidential Document Management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Project Management"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "150"
+      }
+    },
+    "mortgage": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Mortgage Processing Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ovas-mortgage-processing-assistant",
+      "description": "Specialized mortgage virtual assistants with expertise in loan processing, underwriting support, compliance, and mortgage industry workflows.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com",
+        "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+      },
+      "areaServed": "US",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mortgage Processing Assistant Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Loan Processing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mortgage Underwriting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compliance Review"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Document Management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Client Communication"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pre-Qualification Support"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "150"
+      }
+    },
+    "healthcare": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Medical Assistant Specialist",
+      "url": "https://www.oceanvirtualassistant.com/ovas-healthcare-virtual-assistant",
+      "description": "HIPAA-compliant healthcare virtual assistants trained in medical administration, patient scheduling, medical records management, and healthcare industry protocols.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com",
+        "logo": "https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png"
+      },
+      "areaServed": "US",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Medical Assistant Specialist Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Medical Administration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patient Scheduling"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Medical Records Management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HIPAA Compliance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Insurance Verification"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Billing Support"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "150"
+      }
+    }
+  },
+  "individual_vas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adrian",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/adrian-ocean-va-profile",
+      "description": "Adrian is a Insurance Virtual Assistant. with 2 years of experience. fluent in Bilingual (EN-ES). specializing in auto; home; life-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d010c91515efa919acff0_Adrian.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=k5OatPLSORw"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "life-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alejandro",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/alejandro-ocean-va-profile",
+      "description": "Alejandro is a Insurance Virtual Assistant. with 2.5 years of experience. fluent in Bilingual (EN-ES). specializing in auto; home; life; commercial-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0100caf3ca20f3f159be_Alejandro.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=a_cRiGRSLEs"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "life",
+        "commercial-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dafne",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/dafne-ocean-va-profile",
+      "description": "Dafne is a Insurance Virtual Assistant. with 1 years of experience. fluent in Bilingual (EN-ES). specializing in home; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00f3fc9c654e7ce9dce6_Dafne.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=habJY_0mpjs"
+      ],
+      "knowsAbout": [
+        "home",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Karen",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/karen-ocean-va-profile",
+      "description": "Karen is a Insurance Virtual Assistant. with 4 years of experience. fluent in Bilingual (EN-ES). specializing in home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00d9df3b2cbf3b543e7d_Karen.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=TXb9ONnF310"
+      ],
+      "knowsAbout": [
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joana",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/joana-ocean-va-profile",
+      "description": "Joana is a Executive Virtual Assistant. fluent in Bilingual (EN-ES). specializing in executive-assistant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00e08c377cb123ea65c0_Joana.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=PrZ7xZryyjQ"
+      ],
+      "knowsAbout": [
+        "executive-assistant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ivan",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ivan-ocean-va-profile",
+      "description": "Ivan is a Insurance Virtual Assistant. with 2 years of experience. fluent in Bilingual (EN-ES). specializing in auto; health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00eacaf3ca20f3f155ac_Ivan.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=dHojsDPmfHc"
+      ],
+      "knowsAbout": [
+        "auto",
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maria Paula",
+      "jobTitle": "Healthcare Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/maria-paula-ocean-va-profile",
+      "description": "Maria Paula is a Healthcare Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in medical-admin-hipaa-compliant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff042589b14288bd9138_Maria%20Paula.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=yxgaoJEpdGg"
+      ],
+      "knowsAbout": [
+        "medical-admin-hipaa-compliant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moises",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/moises-ocean-va-profile",
+      "description": "Moises is a Insurance Virtual Assistant. with 2 years of experience. fluent in Bilingual (EN-ES). specializing in us-commercial-trucking-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00ce958587e60facce5c_Moises.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=tbz0iRIWaps"
+      ],
+      "knowsAbout": [
+        "us-commercial-trucking-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abigail",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/abigail-ocean-va-profile",
+      "description": "Abigail is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00bc95e79d5e69274efb_Abigail.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=z3hiwu0mPc8"
+      ],
+      "knowsAbout": [
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antonio",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/antonio-ocean-va-profile",
+      "description": "Antonio is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in auto; home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00b3b31926da8df79435_Antonio.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=3b3R9YoLumE"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cherry Mae",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/cherry-mae-ocean-va-profile",
+      "description": "Cherry Mae is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in personal-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00aa0e1bf0f4af566406_Cherry%20Mae.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=DIfncidHCpY"
+      ],
+      "knowsAbout": [
+        "personal-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emmanuel",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/emmanuel-ocean-va-profile",
+      "description": "Emmanuel is a Insurance Virtual Assistant. with 6 years of experience. fluent in English. specializing in personal; commercial-lines.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d009fecf80a53a183833d_Emmanuel.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=dZaAfgmaQwk"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-lines"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Geraldine",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/geraldine-ocean-va-profile",
+      "description": "Geraldine is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in auto; home; commercial-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d008b113b8ce73da48997_Geraldine.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=OAEGigybmFM"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "commercial-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Francis",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/francis-ocean-va-profile",
+      "description": "Francis is a Insurance Virtual Assistant. with 6 years of experience. fluent in English. specializing in auto; home; health; life-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0095aa5d5113504a1ab2_Francis.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=Atdu3qVBHLs"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "health",
+        "life-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Javier",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/javier-ocean-va-profile",
+      "description": "Javier is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d007b1c538e0206f85182_Javier.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=UCqesVIO_7M"
+      ],
+      "knowsAbout": [
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jay Alvin",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jay-alvin-ocean-va-profile",
+      "description": "Jay Alvin is a Insurance Virtual Assistant. with 5 years of experience. fluent in English. specializing in personal; commercial-lines.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0083d8dce9c47d5cbdab_Jay%20Alvin.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=GUe3uCkW8-4"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-lines"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jerome",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jerome-ocean-va-profile",
+      "description": "Jerome is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in home; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00730ddf675060f59499_Jerome.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=aomGUtRlOiE"
+      ],
+      "knowsAbout": [
+        "home",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jimmy",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jimmy-ocean-va-profile",
+      "description": "Jimmy is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in personal-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0068aab90013390d84fb_Jimmy.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=rKDnjVB-dxE"
+      ],
+      "knowsAbout": [
+        "personal-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joel",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/joel-ocean-va-profile",
+      "description": "Joel is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in personal; commercial-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d005dca80bfbce136af36_Joel.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=5n99ZiMc0fs"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joji Marie",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/joji-marie-ocean-va-profile",
+      "description": "Joji Marie is a Insurance Virtual Assistant. with 4 years of experience. fluent in English. specializing in auto; home; commercial; health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00516209b9a51b63fe84_Joji%20Marie.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=5N_z80i4KrQ"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "commercial",
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Laurice",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/laurice-ocean-va-profile",
+      "description": "Laurice is a Insurance Virtual Assistant. with 1.4 years of experience. fluent in English. specializing in home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0048443fad3a6b8fcadb_Laurice.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=9cz71wjqIX8"
+      ],
+      "knowsAbout": [
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ma. Venus",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ma-venus-ocean-va-profile",
+      "description": "Ma. Venus is a Insurance Virtual Assistant. with 1.5 years of experience. fluent in English. specializing in auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d002ec8b898a2c1f16c75_Ma%20Venus.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=AgUkZKEWzkw"
+      ],
+      "knowsAbout": [
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lorenz",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/lorenz-ocean-va-profile",
+      "description": "Lorenz is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in home; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d00393fac1a7af7e9d239_Lorenz.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=3if5VzuvLNc"
+      ],
+      "knowsAbout": [
+        "home",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michelle",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/michelle-ocean-va-profile",
+      "description": "Michelle is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in home; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d0023730ca9bf6a78b8c1_Michelle.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=sjVqZfkunbY"
+      ],
+      "knowsAbout": [
+        "home",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gizelle",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/gizelle-ocean-va-profile",
+      "description": "Gizelle is a Insurance Virtual Assistant. with 8 years of experience. fluent in English. specializing in health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffef47270485ee84d76f_Gizelle.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=xkbMKgYarbk"
+      ],
+      "knowsAbout": [
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raydon",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/raydon-ocean-va-profile",
+      "description": "Raydon is a Insurance Virtual Assistant. with 4 years of experience. fluent in English. specializing in personal; property-lines.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691d001a8dedcb64b9ea416e_Raydon.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=2OIkxzcz-pw"
+      ],
+      "knowsAbout": [
+        "personal",
+        "property-lines"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rona Mae",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/rona-mae-ocean-va-profile",
+      "description": "Rona Mae is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in personal-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfffa3d5f85626f6ebdd3_Rona%20Mae.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=eHrDpnlAeoc"
+      ],
+      "knowsAbout": [
+        "personal-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pavel",
+      "jobTitle": "Marketing Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/pavel-ocean-va-profile",
+      "description": "Pavel is a Marketing Virtual Assistant. with 6 years of experience. fluent in English. specializing in marketing; graphic-design.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffc61b4b6cd5335a8d61_Pavel.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=_reMSeE_gyY"
+      ],
+      "knowsAbout": [
+        "marketing",
+        "graphic-design"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jasmine",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jasmine-ocean-va-profile",
+      "description": "Jasmine is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffde142c4013f3773a65_Jasmine.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=WhdFCM1GABs"
+      ],
+      "knowsAbout": [
+        "executive-assistant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jill",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jill-ocean-va-profile",
+      "description": "Jill is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffd08ac4932a549ff849_Jill.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=7yREE7oxSu0"
+      ],
+      "knowsAbout": [
+        "executive-assistant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ana",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ana-s-ocean-va-profile",
+      "description": "Ana is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant; real-estate.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffbca07b481ffc0e81fb_Ana.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=XloA9MBGtGA"
+      ],
+      "knowsAbout": [
+        "executive-assistant",
+        "real-estate"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ana Victoria",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ana-victoria-ocean-va-profile",
+      "description": "Ana Victoria is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in commercial-line-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffb37a8446ed2bdd8f54_Ana%20Victoria.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=1d4dWgjd0fE"
+      ],
+      "knowsAbout": [
+        "commercial-line-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Balbina",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/balbina-ocean-va-profile",
+      "description": "Balbina is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cffa59017228f265d156e_Balbina.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=sESom3C4Tjk"
+      ],
+      "knowsAbout": [
+        "executive-assistant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Brandon L.",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/brandon-l-ocean-va-profile",
+      "description": "Brandon L. is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in health; life-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff9acc8058348f30ae01_Brandon%20L.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=PVmxKa19Mz0"
+      ],
+      "knowsAbout": [
+        "health",
+        "life-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carolina",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/carolina-ocean-va-profile",
+      "description": "Carolina is a Insurance Virtual Assistant. fluent in English. specializing in auto; home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff8f3fac1a7af7e9aeae_Carolina.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=_3cmkdxncdg"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Christine",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/christine-ocean-va-profile",
+      "description": "Christine is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in personal; commercial-lines.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff83f58ea1f5f104c904_Christine.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=m0n5unGQ1Bk"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-lines"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fernanda",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/fernanda-ocean-va-profile",
+      "description": "Fernanda is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant; key-account-management; marketing.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff5c5b3490e9868f787e_Fernanda.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=7ngbNodl3es"
+      ],
+      "knowsAbout": [
+        "executive-assistant",
+        "key-account-management",
+        "marketing"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ellen",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ellen-rose-ocean-va-profile",
+      "description": "Ellen is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in home; health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff6647cbd48ba6ec3124_Ellen.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=zgEzkCfI3Pw"
+      ],
+      "knowsAbout": [
+        "home",
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dawn",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/dawn-ocean-va-profile",
+      "description": "Dawn is a Insurance Virtual Assistant. with 7 years of experience. fluent in English. specializing in auto; home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff794d3997c097e68abb_Dawn.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=fMWR-UrNXAg"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dayana",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/dayana-ocean-va-profile",
+      "description": "Dayana is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in auto; health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff701d2560bd740c2ef5_Dayana.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=1xTnx_3MRPA"
+      ],
+      "knowsAbout": [
+        "auto",
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gonzalo",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/gonzalo-ocean-va-profile",
+      "description": "Gonzalo is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in auto; home; health-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff4b362a40979b718c8e_Gonzalo.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=DYky1VhKGNQ"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "health-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Guillermo",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/guillermo-ocean-va-profile",
+      "description": "Guillermo is a Insurance Virtual Assistant. with 6 years of experience. fluent in English. specializing in auto; home; renters; condo; umbrella; earthquake; watercraft.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff40362a40979b718968_Guillermo.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=sLtVFyK2b7s"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home",
+        "renters",
+        "condo",
+        "umbrella",
+        "earthquake",
+        "watercraft"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kevin",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/kevin-ocean-va-profile",
+      "description": "Kevin is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in trained-insurance-professional.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff1b2589b14288bd9331_Kevin.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=MnlRVthsUYE"
+      ],
+      "knowsAbout": [
+        "trained-insurance-professional"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Israel",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/israel-ocean-va-profile",
+      "description": "Israel is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in health; life-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff3240a12f5b00de66de_Israel.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=aSLhEc15mN4"
+      ],
+      "knowsAbout": [
+        "health",
+        "life-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Janice",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/janice-ocean-va-profile",
+      "description": "Janice is a Insurance Virtual Assistant. fluent in English. specializing in executive-assistant.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff26333a2214cc2eee14_Janice.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=P8gcQHNJwsk"
+      ],
+      "knowsAbout": [
+        "executive-assistant"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lois",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/lois-ocean-va-profile",
+      "description": "Lois is a Insurance Virtual Assistant. with 6 years of experience. fluent in English. specializing in personal-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cff10e838f0338e02bea5_Lois.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=HSCzM1jVsaE"
+      ],
+      "knowsAbout": [
+        "personal-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maria D.",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/maria-d-ocean-va-profile",
+      "description": "Maria D. is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in personal-lines; commercial-lines.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfef47f270115dedf311b_Maria%20D.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=ALQNI3jsBLs"
+      ],
+      "knowsAbout": [
+        "personal-lines",
+        "commercial-lines"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maria",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/maria-ocean-va-profile",
+      "description": "Maria is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in auto; home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfeece43b9a8b849e386e_Maria.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=TNXDeGsyIkM"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Melissa",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/melissa-ocean-va-profile",
+      "description": "Melissa is a Insurance Virtual Assistant. with 1 years of experience. fluent in English. specializing in auto; home-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfedd8492895dbbbd9adb_Melissa.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=6dB2M8wAkjE"
+      ],
+      "knowsAbout": [
+        "auto",
+        "home-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Patricia",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/patricia-ocean-va-profile",
+      "description": "Patricia is a Insurance Virtual Assistant. with 5 years of experience. fluent in English. specializing in us-personal; commercial-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe74dec603ce415a991a_Tricia.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "knowsAbout": [
+        "us-personal",
+        "commercial-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rafael",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/rafael-ocean-va-profile",
+      "description": "Rafael is a Insurance Virtual Assistant. with 6 years of experience. fluent in English. specializing in personal; healthcare-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfec785ed2c3e7044c906_Rafael.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=S19B0sRiohI"
+      ],
+      "knowsAbout": [
+        "personal",
+        "healthcare-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rainier",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/rainier-ocean-va-profile",
+      "description": "Rainier is a Insurance Virtual Assistant. with 7 years of experience. fluent in English. specializing in personal; commercial-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfeb97b578996d025e05a_Rainier.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=Gl_Rijv44Ec"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rejean",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/rejean-ocean-va-profile",
+      "description": "Rejean is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in commercial; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfeaec5d9fc232fd9a9a5_Rejean.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=yeJ_lskQovU"
+      ],
+      "knowsAbout": [
+        "commercial",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ximena G.",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ximena-g-ocean-va-profile",
+      "description": "Ximena G. is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in home; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe860729d9225e264d40_Ximena%20G.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=UQ2JcPPjEnE"
+      ],
+      "knowsAbout": [
+        "home",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rochelle",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/rochelle-ocean-va-profile",
+      "description": "Rochelle is a Insurance Virtual Assistant. with 4 years of experience. fluent in English. specializing in personal; commercial-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfea4bcf393e2a2acb424_Rochelle.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=aCJyNu79nto"
+      ],
+      "knowsAbout": [
+        "personal",
+        "commercial-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sandra",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/sandra-ocean-va-profile",
+      "description": "Sandra is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in personal-lines-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe990a1f1f32af44205e_Sandra.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=xrNMiTNBkcg"
+      ],
+      "knowsAbout": [
+        "personal-lines-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tricia",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/tricia-ocean-va-profile",
+      "description": "Tricia is a Insurance Virtual Assistant. with 2 years of experience. fluent in English. specializing in home-insurance; auto-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe74dec603ce415a991a_Tricia.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=VClb24kDU7s"
+      ],
+      "knowsAbout": [
+        "home-insurance",
+        "auto-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anahi",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/anahi-ocean-va-profile",
+      "description": "Anahi is a Insurance Virtual Assistant. with 4 years of experience. fluent in Bilingual (EN-ES). specializing in homeowners-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe6974b2a69669e05322_Anahi.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "knowsAbout": [
+        "homeowners-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yvette",
+      "jobTitle": "Mortgage Specialist",
+      "url": "https://www.oceanvirtualassistant.com/yvette-ocean-va-profile",
+      "description": "Yvette is a Mortgage Specialist. with 12 years of experience. fluent in English. specializing in loan-processing; mortgage-processing; compliance-review.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe5ab2510d6c7f108637_Yvette.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=oiZlHPfAjbg"
+      ],
+      "knowsAbout": [
+        "loan-processing",
+        "mortgage-processing",
+        "compliance-review"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Grace",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/grace-carmel-ocean-va-profile",
+      "description": "Grace is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in home-insurance; auto-insurance; renters-insurance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe4ea0d726688008c1a3_Grace.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=J08tAud6nTQ"
+      ],
+      "knowsAbout": [
+        "home-insurance",
+        "auto-insurance",
+        "renters-insurance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "AC",
+      "jobTitle": "Mortgage Specialist",
+      "url": "https://www.oceanvirtualassistant.com/ac-ocean-va-profile",
+      "description": "AC is a Mortgage Specialist. with 3 years of experience. fluent in English. specializing in mortgage-operations; loan-underwriting; compliance.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe3ec922508622e67e4b_AC.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=mfyGOi9mo58"
+      ],
+      "knowsAbout": [
+        "mortgage-operations",
+        "loan-underwriting",
+        "compliance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mina",
+      "jobTitle": "Insurance Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/mina-ocean-va-profile",
+      "description": "Mina is a Insurance Virtual Assistant. with 3 years of experience. fluent in English. specializing in commercial-insurance; general-liability; motor-truck-cargo.",
+      "image": "https://cdn.prod.website-files.com/66fd75f52a0ded63ad5ec1db/691cfe0de899f20ad4830185_Mina.webp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=k4jmdy8ifrE"
+      ],
+      "knowsAbout": [
+        "commercial-insurance",
+        "general-liability",
+        "motor-truck-cargo"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ana Gabriela",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ana-gabriela-ocean-va-profile",
+      "description": "Ana Gabriela is a Executive Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in Protocol Development.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=npu-s5q1i3g"
+      ],
+      "knowsAbout": [
+        "Protocol Development"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Angel",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/angel-ocean-va-profile",
+      "description": "Angel is a Executive Virtual Assistant. with 4 years of experience. fluent in Bilingual (EN-ES). specializing in Shopify, Amazon, Wordpress, Mailchimp, Semrush.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=Owvvup1s1YM"
+      ],
+      "knowsAbout": [
+        "Shopify, Amazon, Wordpress, Mailchimp, Semrush"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Branko",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/branko-ocean-va-profile",
+      "description": "Branko is a Executive Virtual Assistant. with 5 years of experience. fluent in Bilingual (EN-ES). specializing in With Mortgage And Lead-Gen Experience.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=i6-nGI5xLNM"
+      ],
+      "knowsAbout": [
+        "With Mortgage And Lead-Gen Experience"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fabiola",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/fabiola-ocean-va-profile",
+      "description": "Fabiola is a Executive Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in Wordpress, Salesforce, Asana, Semrush.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=3ZajTF8-OrM"
+      ],
+      "knowsAbout": [
+        "Wordpress, Salesforce, Asana, Semrush"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gael",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/gael-ocean-va-profile",
+      "description": "Gael is a Executive Virtual Assistant. with 4 years of experience. fluent in Bilingual (EN-ES). specializing in Wordpress, Shopify.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=ve0Wkpkpuh0"
+      ],
+      "knowsAbout": [
+        "Wordpress, Shopify"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hugo",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/hugo-ocean-va-profile",
+      "description": "Hugo is a Executive Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in Shopify, Wordpress, Seo, Javascript.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=V_OCQi_k9tg"
+      ],
+      "knowsAbout": [
+        "Shopify, Wordpress, Seo, Javascript"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jomer",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jomer-daniel-ocean-va-profile",
+      "description": "Jomer is a Executive Virtual Assistant. with 2 years of experience. fluent in Bilingual (EN-ES). specializing in Wordpress, Shopify.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=E5hCtCVYZCA"
+      ],
+      "knowsAbout": [
+        "Wordpress, Shopify"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jose Luis",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jose-luis-ocean-va-profile",
+      "description": "Jose Luis is a Executive Virtual Assistant. with 4 years of experience. fluent in Bilingual (EN-ES). specializing in Shopify, Semrush, Google Ads, Meta Business Suite.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=d1kaFwMps4M"
+      ],
+      "knowsAbout": [
+        "Shopify, Semrush, Google Ads, Meta Business Suite"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marco",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/marco-ocean-va-profile",
+      "description": "Marco is a Executive Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in Shopify, Wordpress, Google Ads, Meta Ads, Asana.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=vORSwa7MKZk"
+      ],
+      "knowsAbout": [
+        "Shopify, Wordpress, Google Ads, Meta Ads, Asana"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Patricio",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/patricio-ocean-va-profile",
+      "description": "Patricio is a Executive Virtual Assistant. with 5 years of experience. fluent in Bilingual (EN-ES). specializing in Shopify, Wordpress, Google Ads, Meta Business Suite.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=U7bLbb9XqoQ"
+      ],
+      "knowsAbout": [
+        "Shopify, Wordpress, Google Ads, Meta Business Suite"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samantha",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/samantha-ocean-va-profile",
+      "description": "Samantha is a Executive Virtual Assistant. with 3 years of experience. fluent in Bilingual (EN-ES). specializing in Wordpress, Asana, Semrush, Meta Business Suite.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=8wbHfjJ0ZCM"
+      ],
+      "knowsAbout": [
+        "Wordpress, Asana, Semrush, Meta Business Suite"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ximena",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/ximena-ocean-va-profile",
+      "description": "Ximena is a Executive Virtual Assistant. with 3 years of experience. fluent in English. specializing in Aws, Salesforce, Customer Service.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=2CCpjQR5eO4"
+      ],
+      "knowsAbout": [
+        "Aws, Salesforce, Customer Service"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joan Rose",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/joan-rose-ocean-va-profile",
+      "description": "Joan Rose is a Executive Virtual Assistant. with 4 years of experience. fluent in English. specializing in executive-assistant; calendar-management; administrative-support.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=cebExm1rt00"
+      ],
+      "knowsAbout": [
+        "executive-assistant",
+        "calendar-management",
+        "administrative-support"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joy",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/joy-ocean-va-profile",
+      "description": "Joy is a Executive Virtual Assistant. with 3 years of experience. fluent in English. specializing in Funnel, Social Media, Hubspot, Figma.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=3UFjywIi89w"
+      ],
+      "knowsAbout": [
+        "Funnel, Social Media, Hubspot, Figma"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jane",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/jane-ocean-va-profile",
+      "description": "Jane is a Executive Virtual Assistant. with 5 years of experience. fluent in English. specializing in Wordpress, Wix, Shopify, Figma.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=h9_pwiuwUFU"
+      ],
+      "knowsAbout": [
+        "Wordpress, Wix, Shopify, Figma"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maridel",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/maridel-ocean-va-profile",
+      "description": "Maridel is a Executive Virtual Assistant. with 4 years of experience. fluent in English. specializing in Shopify, Zendesk, Quickbooks, Photoshop.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=umEKzjx9998"
+      ],
+      "knowsAbout": [
+        "Shopify, Zendesk, Quickbooks, Photoshop"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Randean",
+      "jobTitle": "Executive Virtual Assistant",
+      "url": "https://www.oceanvirtualassistant.com/randean-ocean-va-profile",
+      "description": "Randean is a Executive Virtual Assistant. with 3 years of experience. fluent in English. specializing in Asana, Salesforce, Ring Central.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=fCALjhTtCnw"
+      ],
+      "knowsAbout": [
+        "Asana, Salesforce, Ring Central"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Janet",
+      "jobTitle": "Mortgage Specialist",
+      "url": "https://www.oceanvirtualassistant.com/janet-ocea-va-profile",
+      "description": "Janet is a Mortgage Specialist. with 2 years of experience. fluent in English. specializing in Loan Processing, Mortgage Processing, Fraud Detection.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=ifyF-owgkDw"
+      ],
+      "knowsAbout": [
+        "Loan Processing, Mortgage Processing, Fraud Detection"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Albert",
+      "jobTitle": "Insurance Specialist",
+      "url": "https://www.oceanvirtualassistant.com/albert-ocea-va-profile",
+      "description": "Albert is a Insurance Specialist. with 3 years of experience. fluent in English. specializing in Personal Lines, Commercial Lines, EZLynx Expert.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=4sfqBgJ6h3w"
+      ],
+      "knowsAbout": [
+        "Personal Lines, Commercial Lines, EZLynx Expert"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kathleen",
+      "jobTitle": "Mortgage Specialist",
+      "url": "https://www.oceanvirtualassistant.com/kathleen-ocea-va-profile",
+      "description": "Kathleen is a Mortgage Specialist. with 5 years of experience. fluent in English. specializing in Loan Processing, Compliance, Client Support.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      },
+      "sameAs": [
+        "https://www.youtube.com/watch?v=t84q0i_wMfs"
+      ],
+      "knowsAbout": [
+        "Loan Processing, Compliance, Client Support"
+      ]
+    }
+  ],
+  "metadata": {
+    "total_category_pages": 4,
+    "total_vas": 82,
+    "generated_at": "2025-01-21"
+  }
+}
