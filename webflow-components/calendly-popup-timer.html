@@ -1,0 +1,389 @@
+<!-- Calendly Popup with 1-minute Timer for Services/Industries Pages -->
+<div id="calendly-popup-overlay" class="calendly-popup-overlay" style="display: none;">
+  <div class="calendly-popup-container">
+    <button class="calendly-popup-close" onclick="closeCalendlyPopup()" aria-label="Close popup">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    
+    <div class="calendly-popup-content">
+      <div class="calendly-popup-header">
+        <div class="calendly-popup-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <h2 class="calendly-popup-title">Ready to Transform Your Business?</h2>
+        <p class="calendly-popup-subtitle">Let's discuss how our virtual assistants can help you scale faster and work smarter. Book a free 15-minute discovery call today.</p>
+      </div>
+      
+      <div class="calendly-popup-widget">
+        <!-- Calendly iframe widget -->
+        <iframe src="https://calendly.com/ocean-virtual-assistant/30min?hide_event_type_details=1&hide_gdpr_banner=1&embed_domain=oceanvirtualassistant.com" width="100%" height="1000" frameborder="0" style="border: none; overflow: hidden;" scrolling="no"></iframe>
+      </div>
+      
+      <div class="calendly-popup-footer">
+        <button class="calendly-popup-dismiss" onclick="dismissCalendlyPopup()">
+          Maybe later
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .calendly-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .calendly-popup-container {
+    background: #f0fdf4;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    max-width: 900px;
+    width: 100%;
+    max-height: 95vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .calendly-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f3f4f6;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+
+  .calendly-popup-close:hover {
+    background: #e5e7eb;
+    transform: rotate(90deg);
+  }
+
+  .calendly-popup-close svg {
+    color: #6b7280;
+    width: 20px;
+    height: 20px;
+  }
+
+  .calendly-popup-content {
+    padding: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .calendly-popup-content {
+      padding: 30px 20px;
+    }
+  }
+
+  .calendly-popup-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .calendly-popup-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #037b77 0%, #049d98 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(3, 123, 119, 0.3);
+  }
+
+  .calendly-popup-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 640px) {
+    .calendly-popup-title {
+      font-size: 24px;
+    }
+  }
+
+  .calendly-popup-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .calendly-popup-subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .calendly-popup-widget {
+    margin: 30px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+  }
+
+  .calendly-popup-widget iframe {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    border: none;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+
+  /* Hide scrollbar inside Calendly iframe */
+  .calendly-popup-widget iframe::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .calendly-popup-widget iframe {
+      height: 900px;
+    }
+  }
+
+  @media (max-height: 1000px) {
+    .calendly-popup-widget iframe {
+      height: 950px;
+    }
+  }
+
+  .calendly-popup-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .calendly-popup-dismiss {
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .calendly-popup-dismiss:hover {
+    color: #111827;
+    background: #f3f4f6;
+  }
+
+  /* Scrollbar styling for popup */
+  .calendly-popup-container::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .calendly-popup-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .calendly-popup-container::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+  }
+
+  .calendly-popup-container::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+</style>
+
+<script>
+  (function() {
+    // Check if popup was already dismissed (using localStorage)
+    const POPUP_DISMISSED_KEY = 'calendly_popup_dismissed';
+    const POPUP_SHOWN_KEY = 'calendly_popup_shown';
+    const SESSION_START_KEY = 'calendly_session_start';
+    const TIMER_DURATION = 60000; // 60 seconds = 1 minute
+    
+    // Initialize session start time if not exists
+    if (!sessionStorage.getItem(SESSION_START_KEY)) {
+      sessionStorage.setItem(SESSION_START_KEY, Date.now().toString());
+    }
+    
+    // Check if popup should be shown
+    function shouldShowPopup() {
+      // Don't show if dismissed permanently
+      if (localStorage.getItem(POPUP_DISMISSED_KEY) === 'true') {
+        console.log('Popup dismissed permanently');
+        return false;
+      }
+      
+      // Don't show if already shown in this session
+      if (sessionStorage.getItem(POPUP_SHOWN_KEY) === 'true') {
+        console.log('Popup already shown in this session');
+        return false;
+      }
+      
+      return true;
+    }
+    
+    // Show popup function
+    function showCalendlyPopup() {
+      const overlay = document.getElementById('calendly-popup-overlay');
+      if (overlay) {
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        sessionStorage.setItem(POPUP_SHOWN_KEY, 'true');
+        console.log('Popup shown');
+      } else {
+        console.error('Popup overlay element not found');
+      }
+    }
+    
+    // Calculate time elapsed since session start
+    function getTimeElapsed() {
+      const sessionStart = parseInt(sessionStorage.getItem(SESSION_START_KEY) || '0');
+      return Date.now() - sessionStart;
+    }
+    
+    // Show popup after 1 minute (60,000 milliseconds)
+    function initPopupTimer() {
+      // Wait for element to exist
+      const overlay = document.getElementById('calendly-popup-overlay');
+      if (!overlay) {
+        console.error('Popup overlay not found in DOM, retrying...');
+        setTimeout(initPopupTimer, 100);
+        return;
+      }
+      
+      if (!shouldShowPopup()) {
+        return;
+      }
+      
+      const timeElapsed = getTimeElapsed();
+      const timeRemaining = TIMER_DURATION - timeElapsed;
+      
+      if (timeRemaining <= 0) {
+        // Time has already passed, show popup immediately
+        console.log('Time already elapsed, showing popup immediately');
+        showCalendlyPopup();
+      } else {
+        // Time hasn't passed yet, set timer for remaining time
+        console.log('Popup timer initialized, will show in ' + Math.round(timeRemaining / 1000) + ' seconds');
+        
+        setTimeout(function() {
+          if (shouldShowPopup()) {
+            showCalendlyPopup();
+          }
+        }, timeRemaining);
+      }
+    }
+    
+    // Close popup function
+    window.closeCalendlyPopup = function() {
+      const overlay = document.getElementById('calendly-popup-overlay');
+      if (overlay) {
+        overlay.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+      }
+    };
+    
+    // Dismiss popup permanently
+    window.dismissCalendlyPopup = function() {
+      localStorage.setItem(POPUP_DISMISSED_KEY, 'true');
+      window.closeCalendlyPopup();
+    };
+    
+    // TEST FUNCTIONS: For debugging (remove in production)
+    // Clear all popup storage and show immediately
+    window.testCalendlyPopup = function() {
+      localStorage.removeItem(POPUP_DISMISSED_KEY);
+      sessionStorage.removeItem(POPUP_SHOWN_KEY);
+      sessionStorage.removeItem(SESSION_START_KEY);
+      showCalendlyPopup();
+      console.log('Test: Popup shown, storage cleared');
+    };
+    
+    // Show popup immediately (without clearing storage)
+    window.showCalendlyPopupNow = function() {
+      showCalendlyPopup();
+    };
+    
+    // Close on overlay click (outside the container)
+    document.addEventListener('click', function(e) {
+      const overlay = document.getElementById('calendly-popup-overlay');
+      if (overlay && e.target === overlay) {
+        window.closeCalendlyPopup();
+      }
+    });
+    
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        window.closeCalendlyPopup();
+      }
+    });
+    
+    // Initialize timer when DOM is ready
+    function startPopup() {
+      if (document.getElementById('calendly-popup-overlay')) {
+        initPopupTimer();
+      } else {
+        // Retry if element doesn't exist yet
+        setTimeout(startPopup, 100);
+      }
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', startPopup);
+    } else {
+      startPopup();
+    }
+  })();
+</script>
+

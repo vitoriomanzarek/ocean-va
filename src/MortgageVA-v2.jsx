@@ -18,25 +18,32 @@ import { mortgageFaqs } from './data/faqs'
 function PartnerLogo({ partner }) {
   const [imgSrc, setImgSrc] = React.useState(partner.logo)
   const [showText, setShowText] = React.useState(false)
+  const [errorCount, setErrorCount] = React.useState(0)
   
   const handleError = () => {
-    if (partner.fallback && imgSrc === partner.logo) {
-      // Try fallback
+    if (partner.fallback && errorCount === 0) {
+      // Try fallback first
+      setErrorCount(1)
       setImgSrc(partner.fallback)
+    } else if (partner.fallback2 && errorCount === 1) {
+      // Try second fallback if available
+      setErrorCount(2)
+      setImgSrc(partner.fallback2)
     } else {
-      // Both failed, show text
+      // All failed, show text
       setShowText(true)
     }
   }
   
   return (
-    <div className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+    <div className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 min-h-[80px]">
       {!showText ? (
         <img
           src={imgSrc}
           alt={partner.alt}
-          className="h-12 md:h-16 w-auto object-contain"
+          className="h-12 md:h-16 w-auto object-contain max-w-full"
           onError={handleError}
+          loading="lazy"
         />
       ) : (
         <span className="text-sm text-gray-500 font-medium text-center">{partner.name}</span>
@@ -244,48 +251,41 @@ export default function MortgageVA() {
     "url": "https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant"
   }
 
-  // Partners/Certifications logos data
+  // Partners/Certifications logos data - Using local images from Mortgage logos folder
   const partners = [
     { 
       name: 'AIME', 
-      logo: 'https://logo.clearbit.com/aime.org', 
-      fallback: 'https://www.aime.org/wp-content/uploads/2021/06/AIME-Logo-Color.png',
-      alt: 'AIME - Association of Independent Mortgage Experts' 
+      logo: '/images/Mortgage logos/Aime.webp',
+      alt: 'AIME - Association of Independent Mortgage Experts - Proud Member' 
     },
     { 
       name: 'Encompass', 
-      logo: 'https://logo.clearbit.com/encompass.com', 
-      fallback: 'https://www.elliemae.com/sites/default/files/2021-06/encompass-logo.png',
+      logo: '/images/Mortgage logos/Encompass_Logo.webp',
       alt: 'Encompass by Ellie Mae' 
     },
     { 
       name: 'LendingPad', 
-      logo: 'https://logo.clearbit.com/lendingpad.com', 
-      fallback: 'https://www.lendingpad.com/wp-content/uploads/2021/01/lendingpad-logo.png',
-      alt: 'LendingPad Loan Processor Certified Badge' 
+      logo: '/images/Mortgage logos/Loan-processor.webp',
+      alt: 'LendingPad Loan Processor Certified' 
     },
     { 
       name: 'ARIVE', 
-      logo: 'https://logo.clearbit.com/arive.com', 
-      fallback: 'https://www.arive.com/images/arive-logo.png',
+      logo: '/images/Mortgage logos/arive.webp',
       alt: 'ARIVE' 
     },
     { 
       name: 'Next Door Lending', 
-      logo: 'https://logo.clearbit.com/nextdoorlending.com', 
-      fallback: 'https://www.nextdoorlending.com/images/logo.png',
+      logo: '/images/Mortgage logos/next-door.webp',
       alt: 'Next Door Lending' 
     },
     { 
       name: 'EDGE Home Finance', 
-      logo: 'https://logo.clearbit.com/edgehomefinance.com', 
-      fallback: 'https://www.edgehomefinance.com/images/edge-logo.png',
+      logo: '/images/Mortgage logos/edge.webp',
       alt: 'EDGE Home Finance' 
     },
     { 
       name: 'C2 Financial', 
-      logo: 'https://logo.clearbit.com/c2financial.com', 
-      fallback: 'https://www.c2financial.com/images/c2-logo.png',
+      logo: '/images/Mortgage logos/c2-financial.webp',
       alt: 'C2 Financial' 
     }
   ]

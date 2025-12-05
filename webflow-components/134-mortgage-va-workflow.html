@@ -1,0 +1,308 @@
+<!-- Mortgage VA - Workflow Process Section for Webflow -->
+<section class="mortgage-va-workflow">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .mortgage-va-workflow {
+      width: 100%;
+      background: linear-gradient(135deg, #023e3b 0%, #037b77 50%, #023e3b 100%);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .mortgage-va-workflow-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .mortgage-va-workflow-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .mortgage-va-workflow-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    .mortgage-va-workflow-header p {
+      font-size: 20px;
+      color: #ccfffe;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    .mortgage-va-workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .mortgage-va-workflow-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mortgage-va-workflow-card {
+      background: rgba(2, 62, 59, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid #037b77;
+      border-radius: 12px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .mortgage-va-workflow-card:hover {
+      border-color: #049d98;
+    }
+
+    .mortgage-va-workflow-card-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .mortgage-va-workflow-card-icon {
+      background: #049d98;
+      padding: 12px;
+      border-radius: 8px;
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mortgage-va-workflow-card-icon svg {
+      width: 32px;
+      height: 32px;
+      color: white;
+    }
+
+    .mortgage-va-workflow-card-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .mortgage-va-workflow-card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mortgage-va-workflow-card-item {
+      display: flex;
+      align-items: flex-start;
+      color: #ccfffe;
+    }
+
+    .mortgage-va-workflow-card-item-icon {
+      width: 20px;
+      height: 20px;
+      color: #7dd3d0;
+      margin-right: 12px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .mortgage-va-workflow-card-item-text {
+      flex: 1;
+    }
+  </style>
+
+  <div class="mortgage-va-workflow-container">
+    <div class="mortgage-va-workflow-header">
+      <h2>Our Mortgage VA Workflow Process</h2>
+      <p>Comprehensive support across the entire loan lifecycle—from pre-qualification to post-closing QC</p>
+    </div>
+
+    <div class="mortgage-va-workflow-grid">
+      <!-- Loan Setup & Processing -->
+      <div class="mortgage-va-workflow-card">
+        <div class="mortgage-va-workflow-card-header">
+          <div class="mortgage-va-workflow-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="mortgage-va-workflow-card-title">Loan Setup & Processing</h3>
+        </div>
+        <ul class="mortgage-va-workflow-card-list">
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Document organization</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">LOS cleanliness</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Lender registration (for non-del)</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Initial disclosures</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">COC's (Change of Circumstance)</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Appraisal ordering</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Initial submission review</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Closing and Funding -->
+      <div class="mortgage-va-workflow-card">
+        <div class="mortgage-va-workflow-card-header">
+          <div class="mortgage-va-workflow-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="mortgage-va-workflow-card-title">Closing and Funding</h3>
+        </div>
+        <ul class="mortgage-va-workflow-card-list">
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Closing disclosure</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">CD balancing</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Doc drawing</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Funding conditions</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Warehouse line registration</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Post-Closing and QC -->
+      <div class="mortgage-va-workflow-card">
+        <div class="mortgage-va-workflow-card-header">
+          <div class="mortgage-va-workflow-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="mortgage-va-workflow-card-title">Post-Closing and QC</h3>
+        </div>
+        <ul class="mortgage-va-workflow-card-list">
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Trailing documentation</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Finalizing LOS final figures</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">File stacking</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Audit preparation</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pre-Qualification Checklist -->
+      <div class="mortgage-va-workflow-card">
+        <div class="mortgage-va-workflow-card-header">
+          <div class="mortgage-va-workflow-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="mortgage-va-workflow-card-title">Pre-Qualification Checklist</h3>
+        </div>
+        <ul class="mortgage-va-workflow-card-list">
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Review pre-qualification documentation</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Ensure complete income, asset, credit, and property documents</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">Confirm 1003 completeness</span>
+          </li>
+          <li class="mortgage-va-workflow-card-item">
+            <svg class="mortgage-va-workflow-card-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="mortgage-va-workflow-card-item-text">AUS run</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
