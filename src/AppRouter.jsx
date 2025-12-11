@@ -82,6 +82,7 @@ import RejeanMaeProfile from './pages/RejeanMaeProfile'
 import RochelleProfile from './pages/RochelleProfile'
 import SandraProfile from './pages/SandraProfile'
 import XimenaGProfile from './pages/XimenaGProfile'
+import GabrielaRodriguezProfile from './pages/GabrielaRodriguezProfile'
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import Careers from './Careers'
@@ -89,6 +90,7 @@ import Blogs from './Blogs'
 import FAQsPage from './FAQsPage'
 import Schema from './components/Schema'
 import Footer from './components/Footer'
+import IndustryTabsTest from './IndustryTabsTest'
 
 function AppContent() {
   const location = useLocation()
@@ -200,6 +202,7 @@ function AppContent() {
           <Route path="/rochelle-ocean-va-profile" element={<RochelleProfile />} />
           <Route path="/sandra-ocean-va-profile" element={<SandraProfile />} />
           <Route path="/ximena-g-ocean-va-profile" element={<XimenaGProfile />} />
+          <Route path="/gabriela-rodriguez-ocean-va-profile" element={<GabrielaRodriguezProfile />} />
           
           {/* About Us Page */}
           <Route path="/about-us" element={<AboutUs />} />
@@ -215,6 +218,9 @@ function AppContent() {
           
           {/* FAQs Page */}
           <Route path="/faq" element={<FAQsPage />} />
+          
+          {/* Test Page for Industry Tabs */}
+          <Route path="/test-industry-tabs" element={<IndustryTabsTest />} />
         </Routes>
       </main>
 
