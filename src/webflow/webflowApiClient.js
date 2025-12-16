@@ -33,8 +33,17 @@ class WebflowApiClient {
       const response = await fetch(url, config);
 
       if (!response.ok) {
-        const error = await response.json();
-        throw new Error(`Webflow API Error (${response.status}): ${error.message || JSON.stringify(error)}`);
+        const errorText = await response.text();
+        let error;
+        try {
+          error = JSON.parse(errorText);
+        } catch {
+          error = { message: errorText };
+        }
+        const errorMsg = new Error(`Webflow API Error (${response.status}): ${error.message || JSON.stringify(error)}`);
+        errorMsg.response = error;
+        errorMsg.status = response.status;
+        throw errorMsg;
       }
 
       // Handle empty responses (e.g., DELETE requests)
