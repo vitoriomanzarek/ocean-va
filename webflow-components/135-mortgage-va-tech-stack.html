@@ -80,6 +80,32 @@
       object-fit: contain;
     }
 
+    .mortgage-va-tech-card img.img-large {
+      height: 72px;
+    }
+
+    .mortgage-va-tech-card img.img-small {
+      height: 36px;
+    }
+
+    .mortgage-va-tech-card img.img-extra-small {
+      height: 28px;
+    }
+
+    .mortgage-va-tech-card img.img-extra-large {
+      height: 90px;
+    }
+
+    .mortgage-va-tech-card.card-wide {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 1024px) {
+      .mortgage-va-tech-card.card-wide {
+        grid-column: span 1;
+      }
+    }
+
     .mortgage-va-tech-card h3 {
       font-size: 18px;
       font-weight: 700;
@@ -224,56 +250,56 @@
     <div class="mortgage-va-tech-stack-grid">
       <!-- Calyx -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('calyx')">
-        <img src="https://logo.clearbit.com/calyxsoftware.com" alt="Calyx" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf61b26d5315373b61c2_calyx.png" alt="Calyx" class="img-large" onerror="this.style.display='none'">
         <h3>Calyx</h3>
       </div>
 
       <!-- UWM -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('uwm')">
-        <img src="https://logo.clearbit.com/uwm.com" alt="UWM" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf68194fb4685181ace8_uwm.png" alt="UWM" onerror="this.style.display='none'">
         <h3>UWM</h3>
         <p>United Wholesale Mortgage</p>
       </div>
 
       <!-- ARIVE -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('arive')">
-        <img src="https://logo.clearbit.com/arive.com" alt="ARIVE" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf74a23a961358ccbda3_arive.png" alt="ARIVE" onerror="this.style.display='none'">
         <h3>ARIVE</h3>
       </div>
 
       <!-- DocMagic -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('docmagic')">
-        <img src="https://logo.clearbit.com/docmagic.com" alt="DocMagic" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf7ab8a142ec5bf0aa9e_DocMagic.png" alt="DocMagic" class="img-extra-small" onerror="this.style.display='none'">
         <h3>DocMagic</h3>
       </div>
 
       <!-- Encompass -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('encompass')">
-        <img src="https://logo.clearbit.com/encompass.com" alt="Encompass" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942d601971860408bd32799_encompass%20logo.png" alt="Encompass" onerror="this.style.display='none'">
         <h3>Encompass</h3>
       </div>
 
       <!-- CLASS VALUATION -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('class')">
-        <img src="https://logo.clearbit.com/classvaluation.com" alt="CLASS VALUATION" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfa0212564ae0ac79046_Class-Valuation-Logo.png" alt="CLASS VALUATION" onerror="this.style.display='none'">
         <h3>CLASS VALUATION</h3>
       </div>
 
       <!-- LendingPad -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('lendingpad')">
-        <img src="https://logo.clearbit.com/lendingpad.com" alt="LendingPad" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfa3088611a1239a5bc0_lendingpadLogo.png" alt="LendingPad" onerror="this.style.display='none'">
         <h3>LendingPad</h3>
       </div>
 
       <!-- Rocket Mortgage -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('rocket')">
-        <img src="https://logo.clearbit.com/rocketmortgage.com" alt="Rocket Mortgage" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942d1d0996ed117ddb2d4d3_Rocket-Mortgage-Logo.jpg" alt="Rocket Mortgage" class="img-extra-small" onerror="this.style.display='none'">
         <h3>Rocket Mortgage</h3>
       </div>
 
       <!-- Flōify -->
       <div class="mortgage-va-tech-card" onclick="openTechModal('floify')">
-        <img src="https://logo.clearbit.com/floify.com" alt="Flōify" onerror="this.style.display='none'">
+        <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfaebe77a42f3e70ec3f_floify-logo.webp" alt="Flōify" class="img-small" onerror="this.style.display='none'">
         <h3>Flōify</h3>
       </div>
     </div>
@@ -314,63 +340,63 @@
   <script>
     const techData = {
       calyx: {
-        logo: 'https://logo.clearbit.com/calyxsoftware.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf61b26d5315373b61c2_calyx.png',
         title: 'Calyx',
         subtitle: '',
         description: 'Calyx is a comprehensive loan origination system (LOS) that helps mortgage professionals manage the entire loan process from application to closing. Our VAs are experienced in document management, workflow automation, and loan file processing within Calyx.',
         useCase: 'Document organization, loan file setup, and pipeline management'
       },
       uwm: {
-        logo: 'https://logo.clearbit.com/uwm.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf68194fb4685181ace8_uwm.png',
         title: 'UWM',
         subtitle: 'United Wholesale Mortgage',
         description: 'United Wholesale Mortgage (UWM) is one of the largest wholesale mortgage lenders in the US. Our VAs understand UWM\'s systems and processes, helping with loan submissions, status tracking, and partner coordination.',
         useCase: 'Loan submissions, status tracking, and lender communications'
       },
       arive: {
-        logo: 'https://logo.clearbit.com/arive.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf74a23a961358ccbda3_arive.png',
         title: 'ARIVE',
         subtitle: '',
         description: 'ARIVE is a modern loan origination platform designed for mortgage brokers. Our VAs are proficient in ARIVE\'s interface, handling loan applications, document collection, and borrower communications.',
         useCase: 'Loan applications, document management, and borrower outreach'
       },
       docmagic: {
-        logo: 'https://logo.clearbit.com/docmagic.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cf7ab8a142ec5bf0aa9e_DocMagic.png',
         title: 'DocMagic',
         subtitle: '',
         description: 'DocMagic is a document generation and e-signature platform for mortgage professionals. Our VAs use DocMagic to prepare closing documents, manage e-signatures, and ensure compliance with lending regulations.',
         useCase: 'Document generation, e-signatures, and compliance management'
       },
       encompass: {
-        logo: 'https://logo.clearbit.com/encompass.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942d601971860408bd32799_encompass%20logo.png',
         title: 'Encompass',
         subtitle: '',
         description: 'Encompass by Ellie Mae is the industry-leading loan origination system. Our VAs have extensive experience with Encompass workflows, including loan file setup, conditions tracking, document management, and pipeline reporting.',
         useCase: 'Complete LOS management, from application to closing'
       },
       class: {
-        logo: 'https://logo.clearbit.com/classvaluation.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfa0212564ae0ac79046_Class-Valuation-Logo.png',
         title: 'CLASS VALUATION',
         subtitle: '',
         description: 'CLASS VALUATION provides appraisal management services for mortgage lenders. Our VAs coordinate with CLASS VALUATION to order appraisals, track status, and ensure timely completion for loan closings.',
         useCase: 'Appraisal ordering, status tracking, and vendor coordination'
       },
       lendingpad: {
-        logo: 'https://logo.clearbit.com/lendingpad.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfa3088611a1239a5bc0_lendingpadLogo.png',
         title: 'LendingPad',
         subtitle: '',
         description: 'LendingPad is a cloud-based loan origination system popular with mortgage brokers. Many of our VAs are LendingPad certified processors, experienced in loan processing, document management, and borrower communication.',
         useCase: 'Certified loan processing and LOS management'
       },
       rocket: {
-        logo: 'https://logo.clearbit.com/rocketmortgage.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942d1d0996ed117ddb2d4d3_Rocket-Mortgage-Logo.jpg',
         title: 'Rocket Mortgage',
         subtitle: '',
         description: 'Rocket Mortgage is a leading digital mortgage platform. Our VAs understand Rocket Mortgage\'s processes and can assist with loan file coordination, document collection, and status updates for brokers working with Rocket.',
         useCase: 'Loan coordination and status management with Rocket Mortgage'
       },
       floify: {
-        logo: 'https://logo.clearbit.com/floify.com',
+        logo: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/6942cfaebe77a42f3e70ec3f_floify-logo.webp',
         title: 'Flōify',
         subtitle: '',
         description: 'Flōify is a loan origination software designed for mortgage brokers and loan officers. Our VAs use Flōify to manage loan applications, collect borrower documents, send status updates, and coordinate with all parties in the loan process.',

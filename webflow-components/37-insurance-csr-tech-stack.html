@@ -1,0 +1,366 @@
+<!-- Insurance CSR - Tech Stack Section with Modal for Webflow -->
+<section class="insurance-csr-tech-stack">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .insurance-csr-tech-stack {
+      width: 100%;
+      background-color: #f9fafb;
+      padding: 64px 20px;
+    }
+
+    .insurance-csr-tech-stack-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .insurance-csr-tech-stack-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .insurance-csr-tech-stack-header h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .insurance-csr-tech-stack-header p {
+      font-size: 20px;
+      color: #6b7280;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    .insurance-csr-tech-stack-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1152px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      .insurance-csr-tech-stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .insurance-csr-tech-stack-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .insurance-csr-tech-card {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .insurance-csr-tech-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .insurance-csr-tech-card img {
+      height: 48px;
+      width: auto;
+      margin: 0 auto 12px;
+      object-fit: contain;
+    }
+
+    .insurance-csr-tech-card img.img-large {
+      height: 72px;
+    }
+
+    .insurance-csr-tech-card img.img-small {
+      height: 36px;
+    }
+
+    .insurance-csr-tech-card img.img-extra-small {
+      height: 28px;
+    }
+
+    .insurance-csr-tech-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #037b77;
+      margin-bottom: 4px;
+    }
+
+    .insurance-csr-tech-card p {
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    /* Modal Styles */
+    .insurance-csr-tech-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .insurance-csr-tech-modal.active {
+      display: flex;
+    }
+
+    .insurance-csr-tech-modal-content {
+      background: white;
+      border-radius: 12px;
+      max-width: 672px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .insurance-csr-tech-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .insurance-csr-tech-modal-header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .insurance-csr-tech-modal-header-left img {
+      height: 48px;
+      width: auto;
+      margin-right: 16px;
+      object-fit: contain;
+    }
+
+    .insurance-csr-tech-modal-header-left h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .insurance-csr-tech-modal-header-left p {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .insurance-csr-tech-modal-close {
+      font-size: 32px;
+      font-weight: 700;
+      color: #9ca3af;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .insurance-csr-tech-modal-close:hover {
+      color: #6b7280;
+    }
+
+    .insurance-csr-tech-modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .insurance-csr-tech-modal-section h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #037b77;
+      margin-bottom: 8px;
+    }
+
+    .insurance-csr-tech-modal-section p {
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .insurance-csr-tech-modal-footer {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .insurance-csr-tech-modal-button {
+      width: 100%;
+      background: #037b77;
+      color: white;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .insurance-csr-tech-modal-button:hover {
+      background: #049d98;
+    }
+  </style>
+
+  <div class="insurance-csr-tech-stack-container">
+    <div class="insurance-csr-tech-stack-header">
+      <h2>We Work With Your Tech Stack</h2>
+      <p>Some of our client's tools. Our insurance VAs have hands-on experience with the exact systems your company uses daily. Click on any tool to learn more.</p>
+    </div>
+    
+    <div class="insurance-csr-tech-stack-grid">
+      <!-- Applied Epic -->
+      <div class="insurance-csr-tech-card" onclick="openInsuranceTechModal('applied-epic')">
+        <img src="https://logo.clearbit.com/appliedsystems.com" alt="Applied Epic" onerror="this.style.display='none'">
+        <h3>Applied Epic</h3>
+      </div>
+
+      <!-- AMS360 -->
+      <div class="insurance-csr-tech-card" onclick="openInsuranceTechModal('ams360')">
+        <img src="https://logo.clearbit.com/vertafore.com" alt="AMS360" onerror="this.style.display='none'">
+        <h3>AMS360</h3>
+        <p>Vertafore</p>
+      </div>
+
+      <!-- EZLynx -->
+      <div class="insurance-csr-tech-card" onclick="openInsuranceTechModal('ezlynx')">
+        <img src="https://logo.clearbit.com/ezlynx.com" alt="EZLynx" onerror="this.style.display='none'">
+        <h3>EZLynx</h3>
+      </div>
+
+      <!-- Carrier Portals -->
+      <div class="insurance-csr-tech-card" onclick="openInsuranceTechModal('carrier-portals')">
+        <img src="https://logo.clearbit.com/progressive.com" alt="Carrier Portals" onerror="this.style.display='none'">
+        <h3>Carrier Portals</h3>
+        <p>Progressive, Travelers, etc.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="insuranceTechModal" class="insurance-csr-tech-modal" onclick="closeInsuranceTechModal(event)">
+    <div class="insurance-csr-tech-modal-content" onclick="event.stopPropagation()">
+      <div class="insurance-csr-tech-modal-header">
+        <div class="insurance-csr-tech-modal-header-left">
+          <img id="insuranceModalLogo" src="" alt="" style="display: none;">
+          <div>
+            <h3 id="insuranceModalTitle"></h3>
+            <p id="insuranceModalSubtitle" style="display: none;"></p>
+          </div>
+        </div>
+        <button class="insurance-csr-tech-modal-close" onclick="closeInsuranceTechModal()">&times;</button>
+      </div>
+      
+      <div class="insurance-csr-tech-modal-body">
+        <div class="insurance-csr-tech-modal-section">
+          <h4 id="insuranceModalWhatTitle"></h4>
+          <p id="insuranceModalDescription"></p>
+        </div>
+        
+        <div class="insurance-csr-tech-modal-section">
+          <h4 id="insuranceModalUseTitle"></h4>
+          <p id="insuranceModalUseCase"></p>
+        </div>
+      </div>
+      
+      <div class="insurance-csr-tech-modal-footer">
+        <button class="insurance-csr-tech-modal-button" onclick="closeInsuranceTechModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const insuranceTechData = {
+      'applied-epic': {
+        logo: 'https://logo.clearbit.com/appliedsystems.com',
+        title: 'Applied Epic',
+        subtitle: '',
+        description: 'The most widely used cloud-based agency management system for independent insurance agencies.',
+        useCase: 'Our VAs manage the entire client lifecycle within Epic—creating activities, processing renewals, attaching policies, issuing Certificates of Insurance (COIs), and managing claims workflows to keep your data spotless.'
+      },
+      'ams360': {
+        logo: 'https://logo.clearbit.com/vertafore.com',
+        title: 'AMS360',
+        subtitle: 'Vertafore',
+        description: 'A comprehensive agency management system designed to streamline workflows and financial accounting.',
+        useCase: 'We handle the daily heavy lifting: suspense tracking, policy downloading, and intricate accounting entries. Our VAs ensure that every endorsement and renewal is correctly documented and billed.'
+      },
+      'ezlynx': {
+        logo: 'https://logo.clearbit.com/ezlynx.com',
+        title: 'EZLynx',
+        subtitle: '',
+        description: 'A top-rated comparative rater and management system known for its speed and Retention Center.',
+        useCase: 'We use EZLynx to generate real-time quotes from multiple carriers simultaneously. We also manage the Retention Center, proactively re-shopping rates for clients before renewal to prevent churn.'
+      },
+      'carrier-portals': {
+        logo: 'https://logo.clearbit.com/progressive.com',
+        title: 'Carrier Portals',
+        subtitle: 'Progressive, Travelers, etc.',
+        description: 'The direct proprietary platforms of major insurance carriers used for binding and servicing policies.',
+        useCase: 'Our team logs in directly to retrieve policy documents, check billing status, process endorsements, and bind coverage. We know the navigation of major carriers like Progressive, Travelers, and Nationwide by heart.'
+      }
+    };
+
+    function openInsuranceTechModal(toolId) {
+      const data = insuranceTechData[toolId];
+      if (!data) return;
+
+      const modal = document.getElementById('insuranceTechModal');
+      const logo = document.getElementById('insuranceModalLogo');
+      const title = document.getElementById('insuranceModalTitle');
+      const subtitle = document.getElementById('insuranceModalSubtitle');
+      const description = document.getElementById('insuranceModalDescription');
+      const useCase = document.getElementById('insuranceModalUseCase');
+      const whatTitle = document.getElementById('insuranceModalWhatTitle');
+      const useTitle = document.getElementById('insuranceModalUseTitle');
+
+      logo.src = data.logo;
+      logo.style.display = data.logo ? 'block' : 'none';
+      title.textContent = data.title;
+      subtitle.textContent = data.subtitle || '';
+      subtitle.style.display = data.subtitle ? 'block' : 'none';
+      description.textContent = data.description;
+      useCase.textContent = data.useCase;
+      whatTitle.textContent = 'What is ' + data.title + '?';
+      useTitle.textContent = 'How Our VAs Use It:';
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeInsuranceTechModal(event) {
+      if (event && event.target !== event.currentTarget && event.target.closest('.insurance-csr-tech-modal-content')) {
+        return;
+      }
+      const modal = document.getElementById('insuranceTechModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
+</section>
+
