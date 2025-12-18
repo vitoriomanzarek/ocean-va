@@ -8,6 +8,8 @@ Sistema de diseño unificado para componentes Webflow.
 webflow-components-design-system/
 ├── DesignSystemShowcase.jsx    # Componente React para visualizar el design system
 ├── DesignSystemShowcase.css    # Estilos del showcase
+├── design-system.css           # CSS del design system (variables y utilidades)
+├── homepage-demo.html          # Demo HTML del homepage con design system
 ├── DESIGN_SYSTEM_ANALYSIS.md   # Análisis técnico automatizado
 ├── ANALISIS_COMPLETO_DESIGN_SYSTEM.md  # Análisis completo con estrategia
 └── README.md                   # Este archivo
@@ -31,6 +33,34 @@ function App() {
 1. Asegúrate de tener React configurado en tu proyecto
 2. Importa el componente en tu aplicación
 3. Navega a la ruta donde está renderizado
+
+## 🏠 Homepage Demo HTML
+
+Se ha creado una versión HTML estática del homepage usando el design system:
+
+- **Archivo**: `homepage-demo.html`
+- **Ubicación**: `webflow-components-design-system/homepage-demo.html`
+
+### Características
+
+- ✅ Usa variables CSS del design system
+- ✅ Colores consistentes (Primary 700, 900)
+- ✅ Tipografía estandarizada
+- ✅ Espaciado basado en 8px
+- ✅ Botones con estilos unificados y hover effects
+- ✅ Responsive design
+- ✅ Columnas correctas (imagen izquierda, contenido derecha)
+- ✅ Botones lado a lado (no full width)
+
+### Cómo Ver
+
+1. Abre el archivo `homepage-demo.html` directamente en el navegador
+2. O sirve desde un servidor local:
+   ```bash
+   cd webflow-components-design-system
+   python3 -m http.server 8000
+   # Luego abre: http://localhost:8000/homepage-demo.html
+   ```
 
 ## 📊 Contenido del Showcase
 
@@ -103,13 +133,14 @@ El componente muestra visualmente:
 
 1. ✅ Análisis completado
 2. ✅ Showcase visual creado
-3. ⏳ Crear archivo CSS del design system
-4. ⏳ Crear componentes base
-5. ⏳ Documentación de uso
-6. ⏳ Guía de migración
+3. ✅ Archivo CSS del design system creado
+4. ✅ Homepage demo HTML con design system
+5. ⏳ Crear componentes base
+6. ⏳ Documentación de uso completa
+7. ⏳ Guía de migración
 
 ## 🔗 Enlaces
 
 - [Análisis Completo](./ANALISIS_COMPLETO_DESIGN_SYSTEM.md)
 - [Análisis Técnico](./DESIGN_SYSTEM_ANALYSIS.md)
-
+- [Homepage Demo](./homepage-demo.html)

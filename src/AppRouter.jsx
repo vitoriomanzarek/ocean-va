@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import NavbarVA from './components/NavbarVA'
 import App from './App'
+import AppDesignSystem from './AppDesignSystem'
 import InsuranceVirtualAssistant from './InsuranceVirtualAssistant'
 import InsuranceCostumerService from './InsuranceCostumerService'
 import VirtualAdminAssistant from './VirtualAdminAssistant'
@@ -93,6 +94,7 @@ import Footer from './components/Footer'
 import IndustryTabsTest from './IndustryTabsTest'
 import DesignSystemShowcase from '../webflow-components-design-system/DesignSystemShowcase'
 import '../webflow-components-design-system/DesignSystemShowcase.css'
+import HomepageDemo from './pages/HomepageDemo'
 
 function AppContent() {
   const location = useLocation()
@@ -109,6 +111,7 @@ function AppContent() {
       <main>
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/home-design-system" element={<AppDesignSystem />} />
           <Route path="/insurance" element={<InsuranceVirtualAssistant />} />
           
           {/* Services Routes */}
@@ -226,6 +229,9 @@ function AppContent() {
           
           {/* Design System Showcase */}
           <Route path="/design-system" element={<DesignSystemShowcase />} />
+          
+          {/* Homepage Demo with Design System */}
+          <Route path="/homepage-demo" element={<HomepageDemo />} />
         </Routes>
       </main>
 
