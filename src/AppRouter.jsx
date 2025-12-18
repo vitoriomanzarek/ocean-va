@@ -91,6 +91,8 @@ import FAQsPage from './FAQsPage'
 import Schema from './components/Schema'
 import Footer from './components/Footer'
 import IndustryTabsTest from './IndustryTabsTest'
+import DesignSystemShowcase from '../webflow-components-design-system/DesignSystemShowcase'
+import '../webflow-components-design-system/DesignSystemShowcase.css'
 
 function AppContent() {
   const location = useLocation()
@@ -221,6 +223,9 @@ function AppContent() {
           
           {/* Test Page for Industry Tabs */}
           <Route path="/test-industry-tabs" element={<IndustryTabsTest />} />
+          
+          {/* Design System Showcase */}
+          <Route path="/design-system" element={<DesignSystemShowcase />} />
         </Routes>
       </main>
 
