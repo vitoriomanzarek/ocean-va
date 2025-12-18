@@ -94,15 +94,35 @@ El componente muestra visualmente:
 
 7. **Cards**
    - Default, Elevated, Bordered
+   - Benefit Cards
+   - Tech Cards
+   - Service/Industry Cards
+   - Feature Cards (Glassmorphism)
+   - Stat Cards
    - Ejemplos de uso
 
-8. **Breakpoints Responsive**
-   - SM, MD, LG, XL
-   - Descripción de uso
+8. **Modal**
+   - Modal base con overlay
+   - Header, Body, Footer
+   - Close button
+   - Responsive
 
-9. **Gradientes**
-   - Gradientes primarios
-   - Ejemplos visuales
+9. **Tables**
+   - Comparison Table
+   - Styled headers
+   - Hover effects
+
+10. **Trust Badges**
+    - Glassmorphism effect
+    - Para hero sections
+
+11. **Breakpoints Responsive**
+    - SM, MD, LG, XL
+    - Descripción de uso
+
+12. **Gradientes**
+    - Gradientes primarios
+    - Ejemplos visuales
 
 ## 🎨 Valores del Design System
 
@@ -129,15 +149,70 @@ El componente muestra visualmente:
 - LG: 1024px
 - XL: 1280px
 
+## 🧩 Componentes Disponibles
+
+### Layout
+- `.ds-container` - Container estándar (1400px)
+- `.ds-container-narrow` - Container estrecho (1000px)
+- `.ds-container-standard` - Container estándar (1280px)
+- `.ds-section` - Sección con padding
+- `.ds-section-sm` - Sección pequeña
+
+### Grid
+- `.ds-grid` - Grid base
+- `.ds-grid-2`, `.ds-grid-3`, `.ds-grid-4` - Grids con columnas fijas
+- `.ds-grid-auto-fit` - Grid auto-fit (min 200px)
+- `.ds-grid-auto-fit-sm` - Grid auto-fit (min 250px)
+- `.ds-grid-auto-fit-md` - Grid auto-fit (min 280px)
+
+### Cards
+- `.ds-card` - Card base con hover
+- `.ds-card-elevated` - Card con sombra elevada
+- `.ds-benefit-card` - Card para beneficios
+- `.ds-tech-card` - Card para tech stack
+- `.ds-service-card` - Card para servicios/industrias
+- `.ds-feature-card` - Card con glassmorphism
+- `.ds-stat-card` - Card para estadísticas
+
+### Buttons
+- `.ds-button` - Button base
+- `.ds-button-primary` - Button primario
+- `.ds-button-secondary` - Button secundario
+- `.ds-button-outline` - Button outline
+- `.ds-button-white` - Button blanco
+- `.ds-button-lg` - Button grande
+
+### Modal
+- `.ds-modal` - Modal container
+- `.ds-modal.active` - Modal activo
+- `.ds-modal-content` - Contenido del modal
+- `.ds-modal-header` - Header del modal
+- `.ds-modal-body` - Body del modal
+- `.ds-modal-footer` - Footer del modal
+- `.ds-modal-close` - Botón de cerrar
+- `.ds-modal-button` - Botón dentro del modal
+
+### Tables
+- `.ds-comparison-table-wrapper` - Wrapper para tabla
+- `.ds-comparison-table` - Tabla de comparación
+
+### Trust Badges
+- `.ds-trust-badge` - Badge con glassmorphism
+- `.ds-trust-badge-icon` - Icono del badge
+
+### Icon Utilities
+- `.ds-icon-xs` a `.ds-icon-5xl` - Tamaños de iconos
+
 ## 📝 Próximos Pasos
 
 1. ✅ Análisis completado
 2. ✅ Showcase visual creado
 3. ✅ Archivo CSS del design system creado
 4. ✅ Homepage demo HTML con design system
-5. ⏳ Crear componentes base
-6. ⏳ Documentación de uso completa
-7. ⏳ Guía de migración
+5. ✅ Componentes base creados
+6. ⏳ Migración de componentes del home
+7. ⏳ Documentación de uso completa
+8. ⏳ Guía de migración
 
 ## 🔗 Enlaces
 

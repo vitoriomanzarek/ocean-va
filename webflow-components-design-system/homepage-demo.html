@@ -330,6 +330,168 @@
     </div>
   </section>
 
+  <!-- Design System Components Showcase -->
+  <section class="ds-section ds-bg-gray-50">
+    <div class="ds-container-standard">
+      <h2 class="ds-text-4xl ds-font-bold ds-text-primary-dark ds-text-center ds-mb-12">
+        Design System Components
+      </h2>
+
+      <!-- Benefit Cards Example -->
+      <div class="ds-mb-16">
+        <h3 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-6">Benefit Cards</h3>
+        <div class="ds-grid ds-grid-4">
+          <div class="ds-benefit-card">
+            <span class="ds-benefit-icon">💰</span>
+            <h3>Save up to 70%</h3>
+            <p>Reduce staffing costs significantly with our cost-effective solutions.</p>
+          </div>
+          <div class="ds-benefit-card">
+            <span class="ds-benefit-icon">👥</span>
+            <h3>Client Retention</h3>
+            <p>Experienced professionals handle inquiries and keep clients satisfied.</p>
+          </div>
+          <div class="ds-benefit-card">
+            <span class="ds-benefit-icon">⭐</span>
+            <h3>Top 1% Talent</h3>
+            <p>Rigorous vetting process ensures you get verified, experienced professionals.</p>
+          </div>
+          <div class="ds-benefit-card">
+            <span class="ds-benefit-icon">📋</span>
+            <h3>Flat-Fee Model</h3>
+            <p>No payroll taxes, no HR overhead—just a transparent monthly rate.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Cards Example -->
+      <div class="ds-mb-16">
+        <h3 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-6">Tech Cards</h3>
+        <div class="ds-grid ds-grid-4" style="max-width: 1152px; margin: 0 auto;">
+          <div class="ds-tech-card">
+            <div class="ds-tech-card-logos">
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+            </div>
+          </div>
+          <div class="ds-tech-card">
+            <div class="ds-tech-card-logos">
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+            </div>
+          </div>
+          <div class="ds-tech-card">
+            <div class="ds-tech-card-logos">
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+            </div>
+          </div>
+          <div class="ds-tech-card">
+            <div class="ds-tech-card-logos">
+              <img src="https://via.placeholder.com/48" alt="Tech logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Cards Example -->
+      <div class="ds-mb-16">
+        <h3 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-6">Service Cards</h3>
+        <div class="ds-grid-auto-fit-md">
+          <a href="#" class="ds-service-card">
+            <div class="ds-service-card-icon">🛡️</div>
+            <h4 class="ds-service-card-title">Insurance Customer Service</h4>
+            <p class="ds-service-card-description">Policy servicing, claims support, and customer service for insurance agencies.</p>
+            <div class="ds-service-card-link">Learn More<span class="ds-service-card-arrow">→</span></div>
+          </a>
+          <a href="#" class="ds-service-card">
+            <div class="ds-service-card-icon">📋</div>
+            <h4 class="ds-service-card-title">Administrative Assistant</h4>
+            <p class="ds-service-card-description">Inbox, calendar, documents, travel, research, and operations support.</p>
+            <div class="ds-service-card-link">Learn More<span class="ds-service-card-arrow">→</span></div>
+          </a>
+          <a href="#" class="ds-service-card">
+            <div class="ds-service-card-icon">💬</div>
+            <h4 class="ds-service-card-title">Customer Service Representative</h4>
+            <p class="ds-service-card-description">Phone, chat, and email support with bilingual availability.</p>
+            <div class="ds-service-card-link">Learn More<span class="ds-service-card-arrow">→</span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Comparison Table Example -->
+      <div class="ds-mb-16">
+        <h3 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-6">Comparison Table</h3>
+        <div class="ds-comparison-table-wrapper">
+          <table class="ds-comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Ocean VA</th>
+                <th>Typical VA Companies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Talent Selection</td>
+                <td>Top 1% only</td>
+                <td>Varies (3-10%)</td>
+              </tr>
+              <tr>
+                <td>Start Time</td>
+                <td>2-3 days</td>
+                <td>1-2 weeks</td>
+              </tr>
+              <tr>
+                <td>Pricing</td>
+                <td>Starting at: $1,300 (transparent)</td>
+                <td>Hidden/Variable</td>
+              </tr>
+              <tr>
+                <td>Setup Fees</td>
+                <td>$0</td>
+                <td>$500-2,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal Example -->
+      <div class="ds-mb-16">
+        <h3 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-6">Modal</h3>
+        <button class="ds-button ds-button-primary" onclick="document.getElementById('demoModal').classList.add('active')">
+          Open Modal
+        </button>
+        <div id="demoModal" class="ds-modal" onclick="if(event.target === this) this.classList.remove('active')">
+          <div class="ds-modal-content" onclick="event.stopPropagation()">
+            <div class="ds-modal-header">
+              <div class="ds-modal-header-left">
+                <div>
+                  <h3>Modal Title</h3>
+                  <p>Modal subtitle</p>
+                </div>
+              </div>
+              <button class="ds-modal-close" onclick="document.getElementById('demoModal').classList.remove('active')">&times;</button>
+            </div>
+            <div class="ds-modal-body">
+              <div class="ds-modal-section">
+                <h4>What is this?</h4>
+                <p>This is a modal component example from the Ocean VA Design System.</p>
+              </div>
+              <div class="ds-modal-section">
+                <h4>How to use it?</h4>
+                <p>Add the .ds-modal class to a container, and toggle the .active class to show/hide it.</p>
+              </div>
+            </div>
+            <div class="ds-modal-footer">
+              <button class="ds-modal-button" onclick="document.getElementById('demoModal').classList.remove('active')">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
 
