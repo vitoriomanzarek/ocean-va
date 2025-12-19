@@ -9,10 +9,35 @@ webflow-components-design-system/
 ├── DesignSystemShowcase.jsx    # Componente React para visualizar el design system
 ├── DesignSystemShowcase.css    # Estilos del showcase
 ├── design-system.css           # CSS del design system (variables y utilidades)
+├── design-system.min.css       # CSS minificado para producción (15.9% más pequeño)
+├── navbar.html                 # Navbar alineado con design system
+├── navbar.min.html             # Navbar minificado (20.5% más pequeño)
+├── footer.html                 # Footer alineado con design system
+├── footer.min.html             # Footer minificado (19.7% más pequeño)
 ├── homepage-demo.html          # Demo HTML del homepage con design system
+├── navbar-footer-demo.html      # Demo completo con navbar y footer
 ├── DESIGN_SYSTEM_ANALYSIS.md   # Análisis técnico automatizado
 ├── ANALISIS_COMPLETO_DESIGN_SYSTEM.md  # Análisis completo con estrategia
 └── README.md                   # Este archivo
+```
+
+## 📦 Archivos CSS
+
+### design-system.css
+Versión completa del design system con comentarios y formato legible. Ideal para desarrollo.
+
+### design-system.min.css
+Versión minificada optimizada para producción:
+- **Tamaño**: ~16.9 KB (vs 20.1 KB original)
+- **Reducción**: 15.9% más pequeño
+- **Uso**: Ideal para producción en Webflow o sitios en vivo
+
+```html
+<!-- Para desarrollo -->
+<link rel="stylesheet" href="design-system.css">
+
+<!-- Para producción -->
+<link rel="stylesheet" href="design-system.min.css">
 ```
 
 ## 🚀 Uso del Showcase
@@ -149,7 +174,44 @@ El componente muestra visualmente:
 - LG: 1024px
 - XL: 1280px
 
-## 🧩 Componentes Disponibles
+## 🧩 Componentes HTML Disponibles
+
+### Navbar
+- **Archivos**: 
+  - `navbar.html` - Versión completa (legible)
+  - `navbar.min.html` - Versión minificada (20.5% más pequeño, ~14.5 KB)
+- **Características**:
+  - ✅ Usa variables CSS del design system
+  - ✅ Dropdowns funcionales para Services, Industries, Our VAs
+  - ✅ Menú móvil responsive con hamburger
+  - ✅ Botón CTA usando clases del design system
+  - ✅ Transiciones suaves con variables del design system
+  - ✅ Colores consistentes (Primary 700, Gray scale)
+  - ✅ Espaciado basado en variables del design system
+
+### Footer
+- **Archivos**: 
+  - `footer.html` - Versión completa (legible)
+  - `footer.min.html` - Versión minificada (19.7% más pequeño, ~9 KB)
+- **Características**:
+  - ✅ Usa variables CSS del design system
+  - ✅ Grid responsive con cards para cada columna
+  - ✅ Barra de contacto con color Primary 50
+  - ✅ Iconos sociales con hover effects
+  - ✅ Links con transiciones suaves
+  - ✅ Colores y espaciado consistentes
+
+### Uso en Webflow
+1. Copia el contenido del archivo HTML (usa `.min.html` para producción)
+2. Pega en un elemento Embed Code en Webflow
+3. Asegúrate de que el archivo `design-system.css` o `design-system.min.css` esté disponible
+4. Los componentes son completamente autónomos con estilos inline
+
+**Recomendación para producción:**
+- Usa `navbar.min.html` y `footer.min.html` junto con `design-system.min.css`
+- Esto reduce el tamaño total en ~20% mejorando tiempos de carga
+
+## 🧩 Utilidades del Design System
 
 ### Layout
 - `.ds-container` - Container estándar (1400px)
@@ -210,9 +272,11 @@ El componente muestra visualmente:
 3. ✅ Archivo CSS del design system creado
 4. ✅ Homepage demo HTML con design system
 5. ✅ Componentes base creados
-6. ⏳ Migración de componentes del home
-7. ⏳ Documentación de uso completa
-8. ⏳ Guía de migración
+6. ✅ Navbar alineado con design system
+7. ✅ Footer alineado con design system
+8. ⏳ Migración de componentes del home (Hero, Stats, CTA, etc.)
+9. ⏳ Documentación de uso completa
+10. ⏳ Guía de migración
 
 ## 🔗 Enlaces
 

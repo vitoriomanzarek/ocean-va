@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar & Footer Demo - Design System</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- Ocean VA Navbar - Design System Aligned -->
+  <nav class="ds-navbar">
+    <style>
+      .ds-navbar {
+        background-color: var(--ds-color-white);
+        box-shadow: var(--ds-shadow-base);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+      }
+
+      body {
+        padding-top: 80px;
+      }
+
+      .ds-navbar-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 var(--ds-spacing-5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+      }
+
+      .ds-navbar-logo {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        margin-right: var(--ds-spacing-12);
+      }
+
+      .ds-navbar-logo img {
+        height: 48px;
+        width: auto;
+      }
+
+      .ds-navbar-nav {
+        display: none;
+        align-items: center;
+        gap: var(--ds-spacing-10);
+        flex: 1;
+      }
+
+      @media (min-width: 1024px) {
+        .ds-navbar-nav {
+          display: flex;
+        }
+      }
+
+      .ds-nav-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: var(--ds-spacing-1);
+        color: var(--ds-color-gray-700);
+        font-weight: var(--ds-font-weight-medium);
+        font-size: var(--ds-font-size-base);
+        text-decoration: none;
+        cursor: pointer;
+        transition: color var(--ds-transition-fast);
+        white-space: nowrap;
+      }
+
+      .ds-nav-item:hover {
+        color: var(--ds-color-primary-700);
+      }
+
+      .ds-nav-item.dropdown-trigger {
+        display: flex;
+        align-items: center;
+      }
+
+      .ds-dropdown-arrow {
+        width: 16px;
+        height: 16px;
+        margin-left: var(--ds-spacing-1);
+        transition: transform var(--ds-transition-fast);
+      }
+
+      .ds-nav-item:hover .ds-dropdown-arrow {
+        transform: rotate(180deg);
+      }
+
+      .ds-dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--ds-color-white);
+        border: 1px solid var(--ds-color-gray-200);
+        border-radius: var(--ds-radius-base);
+        box-shadow: var(--ds-shadow-lg);
+        min-width: 256px;
+        padding: var(--ds-spacing-2) 0;
+        margin-top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all var(--ds-transition-base);
+        z-index: 100;
+      }
+
+      .ds-nav-item:hover .ds-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .ds-dropdown-item {
+        display: block;
+        padding: var(--ds-spacing-3) var(--ds-spacing-4);
+        color: var(--ds-color-gray-700);
+        font-size: var(--ds-font-size-sm);
+        text-decoration: none;
+        transition: all var(--ds-transition-fast);
+      }
+
+      .ds-dropdown-item:hover {
+        background-color: var(--ds-color-primary-100);
+        color: var(--ds-color-primary-900);
+      }
+
+      .ds-navbar-cta-wrapper {
+        display: none;
+        margin-left: var(--ds-spacing-6);
+      }
+
+      @media (min-width: 1024px) {
+        .ds-navbar-cta-wrapper {
+          display: inline-block;
+        }
+      }
+
+      .ds-mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--ds-color-gray-700);
+        transition: color var(--ds-transition-fast);
+      }
+
+      .ds-mobile-menu-toggle:hover {
+        color: var(--ds-color-primary-700);
+      }
+
+      @media (min-width: 1024px) {
+        .ds-mobile-menu-toggle {
+          display: none;
+        }
+      }
+
+      .ds-hamburger {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .ds-hamburger span {
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        border-radius: 1px;
+        transition: all var(--ds-transition-base);
+      }
+
+      .ds-mobile-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: var(--ds-color-white);
+        border-top: 1px solid var(--ds-color-gray-200);
+        padding: var(--ds-spacing-4);
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+      }
+
+      .ds-mobile-menu.active {
+        display: block;
+      }
+
+      @media (min-width: 1024px) {
+        .ds-mobile-menu {
+          display: none !important;
+        }
+      }
+
+      .ds-mobile-nav-item {
+        display: block;
+        padding: var(--ds-spacing-4) 0;
+        color: var(--ds-color-gray-700);
+        text-decoration: none;
+        font-weight: var(--ds-font-weight-medium);
+        font-size: var(--ds-font-size-base);
+        border-bottom: none;
+        transition: color var(--ds-transition-fast);
+      }
+
+      .ds-mobile-nav-item:hover {
+        color: var(--ds-color-primary-700);
+      }
+
+      .ds-mobile-dropdown {
+        border-bottom: none;
+      }
+
+      .ds-mobile-dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ds-spacing-4) 0;
+        color: var(--ds-color-gray-700);
+        text-decoration: none;
+        font-weight: var(--ds-font-weight-medium);
+        font-size: var(--ds-font-size-base);
+        cursor: pointer;
+        transition: color var(--ds-transition-fast);
+      }
+
+      .ds-mobile-dropdown-trigger:hover {
+        color: var(--ds-color-primary-700);
+      }
+
+      .ds-mobile-dropdown-arrow {
+        width: 18px;
+        height: 18px;
+        transition: transform var(--ds-transition-base);
+        color: var(--ds-color-gray-500);
+      }
+
+      .ds-mobile-dropdown-trigger:hover .ds-mobile-dropdown-arrow {
+        color: var(--ds-color-primary-700);
+      }
+
+      .ds-mobile-dropdown.active .ds-mobile-dropdown-arrow {
+        transform: rotate(-180deg);
+      }
+
+      .ds-mobile-dropdown-menu {
+        display: none;
+        padding-left: 0;
+        background-color: var(--ds-color-white);
+      }
+
+      .ds-mobile-dropdown.active .ds-mobile-dropdown-menu {
+        display: block;
+      }
+
+      .ds-mobile-dropdown-item {
+        display: block;
+        padding: var(--ds-spacing-3) 0;
+        padding-left: var(--ds-spacing-4);
+        color: var(--ds-color-gray-600);
+        text-decoration: none;
+        font-size: var(--ds-font-size-sm);
+        font-weight: var(--ds-font-weight-normal);
+        border-bottom: none;
+        transition: color var(--ds-transition-fast);
+      }
+
+      .ds-mobile-dropdown-item:hover {
+        color: var(--ds-color-primary-700);
+      }
+    </style>
+
+    <div class="ds-navbar-container">
+      <div class="ds-navbar-logo">
+        <a href="/">
+          <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png" alt="Ocean VA" />
+        </a>
+      </div>
+
+      <div class="ds-navbar-nav">
+        <div class="ds-nav-item dropdown-trigger">
+          Services
+          <svg class="ds-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+          <div class="ds-dropdown-menu">
+            <a href="#" class="ds-dropdown-item">Insurance Customer Service</a>
+            <a href="#" class="ds-dropdown-item">Administrative Assistant</a>
+            <a href="#" class="ds-dropdown-item">Customer Service</a>
+          </div>
+        </div>
+        <a href="#" class="ds-nav-item">Pricing</a>
+        <a href="#" class="ds-nav-item">Our VAs</a>
+        <a href="#" class="ds-nav-item">Blogs</a>
+      </div>
+
+      <div class="ds-navbar-cta-wrapper">
+        <a href="#" class="ds-button ds-button-primary">Contact Us</a>
+      </div>
+
+      <button class="ds-mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <div class="ds-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+
+    <div class="ds-mobile-menu" id="mobileMenu">
+      <a href="#" class="ds-mobile-nav-item">Services</a>
+      <a href="#" class="ds-mobile-nav-item">Pricing</a>
+      <a href="#" class="ds-mobile-nav-item">Our VAs</a>
+      <a href="#" class="ds-mobile-nav-item">Blogs</a>
+      <a href="#" class="ds-button ds-button-primary ds-mb-4" style="display: block; text-align: center; margin-top: var(--ds-spacing-4);">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Content Demo -->
+  <main style="min-height: 60vh; padding: var(--ds-spacing-20) var(--ds-spacing-5);">
+    <div class="ds-container">
+      <h1 class="ds-text-4xl ds-font-bold ds-text-primary-dark ds-mb-6">Navbar & Footer Demo</h1>
+      <p class="ds-text-lg ds-text-gray-600 ds-mb-8">
+        Esta es una demostración de los componentes Navbar y Footer alineados con el Design System.
+      </p>
+      <div class="ds-card ds-p-8">
+        <h2 class="ds-text-2xl ds-font-bold ds-text-primary-dark ds-mb-4">Características</h2>
+        <ul style="list-style: disc; padding-left: var(--ds-spacing-6);">
+          <li class="ds-mb-2">Usa variables CSS del design system</li>
+          <li class="ds-mb-2">Colores consistentes (Primary 700, Gray scale)</li>
+          <li class="ds-mb-2">Espaciado basado en variables del design system</li>
+          <li class="ds-mb-2">Transiciones suaves</li>
+          <li class="ds-mb-2">Completamente responsive</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <!-- Ocean VA Footer - Design System Aligned -->
+  <footer class="ds-footer">
+    <style>
+      .ds-footer {
+        background-color: var(--ds-color-gray-100);
+        color: var(--ds-color-gray-900);
+        padding: var(--ds-spacing-16) var(--ds-spacing-5) var(--ds-spacing-10);
+      }
+
+      .ds-footer-container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .ds-footer-header {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: var(--ds-spacing-12);
+        margin-bottom: var(--ds-spacing-16);
+        align-items: flex-start;
+      }
+
+      @media (max-width: 768px) {
+        .ds-footer-header {
+          grid-template-columns: 1fr;
+          gap: var(--ds-spacing-6);
+          margin-bottom: var(--ds-spacing-10);
+        }
+      }
+
+      .ds-footer-logo img {
+        height: 48px;
+        width: auto;
+      }
+
+      .ds-footer-description {
+        font-size: var(--ds-font-size-base);
+        color: var(--ds-color-gray-600);
+        line-height: var(--ds-line-height-relaxed);
+      }
+
+      .ds-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--ds-spacing-10);
+        margin-bottom: var(--ds-spacing-16);
+        border-bottom: 1px solid var(--ds-color-gray-200);
+        padding-bottom: var(--ds-spacing-16);
+      }
+
+      .ds-footer-column {
+        background-color: var(--ds-color-white);
+        padding: var(--ds-spacing-6);
+        border-radius: var(--ds-radius-base);
+        box-shadow: var(--ds-shadow-base);
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 1024px) {
+        .ds-footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: var(--ds-spacing-8);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .ds-footer-grid {
+          grid-template-columns: 1fr;
+          gap: var(--ds-spacing-6);
+          padding-bottom: var(--ds-spacing-10);
+          margin-bottom: var(--ds-spacing-10);
+        }
+      }
+
+      .ds-footer-column-title {
+        font-size: var(--ds-font-size-base);
+        font-weight: var(--ds-font-weight-bold);
+        color: var(--ds-color-primary-700);
+        margin-bottom: var(--ds-spacing-4);
+        padding-bottom: var(--ds-spacing-3);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid var(--ds-color-gray-200);
+      }
+
+      .ds-footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .ds-footer-column li {
+        margin-bottom: var(--ds-spacing-3);
+      }
+
+      .ds-footer-link {
+        font-size: var(--ds-font-size-base);
+        color: var(--ds-color-gray-600);
+        text-decoration: none;
+        transition: all var(--ds-transition-base);
+        position: relative;
+        display: inline-block;
+      }
+
+      .ds-footer-link:hover {
+        color: var(--ds-color-primary-700);
+        transform: translateX(4px);
+      }
+
+      .ds-social-links {
+        display: flex;
+        gap: var(--ds-spacing-4);
+      }
+
+      .ds-social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--ds-color-primary-700);
+        border-radius: var(--ds-radius-base);
+        color: var(--ds-color-white);
+        text-decoration: none;
+        font-weight: var(--ds-font-weight-bold);
+        font-size: var(--ds-font-size-sm);
+        transition: all var(--ds-transition-base);
+      }
+
+      .ds-social-icon:hover {
+        background-color: var(--ds-color-primary-900);
+        color: var(--ds-color-white);
+        transform: translateY(-2px);
+        box-shadow: var(--ds-shadow-md);
+      }
+
+      .ds-footer-contact {
+        background-color: var(--ds-color-primary-50);
+        padding: var(--ds-spacing-6);
+        border-radius: var(--ds-radius-base);
+        margin-bottom: var(--ds-spacing-6);
+      }
+
+      .ds-footer-contact-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--ds-spacing-6);
+      }
+
+      @media (max-width: 768px) {
+        .ds-footer-contact-content {
+          grid-template-columns: 1fr;
+          gap: var(--ds-spacing-3);
+        }
+      }
+
+      .ds-footer-contact-item {
+        font-size: var(--ds-font-size-sm);
+        color: var(--ds-color-gray-900);
+        display: flex;
+        align-items: center;
+      }
+
+      .ds-footer-contact-email {
+        color: var(--ds-color-primary-700);
+        text-decoration: none;
+        transition: color var(--ds-transition-fast);
+        font-weight: var(--ds-font-weight-semibold);
+      }
+
+      .ds-footer-contact-email:hover {
+        color: var(--ds-color-primary-900);
+      }
+
+      .ds-footer-copyright {
+        text-align: center;
+        font-size: var(--ds-font-size-xs);
+        color: var(--ds-color-gray-500);
+        padding-top: var(--ds-spacing-6);
+        border-top: 1px solid var(--ds-color-gray-200);
+      }
+    </style>
+
+    <div class="ds-footer-container">
+      <div class="ds-footer-header">
+        <div class="ds-footer-logo">
+          <img src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/690376ff826a8593f694650c_oceanVALogo.png" alt="Ocean VA" />
+        </div>
+        <p class="ds-footer-description">
+          Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services.
+        </p>
+      </div>
+
+      <div class="ds-footer-grid">
+        <div class="ds-footer-column">
+          <h3 class="ds-footer-column-title">SERVICES</h3>
+          <ul>
+            <li><a href="#" class="ds-footer-link">→ Insurance Customer Service</a></li>
+            <li><a href="#" class="ds-footer-link">→ Administrative Assistant</a></li>
+            <li><a href="#" class="ds-footer-link">→ Customer Service</a></li>
+          </ul>
+        </div>
+
+        <div class="ds-footer-column">
+          <h3 class="ds-footer-column-title">INDUSTRIES</h3>
+          <ul>
+            <li><a href="#" class="ds-footer-link">→ Insurance</a></li>
+            <li><a href="#" class="ds-footer-link">→ Real Estate</a></li>
+            <li><a href="#" class="ds-footer-link">→ Small Business</a></li>
+          </ul>
+        </div>
+
+        <div class="ds-footer-column">
+          <h3 class="ds-footer-column-title">OTHER PAGES</h3>
+          <ul>
+            <li><a href="#" class="ds-footer-link">→ About Us</a></li>
+            <li><a href="#" class="ds-footer-link">→ Pricing</a></li>
+            <li><a href="#" class="ds-footer-link">→ Our VAs</a></li>
+          </ul>
+        </div>
+
+        <div class="ds-footer-column">
+          <h3 class="ds-footer-column-title">SOCIAL LINKS</h3>
+          <div class="ds-social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="ds-social-icon" title="Facebook">f</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="ds-social-icon" title="LinkedIn">in</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="ds-social-icon" title="YouTube">▶</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="ds-social-icon" title="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ds-footer-contact">
+        <div class="ds-footer-contact-content">
+          <div class="ds-footer-contact-item">📍 Address: 789 SW Federal Highway, Suite 201 Stuart, FL 34994</div>
+          <div class="ds-footer-contact-item">✉️ Email: <a href="mailto:info@oceanvirtualassistant.com" class="ds-footer-contact-email">info@oceanvirtualassistant.com</a></div>
+          <div class="ds-footer-contact-item">📞 Phone: 772-247-0269</div>
+        </div>
+      </div>
+
+      <div class="ds-footer-copyright">
+        <p>&copy; 2025 Ocean Virtual Assistant Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('active');
+    }
+
+    function toggleMobileDropdown(element) {
+      const dropdown = element.parentElement;
+      dropdown.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(event) {
+      const navbar = document.querySelector('.ds-navbar');
+      if (!navbar.contains(event.target)) {
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenu.classList.remove('active');
+        document.querySelectorAll('.ds-mobile-dropdown').forEach(dropdown => {
+          dropdown.classList.remove('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
