@@ -1,0 +1,372 @@
+/**
+ * Styles for Find Your Perfect VA Components
+ */
+
+.find-your-perfect-va {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Hero Section */
+.fypva-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.fypva-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.fypva-hero p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.fypva-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.fypva-button-primary {
+  background-color: #0070f3;
+  color: white;
+}
+
+.fypva-button-primary:hover:not(:disabled) {
+  background-color: #0051cc;
+}
+
+.fypva-button-secondary {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.fypva-button-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.fypva-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.fypva-progress {
+  margin-bottom: 2rem;
+}
+
+.fypva-progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.fypva-progress-fill {
+  height: 100%;
+  background-color: #0070f3;
+  transition: width 0.3s ease;
+}
+
+.fypva-progress-text {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Question Flow */
+.fypva-question-flow {
+  padding: 2rem 0;
+}
+
+.fypva-question-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fypva-question-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.fypva-answer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fypva-answer-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.fypva-answer-input:focus {
+  outline: none;
+  border-color: #0070f3;
+}
+
+.fypva-answer-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Loading */
+.fypva-loading {
+  text-align: center;
+  padding: 3rem;
+}
+
+.fypva-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e0e0e0;
+  border-top-color: #0070f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error */
+.fypva-error {
+  text-align: center;
+  padding: 3rem;
+  color: #d32f2f;
+}
+
+.fypva-error h2 {
+  margin-bottom: 1rem;
+}
+
+/* Results */
+.fypva-results {
+  padding: 2rem 0;
+}
+
+.fypva-results-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.fypva-results-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.fypva-results-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.fypva-recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* VA Card */
+.fypva-va-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fypva-va-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fypva-va-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.fypva-va-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fypva-va-info {
+  flex: 1;
+}
+
+.fypva-va-info h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem 0;
+  color: #1a1a1a;
+}
+
+.fypva-va-category {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.fypva-match-score {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: #f0f7ff;
+  border-radius: 8px;
+}
+
+.fypva-score-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+.fypva-score-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.fypva-va-card-body {
+  margin-bottom: 1.5rem;
+}
+
+.fypva-match-reasons {
+  margin-bottom: 1rem;
+}
+
+.fypva-match-reasons h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.fypva-match-reasons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fypva-match-reasons li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.fypva-match-reasons li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.fypva-va-strengths {
+  margin-bottom: 1rem;
+}
+
+.fypva-va-strengths h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.fypva-strengths-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.fypva-tag {
+  padding: 0.25rem 0.75rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.fypva-va-tagline {
+  color: #666;
+  font-style: italic;
+  margin: 1rem 0 0 0;
+}
+
+.fypva-va-card-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.fypva-results-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .find-your-perfect-va {
+    padding: 1rem;
+  }
+
+  .fypva-hero h1 {
+    font-size: 2rem;
+  }
+
+  .fypva-question-container {
+    padding: 1.5rem;
+  }
+
+  .fypva-va-card {
+    padding: 1.5rem;
+  }
+
+  .fypva-va-card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fypva-va-card-actions {
+    flex-direction: column;
+  }
+
+  .fypva-va-card-actions .fypva-button {
+    width: 100%;
+  }
+}
+
