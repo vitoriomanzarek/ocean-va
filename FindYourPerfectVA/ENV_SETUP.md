@@ -3,9 +3,13 @@
 Copy this content to your `.env` file:
 
 ```env
-# OpenAI API Configuration
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-4o-mini
+# Google Gemini API Configuration (temporary until OpenAI API key is available)
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-1.5-flash
+
+# OpenAI API Configuration (for future use)
+# OPENAI_API_KEY=your_openai_api_key_here
+# OPENAI_MODEL=gpt-4o-mini
 
 # Webflow API Configuration
 WEBFLOW_API_TOKEN=your_webflow_api_token_here
@@ -19,7 +23,16 @@ PORT=3000
 
 ## How to get these values:
 
-### OpenAI API Key
+### Google Gemini API Key
+1. Go to https://aistudio.google.com/apikey
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Select or create a Google Cloud project
+5. Copy the API key (starts with `AIza...`)
+
+**Note**: We're using Gemini temporarily until OpenAI API key permissions are obtained. The code is structured to easily switch back to OpenAI later.
+
+### OpenAI API Key (for future use)
 1. Go to https://platform.openai.com
 2. Sign up or log in
 3. Navigate to API Keys section

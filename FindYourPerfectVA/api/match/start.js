@@ -5,7 +5,7 @@
  * Initializes a new matching session and returns the first question
  */
 
-import { generateQuestion } from '../../../lib/openai.js';
+import { generateQuestion } from '../../../lib/gemini.js';
 import { getVAs } from '../../../lib/webflow-sync.js';
 import { createSession, setSession } from '../../../lib/session-storage.js';
 

@@ -6,7 +6,7 @@
  */
 
 import { rankVAs } from '../../../lib/matching.js';
-import { generateRecommendationSummary } from '../../../lib/openai.js';
+import { generateRecommendationSummary } from '../../../lib/gemini.js';
 import { getVAs } from '../../../lib/webflow-sync.js';
 import { getSession } from '../../../lib/session-storage.js';
 

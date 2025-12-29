@@ -9,7 +9,7 @@ import QuestionFlow from './QuestionFlow';
 import ResultsDisplay from './ResultsDisplay';
 import './styles.css';
 
-const API_BASE = process.env.REACT_APP_API_BASE || '/api';
+const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 
 export default function FindYourPerfectVA() {
   const [state, setState] = useState('idle'); // idle, questioning, processing, results, error

@@ -5,7 +5,7 @@
  * Processes user's answer and returns next question or recommendation
  */
 
-import { generateQuestion, analyzeAnswer } from '../../../lib/openai.js';
+import { generateQuestion, analyzeAnswer } from '../../../lib/gemini.js';
 import { getSession, setSession } from '../../../lib/session-storage.js';
 
 export default async function handler(req, res) {
