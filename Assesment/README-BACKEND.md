@@ -45,25 +45,25 @@ WEBFLOW_LEADS_COLLECTION_ID=id_de_la_coleccion_de_leads
 
 Necesitas crear una colección en Webflow CMS llamada "Quiz Leads" con los siguientes campos:
 
-| Campo | Tipo | Slug |
-|-------|------|------|
+| Campo | Tipo | Slug (kebab-case) |
+|-------|------|------------------|
 | Name | Plain Text | `name` |
 | Email | Email | `email` |
 | Phone | Plain Text | `phone` |
 | Industry | Plain Text | `industry` |
-| Operational Score | Number | `operational_score` |
-| Intent Score | Number | `intent_score` |
-| Urgency Score | Number | `urgency_score` |
+| Operational Score | Number | `operational-score` |
+| Intent Score | Number | `intent-score` |
+| Urgency Score | Number | `urgency-score` |
 | Profile | Plain Text | `profile` |
-| Profile Name | Plain Text | `profile_name` |
+| Profile Name | Plain Text | `profile-name` |
 | Priority | Number | `priority` |
 | Action | Plain Text | `action` |
-| Current Cost | Number | `current_cost` |
-| VA Cost | Number | `va_cost` |
-| Monthly Savings | Number | `monthly_savings` |
-| Annual Savings | Number | `annual_savings` |
+| Current Cost | Number | `current-cost` |
+| VA Cost | Number | `va-cost` |
+| Monthly Savings | Number | `monthly-savings` |
+| Annual Savings | Number | `annual-savings` |
 | Answers | Plain Text (Long) | `answers` |
-| Submitted At | Date | `submitted_at` |
+| Submitted At | Date | `submitted-at` |
 
 **Nota**: El slug debe coincidir exactamente con los nombres en `lib/webflow-leads.js`.
 

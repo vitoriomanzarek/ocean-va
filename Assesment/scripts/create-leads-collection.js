@@ -3,7 +3,10 @@
  * 
  * Uso:
  * WEBFLOW_API_TOKEN=tu_token WEBFLOW_SITE_ID=tu_site_id node scripts/create-leads-collection.js
+ * O simplemente: node scripts/create-leads-collection.js (si las variables están en .env)
  */
+
+import 'dotenv/config';
 
 const WEBFLOW_API_TOKEN = process.env.WEBFLOW_API_TOKEN;
 const WEBFLOW_SITE_ID = process.env.WEBFLOW_SITE_ID;
