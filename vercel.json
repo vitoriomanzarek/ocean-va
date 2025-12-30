@@ -5,6 +5,18 @@
   "installCommand": "npm install",
   "rewrites": [
     {
+      "source": "/Assesment/api/(.*)",
+      "destination": "/Assesment/api/$1"
+    },
+    {
+      "source": "/Assesment/quiz/(.*)",
+      "destination": "/Assesment/quiz/$1"
+    },
+    {
+      "source": "/quiz/instructions",
+      "destination": "/Assesment/quiz/instructions.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
