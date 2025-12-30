@@ -142,7 +142,7 @@ export const bestPracticesQuestions = [
   {
     id: 'q13',
     number: 13,
-    question: 'Do you have incoming leads that don\'t receive follow-up within the first 24 hours due to lack of capacity?',
+    question: 'Does your team spend more than 10 hours per week on tasks that could be delegated at lower cost?',
     area: 'Highly Delegable Tasks',
     urgencyFlag: true,
     reverseScore: true,
@@ -151,7 +151,7 @@ export const bestPracticesQuestions = [
       { value: 'sometimes', label: 'Sometimes' },
       { value: 'no', label: 'No' }
     ],
-    insight: '⚠️ URGENCY FLAG: YES = +5 urgency points. Reveals $26,000/year money loss'
+    insight: '⚠️ URGENCY FLAG: YES = +5 urgency points. Reveals active money loss NOW ($26,000/year wasted)'
   },
   {
     id: 'q14',

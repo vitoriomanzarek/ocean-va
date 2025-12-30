@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean VA Quiz - Complete System Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .toc h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .toc-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .toc-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Section Styles */
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            scroll-margin-top: 20px;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: -40px -40px 30px -40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .section-number {
+            background: rgba(255,255,255,0.2);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .section-title h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .section-title p {
+            margin: 8px 0 0 0;
+            opacity: 0.95;
+            font-size: 1.1em;
+        }
+
+        /* Cards */
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: #e9ecef;
+            transform: translateX(3px);
+        }
+
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .card h4 {
+            color: #333;
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Question Cards */
+        .question-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid #667eea;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .question-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        .measurement-area {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            color: #666;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        /* Urgency Flags */
+        .urgency-flag {
+            border-left-color: #dc3545 !important;
+            background: #fff5f5 !important;
+        }
+
+        .urgency-flag .question-number {
+            background: #dc3545 !important;
+        }
+
+        .star-question {
+            border-left-color: #f5576c !important;
+            background: #fff5f9 !important;
+        }
+
+        .star-question .question-number {
+            background: #f5576c !important;
+        }
+
+        .gold-question {
+            border-left-color: #f39c12 !important;
+            background: #fffbf0 !important;
+        }
+
+        .gold-question .question-number {
+            background: #f39c12 !important;
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .alert-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .alert-warning {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .alert-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .alert-info {
+            background: #17a2b8;
+            color: white;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .data-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .data-table tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .data-table tbody tr:hover {
+            background: #e9ecef;
+        }
+
+        /* Profile Cards */
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .profile-card {
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .profile-a { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .profile-b { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        .profile-c { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .profile-d { background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .profile-icon {
+            font-size: 2.5em;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+        }
+
+        .badge-hot {
+            background: #ffe5e5;
+            color: #dc3545;
+        }
+
+        .badge-warm {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .badge-cold {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .badge-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Highlight Boxes */
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .highlight strong {
+            color: #856404;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Score Cards */
+        .score-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .score-value {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        /* Lists */
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+
+            .section-header {
+                margin: -25px -25px 20px -25px;
+                padding: 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profiles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="top">
+            <h1>🎯 Ocean VA Quiz</h1>
+            <p class="subtitle">Complete System Documentation - Universal Lead Qualification Framework</p>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc">
+            <h2>📋 Table of Contents</h2>
+            <div class="toc-grid">
+                <div class="toc-item">
+                    <a href="#overview">🌊 System Overview</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#structure">📝 Quiz Structure</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#scoring">🎯 Scoring System</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#questions">📊 Question Analysis</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#profiles">👥 The 4 Lead Profiles</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#decision">🔄 Decision Matrix</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#sales">📱 Sales Team Guide</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#implementation">✅ Implementation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 1: OVERVIEW -->
+        <div class="section" id="overview">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <div class="section-title">
+                    <h2>System Overview</h2>
+                    <p>What this system does and why it works</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🌊 What This System Does</h3>
+                <p>This quiz is a <strong>self-qualifying lead funnel</strong> that automatically:</p>
+                <ul class="checklist">
+                    <li><strong>Qualifies</strong> operational readiness (Can they successfully work with a VA?)</li>
+                    <li><strong>Measures</strong> buying intent (How close are they to purchasing?)</li>
+                    <li><strong>Detects</strong> urgency signals (Do they need help NOW?)</li>
+                    <li><strong>Segments</strong> automatically into 4 profiles (A, B, C, D)</li>
+                    <li><strong>Personalizes</strong> follow-up content (Different message for each profile)</li>
+                    <li><strong>Optimizes</strong> sales time (Only hot leads get calls)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>✨ The Magic</h3>
+                <p style="font-size: 1.2em; color: #667eea; font-weight: 600; margin-bottom: 20px;">NOT all leads go to sales. The system routes leads intelligently:</p>
+                
+                <div class="grid-2">
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #f5576c;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🔥 20%</div>
+                        <strong>Profile A</strong><br>
+                        Immediate sales call
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #fcb69f;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🟡 40%</div>
+                        <strong>Profile B</strong><br>
+                        Education & nurture
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #ff9a9e;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🔴 20%</div>
+                        <strong>Profile C</strong><br>
+                        Urgency video & rescue plan
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #a1c4fd;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">❄️ 20%</div>
+                        <strong>Profile D</strong><br>
+                        Passive content only
+                    </div>
+                </div>
+
+                <div class="alert alert-success" style="margin-top: 20px; font-size: 1.1em;">
+                    <strong>Result:</strong> Sales team only talks to people READY to buy 🎯
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: STRUCTURE -->
+        <div class="section" id="structure">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <div class="section-title">
+                    <h2>Quiz Structure</h2>
+                    <p>3 sections that capture everything we need to know</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📋 Section 1: Contact Information</h3>
+                <p><strong>Purpose:</strong> Capture basic lead data</p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Type</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Name</strong></td>
+                            <td>Text (required)</td>
+                            <td>Personalization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Business Email</strong></td>
+                            <td>Email (required)</td>
+                            <td>Results delivery + CRM</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phone</strong></td>
+                            <td>Tel (optional)</td>
+                            <td>Sales follow-up</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Industry</strong></td>
+                            <td>Dropdown (required)</td>
+                            <td>Segmentation + customization</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Industry Options:</strong>
+                    <div style="margin-top: 10px;">
+                        <span class="badge badge-primary">Insurance (target #1)</span>
+                        <span class="badge badge-primary">Real Estate (target #2)</span>
+                        <span class="badge badge-warm">Small Business</span>
+                        <span class="badge badge-cold">Other</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 Section 2: Best Practices (Q5-Q14)</h3>
+                <p><strong>Purpose:</strong> Measure OPERATIONAL MATURITY</p>
+                
+                <div class="grid-3" style="margin: 20px 0;">
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; color: #667eea; font-weight: bold;">10</div>
+                        <div>Questions</div>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; color: #667eea; font-weight: bold;">10</div>
+                        <div>Max Points</div>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 1.5em; color: #667eea; font-weight: bold;">Y/S/N</div>
+                        <div>Answer Format</div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Scoring:</strong> Yes = 1.0 pt | Sometimes = 0.5 pt | No = 0 pt
+                </div>
+
+                <table class="data-table" style="margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Level</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>8-10</strong></td>
+                            <td><span class="badge-hot">🟢 Ready to Scale</span></td>
+                            <td>Has systems, can implement VA in 72 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4-7</strong></td>
+                            <td><span class="badge-warm">🟡 Needs Optimization</span></td>
+                            <td>Some gaps, needs process help</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0-3</strong></td>
+                            <td><span class="badge-cold">🔴 Chaos Mode</span></td>
+                            <td>No systems, high friction onboarding</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Section 3: Big 5 Qualifiers (Q15-Q19)</h3>
+                <p><strong>Purpose:</strong> Measure PURCHASE INTENT & URGENCY</p>
+                
+                <div class="grid-3" style="margin: 20px 0;">
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; color: #f5576c; font-weight: bold;">5</div>
+                        <div>Questions</div>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; color: #f5576c; font-weight: bold;">15</div>
+                        <div>Max Points</div>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 1.5em; color: #f5576c; font-weight: bold;">0-5</div>
+                        <div>Points Each</div>
+                    </div>
+                </div>
+
+                <table class="data-table" style="margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Level</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>10-15</strong></td>
+                            <td><span class="badge-hot">🔥 High Intent</span></td>
+                            <td>Ready to buy NOW, has budget</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5-9</strong></td>
+                            <td><span class="badge-warm">🟡 Medium Intent</span></td>
+                            <td>Considering options, needs nurture</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0-4</strong></td>
+                            <td><span class="badge-cold">❄️ Low Intent</span></td>
+                            <td>Just researching, long nurture</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- SECTION 3: SCORING SYSTEM -->
+        <div class="section" id="scoring">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <div class="section-title">
+                    <h2>Scoring System</h2>
+                    <p>3 independent dimensions that measure everything</p>
+                </div>
+            </div>
+
+            <div class="profiles-grid">
+                <div class="score-card">
+                    <h3>DIMENSION 1</h3>
+                    <div class="score-value">0-10</div>
+                    <h4>Operational Maturity</h4>
+                    <p style="margin-top: 15px; opacity: 0.95;">From Questions 5-14</p>
+                    <hr style="border: 1px solid rgba(255,255,255,0.3); margin: 15px 0;">
+                    <p style="text-align: left; font-size: 0.95em;">
+                        • Process documentation<br>
+                        • Delegation habits<br>
+                        • Cost awareness<br>
+                        • Technology readiness<br>
+                        • Business maturity
+                    </p>
+                </div>
+
+                <div class="score-card">
+                    <h3>DIMENSION 2</h3>
+                    <div class="score-value">0-15</div>
+                    <h4>Purchase Intent</h4>
+                    <p style="margin-top: 15px; opacity: 0.95;">From Questions 15-19</p>
+                    <hr style="border: 1px solid rgba(255,255,255,0.3); margin: 15px 0;">
+                    <p style="text-align: left; font-size: 0.95em;">
+                        • Main goal/pain point<br>
+                        • Solution sought<br>
+                        • Hours to delegate<br>
+                        • Budget capacity<br>
+                        • Objections
+                    </p>
+                </div>
+
+                <div class="score-card">
+                    <h3>DIMENSION 3</h3>
+                    <div class="score-value">0-8</div>
+                    <h4>Urgency Signals</h4>
+                    <p style="margin-top: 15px; opacity: 0.95;">From Q13, Q14, Q19</p>
+                    <hr style="border: 1px solid rgba(255,255,255,0.3); margin: 15px 0;">
+                    <p style="text-align: left; font-size: 0.95em;">
+                        • Active money loss<br>
+                        • Pain awareness<br>
+                        • Hidden urgency<br>
+                        • Keyword detection<br>
+                        • Timeline pressure
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚠️ Urgency Points Breakdown</h3>
+                <div class="grid-2">
+                    <div class="alert alert-danger">
+                        <strong>Q13 = YES</strong><br>
+                        <span style="font-size: 1.5em; font-weight: bold;">+5 points</span><br>
+                        Wasting $26K/year
+                    </div>
+                    <div class="alert alert-warning">
+                        <strong>Q14 = YES</strong><br>
+                        <span style="font-size: 1.5em; font-weight: bold;">+3 points</span><br>
+                        Knows replacement pain
+                    </div>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Q19 Keywords: +2 points each</strong><br>
+                    <span class="badge badge-hot">"urgent"</span>
+                    <span class="badge badge-hot">"ASAP"</span>
+                    <span class="badge badge-hot">"budget of $X"</span>
+                    <span class="badge badge-hot">"drowning"</span>
+                    <span class="badge badge-hot">"overwhelmed"</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: QUESTION ANALYSIS -->
+        <div class="section" id="questions">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <div class="section-title">
+                    <h2>Question-by-Question Analysis</h2>
+                    <p>Deep dive into every question and what it reveals</p>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question-card">
+                <div class="question-number">Q5</div>
+                <div class="question-text">Do you have a written manual or process documented for at least 5 repetitive tasks (e.g., email/CRM management)?</div>
+                <div class="measurement-area">📋 Measurement Area: Process Documentation</div>
+                
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Scoring:</strong><br>
+                    ✅ YES = 1.0 pt | 🟡 SOMETIMES = 0.5 pt | ❌ NO = 0 pt
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Measures:</strong>
+                    <ul>
+                        <li><strong>Scalability readiness</strong> - Can they onboard a VA quickly?</li>
+                        <li><strong>Systems thinking</strong> - Do they work ON the business or just IN it?</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Tells Sales:</strong>
+                    <ul>
+                        <li><strong>YES →</strong> Ready to delegate, has foundation. Can start in 72 hours.</li>
+                        <li><strong>NO →</strong> Will struggle to train VA. Needs process consulting first.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="question-card">
+                <div class="question-number">Q6</div>
+                <div class="question-text">Do you actively delegate low-value tasks to someone other than yourself?</div>
+                <div class="measurement-area">🤝 Measurement Area: Delegation Habit</div>
+                
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Scoring:</strong><br>
+                    ✅ YES = 1.0 pt | 🟡 SOMETIMES = 0.5 pt | ❌ NO = 0 pt
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Measures:</strong>
+                    <ul>
+                        <li><strong>Mindset</strong> - Are they a control freak or do they trust their team?</li>
+                        <li><strong>Current behavior</strong> - Already delegating = easier sell</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Tells Sales:</strong>
+                    <ul>
+                        <li><strong>YES →</strong> Smooth onboarding, knows how to work with support staff</li>
+                        <li><strong>NO →</strong> Will need hand-holding. Objection: "I can do it faster myself"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="question-card">
+                <div class="question-number">Q7</div>
+                <div class="question-text">Does your team spend less than 20% of its time on administrative tasks?</div>
+                <div class="measurement-area">🎯 Measurement Area: High-Value Focus</div>
+                
+                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    <strong>Scoring:</strong><br>
+                    ✅ YES = 1.0 pt | 🟡 SOMETIMES = 0.5 pt | ❌ NO = 0 pt
+                </div>
+
+                <div class="highlight">
+                    <strong>💎 NO = GOLDMINE!</strong><br>
+                    Can save 20+ hours/week immediately. Massive ROI opportunity (30%+ time is admin).
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Tells Sales:</strong>
+                    <ul>
+                        <li><strong>YES →</strong> Already optimized. May need specialized VA.</li>
+                        <li><strong>NO →</strong> <strong style="color: #28a745;">GOLDMINE</strong> - Huge savings potential!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q13 - URGENCY FLAG -->
+            <div class="question-card urgency-flag">
+                <div class="question-number">Q13 ⚠️</div>
+                <div class="question-text">Does your team spend more than 10 hours per week on tasks that could be delegated at lower cost?</div>
+                <div class="measurement-area">⏰ Measurement Area: Highly Delegable Tasks</div>
+                
+                <div class="alert alert-danger">
+                    🚨 <strong>URGENCY FLAG 1</strong><br>
+                    YES = 0 operational pts BUT <strong>+5 urgency points</strong><br>
+                    Reveals active money loss NOW ($26,000/year wasted)
+                </div>
+
+                <div style="background: #fff3cd; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 4px solid #ffc107;">
+                    <strong>⚠️ REVERSE SCORE!</strong><br>
+                    This question works opposite to others:<br>
+                    • YES = Low operational health BUT HIGH urgency to buy<br>
+                    • NO = High operational health BUT less immediate pain
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Tells Sales:</strong>
+                    <ul>
+                        <li><strong>YES →</strong> 🚨 <strong>CRISIS MODE</strong> - "You're losing $26,000/year. Let's fix this NOW."</li>
+                        <li><strong>NO →</strong> Well-staffed. Use other pain points for scaling.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q14 - URGENCY FLAG -->
+            <div class="question-card urgency-flag">
+                <div class="question-number">Q14 ⚠️</div>
+                <div class="question-text">Have you experienced staff turnover or absences in the last year?</div>
+                <div class="measurement-area">👥 Measurement Area: Staffing Risk</div>
+                
+                <div class="alert alert-warning">
+                    ⚠️ <strong>URGENCY FLAG 2</strong><br>
+                    YES = 0 operational pts BUT <strong>+3 urgency points</strong><br>
+                    They know replacement cost pain ($5K-15K per employee)
+                </div>
+
+                <div style="background: #fff3cd; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 4px solid #ffc107;">
+                    <strong>⚠️ ANOTHER REVERSE SCORE!</strong><br>
+                    • YES = Knows the pain of replacement costs<br>
+                    • NO = Haven't experienced disruption yet
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <strong>What It Tells Sales:</strong>
+                    <ul>
+                        <li><strong>YES →</strong> "Never worry about PTO or turnover again. Zero replacement cost."</li>
+                        <li><strong>NO →</strong> Frame VA as "insurance policy" for future.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="question-card">
+                <div class="question-number">Q15</div>
+                <div class="question-text">What is your main goal for the next 3 months?</div>
+                <div class="measurement-area">🎯 Measurement Area: Priority Need</div>
+                
+                <table class="data-table" style="margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Answer</th>
+                            <th>Points</th>
+                            <th>Temperature</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Save money</strong></td>
+                            <td><span class="badge badge-hot">3 points</span></td>
+                            <td>🔥 HOT - urgent pain, budget-conscious</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Focus on sales</strong></td>
+                            <td><span class="badge badge-hot">3 points</span></td>
+                            <td>🔥 HOT - knows must delegate to sell</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Increase capacity</strong></td>
+                            <td><span class="badge badge-warm">2 points</span></td>
+                            <td>🟡 WARM - growing, needs help</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Other</strong></td>
+                            <td><span class="badge badge-cold">0 points</span></td>
+                            <td>❄️ COLD - exploring, unclear</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Q18 - STAR QUESTION -->
+            <div class="question-card star-question">
+                <div class="question-number">Q18 ⭐</div>
+                <div class="question-text" style="font-size: 1.3em;">What type of solution are you currently seeking?</div>
+                <div class="measurement-area">⭐ Measurement Area: Purchase Intent</div>
+                
+                <div class="alert alert-danger" style="background: #f5576c; text-align: center; font-size: 1.1em; margin-top: 15px;">
+                    ⭐ MOST IMPORTANT QUESTION<br>
+                    Best predictor of closing probability!
+                </div>
+
+                <table class="data-table" style="margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Answer</th>
+                            <th>Points</th>
+                            <th>Intent</th>
+                            <th>Close Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #ffe5e5;">
+                            <td><strong>Full-Time VA</strong></td>
+                            <td><span class="badge badge-hot">5 points</span></td>
+                            <td>🔥🔥 VERY HIGH</td>
+                            <td><strong>60-80%</strong></td>
+                        </tr>
+                        <tr style="background: #ffeded;">
+                            <td><strong>Part-Time VA</strong></td>
+                            <td><span class="badge badge-hot">4 points</span></td>
+                            <td>🔥 HIGH</td>
+                            <td><strong>40-60%</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Process consulting</strong></td>
+                            <td><span class="badge badge-warm">2 points</span></td>
+                            <td>🟡 MEDIUM</td>
+                            <td>20-30%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Just guidance</strong></td>
+                            <td><span class="badge badge-cold">0 points</span></td>
+                            <td>❄️ LOW</td>
+                            <td>5-10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Q19 - GOLD QUESTION -->
+            <div class="question-card gold-question">
+                <div class="question-number">Q19 💎</div>
+                <div class="question-text">Is there any additional comment we should know about your current situation?</div>
+                <div class="measurement-area">💎 Measurement Area: Hidden Budget & Urgency</div>
+                
+                <div class="alert alert-warning" style="text-align: center; font-size: 1.1em; margin-top: 15px;">
+                    💎 GOLDEN INTEL - Sales team MUST read this field!
+                </div>
+
+                <div class="grid-2" style="margin-top: 20px;">
+                    <div style="background: #d4edda; padding: 20px; border-radius: 8px; border-left: 4px solid #28a745;">
+                        <strong style="color: #155724;">✅ Positive Keywords (+2 pts each):</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>"urgent" / "ASAP" / "immediately"</li>
+                            <li>"budget of $X"</li>
+                            <li>"drowning" / "overwhelmed" / "desperate"</li>
+                        </ul>
+                    </div>
+                    <div style="background: #f8d7da; padding: 20px; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <strong style="color: #721c24;">⚠️ Watch For:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>"tried before" / "didn't work" (objection)</li>
+                            <li>"just looking" / "not sure" (-1 pt)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; background: white; padding: 20px; border-radius: 8px;">
+                    <strong>What This Field Reveals:</strong>
+                    <ul>
+                        <li>🔥 <strong>Hidden urgency</strong> - Real desperation level</li>
+                        <li>💰 <strong>Budget signals</strong> - Explicit mention of available funds</li>
+                        <li>📋 <strong>Past experience</strong> - Have they tried VAs before?</li>
+                        <li>🚫 <strong>Unspoken objections</strong> - What they're not saying</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: PROFILES -->
+        <div class="section" id="profiles">
+            <div class="section-header">
+                <div class="section-number">5</div>
+                <div class="section-title">
+                    <h2>The 4 Lead Profiles</h2>
+                    <p>Automatic segmentation based on scores</p>
+                </div>
+            </div>
+
+            <div class="profiles-grid">
+                <!-- PROFILE A -->
+                <div class="profile-card profile-a">
+                    <div class="profile-header">
+                        <div class="profile-icon">🔥</div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.8em;">PROFILE A</h3>
+                            <p style="font-size: 1.2em; margin: 5px 0 0 0;">HOT LEAD</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Qualification:</strong><br>
+                        • Operational: 6-10 pts<br>
+                        • Intent: 10-15 pts<br>
+                        OR<br>
+                        • Operational: 4+ pts<br>
+                        • Intent: 10+ pts<br>
+                        • Urgency: 5+ pts
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Characteristics:</strong>
+                        <ul style="margin: 10px 0 0 20px; padding: 0;">
+                            <li>Has documented processes</li>
+                            <li>Already delegates</li>
+                            <li>Measures costs & time</li>
+                            <li>High buying intent</li>
+                            <li>Ready to purchase NOW</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; margin: 15px 0;">
+                        🔵 SCHEDULE FREE<br>30-MIN CONSULTATION
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: 600;">
+                        Close Rate: 60-80%
+                    </div>
+                </div>
+
+                <!-- PROFILE B -->
+                <div class="profile-card profile-b">
+                    <div class="profile-header">
+                        <div class="profile-icon">🟡</div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.8em;">PROFILE B</h3>
+                            <p style="font-size: 1.2em; margin: 5px 0 0 0;">WARM LEAD</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Qualification:</strong><br>
+                        • Operational: 4-7 pts<br>
+                        • Intent: 5-9 pts<br>
+                        • Normal Urgency
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Characteristics:</strong>
+                        <ul style="margin: 10px 0 0 20px; padding: 0;">
+                            <li>Some processes, many gaps</li>
+                            <li>Delegates inconsistently</li>
+                            <li>Considering options</li>
+                            <li>Needs education first</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; margin: 15px 0;">
+                        📥 DOWNLOAD FREE GUIDE:<br>10 Tasks to Delegate
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: 600;">
+                        Close Rate: 30-50%<br>
+                        <span style="font-size: 0.9em;">(2-4 week nurture)</span>
+                    </div>
+                </div>
+
+                <!-- PROFILE C -->
+                <div class="profile-card profile-c">
+                    <div class="profile-header">
+                        <div class="profile-icon">🔴</div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.8em;">PROFILE C</h3>
+                            <p style="font-size: 1.2em; margin: 5px 0 0 0;">COLD BUT URGENT</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Qualification:</strong><br>
+                        • Operational: 0-3 pts<br>
+                        • Urgency: 5+ pts<br>
+                        OR<br>
+                        • Intent: 8+ pts
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Characteristics:</strong>
+                        <ul style="margin: 10px 0 0 20px; padding: 0;">
+                            <li>Chaos mode operations</li>
+                            <li>Bleeding money NOW</li>
+                            <li>Knows they need help</li>
+                            <li>May lack systems</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; margin: 15px 0;">
+                        📹 WATCH 8-MIN VIDEO:<br>How to Fix in 7 Days
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: 600;">
+                        Close Rate: 20-40%<br>
+                        <span style="font-size: 0.9em;">(if urgency genuine)</span>
+                    </div>
+                </div>
+
+                <!-- PROFILE D -->
+                <div class="profile-card profile-d">
+                    <div class="profile-header">
+                        <div class="profile-icon">❄️</div>
+                        <div>
+                            <h3 style="margin: 0; font-size: 1.8em;">PROFILE D</h3>
+                            <p style="font-size: 1.2em; margin: 5px 0 0 0;">ICE COLD</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Qualification:</strong><br>
+                        • Intent: 0-4 pts<br>
+                        • Any Operational<br>
+                        • Normal Urgency
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Characteristics:</strong>
+                        <ul style="margin: 10px 0 0 20px; padding: 0;">
+                            <li>Just researching</li>
+                            <li>No immediate plans</li>
+                            <li>Unclear motivation</li>
+                            <li>Long nurture needed</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.3); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; margin: 15px 0;">
+                        📚 RECOMMENDED<br>RESOURCES
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: 600;">
+                        Close Rate: 5-15%<br>
+                        <span style="font-size: 0.9em;">(long nurture)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 6: DECISION MATRIX -->
+        <div class="section" id="decision">
+            <div class="section-header">
+                <div class="section-number">6</div>
+                <div class="section-title">
+                    <h2>Automatic Decision Matrix</h2>
+                    <p>How the system routes leads intelligently</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Decision Logic (Pseudocode)</h3>
+                <div class="code-block">
+IF (Operational >= 6 AND Intent >= 10) {
+    PROFILE = "A: HOT LEAD"
+    ACTION = "Schedule sales call immediately"
+    PRIORITY = 1
+}
+
+ELSE IF (Operational >= 4 AND Intent >= 10 AND Urgency >= 5) {
+    PROFILE = "A: HOT LEAD"
+    ACTION = "Schedule sales call immediately"
+    PRIORITY = 1
+}
+
+ELSE IF (Operational >= 4 AND Intent >= 5 AND Intent <= 9) {
+    PROFILE = "B: WARM LEAD"
+    ACTION = "Send guide + nurture sequence"
+    PRIORITY = 2
+}
+
+ELSE IF (Operational < 4 AND Urgency >= 5) {
+    PROFILE = "C: COLD BUT URGENT"
+    ACTION = "Send urgency video + rescue offer"
+    PRIORITY = 3
+}
+
+ELSE {
+    PROFILE = "D: ICE COLD"
+    ACTION = "Passive nurture only"
+    PRIORITY = 4
+}
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🌳 Visual Decision Tree</h3>
+                <div style="background: white; padding: 30px; border-radius: 12px; text-align: center; font-family: monospace; line-height: 2;">
+                    <div style="font-size: 1.5em; font-weight: bold; color: #667eea;">START</div>
+                    <div style="font-size: 2em;">↓</div>
+                    <div style="display: inline-block; background: #f8f9fa; padding: 15px 30px; border-radius: 8px; margin: 10px;">
+                        Intent >= 10?
+                    </div>
+                    <div style="font-size: 2em;">↓</div>
+                    <div style="display: inline-block; background: #f8f9fa; padding: 15px 30px; border-radius: 8px; margin: 10px;">
+                        Operational >= 6?
+                    </div>
+                    <div style="font-size: 2em;">↓</div>
+                    <div style="display: inline-block; background: #f093fb; color: white; padding: 20px 40px; border-radius: 12px; margin: 10px; font-weight: bold;">
+                        PROFILE A<br>(Hot Lead)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 7: SALES GUIDE -->
+        <div class="section" id="sales">
+            <div class="section-header">
+                <div class="section-number">7</div>
+                <div class="section-title">
+                    <h2>Sales Team Quick Guide</h2>
+                    <p>Everything sales needs to close leads fast</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📱 During Lead Review, Ask 4 Questions:</h3>
+                <div class="grid-2">
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>1.</strong> What's the total Operational Score? (0-10)
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>2.</strong> What's the Intent Score? (0-15)
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #dc3545;">
+                        <strong>3.</strong> Did they answer YES to Q13 or Q14?
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #f39c12;">
+                        <strong>4.</strong> What did they write in Q19? 💎
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Routing Decision Table</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Op Score</th>
+                            <th>Intent</th>
+                            <th>Q13/Q14</th>
+                            <th>Profile</th>
+                            <th>Priority</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #ffe5e5;">
+                            <td>8-10</td>
+                            <td>10-15</td>
+                            <td>Any</td>
+                            <td>🔥 A</td>
+                            <td><strong>URGENT</strong></td>
+                            <td>Call immediately</td>
+                        </tr>
+                        <tr style="background: #ffeded;">
+                            <td>6-7</td>
+                            <td>10-15</td>
+                            <td>NO</td>
+                            <td>🔥 A</td>
+                            <td>HIGH</td>
+                            <td>Call today</td>
+                        </tr>
+                        <tr>
+                            <td>4-7</td>
+                            <td>5-9</td>
+                            <td>NO</td>
+                            <td>🟡 B</td>
+                            <td>MEDIUM</td>
+                            <td>Nurture 2-4 weeks</td>
+                        </tr>
+                        <tr>
+                            <td>0-3</td>
+                            <td>Any</td>
+                            <td>YES</td>
+                            <td>🚨 C</td>
+                            <td>HIGH</td>
+                            <td>Urgency video + call</td>
+                        </tr>
+                        <tr>
+                            <td>Any</td>
+                            <td>0-4</td>
+                            <td>NO</td>
+                            <td>❄️ D</td>
+                            <td>LOW</td>
+                            <td>Passive nurture</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Profile A Script</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #f5576c; font-style: italic; line-height: 1.8;">
+                    "Hi [Name], congrats on completing the Efficiency Scorecard! Your score of <strong>9/10</strong> shows you have excellent systems in place - you're the ideal client for us.
+                    <br><br>
+                    Based on your answers, I can see you're currently spending about <strong>30 hours per week</strong> on delegable admin tasks. That's costing you roughly <strong>$4,500/month</strong> when you factor in salary, benefits, and overhead.
+                    <br><br>
+                    We can provide a full-time, specialized VA for <strong>$1,300/month</strong> - that's a net savings of <strong>$3,200/month</strong> or <strong>$38,400 per year</strong>.
+                    <br><br>
+                    The best part? Since you already have documented processes and use collaboration tools, we can have someone integrated into your team within <strong>72 hours</strong>.
+                    <br><br>
+                    I have [Wednesday at 2pm / Thursday at 10am] available for a 30-minute consultation where we'll design your personalized delegation plan. Which time works better for you?"
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💎 Q19 Response Templates</h3>
+                
+                <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #28a745;">
+                    <strong>If they mentioned "urgent" / "ASAP":</strong>
+                    <p style="margin-top: 10px; font-style: italic;">
+                        "I see you mentioned you need help <strong>[urgently/ASAP]</strong>. I'm taking this seriously. Let me clear my calendar - can you jump on a call <strong>[today at 4pm / tomorrow at 9am]</strong>? We can fast-track your onboarding and have someone helping you within 48 hours."
+                    </p>
+                </div>
+
+                <div style="background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ffc107;">
+                    <strong>If they mentioned "budget of $X":</strong>
+                    <p style="margin-top: 10px; font-style: italic;">
+                        "I noticed you mentioned a budget of <strong>$[X]/month</strong>. Perfect - that aligns with our <strong>[package name]</strong>. Let me send you a custom proposal showing exactly what you'll get for that investment."
+                    </p>
+                </div>
+
+                <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #dc3545;">
+                    <strong>If they mentioned "drowning" / "overwhelmed":</strong>
+                    <p style="margin-top: 10px; font-style: italic;">
+                        "I can hear the frustration in your words. The good news: We have a <strong>rescue process</strong> designed for situations like yours. It starts with identifying your top 3 time drains and getting you immediate relief within the first week."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 8: IMPLEMENTATION -->
+        <div class="section" id="implementation">
+            <div class="section-header">
+                <div class="section-number">8</div>
+                <div class="section-title">
+                    <h2>Implementation Checklist</h2>
+                    <p>Everything needed to launch successfully</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🔧 Technical Setup</h3>
+                    <ul class="checklist">
+                        <li>Quiz platform configured</li>
+                        <li>Scoring logic programmed (3 dimensions)</li>
+                        <li>Profile calculation working (4 outcomes)</li>
+                        <li>Results pages created (4 versions)</li>
+                        <li>Email automation connected</li>
+                        <li>CRM integration active</li>
+                        <li>Sales alerts configured</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📄 Content Ready</h3>
+                    <ul class="checklist">
+                        <li>Profile A: Calendar link</li>
+                        <li>Profile A: Case study PDF</li>
+                        <li>Profile B: "10 Tasks" guide</li>
+                        <li>Profile C: 8-min urgency video</li>
+                        <li>Profile D: Resource library</li>
+                        <li>Email templates (4 versions)</li>
+                        <li>Sales scripts prepared</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>👥 Team Training</h3>
+                    <ul class="checklist">
+                        <li>Sales team trained on 4 profiles</li>
+                        <li>Understanding scoring system</li>
+                        <li>Practiced profile-specific scripts</li>
+                        <li>Know how to read Q19 insights</li>
+                        <li>KPIs defined and tracking setup</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📊 KPIs to Track</h3>
+                    <ul class="checklist">
+                        <li>Quiz completion rate (target: 60%+)</li>
+                        <li>Profile A → Call booked (60%+)</li>
+                        <li>Profile B → Guide downloaded (70%+)</li>
+                        <li>Profile A → Closed (60-80%)</li>
+                        <li>Time to first contact (< 4 hours)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; text-align: center; padding: 40px;">
+                <h2 style="color: white; font-size: 2.5em; margin-bottom: 20px;">🚀 System Ready to Deploy!</h2>
+                <p style="font-size: 1.3em; opacity: 0.95;">
+                    This complete framework will automatically qualify leads,<br>
+                    segment them intelligently, and optimize your sales team's time.
+                </p>
+                <div style="margin-top: 30px; font-size: 1.5em; font-weight: bold;">
+                    Sales team only talks to people READY to buy! 🎯
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background: white; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <p style="font-size: 1.1em; color: #666; margin-bottom: 10px;">
+                Ocean Virtual Assistant - Complete Quiz System Documentation
+            </p>
+            <p style="color: #999;">
+                © 2025 - Universal Lead Qualification & Segmentation Framework
+            </p>
+        </div>
+
+        <!-- Back to Top Button -->
+        <a href="#top" class="back-to-top">↑</a>
+
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operational Efficiency Scorecard - Ocean VA</title>
+    <link rel="stylesheet" href="../webflow-components-design-system/design-system.css">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <!-- Landing Page Section -->
+    <section id="landing" class="ds-section ds-gradient-primary ds-text-white" style="background:linear-gradient(135deg,var(--ds-color-primary-900) 0%,var(--ds-color-primary-900) 50%,var(--ds-color-primary-500) 100%);min-height:100vh;display:flex;align-items:center;">
+        <div class="ds-container-standard">
+            <div style="text-align:center;max-width:800px;margin:0 auto;">
+                <!-- Frustration Hook -->
+                <p class="ds-text-xl" style="color:var(--ds-color-error);margin-bottom:var(--ds-spacing-4);font-weight:var(--ds-font-weight-semibold);">
+                    Frustrated by the high cost of staff while your team spends hours on tasks that could be delegated?
+                </p>
+                
+                <!-- Results Hook -->
+                <h1 class="ds-text-7xl ds-font-bold ds-leading-tight ds-text-white" style="margin-bottom:var(--ds-spacing-6);">
+                    Discover Your Hidden Operational Costs
+                </h1>
+                
+                <!-- Subheading -->
+                <p class="ds-text-xl" style="margin-bottom:var(--ds-spacing-8);line-height:var(--ds-line-height-relaxed);color:var(--ds-color-primary-100);">
+                    Answer 15 questions in 3 minutes and discover your Efficiency Score + your real monthly savings potential in dollars
+                </p>
+                
+                <!-- 3 Value Areas -->
+                <div class="ds-grid ds-grid-3" style="margin-bottom:var(--ds-spacing-10);gap:var(--ds-spacing-6);">
+                    <div style="background:rgba(255,255,255,0.1);padding:var(--ds-spacing-6);border-radius:var(--ds-radius-base);">
+                        <div style="font-size:2.5em;margin-bottom:var(--ds-spacing-2);">💰</div>
+                        <h3 class="ds-text-lg ds-font-semibold">Save Money</h3>
+                        <p class="ds-text-sm" style="opacity:0.9;">Up to 70% cost reduction vs. local employees</p>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.1);padding:var(--ds-spacing-6);border-radius:var(--ds-radius-base);">
+                        <div style="font-size:2.5em;margin-bottom:var(--ds-spacing-2);">⏱️</div>
+                        <h3 class="ds-text-lg ds-font-semibold">Recover Time</h3>
+                        <p class="ds-text-sm" style="opacity:0.9;">15+ hours per week back to your team</p>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.1);padding:var(--ds-spacing-6);border-radius:var(--ds-radius-base);">
+                        <div style="font-size:2.5em;margin-bottom:var(--ds-spacing-2);">🛡️</div>
+                        <h3 class="ds-text-lg ds-font-semibold">No Turnover Risk</h3>
+                        <p class="ds-text-sm" style="opacity:0.9;">Zero replacement costs, guaranteed coverage</p>
+                    </div>
+                </div>
+                
+                <!-- Credibility -->
+                <div style="background:rgba(255,255,255,0.15);padding:var(--ds-spacing-6);border-radius:var(--ds-radius-base);margin-bottom:var(--ds-spacing-8);">
+                    <p class="ds-text-base" style="opacity:0.95;">
+                        ✅ More than 100 insurance agencies have optimized their operations<br>
+                        🕐 On average, our clients recover 15+ hours weekly
+                    </p>
+                </div>
+                
+                <!-- CTA Block -->
+                <div style="background:var(--ds-color-white);padding:var(--ds-spacing-10);border-radius:var(--ds-radius-lg);box-shadow:var(--ds-shadow-xl);">
+                    <h2 class="ds-text-3xl ds-font-bold ds-text-primary-dark" style="margin-bottom:var(--ds-spacing-4);">
+                        Calculate Your Real Savings (3 min)
+                    </h2>
+                    <p class="ds-text-base ds-text-gray-600" style="margin-bottom:var(--ds-spacing-6);">
+                        Get your personalized Efficiency Score and discover how much you could save monthly
+                    </p>
+                    <button id="start-quiz" class="ds-button ds-button-primary ds-button-lg" style="width:100%;padding:var(--ds-spacing-5) var(--ds-spacing-8);font-size:var(--ds-font-size-xl);">
+                        START ASSESSMENT NOW
+                    </button>
+                    <div style="display:flex;justify-content:space-around;margin-top:var(--ds-spacing-6);flex-wrap:wrap;gap:var(--ds-spacing-4);">
+                        <span class="ds-text-sm ds-text-gray-600">✓ No credit card required</span>
+                        <span class="ds-text-sm ds-text-gray-600">✓ Instant results</span>
+                        <span class="ds-text-sm ds-text-gray-600">✓ 100% free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quiz Section (Hidden Initially) -->
+    <section id="quiz-section" class="ds-section" style="display:none;min-height:100vh;background:var(--ds-color-gray-50);padding-top:var(--ds-spacing-12);">
+        <div class="quiz-container">
+            <!-- Progress Bar -->
+            <div class="quiz-progress">
+                <div id="progress-bar" class="quiz-progress-bar" style="width:0%;"></div>
+            </div>
+            
+            <!-- Contact Information Section -->
+            <div id="contact-section" class="quiz-section">
+                <h2 class="ds-text-3xl ds-font-bold ds-text-primary-dark" style="margin-bottom:var(--ds-spacing-6);text-align:center;">
+                    Let's Get Started
+                </h2>
+                <p class="ds-text-base ds-text-gray-600" style="margin-bottom:var(--ds-spacing-8);text-align:center;">
+                    We'll use this information to deliver your personalized results
+                </p>
+                
+                <form id="contact-form">
+                    <div class="quiz-form-group">
+                        <label class="quiz-form-label">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input type="text" id="name" class="quiz-form-input" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="quiz-form-group">
+                        <label class="quiz-form-label">
+                            Business Email <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" class="quiz-form-input" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="quiz-form-group">
+                        <label class="quiz-form-label">
+                            Phone Number <span style="font-size:var(--ds-font-size-sm);color:var(--ds-color-gray-500);">(Optional)</span>
+                        </label>
+                        <input type="tel" id="phone" class="quiz-form-input" placeholder="(555) 123-4567">
+                    </div>
+                    
+                    <div class="quiz-form-group">
+                        <label class="quiz-form-label">
+                            Industry <span class="required">*</span>
+                        </label>
+                        <select id="industry" class="quiz-form-select" required>
+                            <option value="">Select your industry</option>
+                            <option value="insurance">Insurance Agency</option>
+                            <option value="real-estate">Real Estate</option>
+                            <option value="mortgage">Mortgage</option>
+                            <option value="property-management">Property Management</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="quiz-navigation">
+                        <div></div>
+                        <button type="submit" class="quiz-button quiz-button-primary">
+                            Continue to Questions →
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Questions Section (Hidden Initially) -->
+            <div id="questions-section" style="display:none;">
+                <div id="questions-container"></div>
+                <div class="quiz-navigation">
+                    <button id="prev-button" class="quiz-button quiz-button-secondary" style="display:none;">
+                        ← Previous
+                    </button>
+                    <div style="flex:1;"></div>
+                    <button id="next-button" class="quiz-button quiz-button-primary">
+                        Next Question →
+                    </button>
+                    <button id="submit-button" class="quiz-button quiz-button-primary" style="display:none;">
+                        Get My Results →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Results Section (Hidden Initially) -->
+    <section id="results-section" class="ds-section" style="display:none;min-height:100vh;background:var(--ds-color-gray-50);">
+        <div class="results-container">
+            <div id="results-content"></div>
+        </div>
+    </section>
+    
+    <script type="module" src="components/quiz-engine.js"></script>
+</body>
+</html>
+

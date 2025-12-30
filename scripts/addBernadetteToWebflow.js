@@ -25,7 +25,7 @@ const bernadetteData = {
   thumbnail: '8 yrs of Mortgage Experience, U.S. MORTGAGE COMPLIANCE, LOAN DOCUMENTATION REVIEW, FINANCIAL REGULATIONS',
   tagline: 'Bernadette is an excellent Virtual Assistant for mortgage lenders, who can confidently manage regulatory reviews, loan documentation, and quality assurance with consistency and accuracy.',
   imageUrl: 'https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/694afc3e354b9f27643f60df_Bernadette.webp',
-  videoUrl: '', // Will be added later
+  videoUrl: 'https://youtu.be/I20XQPhenIQ',
   profileSlug: 'bernadette-abellana-ocean-va-profile',
   slug: 'bernadette-abellana',
   languages: ['English'],
