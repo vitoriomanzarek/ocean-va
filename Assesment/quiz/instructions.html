@@ -1443,28 +1443,28 @@ ELSE {
                 <div class="section-number">8</div>
                 <div class="section-title">
                     <h2>Backend & API Integration</h2>
-                    <p>Captura automática de datos del quiz en Webflow CMS</p>
+                    <p>Automatic quiz data capture in Webflow CMS</p>
                 </div>
             </div>
 
             <div class="card">
-                <h3>🚀 Sistema de Backend Implementado</h3>
-                <p>El sistema ahora incluye un <strong>backend completo</strong> que captura automáticamente todos los resultados del quiz y los guarda en Webflow CMS como leads calificados.</p>
+                <h3>🚀 Backend System Implemented</h3>
+                <p>The system now includes a <strong>complete backend</strong> that automatically captures all quiz results and saves them to Webflow CMS as qualified leads.</p>
                 
                 <div class="alert alert-success" style="margin: 20px 0;">
-                    <strong>✅ Características del Backend:</strong>
+                    <strong>✅ Backend Features:</strong>
                     <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Captura automática de datos al completar el quiz</li>
-                        <li>Integración con Webflow CMS para almacenar leads</li>
-                        <li>Fallback a almacenamiento local si Webflow falla</li>
-                        <li>No interrumpe la experiencia del usuario</li>
-                        <li>Listo para producción en Vercel</li>
+                        <li>Automatic data capture when completing the quiz</li>
+                        <li>Integration with Webflow CMS to store leads</li>
+                        <li>Fallback to local storage if Webflow fails</li>
+                        <li>Does not interrupt user experience</li>
+                        <li>Ready for production on Vercel</li>
                     </ul>
                 </div>
             </div>
 
             <div class="card">
-                <h3>📋 Estructura del Backend</h3>
+                <h3>📋 Backend Structure</h3>
                 <div class="code-block">
 <pre>Assesment/
 ├── api/
@@ -1479,23 +1479,23 @@ ELSE {
             </div>
 
             <div class="card">
-                <h3>🔧 Configuración Requerida</h3>
+                <h3>🔧 Required Configuration</h3>
                 
-                <h4 style="margin-top: 20px; color: #037b77;">1. Variables de Entorno</h4>
-                <p>Crear archivo <code>.env</code> en la carpeta <code>Assesment</code>:</p>
+                <h4 style="margin-top: 20px; color: #037b77;">1. Environment Variables</h4>
+                <p>Create <code>.env</code> file in the <code>Assesment</code> folder:</p>
                 <div class="code-block">
-<pre>WEBFLOW_API_TOKEN=tu_token_de_webflow
-WEBFLOW_SITE_ID=tu_site_id_de_webflow
-WEBFLOW_LEADS_COLLECTION_ID=id_de_la_coleccion</pre>
+<pre>WEBFLOW_API_TOKEN=your_webflow_token
+WEBFLOW_SITE_ID=your_webflow_site_id
+WEBFLOW_LEADS_COLLECTION_ID=your_collection_id</pre>
                 </div>
 
-                <h4 style="margin-top: 20px; color: #037b77;">2. Colección en Webflow CMS</h4>
-                <p>Crear colección "Quiz Leads" con los siguientes campos:</p>
+                <h4 style="margin-top: 20px; color: #037b77;">2. Webflow CMS Collection</h4>
+                <p>Create "Quiz Leads" collection with the following fields:</p>
                 <table class="data-table">
                     <thead>
                         <tr>
-                            <th>Campo</th>
-                            <th>Tipo</th>
+                            <th>Field</th>
+                            <th>Type</th>
                             <th>Slug</th>
                         </tr>
                     </thead>
@@ -1524,7 +1524,7 @@ WEBFLOW_LEADS_COLLECTION_ID=id_de_la_coleccion</pre>
             <div class="card">
                 <h3>🔌 API Endpoint</h3>
                 <p><strong>POST /api/quiz/submit</strong></p>
-                <p>Recibe los datos del quiz y los guarda automáticamente en Webflow CMS.</p>
+                <p>Receives quiz data and automatically saves it to Webflow CMS.</p>
                 
                 <div class="code-block">
 <pre>// Request Body
@@ -1553,39 +1553,39 @@ WEBFLOW_LEADS_COLLECTION_ID=id_de_la_coleccion</pre>
             </div>
 
             <div class="card">
-                <h3>🌐 Integración con Frontend</h3>
-                <p>El frontend automáticamente envía los datos al backend cuando el usuario completa el quiz.</p>
-                <p>Para configurar la URL del API en <code>standalone.html</code>:</p>
+                <h3>🌐 Frontend Integration</h3>
+                <p>The frontend automatically sends data to the backend when the user completes the quiz.</p>
+                <p>To configure the API URL in <code>standalone.html</code>:</p>
                 <div class="code-block">
 <pre>&lt;script&gt;
-  // Desarrollo local
+  // Local development
   window.API_BASE = 'http://localhost:3000/api';
   
-  // Producción (Vercel)
-  window.API_BASE = 'https://tu-dominio.vercel.app/api';
+  // Production (Vercel)
+  window.API_BASE = 'https://your-domain.vercel.app/api';
 &lt;/script&gt;
 &lt;script src="standalone-engine.js"&gt;&lt;/script&gt;</pre>
                 </div>
             </div>
 
             <div class="card">
-                <h3>📚 Documentación Completa</h3>
-                <p>Para más detalles sobre el backend, consulta:</p>
+                <h3>📚 Complete Documentation</h3>
+                <p>For more details about the backend, see:</p>
                 <ul class="checklist">
-                    <li><strong>README-BACKEND.md</strong> - Documentación completa del backend</li>
-                    <li><strong>ENV_SETUP.md</strong> - Guía de configuración de variables de entorno</li>
-                    <li><strong>QUICKSTART.md</strong> - Guía rápida de inicio</li>
+                    <li><strong>README-BACKEND.md</strong> - Complete backend documentation</li>
+                    <li><strong>ENV_SETUP.md</strong> - Environment variables configuration guide</li>
+                    <li><strong>QUICKSTART.md</strong> - Quick start guide</li>
                 </ul>
             </div>
 
             <div class="card" style="background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%); color: white; padding: 30px; border-radius: 12px;">
-                <h3 style="color: white; margin-bottom: 15px;">✨ Beneficios del Backend</h3>
+                <h3 style="color: white; margin-bottom: 15px;">✨ Backend Benefits</h3>
                 <ul style="color: white; opacity: 0.95; line-height: 1.8;">
-                    <li>✅ Todos los leads se guardan automáticamente en Webflow CMS</li>
-                    <li>✅ Datos completos disponibles para el equipo de ventas</li>
-                    <li>✅ Integración lista para CRM y email marketing</li>
-                    <li>✅ Sistema robusto con fallback automático</li>
-                    <li>✅ Escalable y listo para producción</li>
+                    <li>✅ All leads are automatically saved to Webflow CMS</li>
+                    <li>✅ Complete data available for the sales team</li>
+                    <li>✅ Ready for CRM and email marketing integration</li>
+                    <li>✅ Robust system with automatic fallback</li>
+                    <li>✅ Scalable and production-ready</li>
                 </ul>
             </div>
         </div>
