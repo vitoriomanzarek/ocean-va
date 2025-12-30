@@ -1,0 +1,29 @@
+{
+  "name": "ocean-va-assessment-quiz",
+  "version": "1.0.0",
+  "description": "Ocean VA Operational Efficiency Scorecard - Backend API",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'",
+    "start": "vercel dev",
+    "create-collection": "node scripts/create-leads-collection.js"
+  },
+  "keywords": [
+    "assessment",
+    "quiz",
+    "lead-scoring",
+    "webflow",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.11",
+    "vercel": "^35.0.0"
+  }
+}

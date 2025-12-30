@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/quiz/(.*)",
+      "dest": "/quiz/$1"
+    },
+    {
+      "src": "/instructions",
+      "dest": "/quiz/instructions.html"
+    }
+  ],
+  "env": {
+    "WEBFLOW_API_TOKEN": "@webflow_api_token",
+    "WEBFLOW_SITE_ID": "@webflow_site_id",
+    "WEBFLOW_LEADS_COLLECTION_ID": "@webflow_leads_collection_id"
+  }
+}

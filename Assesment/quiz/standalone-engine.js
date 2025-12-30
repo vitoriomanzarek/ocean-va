@@ -697,6 +697,38 @@ function updateProgress() {
   }
 }
 
+// API Configuration
+const API_BASE = window.API_BASE || '/api'; // Use window.API_BASE if set, otherwise relative path
+
+/**
+ * Submit quiz results to backend
+ * @param {Object} quizData - Complete quiz data to submit
+ */
+async function submitQuizResults(quizData) {
+  try {
+    const response = await fetch(`${API_BASE}/quiz/submit`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(quizData)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log('Quiz results saved successfully:', result);
+    return result;
+  } catch (error) {
+    // Silently fail - don't interrupt user experience
+    console.warn('Failed to submit quiz results to backend:', error.message);
+    // You could also send to analytics or error tracking service here
+    return null;
+  }
+}
+
 function calculateAndShowResults() {
   const operationalScore = calculateOperationalScore(quizState.answers);
   const intentScore = calculateIntentScore(quizState.answers);
@@ -718,8 +750,8 @@ function calculateAndShowResults() {
   
   showSection('results');
   
-  // Log results for CRM integration
-  console.log('Quiz Results:', {
+  // Prepare data for backend submission
+  const quizData = {
     contact: quizState.contactInfo,
     answers: quizState.answers,
     scores: {
@@ -729,7 +761,13 @@ function calculateAndShowResults() {
     },
     profile: profile,
     savings: savings
-  });
+  };
+  
+  // Log results for debugging
+  console.log('Quiz Results:', quizData);
+  
+  // Submit to backend (non-blocking)
+  submitQuizResults(quizData);
 }
 
 function renderResults(profile, content, scores, savings) {

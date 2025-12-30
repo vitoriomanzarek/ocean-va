@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean VA Quiz - Complete System Documentation</title>
+    <title>Ocean VA Assessment Quiz - Complete System Documentation</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +12,10 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%);
             padding: 20px;
-            color: #333;
+            color: #111827;
             line-height: 1.6;
         }
 
@@ -52,7 +52,7 @@
         }
 
         .toc h2 {
-            color: #667eea;
+            color: #037b77;
             margin-bottom: 20px;
             font-size: 2em;
         }
@@ -67,7 +67,7 @@
             background: #f8f9fa;
             padding: 15px 20px;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #05bfb9;
             transition: all 0.3s ease;
             cursor: pointer;
         }
@@ -97,7 +97,7 @@
         }
 
         .section-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%);
             color: white;
             padding: 25px;
             border-radius: 12px;
@@ -137,7 +137,7 @@
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #05bfb9;
             transition: all 0.3s ease;
         }
 
@@ -147,7 +147,7 @@
         }
 
         .card h3 {
-            color: #667eea;
+            color: #037b77;
             margin-bottom: 15px;
             font-size: 1.4em;
         }
@@ -164,12 +164,12 @@
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 25px;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #05bfb9;
         }
 
         .question-number {
             display: inline-block;
-            background: #667eea;
+            background: #05bfb9;
             color: white;
             padding: 8px 18px;
             border-radius: 20px;
@@ -264,7 +264,7 @@
         }
 
         .data-table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%);
             color: white;
         }
 
@@ -354,7 +354,7 @@
         }
 
         .badge-primary {
-            background: #667eea;
+            background: #05bfb9;
             color: white;
         }
 
@@ -388,12 +388,12 @@
 
         /* Score Cards */
         .score-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%);
             color: white;
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 8px 20px rgba(3, 123, 119, 0.3);
         }
 
         .score-value {
@@ -502,6 +502,9 @@
                 </div>
                 <div class="toc-item">
                     <a href="#sales">📱 Sales Team Guide</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#backend">⚙️ Backend & API</a>
                 </div>
                 <div class="toc-item">
                     <a href="#implementation">✅ Implementation</a>
@@ -1434,10 +1437,163 @@ ELSE {
             </div>
         </div>
 
-        <!-- SECTION 8: IMPLEMENTATION -->
-        <div class="section" id="implementation">
+        <!-- SECTION 8: BACKEND & API -->
+        <div class="section" id="backend">
             <div class="section-header">
                 <div class="section-number">8</div>
+                <div class="section-title">
+                    <h2>Backend & API Integration</h2>
+                    <p>Captura automática de datos del quiz en Webflow CMS</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Sistema de Backend Implementado</h3>
+                <p>El sistema ahora incluye un <strong>backend completo</strong> que captura automáticamente todos los resultados del quiz y los guarda en Webflow CMS como leads calificados.</p>
+                
+                <div class="alert alert-success" style="margin: 20px 0;">
+                    <strong>✅ Características del Backend:</strong>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Captura automática de datos al completar el quiz</li>
+                        <li>Integración con Webflow CMS para almacenar leads</li>
+                        <li>Fallback a almacenamiento local si Webflow falla</li>
+                        <li>No interrumpe la experiencia del usuario</li>
+                        <li>Listo para producción en Vercel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📋 Estructura del Backend</h3>
+                <div class="code-block">
+<pre>Assesment/
+├── api/
+│   └── quiz/
+│       └── submit.js          # Endpoint POST /api/quiz/submit
+├── lib/
+│   └── webflow-leads.js      # Integración con Webflow CMS
+├── package.json
+├── vercel.json
+└── .env                       # Variables de entorno</pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Configuración Requerida</h3>
+                
+                <h4 style="margin-top: 20px; color: #037b77;">1. Variables de Entorno</h4>
+                <p>Crear archivo <code>.env</code> en la carpeta <code>Assesment</code>:</p>
+                <div class="code-block">
+<pre>WEBFLOW_API_TOKEN=tu_token_de_webflow
+WEBFLOW_SITE_ID=tu_site_id_de_webflow
+WEBFLOW_LEADS_COLLECTION_ID=id_de_la_coleccion</pre>
+                </div>
+
+                <h4 style="margin-top: 20px; color: #037b77;">2. Colección en Webflow CMS</h4>
+                <p>Crear colección "Quiz Leads" con los siguientes campos:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Slug</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Name</td><td>Plain Text</td><td>name</td></tr>
+                        <tr><td>Email</td><td>Email</td><td>email</td></tr>
+                        <tr><td>Phone</td><td>Plain Text</td><td>phone</td></tr>
+                        <tr><td>Industry</td><td>Plain Text</td><td>industry</td></tr>
+                        <tr><td>Operational Score</td><td>Number</td><td>operational-score</td></tr>
+                        <tr><td>Intent Score</td><td>Number</td><td>intent-score</td></tr>
+                        <tr><td>Urgency Score</td><td>Number</td><td>urgency-score</td></tr>
+                        <tr><td>Profile</td><td>Plain Text</td><td>profile</td></tr>
+                        <tr><td>Profile Name</td><td>Plain Text</td><td>profile-name</td></tr>
+                        <tr><td>Priority</td><td>Number</td><td>priority</td></tr>
+                        <tr><td>Action</td><td>Plain Text</td><td>action</td></tr>
+                        <tr><td>Current Cost</td><td>Number</td><td>current-cost</td></tr>
+                        <tr><td>VA Cost</td><td>Number</td><td>va-cost</td></tr>
+                        <tr><td>Monthly Savings</td><td>Number</td><td>monthly-savings</td></tr>
+                        <tr><td>Annual Savings</td><td>Number</td><td>annual-savings</td></tr>
+                        <tr><td>Answers</td><td>Plain Text (Long)</td><td>answers</td></tr>
+                        <tr><td>Submitted At</td><td>Date</td><td>submitted-at</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>🔌 API Endpoint</h3>
+                <p><strong>POST /api/quiz/submit</strong></p>
+                <p>Recibe los datos del quiz y los guarda automáticamente en Webflow CMS.</p>
+                
+                <div class="code-block">
+<pre>// Request Body
+{
+  "contact": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "(555) 123-4567",
+    "industry": "insurance"
+  },
+  "answers": { ... },
+  "scores": {
+    "operational": 7.5,
+    "intent": 12,
+    "urgency": 5
+  },
+  "profile": {
+    "profile": "A",
+    "name": "HOT LEAD",
+    "priority": 1,
+    "action": "immediate-sales-call"
+  },
+  "savings": { ... }
+}</pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Integración con Frontend</h3>
+                <p>El frontend automáticamente envía los datos al backend cuando el usuario completa el quiz.</p>
+                <p>Para configurar la URL del API en <code>standalone.html</code>:</p>
+                <div class="code-block">
+<pre>&lt;script&gt;
+  // Desarrollo local
+  window.API_BASE = 'http://localhost:3000/api';
+  
+  // Producción (Vercel)
+  window.API_BASE = 'https://tu-dominio.vercel.app/api';
+&lt;/script&gt;
+&lt;script src="standalone-engine.js"&gt;&lt;/script&gt;</pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📚 Documentación Completa</h3>
+                <p>Para más detalles sobre el backend, consulta:</p>
+                <ul class="checklist">
+                    <li><strong>README-BACKEND.md</strong> - Documentación completa del backend</li>
+                    <li><strong>ENV_SETUP.md</strong> - Guía de configuración de variables de entorno</li>
+                    <li><strong>QUICKSTART.md</strong> - Guía rápida de inicio</li>
+                </ul>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%); color: white; padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-bottom: 15px;">✨ Beneficios del Backend</h3>
+                <ul style="color: white; opacity: 0.95; line-height: 1.8;">
+                    <li>✅ Todos los leads se guardan automáticamente en Webflow CMS</li>
+                    <li>✅ Datos completos disponibles para el equipo de ventas</li>
+                    <li>✅ Integración lista para CRM y email marketing</li>
+                    <li>✅ Sistema robusto con fallback automático</li>
+                    <li>✅ Escalable y listo para producción</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECTION 9: IMPLEMENTATION -->
+        <div class="section" id="implementation">
+            <div class="section-header">
+                <div class="section-number">9</div>
                 <div class="section-title">
                     <h2>Implementation Checklist</h2>
                     <p>Everything needed to launch successfully</p>
@@ -1448,10 +1604,13 @@ ELSE {
                 <div class="card">
                     <h3>🔧 Technical Setup</h3>
                     <ul class="checklist">
-                        <li>Quiz platform configured</li>
-                        <li>Scoring logic programmed (3 dimensions)</li>
-                        <li>Profile calculation working (4 outcomes)</li>
-                        <li>Results pages created (4 versions)</li>
+                        <li>✅ Quiz platform configured</li>
+                        <li>✅ Scoring logic programmed (3 dimensions)</li>
+                        <li>✅ Profile calculation working (4 outcomes)</li>
+                        <li>✅ Results pages created (4 versions)</li>
+                        <li>✅ Backend API implemented (Vercel Serverless)</li>
+                        <li>✅ Webflow CMS integration active</li>
+                        <li>✅ Frontend-backend connection configured</li>
                         <li>Email automation connected</li>
                         <li>CRM integration active</li>
                         <li>Sales alerts configured</li>
@@ -1494,25 +1653,32 @@ ELSE {
                 </div>
             </div>
 
-            <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; text-align: center; padding: 40px;">
+            <div class="card" style="background: linear-gradient(135deg, #037b77 0%, #049d98 50%, #05bfb9 100%); color: white; text-align: center; padding: 40px;">
                 <h2 style="color: white; font-size: 2.5em; margin-bottom: 20px;">🚀 System Ready to Deploy!</h2>
                 <p style="font-size: 1.3em; opacity: 0.95;">
                     This complete framework will automatically qualify leads,<br>
-                    segment them intelligently, and optimize your sales team's time.
+                    segment them intelligently, capture data in Webflow CMS,<br>
+                    and optimize your sales team's time.
                 </p>
                 <div style="margin-top: 30px; font-size: 1.5em; font-weight: bold;">
                     Sales team only talks to people READY to buy! 🎯
+                </div>
+                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                    <strong>🌐 URL en Vercel:</strong><br>
+                    <code style="background: rgba(0,0,0,0.3); padding: 8px 16px; border-radius: 4px; display: inline-block; margin-top: 10px;">
+                        https://tu-dominio.vercel.app/Assesment/quiz/instructions.html
+                    </code>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
         <div style="background: white; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-            <p style="font-size: 1.1em; color: #666; margin-bottom: 10px;">
-                Ocean Virtual Assistant - Complete Quiz System Documentation
+                <p style="font-size: 1.1em; color: #666; margin-bottom: 10px;">
+                Ocean Virtual Assistant - Complete Assessment Quiz System Documentation
             </p>
             <p style="color: #999;">
-                © 2025 - Universal Lead Qualification & Segmentation Framework
+                © 2025 - Operational Efficiency Scorecard with Backend Integration
             </p>
         </div>
 
