@@ -60,27 +60,55 @@ export async function saveQuizResultToWebflow(quizData) {
     }
   };
 
-  // Create item in Webflow CMS
-  const response = await fetch(
-    `https://api.webflow.com/v2/sites/${siteId}/collections/${collectionId}/items`,
-    {
+  // Create item in Webflow CMS with timeout
+  const timeout = 30000; // 30 seconds timeout
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const url = `https://api.webflow.com/v2/sites/${siteId}/collections/${collectionId}/items`;
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiToken}`,
         'Content-Type': 'application/json',
         'Accept-Version': '1.0.0'
       },
-      body: JSON.stringify(webflowData)
+      body: JSON.stringify(webflowData),
+      signal: controller.signal
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      const errorData = await response.text();
+      throw new Error(`Webflow API error: ${response.status} - ${errorData}`);
     }
-  );
 
-  if (!response.ok) {
-    const errorData = await response.text();
-    throw new Error(`Webflow API error: ${response.status} - ${errorData}`);
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    
+    // Handle network errors specifically
+    if (error.name === 'AbortError') {
+      throw new Error('Network timeout: Request to Webflow API took too long (>30s). Please check your internet connection.');
+    }
+    
+    // Handle other network errors
+    if (error.message.includes('fetch failed') || 
+        error.message.includes('ECONNREFUSED') || 
+        error.message.includes('ETIMEDOUT') ||
+        error.message.includes('ENOTFOUND') ||
+        error.code === 'ECONNREFUSED' ||
+        error.code === 'ETIMEDOUT' ||
+        error.code === 'ENOTFOUND') {
+      throw new Error(`Network connection error: Unable to connect to Webflow API. ${error.message}. Please check your internet connection.`);
+    }
+    
+    // Re-throw other errors (including HTTP errors)
+    throw error;
   }
-
-  const result = await response.json();
-  return result;
 }
 
 /**

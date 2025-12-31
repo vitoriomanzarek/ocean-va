@@ -74,18 +74,42 @@ export default async function handler(req, res) {
     // Try to save to Webflow CMS first
     let savedResult;
     let savedTo = 'local';
+    let webflowError = null;
     
     try {
       savedResult = await saveQuizResultToWebflow(quizData);
       savedTo = 'webflow';
-    } catch (webflowError) {
+      console.log('✅ Quiz results saved to Webflow CMS successfully');
+    } catch (error) {
       // If Webflow fails, save locally as fallback
-      console.warn('Failed to save to Webflow CMS, falling back to local storage:', webflowError.message);
+      webflowError = error;
+      
+      // Log detailed error information
+      const isNetworkError = error.message.includes('Network') || 
+                            error.message.includes('timeout') ||
+                            error.message.includes('connection');
+      
+      if (isNetworkError) {
+        console.error('❌ Network error connecting to Webflow API:', {
+          message: error.message,
+          type: 'Network Error',
+          timestamp: new Date().toISOString()
+        });
+      } else {
+        console.warn('⚠️  Failed to save to Webflow CMS:', {
+          message: error.message,
+          type: 'API Error',
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      // Fallback to local storage
+      console.log('🔄 Falling back to local storage...');
       savedResult = await saveQuizResultToLocal(quizData);
     }
 
     // Return success response
-    return res.status(200).json({
+    const response = {
       success: true,
       message: 'Quiz results saved successfully',
       savedTo: savedTo,
@@ -94,7 +118,17 @@ export default async function handler(req, res) {
         profile: quizData.profile,
         scores: quizData.scores
       }
-    });
+    };
+    
+    // Include warning if saved locally due to Webflow error
+    if (savedTo === 'local' && webflowError) {
+      response.warning = 'Results saved locally. Webflow API was unavailable.';
+      if (webflowError.message.includes('Network')) {
+        response.warning += ' Network connection issue detected.';
+      }
+    }
+    
+    return res.status(200).json(response);
 
   } catch (error) {
     console.error('Error submitting quiz results:', error);

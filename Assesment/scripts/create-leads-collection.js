@@ -7,6 +7,7 @@
  */
 
 import 'dotenv/config';
+import { fetchWithTimeout } from './fetch-with-timeout.js';
 
 const WEBFLOW_API_TOKEN = process.env.WEBFLOW_API_TOKEN;
 const WEBFLOW_SITE_ID = process.env.WEBFLOW_SITE_ID;
@@ -32,7 +33,7 @@ async function createCollection() {
   try {
     // 1. Crear la colección
     console.log('📝 Creando colección...');
-    const collectionResponse = await fetch(`${API_BASE}/collections`, {
+    const collectionResponse = await fetchWithTimeout(`${API_BASE}/collections`, {
       method: 'POST',
       headers,
       body: JSON.stringify({
@@ -40,7 +41,7 @@ async function createCollection() {
         singularName: 'Quiz Lead',
         slug: 'quiz-leads'
       })
-    });
+    }, 30000);
 
     if (!collectionResponse.ok) {
       const errorText = await collectionResponse.text();
@@ -77,7 +78,7 @@ async function createCollection() {
     
     for (const field of fields) {
       try {
-        const fieldResponse = await fetch(
+        const fieldResponse = await fetchWithTimeout(
           `${API_BASE}/collections/${collectionId}/fields`,
           {
             method: 'POST',
@@ -88,7 +89,8 @@ async function createCollection() {
               slug: field.slug,
               isRequired: field.isRequired || false
             })
-          }
+          },
+          30000
         );
 
         if (!fieldResponse.ok) {
@@ -102,7 +104,11 @@ async function createCollection() {
         // Esperar un poco entre requests para evitar rate limiting
         await new Promise(resolve => setTimeout(resolve, 500));
       } catch (error) {
-        console.warn(`⚠️  Error agregando campo "${field.name}":`, error.message);
+        if (error.name === 'TimeoutError' || error.name === 'NetworkError') {
+          console.warn(`⚠️  Error de red/timeout agregando campo "${field.name}":`, error.message);
+        } else {
+          console.warn(`⚠️  Error agregando campo "${field.name}":`, error.message);
+        }
       }
     }
 
@@ -116,6 +122,13 @@ async function createCollection() {
     return collectionId;
   } catch (error) {
     console.error('\n❌ Error:', error.message);
+    
+    // Handle timeout and network errors specifically
+    if (error.name === 'TimeoutError' || error.name === 'NetworkError') {
+      console.error('   → Error de red o timeout. Verifica tu conexión a internet.');
+      console.error('   → El script se canceló automáticamente después de 30 segundos para evitar bloqueos.');
+    }
+    
     process.exit(1);
   }
 }
