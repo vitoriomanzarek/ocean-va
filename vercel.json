@@ -3,14 +3,24 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "rewrites": [
+  "builds": [
     {
-      "source": "/quiz/instructions",
-      "destination": "/Assesment/quiz/instructions.html"
+      "src": "Assesment/api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/quiz/(.*)",
+      "dest": "/Assesment/api/quiz/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/quiz/instructions",
+      "dest": "/Assesment/quiz/instructions.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
