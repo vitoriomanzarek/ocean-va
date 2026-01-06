@@ -55,6 +55,7 @@ import RonaMaeProfile from './pages/RonaMaeProfile'
 import GizelleProfile from './pages/GizelleProfile'
 import JasmineProfile from './pages/JasmineProfile'
 import JillNicoleProfile from './pages/JillNicoleProfile'
+import KarlProfile from './pages/KarlProfile'
 import PavelProfile from './pages/PavelProfile'
 import AnaProfile from './pages/AnaProfile'
 import AnaVictoriaProfile from './pages/AnaVictoriaProfile'
@@ -179,6 +180,7 @@ function AppContent() {
           <Route path="/gizelle-ocean-va-profile" element={<GizelleProfile />} />
           <Route path="/jasmine-ocean-va-profile" element={<JasmineProfile />} />
           <Route path="/jill-ocean-va-profile" element={<JillNicoleProfile />} />
+          <Route path="/karl-ocean-va-profile" element={<KarlProfile />} />
           <Route path="/pavel-ocean-va-profile" element={<PavelProfile />} />
           <Route path="/ana-s-ocean-va-profile" element={<AnaProfile />} />
           <Route path="/ana-victoria-ocean-va-profile" element={<AnaVictoriaProfile />} />

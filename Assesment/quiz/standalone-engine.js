@@ -1359,6 +1359,17 @@ function showChangeEmailPopup() {
     document.getElementById('new-email-input').select();
   }, 100);
   
+  // Add submit event listener to form to prevent default behavior
+  const emailForm = document.getElementById('change-email-form');
+  if (emailForm) {
+    emailForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      handleEmailChange(e);
+      return false;
+    });
+  }
+  
   // Close on overlay click
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
