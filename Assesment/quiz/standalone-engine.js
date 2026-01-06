@@ -1139,22 +1139,36 @@ function getNextStepsSection(profile, overallScore, content) {
 }
 
 // Handler functions for buttons
-function handleResourceDownload(profile) {
+// Make handleResourceDownload globally available and fix PDF download
+window.handleResourceDownload = function(profile) {
   const pdfFiles = {
-    A: 'pdfs/profile-a-case-study.html',
-    B: 'pdfs/profile-b-10-tasks-guide.html',
-    C: 'pdfs/profile-c-rescue-plan.html',
-    D: 'pdfs/profile-d-complete-guide.html'
+    A: '/Assesment/quiz/pdfs/profile-a-case-study.html',
+    B: '/Assesment/quiz/pdfs/profile-b-10-tasks-guide.html',
+    C: '/Assesment/quiz/pdfs/profile-c-rescue-plan.html',
+    D: '/Assesment/quiz/pdfs/profile-d-complete-guide.html'
   };
   
   const pdfPath = pdfFiles[profile] || pdfFiles.D;
   
-  // Open PDF in new window for viewing/printing
-  // Users can print to PDF from browser (Ctrl+P or Cmd+P)
-  window.open(pdfPath, '_blank');
+  // Open HTML in new window and trigger print dialog for PDF download
+  const newWindow = window.open(pdfPath, '_blank');
+  
+  if (!newWindow) {
+    alert('Please allow pop-ups to download the resource. You can also right-click the button and select "Open in new tab".');
+    return;
+  }
+  
+  // Wait for the page to load, then trigger print dialog
+  newWindow.onload = function() {
+    // Small delay to ensure content is fully rendered
+    setTimeout(() => {
+      newWindow.focus();
+      newWindow.print();
+    }, 500);
+  };
   
   console.log('Opening resource:', pdfPath);
-}
+};
 
 function handleNextStep(profile) {
   // Show Calendly popup for all profiles
@@ -1251,6 +1265,8 @@ function showChangeEmailPopup() {
     }
   };
   document.addEventListener('keydown', escapeHandler);
+  
+  // handleEmailChange is already globally available
 }
 
 function closeChangeEmailPopup() {
@@ -1261,7 +1277,12 @@ function closeChangeEmailPopup() {
   }
 }
 
-function handleEmailChange(event) {
+// Make functions globally available
+window.closeChangeEmailPopup = closeChangeEmailPopup;
+window.showChangeEmailPopup = showChangeEmailPopup;
+
+// Define handleEmailChange and make it globally available
+window.handleEmailChange = function(event) {
   event.preventDefault();
   const newEmail = document.getElementById('new-email-input').value.trim();
   
@@ -1327,7 +1348,7 @@ function handleEmailChange(event) {
     confirmation.style.animation = 'slideOutRight 0.3s ease-out';
     setTimeout(() => confirmation.remove(), 300);
   }, 3000);
-}
+};
 
 // Function to show Calendly popup
 function showCalendlyPopup() {
