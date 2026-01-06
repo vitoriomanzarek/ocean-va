@@ -26,6 +26,14 @@
       "dest": "/Assesment/quiz/instructions.html"
     },
     {
+      "src": "/assessment",
+      "dest": "/Assesment/quiz/standalone.html"
+    },
+    {
+      "src": "/quiz",
+      "dest": "/Assesment/quiz/standalone.html"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
