@@ -819,7 +819,7 @@ function renderResults(profile, content, scores, savings) {
         </h1>
         <p style="font-size:17px;color:#6b7280;margin-bottom:8px;">
           Your full report has been emailed to <strong>${quizState.contactInfo.email}</strong>. 
-          <a href="#" style="color:#049d98;text-decoration:underline;">Change email address</a>
+          <a href="#" onclick="showChangeEmailPopup(); return false;" style="color:#049d98;text-decoration:underline;cursor:pointer;">Change email address</a>
         </p>
         <p style="font-size:16px;color:#6b7280;line-height:1.6;max-width:800px;">
           Thank you for taking the Operational Efficiency Scorecard. Below, you'll find your overall efficiency score 
@@ -1141,38 +1141,308 @@ function getNextStepsSection(profile, overallScore, content) {
 // Handler functions for buttons
 function handleResourceDownload(profile) {
   const pdfFiles = {
-    A: 'pdfs/profile-a-case-study.html',
-    B: 'pdfs/profile-b-10-tasks-guide.html',
-    C: 'pdfs/profile-c-rescue-plan.html',
-    D: 'pdfs/profile-d-complete-guide.html'
+    A: '/Assesment/quiz/pdfs/profile-a-case-study.html',
+    B: '/Assesment/quiz/pdfs/profile-b-10-tasks-guide.html',
+    C: '/Assesment/quiz/pdfs/profile-c-rescue-plan.html',
+    D: '/Assesment/quiz/pdfs/profile-d-complete-guide.html'
   };
   
   const pdfPath = pdfFiles[profile] || pdfFiles.D;
   
   // Open PDF in new window for viewing/printing
   // Users can print to PDF from browser (Ctrl+P or Cmd+P)
-  window.open(pdfPath, '_blank');
+  const newWindow = window.open(pdfPath, '_blank');
+  
+  if (!newWindow) {
+    alert('Please allow pop-ups to download the resource. You can also right-click the button and select "Open in new tab".');
+  }
   
   console.log('Opening resource:', pdfPath);
 }
 
 function handleNextStep(profile) {
-  const actions = {
-    A: 'schedule-consultation',
-    B: 'get-in-touch',
-    C: 'emergency-help',
-    D: 'explore-resources'
-  };
+  // Show Calendly popup for all profiles
+  showCalendlyPopup();
+}
+
+// Function to show change email popup
+function showChangeEmailPopup() {
+  const currentEmail = quizState.contactInfo.email;
   
-  console.log('Next step action:', actions[profile]);
-  // Here you would integrate with your booking/contact system
-  if (profile === 'A') {
-    window.location.href = '#booking';
-  } else if (profile === 'C') {
-    window.location.href = '#emergency';
-  } else {
-    window.location.href = '#contact';
+  // Create popup overlay
+  const overlay = document.createElement('div');
+  overlay.id = 'change-email-overlay';
+  overlay.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+  `;
+  
+  // Create popup container
+  const container = document.createElement('div');
+  container.style.cssText = `
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  `;
+  
+  container.innerHTML = `
+    <button onclick="closeChangeEmailPopup()" style="position:absolute;top:20px;right:20px;background:#f3f4f6;border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <h2 style="font-size:28px;font-weight:700;color:#111827;margin-bottom:12px;">Change Email Address</h2>
+    <p style="font-size:16px;color:#6b7280;margin-bottom:24px;">Enter your new email address to receive your results.</p>
+    <form id="change-email-form" onsubmit="handleEmailChange(event)">
+      <div style="margin-bottom:24px;">
+        <label style="display:block;font-size:14px;font-weight:600;color:#374151;margin-bottom:8px;">New Email Address</label>
+        <input type="email" id="new-email-input" value="${currentEmail}" required 
+               style="width:100%;padding:14px 16px;border:2px solid #e5e7eb;border-radius:8px;font-size:16px;font-family:inherit;transition:all 0.3s ease;"
+               placeholder="your@email.com">
+      </div>
+      <div style="display:flex;gap:12px;justify-content:flex-end;">
+        <button type="button" onclick="closeChangeEmailPopup()" 
+                style="padding:12px 24px;font-size:16px;font-weight:600;background:#f3f4f6;color:#374151;border:none;border-radius:8px;cursor:pointer;transition:all 0.2s ease;">
+          Cancel
+        </button>
+        <button type="submit" 
+                style="padding:12px 24px;font-size:16px;font-weight:600;background:#05bfb9;color:#ffffff;border:none;border-radius:8px;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 12px rgba(5,191,185,0.3);">
+          Update Email
+        </button>
+      </div>
+    </form>
+  `;
+  
+  overlay.appendChild(container);
+  document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
+  
+  // Focus on input
+  setTimeout(() => {
+    document.getElementById('new-email-input').focus();
+    document.getElementById('new-email-input').select();
+  }, 100);
+  
+  // Close on overlay click
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      closeChangeEmailPopup();
+    }
+  });
+  
+  // Close on Escape key
+  const escapeHandler = (e) => {
+    if (e.key === 'Escape') {
+      closeChangeEmailPopup();
+      document.removeEventListener('keydown', escapeHandler);
+    }
+  };
+  document.addEventListener('keydown', escapeHandler);
+}
+
+function closeChangeEmailPopup() {
+  const overlay = document.getElementById('change-email-overlay');
+  if (overlay) {
+    overlay.remove();
+    document.body.style.overflow = '';
   }
+}
+
+function handleEmailChange(event) {
+  event.preventDefault();
+  const newEmail = document.getElementById('new-email-input').value.trim();
+  
+  // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(newEmail)) {
+    alert('Please enter a valid email address (e.g., name@domain.com)');
+    return;
+  }
+  
+  // Update email in state
+  quizState.contactInfo.email = newEmail;
+  
+  // Update the displayed email in results
+  const emailDisplay = document.querySelector('#results-content');
+  if (emailDisplay) {
+    // Re-render results section with new email
+    const profile = quizState.profile;
+    const scores = quizState.scores;
+    const savings = quizState.savings;
+    const content = getProfileContent(profile.profile, scores, savings);
+    renderResults(profile, content, scores, savings);
+  }
+  
+  closeChangeEmailPopup();
+  
+  // Show confirmation
+  const confirmation = document.createElement('div');
+  confirmation.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #10b981;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 10001;
+    animation: slideInRight 0.3s ease-out;
+  `;
+  confirmation.textContent = 'Email updated successfully!';
+  document.body.appendChild(confirmation);
+  
+  setTimeout(() => {
+    confirmation.style.animation = 'slideOutRight 0.3s ease-out';
+    setTimeout(() => confirmation.remove(), 300);
+  }, 3000);
+}
+
+// Function to show Calendly popup
+function showCalendlyPopup() {
+  // Create popup overlay
+  const overlay = document.createElement('div');
+  overlay.id = 'calendly-popup-overlay';
+  overlay.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+  `;
+  
+  // Create popup container
+  const container = document.createElement('div');
+  container.style.cssText = `
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    max-width: 900px;
+    width: 100%;
+    max-height: 95vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  `;
+  
+  container.innerHTML = `
+    <button onclick="closeCalendlyPopup()" style="position:absolute;top:20px;right:20px;background:#f3f4f6;border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;z-index:10;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div style="padding:40px;">
+      <div style="text-align:center;margin-bottom:30px;">
+        <div style="width:80px;height:80px;background:linear-gradient(135deg, #037b77 0%, #049d98 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:white;box-shadow:0 10px 25px rgba(3,123,119,0.3);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <h2 style="font-size:32px;font-weight:700;color:#111827;margin-bottom:12px;line-height:1.2;">Ready to Transform Your Business?</h2>
+        <p style="font-size:18px;color:#6b7280;line-height:1.6;max-width:600px;margin:0 auto;">Let's discuss how our virtual assistants can help you scale faster and work smarter. Book a free discovery call today.</p>
+      </div>
+      <div style="margin:30px 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 6px rgba(0,0,0,0.1);background:white;position:relative;">
+        <iframe src="https://calendly.com/ocean-virtual-assistant/30min?hide_event_type_details=1&hide_gdpr_banner=1&embed_domain=oceanvirtualassistant.com" width="100%" height="1000" frameborder="0" style="border:none;overflow:hidden;" scrolling="no"></iframe>
+      </div>
+    </div>
+  `;
+  
+  overlay.appendChild(container);
+  document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
+  
+  // Close on overlay click
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      closeCalendlyPopup();
+    }
+  });
+  
+  // Close on Escape key
+  const escapeHandler = (e) => {
+    if (e.key === 'Escape') {
+      closeCalendlyPopup();
+      document.removeEventListener('keydown', escapeHandler);
+    }
+  };
+  document.addEventListener('keydown', escapeHandler);
+}
+
+function closeCalendlyPopup() {
+  const overlay = document.getElementById('calendly-popup-overlay');
+  if (overlay) {
+    overlay.remove();
+    document.body.style.overflow = '';
+  }
+}
+
+// Add CSS animations
+if (!document.getElementById('quiz-popup-styles')) {
+  const style = document.createElement('style');
+  style.id = 'quiz-popup-styles';
+  style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slideOutRight {
+      from {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
 }
 
 // Helper function to generate donut chart SVG

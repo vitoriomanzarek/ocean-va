@@ -58,6 +58,10 @@
       "dest": "/pdfs/$1"
     },
     {
+      "src": "/Assesment/quiz/pdfs/(.*)",
+      "dest": "/Assesment/quiz/pdfs/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
