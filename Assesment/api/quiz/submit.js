@@ -76,10 +76,26 @@ export default async function handler(req, res) {
     let savedTo = 'local';
     let webflowError = null;
     
+    // Log environment variables status (without exposing values)
+    const hasApiToken = !!process.env.WEBFLOW_API_TOKEN;
+    const hasSiteId = !!process.env.WEBFLOW_SITE_ID;
+    const hasCollectionId = !!process.env.WEBFLOW_LEADS_COLLECTION_ID;
+    
+    console.log('🔍 Webflow API Configuration Check:', {
+      hasApiToken,
+      hasSiteId,
+      hasCollectionId,
+      allConfigured: hasApiToken && hasSiteId && hasCollectionId
+    });
+    
     try {
       savedResult = await saveQuizResultToWebflow(quizData);
       savedTo = 'webflow';
-      console.log('✅ Quiz results saved to Webflow CMS successfully');
+      console.log('✅ Quiz results saved to Webflow CMS successfully', {
+        itemId: savedResult.id || savedResult._id,
+        email: quizData.contact.email,
+        profile: quizData.profile.profile
+      });
     } catch (error) {
       // If Webflow fails, save locally as fallback
       webflowError = error;
@@ -93,13 +109,16 @@ export default async function handler(req, res) {
         console.error('❌ Network error connecting to Webflow API:', {
           message: error.message,
           type: 'Network Error',
-          timestamp: new Date().toISOString()
+          timestamp: new Date().toISOString(),
+          stack: error.stack
         });
       } else {
-        console.warn('⚠️  Failed to save to Webflow CMS:', {
+        console.error('⚠️  Failed to save to Webflow CMS:', {
           message: error.message,
           type: 'API Error',
-          timestamp: new Date().toISOString()
+          timestamp: new Date().toISOString(),
+          stack: error.stack,
+          errorDetails: error.toString()
         });
       }
       

@@ -692,6 +692,12 @@ const API_BASE = window.API_BASE || '/api'; // Use window.API_BASE if set, other
  */
 async function submitQuizResults(quizData) {
   try {
+    console.log('📤 Submitting quiz results to backend...', {
+      email: quizData.contact?.email,
+      profile: quizData.profile?.profile,
+      apiBase: API_BASE
+    });
+    
     const response = await fetch(`${API_BASE}/quiz/submit`, {
       method: 'POST',
       headers: {
@@ -701,15 +707,38 @@ async function submitQuizResults(quizData) {
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      const errorText = await response.text();
+      console.error('❌ HTTP error from backend:', {
+        status: response.status,
+        statusText: response.statusText,
+        error: errorText
+      });
+      throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
     }
 
     const result = await response.json();
-    console.log('Quiz results saved successfully:', result);
+    console.log('✅ Quiz results saved successfully:', {
+      savedTo: result.savedTo,
+      profile: result.data?.profile,
+      warning: result.warning
+    });
+    
+    // Show warning to user if saved locally instead of Webflow
+    if (result.warning) {
+      console.warn('⚠️', result.warning);
+    }
+    
     return result;
   } catch (error) {
-    // Silently fail - don't interrupt user experience
-    console.warn('Failed to submit quiz results to backend:', error.message);
+    // Log error but don't interrupt user experience
+    console.error('❌ Failed to submit quiz results to backend:', {
+      message: error.message,
+      stack: error.stack,
+      quizData: {
+        email: quizData.contact?.email,
+        profile: quizData.profile?.profile
+      }
+    });
     // You could also send to analytics or error tracking service here
     return null;
   }
