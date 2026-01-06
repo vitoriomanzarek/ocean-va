@@ -1277,6 +1277,7 @@ function handleEmailChange(event) {
   }
   
   // Update email in state
+  const oldEmail = quizState.contactInfo.email;
   quizState.contactInfo.email = newEmail;
   
   // Update the displayed email in results
@@ -1288,6 +1289,23 @@ function handleEmailChange(event) {
     const savings = quizState.savings;
     const content = getProfileContent(profile.profile, scores, savings);
     renderResults(profile, content, scores, savings);
+  }
+  
+  // Re-submit to Webflow with updated email if quiz was already completed
+  if (quizState.profile && quizState.answers) {
+    const quizData = {
+      contact: quizState.contactInfo,
+      answers: quizState.answers,
+      scores: quizState.scores,
+      profile: quizState.profile,
+      savings: quizState.savings
+    };
+    
+    // Submit updated data to backend (non-blocking)
+    submitQuizResults(quizData).catch(err => {
+      console.error('Error updating email in Webflow:', err);
+      // Don't show error to user, just log it
+    });
   }
   
   closeChangeEmailPopup();
