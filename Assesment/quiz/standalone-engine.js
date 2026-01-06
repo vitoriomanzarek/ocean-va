@@ -1095,7 +1095,7 @@ function getNextStepsSection(profile, overallScore, content) {
       buttonText: 'GET IN TOUCH',
       buttonColor: '#ffffff',
       buttonTextColor: '#05bfb9',
-      link: 'https://www.oceanvirtualassistant.com/contact-us'
+      link: null // Use onclick instead for Calendly popup
     },
     C: {
       title: 'Next Steps:',
@@ -1309,6 +1309,7 @@ function showChangeEmailPopup() {
     padding: 40px;
     position: relative;
     animation: slideUp 0.4s ease-out;
+    margin-top: 60px;
   `;
   
   container.innerHTML = `
@@ -1320,7 +1321,7 @@ function showChangeEmailPopup() {
     </button>
     <h2 style="font-size:28px;font-weight:700;color:#111827;margin-bottom:12px;">Change Email Address</h2>
     <p style="font-size:16px;color:#6b7280;margin-bottom:24px;">Enter your new email address to receive your results.</p>
-    <form id="change-email-form" onsubmit="return handleEmailChange(event);"
+    <form id="change-email-form">
       <div style="margin-bottom:24px;">
         <label style="display:block;font-size:14px;font-weight:600;color:#374151;margin-bottom:8px;">New Email Address</label>
         <input type="email" id="new-email-input" value="${currentEmail}" required 
