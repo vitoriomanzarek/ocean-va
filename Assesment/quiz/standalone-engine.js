@@ -1023,7 +1023,7 @@ function getFreeResourceSection(profile, overallScore) {
       buttonText: 'DOWNLOAD NOW',
       buttonColor: '#05bfb9',
       imagePlaceholder: '📊 Case Study PDF',
-      imagePath: '../../public/images/how similar agencies.webp'
+      imagePath: '/images/how similar agencies.webp'
     },
     B: {
       title: 'Get Your Free Guide:',
@@ -1032,7 +1032,7 @@ function getFreeResourceSection(profile, overallScore) {
       buttonText: 'DOWNLOAD NOW',
       buttonColor: '#05bfb9',
       imagePlaceholder: '📥 Delegation Guide PDF',
-      imagePath: '../../public/images/10 task to delegate.webp'
+      imagePath: '/images/10 task to delegate.webp'
     },
     C: {
       title: 'Get Your Free Rescue Plan:',
@@ -1041,7 +1041,7 @@ function getFreeResourceSection(profile, overallScore) {
       buttonText: 'DOWNLOAD NOW',
       buttonColor: '#05bfb9',
       imagePlaceholder: '🚨 Rescue Plan PDF',
-      imagePath: '../../public/images/free 7-day rescue plan.webp'
+      imagePath: '/images/free 7-day rescue plan.webp'
     },
     D: {
       title: 'Get Your Free Resource Library:',
@@ -1050,7 +1050,7 @@ function getFreeResourceSection(profile, overallScore) {
       buttonText: 'EXPLORE RESOURCES',
       buttonColor: '#05bfb9',
       imagePlaceholder: '📚 Resource Library',
-      imagePath: '../../public/images/Complete Guide.webp'
+      imagePath: '/images/Complete Guide.webp'
     }
   };
   
