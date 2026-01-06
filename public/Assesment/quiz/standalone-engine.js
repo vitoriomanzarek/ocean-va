@@ -1085,7 +1085,8 @@ function getNextStepsSection(profile, overallScore, content) {
       description: 'You\'re ready to scale. Our <strong>Ocean VA team</strong> is ready to help you implement a full-time VA in 72 hours. Whether you need expert guidance on VA selection, a customized implementation plan, or immediate deployment, we\'re here to assist. <strong>Schedule your consultation today</strong> and take the next step toward operational excellence.',
       buttonText: 'SCHEDULE CONSULTATION',
       buttonColor: '#ffffff',
-      buttonTextColor: '#05bfb9'
+      buttonTextColor: '#05bfb9',
+      link: 'https://www.oceanvirtualassistant.com/contact-us'
     },
     B: {
       title: 'Next Steps:',
