@@ -470,29 +470,14 @@ function renderQuestions() {
   const questionCard = document.createElement('div');
   questionCard.className = 'question-card';
   
-  if (currentQuestion.urgencyFlag) {
-    questionCard.classList.add('urgency-flag');
-  }
-  if (currentQuestion.starQuestion) {
-    questionCard.classList.add('star-question');
-  }
-  if (currentQuestion.goldQuestion) {
-    questionCard.classList.add('gold-question');
-  }
+  // Flags removed from UI - these are for internal scoring logic only
+  // Keeping the logic but not showing visual indicators to users
   
   const header = document.createElement('div');
   header.className = 'question-header';
   
   const badges = [];
-  if (currentQuestion.urgencyFlag) {
-    badges.push('<span class="question-badge badge-urgency">⚠️ URGENCY FLAG</span>');
-  }
-  if (currentQuestion.starQuestion) {
-    badges.push('<span class="question-badge badge-star">⭐ MOST IMPORTANT</span>');
-  }
-  if (currentQuestion.goldQuestion) {
-    badges.push('<span class="question-badge badge-gold">💎 VALUABLE FIELD</span>');
-  }
+  // Badges removed - these are internal flags for scoring, not user-facing
   
   header.innerHTML = `
     <div class="question-number">Q${currentQuestion.number}</div>
@@ -1320,6 +1305,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      // Validate email format more strictly
+      const emailInput = document.getElementById('email');
+      const email = emailInput.value.trim();
+      
+      // Email must have at least one dot (for domain) and @ symbol
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        emailInput.focus();
+        emailInput.style.borderColor = '#ef4444';
+        alert('Please enter a valid email address (e.g., name@domain.com)');
+        return;
+      }
+      
+      // Reset border color if valid
+      emailInput.style.borderColor = '';
+      
       collectContactInfo();
       showSection('questions');
       renderQuestions();
