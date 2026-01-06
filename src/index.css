@@ -3,8 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
     @apply bg-white text-gray-900;
+  }
+  
+  #root {
+    margin: 0;
+    padding: 0;
   }
 }
 
