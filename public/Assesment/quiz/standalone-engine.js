@@ -1272,8 +1272,16 @@ window.handleResourceDownload = async function(profile) {
 
 function handleNextStep(profile) {
   // Show Calendly popup for all profiles
-  showCalendlyPopup();
+  if (typeof showCalendlyPopup === 'function') {
+    showCalendlyPopup();
+  } else {
+    // Fallback: open contact page
+    window.open('https://www.oceanvirtualassistant.com/contact-us', '_blank');
+  }
 }
+
+// Make handleNextStep globally available
+window.handleNextStep = handleNextStep;
 
 // Function to show change email popup
 function showChangeEmailPopup() {
