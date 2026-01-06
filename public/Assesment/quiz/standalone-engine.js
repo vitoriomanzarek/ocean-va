@@ -364,7 +364,7 @@ function getProfileContent(profile, scores, savings) {
       cta: {
         text: 'SCHEDULE MY CALL NOW',
         action: 'schedule-call',
-        link: '#booking'
+        link: 'https://www.oceanvirtualassistant.com/contact-us'
       },
       bonus: 'Case Study: How [Similar Agency] saved $42K/year'
     },
@@ -376,7 +376,8 @@ function getProfileContent(profile, scores, savings) {
       cta: {
         text: 'DOWNLOAD GUIDE NOW',
         action: 'download-guide',
-        link: '#guide'
+        link: 'javascript:void(0);',
+        onclick: "handleResourceDownload('B'); return false;"
       },
       bonus: 'Want help implementing? Schedule 15-min process analysis'
     },
@@ -864,9 +865,10 @@ function renderResults(profile, content, scores, savings) {
           ` : ''}
           
           <div style="margin-top:32px;">
-            <a href="${content.cta.link}" class="results-cta-button" style="display:inline-block;">
-              ${content.cta.text}
-            </a>
+            ${content.cta.onclick ? 
+              `<a href="${content.cta.link}" onclick="${content.cta.onclick}" class="results-cta-button" style="display:inline-block;cursor:pointer;">${content.cta.text}</a>` :
+              `<a href="${content.cta.link}" target="_blank" rel="noopener noreferrer" class="results-cta-button" style="display:inline-block;">${content.cta.text}</a>`
+            }
           </div>
         </div>
         
@@ -1091,7 +1093,8 @@ function getNextStepsSection(profile, overallScore, content) {
       description: 'Your agency has potential, and we can help you unlock it. Our <strong>Ocean VA team</strong> specializes in creating customized VA solutions for agencies at your stage. Whether you need process optimization guidance, a detailed implementation roadmap, or help identifying your top delegation opportunities, we\'re ready to assist. <strong>Contact us today</strong> for personalized advice.',
       buttonText: 'GET IN TOUCH',
       buttonColor: '#ffffff',
-      buttonTextColor: '#05bfb9'
+      buttonTextColor: '#05bfb9',
+      link: 'https://www.oceanvirtualassistant.com/contact-us'
     },
     C: {
       title: 'Next Steps:',
@@ -1099,7 +1102,8 @@ function getNextStepsSection(profile, overallScore, content) {
       description: 'Time is critical. Your operational efficiency needs immediate attention, and our <strong>Ocean VA team</strong> specializes in rapid deployment solutions. Whether you need an emergency consultation, a fast-track implementation plan, or immediate VA coverage, we can help. <strong>Contact us today</strong> for urgent assistance and stop the operational bleeding.',
       buttonText: 'GET EMERGENCY HELP',
       buttonColor: '#ffffff',
-      buttonTextColor: '#05bfb9'
+      buttonTextColor: '#05bfb9',
+      link: 'https://www.oceanvirtualassistant.com/contact-us'
     },
     D: {
       title: 'Next Steps:',
@@ -1107,7 +1111,8 @@ function getNextStepsSection(profile, overallScore, content) {
       description: 'Take your time to explore and learn. Our <strong>Ocean VA team</strong> has created comprehensive resources to help you understand virtual assistant solutions at your own pace. Whether you need educational content, case studies, or want to stay informed about best practices, we\'re here to support your journey. <strong>Explore our resources</strong> and reach out when you\'re ready.',
       buttonText: 'EXPLORE RESOURCES',
       buttonColor: '#ffffff',
-      buttonTextColor: '#05bfb9'
+      buttonTextColor: '#05bfb9',
+      link: 'https://www.oceanvirtualassistant.com/contact-us'
     }
   };
   
@@ -1139,8 +1144,8 @@ function getNextStepsSection(profile, overallScore, content) {
 }
 
 // Handler functions for buttons
-// Make handleResourceDownload globally available and fix PDF download
-window.handleResourceDownload = function(profile) {
+// Make handleResourceDownload globally available and generate real PDFs
+window.handleResourceDownload = async function(profile) {
   const pdfFiles = {
     A: '/Assesment/quiz/pdfs/profile-a-case-study.html',
     B: '/Assesment/quiz/pdfs/profile-b-10-tasks-guide.html',
@@ -1149,25 +1154,118 @@ window.handleResourceDownload = function(profile) {
   };
   
   const pdfPath = pdfFiles[profile] || pdfFiles.D;
-  
-  // Open HTML in new window and trigger print dialog for PDF download
-  const newWindow = window.open(pdfPath, '_blank');
-  
-  if (!newWindow) {
-    alert('Please allow pop-ups to download the resource. You can also right-click the button and select "Open in new tab".');
-    return;
-  }
-  
-  // Wait for the page to load, then trigger print dialog
-  newWindow.onload = function() {
-    // Small delay to ensure content is fully rendered
-    setTimeout(() => {
-      newWindow.focus();
-      newWindow.print();
-    }, 500);
+  const pdfNames = {
+    A: 'Ocean-VA-Case-Study.pdf',
+    B: 'Ocean-VA-10-Tasks-Guide.pdf',
+    C: 'Ocean-VA-Rescue-Plan.pdf',
+    D: 'Ocean-VA-Complete-Guide.pdf'
   };
   
-  console.log('Opening resource:', pdfPath);
+  const pdfName = pdfNames[profile] || pdfNames.D;
+  
+  try {
+    // Show loading message
+    const loadingMsg = document.createElement('div');
+    loadingMsg.style.cssText = `
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #05bfb9;
+      color: white;
+      padding: 24px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 10002;
+      font-size: 18px;
+      font-weight: 600;
+    `;
+    loadingMsg.textContent = 'Generating PDF... Please wait';
+    document.body.appendChild(loadingMsg);
+    
+    // Fetch the HTML content
+    const response = await fetch(pdfPath);
+    if (!response.ok) {
+      throw new Error('Failed to load PDF content');
+    }
+    
+    const htmlContent = await response.text();
+    
+    // Create a temporary container to render the HTML
+    const tempContainer = document.createElement('div');
+    tempContainer.style.cssText = 'position: absolute; left: -9999px; width: 800px;';
+    document.body.appendChild(tempContainer);
+    
+    // Create an iframe to render the HTML properly
+    const iframe = document.createElement('iframe');
+    iframe.style.cssText = 'position: absolute; left: -9999px; width: 800px; height: 1200px;';
+    document.body.appendChild(iframe);
+    
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframeDoc.open();
+    iframeDoc.write(htmlContent);
+    iframeDoc.close();
+    
+    // Wait for content to load
+    await new Promise((resolve) => {
+      if (iframe.contentWindow) {
+        iframe.contentWindow.onload = resolve;
+      } else {
+        setTimeout(resolve, 1000);
+      }
+    });
+    
+    // Get the body element from iframe
+    const iframeBody = iframe.contentDocument.body || iframe.contentDocument.documentElement;
+    
+    // Check if html2pdf is available
+    if (typeof html2pdf !== 'undefined') {
+      // Use html2pdf.js to generate PDF
+      const opt = {
+        margin: 0.75,
+        filename: pdfName,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      
+      await html2pdf().set(opt).from(iframeBody).save();
+      
+      // Clean up
+      document.body.removeChild(iframe);
+      document.body.removeChild(tempContainer);
+      document.body.removeChild(loadingMsg);
+      
+      console.log('PDF generated successfully:', pdfName);
+    } else {
+      // Fallback: use print dialog
+      throw new Error('html2pdf library not loaded');
+    }
+    
+  } catch (error) {
+    console.error('Error generating PDF:', error);
+    
+    // Remove loading message if it exists
+    const loadingMsg = document.querySelector('div[style*="Generating PDF"]');
+    if (loadingMsg) {
+      document.body.removeChild(loadingMsg);
+    }
+    
+    // Fallback: open in new window with print dialog
+    const newWindow = window.open(pdfPath, '_blank');
+    if (!newWindow) {
+      alert('Please allow pop-ups to download the resource. You can also right-click the button and select "Open in new tab", then use Ctrl+P (or Cmd+P) and select "Save as PDF".');
+      return;
+    }
+    
+    // Wait for the page to load, then trigger print dialog
+    newWindow.onload = function() {
+      setTimeout(() => {
+        newWindow.focus();
+        newWindow.print();
+      }, 500);
+    };
+  }
 };
 
 function handleNextStep(profile) {
@@ -1220,7 +1318,7 @@ function showChangeEmailPopup() {
     </button>
     <h2 style="font-size:28px;font-weight:700;color:#111827;margin-bottom:12px;">Change Email Address</h2>
     <p style="font-size:16px;color:#6b7280;margin-bottom:24px;">Enter your new email address to receive your results.</p>
-    <form id="change-email-form" onsubmit="handleEmailChange(event)">
+    <form id="change-email-form" onsubmit="return handleEmailChange(event);"
       <div style="margin-bottom:24px;">
         <label style="display:block;font-size:14px;font-weight:600;color:#374151;margin-bottom:8px;">New Email Address</label>
         <input type="email" id="new-email-input" value="${currentEmail}" required 
@@ -1283,7 +1381,10 @@ window.showChangeEmailPopup = showChangeEmailPopup;
 
 // Define handleEmailChange and make it globally available
 window.handleEmailChange = function(event) {
-  event.preventDefault();
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
   const newEmail = document.getElementById('new-email-input').value.trim();
   
   // Validate email
@@ -1348,6 +1449,8 @@ window.handleEmailChange = function(event) {
     confirmation.style.animation = 'slideOutRight 0.3s ease-out';
     setTimeout(() => confirmation.remove(), 300);
   }, 3000);
+  
+  return false; // Prevent form submission
 };
 
 // Function to show Calendly popup
