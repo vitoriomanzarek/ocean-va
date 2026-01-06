@@ -1134,9 +1134,10 @@ function getNextStepsSection(profile, overallScore, content) {
             <p style="font-size:17px;color:#ffffff;line-height:1.7;margin-bottom:32px;opacity:0.95;">
               ${step.description}
             </p>
-            <button onclick="handleNextStep('${profile}')" style="padding:18px 40px;font-size:17px;font-weight:700;background:${step.buttonColor};color:${step.buttonTextColor};border:none;border-radius:8px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-              ${step.buttonText}
-            </button>
+            ${step.link ? 
+              `<a href="${step.link}" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:18px 40px;font-size:17px;font-weight:700;background:${step.buttonColor};color:${step.buttonTextColor};border:none;border-radius:8px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.15);text-decoration:none;">${step.buttonText}</a>` :
+              `<button onclick="handleNextStep('${profile}')" style="padding:18px 40px;font-size:17px;font-weight:700;background:${step.buttonColor};color:${step.buttonTextColor};border:none;border-radius:8px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.15);">${step.buttonText}</button>`
+            }
           </div>
         </div>
       </div>
