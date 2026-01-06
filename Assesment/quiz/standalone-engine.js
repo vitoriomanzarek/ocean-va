@@ -1437,6 +1437,10 @@ function closeCalendlyPopup() {
   }
 }
 
+// Make Calendly functions globally available
+window.showCalendlyPopup = showCalendlyPopup;
+window.closeCalendlyPopup = closeCalendlyPopup;
+
 // Add CSS animations
 if (!document.getElementById('quiz-popup-styles')) {
   const style = document.createElement('style');
