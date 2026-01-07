@@ -22,8 +22,21 @@ export async function saveQuizResultToWebflow(quizData) {
   const siteId = process.env.WEBFLOW_SITE_ID;
   const collectionId = process.env.WEBFLOW_LEADS_COLLECTION_ID;
 
+  // Log configuration status (without exposing sensitive data)
+  console.log('🔍 Webflow API Configuration:', {
+    hasApiToken: !!apiToken,
+    hasSiteId: !!siteId,
+    hasCollectionId: !!collectionId,
+    siteId: siteId || 'NOT SET',
+    collectionId: collectionId || 'NOT SET'
+  });
+
   if (!apiToken || !siteId || !collectionId) {
-    throw new Error('Webflow API credentials not configured');
+    const missing = [];
+    if (!apiToken) missing.push('WEBFLOW_API_TOKEN');
+    if (!siteId) missing.push('WEBFLOW_SITE_ID');
+    if (!collectionId) missing.push('WEBFLOW_LEADS_COLLECTION_ID');
+    throw new Error(`Webflow API credentials not configured. Missing: ${missing.join(', ')}`);
   }
 
   // Prepare data for Webflow CMS
@@ -67,6 +80,14 @@ export async function saveQuizResultToWebflow(quizData) {
 
   try {
     const url = `https://api.webflow.com/v2/sites/${siteId}/collections/${collectionId}/items`;
+    
+    console.log('📤 Sending request to Webflow API:', {
+      url: `https://api.webflow.com/v2/sites/${siteId}/collections/${collectionId}/items`,
+      method: 'POST',
+      email: contact.email,
+      profile: profile.profile
+    });
+    
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -82,10 +103,20 @@ export async function saveQuizResultToWebflow(quizData) {
 
     if (!response.ok) {
       const errorData = await response.text();
+      console.error('❌ Webflow API Error Response:', {
+        status: response.status,
+        statusText: response.statusText,
+        error: errorData,
+        url: url
+      });
       throw new Error(`Webflow API error: ${response.status} - ${errorData}`);
     }
 
     const result = await response.json();
+    console.log('✅ Webflow API Success:', {
+      itemId: result.id || result._id,
+      email: contact.email
+    });
     return result;
   } catch (error) {
     clearTimeout(timeoutId);
