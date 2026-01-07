@@ -19,7 +19,7 @@
   "routes": [
     {
       "src": "/api/quiz/(.*)",
-      "dest": "/Assesment/api/quiz/$1"
+      "dest": "/Assesment/api/quiz/$1.js"
     },
     {
       "src": "/quiz/instructions",
