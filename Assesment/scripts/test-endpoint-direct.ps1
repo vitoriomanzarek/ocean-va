@@ -82,5 +82,5 @@ try {
 
 Write-Host ""
 Write-Host "💡 Para usar con otra URL:" -ForegroundColor Gray
-Write-Host "   .\test-endpoint-direct.ps1 -Url 'https://tu-dominio.vercel.app'" -ForegroundColor Gray
+Write-Host "   .\test-endpoint-direct.ps1 -Url `"https://tu-dominio.vercel.app`"" -ForegroundColor Gray
 
