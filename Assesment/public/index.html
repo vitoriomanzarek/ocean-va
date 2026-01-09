@@ -627,14 +627,28 @@
     <!-- Google Analytics (GA4) implementation -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VD50K3QXYX"></script>
     <script>
-      gtag('js', new Date());
-      gtag('config', 'G-VD50K3QXYX');
+      // Configure GA4 when gtag.js loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          if (typeof gtag === 'function') {
+            gtag('js', new Date());
+            gtag('config', 'G-VD50K3QXYX');
+          }
+        }, 100);
+      });
     </script>
     
     <!-- Google tag (gtag.js) - Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11110885011"></script>
     <script>
-      gtag('config', 'AW-11110885011');
+      // Configure Google Ads when gtag.js loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          if (typeof gtag === 'function') {
+            gtag('config', 'AW-11110885011');
+          }
+        }, 100);
+      });
     </script>
     <!-- End Google tag (gtag.js) -->
     
@@ -887,6 +901,59 @@
     <!-- html2pdf.js for PDF generation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="/standalone-engine.js"></script>
+    
+    <!-- Tracking Verification & Debug Script -->
+    <script>
+      // Wait for all scripts to load, then verify trackers
+      window.addEventListener('load', function() {
+        // Give scripts a moment to initialize (especially async ones)
+        setTimeout(function() {
+          var trackers = {
+            'dataLayer (GTM)': typeof window.dataLayer !== 'undefined',
+            'gtag (GA4/Ads)': typeof gtag !== 'undefined' && typeof gtag === 'function',
+            'reb2b (B2B)': typeof window.reb2b !== 'undefined',
+            'Leadsy.ai': document.getElementById('vtag-ai-js') !== null
+          };
+          
+          var allActive = true;
+          var statusLog = [];
+          
+          for (var tracker in trackers) {
+            var status = trackers[tracker] ? '✅ Activo' : '❌ No activo';
+            statusLog.push(tracker + ': ' + status);
+            if (!trackers[tracker]) {
+              allActive = false;
+            }
+          }
+          
+          // Log to console for debugging
+          if (allActive) {
+            console.log('%c✅ Todos los trackers están activos', 'color: #22c55e; font-weight: bold; font-size: 14px;');
+            console.table(trackers);
+          } else {
+            console.warn('%c⚠️ Algunos trackers no están activos', 'color: #f59e0b; font-weight: bold; font-size: 14px;');
+            console.table(trackers);
+            console.log('%c💡 Posibles causas:', 'color: #3b82f6; font-weight: bold;');
+            console.log('1. Bloqueador de ads activo (AdBlock, uBlock, etc.)');
+            console.log('2. Los scripts aún están cargando (espera 2-3 segundos más)');
+            console.log('3. Error en la carga de scripts (revisa Network tab)');
+            console.log('4. Problemas de red o CORS');
+          }
+          
+          // Log dataLayer events if available
+          if (typeof window.dataLayer !== 'undefined' && window.dataLayer.length > 0) {
+            console.log('%c📊 Eventos en dataLayer:', 'color: #8b5cf6; font-weight: bold;');
+            console.log('Total eventos:', window.dataLayer.length);
+            var events = window.dataLayer.filter(function(item) {
+              return item.event !== undefined;
+            });
+            if (events.length > 0) {
+              console.log('Eventos detectados:', events);
+            }
+          }
+        }, 2000); // Wait 2 seconds after page load
+      });
+    </script>
 </body>
 </html>
 
