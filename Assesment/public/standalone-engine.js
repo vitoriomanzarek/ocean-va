@@ -1178,10 +1178,10 @@ function getNextStepsSection(profile, overallScore, content) {
 // Make handleResourceDownload globally available and generate real PDFs
 window.handleResourceDownload = async function(profile) {
   const pdfFiles = {
-    A: '/Assesment/quiz/pdfs/profile-a-case-study.html',
-    B: '/Assesment/quiz/pdfs/profile-b-10-tasks-guide.html',
-    C: '/Assesment/quiz/pdfs/profile-c-rescue-plan.html',
-    D: '/Assesment/quiz/pdfs/profile-d-complete-guide.html'
+    A: '/quiz/pdfs/profile-a-case-study.html',
+    B: '/quiz/pdfs/profile-b-10-tasks-guide.html',
+    C: '/quiz/pdfs/profile-c-rescue-plan.html',
+    D: '/quiz/pdfs/profile-d-complete-guide.html'
   };
   
   const pdfPath = pdfFiles[profile] || pdfFiles.D;

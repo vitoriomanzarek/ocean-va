@@ -3,6 +3,14 @@
     {
       "source": "/",
       "destination": "/api/index"
+    },
+    {
+      "source": "/quiz/(.*)",
+      "destination": "/quiz/$1"
+    },
+    {
+      "source": "/images/(.*)",
+      "destination": "/images/$1"
     }
   ]
 }
