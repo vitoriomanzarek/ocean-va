@@ -1,0 +1,23 @@
+{
+  "name": "Ocean VA Assessment - Operational Efficiency Scorecard",
+  "short_name": "Ocean VA Quiz",
+  "description": "Free assessment to discover your operational efficiency score and get personalized VA recommendations",
+  "icons": [
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#05bfb9",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
+
