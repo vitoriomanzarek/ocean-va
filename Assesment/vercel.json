@@ -20,8 +20,8 @@
       "dest": "/quiz/instructions.html"
     },
     {
-      "src": "/",
-      "dest": "/quiz/standalone.html"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
