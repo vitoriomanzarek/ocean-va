@@ -2,11 +2,12 @@
  * API Endpoint: Submit Quiz Results
  * POST /api/quiz/submit
  * 
- * Captures quiz results and saves them to Webflow CMS (or local storage as fallback)
+ * Captures quiz results and saves them to Supabase (or local storage as fallback)
  */
 
 import 'dotenv/config';
-import { saveQuizResultToWebflow, saveQuizResultToLocal } from '../../lib/webflow-leads.js';
+import { saveQuizResultToSupabase } from '../../lib/supabase-leads.js';
+import { saveQuizResultToLocal } from '../../lib/webflow-leads.js';
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -71,51 +72,51 @@ export default async function handler(req, res) {
       submittedAt: new Date().toISOString()
     };
 
-    // Try to save to Webflow CMS first
+    // Try to save to Supabase first
     let savedResult;
     let savedTo = 'local';
-    let webflowError = null;
+    let supabaseError = null;
     
     // Log environment variables status (without exposing values)
-    const hasApiToken = !!process.env.WEBFLOW_API_TOKEN;
-    const hasSiteId = !!process.env.WEBFLOW_SITE_ID;
-    const hasCollectionId = !!process.env.WEBFLOW_LEADS_COLLECTION_ID;
+    const hasSupabaseUrl = !!process.env.SUPABASE_URL;
+    const hasSupabaseKey = !!process.env.SUPABASE_ANON_KEY;
     
-    console.log('🔍 Webflow API Configuration Check:', {
-      hasApiToken,
-      hasSiteId,
-      hasCollectionId,
-      allConfigured: hasApiToken && hasSiteId && hasCollectionId
+    console.log('🔍 Supabase Configuration Check:', {
+      hasSupabaseUrl,
+      hasSupabaseKey,
+      allConfigured: hasSupabaseUrl && hasSupabaseKey
     });
     
     try {
-      savedResult = await saveQuizResultToWebflow(quizData);
-      savedTo = 'webflow';
-      console.log('✅ Quiz results saved to Webflow CMS successfully', {
-        itemId: savedResult.id || savedResult._id,
+      savedResult = await saveQuizResultToSupabase(quizData);
+      savedTo = 'supabase';
+      console.log('✅ Quiz results saved to Supabase successfully', {
+        itemId: savedResult.id,
         email: quizData.contact.email,
         profile: quizData.profile.profile
       });
     } catch (error) {
-      // If Webflow fails, save locally as fallback
-      webflowError = error;
+      // If Supabase fails, save locally as fallback
+      supabaseError = error;
       
       // Log detailed error information
       const isNetworkError = error.message.includes('Network') || 
                             error.message.includes('timeout') ||
-                            error.message.includes('connection');
+                            error.message.includes('connection') ||
+                            error.message.includes('ECONNREFUSED') ||
+                            error.message.includes('ETIMEDOUT');
       
       if (isNetworkError) {
-        console.error('❌ Network error connecting to Webflow API:', {
+        console.error('❌ Network error connecting to Supabase:', {
           message: error.message,
           type: 'Network Error',
           timestamp: new Date().toISOString(),
           stack: error.stack
         });
       } else {
-        console.error('⚠️  Failed to save to Webflow CMS:', {
+        console.error('⚠️  Failed to save to Supabase:', {
           message: error.message,
-          type: 'API Error',
+          type: 'Database Error',
           timestamp: new Date().toISOString(),
           stack: error.stack,
           errorDetails: error.toString()
@@ -139,11 +140,13 @@ export default async function handler(req, res) {
       }
     };
     
-    // Include warning if saved locally due to Webflow error
-    if (savedTo === 'local' && webflowError) {
-      response.warning = 'Results saved locally. Webflow API was unavailable.';
-      if (webflowError.message.includes('Network')) {
+    // Include warning if saved locally due to Supabase error
+    if (savedTo === 'local' && supabaseError) {
+      response.warning = 'Results saved locally. Supabase was unavailable.';
+      if (supabaseError.message.includes('Network')) {
         response.warning += ' Network connection issue detected.';
+      } else if (supabaseError.message.includes('42P01')) {
+        response.warning += ' Database table does not exist. Please run the setup script.';
       }
     }
     
