@@ -18,6 +18,10 @@
     {
       "src": "/instructions",
       "dest": "/quiz/instructions.html"
+    },
+    {
+      "src": "/",
+      "dest": "/quiz/index.html"
     }
   ]
 }
