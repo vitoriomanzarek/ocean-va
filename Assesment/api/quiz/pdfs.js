@@ -7,6 +7,11 @@
 
 import { readFile } from 'fs/promises';
 import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const pdfFiles = {
   'profile-a-case-study': 'profile-a-case-study.html',
@@ -39,8 +44,8 @@ export default async function handler(req, res) {
     const fileName = pdfFiles[profileKey] || pdfFiles['profile-d-complete-guide'];
     
     // Read the HTML file from public folder
-    // In Vercel, process.cwd() points to the project root
-    const htmlPath = join(process.cwd(), 'public', 'quiz', 'pdfs', fileName);
+    // From api/quiz/ we need to go up two levels: ../../
+    const htmlPath = join(__dirname, '..', '..', 'public', 'quiz', 'pdfs', fileName);
     const html = await readFile(htmlPath, 'utf-8');
     
     // Set content type
