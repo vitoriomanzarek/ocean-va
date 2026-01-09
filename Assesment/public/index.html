@@ -625,31 +625,19 @@
     <!-- End Google Tag Manager -->
     
     <!-- Google Analytics (GA4) implementation -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VD50K3QXYX"></script>
     <script>
-      // Configure GA4 when gtag.js loads
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          if (typeof gtag === 'function') {
-            gtag('js', new Date());
-            gtag('config', 'G-VD50K3QXYX');
-          }
-        }, 100);
-      });
+      // Configure GA4 immediately (gtag function is already defined above)
+      gtag('js', new Date());
+      gtag('config', 'G-VD50K3QXYX');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VD50K3QXYX"></script>
     
     <!-- Google tag (gtag.js) - Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11110885011"></script>
     <script>
-      // Configure Google Ads when gtag.js loads
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          if (typeof gtag === 'function') {
-            gtag('config', 'AW-11110885011');
-          }
-        }, 100);
-      });
+      // Configure Google Ads immediately (gtag function is already defined above)
+      gtag('config', 'AW-11110885011');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11110885011"></script>
     <!-- End Google tag (gtag.js) -->
     
     <!-- B2B Tracking (reb2b) -->
