@@ -1,17 +1,12 @@
 /**
  * API Route: Serve PDF HTML files
- * GET /api/quiz/pdfs/[profile]
+ * GET /api/quiz/pdfs?profile=A
  * 
  * Serves the PDF HTML files for each profile
  */
 
 import { readFile } from 'fs/promises';
 import { join } from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const pdfFiles = {
   'profile-a-case-study': 'profile-a-case-study.html',
@@ -29,8 +24,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Get profile from query or path
-    const { profile } = req.query;
+    // Get profile from query parameter
+    const profile = req.query.profile?.toUpperCase() || 'D';
     
     // Map profile letters to filenames
     const profileMap = {
@@ -40,11 +35,12 @@ export default async function handler(req, res) {
       'D': 'profile-d-complete-guide'
     };
     
-    const profileKey = profileMap[profile] || profile || 'profile-d-complete-guide';
+    const profileKey = profileMap[profile] || 'profile-d-complete-guide';
     const fileName = pdfFiles[profileKey] || pdfFiles['profile-d-complete-guide'];
     
-    // Read the HTML file
-    const htmlPath = join(__dirname, '..', '..', '..', 'public', 'quiz', 'pdfs', fileName);
+    // Read the HTML file from public folder
+    // In Vercel, process.cwd() points to the project root
+    const htmlPath = join(process.cwd(), 'public', 'quiz', 'pdfs', fileName);
     const html = await readFile(htmlPath, 'utf-8');
     
     // Set content type
@@ -54,9 +50,12 @@ export default async function handler(req, res) {
     return res.status(200).send(html);
   } catch (error) {
     console.error('Error serving PDF:', error);
+    console.error('Profile:', req.query.profile);
+    console.error('Error details:', error.message);
     return res.status(500).json({
       error: 'Internal server error',
-      message: 'Failed to serve PDF content'
+      message: 'Failed to serve PDF content',
+      details: error.message
     });
   }
 }
