@@ -21,7 +21,7 @@
     },
     {
       "src": "/",
-      "dest": "/quiz/index.html"
+      "dest": "/quiz/standalone.html"
     }
   ]
 }
