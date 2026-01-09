@@ -783,6 +783,168 @@ function calculateAndShowResults() {
   
   // Submit to backend (non-blocking)
   submitQuizResults(quizData);
+  
+  // Track quiz completion
+  trackQuizComplete(profile, {
+    operational: operationalScore,
+    intent: intentScore,
+    urgency: urgencyScore
+  });
+}
+
+// ==================== TRACKING FUNCTIONS ====================
+
+function trackQuizStart() {
+  // Google Analytics 4
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'quiz_start', {
+      'event_category': 'Quiz',
+      'event_label': 'Operational Efficiency Assessment'
+    });
+  }
+  
+  // Google Tag Manager
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'quiz_start',
+      'quiz_name': 'Operational Efficiency Assessment'
+    });
+  }
+  
+  // Leadsy.ai tracking
+  if (typeof reb2b !== 'undefined' && reb2b.collect) {
+    reb2b.collect({
+      event: 'quiz_start',
+      quiz_name: 'Operational Efficiency Assessment'
+    });
+  }
+}
+
+function trackQuizComplete(profile, scores) {
+  // Google Analytics 4
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'quiz_complete', {
+      'event_category': 'Quiz',
+      'event_label': 'Operational Efficiency Assessment',
+      'profile': profile.profile,
+      'operational_score': scores.operational,
+      'intent_score': scores.intent,
+      'urgency_score': scores.urgency,
+      'value': profile.priority === 1 ? 100 : profile.priority === 2 ? 50 : 10
+    });
+  }
+  
+  // Google Tag Manager
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'quiz_complete',
+      'quiz_name': 'Operational Efficiency Assessment',
+      'profile': profile.profile,
+      'profile_name': profile.name,
+      'operational_score': scores.operational,
+      'intent_score': scores.intent,
+      'urgency_score': scores.urgency,
+      'conversion_value': profile.priority === 1 ? 100 : profile.priority === 2 ? 50 : 10
+    });
+  }
+  
+  // Google Ads conversion tracking
+  if (typeof gtag !== 'undefined') {
+    // Track as conversion for Google Ads
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11110885011/quiz_complete',
+      'value': profile.priority === 1 ? 100 : profile.priority === 2 ? 50 : 10,
+      'currency': 'USD',
+      'transaction_id': Date.now().toString()
+    });
+  }
+  
+  // Leadsy.ai tracking
+  if (typeof reb2b !== 'undefined' && reb2b.collect) {
+    reb2b.collect({
+      event: 'quiz_complete',
+      quiz_name: 'Operational Efficiency Assessment',
+      profile: profile.profile,
+      profile_name: profile.name,
+      operational_score: scores.operational,
+      intent_score: scores.intent,
+      urgency_score: scores.urgency
+    });
+  }
+}
+
+function trackPDFDownload(profile) {
+  // Google Analytics 4
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'pdf_download', {
+      'event_category': 'Download',
+      'event_label': `Profile ${profile} - ${profile === 'A' ? 'Hot Lead' : profile === 'B' ? 'Warm Lead' : profile === 'C' ? 'Cold but Urgent' : 'Ice Cold'}`,
+      'value': 15
+    });
+  }
+  
+  // Google Tag Manager
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'pdf_download',
+      'profile': profile,
+      'download_type': 'profile_resource'
+    });
+  }
+  
+  // Google Ads conversion tracking
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11110885011/pdf_download',
+      'value': 15,
+      'currency': 'USD'
+    });
+  }
+  
+  // Leadsy.ai tracking
+  if (typeof reb2b !== 'undefined' && reb2b.collect) {
+    reb2b.collect({
+      event: 'pdf_download',
+      profile: profile
+    });
+  }
+}
+
+function trackScheduleCall(profile) {
+  // Google Analytics 4
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'schedule_call_click', {
+      'event_category': 'Conversion',
+      'event_label': `Profile ${profile}`,
+      'value': 150
+    });
+  }
+  
+  // Google Tag Manager
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'schedule_call_click',
+      'profile': profile,
+      'action': 'calendar_scheduled'
+    });
+  }
+  
+  // Google Ads conversion tracking
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11110885011/schedule_call',
+      'value': 150,
+      'currency': 'USD'
+    });
+  }
+  
+  // Leadsy.ai tracking
+  if (typeof reb2b !== 'undefined' && reb2b.collect) {
+    reb2b.collect({
+      event: 'schedule_call_click',
+      profile: profile
+    });
+  }
 }
 
 function renderResults(profile, content, scores, savings) {
@@ -1177,6 +1339,9 @@ function getNextStepsSection(profile, overallScore, content) {
 // Handler functions for buttons
 // Make handleResourceDownload globally available and generate real PDFs
 window.handleResourceDownload = async function(profile) {
+  // Track PDF download
+  trackPDFDownload(profile);
+  
   const pdfFiles = {
     A: '/api/quiz/pdfs?profile=A',
     B: '/api/quiz/pdfs?profile=B',
@@ -1300,6 +1465,9 @@ window.handleResourceDownload = async function(profile) {
 };
 
 function handleNextStep(profile) {
+  // Track schedule call click
+  trackScheduleCall(profile);
+  
   // Show Calendly popup for all profiles
   if (typeof showCalendlyPopup === 'function') {
     showCalendlyPopup();
@@ -1752,6 +1920,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startButton2 = document.getElementById('start-quiz-2');
   
   const handleStartQuiz = () => {
+    trackQuizStart(); // Track quiz start
     showSection('contact');
     updateProgress();
   };
