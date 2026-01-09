@@ -1,0 +1,3474 @@
+{
+  "site": {
+    "id": "66e9b3f71eb321a17e92218a",
+    "name": "Ocean VA "
+  },
+  "timestamp": "2026-01-09T21:58:54.421Z",
+  "collections": [
+    {
+      "id": "66fd75f68ed4864909f55c28",
+      "name": "Blogs",
+      "slug": "blogs",
+      "fields": [
+        {
+          "id": "5b4bcbca33727f58f61628d2e4c78582",
+          "name": "Date",
+          "slug": "date-2",
+          "type": "DateTime",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8b3ab1bffea35494df0d8047ed0e50b3",
+          "name": "Picture of Author",
+          "slug": "picture-of-author",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "0ffb21e93315b26df564119db9eec739",
+          "name": "Name of Author",
+          "slug": "name-of-author",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "76e142810ff6043cb618ea6dcaadef17",
+          "name": "Image for Blog",
+          "slug": "image-for-blog",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "f950edf1bee5500e2471c058d81d72b2",
+          "name": "Content of Blog",
+          "slug": "content-of-blog",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "4bc35e08c2078222db650001f00157da",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "35f0e420917f59193ba2027ae2034af5",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 563
+    },
+    {
+      "id": "66fd7a34fd51051420b0d6fe",
+      "name": "General Virtual Assistants",
+      "slug": "general-virtual-assistant",
+      "fields": [
+        {
+          "id": "a80e52964c7a4205a8e44f8570b45ba3",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "850ed452f537fccd7018a087866f2a5a",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "58885d4badc3a096622fb5aa3af507ef",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9d92ed9a81bd60dbf16261a3f2d6f64f",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "bdd413d9dec75b7c8279145d9ea367ab",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9a507c71ea2c09ac6131716567cf6197",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "b8124d54f1243281d417177c9c4c50db",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "f59dccedfc7c9f20a738457a02a0e362",
+          "name": "THUMBNAIL IMAGE",
+          "slug": "thumbnail-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "25f8fef92e34e4d807da3edcb8d178c4",
+          "name": "Picture right",
+          "slug": "picture-right",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "633b0de2d5c3711ffdc9e12957a38bbf",
+          "name": "Boja Pozadine",
+          "slug": "boja-pozadine",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "43baeaaced475e340a0c914592ddc2c0",
+          "name": "Boja teksta",
+          "slug": "boja-teksta",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "f0ba6240e7733907ce5aad8559863337",
+          "name": "number",
+          "slug": "number",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "5b943c182844ba00a0e2aa3fc2b6d242",
+          "name": "Hover Boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "781def59434ed45532012fafcf6895de",
+          "name": "Hover Boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "a6d0e2280e2fca8fca3f5a1ff4b4d48b",
+          "name": "Meta Naslov",
+          "slug": "meta-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "f58cf71fbe7a6fee157325e981be3a8b",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "b15560c76cf48c53483b203ed39d7233",
+          "name": "Video",
+          "slug": "video",
+          "type": "VideoLink",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "5fd617dd7c4bafae3c74dd56b46e42c3",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "2570f96b9901503a618bd5b816ac6a87",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "66ffd11d51877dad5b9059e2",
+      "name": "Industry-focuseds",
+      "slug": "industry-focused",
+      "fields": [
+        {
+          "id": "7e48732bba543f709702d6a794755bbd",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "b0151bdb6502e53cbb2cf14988b7487e",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "816cb8cb5921b22e88fea707a9f54722",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "198d1955a0f73ff4405c6d1a3e9ec995",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "5c75519ed5aa1fbab886a938b6bc86f7",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "ed1fb68c98187e376398d25984767b72",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "da36d59e6819ec9a36e04b81710886b5",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "2dfce2afda18d25a50b2734734892839",
+          "name": "Thumbnail Image",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "88806126c1d373118eda41645b0ec49b",
+          "name": "Left Image",
+          "slug": "left-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "eb76c776427038f9dc6e213ca57d582d",
+          "name": "Main image",
+          "slug": "main-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "11c98bf30223d7b25d1fcd3386ba4ce3",
+          "name": "Drugi Naslov",
+          "slug": "drugi-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "0b677e23ad332c9dd10c2227e001ee09",
+          "name": "Sadrzaj",
+          "slug": "sadrzaj",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "df82aec447da6f985123430c33cbfc3b",
+          "name": "Pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "6352a9bc67423d29c3f76491a0608359",
+          "name": "Tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "197163823c7996776928f6c479dab5d7",
+          "name": "Brojevi",
+          "slug": "brojevi",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "951cc72da2785f37c227ab14fe55ce37",
+          "name": "hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8ac5c6aa754630060ebb88d1437e67ea",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "69cfa24933b4905b4b71679e9f658a71",
+          "name": "Meta Tittle",
+          "slug": "meta-tittle",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "aa5650edf692299f55b5f42ef8dcd387",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "a321ff6670ac3251d96a8244a04e38bd",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "8352beea9c6d5deea38e209b2fb59c00",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "66ffd30a1c9d596d6e985234",
+      "name": "Marketings",
+      "slug": "marketing",
+      "fields": [
+        {
+          "id": "9e478c3ccbdad3a0c3518de3c7b6bac3",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c68ddc91036bb5cb86b733c1b29dc8e9",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "f2c43a40ae69930193341e963870285d",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "10c57065e550232d151c1638425bdff0",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c8bb637686a2fbc88bae7e4610152b74",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "fd78398aea7a2afab914aa706f3a870a",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "5bcafa10849dc71db4f86e7440046857",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "5e1095bbb9c1236f52f951d2548a7c81",
+          "name": "Thumbnail",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "5504cfeea1742a131610d2a861bb7ffa",
+          "name": "Left Image",
+          "slug": "left-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "2fcdd9d519bc62cdf921e29cab5f2c53",
+          "name": "Main Image",
+          "slug": "main-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "bb261ad1bfb914a3b060400124e1b47a",
+          "name": "Drugi Naslov",
+          "slug": "drugi-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "6168fe1f46e8e048be74f3fbed20489a",
+          "name": "Sadrzaj",
+          "slug": "sadrzaj",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "3a1e9f2c15eb7c28ff40dc674e20dc25",
+          "name": "Pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "ec52da43cf35ff1188525d7fcb33989b",
+          "name": "Tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "b52942bda3ffc3e1a5afa8362bc6e06c",
+          "name": "broj",
+          "slug": "broj",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "84f0ad54e1f2bebee569441eee9c6581",
+          "name": "Hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "50139909ee4cbea593c0f368903f6ede",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "ef2a4e26bd6d5065703ad06d2f9459a0",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "e05ea188f9d61caddfbea1bf6a4496ff",
+          "name": "Meta Title",
+          "slug": "meta-title",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "3c9d904497c10c46e3a75e548fcb2be9",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "73d42178f9c3ea2cd950b90b85a065c9",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "66ffd404469e85f9d4bb7712",
+      "name": "Sales and Outreaches",
+      "slug": "sales-and-outreach",
+      "fields": [
+        {
+          "id": "897744f9a3a1b023558d76770f58ac08",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "7f9c4d843a77b23f9da74e046275b507",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9501573fb25e9ba9d59644f0c8b78235",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "5640bf67a8fcae5145099c5d86d1473d",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c084659f10bf86130eda1a16bf5331f6",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "7a48ed8cc4cec36f1fc3fc7b7e0fdf87",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "7bfe7f0cf14be1f556a64f783d975f4e",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "8fe25a4e4a5f32c4f7c39705269e7d13",
+          "name": "Thumbnail",
+          "slug": "left-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "cbf43fbd9a059e7f04336373485d00ae",
+          "name": "Right Image",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "f6d4e32fa5c8dae9ba65f9627fa6ca72",
+          "name": "Main",
+          "slug": "main",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "d35bc06b17815c07fd8d12da4fcfd989",
+          "name": "Drugi naslov",
+          "slug": "drugi-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c1d04945fe4531f65cc95248b629fc21",
+          "name": "Sadrzaj",
+          "slug": "sadrzaj",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "d47b825ba04b0f4ae6a90e5754a70a0b",
+          "name": "Pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "39f225a76e5ed955c829221401065614",
+          "name": "Tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "1792ad9d44f0df1b3be29ab377ebc464",
+          "name": "broja",
+          "slug": "broja",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "b2a32b11a6bf3f53ae41c4401e1a9de4",
+          "name": "hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "67a807f6ef9a7bfd7bccf2bf680d8b22",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "430542f75832b4728c64153481a3ace7",
+          "name": "Meta Title",
+          "slug": "meta-title",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9514fe36fcb8f02f2ab861b431789515",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "a02f518977497c954b5d120e04ce2189",
+          "name": "Video",
+          "slug": "video",
+          "type": "VideoLink",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "f8653a1e451f4a1c95ec0cd83669c1d0",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "d2fdf37e9ad5427c48f39a0254009db7",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 6
+    },
+    {
+      "id": "66ffd50d77e2204cdb446a48",
+      "name": "CSR and Receptions",
+      "slug": "csr-and-reception",
+      "fields": [
+        {
+          "id": "0b9fafb80c8c043667e8fd7ae79ca936",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "29dde5b63de94f0ba7260dff648f92a3",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "05bab345f973e56ea9da0f788f9fed9e",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "1d06b5ed395fc6b5edaba44013e5ec78",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9f6b37d24512d0b5d9ec3682be120e33",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "d22b3d3c912826bc961a363ae2497be8",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "a8be29e722777e4846e7548a875a556f",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "aa17a420fa625ec30a3eb9e696534890",
+          "name": "Thumbnail",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "bf0ef700f51c24ba0b44984513495d36",
+          "name": "left image",
+          "slug": "left-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "80dd96577fc4f9d0251410c84312c0ce",
+          "name": "main image",
+          "slug": "main-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "7f06ade250c24388157c8edc6d8852c6",
+          "name": "drugi naslov",
+          "slug": "drugi-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "1ef59f6802e341c754d6552112b1db60",
+          "name": "sadrzaj",
+          "slug": "sadrzaj",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "6dba9af3d74a4b56e6132464a2baf09f",
+          "name": "Pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "440be5c804e9b1ae8f5b0f6943757d15",
+          "name": "Tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "242ea89b8c2d863106f6eca6d8a0e7cc",
+          "name": "Brojevi",
+          "slug": "brojevi",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "4741308ce5ce188121e4d7dae4c88825",
+          "name": "hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "937515fc5e79f9f55b78234b7cb567a4",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "100cc90db55d5135dfb47c7174ece735",
+          "name": "Meta Title",
+          "slug": "meta-title",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "2b4dfdcc953a1bc60378f4f789dfd1c7",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "bd5f53339f8f13ccd5f537eb0c6e4e14",
+          "name": "VIDEO LINK",
+          "slug": "video-link",
+          "type": "VideoLink",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "93a47e65f0f843d37b56ca1445c6eb44",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "41288f779e34e6ea19d0595c5a4056af",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "66ffd6070148011f08e78c68",
+      "name": "Services",
+      "slug": "services",
+      "fields": [
+        {
+          "id": "46c6397c396687f433d7383cf0f00077",
+          "name": "Thumbnail",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "864681b4c13a68cbe314134939d5d5c5",
+          "name": "Left image",
+          "slug": "left-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "4bea78c7b6b12e4025f73d8dbee5d6f3",
+          "name": "Main Image",
+          "slug": "main-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "a86eea2dc92941f1725de2e3d9e84893",
+          "name": "Drugi naslov",
+          "slug": "drugi-naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "d5ed7faac5093f75feffa98dd9b09996",
+          "name": "Sadrzaj",
+          "slug": "sadrzaj",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "5a8cb969749d684315d3589d70f1b11b",
+          "name": "pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "158dbbe7cb63dddc881df1f0e87539a9",
+          "name": "tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "c1dc2fbb73b7f5f498237c33fcff7843",
+          "name": "broj",
+          "slug": "broj",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "ce43c36c76e26d1759e14560000b9556",
+          "name": "hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "c468248993c7cda50afba4d35fb42bdb",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "944502d68866f63fea232a9fac88b3d7",
+          "name": "Meta Titke",
+          "slug": "meta-titke",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "34b9d8bf90c844ecc22079e7f9d9d1bc",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9230024c3935e6868fc7e1a29c27cab5",
+          "name": "VIDEO LINK",
+          "slug": "video-link",
+          "type": "VideoLink",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "1a83fb3c3219a516d2a7a8e9502d897d",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "9e12686d75a0b581d885aa0b8feab3be",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "e6e9536fab72550b799fa7c11ade50da",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "a3fa6546bfa1e68987574616faedbad1",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "fde7e235555af7670cd4f0eee5ec36ef",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "92cc91cfa6125ac69451f151542135ae",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "4e294a058e63234b573745100a255117",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "3d1f7ef172ccac8955c4723b058131b2",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "8370cb79593cbe7f5635b38e8dc7023d",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 8
+    },
+    {
+      "id": "66fff877006c39b47d2a1aee",
+      "name": "Industries",
+      "slug": "industries",
+      "fields": [
+        {
+          "id": "916500c80f66788f096a36f7fdc3278a",
+          "name": "New Intro Content",
+          "slug": "new-intro-content",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "015866da83dc8da7b72d25dc28f27c0a",
+          "name": "Naslov",
+          "slug": "naslov",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "04bc8ff28aef841531d5125e993910f4",
+          "name": "E1",
+          "slug": "e1",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "bd2338af2100fd9b4ab8437b54330fc7",
+          "name": "E1 text",
+          "slug": "e1-text-2",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "299064d73bc5f73dfce82e5a15317555",
+          "name": "E2",
+          "slug": "e2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c925f3d9b8e450a9b9d1a86bad3eda8a",
+          "name": "E2 Text",
+          "slug": "e2-text",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8dc8b88d93e26e16788bfe4269f4f103",
+          "name": "E3",
+          "slug": "e3",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "e313554a206252b55fd32b5c1cc07d1d",
+          "name": "E3 Text",
+          "slug": "e3-text",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "08d250ea52e0f3248b0a2b3f78b6bc96",
+          "name": "E4",
+          "slug": "e4",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "ca3c078384e335c3b9756e44f3bb969e",
+          "name": "E4 Text",
+          "slug": "e4-text",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "c146bcec4a4b3aada28c0c393c73ceea",
+          "name": "E5",
+          "slug": "e5",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "7665141b9ae306b975d5e732762cfc16",
+          "name": "E5 Text",
+          "slug": "e5-text",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "27483589da268a3f8d1b12517a08b5bf",
+          "name": "E6",
+          "slug": "e6",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "8dfef385567b75fbae3b4be87b993952",
+          "name": "E6 Text",
+          "slug": "e6-text",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "4f4350606e5b85ed75f4e2ec5e4b4019",
+          "name": "Thumbnail",
+          "slug": "right-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "efceb0ccd5b3bb193e5c5ae7dc148197",
+          "name": "pozadina",
+          "slug": "pozadina",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "308e3fb129df0f622aeae10118b58084",
+          "name": "tekst",
+          "slug": "tekst",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "72d559287eb3193a20bbfea2ca9ed7ca",
+          "name": "broj",
+          "slug": "broj",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "integer",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "d6a434d2dda4765bb270051379629eac",
+          "name": "Podnaslov na home page",
+          "slug": "podnaslov-na-home-page",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "bd1ae18d0b23581c70d52590074b424a",
+          "name": "hover boja 1",
+          "slug": "hover-boja-1",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "1ee7777fa49e12554f2ca75cb4840a5f",
+          "name": "hover boja 2",
+          "slug": "hover-boja-2",
+          "type": "Color",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "c5e37b22262e9475f451e6765a968abf",
+          "name": "Meta Title",
+          "slug": "meta-title",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "abbae094b4e2d6d487261f4db87fc129",
+          "name": "Meta Desc",
+          "slug": "meta-desc",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "e0dce6408f8e8c2559f81fea4b236817",
+          "name": "Video link",
+          "slug": "video-link",
+          "type": "VideoLink",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "d798b7b24340e083a9266b33ff9f5388",
+          "name": "THUMBNAIL IMAGE",
+          "slug": "thumbnail-image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "e32c136d4625d9322c83d6cb93210db6",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "7dace0df5f518f103f5f3175424bd2e3",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 9
+    },
+    {
+      "id": "68541fc71db2f60c3a29504f",
+      "name": "Insurance VA Lists Full Times",
+      "slug": "full-time-va-lists",
+      "fields": [
+        {
+          "id": "7aaae68e56b39cc0a647a8426a5cb002",
+          "name": "VA Thumbnail",
+          "slug": "va-thumbnail",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8d678cb9452d211f143758979f2df2b8",
+          "name": "Availability",
+          "slug": "availability",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Availability: Full Time",
+                "id": "80b8d135c36d02a628ed76e10571dd7f"
+              },
+              {
+                "name": "Availability: Part Time",
+                "id": "9236506d2096df91a2b0a905e41d8160"
+              },
+              {
+                "name": "Availability: Assigned",
+                "id": "80d07ecb40ded92360c83e473963a4fa"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "803ca379e06f1b5660fe178368b65547",
+          "name": "Available Time",
+          "slug": "available-time",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "3151656ccdf6e0a9365adffcedcbb954",
+          "name": "Expertise Icon",
+          "slug": "expertise-icon",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "f4fdbaa8f2df565f84b8c601c62686b2",
+          "name": "VA Profile and Video Text",
+          "slug": "va-profile-and-video-text",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": false
+          }
+        },
+        {
+          "id": "0898b5cf7238b145a4033553253e9d02",
+          "name": "VA Profile and Video",
+          "slug": "va-profile-and-video",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "909be7f71898596960884901948f2bd1",
+          "name": "Language",
+          "slug": "language",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "English-Speaking VA",
+                "id": "672ea56465b0beb0d66df4067b737e91"
+              },
+              {
+                "name": "Bilingual Spanish-English VA",
+                "id": "417940b9de55fa30975feca5a2b07029"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "55d74e2e9537ff77df0d7e5584a65764",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "b8af1355794c212fe1719b17f7a63772",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 61
+    },
+    {
+      "id": "68542afb7124225d4f891bff",
+      "name": "Insurance VA Lists Recently Assigneds",
+      "slug": "recently-assigned-va-lists",
+      "fields": [
+        {
+          "id": "2d288a2c11030d6913f1f0476d186eac",
+          "name": "VA Thumbnail",
+          "slug": "va-thumbnail",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "be523e4767cb4b0b67f82672488bb4f3",
+          "name": "Availability",
+          "slug": "availability",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Availability: Full Time",
+                "id": "80b8d135c36d02a628ed76e10571dd7f"
+              },
+              {
+                "name": "Availability: Part Time",
+                "id": "9236506d2096df91a2b0a905e41d8160"
+              },
+              {
+                "name": "Availability: Assigned",
+                "id": "80d07ecb40ded92360c83e473963a4fa"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "08b7059888e2a14fe82bdaf6b48699e1",
+          "name": "Expertise Icon",
+          "slug": "expertise-icon",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "4c6b336e315424f616cd7d0bd2df2cf4",
+          "name": "VA Profile and Video Text",
+          "slug": "va-profile-and-video-text",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": false
+          }
+        },
+        {
+          "id": "e7c5bd292cccc819b1cd0f89b74676c6",
+          "name": "VA Profile and Video",
+          "slug": "va-profile-and-video",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "9ee5b9cfa7a2d796d1a62f2f7d37ec25",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "7257ea0f9fd3ec9c8776cb0e264ae95d",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 35
+    },
+    {
+      "id": "686d6eec00f2abd190f6fb1e",
+      "name": "Licensed Insurance Agents Full Times",
+      "slug": "full-time-licensed-insurance-agents",
+      "fields": [
+        {
+          "id": "ec2d5ea0b8553c9a1ef014f907b33601",
+          "name": "Thumbnail",
+          "slug": "thumbnail",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "2be265a1d228405cfbb37a8f712a1a33",
+          "name": "Availability",
+          "slug": "availability",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Availability: Full Time",
+                "id": "3aa850b4478f6b02895afa3a95c1ec66"
+              },
+              {
+                "name": "Availability: Part Time",
+                "id": "3d80558131c51b51f853c8e8170c2435"
+              },
+              {
+                "name": "Availability: Assigned",
+                "id": "835e5d8fd5cb5f678c648dde1f6abbd2"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "9b2e467f6d0c399d208ba0d75b57ad5b",
+          "name": "Available Time",
+          "slug": "available-time",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "04897bf58aa316f84ce446879772c3fe",
+          "name": "VA Profile Text",
+          "slug": "va-profile-text",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "462dae780660a592c6d4dff4b4714ff5",
+          "name": "VA Profile Link",
+          "slug": "va-profile-link",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "c4ce01acb906532a7b42c1a3584830b5",
+          "name": "Language",
+          "slug": "language",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "English-Speaking",
+                "id": "af947d90ff53b02841d8796801ed9cec"
+              },
+              {
+                "name": "Bilingual English-Spanish",
+                "id": "cca8a9dab0361db937e449adcba7272b"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "efedabb9a4dc21696740d447d185cdc1",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "8567807dc075c94352aefecfb65d6d3e",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 30
+    },
+    {
+      "id": "68790caa0324dac1dcf36f25",
+      "name": "Admin VA Lists",
+      "slug": "admin-va-lists-full-time",
+      "fields": [
+        {
+          "id": "ecb2da5d1b20d16ad6fc29098c95f130",
+          "name": "VA Thumbnail",
+          "slug": "va-thumbnail",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "a83ae92675997577f10ddbb0593e920e",
+          "name": "Availability",
+          "slug": "availability",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Availability: Full Time",
+                "id": "80b8d135c36d02a628ed76e10571dd7f"
+              },
+              {
+                "name": "Availability: Part Time ",
+                "id": "9236506d2096df91a2b0a905e41d8160"
+              },
+              {
+                "name": "Availability: Assigned",
+                "id": "80d07ecb40ded92360c83e473963a4fa"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "59b208dbf8b69ae63ea99f61dbaf7652",
+          "name": "Available time",
+          "slug": "available-time",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "3a73f9b77a5d29e30b16c619922383a1",
+          "name": "Expertise Icon",
+          "slug": "expertise-icon",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "57be7f6741f8df2fdea87799bbab8b7f",
+          "name": "VA Profile and Video Text",
+          "slug": "va-profile-and-video-text",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": false
+          }
+        },
+        {
+          "id": "ed7aedf71c95a62868b3c64de18beaee",
+          "name": "VA Profile and Video",
+          "slug": "va-profile-and-video",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "6e8a35ffa3489a7735ea1396e970d331",
+          "name": "Language",
+          "slug": "language",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "English-Speaking",
+                "id": "84020ca38d29d3cc02907b004c2ab1e1"
+              },
+              {
+                "name": "Bilingual English-Spanish",
+                "id": "06fbd2b673bac4cddeeea2b5e332af69"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "17fb191f6f59858e20a727f79ceae8a7",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "cf83a2a67ab7c044fd30567a1f5dd5bc",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 30
+    },
+    {
+      "id": "691b82a97542c69f3f77fa76",
+      "name": "Virtual Assistants",
+      "slug": "virtual-assistants",
+      "fields": [
+        {
+          "id": "c28be8eee6068abbc9aa292c858217bf",
+          "name": "Main Category",
+          "slug": "main-category",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "1cced435999cdc44f9004f7472fdc340",
+          "name": "Experience (Years)",
+          "slug": "experience-years",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "9b3845e690d2bb02eb4cbcb49f6a82e8",
+          "name": "Languages",
+          "slug": "languages",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "0d1c3a6fa67d6b46886de36165336c5d",
+          "name": "Availability",
+          "slug": "availability",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "b3acf7488f08137bd61d7f9c05d7cceb",
+          "name": "Summary",
+          "slug": "summary",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "b60126d1ba1fe7e2eda4efbbe42176c8",
+          "name": "Tagline",
+          "slug": "tagline",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "b8f1627b40ddccc678b0720530981ecd",
+          "name": "Thumbnail Description",
+          "slug": "thumbnail-description",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "578e4c63d74b17d6ce971e166f784502",
+          "name": "VA Image",
+          "slug": "image",
+          "type": "Image",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "2e4b436d131cd14db90af348fd3580b7",
+          "name": "Profile Slug",
+          "slug": "profile-slug-2",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "7c6e77da5fd8cd9eb12c249f9b93db72",
+          "name": "Specialization",
+          "slug": "specialization",
+          "type": "MultiReference",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "collectionId": "691ccaf4f30e1de9a0437845"
+          }
+        },
+        {
+          "id": "44dbcc8d49927f09eed392ee3972264c",
+          "name": "Video",
+          "slug": "video",
+          "type": "Link",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "6459c72aa3554662500041c0779c8efd",
+          "name": "DISC Description",
+          "slug": "disc-description",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "4cc35b1bbf5c583f96e2092ead67ef60",
+          "name": "English Description",
+          "slug": "english-description",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "0d21638ee7003915de3533659a38f483",
+          "name": "Main Categories",
+          "slug": "main-categories",
+          "type": "MultiReference",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "collectionId": "691f65ddf62cb29a405fc022"
+          }
+        },
+        {
+          "id": "1ad00835a6a8cbb72ef08e2d9976e2ed",
+          "name": "Tools tags",
+          "slug": "tools-tags",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "01baf4553e329df5de70546261f50a99",
+          "name": "Equipment tags",
+          "slug": "equipment-tags",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "d03dcd63a37f23b051df350234dd70eb",
+          "name": "Skills tags",
+          "slug": "skills-tags",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "22739672d61b03f0cfc15f96d57df991",
+          "name": "Disc type",
+          "slug": "disc-type",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "c897f81fac39ca5d8740e3094e480b92",
+          "name": "English score",
+          "slug": "english-score",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "cd0ca8fdd82020b384e2bbc20fbd05c7",
+          "name": "English level",
+          "slug": "english-level",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "4101af40d6d2a4299d1637330b7b34ee",
+          "name": "Employment richtext",
+          "slug": "employment-richtext",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8570ed113b0b88b441e106eda3a56476",
+          "name": "Education richtext",
+          "slug": "education-richtext",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "5b1119ba28150b2faa93ad16dbad344f",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "0ff45fc81fc21c63ab9dae485b5c79ef",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "pattern": {},
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 97
+    },
+    {
+      "id": "691ccaf4f30e1de9a0437845",
+      "name": "VAs Specializations",
+      "slug": "vas-specializations",
+      "fields": [
+        {
+          "id": "7371712a95023ecaf1b7e4885957443c",
+          "name": "HR Operations",
+          "slug": "hr-operations",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "HR Operations",
+                "id": "aeddce5376592b95184c11d8c58e5ae3"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "fd5a46111b887e8e164e8aaaed6f325f",
+          "name": "Payroll Management",
+          "slug": "payroll-management",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Payroll Management",
+                "id": "c8b0199e15857a69b8efbd367b23d6a8"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "9415e05bccbd67eead9cfc4b1be83059",
+          "name": "Tax Compliance",
+          "slug": "tax-compliance",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "Tax Compliance",
+                "id": "0c0f3c5be65e69535097dd8fcdb92cb6"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "31ddb3fc62c190f2c25e0a3d94bcc2f1",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "899efdf7c998fac627e9a616556737b8",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 116
+    },
+    {
+      "id": "691e2510c02bf9424f69d7a2",
+      "name": "Skills",
+      "slug": "skills",
+      "fields": [
+        {
+          "id": "dca2b1652ec05e76e48990d3f733ae6e",
+          "name": "Name",
+          "slug": "name-2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "5bb029159afa509b14d665c036237c14",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "ccb7b1e28ffd7634bc549c2b7ee37b19",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    },
+    {
+      "id": "691e2511a0e061b39117d568",
+      "name": "Tools",
+      "slug": "tools",
+      "fields": [
+        {
+          "id": "430c04630f170f46f1722ae10cf68e38",
+          "name": "Name",
+          "slug": "name-2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "45a2bd2435598a8b1e4dca9fd2ad388c",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "cc66d09757fc2e42585bf287ad8ea6a5",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    },
+    {
+      "id": "691e2512f4b1aabc7cfd3a28",
+      "name": "Equipment",
+      "slug": "equipment",
+      "fields": [
+        {
+          "id": "5a406bbeda737717123c7be5ed8de808",
+          "name": "Name",
+          "slug": "name-2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "31f822b314415937d027d92f658a2e32",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "85d584cc4cb9c7fe3925a31b41950a8b",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    },
+    {
+      "id": "691e2513baa654e740628d21",
+      "name": "Employment",
+      "slug": "employment",
+      "fields": [
+        {
+          "id": "e7e7757480c4a341d016fdb2f1683729",
+          "name": "Company",
+          "slug": "company",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "136e8086c1f55cfb7d6a6e8c3810e460",
+          "name": "Position",
+          "slug": "position",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "8329eb66a291c90fb539333013b7dc05",
+          "name": "Period",
+          "slug": "period",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "3e87295d0021521b34c5e0282b821067",
+          "name": "Description",
+          "slug": "description",
+          "type": "RichText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "a97b27d187bd4e81051e3487e34849ab",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "83fc4849877d81d0e51e23cc61c481e6",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    },
+    {
+      "id": "691e2514c3ddc08bb7c9fee1",
+      "name": "Education",
+      "slug": "education",
+      "fields": [
+        {
+          "id": "735ac8ad5f468d2f2d71fe29aa6deb51",
+          "name": "School",
+          "slug": "school",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "e0f4e73952836de74841afd29a53f193",
+          "name": "Degree",
+          "slug": "degree",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "359061a684cac90805efcbe3bb6f16ea",
+          "name": "Year",
+          "slug": "year",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "13161f1c3522a8904e582fda2c840b17",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "13c074e3d945f59880f0a420cc634c33",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    },
+    {
+      "id": "691f65ddf62cb29a405fc022",
+      "name": "Main Category",
+      "slug": "main-category",
+      "fields": [
+        {
+          "id": "c9d9c6b2fe2bcb04bbba47d90799658f",
+          "name": "Name",
+          "slug": "name-2",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "e48441151b6865e781f6501cedf2e137",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "9672763f266a99594b5e1c04c8a5c038",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 6
+    },
+    {
+      "id": "69542fc5236c1cf313bee865",
+      "name": "Quiz Leads",
+      "slug": "quiz-leads",
+      "fields": [
+        {
+          "id": "b32e06a69e51c39a871cef3ab911dcfb",
+          "name": "Email",
+          "slug": "email",
+          "type": "Email",
+          "required": false,
+          "isSystemField": false,
+          "validations": {}
+        },
+        {
+          "id": "119a9bc27551694384669559ce0f203c",
+          "name": "Phone",
+          "slug": "phone",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "32fe8b22ad1705c2892c965e3bf30b5c",
+          "name": "Industry",
+          "slug": "industry",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "3873f61ff9c9b7ac916c9146509fb7c9",
+          "name": "Operational Score",
+          "slug": "operational-score",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "decimal",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "88f689c5aabe8bc4f25d5cb18784deda",
+          "name": "Intent Score",
+          "slug": "intent-score",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "decimal",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "d95e120fb3deddcb4f7791ed1572f72e",
+          "name": "Urgency Score",
+          "slug": "urgency-score",
+          "type": "Number",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "format": "decimal",
+            "precision": 1,
+            "allowNegative": false
+          }
+        },
+        {
+          "id": "852f70da84bc9f2893ba2a0a3e5aaeee",
+          "name": "Profile",
+          "slug": "profile",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": false
+          }
+        },
+        {
+          "id": "d863d565a8c0fa5cf4b200ad38183e04",
+          "name": "Profile Name",
+          "slug": "profile-name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "singleLine": true
+          }
+        },
+        {
+          "id": "7ac6cc78395c5fa8985c06bf6ad4f7e6",
+          "name": "Name",
+          "slug": "name",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256
+          }
+        },
+        {
+          "id": "1eebe1ef8d4509fef4104038c2feeaa9",
+          "name": "Slug",
+          "slug": "slug",
+          "type": "PlainText",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "maxLength": 256,
+            "pattern": {},
+            "messages": {
+              "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+              "maxLength": "Must be less than 256 characters"
+            }
+          }
+        }
+      ],
+      "itemCount": 0
+    }
+  ],
+  "summary": {
+    "totalCollections": 21,
+    "expectedCollections": 8,
+    "vaCollectionFound": true,
+    "vaCollectionFields": {
+      "total": 24,
+      "existing": 12,
+      "missing": 7,
+      "needed": 7,
+      "optional": 5,
+      "unexpected": 12
+    }
+  },
+  "vaCollectionAnalysis": {
+    "collectionId": "691b82a97542c69f3f77fa76",
+    "collectionName": "Virtual Assistants",
+    "fieldAnalysis": {
+      "existing": [
+        {
+          "slug": "name",
+          "name": "Name",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "main-category",
+          "name": "Main Category",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "experience-years",
+          "name": "Experience (Years)",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "languages",
+          "name": "Languages",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "availability",
+          "name": "Availability",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "summary",
+          "name": "Summary",
+          "type": "RichText",
+          "expectedType": "RichText",
+          "match": true
+        },
+        {
+          "slug": "tagline",
+          "name": "Tagline",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "thumbnail-description",
+          "name": "Thumbnail Description",
+          "type": "PlainText",
+          "expectedType": "PlainText",
+          "match": true
+        },
+        {
+          "slug": "specialization",
+          "name": "Specialization",
+          "type": "MultiReference",
+          "expectedType": "MultiReference",
+          "match": true
+        },
+        {
+          "slug": "disc-description",
+          "name": "DISC Description",
+          "type": "RichText",
+          "expectedType": "RichText",
+          "match": true
+        },
+        {
+          "slug": "english-score",
+          "name": "English score",
+          "type": "PlainText",
+          "expectedType": "Option",
+          "match": false
+        },
+        {
+          "slug": "english-description",
+          "name": "English Description",
+          "type": "RichText",
+          "expectedType": "RichText",
+          "match": true
+        }
+      ],
+      "missing": [
+        {
+          "slug": "disc-badge",
+          "type": "Option",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "youtube-url",
+          "type": "PlainText",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "skills-html",
+          "type": "RichText",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "tools-html",
+          "type": "RichText",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "equipment-html",
+          "type": "RichText",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "employment-history-html",
+          "type": "RichText",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "education-html",
+          "type": "RichText",
+          "reason": "Required for form"
+        }
+      ],
+      "needed": [],
+      "optional": [
+        {
+          "slug": "skills",
+          "type": "MultiReference",
+          "reason": "Alternative to HTML approach"
+        },
+        {
+          "slug": "tools",
+          "type": "MultiReference",
+          "reason": "Alternative to HTML approach"
+        },
+        {
+          "slug": "equipment",
+          "type": "MultiReference",
+          "reason": "Alternative to HTML approach"
+        },
+        {
+          "slug": "employment-history",
+          "type": "MultiReference",
+          "reason": "Alternative to HTML approach"
+        },
+        {
+          "slug": "education",
+          "type": "MultiReference",
+          "reason": "Alternative to HTML approach"
+        }
+      ],
+      "unexpected": [
+        {
+          "slug": "image",
+          "name": "VA Image",
+          "type": "Image"
+        },
+        {
+          "slug": "profile-slug-2",
+          "name": "Profile Slug",
+          "type": "Link"
+        },
+        {
+          "slug": "video",
+          "name": "Video",
+          "type": "Link"
+        },
+        {
+          "slug": "main-categories",
+          "name": "Main Categories",
+          "type": "MultiReference"
+        },
+        {
+          "slug": "tools-tags",
+          "name": "Tools tags",
+          "type": "PlainText"
+        },
+        {
+          "slug": "equipment-tags",
+          "name": "Equipment tags",
+          "type": "PlainText"
+        },
+        {
+          "slug": "skills-tags",
+          "name": "Skills tags",
+          "type": "PlainText"
+        },
+        {
+          "slug": "disc-type",
+          "name": "Disc type",
+          "type": "PlainText"
+        },
+        {
+          "slug": "english-level",
+          "name": "English level",
+          "type": "PlainText"
+        },
+        {
+          "slug": "employment-richtext",
+          "name": "Employment richtext",
+          "type": "RichText"
+        },
+        {
+          "slug": "education-richtext",
+          "name": "Education richtext",
+          "type": "RichText"
+        },
+        {
+          "slug": "slug",
+          "name": "Slug",
+          "type": "PlainText"
+        }
+      ]
+    },
+    "allFields": [
+      {
+        "id": "c28be8eee6068abbc9aa292c858217bf",
+        "name": "Main Category",
+        "slug": "main-category",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "1cced435999cdc44f9004f7472fdc340",
+        "name": "Experience (Years)",
+        "slug": "experience-years",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "9b3845e690d2bb02eb4cbcb49f6a82e8",
+        "name": "Languages",
+        "slug": "languages",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "0d1c3a6fa67d6b46886de36165336c5d",
+        "name": "Availability",
+        "slug": "availability",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "b3acf7488f08137bd61d7f9c05d7cceb",
+        "name": "Summary",
+        "slug": "summary",
+        "type": "RichText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "b60126d1ba1fe7e2eda4efbbe42176c8",
+        "name": "Tagline",
+        "slug": "tagline",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "b8f1627b40ddccc678b0720530981ecd",
+        "name": "Thumbnail Description",
+        "slug": "thumbnail-description",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "578e4c63d74b17d6ce971e166f784502",
+        "name": "VA Image",
+        "slug": "image",
+        "type": "Image",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "2e4b436d131cd14db90af348fd3580b7",
+        "name": "Profile Slug",
+        "slug": "profile-slug-2",
+        "type": "Link",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "7c6e77da5fd8cd9eb12c249f9b93db72",
+        "name": "Specialization",
+        "slug": "specialization",
+        "type": "MultiReference",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "collectionId": "691ccaf4f30e1de9a0437845"
+        }
+      },
+      {
+        "id": "44dbcc8d49927f09eed392ee3972264c",
+        "name": "Video",
+        "slug": "video",
+        "type": "Link",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "6459c72aa3554662500041c0779c8efd",
+        "name": "DISC Description",
+        "slug": "disc-description",
+        "type": "RichText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "4cc35b1bbf5c583f96e2092ead67ef60",
+        "name": "English Description",
+        "slug": "english-description",
+        "type": "RichText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "0d21638ee7003915de3533659a38f483",
+        "name": "Main Categories",
+        "slug": "main-categories",
+        "type": "MultiReference",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "collectionId": "691f65ddf62cb29a405fc022"
+        }
+      },
+      {
+        "id": "1ad00835a6a8cbb72ef08e2d9976e2ed",
+        "name": "Tools tags",
+        "slug": "tools-tags",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "01baf4553e329df5de70546261f50a99",
+        "name": "Equipment tags",
+        "slug": "equipment-tags",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "d03dcd63a37f23b051df350234dd70eb",
+        "name": "Skills tags",
+        "slug": "skills-tags",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "22739672d61b03f0cfc15f96d57df991",
+        "name": "Disc type",
+        "slug": "disc-type",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "c897f81fac39ca5d8740e3094e480b92",
+        "name": "English score",
+        "slug": "english-score",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "cd0ca8fdd82020b384e2bbc20fbd05c7",
+        "name": "English level",
+        "slug": "english-level",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "4101af40d6d2a4299d1637330b7b34ee",
+        "name": "Employment richtext",
+        "slug": "employment-richtext",
+        "type": "RichText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "8570ed113b0b88b441e106eda3a56476",
+        "name": "Education richtext",
+        "slug": "education-richtext",
+        "type": "RichText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {}
+      },
+      {
+        "id": "5b1119ba28150b2faa93ad16dbad344f",
+        "name": "Name",
+        "slug": "name",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "maxLength": 256
+        }
+      },
+      {
+        "id": "0ff45fc81fc21c63ab9dae485b5c79ef",
+        "name": "Slug",
+        "slug": "slug",
+        "type": "PlainText",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "maxLength": 256,
+          "pattern": {},
+          "messages": {
+            "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+            "maxLength": "Must be less than 256 characters"
+          }
+        }
+      }
+    ]
+  }
+}
