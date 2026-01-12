@@ -1,6 +1,6 @@
 # Webflow CMS Structure Audit Report
 
-**Generated**: 2026-01-09T21:58:54.421Z
+**Generated**: 2026-01-12T03:01:22.618Z
 **Site**: Ocean VA  (66e9b3f71eb321a17e92218a)
 
 ## Summary
@@ -11,10 +11,10 @@
 ### Virtual Assistants Collection
 
 - **Total Fields**: 24
-- **Existing (Matched)**: 12 ✅
-- **Missing (Required)**: 7 ❌
+- **Existing (Matched)**: 11 ✅
+- **Missing (Required)**: 8 ❌
 - **Optional (Alternatives)**: 5 ⚠️
-- **Unexpected**: 12 🔍
+- **Unexpected**: 13 🔍
 
 ## All Collections
 
@@ -358,11 +358,11 @@
 | Tools tags | `tools-tags` | PlainText |  |
 | Equipment tags | `equipment-tags` | PlainText |  |
 | Skills tags | `skills-tags` | PlainText |  |
-| Disc type | `disc-type` | PlainText |  |
-| English score | `english-score` | PlainText |  |
 | English level | `english-level` | PlainText |  |
 | Employment richtext | `employment-richtext` | RichText |  |
 | Education richtext | `education-richtext` | RichText |  |
+| Disc Type | `disc-type-2` | Option |  |
+| English score | `english-score-2` | Option |  |
 | Name | `name` | PlainText |  |
 | Slug | `slug` | PlainText |  |
 
@@ -500,7 +500,6 @@
 | Thumbnail Description | `thumbnail-description` | PlainText | ✅ |
 | Specialization | `specialization` | MultiReference | ✅ |
 | DISC Description | `disc-description` | RichText | ✅ |
-| English score | `english-score` | PlainText | ⚠️  Type mismatch |
 | English Description | `english-description` | RichText | ✅ |
 
 ### ❌ Missing Required Fields
@@ -508,6 +507,7 @@
 | Slug | Type | Reason |
 |------|------|--------|
 | `disc-badge` | Option | Required for form |
+| `english-score` | Option | Required for form |
 | `youtube-url` | PlainText | Required for form |
 | `skills-html` | RichText | Required for form |
 | `tools-html` | RichText | Required for form |
@@ -536,10 +536,11 @@
 | Tools tags | `tools-tags` | PlainText |
 | Equipment tags | `equipment-tags` | PlainText |
 | Skills tags | `skills-tags` | PlainText |
-| Disc type | `disc-type` | PlainText |
 | English level | `english-level` | PlainText |
 | Employment richtext | `employment-richtext` | RichText |
 | Education richtext | `education-richtext` | RichText |
+| Disc Type | `disc-type-2` | Option |
+| English score | `english-score-2` | Option |
 | Slug | `slug` | PlainText |
 
 ---

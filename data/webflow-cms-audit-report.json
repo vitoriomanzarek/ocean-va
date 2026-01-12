@@ -3,7 +3,7 @@
     "id": "66e9b3f71eb321a17e92218a",
     "name": "Ocean VA "
   },
-  "timestamp": "2026-01-09T21:58:54.421Z",
+  "timestamp": "2026-01-12T03:01:22.618Z",
   "collections": [
     {
       "id": "66fd75f68ed4864909f55c28",
@@ -2398,28 +2398,6 @@
           }
         },
         {
-          "id": "22739672d61b03f0cfc15f96d57df991",
-          "name": "Disc type",
-          "slug": "disc-type",
-          "type": "PlainText",
-          "required": false,
-          "isSystemField": false,
-          "validations": {
-            "singleLine": true
-          }
-        },
-        {
-          "id": "c897f81fac39ca5d8740e3094e480b92",
-          "name": "English score",
-          "slug": "english-score",
-          "type": "PlainText",
-          "required": false,
-          "isSystemField": false,
-          "validations": {
-            "singleLine": true
-          }
-        },
-        {
           "id": "cd0ca8fdd82020b384e2bbc20fbd05c7",
           "name": "English level",
           "slug": "english-level",
@@ -2447,6 +2425,84 @@
           "required": false,
           "isSystemField": false,
           "validations": {}
+        },
+        {
+          "id": "9b258b28ec8289d4131b2f55bf2ba327",
+          "name": "Disc Type",
+          "slug": "disc-type-2",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "D",
+                "id": "98fc52fe67a221da1b7ff13c642f9c86"
+              },
+              {
+                "name": "I",
+                "id": "6e45ac02de98a68482a875d8646ab49e"
+              },
+              {
+                "name": "S",
+                "id": "49ee7f5fd4baca315009cca5bb4cb60f"
+              },
+              {
+                "name": "C",
+                "id": "c612290ce9a805d70e5f8dd3d5870a21"
+              },
+              {
+                "name": "D+I",
+                "id": "b68c0c2b2f05478c7ffa034f4349ba80"
+              },
+              {
+                "name": "S=I",
+                "id": "83cbc127c3ccd02e1cb91bea429d21c0"
+              },
+              {
+                "name": "S+C",
+                "id": "66849bb5e3c9eca1b8d887bfec208b4d"
+              }
+            ]
+          },
+          "options": []
+        },
+        {
+          "id": "d551696ae97fda0d5b3a865d41c8f525",
+          "name": "English score",
+          "slug": "english-score-2",
+          "type": "Option",
+          "required": false,
+          "isSystemField": false,
+          "validations": {
+            "options": [
+              {
+                "name": "A1",
+                "id": "66d8fdbe6fba897cbc1bb499f225f121"
+              },
+              {
+                "name": "A2",
+                "id": "02523e7705544b05435c8f7666c68f0d"
+              },
+              {
+                "name": "B1",
+                "id": "302705840a6d7ec5d931f4a5cca05795"
+              },
+              {
+                "name": "B2",
+                "id": "360bc1947d62619a906e53112dcf0e76"
+              },
+              {
+                "name": "C1",
+                "id": "b80a164fdf113c3d5cdb350b80a0a0ea"
+              },
+              {
+                "name": "C2",
+                "id": "d682f96f93cabbce3617bdd771b2873e"
+              }
+            ]
+          },
+          "options": []
         },
         {
           "id": "5b1119ba28150b2faa93ad16dbad344f",
@@ -3000,11 +3056,11 @@
     "vaCollectionFound": true,
     "vaCollectionFields": {
       "total": 24,
-      "existing": 12,
-      "missing": 7,
-      "needed": 7,
+      "existing": 11,
+      "missing": 8,
+      "needed": 8,
       "optional": 5,
-      "unexpected": 12
+      "unexpected": 13
     }
   },
   "vaCollectionAnalysis": {
@@ -3083,13 +3139,6 @@
           "match": true
         },
         {
-          "slug": "english-score",
-          "name": "English score",
-          "type": "PlainText",
-          "expectedType": "Option",
-          "match": false
-        },
-        {
           "slug": "english-description",
           "name": "English Description",
           "type": "RichText",
@@ -3100,6 +3149,11 @@
       "missing": [
         {
           "slug": "disc-badge",
+          "type": "Option",
+          "reason": "Required for form"
+        },
+        {
+          "slug": "english-score",
           "type": "Option",
           "reason": "Required for form"
         },
@@ -3199,11 +3253,6 @@
           "type": "PlainText"
         },
         {
-          "slug": "disc-type",
-          "name": "Disc type",
-          "type": "PlainText"
-        },
-        {
           "slug": "english-level",
           "name": "English level",
           "type": "PlainText"
@@ -3217,6 +3266,16 @@
           "slug": "education-richtext",
           "name": "Education richtext",
           "type": "RichText"
+        },
+        {
+          "slug": "disc-type-2",
+          "name": "Disc Type",
+          "type": "Option"
+        },
+        {
+          "slug": "english-score-2",
+          "name": "English score",
+          "type": "Option"
         },
         {
           "slug": "slug",
@@ -3392,28 +3451,6 @@
         }
       },
       {
-        "id": "22739672d61b03f0cfc15f96d57df991",
-        "name": "Disc type",
-        "slug": "disc-type",
-        "type": "PlainText",
-        "required": false,
-        "isSystemField": false,
-        "validations": {
-          "singleLine": true
-        }
-      },
-      {
-        "id": "c897f81fac39ca5d8740e3094e480b92",
-        "name": "English score",
-        "slug": "english-score",
-        "type": "PlainText",
-        "required": false,
-        "isSystemField": false,
-        "validations": {
-          "singleLine": true
-        }
-      },
-      {
         "id": "cd0ca8fdd82020b384e2bbc20fbd05c7",
         "name": "English level",
         "slug": "english-level",
@@ -3441,6 +3478,84 @@
         "required": false,
         "isSystemField": false,
         "validations": {}
+      },
+      {
+        "id": "9b258b28ec8289d4131b2f55bf2ba327",
+        "name": "Disc Type",
+        "slug": "disc-type-2",
+        "type": "Option",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "options": [
+            {
+              "name": "D",
+              "id": "98fc52fe67a221da1b7ff13c642f9c86"
+            },
+            {
+              "name": "I",
+              "id": "6e45ac02de98a68482a875d8646ab49e"
+            },
+            {
+              "name": "S",
+              "id": "49ee7f5fd4baca315009cca5bb4cb60f"
+            },
+            {
+              "name": "C",
+              "id": "c612290ce9a805d70e5f8dd3d5870a21"
+            },
+            {
+              "name": "D+I",
+              "id": "b68c0c2b2f05478c7ffa034f4349ba80"
+            },
+            {
+              "name": "S=I",
+              "id": "83cbc127c3ccd02e1cb91bea429d21c0"
+            },
+            {
+              "name": "S+C",
+              "id": "66849bb5e3c9eca1b8d887bfec208b4d"
+            }
+          ]
+        },
+        "options": []
+      },
+      {
+        "id": "d551696ae97fda0d5b3a865d41c8f525",
+        "name": "English score",
+        "slug": "english-score-2",
+        "type": "Option",
+        "required": false,
+        "isSystemField": false,
+        "validations": {
+          "options": [
+            {
+              "name": "A1",
+              "id": "66d8fdbe6fba897cbc1bb499f225f121"
+            },
+            {
+              "name": "A2",
+              "id": "02523e7705544b05435c8f7666c68f0d"
+            },
+            {
+              "name": "B1",
+              "id": "302705840a6d7ec5d931f4a5cca05795"
+            },
+            {
+              "name": "B2",
+              "id": "360bc1947d62619a906e53112dcf0e76"
+            },
+            {
+              "name": "C1",
+              "id": "b80a164fdf113c3d5cdb350b80a0a0ea"
+            },
+            {
+              "name": "C2",
+              "id": "d682f96f93cabbce3617bdd771b2873e"
+            }
+          ]
+        },
+        "options": []
       },
       {
         "id": "5b1119ba28150b2faa93ad16dbad344f",
