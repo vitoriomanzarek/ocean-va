@@ -96,7 +96,6 @@ Fields:
 - availability (text input)
 - image (file upload)
 - video (text input - URL)
-- youtube-url (text input)
 - summary (rich text editor)
 - tagline (text input, required)
 - thumbnail-description (text area)
@@ -192,7 +191,6 @@ The form will:
 | languages | languages | PlainText |
 | availability | availability | PlainText |
 | video | video | Link |
-| youtube-url | youtube-url | PlainText |
 | summary | summary | RichText |
 | tagline | tagline | PlainText |
 | thumbnail-description | thumbnail-description | PlainText |

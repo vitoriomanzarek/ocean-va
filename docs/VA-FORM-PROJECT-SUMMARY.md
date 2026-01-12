@@ -71,8 +71,7 @@ A user-friendly form in Webflow where team members can:
 
 ## What Needs to Be Done
 
-### Phase 1: Minor CMS Updates (30 minutes)
-- Add one missing field (YouTube URL)
+### Phase 1: Minor CMS Updates (15-20 minutes)
 - Convert 2 text fields to dropdowns (DISC type, English score)
 
 ### Phase 2: Build the Form (4-6 hours)

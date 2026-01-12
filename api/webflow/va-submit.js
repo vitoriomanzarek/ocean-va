@@ -5,8 +5,7 @@
  * Creates/updates VA items in Webflow CMS
  */
 
-import dotenv from 'dotenv';
-dotenv.config();
+import 'dotenv/config';
 
 const WEBFLOW_API_BASE = 'https://api.webflow.com/v2';
 const VA_COLLECTION_ID = process.env.WEBFLOW_VA_COLLECTION_ID || '691b82a97542c69f3f77fa76';
@@ -26,7 +25,6 @@ const FIELD_MAPPING = {
   
   // Multimedia
   video: 'video',
-  'youtube-url': 'youtube-url',
   
   // Content
   summary: 'summary',

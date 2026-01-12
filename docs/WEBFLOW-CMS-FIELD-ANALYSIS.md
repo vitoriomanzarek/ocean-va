@@ -55,9 +55,7 @@
 
 ### ❌ Campos que FALTAN
 
-| Campo | Tipo | Prioridad | Notas |
-|-------|------|-----------|-------|
-| `youtube-url` | PlainText | **Alta** | Para links directos de YouTube (youtu.be) |
+Ninguno - todos los campos necesarios ya existen ✅
 
 ---
 
@@ -91,8 +89,7 @@ Estos campos existen en el CMS y pueden ser útiles:
 - image (Image)
 
 ✅ Multimedia:
-- video (Link) - Ya existe
-- youtube-url (PlainText) - **AGREGAR ESTE**
+- video (Link) - Ya existe ✅
 
 ✅ Contenido:
 - summary (RichText) - Ya existe
@@ -138,15 +135,7 @@ Si prefieres nombres más descriptivos, puedes:
 
 ## 🎯 RECOMENDACIONES FINALES
 
-### ✅ ACCIÓN 1: Agregar Campo Faltante (5 min)
-
-**Agregar en Webflow Designer**:
-- Campo: `youtube-url`
-- Tipo: PlainText
-- Slug: `youtube-url`
-- Descripción: "Direct YouTube URL (youtu.be format)"
-
-### ✅ ACCIÓN 2: Convertir Campos a Option Fields (15-20 min)
+### ✅ ACCIÓN 1: Convertir Campos a Option Fields (15-20 min)
 
 **En Webflow Designer**:
 
@@ -160,11 +149,11 @@ Si prefieres nombres más descriptivos, puedes:
    - Agregar opciones: `A1 - Beginner`, `A2 - Elementary`, `B1 - Intermediate`, `B2 - Upper-Intermediate`, `C1 - Advanced`, `C2 - Proficient`
    - Migrar datos existentes (si los hay)
 
-3. **Decidir sobre `english-level`**:
+2. **Decidir sobre `english-level`**:
    - Si es duplicado de `english-score`, eliminarlo
    - O mantenerlo si tiene propósito diferente
 
-### ✅ ACCIÓN 3: Decidir sobre Skills/Tools/Equipment
+### ✅ ACCIÓN 2: Decidir sobre Skills/Tools/Equipment
 
 **Opción A: Mantener como PlainText** (Más simple)
 - Usar `skills-tags`, `tools-tags`, `equipment-tags` como listas separadas por comas
@@ -194,8 +183,7 @@ const FORM_FIELD_MAPPING = {
   image: 'image',
   
   // Multimedia
-  videoUrl: 'video', // Ya existe como Link
-  youtubeUrl: 'youtube-url', // AGREGAR
+  videoUrl: 'video', // Ya existe como Link ✅
   
   // Content
   summary: 'summary',
@@ -232,9 +220,8 @@ const FORM_FIELD_MAPPING = {
 
 ## ✅ CHECKLIST DE IMPLEMENTACIÓN
 
-### Fase 1: Ajustes en CMS (20-30 min)
+### Fase 1: Ajustes en CMS (15-20 min)
 
-- [ ] Agregar campo `youtube-url` (PlainText)
 - [ ] Convertir `disc-type` a Option field con opciones: D, I, S, C, D+I, S+I, S+C
 - [ ] Convertir `english-score` a Option field con opciones: A1, A2, B1, B2, C1, C2
 - [ ] Decidir qué hacer con `english-level` (eliminar o mantener)
@@ -258,11 +245,11 @@ const FORM_FIELD_MAPPING = {
 
 ## 🎉 CONCLUSIÓN
 
-**¡Excelente noticia!** Ya tienes el 95% de los campos configurados. Solo necesitas:
+**¡Excelente noticia!** Ya tienes el 100% de los campos necesarios configurados. Solo necesitas:
 
-1. ✅ **Agregar 1 campo**: `youtube-url`
-2. ✅ **Convertir 2 campos** a Option: `disc-type`, `english-score`
-3. ✅ **Decidir sobre** `skills-tags`, `tools-tags`, `equipment-tags` (mantener como están está bien)
+1. ✅ **Convertir 2 campos** a Option: `disc-type`, `english-score`
+2. ✅ **Decidir sobre** `skills-tags`, `tools-tags`, `equipment-tags` (mantener como están está bien)
+3. ✅ **Decidir sobre** `english-level` (eliminar o mantener)
 
 **Las collections de Employment y Education ya existen** (aunque están vacías), pero como estás usando `employment-richtext` y `education-richtext` como RichText, **no necesitas las collections separadas** para el enfoque HTML. Perfecto! 👍
 

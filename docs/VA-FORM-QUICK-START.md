@@ -22,11 +22,6 @@ These changes must be done in **Webflow Designer** (CMS Settings). The API doesn
 
 **In Webflow Designer → CMS → Virtual Assistants Collection:**
 
-- [ ] **Add field**: `youtube-url` (PlainText)
-  - Display Name: "YouTube URL"
-  - Slug: `youtube-url`
-  - Type: Plain Text
-  
 - [ ] **Convert field**: `disc-type` (PlainText → Option)
   - Current: PlainText
   - Change to: Option field
