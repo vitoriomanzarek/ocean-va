@@ -1,0 +1,344 @@
+/* VA Onboarding Form Styles */
+/* Consistent with VA Profile Pages */
+
+.va-form-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #0B9B8F 0%,
+    #067A8F 25%,
+    #045C8B 50%,
+    #034563 75%,
+    #011F2A 100%
+  );
+  padding: 48px 16px 128px;
+}
+
+.va-form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.va-form-header {
+  margin-bottom: 48px;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 24px;
+}
+
+.va-form-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.va-form-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Form */
+.va-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Sections */
+.va-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.va-form-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.va-form-section-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin: -16px 0 0 0;
+}
+
+/* Form Rows */
+.va-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .va-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Fields */
+.va-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.va-form-field-full {
+  grid-column: 1 / -1;
+}
+
+.va-form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.va-form-required {
+  color: #ef4444;
+}
+
+.va-form-input,
+.va-form-textarea,
+.va-form-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.va-form-input:focus,
+.va-form-textarea:focus,
+.va-form-select:focus {
+  outline: none;
+  border-color: #0B9B8F;
+  box-shadow: 0 0 0 3px rgba(11, 155, 143, 0.1);
+}
+
+.va-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.va-form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.va-form-help {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: -4px;
+}
+
+/* Dynamic Entries (Employment, Education) */
+.va-form-dynamic-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.va-dynamic-entry {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+}
+
+.va-dynamic-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.va-dynamic-entry-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.va-dynamic-entry-remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.va-dynamic-entry-remove:hover {
+  background: #dc2626;
+}
+
+.va-dynamic-entry-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Buttons */
+.va-form-btn-primary,
+.va-form-btn-secondary {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+}
+
+.va-form-btn-primary {
+  background: #0B9B8F;
+  color: white;
+}
+
+.va-form-btn-primary:hover {
+  background: #0a8a7f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(11, 155, 143, 0.3);
+}
+
+.va-form-btn-primary:active {
+  transform: translateY(0);
+}
+
+.va-form-btn-secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 2px solid #d1d5db;
+}
+
+.va-form-btn-secondary:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+/* Form Actions */
+.va-form-actions {
+  margin-top: 16px;
+  padding-top: 32px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.va-form-actions-container {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .va-form-actions-container {
+    flex-direction: column-reverse;
+  }
+  
+  .va-form-btn-primary,
+  .va-form-btn-secondary {
+    width: 100%;
+  }
+}
+
+/* Messages */
+.va-form-messages {
+  margin-top: 24px;
+}
+
+.va-form-message {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.va-form-message-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.va-form-message-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.va-form-message-info {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #3b82f6;
+}
+
+/* Loading State */
+.va-form-submitting {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.va-form-submitting .va-form-btn-primary {
+  position: relative;
+  color: transparent;
+}
+
+.va-form-submitting .va-form-btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .va-form-container {
+    padding: 32px 24px;
+  }
+
+  .va-form-title {
+    font-size: 28px;
+  }
+
+  .va-form-section-title {
+    font-size: 20px;
+  }
+}
+

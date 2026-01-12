@@ -147,9 +147,9 @@
     }
 
     initEmploymentSection() {
-      const addBtn = this.form.querySelector('[data-action="add-employment"]');
-      const container = this.form.querySelector('[data-container="employment-entries"]');
-      const hiddenInput = this.form.querySelector('[name="employment-richtext"]');
+      const addBtn = this.form.querySelector('#add-employment');
+      const container = this.form.querySelector('#employment-entries');
+      const hiddenInput = this.form.querySelector('#employment-richtext');
 
       if (!addBtn || !container || !hiddenInput) {
         log('Employment section elements not found');
@@ -160,9 +160,9 @@
     }
 
     initEducationSection() {
-      const addBtn = this.form.querySelector('[data-action="add-education"]');
-      const container = this.form.querySelector('[data-container="education-entries"]');
-      const hiddenInput = this.form.querySelector('[name="education-richtext"]');
+      const addBtn = this.form.querySelector('#add-education');
+      const container = this.form.querySelector('#education-entries');
+      const hiddenInput = this.form.querySelector('#education-richtext');
 
       if (!addBtn || !container || !hiddenInput) {
         log('Education section elements not found');
@@ -175,18 +175,31 @@
     addEmploymentEntry(container, hiddenInput) {
       const entryId = 'emp-' + Date.now();
       const entryHTML = `
-        <div class="employment-entry-item" data-entry-id="${entryId}">
-          <div class="form-row">
-            <input type="text" name="emp-company-${entryId}" placeholder="Company Name" required>
-            <input type="text" name="emp-position-${entryId}" placeholder="Position" required>
+        <div class="va-dynamic-entry" data-entry-id="${entryId}">
+          <div class="va-dynamic-entry-header">
+            <h3 class="va-dynamic-entry-title">Employment Entry</h3>
+            <button type="button" class="va-dynamic-entry-remove" data-remove-entry="${entryId}">Remove</button>
           </div>
-          <div class="form-row">
-            <input type="text" name="emp-period-${entryId}" placeholder="Period (e.g., 2020-2023)" required>
+          <div class="va-dynamic-entry-fields">
+            <div class="va-form-row">
+              <div class="va-form-field">
+                <label class="va-form-label">Company</label>
+                <input type="text" name="emp-company-${entryId}" class="va-form-input" placeholder="Company Name" required>
+              </div>
+              <div class="va-form-field">
+                <label class="va-form-label">Position</label>
+                <input type="text" name="emp-position-${entryId}" class="va-form-input" placeholder="Job Title" required>
+              </div>
+            </div>
+            <div class="va-form-field va-form-field-full">
+              <label class="va-form-label">Period</label>
+              <input type="text" name="emp-period-${entryId}" class="va-form-input" placeholder="e.g., 2020 - 2023" required>
+            </div>
+            <div class="va-form-field va-form-field-full">
+              <label class="va-form-label">Description</label>
+              <textarea name="emp-description-${entryId}" class="va-form-textarea" rows="4" placeholder="Responsibilities and achievements..."></textarea>
+            </div>
           </div>
-          <div class="form-row">
-            <textarea name="emp-description-${entryId}" placeholder="Description" rows="3"></textarea>
-          </div>
-          <button type="button" class="remove-entry" data-remove-entry="${entryId}">Remove</button>
         </div>
       `;
 
@@ -211,15 +224,27 @@
     addEducationEntry(container, hiddenInput) {
       const entryId = 'edu-' + Date.now();
       const entryHTML = `
-        <div class="education-entry-item" data-entry-id="${entryId}">
-          <div class="form-row">
-            <input type="text" name="edu-school-${entryId}" placeholder="School Name" required>
-            <input type="text" name="edu-degree-${entryId}" placeholder="Degree" required>
+        <div class="va-dynamic-entry" data-entry-id="${entryId}">
+          <div class="va-dynamic-entry-header">
+            <h3 class="va-dynamic-entry-title">Education Entry</h3>
+            <button type="button" class="va-dynamic-entry-remove" data-remove-entry="${entryId}">Remove</button>
           </div>
-          <div class="form-row">
-            <input type="text" name="edu-year-${entryId}" placeholder="Year" required>
+          <div class="va-dynamic-entry-fields">
+            <div class="va-form-row">
+              <div class="va-form-field">
+                <label class="va-form-label">School</label>
+                <input type="text" name="edu-school-${entryId}" class="va-form-input" placeholder="School Name" required>
+              </div>
+              <div class="va-form-field">
+                <label class="va-form-label">Degree</label>
+                <input type="text" name="edu-degree-${entryId}" class="va-form-input" placeholder="Degree/Certification" required>
+              </div>
+            </div>
+            <div class="va-form-field va-form-field-full">
+              <label class="va-form-label">Year</label>
+              <input type="text" name="edu-year-${entryId}" class="va-form-input" placeholder="e.g., 2020" required>
+            </div>
           </div>
-          <button type="button" class="remove-entry" data-remove-entry="${entryId}">Remove</button>
         </div>
       `;
 

@@ -1,0 +1,366 @@
+<!--
+  VA Onboarding Form - Custom Code for Webflow
+  
+  Instructions:
+  1. Create a new page in Webflow (e.g., "VA Onboarding" or "Add New VA")
+  2. Add a Section/Div with ID: "va-form-container"
+  3. In Page Settings > Custom Code > Footer Code, add the JavaScript from va-form-script.js
+  4. In Page Settings > Custom Code > Head Code, add the CSS from va-form-styles.css
+  5. This HTML structure should be added inside the #va-form-container div
+  
+  Alternative: You can also paste this entire HTML structure directly into a Rich Text element
+  or embed it as an HTML embed in Webflow Designer.
+-->
+
+<div id="va-form-wrapper" class="va-form-wrapper">
+  <div class="va-form-container">
+    <header class="va-form-header">
+      <h1 class="va-form-title">Add New Virtual Assistant</h1>
+      <p class="va-form-subtitle">Complete all required fields to add a new VA to the system</p>
+    </header>
+
+    <form id="va-form" class="va-form">
+      
+      <!-- Basic Information Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Basic Information</h2>
+        
+        <div class="va-form-row">
+          <div class="va-form-field va-form-field-full">
+            <label for="va-name" class="va-form-label">
+              Name <span class="va-form-required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="va-name" 
+              name="name" 
+              class="va-form-input" 
+              required 
+              placeholder="Enter full name"
+            />
+          </div>
+        </div>
+
+        <div class="va-form-row">
+          <div class="va-form-field">
+            <label for="va-main-category" class="va-form-label">
+              Main Category
+            </label>
+            <input 
+              type="text" 
+              id="va-main-category" 
+              name="mainCategory" 
+              class="va-form-input" 
+              placeholder="e.g., Insurance VA"
+            />
+          </div>
+
+          <div class="va-form-field">
+            <label for="va-experience-years" class="va-form-label">
+              Experience (Years)
+            </label>
+            <input 
+              type="text" 
+              id="va-experience-years" 
+              name="experienceYears" 
+              class="va-form-input" 
+              placeholder="e.g., 5+ years"
+            />
+          </div>
+        </div>
+
+        <div class="va-form-row">
+          <div class="va-form-field">
+            <label for="va-languages" class="va-form-label">
+              Languages
+            </label>
+            <input 
+              type="text" 
+              id="va-languages" 
+              name="languages" 
+              class="va-form-input" 
+              placeholder="e.g., English, Spanish"
+            />
+          </div>
+
+          <div class="va-form-field">
+            <label for="va-availability" class="va-form-label">
+              Availability
+            </label>
+            <input 
+              type="text" 
+              id="va-availability" 
+              name="availability" 
+              class="va-form-input" 
+              placeholder="e.g., Full Time"
+            />
+          </div>
+        </div>
+
+        <div class="va-form-row">
+          <div class="va-form-field">
+            <label for="va-image" class="va-form-label">
+              Image URL
+            </label>
+            <input 
+              type="url" 
+              id="va-image" 
+              name="image" 
+              class="va-form-input" 
+              placeholder="https://example.com/image.jpg"
+            />
+            <small class="va-form-help">URL to the VA's profile image</small>
+          </div>
+
+          <div class="va-form-field">
+            <label for="va-video" class="va-form-label">
+              Video URL
+            </label>
+            <input 
+              type="url" 
+              id="va-video" 
+              name="video" 
+              class="va-form-input" 
+              placeholder="https://youtu.be/VIDEO_ID"
+            />
+            <small class="va-form-help">YouTube or video URL</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Content</h2>
+        
+        <div class="va-form-field va-form-field-full">
+          <label for="va-summary" class="va-form-label">
+            Summary <span class="va-form-required">*</span>
+          </label>
+          <textarea 
+            id="va-summary" 
+            name="summary" 
+            class="va-form-textarea" 
+            rows="6" 
+            required
+            placeholder="Enter a comprehensive summary of the VA's background, skills, and experience..."
+          ></textarea>
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-tagline" class="va-form-label">
+            Tagline <span class="va-form-required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="va-tagline" 
+            name="tagline" 
+            class="va-form-input" 
+            required
+            placeholder="Short, compelling tagline (e.g., Expert Insurance Virtual Assistant)"
+          />
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-thumbnail-description" class="va-form-label">
+            Thumbnail Description
+          </label>
+          <textarea 
+            id="va-thumbnail-description" 
+            name="thumbnailDescription" 
+            class="va-form-textarea" 
+            rows="3"
+            placeholder="Brief description for card thumbnails..."
+          ></textarea>
+        </div>
+      </section>
+
+      <!-- Skills, Tools, Equipment Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Skills, Tools & Equipment</h2>
+        
+        <div class="va-form-field va-form-field-full">
+          <label for="va-skills" class="va-form-label">
+            Skills
+          </label>
+          <input 
+            type="text" 
+            id="va-skills" 
+            name="skills" 
+            class="va-form-input" 
+            placeholder="Comma-separated list (e.g., Customer Service, Sales, Data Entry)"
+          />
+          <small class="va-form-help">Separate multiple skills with commas</small>
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-tools" class="va-form-label">
+            Tools & Platforms
+          </label>
+          <input 
+            type="text" 
+            id="va-tools" 
+            name="tools" 
+            class="va-form-input" 
+            placeholder="Comma-separated list (e.g., Asana, Monday.com, Slack)"
+          />
+          <small class="va-form-help">Separate multiple tools with commas</small>
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-equipment" class="va-form-label">
+            Equipment
+          </label>
+          <input 
+            type="text" 
+            id="va-equipment" 
+            name="equipment" 
+            class="va-form-input" 
+            placeholder="Comma-separated list (e.g., Laptop, Headset, Monitor)"
+          />
+          <small class="va-form-help">Separate multiple items with commas</small>
+        </div>
+      </section>
+
+      <!-- Employment History Section (Dynamic) -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Employment History</h2>
+        <p class="va-form-section-description">Add one or more employment entries</p>
+        
+        <div id="employment-entries" class="va-form-dynamic-entries">
+          <!-- Employment entries will be added here dynamically -->
+        </div>
+        
+        <input type="hidden" name="employment-richtext" id="employment-richtext" />
+        
+        <button type="button" id="add-employment" class="va-form-btn-secondary">
+          + Add Employment Entry
+        </button>
+      </section>
+
+      <!-- Education Section (Dynamic) -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Education</h2>
+        <p class="va-form-section-description">Add one or more education entries</p>
+        
+        <div id="education-entries" class="va-form-dynamic-entries">
+          <!-- Education entries will be added here dynamically -->
+        </div>
+        
+        <input type="hidden" name="education-richtext" id="education-richtext" />
+        
+        <button type="button" id="add-education" class="va-form-btn-secondary">
+          + Add Education Entry
+        </button>
+      </section>
+
+      <!-- DISC Assessment Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">DISC Assessment</h2>
+        
+        <div class="va-form-row">
+          <div class="va-form-field">
+            <label for="va-disc-type" class="va-form-label">
+              DISC Type
+            </label>
+            <select id="va-disc-type" name="discType" class="va-form-select">
+              <option value="">Select DISC Type</option>
+              <option value="D">D</option>
+              <option value="I">I</option>
+              <option value="S">S</option>
+              <option value="C">C</option>
+              <option value="D+I">D+I</option>
+              <option value="S+I">S+I</option>
+              <option value="S+C">S+C</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-disc-description" class="va-form-label">
+            DISC Description
+          </label>
+          <textarea 
+            id="va-disc-description" 
+            name="discDescription" 
+            class="va-form-textarea" 
+            rows="4"
+            placeholder="Describe the VA's DISC profile..."
+          ></textarea>
+        </div>
+      </section>
+
+      <!-- English Proficiency Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">English Proficiency</h2>
+        
+        <div class="va-form-row">
+          <div class="va-form-field">
+            <label for="va-english-score" class="va-form-label">
+              English Score
+            </label>
+            <select id="va-english-score" name="englishScore" class="va-form-select">
+              <option value="">Select English Level</option>
+              <option value="A1">A1 - Beginner</option>
+              <option value="A2">A2 - Elementary</option>
+              <option value="B1">B1 - Intermediate</option>
+              <option value="B2">B2 - Upper-Intermediate</option>
+              <option value="C1">C1 - Advanced</option>
+              <option value="C2">C2 - Proficient</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="va-form-field va-form-field-full">
+          <label for="va-english-description" class="va-form-label">
+            English Description
+          </label>
+          <textarea 
+            id="va-english-description" 
+            name="englishDescription" 
+            class="va-form-textarea" 
+            rows="4"
+            placeholder="Describe the VA's English proficiency..."
+          ></textarea>
+        </div>
+      </section>
+
+      <!-- Specializations Section -->
+      <section class="va-form-section">
+        <h2 class="va-form-section-title">Specializations</h2>
+        <p class="va-form-section-description">
+          Specializations will be handled via multi-reference in the CMS. 
+          This field is for reference only.
+        </p>
+        <div class="va-form-field va-form-field-full">
+          <label for="va-specializations-note" class="va-form-label">
+            Note
+          </label>
+          <input 
+            type="text" 
+            id="va-specializations-note" 
+            name="specializationsNote" 
+            class="va-form-input" 
+            disabled
+            value="Specializations are managed in Webflow CMS after creation"
+          />
+        </div>
+      </section>
+
+      <!-- Form Actions -->
+      <section class="va-form-section va-form-actions">
+        <div class="va-form-actions-container">
+          <button type="button" id="va-form-preview" class="va-form-btn-secondary">
+            Preview
+          </button>
+          <button type="submit" id="va-form-submit" class="va-form-btn-primary">
+            Submit & Create VA
+          </button>
+        </div>
+      </section>
+
+      <!-- Success/Error Messages -->
+      <div id="va-form-messages" class="va-form-messages"></div>
+    </form>
+  </div>
+</div>
+
