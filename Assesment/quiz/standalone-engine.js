@@ -1073,8 +1073,8 @@ function getFreeResourceSection(profile, overallScore) {
   const resource = resources[profile] || resources.D;
   
   return `
-    <div style="background:#ffffff;padding:80px 40px;margin-top:64px;">
-      <div style="max-width:1400px;margin:0 auto;">
+    <div style="background:#ffffff;padding:80px 56px;margin-top:64px;">
+      <div style="max-width:1400px;margin:0 auto;padding:0 32px;">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
           <!-- Left: Text Content -->
           <div>
@@ -1093,7 +1093,7 @@ function getFreeResourceSection(profile, overallScore) {
           </div>
           
           <!-- Right: Image -->
-          <div style="position:relative;width:100%;">
+          <div style="position:relative;width:100%;padding-left:20px;">
             <div style="width:100%;height:400px;background:#e6fffe;border-radius:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 40px rgba(0,0,0,0.1);border:2px solid #05bfb9;padding:16px;position:relative;overflow:hidden;">
               <img src="${resource.imagePath}" alt="${resource.subtitle}" style="width:100%;height:100%;object-fit:contain;display:block;" 
                    onerror="this.onerror=null; const fallback = document.createElement('div'); fallback.style.cssText='text-align:center;color:#049d98;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;'; fallback.innerHTML='<div style=\\'font-size:64px;margin-bottom:16px;\\'>${resource.imagePlaceholder.includes('PDF') ? '📄' : resource.imagePlaceholder.includes('Guide') ? '📥' : resource.imagePlaceholder.includes('Case') ? '📊' : '📚'}</div><p style=\\'font-size:16px;font-weight:600;color:#374151;margin:0;\\'>${resource.imagePlaceholder.replace(/[📄📥📚🚨📊]/g, '').trim()}</p>'; this.parentElement.replaceChild(fallback, this);" />
