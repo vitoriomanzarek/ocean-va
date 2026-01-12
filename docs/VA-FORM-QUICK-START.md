@@ -9,7 +9,7 @@
 
 Based on the audit, we need to:
 
-1. **Update 3 fields in Webflow** (5-10 minutes, manual)
+1. **Convert 2 fields in Webflow** (5-10 minutes, manual)
 2. **Build the form structure** (main development work)
 
 ---
@@ -69,7 +69,7 @@ Once fields are updated, we have two approaches:
 
 ## 📝 Next Immediate Actions
 
-1. **You**: Update the 3 fields in Webflow (5-10 min)
+1. **You**: Convert the 2 fields in Webflow (5-10 min)
 2. **Me**: Start building the form structure and custom code
 3. **Together**: Test and iterate
 
