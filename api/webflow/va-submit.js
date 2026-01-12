@@ -20,7 +20,7 @@ const FIELD_MAPPING = {
   'main-category': 'main-category',
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
-  languages: 'languages',
+  language: 'language', // Option field (Bilingual (EN-ES), English)
   availability: 'availability',
   
   // Multimedia
