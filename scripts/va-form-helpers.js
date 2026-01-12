@@ -261,3 +261,67 @@ export function formatDataForWebflow(formData) {
   return webflowData;
 }
 
+/**
+ * DISC Type descriptions
+ * Pre-filled descriptions for each DISC personality type
+ */
+export const DISC_DESCRIPTIONS = {
+  'D': 'Dominance (D) - Direct, decisive, and results-oriented. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
+  'I': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+  'S': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
+  'C': 'Conscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
+  'D+I': 'Dominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+  'S+I': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+  'S+C': 'Steadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.'
+};
+
+/**
+ * English Score descriptions
+ * Pre-filled descriptions for each English proficiency level
+ */
+export const ENGLISH_DESCRIPTIONS = {
+  'A1': 'Can understand and use familiar everyday expressions and basic questions about personal details. Pronunciation is generally clear, and basic vocabulary is used effectively.',
+  'A2': 'Can have very short social exchanges and give information on familiar and routine matters when traveling. Pronunciation is understandable, with basic grammar and vocabulary.',
+  'B1': 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages. Speaks clearly with good control of basic grammar and vocabulary. Pronunciation is generally clear, and ideas are communicated with confidence and coherence.',
+  'B2': 'Can communicate confidently in a variety of academic and professional environments. Speaks confidently with clear pronunciation and well-structured, fluent speech. Uses a broad range of vocabulary and grammar to express ideas effectively in both casual and professional contexts.',
+  'C1': 'Can use the language flexibly and effectively for social, academic and professional purposes. Communicates with exceptional fluency and clarity, using natural pronunciation and smooth, well-structured speech. Demonstrates advanced vocabulary and precise grammar control, effectively expressing complex and nuanced ideas.',
+  'C2': 'Can interact with ease and can differentiate their shades of meaning. Shows exceptional fluency and pronunciation with native-like accuracy and natural intonation. Uses a rich and precise vocabulary along with flawless grammar to express complex ideas effortlessly and with sophistication.'
+};
+
+/**
+ * CEFR Level descriptions
+ * Standard descriptions for Common European Framework of Reference
+ */
+const CEFR_DESCRIPTIONS = {
+  'A1': 'Can understand and use familiar everyday expressions and basic questions about personal details.',
+  'A2': 'Can have very short social exchanges and give information on familiar and routine matters when traveling.',
+  'B1': 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages.',
+  'B2': 'Can communicate confidently in a variety of academic and professional environments.',
+  'C1': 'Can use the language flexibly and effectively for social, academic and professional purposes.',
+  'C2': 'Can interact with ease and can differentiate their shades of meaning.'
+};
+
+/**
+ * Generate CEFR HTML table
+ * Creates HTML structure for CEFR levels with active level highlighted
+ * @param {string} activeLevel - Active CEFR level (A1, A2, B1, B2, C1, C2)
+ * @returns {string} HTML string
+ */
+export function generateCEFRHTML(activeLevel) {
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  
+  const items = levels.map(level => {
+    const isActive = level === activeLevel;
+    const bubbleClass = isActive ? 'va-cefr-bubble-active' : 'va-cefr-bubble-inactive';
+    const description = CEFR_DESCRIPTIONS[level] || '';
+    
+    return `
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div>
+          <p class="va-cefr-description">${escapeHtml(description)}</p>
+        </div>`;
+  }).join('\n');
+
+  return `<div class="va-cefr-grid">\n${items}\n      </div>`;
+}
+

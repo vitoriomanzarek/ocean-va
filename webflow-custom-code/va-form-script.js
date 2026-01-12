@@ -142,6 +142,9 @@
       // Initialize education section
       this.initEducationSection();
 
+      // Initialize auto-complete features
+      this.initAutoComplete();
+
       // Handle form submission
       this.form.addEventListener('submit', (e) => this.handleSubmit(e));
     }
