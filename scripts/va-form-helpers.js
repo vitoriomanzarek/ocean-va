@@ -219,11 +219,11 @@ export function formatDataForWebflow(formData) {
     education: 'education-richtext',
     
     // DISC
-    discType: 'disc-type',
+    discType: 'disc-type-2',
     discDescription: 'disc-description',
     
     // English
-    englishScore: 'english-score',
+    englishScore: 'english-score-2',
     englishDescription: 'english-description',
   };
 

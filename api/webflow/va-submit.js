@@ -41,11 +41,11 @@ const FIELD_MAPPING = {
   'education-richtext': 'education-richtext',
   
   // DISC
-  'disc-type': 'disc-type',
+  'disc-type': 'disc-type-2',
   'disc-description': 'disc-description',
   
   // English
-  'english-score': 'english-score',
+  'english-score': 'english-score-2',
   'english-description': 'english-description',
   
   // Specializations (Multi-reference)
