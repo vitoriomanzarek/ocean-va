@@ -199,7 +199,7 @@ async function createVAItem(data) {
     {
       ...formattedData,
       isArchived: false,
-      isDraft: false,
+      isDraft: true, // Create as draft - requires manual review before publishing
     }
   );
 
@@ -212,10 +212,16 @@ async function createVAItem(data) {
 async function updateVAItem(itemId, data) {
   const formattedData = formatDataForWebflow(data);
   
+  // When updating, set as draft to require review
+  const updateData = {
+    ...formattedData,
+    isDraft: true, // Update to draft - requires manual review before publishing
+  };
+  
   const response = await webflowRequest(
     `/collections/${VA_COLLECTION_ID}/items/${itemId}`,
     'PATCH',
-    formattedData
+    updateData
   );
 
   return response;
