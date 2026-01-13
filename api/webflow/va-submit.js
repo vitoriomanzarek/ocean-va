@@ -89,17 +89,40 @@ async function webflowRequest(endpoint, method = 'GET', body = null) {
   }
 
   const response = await fetch(url, options);
-
+  
+  // Get response text first to see raw response
+  const responseText = await response.text();
+  
   if (!response.ok) {
-    const error = await response.json().catch(() => ({ message: response.statusText }));
-    const errorDetails = error.errors || error.message || response.statusText;
+    let error;
+    try {
+      error = JSON.parse(responseText);
+    } catch (e) {
+      error = { message: responseText || response.statusText };
+    }
+    
+    // Log complete error response
+    console.error('=== WEBFLOW API ERROR ===');
+    console.error('Status:', response.status);
+    console.error('URL:', url);
+    console.error('Method:', method);
+    console.error('Request Body:', body ? JSON.stringify(body, null, 2) : 'No body');
+    console.error('Response Text (raw):', responseText);
+    console.error('Parsed Error:', JSON.stringify(error, null, 2));
+    console.error('Error Keys:', Object.keys(error));
+    if (error.errors) {
+      console.error('Error Details Array:', JSON.stringify(error.errors, null, 2));
+    }
+    console.error('========================');
+    
+    const errorDetails = error.errors || error.message || error.msg || responseText || response.statusText;
     const errorMessage = typeof errorDetails === 'string' 
       ? errorDetails 
       : JSON.stringify(errorDetails, null, 2);
     throw new Error(`Webflow API error: ${response.status} - ${errorMessage}`);
   }
 
-  return response.json();
+  return JSON.parse(responseText);
 }
 
 /**
