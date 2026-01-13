@@ -36,7 +36,7 @@
               name="name" 
               class="va-form-input" 
               required 
-              placeholder="Enter full name"
+              placeholder="Enter name"
             />
           </div>
         </div>
@@ -46,13 +46,14 @@
             <label for="va-main-category" class="va-form-label">
               Main Category
             </label>
-            <input 
-              type="text" 
-              id="va-main-category" 
-              name="mainCategory" 
-              class="va-form-input" 
-              placeholder="e.g., Insurance VA"
-            />
+            <select id="va-main-category" name="mainCategory" class="va-form-select">
+              <option value="">Select Main Category</option>
+              <option value="Executive Virtual Assistant">Executive Virtual Assistant</option>
+              <option value="Healthcare Virtual Assistant">Healthcare Virtual Assistant</option>
+              <option value="Insurance Virtual Assistant">Insurance Virtual Assistant</option>
+              <option value="Marketing Virtual Assistant">Marketing Virtual Assistant</option>
+              <option value="Mortgage Specialist">Mortgage Specialist</option>
+            </select>
           </div>
 
           <div class="va-form-field">
@@ -85,13 +86,12 @@
             <label for="va-availability" class="va-form-label">
               Availability
             </label>
-            <input 
-              type="text" 
-              id="va-availability" 
-              name="availability" 
-              class="va-form-input" 
-              placeholder="e.g., Full Time"
-            />
+            <select id="va-availability" name="availability" class="va-form-select">
+              <option value="">Select Availability</option>
+              <option value="Full Time">Full Time</option>
+              <option value="Part Time">Part Time</option>
+              <option value="Assigned">Assigned</option>
+            </select>
           </div>
         </div>
 
