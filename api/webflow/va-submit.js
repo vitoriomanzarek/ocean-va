@@ -22,7 +22,8 @@ const FIELD_MAPPING = {
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
   'experienceYears': 'experience-years', // Support camelCase from form
-  language: 'language', // Option field (Bilingual (EN-ES), English)
+  language: 'languages', // Map to 'languages' field (PlainText) - the actual field in CMS
+  languages: 'languages', // PlainText field
   availability: 'availability',
   
   // Multimedia
@@ -131,10 +132,24 @@ async function webflowRequest(endpoint, method = 'GET', body = null) {
 function formatDataForWebflow(formData) {
   const fieldData = {};
 
+  // Handle language field: convert 'language' to 'languages' (PlainText)
+  // The CMS has 'languages' as PlainText, not 'language' as Option
+  if (formData.language && !formData.languages) {
+    formData.languages = formData.language;
+  }
+  // Remove 'language' if present to avoid sending it
+  const cleanedData = { ...formData };
+  delete cleanedData.language;
+
   // Map each field
   Object.keys(FIELD_MAPPING).forEach(formKey => {
+    // Skip 'language' field - we handle it separately
+    if (formKey === 'language') {
+      return;
+    }
+    
     const webflowSlug = FIELD_MAPPING[formKey];
-    const value = formData[formKey];
+    const value = cleanedData[formKey];
 
     // Skip empty values
     if (value === undefined || value === null || value === '') {
