@@ -92,7 +92,11 @@ async function webflowRequest(endpoint, method = 'GET', body = null) {
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({ message: response.statusText }));
-    throw new Error(`Webflow API error: ${response.status} - ${error.message || response.statusText}`);
+    const errorDetails = error.errors || error.message || response.statusText;
+    const errorMessage = typeof errorDetails === 'string' 
+      ? errorDetails 
+      : JSON.stringify(errorDetails, null, 2);
+    throw new Error(`Webflow API error: ${response.status} - ${errorMessage}`);
   }
 
   return response.json();
@@ -244,6 +248,8 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('Error processing VA form:', error);
+    console.error('Error stack:', error.stack);
+    console.error('Form data received:', JSON.stringify(req.body, null, 2));
     return res.status(500).json({
       error: 'Internal server error',
       message: error.message || 'Failed to process VA form submission'
