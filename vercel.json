@@ -9,6 +9,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -20,6 +24,10 @@
     {
       "src": "/api/quiz/(.*)",
       "dest": "/Assesment/api/quiz/$1.js"
+    },
+    {
+      "src": "/api/webflow/(.*)",
+      "dest": "/api/webflow/$1.js"
     },
     {
       "src": "/quiz/instructions",

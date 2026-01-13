@@ -18,23 +18,30 @@ const FIELD_MAPPING = {
   name: 'name',
   slug: 'slug',
   'main-category': 'main-category',
+  'mainCategory': 'main-category', // Support camelCase from form
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
+  'experienceYears': 'experience-years', // Support camelCase from form
   language: 'language', // Option field (Bilingual (EN-ES), English)
   availability: 'availability',
   
   // Multimedia
   video: 'video',
+  image: 'image', // Image field
   
   // Content
   summary: 'summary',
   tagline: 'tagline',
   'thumbnail-description': 'thumbnail-description',
+  'thumbnailDescription': 'thumbnail-description', // Support camelCase from form
   
   // Skills/Tools/Equipment (PlainText - comma-separated)
   'skills-tags': 'skills-tags',
+  'skills': 'skills-tags', // Support form field name
   'tools-tags': 'tools-tags',
+  'tools': 'tools-tags', // Support form field name
   'equipment-tags': 'equipment-tags',
+  'equipment': 'equipment-tags', // Support form field name
   
   // Employment & Education (RichText - HTML)
   'employment-richtext': 'employment-richtext',
@@ -42,14 +49,20 @@ const FIELD_MAPPING = {
   
   // DISC
   'disc-type': 'disc-type-2',
+  'discType': 'disc-type-2', // Support camelCase from form
   'disc-description': 'disc-description',
+  'discDescription': 'disc-description', // Support camelCase from form
   
   // English
   'english-score': 'english-score-2',
+  'englishScore': 'english-score-2', // Support camelCase from form
   'english-description': 'english-description',
+  'englishDescription': 'english-description', // Support camelCase from form
+  'english-cefr-html': 'english-cefr-html', // RichText field for CEFR table HTML
   
   // Specializations (Multi-reference)
   specialization: 'specialization',
+  'specializations': 'specialization', // Support form field name
 };
 
 /**

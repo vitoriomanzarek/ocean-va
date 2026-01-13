@@ -12,7 +12,7 @@
 
   // Configuration
   const CONFIG = {
-    apiEndpoint: '/api/webflow/va-submit', // Update this to your actual endpoint
+    apiEndpoint: 'https://ocean-va.vercel.app/api/webflow/va-submit', // Vercel endpoint
     formSelector: '#va-form', // Update to match your form ID
     debug: true // Set to false in production
   };
@@ -102,12 +102,71 @@
     return div.innerHTML;
   }
 
+  /**
+   * DISC Type descriptions
+   */
+  const DISC_DESCRIPTIONS = {
+    'D': 'Dominance (D) - Direct, decisive, and results-oriented. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
+    'I': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+    'S': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
+    'C': 'Conscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
+    'D+I': 'Dominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+    'S+I': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+    'S+C': 'Steadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.'
+  };
+
+  /**
+   * English Score descriptions
+   */
+  const ENGLISH_DESCRIPTIONS = {
+    'A1': 'Can understand and use familiar everyday expressions and basic questions about personal details. Pronunciation is generally clear, and basic vocabulary is used effectively.',
+    'A2': 'Can have very short social exchanges and give information on familiar and routine matters when traveling. Pronunciation is understandable, with basic grammar and vocabulary.',
+    'B1': 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages. Speaks clearly with good control of basic grammar and vocabulary. Pronunciation is generally clear, and ideas are communicated with confidence and coherence.',
+    'B2': 'Can communicate confidently in a variety of academic and professional environments. Speaks confidently with clear pronunciation and well-structured, fluent speech. Uses a broad range of vocabulary and grammar to express ideas effectively in both casual and professional contexts.',
+    'C1': 'Can use the language flexibly and effectively for social, academic and professional purposes. Communicates with exceptional fluency and clarity, using natural pronunciation and smooth, well-structured speech. Demonstrates advanced vocabulary and precise grammar control, effectively expressing complex and nuanced ideas.',
+    'C2': 'Can interact with ease and can differentiate their shades of meaning. Shows exceptional fluency and pronunciation with native-like accuracy and natural intonation. Uses a rich and precise vocabulary along with flawless grammar to express complex ideas effortlessly and with sophistication.'
+  };
+
+  /**
+   * CEFR Level descriptions
+   */
+  const CEFR_DESCRIPTIONS = {
+    'A1': 'Can understand and use familiar everyday expressions and basic questions about personal details.',
+    'A2': 'Can have very short social exchanges and give information on familiar and routine matters when traveling.',
+    'B1': 'Can briefly describe past events and future plans, give reasons for opinions and explain advantages and disadvantages.',
+    'B2': 'Can communicate confidently in a variety of academic and professional environments.',
+    'C1': 'Can use the language flexibly and effectively for social, academic and professional purposes.',
+    'C2': 'Can interact with ease and can differentiate their shades of meaning.'
+  };
+
+  /**
+   * Generate CEFR HTML table
+   */
+  function generateCEFRHTML(activeLevel) {
+    const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    
+    const items = levels.map(level => {
+      const isActive = level === activeLevel;
+      const bubbleClass = isActive ? 'va-cefr-bubble-active' : 'va-cefr-bubble-inactive';
+      const description = CEFR_DESCRIPTIONS[level] || '';
+      
+      return `
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div>
+          <p class="va-cefr-description">${escapeHtml(description)}</p>
+        </div>`;
+    }).join('\n');
+
+    return `<div class="va-cefr-grid">\n${items}\n</div>`;
+  }
+
   // Make functions available to class
   window.VAFormHelpers = {
     generateEmploymentHTML,
     generateEducationHTML,
     generateSlug,
-    escapeHtml
+    escapeHtml,
+    generateCEFRHTML
   };
 
   /**
@@ -173,6 +232,51 @@
       }
 
       addBtn.addEventListener('click', () => this.addEducationEntry(container, hiddenInput));
+    }
+
+    initAutoComplete() {
+      // Auto-complete DISC Description
+      const discTypeSelect = this.form.querySelector('#va-disc-type');
+      const discDescriptionTextarea = this.form.querySelector('#va-disc-description');
+      
+      if (discTypeSelect && discDescriptionTextarea) {
+        discTypeSelect.addEventListener('change', (e) => {
+          const selectedType = e.target.value;
+          if (selectedType && DISC_DESCRIPTIONS[selectedType]) {
+            // Only auto-fill if textarea is empty or user confirms
+            if (!discDescriptionTextarea.value.trim()) {
+              discDescriptionTextarea.value = DISC_DESCRIPTIONS[selectedType];
+              log('Auto-filled DISC description for:', selectedType);
+            }
+          }
+        });
+      }
+
+      // Auto-complete English Description and generate CEFR HTML
+      const englishScoreSelect = this.form.querySelector('#va-english-score');
+      const englishDescriptionTextarea = this.form.querySelector('#va-english-description');
+      const englishCefrHtmlInput = this.form.querySelector('#va-english-cefr-html');
+      
+      if (englishScoreSelect) {
+        englishScoreSelect.addEventListener('change', (e) => {
+          const selectedScore = e.target.value;
+          
+          // Auto-fill English Description
+          if (englishDescriptionTextarea && selectedScore && ENGLISH_DESCRIPTIONS[selectedScore]) {
+            if (!englishDescriptionTextarea.value.trim()) {
+              englishDescriptionTextarea.value = ENGLISH_DESCRIPTIONS[selectedScore];
+              log('Auto-filled English description for:', selectedScore);
+            }
+          }
+          
+          // Generate CEFR HTML
+          if (englishCefrHtmlInput && selectedScore) {
+            const cefrHTML = generateCEFRHTML(selectedScore);
+            englishCefrHtmlInput.value = cefrHTML;
+            log('Generated CEFR HTML for:', selectedScore);
+          }
+        });
+      }
     }
 
     addEmploymentEntry(container, hiddenInput) {
@@ -310,7 +414,10 @@
       for (const [key, value] of formData.entries()) {
         // Skip employment/education individual fields (already processed to HTML)
         if (key.startsWith('emp-') || key.startsWith('edu-')) continue;
-        data[key] = value;
+        
+        // Convert camelCase field names to kebab-case for API compatibility
+        const apiKey = this.convertToKebabCase(key);
+        data[apiKey] = value;
       }
 
       // Ensure slug is set
@@ -319,6 +426,14 @@
       }
 
       return data;
+    }
+
+    /**
+     * Convert camelCase to kebab-case
+     * e.g., "discType" -> "disc-type", "englishScore" -> "english-score"
+     */
+    convertToKebabCase(str) {
+      return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
     }
 
     async handleSubmit(e) {
