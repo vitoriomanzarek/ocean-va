@@ -122,7 +122,13 @@ async function webflowRequest(endpoint, method = 'GET', body = null) {
     const errorMessage = typeof errorDetails === 'string' 
       ? errorDetails 
       : JSON.stringify(errorDetails, null, 2);
-    throw new Error(`Webflow API error: ${response.status} - ${errorMessage}`);
+    
+    // Create error object with details for proper handling
+    const webflowError = new Error(`Webflow API error: ${response.status} - ${errorMessage}`);
+    webflowError.status = response.status;
+    webflowError.response = error;
+    webflowError.responseText = responseText;
+    throw webflowError;
   }
 
   return JSON.parse(responseText);
