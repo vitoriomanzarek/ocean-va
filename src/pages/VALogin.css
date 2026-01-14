@@ -1,0 +1,125 @@
+.va-login-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #0B9B8F 0%,
+    #067A8F 25%,
+    #045C8B 50%,
+    #034563 75%,
+    #011F2A 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.va-login-container {
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.va-login-header {
+  margin-bottom: 32px;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 24px;
+}
+
+.va-login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.va-login-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.va-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.va-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.va-login-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.va-login-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.va-login-input:focus {
+  outline: none;
+  border-color: #0B9B8F;
+  box-shadow: 0 0 0 3px rgba(11, 155, 143, 0.1);
+}
+
+.va-login-error {
+  padding: 12px 16px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.va-login-btn {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  background: #0B9B8F;
+  color: white;
+  font-family: inherit;
+}
+
+.va-login-btn:hover {
+  background: #0a8a7f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(11, 155, 143, 0.3);
+}
+
+.va-login-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .va-login-container {
+    padding: 32px 24px;
+  }
+
+  .va-login-title {
+    font-size: 24px;
+  }
+}
+

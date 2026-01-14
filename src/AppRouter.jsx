@@ -96,19 +96,25 @@ import IndustryTabsTest from './IndustryTabsTest'
 import DesignSystemShowcase from '../webflow-components-design-system/DesignSystemShowcase'
 import '../webflow-components-design-system/DesignSystemShowcase.css'
 import HomepageDemo from './pages/HomepageDemo'
+import VACreation from './pages/VACreation'
+import VALogin from './pages/VALogin'
+import ProtectedRoute from './components/ProtectedRoute'
 
 function AppContent() {
   const location = useLocation()
   
+  // Don't show navbar/footer on login or VA creation pages
+  const hideNavbarFooter = location.pathname === '/va-creation' || location.pathname === '/va-login'
+  
   // Use NavbarVA for VA-related pages
-  const useVANavbar = location.pathname.includes('vas') || 
+  const useVANavbar = !hideNavbarFooter && (location.pathname.includes('vas') || 
       location.pathname.includes('insurance-agents') ||
-      location.pathname.includes('profile')
+      location.pathname.includes('profile'))
   
   return (
     <>
       <Schema />
-      {useVANavbar ? <NavbarVA /> : <Navbar />}
+      {!hideNavbarFooter && (useVANavbar ? <NavbarVA /> : <Navbar />)}
       <main>
         <Routes>
           <Route path="/" element={<App />} />
@@ -234,10 +240,23 @@ function AppContent() {
           
           {/* Homepage Demo with Design System */}
           <Route path="/homepage-demo" element={<HomepageDemo />} />
+          
+          {/* VA Login */}
+          <Route path="/va-login" element={<VALogin />} />
+          
+          {/* VA Creation Form (Protected) */}
+          <Route 
+            path="/va-creation" 
+            element={
+              <ProtectedRoute>
+                <VACreation />
+              </ProtectedRoute>
+            } 
+          />
         </Routes>
       </main>
 
-      <Footer />
+      {!hideNavbarFooter && <Footer />}
     </>
   )
 }

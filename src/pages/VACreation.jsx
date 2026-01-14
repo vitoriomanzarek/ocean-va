@@ -168,16 +168,9 @@ export default function VACreation() {
     }
   }, [formData.discType])
 
-  // Auto-complete English description and generate CEFR HTML
+  // Generate CEFR HTML when English score changes (but don't auto-fill description)
   useEffect(() => {
     if (formData.englishScore) {
-      if (ENGLISH_DESCRIPTIONS[formData.englishScore] && !formData.englishDescription) {
-        setFormData(prev => ({
-          ...prev,
-          englishDescription: ENGLISH_DESCRIPTIONS[prev.englishScore]
-        }))
-      }
-      
       const cefrHTML = generateCEFRHTML(formData.englishScore)
       setFormData(prev => ({ ...prev, englishCefrHtml: cefrHTML }))
     }
