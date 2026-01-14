@@ -327,19 +327,15 @@ export default async function handler(req, res) {
         .replace(/^-|-$/g, '');
     }
 
-    // Generate unique slug (always create new, never update existing)
-    const originalSlug = formData.slug;
-    const uniqueSlug = await generateUniqueSlug(formData.slug);
-    formData.slug = uniqueSlug;
-
     // Always create new VA (never update existing)
-    console.log(`Creating new VA with slug: ${formData.slug}${uniqueSlug !== originalSlug ? ` (adjusted from: ${originalSlug})` : ''}`);
+    // Note: If slug already exists, Webflow will reject with an error
+    console.log(`Creating new VA with slug: ${formData.slug}`);
     const result = await createVAItem(formData);
     return res.status(201).json({
       success: true,
       action: 'created',
       item: result,
-      message: `VA created successfully${uniqueSlug !== originalSlug ? ` (slug adjusted to: ${uniqueSlug})` : ''}`
+      message: 'VA created successfully'
     });
 
   } catch (error) {
