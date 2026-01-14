@@ -61,7 +61,7 @@ const FIELD_MAPPING = {
   'englishScore': 'english-score-2', // Support camelCase from form
   'english-description': 'english-description',
   'englishDescription': 'english-description', // Support camelCase from form
-  'english-cefr-html': 'english-cefr-html', // RichText field for CEFR table HTML
+  // Note: 'english-cefr-html' field does not exist in Webflow CMS - removed from mapping
   
   // Specializations (Multi-reference)
   specialization: 'specialization',

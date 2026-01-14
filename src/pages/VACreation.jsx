@@ -247,7 +247,7 @@ export default function VACreation() {
         'disc-description': formData.discDescription,
         'english-score': formData.englishScore,
         'english-description': formData.englishDescription,
-        'english-cefr-html': formData.englishCefrHtml,
+        // Note: 'english-cefr-html' field does not exist in Webflow CMS - not sent
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
       }
