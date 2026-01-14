@@ -201,6 +201,33 @@ async function checkVAExists(slug) {
 }
 
 /**
+ * Generate a unique slug by appending a number if the slug already exists
+ */
+async function generateUniqueSlug(baseSlug) {
+  let slug = baseSlug;
+  let counter = 1;
+  
+  while (true) {
+    const existing = await checkVAExists(slug);
+    if (!existing) {
+      return slug; // Slug is unique, return it
+    }
+    // Slug exists, try with a number suffix
+    counter++;
+    slug = `${baseSlug}-${counter}`;
+    
+    // Prevent infinite loop (safety check)
+    if (counter > 1000) {
+      // Use timestamp as fallback
+      slug = `${baseSlug}-${Date.now()}`;
+      break;
+    }
+  }
+  
+  return slug;
+}
+
+/**
  * Create new VA item in Webflow CMS
  */
 async function createVAItem(data) {
@@ -300,31 +327,20 @@ export default async function handler(req, res) {
         .replace(/^-|-$/g, '');
     }
 
-    // Check if VA already exists
-    const existingVA = await checkVAExists(formData.slug);
+    // Generate unique slug (always create new, never update existing)
+    const originalSlug = formData.slug;
+    const uniqueSlug = await generateUniqueSlug(formData.slug);
+    formData.slug = uniqueSlug;
 
-    let result;
-    if (existingVA) {
-      // Update existing VA
-      console.log(`Updating existing VA: ${existingVA.id}`);
-      result = await updateVAItem(existingVA.id, formData);
-      return res.status(200).json({
-        success: true,
-        action: 'updated',
-        item: result,
-        message: 'VA updated successfully'
-      });
-    } else {
-      // Create new VA
-      console.log(`Creating new VA: ${formData.slug}`);
-      result = await createVAItem(formData);
-      return res.status(201).json({
-        success: true,
-        action: 'created',
-        item: result,
-        message: 'VA created successfully'
-      });
-    }
+    // Always create new VA (never update existing)
+    console.log(`Creating new VA with slug: ${formData.slug}${uniqueSlug !== originalSlug ? ` (adjusted from: ${originalSlug})` : ''}`);
+    const result = await createVAItem(formData);
+    return res.status(201).json({
+      success: true,
+      action: 'created',
+      item: result,
+      message: `VA created successfully${uniqueSlug !== originalSlug ? ` (slug adjusted to: ${uniqueSlug})` : ''}`
+    });
 
   } catch (error) {
     console.error('Error processing VA form:', error);
