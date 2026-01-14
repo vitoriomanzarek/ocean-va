@@ -324,6 +324,29 @@ export default async function handler(req, res) {
     console.error('Error processing VA form:', error);
     console.error('Error stack:', error.stack);
     console.error('Form data received:', JSON.stringify(req.body, null, 2));
+    
+    // If it's a Webflow API validation error, return 400 with details
+    if (error.message && error.message.includes('Validation Error')) {
+      // Try to extract validation details from error
+      const errorMatch = error.message.match(/Validation Error[:\s]*(.+)/);
+      let errorDetails = error.message;
+      
+      // If error has response details, use those
+      if (error.response && error.response.details) {
+        return res.status(400).json({
+          error: 'Validation error',
+          message: 'Webflow API validation failed',
+          details: error.response.details
+        });
+      }
+      
+      return res.status(400).json({
+        error: 'Validation error',
+        message: errorDetails || 'Webflow API validation failed',
+        details: error.response ? error.response.details : undefined
+      });
+    }
+    
     return res.status(500).json({
       error: 'Internal server error',
       message: error.message || 'Failed to process VA form submission'

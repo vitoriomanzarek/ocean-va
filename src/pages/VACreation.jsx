@@ -278,9 +278,20 @@ export default function VACreation() {
         // Scroll to top to show success message
         window.scrollTo({ top: 0, behavior: 'smooth' })
       } else {
+        // Log detailed error for debugging
+        console.error('API Error Response:', result)
+        let errorMessage = result.message || result.error || 'Error creating VA.'
+        
+        // Add validation error details if available
+        if (result.details && Array.isArray(result.details)) {
+          const validationErrors = result.details.map(d => `${d.param}: ${d.description}`).join(', ')
+          errorMessage += ` Details: ${validationErrors}`
+          console.error('Validation Errors:', result.details)
+        }
+        
         setMessage({ 
           type: 'error', 
-          text: `❌ ${result.message || result.error || 'Error creating VA. Please check the console for details and try again.'}` 
+          text: `❌ ${errorMessage}` 
         })
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
