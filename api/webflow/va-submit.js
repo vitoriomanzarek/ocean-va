@@ -141,6 +141,11 @@ function formatDataForWebflow(formData) {
   const cleanedData = { ...formData };
   delete cleanedData.language;
 
+  // Add languages field if it exists
+  if (formData.languages) {
+    fieldData['languages'] = formData.languages;
+  }
+
   // Map each field
   Object.keys(FIELD_MAPPING).forEach(formKey => {
     // Skip 'language' field - we handle it separately
@@ -191,13 +196,13 @@ async function checkVAExists(slug) {
  * Create new VA item in Webflow CMS
  */
 async function createVAItem(data) {
-  const formattedData = formatDataForWebflow(data);
+  const { fieldData } = formatDataForWebflow(data);
   
   const response = await webflowRequest(
     `/collections/${VA_COLLECTION_ID}/items`,
     'POST',
     {
-      ...formattedData,
+      fieldData,
       isArchived: false,
       isDraft: true, // Create as draft - requires manual review before publishing
     }
@@ -210,11 +215,11 @@ async function createVAItem(data) {
  * Update existing VA item
  */
 async function updateVAItem(itemId, data) {
-  const formattedData = formatDataForWebflow(data);
+  const { fieldData } = formatDataForWebflow(data);
   
   // When updating, set as draft to require review
   const updateData = {
-    ...formattedData,
+    fieldData,
     isDraft: true, // Update to draft - requires manual review before publishing
   };
   
