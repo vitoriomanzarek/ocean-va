@@ -163,10 +163,20 @@ function formatDataForWebflow(formData) {
     fieldData['languages'] = formData.languages;
   }
 
+  // Handle cerf-result specially: use HTML if available, otherwise skip (don't send plain text)
+  if (cleanedData.englishCefrHtml) {
+    fieldData['cerf-result'] = cleanedData.englishCefrHtml;
+  }
+
   // Map each field
   Object.keys(FIELD_MAPPING).forEach(formKey => {
     // Skip 'language' field - we handle it separately
     if (formKey === 'language') {
+      return;
+    }
+    
+    // Skip cerf-result and englishCefrHtml - we handle it above
+    if (formKey === 'cerf-result' || formKey === 'cefrResult' || formKey === 'englishCefrHtml' || formKey === 'cefrResultHtml') {
       return;
     }
     
