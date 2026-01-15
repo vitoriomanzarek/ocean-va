@@ -67,7 +67,9 @@ const FIELD_MAPPING = {
   'englishDescription': 'english-description', // Support camelCase from form
   'cerf-result': 'cerf-result',
   'cefrResult': 'cerf-result', // Support camelCase from form
-  // Note: 'english-cefr-html' field does not exist in Webflow CMS - removed from mapping
+  'cerf-result-html': 'cerf-result-html',
+  'cefrResultHtml': 'cerf-result-html', // Support camelCase from form
+  'englishCefrHtml': 'cerf-result-html', // Support camelCase from form
   
   // Specializations (Multi-reference)
   specialization: 'specialization',

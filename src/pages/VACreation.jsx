@@ -114,13 +114,16 @@ function generateCEFRHTML(activeLevel) {
     const description = CEFR_DESCRIPTIONS[level] || ''
     
     return `
-      <div class="va-cefr-item">
-        <div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div>
-        <p class="va-cefr-description">${escapeHtml(description)}</p>
-      </div>`
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div>
+          <p class="va-cefr-description">${escapeHtml(description)}</p>
+        </div>`
   }).join('\n')
 
-  return `<div class="va-cefr-grid">\n${items}\n</div>`
+  // Return the complete CEFR grid HTML that can be inserted directly into Webflow
+  return `<div class="va-cefr-grid">
+${items}
+      </div>`
 }
 
 export default function VACreation() {
@@ -278,7 +281,7 @@ export default function VACreation() {
         'english-score': formData.englishScore,
         'english-description': formData.englishDescription,
         'cerf-result': formData.cefrResult,
-        // Note: 'english-cefr-html' field does not exist in Webflow CMS - not sent
+        'cerf-result-html': formData.englishCefrHtml, // Rich Text field with CEFR HTML
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
       }
@@ -1269,6 +1272,43 @@ export default function VACreation() {
             </div>
 
             <div className="va-form-field va-form-field-full">
+              <label htmlFor="va-english-description" className="va-form-label">
+                English Description
+                <FieldHelpTooltip
+                  fieldName="English Description"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div class="diagram-box" style="opacity: 0.6;">
+                          <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                          <div style="font-size: 10px;">[I+D]</div>
+                        </div>
+                        <div class="diagram-box diagram-highlight">
+                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                          <div style="font-size: 10px;">[100/C1]</div>
+                          <div style="font-size: 9px; margin-top: 4px; opacity: 0.8;">
+                            Shows confident and fluent communication...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `}
+                  example="Shows confident and fluent communication with clear pronunciation and a natural flow of speech. Uses advanced vocabulary and well-structured grammar effectively to express complex ideas with clarity and precision."
+                />
+              </label>
+              <textarea
+                id="va-english-description"
+                name="englishDescription"
+                className="va-form-textarea"
+                rows="4"
+                placeholder="Describe the VA's English proficiency..."
+                value={formData.englishDescription}
+                onChange={handleInputChange}
+              />
+            </div>
+
+            <div className="va-form-field va-form-field-full">
               <label className="va-form-label">
                 CEFR Result
                 <FieldHelpTooltip
@@ -1307,43 +1347,6 @@ export default function VACreation() {
                   </label>
                 ))}
               </div>
-            </div>
-
-            <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-english-description" className="va-form-label">
-                English Description
-                <FieldHelpTooltip
-                  fieldName="English Description"
-                  diagram={`
-                    <div class="diagram-page">
-                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
-                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <div class="diagram-box" style="opacity: 0.6;">
-                          <div style="font-size: 10px; font-weight: 600;">DISC</div>
-                          <div style="font-size: 10px;">[I+D]</div>
-                        </div>
-                        <div class="diagram-box diagram-highlight">
-                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
-                          <div style="font-size: 10px;">[100/C1]</div>
-                          <div style="font-size: 9px; margin-top: 4px; opacity: 0.8;">
-                            Shows confident and fluent communication...
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  `}
-                  example="Shows confident and fluent communication with clear pronunciation and a natural flow of speech. Uses advanced vocabulary and well-structured grammar effectively to express complex ideas with clarity and precision."
-                />
-              </label>
-              <textarea
-                id="va-english-description"
-                name="englishDescription"
-                className="va-form-textarea"
-                rows="4"
-                placeholder="Describe the VA's English proficiency..."
-                value={formData.englishDescription}
-                onChange={handleInputChange}
-              />
             </div>
           </section>
 
