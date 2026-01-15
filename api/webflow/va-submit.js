@@ -59,17 +59,18 @@ const FIELD_MAPPING = {
   'discDescription': 'disc-description', // Support camelCase from form
   
   // English
-  'english-test-type': 'english-test-type',
-  'englishTestType': 'english-test-type', // Support camelCase from form
+  'english-test-type': 'type-of-english-test',
+  'englishTestType': 'type-of-english-test', // Support camelCase from form
   'english-score': 'english-score-2',
   'englishScore': 'english-score-2', // Support camelCase from form
   'english-description': 'english-description',
   'englishDescription': 'english-description', // Support camelCase from form
   'cerf-result': 'cerf-result',
   'cefrResult': 'cerf-result', // Support camelCase from form
-  'cerf-result-html': 'cerf-result-html',
-  'cefrResultHtml': 'cerf-result-html', // Support camelCase from form
-  'englishCefrHtml': 'cerf-result-html', // Support camelCase from form
+  // Note: CEFR HTML goes to 'cerf-result' field (Rich text), not a separate field
+  'cerf-result-html': 'cerf-result', // Map HTML to cerf-result Rich text field
+  'cefrResultHtml': 'cerf-result', // Support camelCase from form
+  'englishCefrHtml': 'cerf-result', // Support camelCase from form
   
   // Specializations (Multi-reference)
   specialization: 'specialization',

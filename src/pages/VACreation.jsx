@@ -280,8 +280,7 @@ export default function VACreation() {
         'english-test-type': formData.englishTestType,
         'english-score': formData.englishScore,
         'english-description': formData.englishDescription,
-        'cerf-result': formData.cefrResult,
-        'cerf-result-html': formData.englishCefrHtml, // Rich Text field with CEFR HTML
+        'cerf-result': formData.englishCefrHtml || formData.cefrResult, // Rich Text field - send HTML if available, otherwise just the result
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
       }
