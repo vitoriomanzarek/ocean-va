@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './VACreation.css'
+import FieldHelpTooltip from '../components/FieldHelpTooltip'
 
 // Constants
 const API_ENDPOINT = 'https://ocean-va.vercel.app/api/webflow/va-submit'
@@ -496,6 +497,22 @@ export default function VACreation() {
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-title" className="va-form-label">
                 Title
+                <FieldHelpTooltip
+                  fieldName="Title"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  MAXIMILIANO                 │
+│  ┌─────────────────────────┐ │
+│  │ BILINGUAL VA |          │ │ ← Title appears here
+│  │ INSURANCE VIRTUAL       │ │
+│  │ ASSISTANT               │ │
+│  └─────────────────────────┘ │
+│  [Summary text...]            │
+│  [Skills tags...]              │
+└─────────────────────────────┘`}
+                  example="BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT"
+                />
               </label>
               <input
                 type="text"
@@ -506,7 +523,6 @@ export default function VACreation() {
                 value={formData.title}
                 onChange={handleInputChange}
               />
-              <small className="va-form-help">Title that appears below the VA name (e.g., BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT)</small>
             </div>
 
             <div className="va-form-row">
@@ -551,6 +567,22 @@ export default function VACreation() {
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-summary" className="va-form-label">
                 Summary <span className="va-form-required">*</span>
+                <FieldHelpTooltip
+                  fieldName="Summary"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  MAXIMILIANO                 │
+│  BILINGUAL VA | INSURANCE   │
+│  ┌─────────────────────────┐ │
+│  │ Maximiliano is a         │ │ ← Summary appears
+│  │ bilingual Virtual        │ │   here (main text)
+│  │ Assistant with solid...  │ │
+│  └─────────────────────────┘ │
+│  [Skills tags...]              │
+└─────────────────────────────┘`}
+                  example="Maximiliano is a bilingual Virtual Assistant (English–Spanish) with solid experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
+                />
               </label>
               <textarea
                 id="va-summary"
@@ -567,6 +599,23 @@ export default function VACreation() {
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-tagline" className="va-form-label">
                 Tagline <span className="va-form-required">*</span>
+                <FieldHelpTooltip
+                  fieldName="Tagline"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  [Tools] [Equipment] [Video]│
+│  ┌─────────────────────────┐ │
+│  │ Thumbnail Description    │ │
+│  └─────────────────────────┘ │
+│  ┌─────────────────────────┐ │
+│  │ Maximiliano is an        │ │ ← Tagline appears
+│  │ excellent Virtual        │ │   here (bottom box)
+│  │ Assistant for...         │ │
+│  └─────────────────────────┘ │
+└─────────────────────────────┘`}
+                  example="Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks with reliability and efficiency."
+                />
               </label>
               <input
                 type="text"
@@ -583,6 +632,21 @@ export default function VACreation() {
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-thumbnail-description" className="va-form-label">
                 Thumbnail Description
+                <FieldHelpTooltip
+                  fieldName="Thumbnail Description"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  [Tools] [Equipment] [Video]│
+│  ┌─────────────────────────┐ │
+│  │ 4 yrs of Insurance      │ │ ← Thumbnail appears
+│  │ Experience, COMMERCIAL  │ │   here (top box)
+│  │ INSURANCE, Personal...  │ │
+│  └─────────────────────────┘ │
+│  [Tagline box below...]       │
+└─────────────────────────────┘`}
+                  example="4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation, Payment Assistance"
+                />
               </label>
               <textarea
                 id="va-thumbnail-description"
@@ -601,7 +665,24 @@ export default function VACreation() {
             <h2 className="va-form-section-title">Skills, Tools & Equipment</h2>
             
             <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-skills" className="va-form-label">Skills</label>
+              <label htmlFor="va-skills" className="va-form-label">
+                Skills
+                <FieldHelpTooltip
+                  fieldName="Skills"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  [Summary text...]            │
+│  ┌─────────────────────────┐ │
+│  │ [Insurance Sales]        │ │ ← Skills appear as
+│  │ [Personal Lines]         │ │   yellow tags below
+│  │ [Quoting] [Lead Follow]  │ │   summary
+│  │ [Order Placement]...     │ │
+│  └─────────────────────────┘ │
+└─────────────────────────────┘`}
+                  example="Insurance Sales Assistance, Personal and Commercial Lines, Quoting, Lead Follow-Up, Order Placement & Tracking, E-Signature Coordination"
+                />
+              </label>
               <input
                 type="text"
                 id="va-skills"
@@ -615,7 +696,23 @@ export default function VACreation() {
             </div>
 
             <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-tools" className="va-form-label">Tools & Platforms</label>
+              <label htmlFor="va-tools" className="va-form-label">
+                Tools & Platforms
+                <FieldHelpTooltip
+                  fieldName="Tools"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  TOOLS    │ EQUIPMENT │ VIDEO│
+│  ┌─────────┐│          │     │
+│  │ ✓ CRM   ││          │     │ ← Tools appear
+│  │ ✓ EZLynx││          │     │   here (left)
+│  │ ✓ Turbo ││          │     │
+│  └─────────┘│          │     │
+└─────────────────────────────┘`}
+                  example="CRM, EZLynx, TurboRater, Applied Epic, Microsoft Office"
+                />
+              </label>
               <input
                 type="text"
                 id="va-tools"
@@ -629,7 +726,22 @@ export default function VACreation() {
             </div>
 
             <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-equipment" className="va-form-label">Equipment</label>
+              <label htmlFor="va-equipment" className="va-form-label">
+                Equipment
+                <FieldHelpTooltip
+                  fieldName="Equipment"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  TOOLS    │ EQUIPMENT │ VIDEO│
+│  ✓ CRM    │ ┌─────────┐│     │
+│  ✓ EZLynx │ │ Monitor ││     │ ← Equipment
+│  ✓ Turbo  │ │ Headset  ││     │   appears here
+│           │ └─────────┘│     │
+└─────────────────────────────┘`}
+                  example="Two-Monitor Setup, Noise-Cancelling Headset"
+                />
+              </label>
               <select
                 id="va-equipment"
                 name="equipment"
@@ -723,7 +835,25 @@ export default function VACreation() {
             </button>
 
             <div className="va-form-field va-form-field-full" style={{ marginTop: '32px' }}>
-              <label htmlFor="va-employment-summary" className="va-form-label">Employment Summary</label>
+              <label htmlFor="va-employment-summary" className="va-form-label">
+                Employment Summary
+                <FieldHelpTooltip
+                  fieldName="Employment Summary"
+                  diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  EMPLOYMENT SUMMARY          │
+│  ┌─────────────────────────┐ │
+│  │ Maximiliano has over    │ │ ← Employment Summary
+│  │ 4 years of experience   │ │   appears here
+│  │ in customer service...  │ │   (top of section)
+│  └─────────────────────────┘ │
+│  EMPLOYMENT HISTORY           │
+│  [Accordion entries...]        │
+└─────────────────────────────┘`}
+                  example="Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
+                />
+              </label>
               <textarea
                 id="va-employment-summary"
                 name="employmentSummary"
@@ -853,6 +983,21 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-english-score" className="va-form-label">
                   English Score
+                  <FieldHelpTooltip
+                    fieldName="English Score"
+                    diagram={`┌─────────────────────────────┐
+│  VA PROFILE PAGE            │
+├─────────────────────────────┤
+│  ASSESSMENT RESULTS          │
+│  ┌──────────┐ ┌──────────┐  │
+│  │ DISC     │ │ ENGLISH  │  │
+│  │ [I+D]    │ │ [100/C1] │  │ ← English Score
+│  │          │ │          │  │   appears here
+│  └──────────┘ └──────────┘  │
+│  [CEFR table below...]       │
+└─────────────────────────────┘`}
+                    example="C1, B2, 100/C1, or custom format"
+                  />
                 </label>
                 <input
                   type="text"
