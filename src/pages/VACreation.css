@@ -99,9 +99,12 @@
 }
 
 .va-form-label {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 600;
   color: #374151;
+  gap: 8px;
 }
 
 .va-form-required {
