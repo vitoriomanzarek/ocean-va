@@ -40,19 +40,19 @@
         <!-- Right - Info -->
         <div class="va-info-box">
           <!-- BIND: Select h1 → Bind to "name" field (Plain Text) -->
-          <h1 class="va-profile-name">NAME</h1>
+          <h1 class="va-profile-name"></h1>
           
           <!-- BIND: Select p → Bind to "title" field (Plain Text) -->
-          <p class="va-title">TITLE</p>
+          <p class="va-title"></p>
           
           <!-- BIND: Select p → Bind to "summary" field (Rich Text) -->
-          <p class="va-summary">Summary text appears here...</p>
+          <p class="va-summary"></p>
 
           <!-- Skills Tags -->
           <!-- BIND: Use Collection List → Bind to "skills-tags" field (Plain Text, comma-separated) -->
           <!-- Note: You may need to split the comma-separated string in Webflow or use a custom code -->
           <div class="va-skills-container">
-            <span class="va-skill-tag">Skill Tag</span>
+            <span class="va-skill-tag"></span>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
             <div class="va-tools-list two-column">
               <div class="va-tool-item">
                 <span class="va-tool-checkmark">✓</span>
-                <span>Tool Name</span>
+                <span></span>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
                 <svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <span>Equipment Name</span>
+                <span></span>
               </div>
             </div>
           </div>
@@ -118,13 +118,13 @@
         <!-- Thumbnail Box -->
         <!-- BIND: Select p → Bind to "thumbnail-description" field (Plain Text) -->
         <div class="va-thumbnail-box">
-          <p class="va-thumbnail-text">Thumbnail description appears here...</p>
+          <p class="va-thumbnail-text"></p>
         </div>
 
         <!-- Tagline Box -->
         <!-- BIND: Select p → Bind to "tagline" field (Plain Text) -->
         <div class="va-tagline-box">
-          <p class="va-tagline-text">Tagline text appears here...</p>
+          <p class="va-tagline-text"></p>
         </div>
       </div>
     </div>
@@ -135,7 +135,7 @@
     <div class="va-employment-container">
       <h2 class="va-section-title">EMPLOYMENT SUMMARY</h2>
       <!-- BIND: Select p → Bind to "employment-summary" field (Plain Text) -->
-      <p class="va-employment-summary">Employment summary appears here...</p>
+      <p class="va-employment-summary"></p>
 
       <h3 class="va-employment-history-title">EMPLOYMENT HISTORY</h3>
       <!-- BIND: Select div → Bind to "employment-richtext" field (Rich Text) -->
@@ -144,16 +144,16 @@
         <div class="va-employment-accordion">
           <div class="va-employment-accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
             <div class="va-employment-accordion-title">
-              <h4 class="va-employment-accordion-company">Company Name</h4>
-              <p class="va-employment-accordion-position">Position</p>
-              <p class="va-employment-accordion-period">Period</p>
+              <h4 class="va-employment-accordion-company"></h4>
+              <p class="va-employment-accordion-position"></p>
+              <p class="va-employment-accordion-period"></p>
             </div>
             <svg class="va-employment-accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
           <div class="va-employment-accordion-content">
-            <p class="va-employment-accordion-description">Description...</p>
+            <p class="va-employment-accordion-description"></p>
           </div>
         </div>
       </div>
@@ -170,9 +170,9 @@
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">DISC PERSONALITY RESULT</h3>
           <div class="va-disc-result">
             <!-- BIND: Select div → Bind to "disc-type-2" field (Option) -->
-            <div class="va-disc-badge">DISC</div>
+            <div class="va-disc-badge"></div>
             <!-- BIND: Select p → Bind to "disc-description" field (Rich Text) -->
-            <p class="va-disc-description">DISC description appears here...</p>
+            <p class="va-disc-description"></p>
           </div>
         </div>
       </section>
@@ -183,9 +183,9 @@
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">EF ENGLISH TEST RESULT</h3>
           <div class="va-english-result">
             <!-- BIND: Select div → Bind to "english-score-2" field (Plain Text) -->
-            <div class="va-english-score">SCORE</div>
+            <div class="va-english-score"></div>
             <!-- BIND: Select p → Bind to "english-description" field (Rich Text) -->
-            <p class="va-english-description">English description appears here...</p>
+            <p class="va-english-description"></p>
           </div>
         </div>
       </section>
@@ -239,9 +239,9 @@
       <!-- BIND: Select div → Bind to "education-richtext" field (Rich Text) -->
       <!-- This will render the HTML from the Rich Text field -->
       <div class="va-education-item">
-        <h3 class="va-education-school">School Name</h3>
-        <p class="va-education-degree">Degree</p>
-        <p class="va-education-year">Year</p>
+        <h3 class="va-education-school"></h3>
+        <p class="va-education-degree"></p>
+        <p class="va-education-year"></p>
       </div>
     </div>
   </section>
