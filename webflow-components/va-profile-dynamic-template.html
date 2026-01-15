@@ -1,0 +1,308 @@
+<!-- VA PROFILE - DYNAMIC TEMPLATE -->
+<!-- This template uses Webflow CMS variables to generate VA profile pages automatically -->
+<!-- Include 210-VA-profile-styles.html for styling -->
+<!-- 
+  USAGE IN WEBFLOW:
+  1. Create a Collection Page for "Virtual Assistants" collection
+  2. Use this template as the base structure
+  3. In Webflow Designer:
+     - Select text/element → Bind to CMS field using bindings panel
+     - For lists (skills, tools, equipment): Use Collection List
+     - For Rich Text fields: Use Rich Text binding
+     - For images: Use Image binding
+     - For video: Use Link binding
+-->
+
+<div class="va-profile-page">
+  <!-- Back Link -->
+  <div class="va-back-link">
+    <a href="/ovas-current-vas">
+      <svg class="va-back-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Back to VAs
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="va-hero-section">
+    <div class="va-hero-container">
+      <!-- Hero Grid -->
+      <div class="va-hero-grid">
+        <!-- Left - Image -->
+        <div class="va-image-container">
+          <div class="va-image-frame">
+            <!-- BIND: Select img → Bind to "image" field (Image) -->
+            <img src="" alt="" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Right - Info -->
+        <div class="va-info-box">
+          <!-- BIND: Select h1 → Bind to "name" field (Plain Text) -->
+          <h1 class="va-profile-name">NAME</h1>
+          
+          <!-- BIND: Select p → Bind to "title" field (Plain Text) -->
+          <p class="va-title">TITLE</p>
+          
+          <!-- BIND: Select p → Bind to "summary" field (Rich Text) -->
+          <p class="va-summary">Summary text appears here...</p>
+
+          <!-- Skills Tags -->
+          <!-- BIND: Use Collection List → Bind to "skills-tags" field (Plain Text, comma-separated) -->
+          <!-- Note: You may need to split the comma-separated string in Webflow or use a custom code -->
+          <div class="va-skills-container">
+            <span class="va-skill-tag">Skill Tag</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="va-bottom-section">
+        <!-- Tools & Equipment Grid -->
+        <div class="va-tools-grid">
+          <!-- Tools -->
+          <div>
+            <h3 class="va-column-header">TOOLS</h3>
+            <!-- BIND: Use Collection List → Bind to "tools-tags" field (Plain Text, comma-separated) -->
+            <div class="va-tools-list two-column">
+              <div class="va-tool-item">
+                <span class="va-tool-checkmark">✓</span>
+                <span>Tool Name</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div>
+            <h3 class="va-column-header">EQUIPMENT</h3>
+            <!-- BIND: Use Collection List → Bind to "equipment-tags" field (Plain Text, comma-separated) -->
+            <div class="va-equipment-list">
+              <div class="va-equipment-item">
+                <svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span>Equipment Name</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video -->
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <!-- BIND: Select div → Bind to "video" field (Link) for video URL -->
+            <!-- BIND: Select background-image style → Bind to video thumbnail or generate from video URL -->
+            <div class="va-video-container" 
+                 style="background-image: url(''); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 208px; cursor: pointer;" 
+                 onclick="document.getElementById('va-video-modal').style.display='flex'">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+            <!-- Video Modal -->
+            <!-- BIND: Select iframe src → Bind to "video" field (Link) -->
+            <div id="va-video-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
+                <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button onclick="document.getElementById('va-video-modal').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail Box -->
+        <!-- BIND: Select p → Bind to "thumbnail-description" field (Plain Text) -->
+        <div class="va-thumbnail-box">
+          <p class="va-thumbnail-text">Thumbnail description appears here...</p>
+        </div>
+
+        <!-- Tagline Box -->
+        <!-- BIND: Select p → Bind to "tagline" field (Plain Text) -->
+        <div class="va-tagline-box">
+          <p class="va-tagline-text">Tagline text appears here...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employment Section -->
+  <section class="va-employment-section">
+    <div class="va-employment-container">
+      <h2 class="va-section-title">EMPLOYMENT SUMMARY</h2>
+      <!-- BIND: Select p → Bind to "employment-summary" field (Plain Text) -->
+      <p class="va-employment-summary">Employment summary appears here...</p>
+
+      <h3 class="va-employment-history-title">EMPLOYMENT HISTORY</h3>
+      <!-- BIND: Select div → Bind to "employment-richtext" field (Rich Text) -->
+      <!-- This will render the HTML from the Rich Text field -->
+      <div class="va-employment-list">
+        <div class="va-employment-accordion">
+          <div class="va-employment-accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+            <div class="va-employment-accordion-title">
+              <h4 class="va-employment-accordion-company">Company Name</h4>
+              <p class="va-employment-accordion-position">Position</p>
+              <p class="va-employment-accordion-period">Period</p>
+            </div>
+            <svg class="va-employment-accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <div class="va-employment-accordion-content">
+            <p class="va-employment-accordion-description">Description...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assessment Results -->
+  <div style="padding: 48px 16px;">
+    <h2 class="va-section-title" style="max-width: 1151px; margin: 0 auto 24px;">ASSESSMENT RESULTS</h2>
+    <div class="va-results-row">
+      <!-- DISC Section -->
+      <section class="va-disc-section">
+        <div class="va-disc-container">
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">DISC PERSONALITY RESULT</h3>
+          <div class="va-disc-result">
+            <!-- BIND: Select div → Bind to "disc-type-2" field (Option) -->
+            <div class="va-disc-badge">DISC</div>
+            <!-- BIND: Select p → Bind to "disc-description" field (Rich Text) -->
+            <p class="va-disc-description">DISC description appears here...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- English Section -->
+      <section class="va-english-section">
+        <div class="va-english-container">
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">EF ENGLISH TEST RESULT</h3>
+          <div class="va-english-result">
+            <!-- BIND: Select div → Bind to "english-score-2" field (Plain Text) -->
+            <div class="va-english-score">SCORE</div>
+            <!-- BIND: Select p → Bind to "english-description" field (Rich Text) -->
+            <p class="va-english-description">English description appears here...</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- CEFR Section -->
+  <section class="va-cefr-section">
+    <div class="va-cefr-container">
+      <h2 class="va-section-title">COMMON EUROPEAN FRAMEWORK OF REFERENCE FOR LANGUAGES (CEFR)</h2>
+      <div class="va-cefr-grid">
+        <!-- CEFR Levels - Static structure, dynamic active state -->
+        <!-- Note: You'll need custom code to set active class based on english-score-2 value -->
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">A1</div>
+          <p class="va-cefr-description">Can understand and use familiar everyday phrases and answer basic questions about personal details.</p>
+        </div>
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">A2</div>
+          <p class="va-cefr-description">Can have very short social exchanges and give information on familiar and routine matters.</p>
+        </div>
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">B1</div>
+          <p class="va-cefr-description">Can briefly describe past events and future plans, give reasons for opinions and use the language when traveling.</p>
+        </div>
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">B2</div>
+          <p class="va-cefr-description">Can communicate confidently in a variety of academic and professional environments.</p>
+        </div>
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">C1</div>
+          <p class="va-cefr-description">Can use the language flexibly and effectively for social, academic and professional purposes.</p>
+        </div>
+        <div class="va-cefr-item">
+          <div class="va-cefr-bubble va-cefr-bubble-inactive">C2</div>
+          <p class="va-cefr-description">Can interact with ease and can differentiate their shades of meaning.</p>
+        </div>
+      </div>
+      <div class="va-cefr-categories">
+        <div>BEGINNER</div>
+        <div>INTERMEDIATE</div>
+        <div>ADVANCED</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="va-education-section" style="padding: 48px 16px;">
+    <div class="va-education-container">
+      <h2 class="va-section-title">EDUCATION</h2>
+      <!-- BIND: Select div → Bind to "education-richtext" field (Rich Text) -->
+      <!-- This will render the HTML from the Rich Text field -->
+      <div class="va-education-item">
+        <h3 class="va-education-school">School Name</h3>
+        <p class="va-education-degree">Degree</p>
+        <p class="va-education-year">Year</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- 
+  CUSTOM CODE FOR DYNAMIC FUNCTIONALITY:
+  
+  1. Skills/Tools/Equipment Tags (comma-separated):
+     Add this custom code in Webflow Settings → Custom Code → Footer:
+     
+     <script>
+       // Parse comma-separated tags and create elements
+       document.addEventListener('DOMContentLoaded', function() {
+         // Skills tags
+         const skillsContainer = document.querySelector('.va-skills-container');
+         if (skillsContainer) {
+           const skillsText = skillsContainer.getAttribute('data-skills') || '';
+           const skills = skillsText.split(',').map(s => s.trim()).filter(Boolean);
+           skillsContainer.innerHTML = skills.map(skill => 
+             `<span class="va-skill-tag">${skill}</span>`
+           ).join('');
+         }
+         
+         // Tools tags (similar for tools and equipment)
+       });
+     </script>
+  
+  2. CEFR Active State:
+     Add custom code to set active class based on english-score-2:
+     
+     <script>
+       document.addEventListener('DOMContentLoaded', function() {
+         const score = document.querySelector('[data-english-score]')?.textContent || '';
+         const level = score.match(/(A1|A2|B1|B2|C1|C2)/i)?.[1]?.toUpperCase();
+         if (level) {
+           const bubbles = document.querySelectorAll('.va-cefr-bubble');
+           bubbles.forEach(bubble => {
+             if (bubble.textContent.trim() === level) {
+               bubble.classList.remove('va-cefr-bubble-inactive');
+               bubble.classList.add('va-cefr-bubble-active');
+             }
+           });
+         }
+       });
+     </script>
+  
+  3. Video Thumbnail:
+     If video field contains YouTube URL, extract video ID and generate thumbnail:
+     
+     <script>
+       document.addEventListener('DOMContentLoaded', function() {
+         const videoUrl = document.querySelector('[data-video-url]')?.getAttribute('data-video-url') || '';
+         const videoId = videoUrl.match(/(?:youtube\.com\/embed\/|youtu\.be\/|youtube\.com\/watch\?v=)([^&\n?#]+)/)?.[1];
+         if (videoId) {
+           const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+           const videoContainer = document.querySelector('.va-video-container');
+           if (videoContainer) {
+             videoContainer.style.backgroundImage = `url('${thumbnailUrl}')`;
+           }
+         }
+       });
+     </script>
+-->
