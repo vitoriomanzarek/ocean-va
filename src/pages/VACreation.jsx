@@ -546,7 +546,7 @@ export default function VACreation() {
             <div className="va-form-row">
               <div className="va-form-field">
                 <label htmlFor="va-image" className="va-form-label">
-                  Profile Image
+                  Image URL
                   <FieldHelpTooltip
                     fieldName="Profile Image"
                     diagram={`
@@ -563,66 +563,16 @@ export default function VACreation() {
                     example="📋 Image Requirements: Format: WEBP | Size: Less than 200 KB | Name: Same as VA name (e.g., maximiliano.webp) | Format: Circular with #E6E6E6 background | Outer circle: Transparent"
                   />
                 </label>
-                
-                {/* Image Preview */}
-                {imagePreview && (
-                  <div className="va-image-preview">
-                    <img src={imagePreview} alt="Preview" />
-                    <button
-                      type="button"
-                      className="va-image-preview-remove"
-                      onClick={() => {
-                        setImagePreview(null)
-                        setFormData(prev => ({ ...prev, image: '' }))
-                      }}
-                    >
-                      ×
-                    </button>
-                  </div>
-                )}
-
-                {/* File Input */}
-                <div className="va-image-upload-wrapper">
-                  <input
-                    type="file"
-                    id="va-image"
-                    name="image"
-                    accept="image/jpeg,image/jpg,image/png,image/gif,image/webp"
-                    className="va-form-file-input"
-                    onChange={handleImageUpload}
-                    disabled={isUploadingImage}
-                  />
-                  <label htmlFor="va-image" className={`va-form-file-label ${isUploadingImage ? 'uploading' : ''}`}>
-                    {isUploadingImage ? (
-                      <>
-                        <span className="va-upload-spinner">⏳</span>
-                        Uploading to Webflow...
-                      </>
-                    ) : imagePreview ? (
-                      'Change Image'
-                    ) : (
-                      'Choose Image to Upload'
-                    )}
-                  </label>
-                </div>
-
-                {/* Current Image URL (if set) */}
-                {formData.image && !imagePreview && (
-                  <div className="va-image-url-display">
-                    <small className="va-form-help">Current: {formData.image}</small>
-                    <button
-                      type="button"
-                      className="va-image-url-clear"
-                      onClick={() => setFormData(prev => ({ ...prev, image: '' }))}
-                    >
-                      Clear
-                    </button>
-                  </div>
-                )}
-
-                <small className="va-form-help">
-                  Upload image (JPEG, PNG, GIF, WebP - Max 1MB). Image will be uploaded to Webflow Assets.
-                </small>
+                <input
+                  type="url"
+                  id="va-image"
+                  name="image"
+                  className="va-form-input"
+                  placeholder="https://example.com/image.webp"
+                  value={formData.image}
+                  onChange={handleInputChange}
+                />
+                <small className="va-form-help">URL to the VA's profile image (e.g., Webflow CDN URL)</small>
               </div>
 
               <div className="va-form-field">
