@@ -105,35 +105,6 @@ function generateEducationHTML(entries) {
   }).join('\n')
 }
 
-/**
- * Extract CEFR level from english score input
- * Examples: "100/C1" -> "C1", "8.3/9 C1" -> "C1", "C1" -> "C1"
- */
-function extractCEFRLevel(score) {
-  if (!score || typeof score !== 'string') return ''
-  
-  const trimmed = score.trim().toUpperCase()
-  const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
-  
-  // If it's already a valid level, return it
-  if (validLevels.includes(trimmed)) {
-    return trimmed
-  }
-  
-  // Try to extract CEFR level from patterns like "100/C1", "8.3/9 C1", etc.
-  // Match A1, A2, B1, B2, C1, C2 at the end or after a slash
-  const cefrMatch = trimmed.match(/(A[12]|B[12]|C[12])/i)
-  if (cefrMatch) {
-    const level = cefrMatch[1].toUpperCase()
-    if (validLevels.includes(level)) {
-      return level
-    }
-  }
-  
-  // If no valid level found, return empty string (will be filtered out)
-  return ''
-}
-
 function generateCEFRHTML(activeLevel) {
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
   
@@ -388,9 +359,11 @@ export default function VACreation() {
         'disc-type': formData.discType,
         'disc-description': formData.discDescription,
         'english-test-type': formData.englishTestType,
-        'english-score': extractCEFRLevel(formData.englishScore), // Extract CEFR level (A1-C2) from input
+        // English Score is now Plain Text in Webflow - send as-is (any format like "100/C1", "8.3/9 C1", etc.)
+        'english-score': formData.englishScore,
         'english-description': formData.englishDescription,
-        'cerf-result': formData.englishCefrHtml || formData.cefrResult, // Rich Text field - send HTML if available, otherwise just the result
+        // CEFR Result (radio button) is the ONLY source for generating CEFR HTML
+        'cerf-result': formData.englishCefrHtml || '', // HTML generated exclusively from CEFR Result selection
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
       }
@@ -1368,7 +1341,7 @@ export default function VACreation() {
                         </div>
                       </div>
                     `}
-                    example="C1, B2, A1, or format like 100/C1 (will extract CEFR level automatically)"
+                    example="Any format: C1, B2, 100/C1, 8.3/9 C1, etc. (sent as-is to Webflow)"
                   />
                 </label>
                 <input
