@@ -4,7 +4,7 @@ import './FieldHelpTooltip.css'
 /**
  * Field Help Tooltip Component
  * Shows a help icon that displays a tooltip with:
- * - A simplified diagram showing where the field appears on the site
+ * - A simplified HTML/CSS diagram showing where the field appears on the site
  * - Example text based on existing VAs
  */
 export default function FieldHelpTooltip({ fieldName, diagram, example }) {
@@ -27,7 +27,7 @@ export default function FieldHelpTooltip({ fieldName, diagram, example }) {
             {diagram && (
               <div className="field-help-diagram">
                 <div className="field-help-diagram-title">📍 Where it appears:</div>
-                <pre className="field-help-diagram-content">{diagram}</pre>
+                <div className="field-help-diagram-content" dangerouslySetInnerHTML={{ __html: diagram }} />
               </div>
             )}
             {example && (

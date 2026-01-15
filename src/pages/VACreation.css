@@ -134,22 +134,122 @@
   box-shadow: 0 0 0 3px rgba(11, 155, 143, 0.1);
 }
 
-/* Multi-select styling */
-.va-form-select[multiple] {
-  min-height: 120px;
-  padding: 8px;
-  background-image: none;
-  appearance: auto;
+/* Equipment Chips System */
+.va-equipment-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  align-items: center;
 }
 
-.va-form-select[multiple] option {
-  padding: 8px 12px;
-  margin: 2px 0;
+.va-equipment-placeholder {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 14px;
 }
 
-.va-form-select[multiple] option:checked {
+.va-equipment-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
   background: #0B9B8F;
   color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.va-equipment-chip-remove {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.va-equipment-chip-remove:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.va-equipment-menu {
+  margin-top: 12px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.va-equipment-menu-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.va-equipment-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .va-equipment-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.va-equipment-option {
+  padding: 10px 14px;
+  background: white;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.va-equipment-option:hover:not(:disabled) {
+  border-color: #0B9B8F;
+  background: #f0fdfa;
+}
+
+.va-equipment-option.selected {
+  background: #0B9B8F;
+  color: white;
+  border-color: #0B9B8F;
+  cursor: not-allowed;
+}
+
+.va-equipment-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.va-equipment-check {
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
 }
 
 .va-form-textarea {

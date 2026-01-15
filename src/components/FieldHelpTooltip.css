@@ -76,17 +76,80 @@
 }
 
 .field-help-diagram-content {
-  font-family: 'Courier New', monospace;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.4;
   color: #374151;
   background: #f9fafb;
   padding: 12px;
   border-radius: 6px;
   margin: 0;
-  white-space: pre-wrap;
   overflow-x: auto;
   border: 1px solid #e5e7eb;
+}
+
+/* Simplified Site Diagram Styles */
+.field-help-diagram-content .diagram-page {
+  background: linear-gradient(to bottom, #0B9B8F 0%, #067A8F 25%, #045C8B 50%);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.field-help-diagram-content .diagram-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.field-help-diagram-content .diagram-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.field-help-diagram-content .diagram-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  padding: 8px;
+  margin: 8px 0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.field-help-diagram-content .diagram-highlight {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.field-help-diagram-content .diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.field-help-diagram-content .diagram-column {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 10px;
+}
+
+.field-help-diagram-content .diagram-tag {
+  display: inline-block;
+  background: #E9DBA3;
+  color: #111827;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 9px;
+  font-weight: 600;
+  margin: 2px;
 }
 
 .field-help-example {

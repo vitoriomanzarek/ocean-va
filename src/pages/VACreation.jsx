@@ -189,6 +189,23 @@ export default function VACreation() {
     setFormData(prev => ({ ...prev, equipment: selectedOptions }))
   }
 
+  const addEquipmentItem = (item) => {
+    if (!formData.equipment.includes(item)) {
+      setFormData(prev => ({ ...prev, equipment: [...prev.equipment, item] }))
+    }
+  }
+
+  const removeEquipmentItem = (item) => {
+    setFormData(prev => ({ ...prev, equipment: prev.equipment.filter(e => e !== item) }))
+  }
+
+  const EQUIPMENT_OPTIONS = [
+    'Noise-Cancelling Headset',
+    'One-Monitor Setup',
+    'Three-Monitor Setup',
+    'Two-Monitor Setup'
+  ]
+
   const addEmploymentEntry = () => {
     setEmploymentEntries(prev => [...prev, {
       id: Date.now(),
@@ -499,18 +516,19 @@ export default function VACreation() {
                 Title
                 <FieldHelpTooltip
                   fieldName="Title"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  MAXIMILIANO                 │
-│  ┌─────────────────────────┐ │
-│  │ BILINGUAL VA |          │ │ ← Title appears here
-│  │ INSURANCE VIRTUAL       │ │
-│  │ ASSISTANT               │ │
-│  └─────────────────────────┘ │
-│  [Summary text...]            │
-│  [Skills tags...]              │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-name">MAXIMILIANO</div>
+                      <div class="diagram-box diagram-highlight">
+                        BILINGUAL VA |<br/>
+                        INSURANCE VIRTUAL<br/>
+                        ASSISTANT
+                      </div>
+                      <div class="diagram-box" style="margin-top: 8px; opacity: 0.6;">
+                        Summary text appears here...
+                      </div>
+                    </div>
+                  `}
                   example="BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT"
                 />
               </label>
@@ -569,18 +587,20 @@ export default function VACreation() {
                 Summary <span className="va-form-required">*</span>
                 <FieldHelpTooltip
                   fieldName="Summary"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  MAXIMILIANO                 │
-│  BILINGUAL VA | INSURANCE   │
-│  ┌─────────────────────────┐ │
-│  │ Maximiliano is a         │ │ ← Summary appears
-│  │ bilingual Virtual        │ │   here (main text)
-│  │ Assistant with solid...  │ │
-│  └─────────────────────────┘ │
-│  [Skills tags...]              │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-name">MAXIMILIANO</div>
+                      <div class="diagram-title">BILINGUAL VA | INSURANCE</div>
+                      <div class="diagram-box diagram-highlight">
+                        Maximiliano is a bilingual Virtual Assistant with solid experience in customer service, sales assistance, and insurance support...
+                      </div>
+                      <div style="margin-top: 8px;">
+                        <span class="diagram-tag">Insurance</span>
+                        <span class="diagram-tag">Sales</span>
+                        <span class="diagram-tag">Quoting</span>
+                      </div>
+                    </div>
+                  `}
                   example="Maximiliano is a bilingual Virtual Assistant (English–Spanish) with solid experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
                 />
               </label>
@@ -601,19 +621,21 @@ export default function VACreation() {
                 Tagline <span className="va-form-required">*</span>
                 <FieldHelpTooltip
                   fieldName="Tagline"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  [Tools] [Equipment] [Video]│
-│  ┌─────────────────────────┐ │
-│  │ Thumbnail Description    │ │
-│  └─────────────────────────┘ │
-│  ┌─────────────────────────┐ │
-│  │ Maximiliano is an        │ │ ← Tagline appears
-│  │ excellent Virtual        │ │   here (bottom box)
-│  │ Assistant for...         │ │
-│  └─────────────────────────┘ │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column">TOOLS</div>
+                        <div class="diagram-column">EQUIPMENT</div>
+                        <div class="diagram-column">VIDEO</div>
+                      </div>
+                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
+                        Thumbnail Description appears here...
+                      </div>
+                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
+                        Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks...
+                      </div>
+                    </div>
+                  `}
                   example="Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks with reliability and efficiency."
                 />
               </label>
@@ -634,17 +656,21 @@ export default function VACreation() {
                 Thumbnail Description
                 <FieldHelpTooltip
                   fieldName="Thumbnail Description"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  [Tools] [Equipment] [Video]│
-│  ┌─────────────────────────┐ │
-│  │ 4 yrs of Insurance      │ │ ← Thumbnail appears
-│  │ Experience, COMMERCIAL  │ │   here (top box)
-│  │ INSURANCE, Personal...  │ │
-│  └─────────────────────────┘ │
-│  [Tagline box below...]       │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column">TOOLS</div>
+                        <div class="diagram-column">EQUIPMENT</div>
+                        <div class="diagram-column">VIDEO</div>
+                      </div>
+                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
+                        4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation...
+                      </div>
+                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
+                        Tagline appears here...
+                      </div>
+                    </div>
+                  `}
                   example="4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation, Payment Assistance"
                 />
               </label>
@@ -669,17 +695,20 @@ export default function VACreation() {
                 Skills
                 <FieldHelpTooltip
                   fieldName="Skills"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  [Summary text...]            │
-│  ┌─────────────────────────┐ │
-│  │ [Insurance Sales]        │ │ ← Skills appear as
-│  │ [Personal Lines]         │ │   yellow tags below
-│  │ [Quoting] [Lead Follow]  │ │   summary
-│  │ [Order Placement]...     │ │
-│  └─────────────────────────┘ │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-box" style="opacity: 0.6; margin-bottom: 12px;">
+                        Summary text appears here...
+                      </div>
+                      <div style="margin-top: 8px;">
+                        <span class="diagram-tag">Insurance Sales</span>
+                        <span class="diagram-tag">Personal Lines</span>
+                        <span class="diagram-tag">Quoting</span>
+                        <span class="diagram-tag">Lead Follow</span>
+                        <span class="diagram-tag">Order Placement</span>
+                      </div>
+                    </div>
+                  `}
                   example="Insurance Sales Assistance, Personal and Commercial Lines, Quoting, Lead Follow-Up, Order Placement & Tracking, E-Signature Coordination"
                 />
               </label>
@@ -700,16 +729,24 @@ export default function VACreation() {
                 Tools & Platforms
                 <FieldHelpTooltip
                   fieldName="Tools"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  TOOLS    │ EQUIPMENT │ VIDEO│
-│  ┌─────────┐│          │     │
-│  │ ✓ CRM   ││          │     │ ← Tools appear
-│  │ ✓ EZLynx││          │     │   here (left)
-│  │ ✓ Turbo ││          │     │
-│  └─────────┘│          │     │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column diagram-highlight">
+                          <div style="font-weight: 600; margin-bottom: 6px;">TOOLS</div>
+                          <div style="font-size: 10px;">✓ CRM</div>
+                          <div style="font-size: 10px;">✓ EZLynx</div>
+                          <div style="font-size: 10px;">✓ Turbo</div>
+                        </div>
+                        <div class="diagram-column" style="opacity: 0.6;">
+                          EQUIPMENT
+                        </div>
+                        <div class="diagram-column" style="opacity: 0.6;">
+                          VIDEO
+                        </div>
+                      </div>
+                    </div>
+                  `}
                   example="CRM, EZLynx, TurboRater, Applied Epic, Microsoft Office"
                 />
               </label>
@@ -730,33 +767,66 @@ export default function VACreation() {
                 Equipment
                 <FieldHelpTooltip
                   fieldName="Equipment"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  TOOLS    │ EQUIPMENT │ VIDEO│
-│  ✓ CRM    │ ┌─────────┐│     │
-│  ✓ EZLynx │ │ Monitor ││     │ ← Equipment
-│  ✓ Turbo  │ │ Headset  ││     │   appears here
-│           │ └─────────┘│     │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column" style="opacity: 0.6;">
+                          TOOLS
+                        </div>
+                        <div class="diagram-column diagram-highlight">
+                          <div style="font-weight: 600; margin-bottom: 6px;">EQUIPMENT</div>
+                          <div style="font-size: 10px;">Monitor</div>
+                          <div style="font-size: 10px;">Headset</div>
+                        </div>
+                        <div class="diagram-column" style="opacity: 0.6;">
+                          VIDEO
+                        </div>
+                      </div>
+                    </div>
+                  `}
                   example="Two-Monitor Setup, Noise-Cancelling Headset"
                 />
               </label>
-              <select
-                id="va-equipment"
-                name="equipment"
-                className="va-form-select"
-                multiple
-                size={4}
-                value={formData.equipment}
-                onChange={handleEquipmentChange}
-              >
-                <option value="Noise-Cancelling Headset">Noise-Cancelling Headset</option>
-                <option value="One-Monitor Setup">One-Monitor Setup</option>
-                <option value="Three-Monitor Setup">Three-Monitor Setup</option>
-                <option value="Two-Monitor Setup">Two-Monitor Setup</option>
-              </select>
-              <small className="va-form-help">Hold Ctrl (Windows) or Cmd (Mac) to select multiple items</small>
+              
+              {/* Selected Equipment Chips */}
+              <div className="va-equipment-chips">
+                {formData.equipment.length > 0 ? (
+                  formData.equipment.map((item, index) => (
+                    <span key={index} className="va-equipment-chip">
+                      {item}
+                      <button
+                        type="button"
+                        className="va-equipment-chip-remove"
+                        onClick={() => removeEquipmentItem(item)}
+                        aria-label={`Remove ${item}`}
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))
+                ) : (
+                  <span className="va-equipment-placeholder">No equipment selected</span>
+                )}
+              </div>
+
+              {/* Equipment Options Menu */}
+              <div className="va-equipment-menu">
+                <label className="va-equipment-menu-label">Select equipment to add:</label>
+                <div className="va-equipment-options">
+                  {EQUIPMENT_OPTIONS.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      className={`va-equipment-option ${formData.equipment.includes(option) ? 'selected' : ''}`}
+                      onClick={() => addEquipmentItem(option)}
+                      disabled={formData.equipment.includes(option)}
+                    >
+                      {option}
+                      {formData.equipment.includes(option) && <span className="va-equipment-check">✓</span>}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
 
@@ -839,18 +909,18 @@ export default function VACreation() {
                 Employment Summary
                 <FieldHelpTooltip
                   fieldName="Employment Summary"
-                  diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  EMPLOYMENT SUMMARY          │
-│  ┌─────────────────────────┐ │
-│  │ Maximiliano has over    │ │ ← Employment Summary
-│  │ 4 years of experience   │ │   appears here
-│  │ in customer service...  │ │   (top of section)
-│  └─────────────────────────┘ │
-│  EMPLOYMENT HISTORY           │
-│  [Accordion entries...]        │
-└─────────────────────────────┘`}
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 8px; font-size: 12px;">EMPLOYMENT SUMMARY</div>
+                      <div class="diagram-box diagram-highlight">
+                        Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support...
+                      </div>
+                      <div style="font-weight: 600; margin-top: 16px; margin-bottom: 8px; font-size: 12px; opacity: 0.7;">EMPLOYMENT HISTORY</div>
+                      <div class="diagram-box" style="opacity: 0.6;">
+                        Accordion entries appear here...
+                      </div>
+                    </div>
+                  `}
                   example="Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
                 />
               </label>
@@ -983,21 +1053,28 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-english-score" className="va-form-label">
                   English Score
-                  <FieldHelpTooltip
-                    fieldName="English Score"
-                    diagram={`┌─────────────────────────────┐
-│  VA PROFILE PAGE            │
-├─────────────────────────────┤
-│  ASSESSMENT RESULTS          │
-│  ┌──────────┐ ┌──────────┐  │
-│  │ DISC     │ │ ENGLISH  │  │
-│  │ [I+D]    │ │ [100/C1] │  │ ← English Score
-│  │          │ │          │  │   appears here
-│  └──────────┘ └──────────┘  │
-│  [CEFR table below...]       │
-└─────────────────────────────┘`}
-                    example="C1, B2, 100/C1, or custom format"
-                  />
+                <FieldHelpTooltip
+                  fieldName="English Score"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div class="diagram-box" style="opacity: 0.6;">
+                          <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                          <div style="font-size: 10px;">[I+D]</div>
+                        </div>
+                        <div class="diagram-box diagram-highlight">
+                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                          <div style="font-size: 10px;">[100/C1]</div>
+                        </div>
+                      </div>
+                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6; font-size: 10px;">
+                        CEFR table appears below...
+                      </div>
+                    </div>
+                  `}
+                  example="C1, B2, 100/C1, or custom format"
+                />
                 </label>
                 <input
                   type="text"
