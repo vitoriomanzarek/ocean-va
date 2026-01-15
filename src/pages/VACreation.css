@@ -252,6 +252,123 @@
   margin-left: 8px;
 }
 
+/* Image Upload Styles */
+.va-image-preview {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #d1d5db;
+}
+
+.va-image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.va-image-preview-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.va-image-preview-remove:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+.va-image-upload-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.va-form-file-input {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.va-form-file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #0B9B8F;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.va-form-file-label:hover:not(.uploading) {
+  background: #067A8F;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(11, 155, 143, 0.3);
+}
+
+.va-form-file-label.uploading {
+  background: #6b7280;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.va-upload-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.va-image-url-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.va-image-url-clear {
+  padding: 4px 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.va-image-url-clear:hover {
+  background: #dc2626;
+}
+
 .va-form-textarea {
   resize: vertical;
   min-height: 120px;

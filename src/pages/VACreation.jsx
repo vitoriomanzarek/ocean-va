@@ -153,6 +153,8 @@ export default function VACreation() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState({ type: '', text: '' })
   const [showSuccess, setShowSuccess] = useState(false)
+  const [imagePreview, setImagePreview] = useState(null)
+  const [isUploadingImage, setIsUploadingImage] = useState(false)
 
   // Auto-generate slug from name
   useEffect(() => {
@@ -182,6 +184,77 @@ export default function VACreation() {
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    // Validate file type
+    const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp']
+    if (!allowedTypes.includes(file.type)) {
+      setMessage({ type: 'error', text: 'Invalid file type. Please upload a JPEG, PNG, GIF, or WebP image.' })
+      return
+    }
+
+    // Validate file size (max 10MB)
+    const maxSize = 10 * 1024 * 1024 // 10MB
+    if (file.size > maxSize) {
+      setMessage({ type: 'error', text: 'File size exceeds 10MB limit. Please upload a smaller image.' })
+      return
+    }
+
+    // Show preview
+    const reader = new FileReader()
+    reader.onloadend = () => {
+      setImagePreview(reader.result)
+    }
+    reader.readAsDataURL(file)
+
+    // Upload to Webflow
+    setIsUploadingImage(true)
+    setMessage({ type: '', text: '' })
+
+    try {
+      // Convert file to base64
+      const base64 = await new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = reject
+        reader.readAsDataURL(file)
+      })
+
+      // Upload to our API endpoint
+      const response = await fetch('https://ocean-va.vercel.app/api/webflow/upload-image', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          file: base64,
+          fileName: file.name,
+          mimeType: file.type
+        })
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.message || 'Failed to upload image')
+      }
+
+      const result = await response.json()
+      
+      // Update form data with the Webflow CDN URL
+      setFormData(prev => ({ ...prev, image: result.url }))
+      setMessage({ type: 'success', text: 'Image uploaded successfully to Webflow!' })
+      
+    } catch (error) {
+      console.error('Error uploading image:', error)
+      setMessage({ type: 'error', text: error.message || 'Failed to upload image. Please try again.' })
+      setImagePreview(null)
+    } finally {
+      setIsUploadingImage(false)
+    }
   }
 
   const handleEquipmentChange = (e) => {
@@ -377,6 +450,7 @@ export default function VACreation() {
                     setEducationEntries([])
                     setMessage({ type: '', text: '' })
                     setShowSuccess(false)
+                    setImagePreview(null)
                   }}
                   style={{
                     marginLeft: '16px',
@@ -546,18 +620,68 @@ export default function VACreation() {
             <div className="va-form-row">
               <div className="va-form-field">
                 <label htmlFor="va-image" className="va-form-label">
-                  Image URL
+                  Profile Image
                 </label>
-                <input
-                  type="url"
-                  id="va-image"
-                  name="image"
-                  className="va-form-input"
-                  placeholder="https://example.com/image.jpg"
-                  value={formData.image}
-                  onChange={handleInputChange}
-                />
-                <small className="va-form-help">URL to the VA's profile image</small>
+                
+                {/* Image Preview */}
+                {imagePreview && (
+                  <div className="va-image-preview">
+                    <img src={imagePreview} alt="Preview" />
+                    <button
+                      type="button"
+                      className="va-image-preview-remove"
+                      onClick={() => {
+                        setImagePreview(null)
+                        setFormData(prev => ({ ...prev, image: '' }))
+                      }}
+                    >
+                      ×
+                    </button>
+                  </div>
+                )}
+
+                {/* File Input */}
+                <div className="va-image-upload-wrapper">
+                  <input
+                    type="file"
+                    id="va-image"
+                    name="image"
+                    accept="image/jpeg,image/jpg,image/png,image/gif,image/webp"
+                    className="va-form-file-input"
+                    onChange={handleImageUpload}
+                    disabled={isUploadingImage}
+                  />
+                  <label htmlFor="va-image" className={`va-form-file-label ${isUploadingImage ? 'uploading' : ''}`}>
+                    {isUploadingImage ? (
+                      <>
+                        <span className="va-upload-spinner">⏳</span>
+                        Uploading to Webflow...
+                      </>
+                    ) : imagePreview ? (
+                      'Change Image'
+                    ) : (
+                      'Choose Image to Upload'
+                    )}
+                  </label>
+                </div>
+
+                {/* Current Image URL (if set) */}
+                {formData.image && !imagePreview && (
+                  <div className="va-image-url-display">
+                    <small className="va-form-help">Current: {formData.image}</small>
+                    <button
+                      type="button"
+                      className="va-image-url-clear"
+                      onClick={() => setFormData(prev => ({ ...prev, image: '' }))}
+                    >
+                      Clear
+                    </button>
+                  </div>
+                )}
+
+                <small className="va-form-help">
+                  Upload image (JPEG, PNG, GIF, WebP - Max 10MB). Image will be uploaded to Webflow Assets.
+                </small>
               </div>
 
               <div className="va-form-field">
