@@ -105,6 +105,35 @@ function generateEducationHTML(entries) {
   }).join('\n')
 }
 
+/**
+ * Extract CEFR level from english score input
+ * Examples: "100/C1" -> "C1", "8.3/9 C1" -> "C1", "C1" -> "C1"
+ */
+function extractCEFRLevel(score) {
+  if (!score || typeof score !== 'string') return ''
+  
+  const trimmed = score.trim().toUpperCase()
+  const validLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+  
+  // If it's already a valid level, return it
+  if (validLevels.includes(trimmed)) {
+    return trimmed
+  }
+  
+  // Try to extract CEFR level from patterns like "100/C1", "8.3/9 C1", etc.
+  // Match A1, A2, B1, B2, C1, C2 at the end or after a slash
+  const cefrMatch = trimmed.match(/(A[12]|B[12]|C[12])/i)
+  if (cefrMatch) {
+    const level = cefrMatch[1].toUpperCase()
+    if (validLevels.includes(level)) {
+      return level
+    }
+  }
+  
+  // If no valid level found, return empty string (will be filtered out)
+  return ''
+}
+
 function generateCEFRHTML(activeLevel) {
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
   
@@ -359,7 +388,7 @@ export default function VACreation() {
         'disc-type': formData.discType,
         'disc-description': formData.discDescription,
         'english-test-type': formData.englishTestType,
-        'english-score': formData.englishScore,
+        'english-score': extractCEFRLevel(formData.englishScore), // Extract CEFR level (A1-C2) from input
         'english-description': formData.englishDescription,
         'cerf-result': formData.englishCefrHtml || formData.cefrResult, // Rich Text field - send HTML if available, otherwise just the result
         'employment-richtext': generateEmploymentHTML(employmentEntries),
@@ -1339,7 +1368,7 @@ export default function VACreation() {
                         </div>
                       </div>
                     `}
-                    example="C1, B2, 100/C1, or custom format"
+                    example="C1, B2, A1, or format like 100/C1 (will extract CEFR level automatically)"
                   />
                 </label>
                 <input
@@ -1347,7 +1376,7 @@ export default function VACreation() {
                   id="va-english-score"
                   name="englishScore"
                   className="va-form-input"
-                  placeholder="e.g., C1, B2, A1, or custom score"
+                  placeholder="e.g., C1, B2, A1, or 100/C1 (will extract CEFR level)"
                   value={formData.englishScore}
                   onChange={handleInputChange}
                 />
