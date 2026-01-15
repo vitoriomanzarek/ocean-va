@@ -156,10 +156,10 @@ export default async function handler(req, res) {
     const base64Data = file.split(',')[1] || file; // Remove data:image/...;base64, prefix if present
     const fileBuffer = Buffer.from(base64Data, 'base64');
 
-    // Validate file size (max 10MB)
-    const maxSize = 10 * 1024 * 1024; // 10MB
+    // Validate file size (max 1MB)
+    const maxSize = 1 * 1024 * 1024; // 1MB
     if (fileBuffer.length > maxSize) {
-      return res.status(400).json({ error: 'File size exceeds 10MB limit' });
+      return res.status(400).json({ error: 'File size exceeds 1MB limit' });
     }
 
     // Upload to Webflow

@@ -197,10 +197,10 @@ export default function VACreation() {
       return
     }
 
-    // Validate file size (max 10MB)
-    const maxSize = 10 * 1024 * 1024 // 10MB
+    // Validate file size (max 1MB)
+    const maxSize = 1 * 1024 * 1024 // 1MB
     if (file.size > maxSize) {
-      setMessage({ type: 'error', text: 'File size exceeds 10MB limit. Please upload a smaller image.' })
+      setMessage({ type: 'error', text: 'File size exceeds 1MB limit. Please upload a smaller image.' })
       return
     }
 
@@ -621,6 +621,21 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-image" className="va-form-label">
                   Profile Image
+                  <FieldHelpTooltip
+                    fieldName="Profile Image"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div style="display: flex; justify-content: center; margin: 16px 0;">
+                          <div style="width: 80px; height: 80px; border-radius: 50%; background: #E6E6E6; border: 2px solid rgba(255,255,255,0.3);"></div>
+                        </div>
+                        <div class="diagram-box" style="opacity: 0.6;">
+                          Circular image with transparent background
+                        </div>
+                      </div>
+                    `}
+                    example="📋 Image Requirements: Format: WEBP | Size: Less than 200 KB | Name: Same as VA name (e.g., maximiliano.webp) | Format: Circular with #E6E6E6 background | Outer circle: Transparent"
+                  />
                 </label>
                 
                 {/* Image Preview */}
@@ -680,7 +695,7 @@ export default function VACreation() {
                 )}
 
                 <small className="va-form-help">
-                  Upload image (JPEG, PNG, GIF, WebP - Max 10MB). Image will be uploaded to Webflow Assets.
+                  Upload image (JPEG, PNG, GIF, WebP - Max 1MB). Image will be uploaded to Webflow Assets.
                 </small>
               </div>
 
