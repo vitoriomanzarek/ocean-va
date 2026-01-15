@@ -48,6 +48,8 @@ const FIELD_MAPPING = {
   
   // Employment & Education (RichText - HTML)
   'employment-richtext': 'employment-richtext',
+  'employment-summary': 'employment-summary',
+  'employmentSummary': 'employment-summary', // Support camelCase from form
   'education-richtext': 'education-richtext',
   
   // DISC

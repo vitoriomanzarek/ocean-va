@@ -137,7 +137,8 @@ export default function VACreation() {
     thumbnailDescription: '',
     skills: '',
     tools: '',
-    equipment: '',
+    equipment: [],
+    employmentSummary: '',
     discType: '',
     discDescription: '',
     englishScore: '',
@@ -179,6 +180,11 @@ export default function VACreation() {
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleEquipmentChange = (e) => {
+    const selectedOptions = Array.from(e.target.selectedOptions, option => option.value)
+    setFormData(prev => ({ ...prev, equipment: selectedOptions }))
   }
 
   const addEmploymentEntry = () => {
@@ -242,7 +248,8 @@ export default function VACreation() {
         'thumbnail-description': formData.thumbnailDescription,
         'skills-tags': formData.skills,
         'tools-tags': formData.tools,
-        'equipment-tags': formData.equipment,
+        'equipment-tags': Array.isArray(formData.equipment) ? formData.equipment.join(', ') : formData.equipment,
+        'employment-summary': formData.employmentSummary,
         'disc-type': formData.discType,
         'disc-description': formData.discDescription,
         'english-score': formData.englishScore,
@@ -337,7 +344,8 @@ export default function VACreation() {
                       thumbnailDescription: '',
                       skills: '',
                       tools: '',
-                      equipment: '',
+                      equipment: [],
+                      employmentSummary: '',
                       discType: '',
                       discDescription: '',
                       englishScore: '',
@@ -603,16 +611,21 @@ export default function VACreation() {
 
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-equipment" className="va-form-label">Equipment</label>
-              <input
-                type="text"
+              <select
                 id="va-equipment"
                 name="equipment"
-                className="va-form-input"
-                placeholder="Comma-separated list (e.g., Laptop, Headset, Monitor)"
+                className="va-form-select"
+                multiple
+                size={4}
                 value={formData.equipment}
-                onChange={handleInputChange}
-              />
-              <small className="va-form-help">Separate multiple items with commas</small>
+                onChange={handleEquipmentChange}
+              >
+                <option value="Noise-Cancelling Headset">Noise-Cancelling Headset</option>
+                <option value="One-Monitor Setup">One-Monitor Setup</option>
+                <option value="Three-Monitor Setup">Three-Monitor Setup</option>
+                <option value="Two-Monitor Setup">Two-Monitor Setup</option>
+              </select>
+              <small className="va-form-help">Hold Ctrl (Windows) or Cmd (Mac) to select multiple items</small>
             </div>
           </section>
 
@@ -689,6 +702,19 @@ export default function VACreation() {
             >
               + Add Employment Entry
             </button>
+
+            <div className="va-form-field va-form-field-full" style={{ marginTop: '32px' }}>
+              <label htmlFor="va-employment-summary" className="va-form-label">Employment Summary</label>
+              <textarea
+                id="va-employment-summary"
+                name="employmentSummary"
+                className="va-form-textarea"
+                rows={4}
+                placeholder="Enter employment summary..."
+                value={formData.employmentSummary}
+                onChange={handleInputChange}
+              />
+            </div>
           </section>
 
           {/* Education */}
@@ -809,21 +835,15 @@ export default function VACreation() {
                 <label htmlFor="va-english-score" className="va-form-label">
                   English Score
                 </label>
-                <select
+                <input
+                  type="text"
                   id="va-english-score"
                   name="englishScore"
-                  className="va-form-select"
+                  className="va-form-input"
+                  placeholder="e.g., C1, B2, A1, or custom score"
                   value={formData.englishScore}
                   onChange={handleInputChange}
-                >
-                  <option value="">Select English Level</option>
-                  <option value="A1">A1 - Beginner</option>
-                  <option value="A2">A2 - Elementary</option>
-                  <option value="B1">B1 - Intermediate</option>
-                  <option value="B2">B2 - Upper-Intermediate</option>
-                  <option value="C1">C1 - Advanced</option>
-                  <option value="C2">C2 - Proficient</option>
-                </select>
+                />
               </div>
             </div>
 

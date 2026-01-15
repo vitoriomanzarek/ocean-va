@@ -131,6 +131,24 @@
   box-shadow: 0 0 0 3px rgba(11, 155, 143, 0.1);
 }
 
+/* Multi-select styling */
+.va-form-select[multiple] {
+  min-height: 120px;
+  padding: 8px;
+  background-image: none;
+  appearance: auto;
+}
+
+.va-form-select[multiple] option {
+  padding: 8px 12px;
+  margin: 2px 0;
+}
+
+.va-form-select[multiple] option:checked {
+  background: #0B9B8F;
+  color: white;
+}
+
 .va-form-textarea {
   resize: vertical;
   min-height: 120px;
