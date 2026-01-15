@@ -153,8 +153,6 @@ export default function VACreation() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState({ type: '', text: '' })
   const [showSuccess, setShowSuccess] = useState(false)
-  const [imagePreview, setImagePreview] = useState(null)
-  const [isUploadingImage, setIsUploadingImage] = useState(false)
 
   // Auto-generate slug from name
   useEffect(() => {
@@ -184,77 +182,6 @@ export default function VACreation() {
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
-  }
-
-  const handleImageUpload = async (e) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-
-    // Validate file type
-    const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp']
-    if (!allowedTypes.includes(file.type)) {
-      setMessage({ type: 'error', text: 'Invalid file type. Please upload a JPEG, PNG, GIF, or WebP image.' })
-      return
-    }
-
-    // Validate file size (max 1MB)
-    const maxSize = 1 * 1024 * 1024 // 1MB
-    if (file.size > maxSize) {
-      setMessage({ type: 'error', text: 'File size exceeds 1MB limit. Please upload a smaller image.' })
-      return
-    }
-
-    // Show preview
-    const reader = new FileReader()
-    reader.onloadend = () => {
-      setImagePreview(reader.result)
-    }
-    reader.readAsDataURL(file)
-
-    // Upload to Webflow
-    setIsUploadingImage(true)
-    setMessage({ type: '', text: '' })
-
-    try {
-      // Convert file to base64
-      const base64 = await new Promise((resolve, reject) => {
-        const reader = new FileReader()
-        reader.onload = () => resolve(reader.result)
-        reader.onerror = reject
-        reader.readAsDataURL(file)
-      })
-
-      // Upload to our API endpoint
-      const response = await fetch('https://ocean-va.vercel.app/api/webflow/upload-image', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          file: base64,
-          fileName: file.name,
-          mimeType: file.type
-        })
-      })
-
-      if (!response.ok) {
-        const error = await response.json()
-        throw new Error(error.message || 'Failed to upload image')
-      }
-
-      const result = await response.json()
-      
-      // Update form data with the Webflow CDN URL
-      setFormData(prev => ({ ...prev, image: result.url }))
-      setMessage({ type: 'success', text: 'Image uploaded successfully to Webflow!' })
-      
-    } catch (error) {
-      console.error('Error uploading image:', error)
-      setMessage({ type: 'error', text: error.message || 'Failed to upload image. Please try again.' })
-      setImagePreview(null)
-    } finally {
-      setIsUploadingImage(false)
-    }
   }
 
   const handleEquipmentChange = (e) => {
@@ -450,7 +377,6 @@ export default function VACreation() {
                     setEducationEntries([])
                     setMessage({ type: '', text: '' })
                     setShowSuccess(false)
-                    setImagePreview(null)
                   }}
                   style={{
                     marginLeft: '16px',
