@@ -38,13 +38,21 @@ const FIELD_MAPPING = {
   'thumbnail-description': 'thumbnail-description',
   'thumbnailDescription': 'thumbnail-description', // Support camelCase from form
   
-  // Skills/Tools/Equipment (PlainText - comma-separated)
+  // Skills/Tools/Equipment (PlainText - comma-separated) - kept for backward compatibility
   'skills-tags': 'skills-tags',
   'skills': 'skills-tags', // Support form field name
   'tools-tags': 'tools-tags',
   'tools': 'tools-tags', // Support form field name
   'equipment-tags': 'equipment-tags',
   'equipment': 'equipment-tags', // Support form field name
+  
+  // Skills/Tools/Equipment (RichText - HTML)
+  'skills-richtext': 'skills-richtext',
+  'skillsHtml': 'skills-richtext', // Support camelCase from form
+  'tools-richtext': 'tools-richtext',
+  'toolsHtml': 'tools-richtext', // Support camelCase from form
+  'equipment-richtext': 'equipment-richtext',
+  'equipmentHtml': 'equipment-richtext', // Support camelCase from form
   
   // Employment & Education (RichText - HTML)
   'employment-richtext': 'employment-richtext',

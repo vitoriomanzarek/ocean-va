@@ -126,6 +126,49 @@ ${items}
       </div>`
 }
 
+function generateSkillsHTML(skillsString) {
+  if (!skillsString || typeof skillsString !== 'string') return ''
+  
+  const skills = skillsString.split(',').map(s => s.trim()).filter(Boolean)
+  if (skills.length === 0) return ''
+  
+  const tags = skills.map(skill => 
+    `<span class="va-skill-tag">${escapeHtml(skill)}</span>`
+  ).join('')
+  
+  return `<div class="va-skills-container">${tags}</div>`
+}
+
+function generateToolsHTML(toolsString) {
+  if (!toolsString || typeof toolsString !== 'string') return ''
+  
+  const tools = toolsString.split(',').map(t => t.trim()).filter(Boolean)
+  if (tools.length === 0) return ''
+  
+  const items = tools.map(tool => 
+    `<div class="va-tool-item"><span class="va-tool-checkmark">✓</span><span>${escapeHtml(tool)}</span></div>`
+  ).join('')
+  
+  return `<div class="va-tools-list">${items}</div>`
+}
+
+function generateEquipmentHTML(equipmentArray) {
+  if (!equipmentArray || !Array.isArray(equipmentArray) || equipmentArray.length === 0) return ''
+  
+  // SVG paths for different equipment types
+  const monitorSVG = `<svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>`
+  
+  const headsetSVG = `<svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>`
+  
+  const items = equipmentArray.map(equip => {
+    const isMonitor = equip.toLowerCase().includes('monitor')
+    const svg = isMonitor ? monitorSVG : headsetSVG
+    return `<div class="va-equipment-item">${svg}<span>${escapeHtml(equip)}</span></div>`
+  }).join('')
+  
+  return `<div class="va-equipment-list">${items}</div>`
+}
+
 export default function VACreation() {
   const [formData, setFormData] = useState({
     name: '',
@@ -274,6 +317,9 @@ export default function VACreation() {
         'skills-tags': formData.skills,
         'tools-tags': formData.tools,
         'equipment-tags': Array.isArray(formData.equipment) ? formData.equipment.join(', ') : formData.equipment,
+        'skills-richtext': formData.skillsHtml,
+        'tools-richtext': formData.toolsHtml,
+        'equipment-richtext': formData.equipmentHtml,
         'employment-summary': formData.employmentSummary,
         'disc-type': formData.discType,
         'disc-description': formData.discDescription,

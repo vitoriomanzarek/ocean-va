@@ -49,11 +49,8 @@
           <p class="va-summary"></p>
 
           <!-- Skills Tags -->
-          <!-- BIND: Use Collection List → Bind to "skills-tags" field (Plain Text, comma-separated) -->
-          <!-- Note: You may need to split the comma-separated string in Webflow or use a custom code -->
-          <div class="va-skills-container">
-            <span class="va-skill-tag"></span>
-          </div>
+          <!-- BIND: Select div.va-skills-container → Bind to "skills-richtext" field (Rich Text) -->
+          <div class="va-skills-container"></div>
         </div>
       </div>
 
@@ -64,27 +61,15 @@
           <!-- Tools -->
           <div>
             <h3 class="va-column-header">TOOLS</h3>
-            <!-- BIND: Use Collection List → Bind to "tools-tags" field (Plain Text, comma-separated) -->
-            <div class="va-tools-list two-column">
-              <div class="va-tool-item">
-                <span class="va-tool-checkmark">✓</span>
-                <span></span>
-              </div>
-            </div>
+            <!-- BIND: Select div.va-tools-list → Bind to "tools-richtext" field (Rich Text) -->
+            <div class="va-tools-list"></div>
           </div>
 
           <!-- Equipment -->
           <div>
             <h3 class="va-column-header">EQUIPMENT</h3>
-            <!-- BIND: Use Collection List → Bind to "equipment-tags" field (Plain Text, comma-separated) -->
-            <div class="va-equipment-list">
-              <div class="va-equipment-item">
-                <svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <span></span>
-              </div>
-            </div>
+            <!-- BIND: Select div.va-equipment-list → Bind to "equipment-richtext" field (Rich Text) -->
+            <div class="va-equipment-list"></div>
           </div>
 
           <!-- Video -->
@@ -196,34 +181,8 @@
   <section class="va-cefr-section">
     <div class="va-cefr-container">
       <h2 class="va-section-title">COMMON EUROPEAN FRAMEWORK OF REFERENCE FOR LANGUAGES (CEFR)</h2>
-      <div class="va-cefr-grid">
-        <!-- CEFR Levels - Static structure, dynamic active state -->
-        <!-- Note: You'll need custom code to set active class based on english-score-2 value -->
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">A1</div>
-          <p class="va-cefr-description">Can understand and use familiar everyday phrases and answer basic questions about personal details.</p>
-        </div>
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">A2</div>
-          <p class="va-cefr-description">Can have very short social exchanges and give information on familiar and routine matters.</p>
-        </div>
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">B1</div>
-          <p class="va-cefr-description">Can briefly describe past events and future plans, give reasons for opinions and use the language when traveling.</p>
-        </div>
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">B2</div>
-          <p class="va-cefr-description">Can communicate confidently in a variety of academic and professional environments.</p>
-        </div>
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">C1</div>
-          <p class="va-cefr-description">Can use the language flexibly and effectively for social, academic and professional purposes.</p>
-        </div>
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble va-cefr-bubble-inactive">C2</div>
-          <p class="va-cefr-description">Can interact with ease and can differentiate their shades of meaning.</p>
-        </div>
-      </div>
+      <!-- BIND: Select div.va-cefr-grid → Bind to "cerf-result" field (Rich Text) -->
+      <div class="va-cefr-grid"></div>
       <div class="va-cefr-categories">
         <div>BEGINNER</div>
         <div>INTERMEDIATE</div>
