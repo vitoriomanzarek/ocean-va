@@ -193,7 +193,10 @@ export default function VACreation() {
     englishScore: '',
     englishDescription: '',
     cefrResult: '',
-    englishCefrHtml: ''
+    englishCefrHtml: '',
+    skillsHtml: '',
+    toolsHtml: '',
+    equipmentHtml: ''
   })
 
   const [employmentEntries, setEmploymentEntries] = useState([])
@@ -224,8 +227,40 @@ export default function VACreation() {
     if (formData.cefrResult) {
       const cefrHTML = generateCEFRHTML(formData.cefrResult)
       setFormData(prev => ({ ...prev, englishCefrHtml: cefrHTML }))
+    } else {
+      setFormData(prev => ({ ...prev, englishCefrHtml: '' }))
     }
   }, [formData.cefrResult])
+
+  // Generate Skills HTML when skills change
+  useEffect(() => {
+    if (formData.skills) {
+      const skillsHTML = generateSkillsHTML(formData.skills)
+      setFormData(prev => ({ ...prev, skillsHtml: skillsHTML }))
+    } else {
+      setFormData(prev => ({ ...prev, skillsHtml: '' }))
+    }
+  }, [formData.skills])
+
+  // Generate Tools HTML when tools change
+  useEffect(() => {
+    if (formData.tools) {
+      const toolsHTML = generateToolsHTML(formData.tools)
+      setFormData(prev => ({ ...prev, toolsHtml: toolsHTML }))
+    } else {
+      setFormData(prev => ({ ...prev, toolsHtml: '' }))
+    }
+  }, [formData.tools])
+
+  // Generate Equipment HTML when equipment changes
+  useEffect(() => {
+    if (formData.equipment && formData.equipment.length > 0) {
+      const equipmentHTML = generateEquipmentHTML(formData.equipment)
+      setFormData(prev => ({ ...prev, equipmentHtml: equipmentHTML }))
+    } else {
+      setFormData(prev => ({ ...prev, equipmentHtml: '' }))
+    }
+  }, [formData.equipment])
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -423,7 +458,10 @@ export default function VACreation() {
                       discDescription: '',
                       englishScore: '',
                       englishDescription: '',
-                      englishCefrHtml: ''
+                      englishCefrHtml: '',
+                      skillsHtml: '',
+                      toolsHtml: '',
+                      equipmentHtml: ''
                     })
                     setEmploymentEntries([])
                     setEducationEntries([])
