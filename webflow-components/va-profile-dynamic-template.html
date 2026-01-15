@@ -207,48 +207,11 @@
 </div>
 
 <!-- 
-  CUSTOM CODE FOR DYNAMIC FUNCTIONALITY:
+  NOTE: This template uses Rich Text fields for Skills, Tools, Equipment, and CEFR.
+  All HTML is generated server-side and stored in Webflow CMS Rich Text fields.
+  No JavaScript is needed for parsing or rendering - simply bind the Rich Text fields directly.
   
-  1. Skills/Tools/Equipment Tags (comma-separated):
-     Add this custom code in Webflow Settings → Custom Code → Footer:
-     
-     <script>
-       // Parse comma-separated tags and create elements
-       document.addEventListener('DOMContentLoaded', function() {
-         // Skills tags
-         const skillsContainer = document.querySelector('.va-skills-container');
-         if (skillsContainer) {
-           const skillsText = skillsContainer.getAttribute('data-skills') || '';
-           const skills = skillsText.split(',').map(s => s.trim()).filter(Boolean);
-           skillsContainer.innerHTML = skills.map(skill => 
-             `<span class="va-skill-tag">${skill}</span>`
-           ).join('');
-         }
-         
-         // Tools tags (similar for tools and equipment)
-       });
-     </script>
-  
-  2. CEFR Active State:
-     Add custom code to set active class based on english-score-2:
-     
-     <script>
-       document.addEventListener('DOMContentLoaded', function() {
-         const score = document.querySelector('[data-english-score]')?.textContent || '';
-         const level = score.match(/(A1|A2|B1|B2|C1|C2)/i)?.[1]?.toUpperCase();
-         if (level) {
-           const bubbles = document.querySelectorAll('.va-cefr-bubble');
-           bubbles.forEach(bubble => {
-             if (bubble.textContent.trim() === level) {
-               bubble.classList.remove('va-cefr-bubble-inactive');
-               bubble.classList.add('va-cefr-bubble-active');
-             }
-           });
-         }
-       });
-     </script>
-  
-  3. Video Thumbnail:
+  Video Thumbnail (optional custom code):
      If video field contains YouTube URL, extract video ID and generate thumbnail:
      
      <script>
