@@ -130,6 +130,7 @@ export default function VACreation() {
     experienceYears: '',
     language: '',
     availability: '',
+    title: '',
     image: '',
     video: '',
     summary: '',
@@ -241,6 +242,7 @@ export default function VACreation() {
         'experience-years': formData.experienceYears,
         language: formData.language,
         availability: formData.availability,
+        title: formData.title,
         image: formData.image,
         video: formData.video,
         summary: formData.summary,
@@ -337,6 +339,7 @@ export default function VACreation() {
                       experienceYears: '',
                       language: '',
                       availability: '',
+                      title: '',
                       image: '',
                       video: '',
                       summary: '',
@@ -488,6 +491,22 @@ export default function VACreation() {
                   ))}
                 </select>
               </div>
+            </div>
+
+            <div className="va-form-field va-form-field-full">
+              <label htmlFor="va-title" className="va-form-label">
+                Title
+              </label>
+              <input
+                type="text"
+                id="va-title"
+                name="title"
+                className="va-form-input"
+                placeholder="e.g., BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT"
+                value={formData.title}
+                onChange={handleInputChange}
+              />
+              <small className="va-form-help">Title that appears below the VA name (e.g., BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT)</small>
             </div>
 
             <div className="va-form-row">
