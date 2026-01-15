@@ -143,8 +143,10 @@ export default function VACreation() {
     employmentSummary: '',
     discType: '',
     discDescription: '',
+    englishTestType: '',
     englishScore: '',
     englishDescription: '',
+    cefrResult: '',
     englishCefrHtml: ''
   })
 
@@ -171,13 +173,13 @@ export default function VACreation() {
     }
   }, [formData.discType])
 
-  // Generate CEFR HTML when English score changes (but don't auto-fill description)
+  // Generate CEFR HTML when CEFR Result changes
   useEffect(() => {
-    if (formData.englishScore) {
-      const cefrHTML = generateCEFRHTML(formData.englishScore)
+    if (formData.cefrResult) {
+      const cefrHTML = generateCEFRHTML(formData.cefrResult)
       setFormData(prev => ({ ...prev, englishCefrHtml: cefrHTML }))
     }
-  }, [formData.englishScore])
+  }, [formData.cefrResult])
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -272,8 +274,10 @@ export default function VACreation() {
         'employment-summary': formData.employmentSummary,
         'disc-type': formData.discType,
         'disc-description': formData.discDescription,
+        'english-test-type': formData.englishTestType,
         'english-score': formData.englishScore,
         'english-description': formData.englishDescription,
+        'cerf-result': formData.cefrResult,
         // Note: 'english-cefr-html' field does not exist in Webflow CMS - not sent
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
@@ -425,6 +429,18 @@ export default function VACreation() {
               <div className="va-form-field va-form-field-full">
                 <label htmlFor="va-name" className="va-form-label">
                   Name <span className="va-form-required">*</span>
+                  <FieldHelpTooltip
+                    fieldName="Name"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div class="diagram-box" style="opacity: 0.6; margin-top: 8px;">
+                          Title appears below...
+                        </div>
+                      </div>
+                    `}
+                    example="MAXIMILIANO (full name in uppercase)"
+                  />
                 </label>
                 <input
                   type="text"
@@ -443,6 +459,19 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-main-category" className="va-form-label">
                   Main Category
+                  <FieldHelpTooltip
+                    fieldName="Main Category"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div class="diagram-title">BILINGUAL VA | INSURANCE</div>
+                        <div class="diagram-box" style="opacity: 0.6; margin-top: 8px;">
+                          Main Category determines VA classification
+                        </div>
+                      </div>
+                    `}
+                    example="Insurance Virtual Assistant, Executive Virtual Assistant, Healthcare Virtual Assistant"
+                  />
                 </label>
                 <select
                   id="va-main-category"
@@ -461,6 +490,19 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-experience-years" className="va-form-label">
                   Experience (Years)
+                  <FieldHelpTooltip
+                    fieldName="Experience"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div class="diagram-title">BILINGUAL VA | INSURANCE</div>
+                        <div class="diagram-box" style="opacity: 0.6; margin-top: 8px;">
+                          Experience years appear in profile summary
+                        </div>
+                      </div>
+                    `}
+                    example="4 years, 5+ years, 3-5 years"
+                  />
                 </label>
                 <input
                   type="text"
@@ -478,6 +520,18 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-language" className="va-form-label">
                   Language
+                  <FieldHelpTooltip
+                    fieldName="Language"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div class="diagram-box" style="opacity: 0.6; margin-top: 8px;">
+                          Language appears in VA card filters
+                        </div>
+                      </div>
+                    `}
+                    example="Bilingual (EN-ES) or English"
+                  />
                 </label>
                 <select
                   id="va-language"
@@ -495,6 +549,18 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-availability" className="va-form-label">
                   Availability
+                  <FieldHelpTooltip
+                    fieldName="Availability"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-name">MAXIMILIANO</div>
+                        <div class="diagram-box" style="opacity: 0.6; margin-top: 8px;">
+                          Availability appears in VA card filters
+                        </div>
+                      </div>
+                    `}
+                    example="Full Time, Part Time, or Assigned"
+                  />
                 </label>
                 <select
                   id="va-availability"
@@ -578,6 +644,26 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-video" className="va-form-label">
                   Video URL
+                  <FieldHelpTooltip
+                    fieldName="Video URL"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div class="diagram-grid">
+                          <div class="diagram-column" style="opacity: 0.6;">
+                            TOOLS
+                          </div>
+                          <div class="diagram-column" style="opacity: 0.6;">
+                            EQUIPMENT
+                          </div>
+                          <div class="diagram-column diagram-highlight">
+                            <div style="font-weight: 600; margin-bottom: 6px;">VIDEO</div>
+                            <div style="font-size: 10px;">Click to play</div>
+                          </div>
+                        </div>
+                      </div>
+                    `}
+                    example="https://www.youtube.com/embed/VIDEO_ID or https://youtu.be/VIDEO_ID"
+                  />
                 </label>
                 <input
                   type="url"
@@ -848,6 +934,38 @@ export default function VACreation() {
           {/* Employment History */}
           <section className="va-form-section">
             <h2 className="va-form-section-title">Employment History</h2>
+            
+            <div className="va-form-field va-form-field-full" style={{ marginBottom: '32px' }}>
+              <label htmlFor="va-employment-summary" className="va-form-label">
+                Employment Summary
+                <FieldHelpTooltip
+                  fieldName="Employment Summary"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 8px; font-size: 12px;">EMPLOYMENT SUMMARY</div>
+                      <div class="diagram-box diagram-highlight">
+                        Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support...
+                      </div>
+                      <div style="font-weight: 600; margin-top: 16px; margin-bottom: 8px; font-size: 12px; opacity: 0.7;">EMPLOYMENT HISTORY</div>
+                      <div class="diagram-box" style="opacity: 0.6;">
+                        Accordion entries appear here...
+                      </div>
+                    </div>
+                  `}
+                  example="Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
+                />
+              </label>
+              <textarea
+                id="va-employment-summary"
+                name="employmentSummary"
+                className="va-form-textarea"
+                rows={4}
+                placeholder="Enter employment summary..."
+                value={formData.employmentSummary}
+                onChange={handleInputChange}
+              />
+            </div>
+
             <p className="va-form-section-description">Add one or more employment entries</p>
             
             <div className="va-form-dynamic-entries">
@@ -918,37 +1036,6 @@ export default function VACreation() {
             >
               + Add Employment Entry
             </button>
-
-            <div className="va-form-field va-form-field-full" style={{ marginTop: '32px' }}>
-              <label htmlFor="va-employment-summary" className="va-form-label">
-                Employment Summary
-                <FieldHelpTooltip
-                  fieldName="Employment Summary"
-                  diagram={`
-                    <div class="diagram-page">
-                      <div style="font-weight: 600; margin-bottom: 8px; font-size: 12px;">EMPLOYMENT SUMMARY</div>
-                      <div class="diagram-box diagram-highlight">
-                        Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support...
-                      </div>
-                      <div style="font-weight: 600; margin-top: 16px; margin-bottom: 8px; font-size: 12px; opacity: 0.7;">EMPLOYMENT HISTORY</div>
-                      <div class="diagram-box" style="opacity: 0.6;">
-                        Accordion entries appear here...
-                      </div>
-                    </div>
-                  `}
-                  example="Maximiliano has over 4 years of experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
-                />
-              </label>
-              <textarea
-                id="va-employment-summary"
-                name="employmentSummary"
-                className="va-form-textarea"
-                rows={4}
-                placeholder="Enter employment summary..."
-                value={formData.employmentSummary}
-                onChange={handleInputChange}
-              />
-            </div>
           </section>
 
           {/* Education */}
@@ -1024,6 +1111,25 @@ export default function VACreation() {
               <div className="va-form-field">
                 <label htmlFor="va-disc-type" className="va-form-label">
                   DISC Type
+                  <FieldHelpTooltip
+                    fieldName="DISC Type"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                          <div class="diagram-box diagram-highlight">
+                            <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                            <div style="font-size: 10px;">[I+D]</div>
+                          </div>
+                          <div class="diagram-box" style="opacity: 0.6;">
+                            <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                            <div style="font-size: 10px;">[100/C1]</div>
+                          </div>
+                        </div>
+                      </div>
+                    `}
+                    example="D, I, S, C, D+I, S+I, or S+C"
+                  />
                 </label>
                 <select
                   id="va-disc-type"
@@ -1047,6 +1153,28 @@ export default function VACreation() {
             <div className="va-form-field va-form-field-full">
               <label htmlFor="va-disc-description" className="va-form-label">
                 DISC Description
+                <FieldHelpTooltip
+                  fieldName="DISC Description"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div class="diagram-box diagram-highlight">
+                          <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                          <div style="font-size: 10px;">[I+D]</div>
+                          <div style="font-size: 9px; margin-top: 4px; opacity: 0.8;">
+                            Influence (I) – Enthusiastic and people-oriented...
+                          </div>
+                        </div>
+                        <div class="diagram-box" style="opacity: 0.6;">
+                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                          <div style="font-size: 10px;">[100/C1]</div>
+                        </div>
+                      </div>
+                    </div>
+                  `}
+                  example="Influence (I) – Enthusiastic and people-oriented, I-type VAs excel at communication, building rapport, and creating positive client experiences. Dominance (D) – Assertive and results-driven, D-type VAs take initiative, drive projects forward, and deliver outcomes efficiently."
+                />
               </label>
               <textarea
                 id="va-disc-description"
@@ -1064,12 +1192,11 @@ export default function VACreation() {
           <section className="va-form-section">
             <h2 className="va-form-section-title">English Proficiency</h2>
             
-            <div className="va-form-row">
-              <div className="va-form-field">
-                <label htmlFor="va-english-score" className="va-form-label">
-                  English Score
+            <div className="va-form-field va-form-field-full">
+              <label htmlFor="va-english-test-type" className="va-form-label">
+                Type of English Test
                 <FieldHelpTooltip
-                  fieldName="English Score"
+                  fieldName="Type of English Test"
                   diagram={`
                     <div class="diagram-page">
                       <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
@@ -1079,17 +1206,55 @@ export default function VACreation() {
                           <div style="font-size: 10px;">[I+D]</div>
                         </div>
                         <div class="diagram-box diagram-highlight">
-                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
-                          <div style="font-size: 10px;">[100/C1]</div>
+                          <div style="font-size: 10px; font-weight: 600;">EF ENGLISH TEST</div>
+                          <div style="font-size: 10px;">or</div>
+                          <div style="font-size: 10px; font-weight: 600;">SPEECHACE TEST</div>
                         </div>
-                      </div>
-                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6; font-size: 10px;">
-                        CEFR table appears below...
                       </div>
                     </div>
                   `}
-                  example="C1, B2, 100/C1, or custom format"
+                  example="EF ENGLISH TEST RESULT or SPEECHACE ENGLISH TEST RESULT"
                 />
+              </label>
+              <select
+                id="va-english-test-type"
+                name="englishTestType"
+                className="va-form-select"
+                value={formData.englishTestType}
+                onChange={handleInputChange}
+              >
+                <option value="">Select Test Type</option>
+                <option value="EF ENGLISH TEST RESULT">EF ENGLISH TEST RESULT</option>
+                <option value="SPEECHACE ENGLISH TEST RESULT">SPEECHACE ENGLISH TEST RESULT</option>
+              </select>
+            </div>
+
+            <div className="va-form-row">
+              <div className="va-form-field">
+                <label htmlFor="va-english-score" className="va-form-label">
+                  English Score
+                  <FieldHelpTooltip
+                    fieldName="English Score"
+                    diagram={`
+                      <div class="diagram-page">
+                        <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                          <div class="diagram-box" style="opacity: 0.6;">
+                            <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                            <div style="font-size: 10px;">[I+D]</div>
+                          </div>
+                          <div class="diagram-box diagram-highlight">
+                            <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                            <div style="font-size: 10px;">[100/C1]</div>
+                          </div>
+                        </div>
+                        <div class="diagram-box" style="margin-top: 12px; opacity: 0.6; font-size: 10px;">
+                          CEFR table appears below...
+                        </div>
+                      </div>
+                    `}
+                    example="C1, B2, 100/C1, or custom format"
+                  />
                 </label>
                 <input
                   type="text"
@@ -1104,8 +1269,71 @@ export default function VACreation() {
             </div>
 
             <div className="va-form-field va-form-field-full">
+              <label className="va-form-label">
+                CEFR Result
+                <FieldHelpTooltip
+                  fieldName="CEFR Result"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">CEFR SECTION</div>
+                      <div class="diagram-grid" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin-bottom: 12px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 4px; border-radius: 4px; text-align: center; font-size: 9px;">A1</div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 4px; border-radius: 4px; text-align: center; font-size: 9px;">A2</div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 4px; border-radius: 4px; text-align: center; font-size: 9px;">B1</div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 4px; border-radius: 4px; text-align: center; font-size: 9px;">B2</div>
+                        <div style="background: #0d5a52; padding: 4px; border-radius: 4px; text-align: center; font-size: 9px; color: white;">C1</div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 4px; border-radius: 4px; text-align: center; font-size: 9px;">C2</div>
+                      </div>
+                      <div class="diagram-box" style="opacity: 0.6; font-size: 10px;">
+                        Selected level appears highlighted in the CEFR section
+                      </div>
+                    </div>
+                  `}
+                  example="Select the CEFR level (A1, A2, B1, B2, C1, or C2) that matches the English score"
+                />
+              </label>
+              <div className="va-cefr-radio-group">
+                {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map(level => (
+                  <label key={level} className="va-cefr-radio-label">
+                    <input
+                      type="radio"
+                      name="cefrResult"
+                      value={level}
+                      checked={formData.cefrResult === level}
+                      onChange={handleInputChange}
+                      className="va-cefr-radio-input"
+                    />
+                    <span className="va-cefr-radio-text">{level}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <div className="va-form-field va-form-field-full">
               <label htmlFor="va-english-description" className="va-form-label">
                 English Description
+                <FieldHelpTooltip
+                  fieldName="English Description"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div style="font-weight: 600; margin-bottom: 12px; font-size: 12px;">ASSESSMENT RESULTS</div>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div class="diagram-box" style="opacity: 0.6;">
+                          <div style="font-size: 10px; font-weight: 600;">DISC</div>
+                          <div style="font-size: 10px;">[I+D]</div>
+                        </div>
+                        <div class="diagram-box diagram-highlight">
+                          <div style="font-size: 10px; font-weight: 600;">ENGLISH</div>
+                          <div style="font-size: 10px;">[100/C1]</div>
+                          <div style="font-size: 9px; margin-top: 4px; opacity: 0.8;">
+                            Shows confident and fluent communication...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `}
+                  example="Shows confident and fluent communication with clear pronunciation and a natural flow of speech. Uses advanced vocabulary and well-structured grammar effectively to express complex ideas with clarity and precision."
+                />
               </label>
               <textarea
                 id="va-english-description"
