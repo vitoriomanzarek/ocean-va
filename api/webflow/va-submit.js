@@ -69,8 +69,8 @@ const FIELD_MAPPING = {
   // English
   'english-test-type': 'type-of-english-test',
   'englishTestType': 'type-of-english-test', // Support camelCase from form
-  'english-score': 'english-score', // Plain Text field (was english-score-2 when it was Option)
-  'englishScore': 'english-score', // Support camelCase from form
+  'english-score': 'english-score-3', // Plain Text field (recreated field, Webflow assigned -3 suffix)
+  'englishScore': 'english-score-3', // Support camelCase from form
   'english-description': 'english-description',
   'englishDescription': 'english-description', // Support camelCase from form
   'cerf-result': 'cerf-result',
