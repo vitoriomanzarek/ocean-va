@@ -3,7 +3,11 @@ import './VACreation.css'
 import FieldHelpTooltip from '../components/FieldHelpTooltip'
 
 // Constants
+// For local testing: use vercel dev to run the API locally, then use http://localhost:3000/api/webflow/va-submit
+// Or temporarily change this to test with local API
 const API_ENDPOINT = 'https://ocean-va.vercel.app/api/webflow/va-submit'
+// For local testing with vercel dev, uncomment below and comment above:
+// const API_ENDPOINT = 'http://localhost:3000/api/webflow/va-submit'
 
 const DISC_DESCRIPTIONS = {
   'D': 'Dominance (D) - Direct, decisive, and results-oriented. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
