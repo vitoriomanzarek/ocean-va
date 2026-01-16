@@ -40,6 +40,7 @@ export default function Navbar() {
       dropdown: [
         { name: 'Insurance Virtual Assistant', href: '/ovas-current-vas' },
         { name: 'Executive / Admin VA', href: '/executive-admin-vas' },
+        { name: 'Property Management Assistants', href: '/ovas-property-management-assistants' },
         { name: 'Mortgage Processing Assistant', href: '/ovas-mortgage-processing-assistant' },
         { name: 'Medical Assistant Specialist', href: '/ovas-medical-assistant' }
       ]

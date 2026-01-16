@@ -777,6 +777,12 @@ const OurVAsPage = () => {
                 >
                   Executive / Admin VAs
                 </Link>
+                <Link 
+                  to="/ovas-property-management-assistants"
+                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
+                >
+                  Property Management Assistants
+                </Link>
               </div>
             </div>
           </div>

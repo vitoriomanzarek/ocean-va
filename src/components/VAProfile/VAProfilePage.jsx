@@ -334,6 +334,12 @@ export default function VAProfilePage({ vaData }) {
             >
               Executive / Admin VAs
             </a>
+            <a
+              href="/ovas-property-management-assistants"
+              className="bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-2 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg"
+            >
+              Property Management Assistants
+            </a>
           </div>
           
           {/* Mobile Version - Dropdown Menu */}
@@ -362,9 +368,16 @@ export default function VAProfilePage({ vaData }) {
                 <a
                   href="/ovas-executive-admin-virtual-assistant"
                   onClick={() => setShowCTAMenu(false)}
-                  className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200"
+                  className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200 border-b border-gray-200"
                 >
                   Executive / Admin VAs
+                </a>
+                <a
+                  href="/ovas-property-management-assistants"
+                  onClick={() => setShowCTAMenu(false)}
+                  className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200"
+                >
+                  Property Management Assistants
                 </a>
               </div>
             )}
