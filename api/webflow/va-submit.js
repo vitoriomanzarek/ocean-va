@@ -31,6 +31,8 @@ const FIELD_MAPPING = {
   // Multimedia
   video: 'video',
   image: 'image', // Image field
+  'video-thumbnail': 'video-thumbnail',
+  'videoThumbnail': 'video-thumbnail', // Support camelCase from form
   
   // Content
   summary: 'summary',
@@ -209,18 +211,15 @@ function formatDataForWebflow(formData) {
     fieldData['languages'] = formData.languages;
   }
 
-  // Handle video thumbnail: use provided thumbnail or generate automatically
-  if (cleanedData.video) {
-    // If thumbnail is already provided, use it
-    const providedThumbnail = cleanedData['video-thumbnail'] || cleanedData.videoThumbnail;
-    if (providedThumbnail) {
-      fieldData['video-thumbnail'] = providedThumbnail;
-    } else {
-      // Generate thumbnail automatically from video URL
-      const thumbnailUrl = generateVideoThumbnail(cleanedData.video);
-      if (thumbnailUrl) {
-        fieldData['video-thumbnail'] = thumbnailUrl;
-      }
+  // Handle video thumbnail: generate automatically if not provided
+  // The field is now in FIELD_MAPPING, so if provided by form it will be mapped automatically
+  // Here we generate it automatically if video exists but thumbnail doesn't
+  if (cleanedData.video && !cleanedData['video-thumbnail'] && !cleanedData.videoThumbnail) {
+    const thumbnailUrl = generateVideoThumbnail(cleanedData.video);
+    if (thumbnailUrl) {
+      // Add to cleanedData so it gets processed by FIELD_MAPPING
+      cleanedData['video-thumbnail'] = thumbnailUrl;
+      cleanedData.videoThumbnail = thumbnailUrl;
     }
   }
 
@@ -423,11 +422,47 @@ export default async function handler(req, res) {
     console.error('Error stack:', error.stack);
     console.error('Form data received:', JSON.stringify(req.body, null, 2));
     
-    // If it's a Webflow API validation error, return 400 with details
+    // If it's a Webflow API validation error for video-thumbnail field, retry without it
     if (error.message && error.message.includes('Validation Error')) {
-      // Try to extract validation details from error
-      const errorMatch = error.message.match(/Validation Error[:\s]*(.+)/);
-      let errorDetails = error.message;
+      const errorText = error.responseText || JSON.stringify(error.response || error.message);
+      
+      // Check if error is specifically about video-thumbnail field not existing
+      if (errorText.includes('video-thumbnail') && 
+          (errorText.includes('not described in schema') || errorText.includes('Field not described'))) {
+        console.log('⚠️  video-thumbnail field not recognized by Webflow. Retrying without it...');
+        
+        try {
+          // Remove video-thumbnail from formData and retry
+          const formDataWithoutThumbnail = { ...req.body };
+          delete formDataWithoutThumbnail['video-thumbnail'];
+          delete formDataWithoutThumbnail.videoThumbnail;
+          
+          // Ensure slug exists
+          if (!formDataWithoutThumbnail.slug && formDataWithoutThumbnail.name) {
+            formDataWithoutThumbnail.slug = formDataWithoutThumbnail.name
+              .toLowerCase()
+              .trim()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/[^a-z0-9\s-]/g, '')
+              .replace(/\s+/g, '-')
+              .replace(/-+/g, '-')
+              .replace(/^-|-$/g, '');
+          }
+          
+          const result = await createVAItem(formDataWithoutThumbnail);
+          return res.status(201).json({
+            success: true,
+            action: 'created',
+            item: result,
+            message: 'VA created successfully (video-thumbnail field not available in CMS)',
+            warning: 'video-thumbnail field was omitted because it does not exist in Webflow CMS schema. Please verify the field slug in Webflow.'
+          });
+        } catch (retryError) {
+          console.error('Error on retry without video-thumbnail:', retryError);
+          // Continue to normal error handling
+        }
+      }
       
       // If error has response details, use those
       if (error.response && error.response.details) {
@@ -440,7 +475,7 @@ export default async function handler(req, res) {
       
       return res.status(400).json({
         error: 'Validation error',
-        message: errorDetails || 'Webflow API validation failed',
+        message: error.responseText || error.message || 'Webflow API validation failed',
         details: error.response ? error.response.details : undefined
       });
     }

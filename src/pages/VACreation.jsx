@@ -808,75 +808,6 @@ export default function VACreation() {
                 onChange={handleInputChange}
               />
             </div>
-
-            <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-tagline" className="va-form-label">
-                Tagline <span className="va-form-required">*</span>
-                <FieldHelpTooltip
-                  fieldName="Tagline"
-                  diagram={`
-                    <div class="diagram-page">
-                      <div class="diagram-grid">
-                        <div class="diagram-column">TOOLS</div>
-                        <div class="diagram-column">EQUIPMENT</div>
-                        <div class="diagram-column">VIDEO</div>
-                      </div>
-                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
-                        Thumbnail Description appears here...
-                      </div>
-                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
-                        Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks...
-                      </div>
-                    </div>
-                  `}
-                  example="Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks with reliability and efficiency."
-                />
-              </label>
-              <input
-                type="text"
-                id="va-tagline"
-                name="tagline"
-                className="va-form-input"
-                required
-                placeholder="Short, compelling tagline (e.g., Expert Insurance Virtual Assistant)"
-                value={formData.tagline}
-                onChange={handleInputChange}
-              />
-            </div>
-
-            <div className="va-form-field va-form-field-full">
-              <label htmlFor="va-thumbnail-description" className="va-form-label">
-                Thumbnail Description
-                <FieldHelpTooltip
-                  fieldName="Thumbnail Description"
-                  diagram={`
-                    <div class="diagram-page">
-                      <div class="diagram-grid">
-                        <div class="diagram-column">TOOLS</div>
-                        <div class="diagram-column">EQUIPMENT</div>
-                        <div class="diagram-column">VIDEO</div>
-                      </div>
-                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
-                        4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation...
-                      </div>
-                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
-                        Tagline appears here...
-                      </div>
-                    </div>
-                  `}
-                  example="4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation, Payment Assistance"
-                />
-              </label>
-              <textarea
-                id="va-thumbnail-description"
-                name="thumbnailDescription"
-                className="va-form-textarea"
-                rows="3"
-                placeholder="Brief description for card thumbnails..."
-                value={formData.thumbnailDescription}
-                onChange={handleInputChange}
-              />
-            </div>
           </section>
 
           {/* Skills, Tools & Equipment */}
@@ -1023,6 +954,80 @@ export default function VACreation() {
             </div>
           </section>
 
+          {/* Thumbnail Description & Tagline */}
+          <section className="va-form-section">
+            <h2 className="va-form-section-title">Content Details</h2>
+            
+            <div className="va-form-field va-form-field-full">
+              <label htmlFor="va-thumbnail-description" className="va-form-label">
+                Thumbnail Description
+                <FieldHelpTooltip
+                  fieldName="Thumbnail Description"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column">TOOLS</div>
+                        <div class="diagram-column">EQUIPMENT</div>
+                        <div class="diagram-column">VIDEO</div>
+                      </div>
+                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
+                        4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation...
+                      </div>
+                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
+                        Tagline appears here...
+                      </div>
+                    </div>
+                  `}
+                  example="4 yrs of Insurance Experience, COMMERCIAL INSURANCE, Personal & Commercial Lines, Quote Generation, Payment Assistance"
+                />
+              </label>
+              <textarea
+                id="va-thumbnail-description"
+                name="thumbnailDescription"
+                className="va-form-textarea"
+                rows="3"
+                placeholder="Brief description for card thumbnails..."
+                value={formData.thumbnailDescription}
+                onChange={handleInputChange}
+              />
+            </div>
+
+            <div className="va-form-field va-form-field-full">
+              <label htmlFor="va-tagline" className="va-form-label">
+                Tagline <span className="va-form-required">*</span>
+                <FieldHelpTooltip
+                  fieldName="Tagline"
+                  diagram={`
+                    <div class="diagram-page">
+                      <div class="diagram-grid">
+                        <div class="diagram-column">TOOLS</div>
+                        <div class="diagram-column">EQUIPMENT</div>
+                        <div class="diagram-column">VIDEO</div>
+                      </div>
+                      <div class="diagram-box" style="margin-top: 12px; opacity: 0.6;">
+                        Thumbnail Description appears here...
+                      </div>
+                      <div class="diagram-box diagram-highlight" style="margin-top: 12px;">
+                        Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks...
+                      </div>
+                    </div>
+                  `}
+                  example="Maximiliano is an excellent Virtual Assistant for insurance agencies who can support sales operations, client communication, and daily administrative tasks with reliability and efficiency."
+                />
+              </label>
+              <input
+                type="text"
+                id="va-tagline"
+                name="tagline"
+                className="va-form-input"
+                required
+                placeholder="Short, compelling tagline (e.g., Expert Insurance Virtual Assistant)"
+                value={formData.tagline}
+                onChange={handleInputChange}
+              />
+            </div>
+          </section>
+
           {/* Employment History */}
           <section className="va-form-section">
             <h2 className="va-form-section-title">Employment History</h2>
@@ -1127,71 +1132,6 @@ export default function VACreation() {
               onClick={addEmploymentEntry}
             >
               + Add Employment Entry
-            </button>
-          </section>
-
-          {/* Education */}
-          <section className="va-form-section">
-            <h2 className="va-form-section-title">Education</h2>
-            <p className="va-form-section-description">Add one or more education entries</p>
-            
-            <div className="va-form-dynamic-entries">
-              {educationEntries.map(entry => (
-                <div key={entry.id} className="va-dynamic-entry">
-                  <div className="va-dynamic-entry-header">
-                    <h3 className="va-dynamic-entry-title">Education Entry</h3>
-                    <button
-                      type="button"
-                      className="va-dynamic-entry-remove"
-                      onClick={() => removeEducationEntry(entry.id)}
-                    >
-                      Remove
-                    </button>
-                  </div>
-                  <div className="va-dynamic-entry-fields">
-                    <div className="va-form-row">
-                      <div className="va-form-field">
-                        <label className="va-form-label">School</label>
-                        <input
-                          type="text"
-                          className="va-form-input"
-                          placeholder="School Name"
-                          value={entry.school}
-                          onChange={(e) => updateEducationEntry(entry.id, 'school', e.target.value)}
-                        />
-                      </div>
-                      <div className="va-form-field">
-                        <label className="va-form-label">Degree</label>
-                        <input
-                          type="text"
-                          className="va-form-input"
-                          placeholder="Degree/Certification"
-                          value={entry.degree}
-                          onChange={(e) => updateEducationEntry(entry.id, 'degree', e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="va-form-field va-form-field-full">
-                      <label className="va-form-label">Year</label>
-                      <input
-                        type="text"
-                        className="va-form-input"
-                        placeholder="e.g., 2020"
-                        value={entry.year}
-                        onChange={(e) => updateEducationEntry(entry.id, 'year', e.target.value)}
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <button
-              type="button"
-              className="va-form-btn-secondary"
-              onClick={addEducationEntry}
-            >
-              + Add Education Entry
             </button>
           </section>
 
@@ -1437,6 +1377,71 @@ export default function VACreation() {
                 ))}
               </div>
             </div>
+          </section>
+
+          {/* Education */}
+          <section className="va-form-section">
+            <h2 className="va-form-section-title">Education</h2>
+            <p className="va-form-section-description">Add one or more education entries</p>
+            
+            <div className="va-form-dynamic-entries">
+              {educationEntries.map(entry => (
+                <div key={entry.id} className="va-dynamic-entry">
+                  <div className="va-dynamic-entry-header">
+                    <h3 className="va-dynamic-entry-title">Education Entry</h3>
+                    <button
+                      type="button"
+                      className="va-dynamic-entry-remove"
+                      onClick={() => removeEducationEntry(entry.id)}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                  <div className="va-dynamic-entry-fields">
+                    <div className="va-form-row">
+                      <div className="va-form-field">
+                        <label className="va-form-label">School</label>
+                        <input
+                          type="text"
+                          className="va-form-input"
+                          placeholder="School Name"
+                          value={entry.school}
+                          onChange={(e) => updateEducationEntry(entry.id, 'school', e.target.value)}
+                        />
+                      </div>
+                      <div className="va-form-field">
+                        <label className="va-form-label">Degree</label>
+                        <input
+                          type="text"
+                          className="va-form-input"
+                          placeholder="Degree/Certification"
+                          value={entry.degree}
+                          onChange={(e) => updateEducationEntry(entry.id, 'degree', e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    <div className="va-form-field va-form-field-full">
+                      <label className="va-form-label">Year</label>
+                      <input
+                        type="text"
+                        className="va-form-input"
+                        placeholder="e.g., 2020"
+                        value={entry.year}
+                        onChange={(e) => updateEducationEntry(entry.id, 'year', e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <button
+              type="button"
+              className="va-form-btn-secondary"
+              onClick={addEducationEntry}
+            >
+              + Add Education Entry
+            </button>
           </section>
 
           {/* Form Actions */}
