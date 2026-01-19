@@ -26,8 +26,8 @@
      - Text con ID: "va-cefr-source" → Conecta al campo "CERF Result" (Rich Text)
      - Text con ID: "va-education-source" → Conecta al campo "Education Richtext" (Rich Text)
   
-  NOTA: El campo "Video Thumbnail" se usa directamente con {{video-thumbnail}} en el Custom Code
-        (es Plain Text, no necesita elemento oculto)
+  NOTA: El campo "Video Thumbnail" se usa directamente con {{video-thumbnail-2}} en el Custom Code
+        (es Plain Text, slug: video-thumbnail-2, no necesita elemento oculto)
   
   2. Oculta estos elementos con CSS:
      - Selecciona cada elemento → Settings → Custom Attributes
@@ -942,7 +942,7 @@
             <!-- Video Container -->
             <div class="va-video-container" 
                  id="va-video-container-{{slug}}"
-                 style="background-image: url('{{video-thumbnail}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                 style="background-image: url('{{video-thumbnail-2}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
               <div class="va-video-overlay">
                 <div>
                   <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -1051,7 +1051,7 @@
 (function() {
   try {
     var videoUrl = '{{video}}' || '';
-    var videoThumbnail = '{{video-thumbnail}}' || '';
+    var videoThumbnail = '{{video-thumbnail-2}}' || '';
     var slug = '{{slug}}' || '';
     
     // Check if variables are actually replaced (not still template literals)

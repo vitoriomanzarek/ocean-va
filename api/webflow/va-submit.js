@@ -31,8 +31,8 @@ const FIELD_MAPPING = {
   // Multimedia
   video: 'video',
   image: 'image', // Image field
-  'video-thumbnail': 'video-thumbnail',
-  'videoThumbnail': 'video-thumbnail', // Support camelCase from form
+  'video-thumbnail': 'video-thumbnail-2', // Webflow assigned -2 suffix
+  'videoThumbnail': 'video-thumbnail-2', // Support camelCase from form
   
   // Content
   summary: 'summary',
