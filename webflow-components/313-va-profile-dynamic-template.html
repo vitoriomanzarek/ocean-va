@@ -1,0 +1,1160 @@
+<!--
+  VA PROFILE PAGE - DYNAMIC TEMPLATE FOR WEBFLOW
+  ===============================================
+  
+  INSTRUCCIONES DE USO:
+  1. Crear una Collection Template en Webflow para "Virtual Assistants"
+  2. Copiar este HTML en la página template (Settings > Custom Code > Body Code)
+  3. Reemplazar los campos dinámicos con los campos reales del CMS usando el panel derecho
+  4. Los campos CMS usan sintaxis: {{field-slug}} o {{field-name}}
+  
+  ⚠️ IMPORTANTE: CAMPOS RICH TEXT
+  
+  Webflow NO permite insertar campos Rich Text directamente en Custom Code.
+  SOLUCIÓN: Usar elementos Text de Webflow ocultos + JavaScript
+  
+  PASOS PARA CONFIGURAR:
+  
+  1. En Webflow Designer, FUERA del Custom Code, agrega elementos Text (Rich Text):
+     - Text con ID: "va-summary-source" → Conecta al campo "Summary" (Rich Text)
+     - Text con ID: "va-disc-description-source" → Conecta al campo "DISC Description" (Rich Text)
+     - Text con ID: "va-english-description-source" → Conecta al campo "English Description" (Rich Text)
+     - Text con ID: "va-skills-source" → Conecta al campo "Skills Richtext" (Rich Text)
+     - Text con ID: "va-tools-source" → Conecta al campo "Tools Richtext" (Rich Text)
+     - Text con ID: "va-equipment-source" → Conecta al campo "Equipment Richtext" (Rich Text)
+     - Text con ID: "va-employment-source" → Conecta al campo "Employment Richtext" (Rich Text)
+     - Text con ID: "va-cefr-source" → Conecta al campo "CERF Result" (Rich Text)
+     - Text con ID: "va-education-source" → Conecta al campo "Education Richtext" (Rich Text)
+  
+  NOTA: El campo "Video Thumbnail" se usa directamente con {{video-thumbnail}} en el Custom Code
+        (es Plain Text, no necesita elemento oculto)
+  
+  2. Oculta estos elementos con CSS:
+     - Selecciona cada elemento → Settings → Custom Attributes
+     - Agrega: style="display: none !important;"
+     - O en el CSS global:
+       #va-summary-source, #va-disc-description-source, #va-english-description-source,
+       #va-skills-source, #va-tools-source, #va-equipment-source,
+       #va-employment-source, #va-cefr-source, #va-education-source {
+         display: none !important;
+       }
+  
+  3. El JavaScript en este Custom Code copiará automáticamente el contenido
+     de los elementos ocultos a los divs correspondientes en el Custom Code.
+  
+  NOTAS:
+  - Los estilos están inline fusionados en el <style> tag
+  - Los campos Plain Text se usan como texto simple con {{field-slug}}
+  - Las imágenes usan {{image.url}} o {{image.src}}
+  - El video usa {{video}} (campo Link)
+-->
+
+<style>
+  .va-profile-page {
+    background: linear-gradient(to bottom, #0B9B8F 0%, #067A8F 25%, #045C8B 50%, #034563 75%, #011F2A 100%);
+    min-height: 100vh;
+    padding: 0;
+    padding-bottom: 128px;
+    margin: 0;
+  }
+
+  .va-back-link {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .va-back-link a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .va-back-link a:hover {
+    color: #d1d5db;
+  }
+
+  .va-back-link-icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .va-hero-section {
+    padding: 48px 16px;
+  }
+
+  .va-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .va-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .va-hero-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  .va-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .va-image-frame {
+    width: 288px;
+    min-height: 320px;
+    aspect-ratio: 7 / 8;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border: 4px solid #14b8a6;
+    background-color: #e6e6e6;
+    overflow: hidden;
+  }
+
+  .va-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .va-info-box {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+
+  .va-title {
+    font-size: 12px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+    letter-spacing: 0.1em;
+  }
+
+  .va-summary {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .va-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-skill-tag {
+    background-color: #e9dba3;
+    color: #1a3a2a;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+  }
+
+  .va-bottom-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .va-tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: start;
+  }
+
+  @media (max-width: 1024px) {
+    .va-tools-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .va-tools-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .va-column-header {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .va-tools-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .va-tools-list.two-column {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 16px;
+  }
+
+  .va-tool-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-tool-checkmark {
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .va-equipment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .va-equipment-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-equipment-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .va-video-container {
+    width: 100%;
+    height: 208px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .va-video-container:hover {
+    opacity: 0.8;
+  }
+
+  .va-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .va-video-play-icon {
+    width: 64px;
+    height: 64px;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .va-video-text {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+
+  .va-thumbnail-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .va-thumbnail-text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-tagline-box {
+    background: linear-gradient(to right, #0d9488, #0f766e);
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+
+  .va-tagline-text {
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .va-employment-section {
+    padding: 48px 16px;
+  }
+
+  .va-employment-container {
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+
+  .va-section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .va-employment-summary {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .va-employment-history-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .va-employment-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .va-employment-accordion {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #5eead4;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .va-employment-accordion:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .va-employment-accordion-header {
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: background-color 0.2s ease;
+    user-select: none;
+  }
+
+  .va-employment-accordion-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .va-employment-accordion-header.active {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .va-employment-accordion-title {
+    flex: 1;
+  }
+
+  .va-employment-accordion-company {
+    font-size: 14px;
+    font-weight: 700;
+    color: #99f6e4;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+  }
+
+  .va-employment-accordion-position {
+    font-size: 13px;
+    color: #d1fae5;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+  }
+
+  .va-employment-accordion-period {
+    font-size: 12px;
+    color: #d1fae5;
+    margin: 0;
+  }
+
+  .va-employment-accordion-icon {
+    width: 20px;
+    height: 20px;
+    color: #5eead4;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+
+  .va-employment-accordion-header.active .va-employment-accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .va-employment-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+  }
+
+  .va-employment-accordion-content.active {
+    max-height: 2000px;
+    padding: 24px;
+  }
+
+  .va-employment-accordion-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .va-employment-accordion-header {
+      padding: 16px;
+    }
+
+    .va-employment-accordion-content.active {
+      padding: 20px 16px 16px 16px;
+    }
+  }
+
+  .va-results-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1151px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  @media (max-width: 768px) {
+    .va-results-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .va-disc-section {
+    padding: 0;
+  }
+
+  .va-disc-container {
+    max-width: none;
+    margin: 0;
+  }
+
+  .va-disc-result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .va-disc-badge {
+    font-size: 48px;
+    font-weight: 700;
+    color: #14b8a6;
+    text-align: left;
+  }
+
+  .va-disc-description {
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .va-english-section {
+    padding: 0;
+  }
+
+  .va-english-container {
+    max-width: none;
+    margin: 0;
+  }
+
+  .va-english-result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .va-english-score {
+    font-size: 48px;
+    font-weight: 700;
+    color: #14b8a6;
+    text-align: left;
+  }
+
+  .va-english-description {
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .va-cefr-section {
+    padding: 48px 16px;
+  }
+
+  .va-cefr-container {
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+
+  .va-cefr-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 24px;
+    margin-bottom: 48px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .va-cefr-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    justify-self: end;
+  }
+
+  .va-cefr-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .va-cefr-bubble-active {
+    background: #0d5a52;
+    color: white;
+  }
+
+  .va-cefr-bubble-inactive {
+    background: #5eead4;
+    color: #0d5a52;
+  }
+
+  .va-cefr-item:nth-child(1) .va-cefr-bubble {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .va-cefr-item:nth-child(2) .va-cefr-bubble {
+    width: 90px;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .va-cefr-item:nth-child(3) .va-cefr-bubble {
+    width: 110px;
+    height: 150px;
+    font-size: 18px;
+  }
+
+  .va-cefr-item:nth-child(4) .va-cefr-bubble {
+    width: 120px;
+    height: 170px;
+    font-size: 18px;
+  }
+
+  .va-cefr-item:nth-child(5) .va-cefr-bubble {
+    width: 130px;
+    height: 210px;
+    font-size: 18px;
+  }
+
+  .va-cefr-item:nth-child(6) .va-cefr-bubble {
+    width: 150px;
+    height: 240px;
+    font-size: 18px;
+  }
+
+  .va-cefr-description {
+    font-size: 12px;
+    color: #e5e7eb;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .va-cefr-item:nth-child(1) .va-cefr-description {
+    width: 100px;
+  }
+
+  .va-cefr-item:nth-child(2) .va-cefr-description {
+    width: 110px;
+  }
+
+  .va-cefr-item:nth-child(3) .va-cefr-description {
+    width: 130px;
+  }
+
+  .va-cefr-item:nth-child(4) .va-cefr-description {
+    width: 140px;
+  }
+
+  .va-cefr-item:nth-child(5) .va-cefr-description {
+    width: 150px;
+  }
+
+  .va-cefr-item:nth-child(6) .va-cefr-description {
+    width: 170px;
+  }
+
+  .va-cefr-categories {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    max-width: 1151px;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .va-cefr-grid {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 4px;
+      height: 192px;
+      margin-bottom: 32px;
+    }
+
+    .va-cefr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(1) .va-cefr-bubble {
+      width: 32px;
+      height: 40px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(2) .va-cefr-bubble {
+      width: 38px;
+      height: 50px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(3) .va-cefr-bubble {
+      width: 48px;
+      height: 65px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(4) .va-cefr-bubble {
+      width: 54px;
+      height: 75px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(5) .va-cefr-bubble {
+      width: 64px;
+      height: 90px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-item:nth-child(6) .va-cefr-bubble {
+      width: 74px;
+      height: 105px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .va-cefr-description {
+      display: none;
+    }
+
+    .va-cefr-categories {
+      gap: 32px;
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-cefr-grid {
+      height: 160px;
+      gap: 2px;
+    }
+
+    .va-cefr-item:nth-child(1) .va-cefr-bubble {
+      width: 28px;
+      height: 35px;
+      font-size: 10px;
+    }
+
+    .va-cefr-item:nth-child(2) .va-cefr-bubble {
+      width: 33px;
+      height: 43px;
+      font-size: 10px;
+    }
+
+    .va-cefr-item:nth-child(3) .va-cefr-bubble {
+      width: 42px;
+      height: 56px;
+      font-size: 10px;
+    }
+
+    .va-cefr-item:nth-child(4) .va-cefr-bubble {
+      width: 47px;
+      height: 65px;
+      font-size: 10px;
+    }
+
+    .va-cefr-item:nth-child(5) .va-cefr-bubble {
+      width: 56px;
+      height: 78px;
+      font-size: 10px;
+    }
+
+    .va-cefr-item:nth-child(6) .va-cefr-bubble {
+      width: 65px;
+      height: 91px;
+      font-size: 10px;
+    }
+
+    .va-cefr-categories {
+      gap: 20px;
+      font-size: 10px;
+    }
+  }
+
+  .va-education-section {
+    padding: 48px 16px;
+  }
+
+  .va-education-container {
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+
+  .va-education-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .va-education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .va-education-school {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+  }
+
+  .va-education-degree {
+    font-size: 14px;
+    color: #14b8a6;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .va-education-year {
+    font-size: 14px;
+    color: white;
+    margin: 8px 0 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .va-hero-section {
+      padding: 36px 12px;
+    }
+
+    .va-profile-name {
+      font-size: 24px;
+    }
+
+    .va-image-frame {
+      width: 240px;
+      min-height: 280px;
+    }
+
+    .va-bottom-section {
+      padding: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .va-hero-section {
+      padding: 24px 12px;
+    }
+
+    .va-profile-name {
+      font-size: 20px;
+    }
+
+    .va-image-frame {
+      width: 200px;
+      min-height: 240px;
+    }
+
+    .va-tools-grid {
+      gap: 24px;
+    }
+
+    .va-bottom-section {
+      padding: 16px;
+    }
+  }
+</style>
+
+<!-- MAIN PROFILE CONTAINER -->
+<div class="va-profile-page">
+  
+  <!-- Back Link -->
+  <div class="va-back-link">
+    <a href="/ovas-current-vas">
+      <svg class="va-back-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Back to VAs
+    </a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="va-hero-section">
+    <div class="va-hero-container">
+      
+      <!-- Hero Grid: Image + Info -->
+      <div class="va-hero-grid">
+        
+        <!-- Image Container -->
+        <div class="va-image-container">
+          <div class="va-image-frame">
+            <img src="{{image.url}}" alt="{{name}}" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="va-info-box">
+          <h1 class="va-profile-name">{{name}}</h1>
+          <p class="va-title">{{title-2}}</p>
+          <!-- Summary: Se llena desde elemento Text de Webflow oculto -->
+          <div class="va-summary" id="va-summary-target"></div>
+          
+          <!-- Skills Container (Rich Text - HTML generado) -->
+          <div class="va-skills-container" id="va-skills-target"></div>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Tools, Equipment, Video -->
+      <div class="va-bottom-section">
+        <div class="va-tools-grid">
+          
+          <!-- TOOLS Column -->
+          <div>
+            <h3 class="va-column-header">TOOLS</h3>
+            <div class="va-tools-list" id="va-tools-target"></div>
+          </div>
+
+          <!-- EQUIPMENT Column -->
+          <div>
+            <h3 class="va-column-header">EQUIPMENT</h3>
+            <div class="va-equipment-list" id="va-equipment-target"></div>
+          </div>
+
+          <!-- VIDEO Column -->
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <!-- Video Container -->
+            <div class="va-video-container" 
+                 id="va-video-container-{{slug}}"
+                 style="background-image: url('{{video-thumbnail}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Video Modal -->
+            <div id="va-video-modal-{{slug}}" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
+                <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button onclick="document.getElementById('va-video-modal-{{slug}}').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail Description -->
+        <div class="va-thumbnail-box">
+          <p class="va-thumbnail-text">{{thumbnail-description}}</p>
+        </div>
+
+        <!-- Tagline -->
+        <div class="va-tagline-box">
+          <p class="va-tagline-text">{{tagline}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYMENT SECTION -->
+  <section class="va-employment-section" style="background: transparent;">
+    <div class="va-employment-container">
+      <h2 class="va-section-title">EMPLOYMENT SUMMARY</h2>
+      <!-- 
+        IMPORTANTE: employment-summary es Plain Text, así que funciona en Custom Code.
+        Si en el futuro cambia a Rich Text, usa un elemento Text de Webflow aquí.
+      -->
+      <div class="va-employment-summary">{{employment-summary}}</div>
+      
+      <h3 class="va-employment-history-title">EMPLOYMENT HISTORY</h3>
+      <div class="va-employment-list" id="va-employment-target"></div>
+    </div>
+  </section>
+
+  <!-- ASSESSMENT RESULTS SECTION -->
+  <div style="padding: 48px 16px;">
+    <h2 class="va-section-title" style="max-width: 1151px; margin: 0 auto 24px;">ASSESSMENT RESULTS</h2>
+    <div class="va-results-row">
+      
+      <!-- DISC Section -->
+      <section class="va-disc-section">
+        <div class="va-disc-container">
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">
+            DISC PERSONALITY RESULT
+          </h3>
+          <div class="va-disc-result">
+            <div class="va-disc-badge">{{disc-type-2}}</div>
+            <div class="va-disc-description" id="va-disc-description-target"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- English Section -->
+      <section class="va-english-section">
+        <div class="va-english-container">
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">
+            {{type-of-english-test}}
+          </h3>
+          <div class="va-english-result">
+            <div class="va-english-score">{{english-score-3}}</div>
+            <div class="va-english-description" id="va-english-description-target"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- CEFR SECTION -->
+  <section class="va-cefr-section" style="background: transparent;">
+    <div class="va-cefr-container">
+      <h2 class="va-section-title">COMMON EUROPEAN FRAMEWORK OF REFERENCE FOR LANGUAGES (CEFR)</h2>
+      <div class="va-cefr-grid" id="va-cefr-target"></div>
+      <div class="va-cefr-categories">
+        <div>BEGINNER</div>
+        <div>INTERMEDIATE</div>
+        <div>ADVANCED</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section class="va-education-section" style="padding: 48px 16px;">
+    <div class="va-education-container">
+      <h2 class="va-section-title">EDUCATION</h2>
+      <div class="va-education-list" id="va-education-target"></div>
+    </div>
+  </section>
+</div>
+
+<!-- CUSTOM CODE: Video Modal Handler -->
+<script>
+(function() {
+  try {
+    var videoUrl = '{{video}}' || '';
+    var videoThumbnail = '{{video-thumbnail}}' || '';
+    var slug = '{{slug}}' || '';
+    
+    // Check if variables are actually replaced (not still template literals)
+    if (videoUrl.indexOf('{{') >= 0 || slug.indexOf('{{') >= 0) {
+      return; // Variables not replaced yet
+    }
+    
+    if (!videoUrl || !slug) {
+      return;
+    }
+
+    function getVideoId(url) {
+      if (!url) return null;
+      var m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/);
+      return m ? m[1] : null;
+    }
+
+    var videoId = getVideoId(videoUrl);
+    if (!videoId) {
+      // Hide video container if no valid video
+      var containerId = 'va-video-container-' + slug;
+      setTimeout(function() {
+        var container = document.getElementById(containerId);
+        if (container) {
+          container.style.display = 'none';
+        }
+      }, 100);
+      return;
+    }
+
+    var containerId = 'va-video-container-' + slug;
+    var modalId = 'va-video-modal-' + slug;
+
+    setTimeout(function() {
+      try {
+        var container = document.getElementById(containerId);
+        var modal = document.getElementById(modalId);
+        
+        if (container && modal) {
+          // Apply thumbnail from CMS field if available (backup to inline style)
+          if (videoThumbnail && videoThumbnail.indexOf('{{') === -1 && videoThumbnail.trim() !== '') {
+            container.style.backgroundImage = "url('" + videoThumbnail + "')";
+            container.style.backgroundSize = 'cover';
+            container.style.backgroundPosition = 'center';
+            container.style.backgroundRepeat = 'no-repeat';
+          } else if (!videoThumbnail || videoThumbnail.trim() === '' || videoThumbnail.indexOf('{{') >= 0) {
+            // Fallback: generate thumbnail from video ID if CMS field is empty
+            container.style.backgroundImage = "url('https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg')";
+            container.style.backgroundSize = 'cover';
+            container.style.backgroundPosition = 'center';
+            container.style.backgroundRepeat = 'no-repeat';
+          }
+          
+          // Set default background color if thumbnail fails to load
+          container.style.backgroundColor = '#0d5a52';
+          
+          // Video modal click handler
+          container.onclick = function() {
+            var iframe = modal.querySelector('iframe');
+            if (iframe) {
+              iframe.src = 'https://www.youtube.com/embed/' + videoId;
+            }
+            modal.style.display = 'flex';
+          };
+        }
+      } catch(e) {
+        console.error('Error setting up video:', e);
+      }
+    }, 1000);
+  } catch(e) {
+    console.error('Error initializing video:', e);
+  }
+})();
+
+// Copy Rich Text content from hidden Webflow elements to Custom Code targets
+// TEMPORARIAMENTE DESACTIVADO - Si la página no carga, elimina todo este script
+(function() {
+  'use strict';
+  
+  function copyContent() {
+    var fields = [
+      ['va-summary-source', 'va-summary-target'],
+      ['va-disc-description-source', 'va-disc-description-target'],
+      ['va-english-description-source', 'va-english-description-target'],
+      ['va-skills-source', 'va-skills-target'],
+      ['va-tools-source', 'va-tools-target'],
+      ['va-equipment-source', 'va-equipment-target'],
+      ['va-employment-source', 'va-employment-target'],
+      ['va-cefr-source', 'va-cefr-target'],
+      ['va-education-source', 'va-education-target']
+    ];
+    
+    for (var i = 0; i < fields.length; i++) {
+      try {
+        var source = document.getElementById(fields[i][0]);
+        var target = document.getElementById(fields[i][1]);
+        if (source && target) {
+          target.innerHTML = source.innerHTML;
+        }
+      } catch(e) {}
+    }
+  } 
+  
+  setTimeout(copyContent, 2000);
+})();
+</script>

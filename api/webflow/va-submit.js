@@ -152,6 +152,44 @@ async function webflowRequest(endpoint, method = 'GET', body = null) {
 }
 
 /**
+ * Extract video ID from YouTube URL
+ */
+function extractVideoId(url) {
+  if (!url || typeof url !== 'string') return null;
+  
+  // Formatos soportados:
+  // https://www.youtube.com/watch?v=VIDEO_ID
+  // https://youtu.be/VIDEO_ID
+  // https://www.youtube.com/embed/VIDEO_ID
+  
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
+    /youtube\.com\/.*[?&]v=([^&\n?#]+)/
+  ];
+  
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+  
+  return null;
+}
+
+/**
+ * Generate YouTube thumbnail URL from video URL
+ */
+function generateVideoThumbnail(videoUrl) {
+  const videoId = extractVideoId(videoUrl);
+  if (!videoId) return null;
+  
+  // Usar hqdefault.jpg (480x360) - balance calidad/tamaño
+  // Otros formatos disponibles: mqdefault (320x180), sddefault (640x480), maxresdefault (1280x720)
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+}
+
+/**
  * Format form data for Webflow CMS API
  */
 function formatDataForWebflow(formData) {
@@ -169,6 +207,21 @@ function formatDataForWebflow(formData) {
   // Add languages field if it exists
   if (formData.languages) {
     fieldData['languages'] = formData.languages;
+  }
+
+  // Handle video thumbnail: use provided thumbnail or generate automatically
+  if (cleanedData.video) {
+    // If thumbnail is already provided, use it
+    const providedThumbnail = cleanedData['video-thumbnail'] || cleanedData.videoThumbnail;
+    if (providedThumbnail) {
+      fieldData['video-thumbnail'] = providedThumbnail;
+    } else {
+      // Generate thumbnail automatically from video URL
+      const thumbnailUrl = generateVideoThumbnail(cleanedData.video);
+      if (thumbnailUrl) {
+        fieldData['video-thumbnail'] = thumbnailUrl;
+      }
+    }
   }
 
   // Handle cerf-result specially: use HTML if available, otherwise skip (don't send plain text)
