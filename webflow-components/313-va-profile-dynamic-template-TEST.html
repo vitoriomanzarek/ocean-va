@@ -1,0 +1,535 @@
+<!--
+  VERSIÓN DE PRUEBA - Con datos de ejemplo
+  Usa este archivo para verificar que el HTML/CSS funciona
+  Si esto funciona, entonces el problema es con los campos CMS
+-->
+
+<style>
+  .va-profile-page {
+    background: linear-gradient(to bottom, #0B9B8F 0%, #067A8F 25%, #045C8B 50%, #034563 75%, #011F2A 100%);
+    min-height: 100vh;
+    padding: 0;
+    padding-bottom: 128px;
+    margin: 0;
+  }
+
+  .va-back-link {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .va-back-link a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .va-back-link a:hover {
+    color: #d1d5db;
+  }
+
+  .va-back-link-icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .va-hero-section {
+    padding: 48px 16px;
+  }
+
+  .va-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .va-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .va-hero-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  .va-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .va-image-frame {
+    width: 288px;
+    min-height: 320px;
+    aspect-ratio: 7 / 8;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border: 4px solid #14b8a6;
+    background-color: #e6e6e6;
+    overflow: hidden;
+  }
+
+  .va-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .va-info-box {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .va-profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+
+  .va-title {
+    font-size: 12px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+    letter-spacing: 0.1em;
+  }
+
+  .va-summary {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .va-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .va-skill-tag {
+    background-color: #e9dba3;
+    color: #1a3a2a;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+  }
+
+  .va-bottom-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .va-tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: start;
+  }
+
+  @media (max-width: 1024px) {
+    .va-tools-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .va-tools-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .va-column-header {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .va-tools-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .va-tools-list.two-column {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 16px;
+  }
+
+  .va-tool-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-tool-checkmark {
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .va-equipment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .va-equipment-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-equipment-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .va-video-container {
+    width: 100%;
+    height: 208px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    background-color: #333;
+  }
+
+  .va-video-container:hover {
+    opacity: 0.8;
+  }
+
+  .va-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .va-video-play-icon {
+    width: 64px;
+    height: 64px;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .va-video-text {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+
+  .va-thumbnail-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .va-thumbnail-text {
+    font-size: 14px;
+    color: white;
+  }
+
+  .va-tagline-box {
+    background: linear-gradient(to right, #0d9488, #0f766e);
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+
+  .va-tagline-text {
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .va-section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .va-employment-section {
+    padding: 48px 16px;
+  }
+
+  .va-employment-container {
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+
+  .va-employment-summary {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .va-employment-history-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .va-employment-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .va-results-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1151px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  @media (max-width: 768px) {
+    .va-results-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .va-disc-result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .va-disc-badge {
+    font-size: 48px;
+    font-weight: 700;
+    color: #14b8a6;
+    text-align: left;
+  }
+
+  .va-disc-description {
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .va-english-result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .va-english-score {
+    font-size: 48px;
+    font-weight: 700;
+    color: #14b8a6;
+    text-align: left;
+  }
+
+  .va-english-description {
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+</style>
+
+<!-- PRUEBA: Datos hardcodeados para verificar que funciona -->
+<div class="va-profile-page">
+  
+  <!-- Back Link -->
+  <div class="va-back-link">
+    <a href="/ovas-current-vas">
+      <svg class="va-back-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Back to VAs
+    </a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="va-hero-section">
+    <div class="va-hero-container">
+      
+      <!-- Hero Grid: Image + Info -->
+      <div class="va-hero-grid">
+        
+        <!-- Image Container -->
+        <div class="va-image-container">
+          <div class="va-image-frame">
+            <img src="https://via.placeholder.com/288x320/14b8a6/ffffff?text=VA+Photo" alt="Test VA" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="va-info-box">
+          <h1 class="va-profile-name">Maximiliano</h1>
+          <p class="va-title">BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT</p>
+          <div class="va-summary">
+            This is a test summary. If you can see this text and the styled layout, then the HTML/CSS is working correctly.
+          </div>
+          
+          <!-- Skills Container -->
+          <div class="va-skills-container">
+            <span class="va-skill-tag">Insurance Sales</span>
+            <span class="va-skill-tag">Customer Service</span>
+            <span class="va-skill-tag">Quoting</span>
+            <span class="va-skill-tag">Lead Follow-Up</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Tools, Equipment, Video -->
+      <div class="va-bottom-section">
+        <div class="va-tools-grid">
+          
+          <!-- TOOLS Column -->
+          <div>
+            <h3 class="va-column-header">TOOLS</h3>
+            <div class="va-tools-list">
+              <div class="va-tool-item"><span class="va-tool-checkmark">✓</span><span>CRM</span></div>
+              <div class="va-tool-item"><span class="va-tool-checkmark">✓</span><span>EZLynx</span></div>
+              <div class="va-tool-item"><span class="va-tool-checkmark">✓</span><span>TurboRater</span></div>
+            </div>
+          </div>
+
+          <!-- EQUIPMENT Column -->
+          <div>
+            <h3 class="va-column-header">EQUIPMENT</h3>
+            <div class="va-equipment-list">
+              <div class="va-equipment-item">
+                <svg class="va-equipment-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10"></path>
+                </svg>
+                <span>Two-Monitor Setup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIDEO Column -->
+          <div>
+            <h3 class="va-column-header">VIDEO</h3>
+            <div class="va-video-container">
+              <div class="va-video-overlay">
+                <div>
+                  <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+                  </svg>
+                  <div class="va-video-text">CLICK HERE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail Description -->
+        <div class="va-thumbnail-box">
+          <p class="va-thumbnail-text">4 yrs of Insurance Experience, COMMERCIAL INSURANCE</p>
+        </div>
+
+        <!-- Tagline -->
+        <div class="va-tagline-box">
+          <p class="va-tagline-text">Excellent Virtual Assistant for insurance agencies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYMENT SECTION -->
+  <section class="va-employment-section">
+    <div class="va-employment-container">
+      <h2 class="va-section-title">EMPLOYMENT SUMMARY</h2>
+      <div class="va-employment-summary">
+        Test employment summary. This should be visible if the HTML is rendering correctly.
+      </div>
+      
+      <h3 class="va-employment-history-title">EMPLOYMENT HISTORY</h3>
+      <div class="va-employment-list">
+        <!-- Employment items would go here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSESSMENT RESULTS SECTION -->
+  <div style="padding: 48px 16px;">
+    <h2 class="va-section-title" style="max-width: 1151px; margin: 0 auto 24px;">ASSESSMENT RESULTS</h2>
+    <div class="va-results-row">
+      
+      <!-- DISC Section -->
+      <section>
+        <div>
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">
+            DISC PERSONALITY RESULT
+          </h3>
+          <div class="va-disc-result">
+            <div class="va-disc-badge">D+I</div>
+            <div class="va-disc-description">Test DISC description</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- English Section -->
+      <section>
+        <div>
+          <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">
+            EF ENGLISH TEST RESULT
+          </h3>
+          <div class="va-english-result">
+            <div class="va-english-score">100/C1</div>
+            <div class="va-english-description">Test English description</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

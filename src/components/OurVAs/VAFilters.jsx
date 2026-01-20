@@ -42,11 +42,11 @@ export default function VAFilters({ filters, onFilterChange }) {
 
         {/* Search input */}
         <div className="va-filter-group">
-          <label className="va-filter-label">Search by Name</label>
+          <label className="va-filter-label">Search VAs</label>
           <input
             type="text"
             className="va-search-input"
-            placeholder="Search VA name..."
+            placeholder="Search by name, specialization, category, experience..."
             value={filters.search}
             onChange={(e) => onFilterChange('search', e.target.value)}
           />

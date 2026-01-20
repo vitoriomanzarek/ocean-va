@@ -385,9 +385,31 @@
         console.log('Card 0 - mainCategory:', mainCategory);
       }
 
-      // Check search filter (search in name or main category)
-      const searchTerm = activeFilters.search.toLowerCase();
-      const searchMatch = name.includes(searchTerm) || mainCategory.toLowerCase().includes(searchTerm);
+      // Extract all searchable data from card
+      const allText = card.textContent || '';
+      const role = getFieldValue(card, 'title') || '';
+      
+      // Extract specializations (tags)
+      const specializationTags = card.querySelectorAll('.va-grid-tag, .va-tag-premium, [class*="tag"]');
+      const specializationsArray = Array.from(specializationTags).map(tag => tag.textContent.trim().toLowerCase());
+      
+      // Extract experience
+      const experienceElement = card.querySelector('[class*="experience"], [class*="info"]');
+      const experienceText = experienceElement ? experienceElement.textContent.toLowerCase() : '';
+      
+      // Build comprehensive searchable text
+      const searchableText = [
+        name,
+        mainCategory.toLowerCase(),
+        role.toLowerCase(),
+        experienceText,
+        ...specializationsArray,
+        allText.toLowerCase()
+      ].join(' ').toLowerCase();
+
+      // Check search filter (search in ALL fields)
+      const searchTerm = activeFilters.search.toLowerCase().trim();
+      const searchMatch = !searchTerm || searchableText.includes(searchTerm);
 
       // Check availability filter
       const availabilityMatch = activeFilters.availability === 'All' || 

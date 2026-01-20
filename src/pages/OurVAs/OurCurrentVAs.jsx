@@ -26,9 +26,46 @@ export default function OurCurrentVAs() {
         return false;
       }
 
-      // Search filter
-      if (filters.search && !va.nombre.toLowerCase().includes(filters.search.toLowerCase())) {
-        return false;
+      // Search filter - search in ALL fields
+      if (filters.search) {
+        const searchTerm = filters.search.toLowerCase().trim();
+        
+        // Build searchable text from all VA fields
+        const searchableFields = [
+          va.nombre || '',                           // Name
+          va.categoría_principal || '',              // Main Category
+          va.años_experiencia?.toString() || '',     // Experience years
+          va.idiomas || '',                          // Language
+          va.disponibilidad || '',                   // Availability
+          va.título || '',                           // Title (if exists)
+        ];
+        
+        // Add specializations (array or string)
+        if (va.especialización) {
+          if (Array.isArray(va.especialización)) {
+            searchableFields.push(...va.especialización);
+          } else if (typeof va.especialización === 'string') {
+            searchableFields.push(va.especialización);
+          }
+        }
+        
+        // Add skills (if exists)
+        if (va.habilidades) {
+          if (Array.isArray(va.habilidades)) {
+            searchableFields.push(...va.habilidades);
+          } else if (typeof va.habilidades === 'string') {
+            searchableFields.push(va.habilidades);
+          }
+        }
+        
+        // Combine all fields and search
+        const searchableText = searchableFields
+          .map(field => field.toLowerCase())
+          .join(' ');
+        
+        if (!searchableText.includes(searchTerm)) {
+          return false;
+        }
       }
 
       return true;

@@ -78,35 +78,37 @@ function generateEmploymentHTML(entries) {
     const company = escapeHtml(entry.company || '')
     const position = escapeHtml(entry.position || '')
     const period = escapeHtml(entry.period || '')
-    const description = entry.description || ''
+    let description = entry.description || ''
     
-    return `
-      <div class="va-employment-entry">
-        <h4 class="company">${company}</h4>
-        <p class="position"><strong>${position}</strong></p>
-        <p class="period">${period}</p>
-        <div class="description">${description}</div>
-      </div>
-    `.trim()
-  }).join('\n')
+    // First escape HTML to prevent XSS, but preserve <br> tags
+    // We'll handle <br> separately after escaping
+    description = escapeHtml(description)
+    
+    // Convert escaped line breaks back to <br> tags
+    // (escapeHtml converts < to &lt;, so we need to restore <br>)
+    description = description.replace(/\n/g, '<br>')
+    // Also convert already escaped <br> tags back to actual <br>
+    description = description.replace(/&lt;br\s*\/?&gt;/gi, '<br>')
+    // Convert bullets if they're plain text to HTML format
+    description = description.replace(/•/g, '•')
+    
+    return `<div class="va-employment-accordion"><div class="va-employment-accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');"><div class="va-employment-accordion-title"><h4 class="va-employment-accordion-company">${company}</h4><p class="va-employment-accordion-position">${position}</p><p class="va-employment-accordion-period">${period}</p></div><svg class="va-employment-accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div class="va-employment-accordion-content"><p class="va-employment-accordion-description">${description}</p></div></div>`
+  }).join('')
 }
 
 function generateEducationHTML(entries) {
   if (!entries || entries.length === 0) return ''
   
-  return entries.map(entry => {
+  return entries.map((entry, index) => {
     const school = escapeHtml(entry.school || '')
     const degree = escapeHtml(entry.degree || '')
     const year = escapeHtml(entry.year || '')
     
-    return `
-      <div class="va-education-entry">
-        <h4 class="school">${school}</h4>
-        <p class="degree"><strong>${degree}</strong></p>
-        <p class="year">${year}</p>
-      </div>
-    `.trim()
-  }).join('\n')
+    // Add margin-top for items after the first one
+    const marginTop = index > 0 ? ' style="margin-top: 16px;"' : ''
+    
+    return `<div class="va-education-item"${marginTop}><h3 class="va-education-school">${school}</h3><p class="va-education-degree">${degree}</p><p class="va-education-year">${year}</p></div>`
+  }).join('')
 }
 
 function generateCEFRHTML(activeLevel) {
@@ -117,17 +119,12 @@ function generateCEFRHTML(activeLevel) {
     const bubbleClass = isActive ? 'va-cefr-bubble-active' : 'va-cefr-bubble-inactive'
     const description = CEFR_DESCRIPTIONS[level] || ''
     
-    return `
-        <div class="va-cefr-item">
-          <div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div>
-          <p class="va-cefr-description">${escapeHtml(description)}</p>
-        </div>`
+    return `<div class="va-cefr-item"><div class="va-cefr-bubble ${bubbleClass}">${escapeHtml(level)}</div><p class="va-cefr-description">${escapeHtml(description)}</p></div>`
   }).join('\n')
 
-  // Return the complete CEFR grid HTML that can be inserted directly into Webflow
-  return `<div class="va-cefr-grid">
-${items}
-      </div>`
+  // Return only the items, NOT wrapped in va-cefr-grid div
+  // The template already has a div with class "va-cefr-grid" and id "va-cefr-target"
+  return items
 }
 
 function generateSkillsHTML(skillsString) {
@@ -140,7 +137,9 @@ function generateSkillsHTML(skillsString) {
     `<span class="va-skill-tag">${escapeHtml(skill)}</span>`
   ).join('')
   
-  return `<div class="va-skills-container">${tags}</div>`
+  // Return only the tags, NOT wrapped in a div
+  // The template already has a div with class "va-skills-container"
+  return tags
 }
 
 function generateToolsHTML(toolsString) {

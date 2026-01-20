@@ -37,6 +37,8 @@ const FIELD_MAPPING = {
   // Content
   summary: 'summary',
   tagline: 'tagline',
+  title: 'title-2', // Webflow field slug is title-2
+  'title-2': 'title-2',
   'thumbnail-description': 'thumbnail-description',
   'thumbnailDescription': 'thumbnail-description', // Support camelCase from form
   
