@@ -229,8 +229,14 @@ export default function VACreation() {
   useEffect(() => {
     if (formData.cefrResult) {
       const cefrHTML = generateCEFRHTML(formData.cefrResult)
+      console.log('🔵 CEFR HTML Generated:', {
+        selectedLevel: formData.cefrResult,
+        htmlLength: cefrHTML.length,
+        htmlPreview: cefrHTML.substring(0, 200) + '...'
+      })
       setFormData(prev => ({ ...prev, englishCefrHtml: cefrHTML }))
     } else {
+      console.log('🔵 CEFR Result cleared')
       setFormData(prev => ({ ...prev, englishCefrHtml: '' }))
     }
   }, [formData.cefrResult])
@@ -367,6 +373,7 @@ export default function VACreation() {
         'english-description': formData.englishDescription,
         // CEFR Result (radio button) is the ONLY source for generating CEFR HTML
         'cerf-result': formData.englishCefrHtml || '', // HTML generated exclusively from CEFR Result selection
+        'englishCefrHtml': formData.englishCefrHtml || '', // Also send as camelCase for API mapping
         'employment-richtext': generateEmploymentHTML(employmentEntries),
         'education-richtext': generateEducationHTML(educationEntries)
       }

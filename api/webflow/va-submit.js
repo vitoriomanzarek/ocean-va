@@ -227,7 +227,13 @@ function formatDataForWebflow(formData) {
 
   // Handle cerf-result specially: use HTML if available, otherwise skip (don't send plain text)
   if (cleanedData.englishCefrHtml) {
+    console.log('📤 Sending CEFR HTML to Webflow:', {
+      htmlLength: cleanedData.englishCefrHtml.length,
+      htmlPreview: cleanedData.englishCefrHtml.substring(0, 200) + '...'
+    });
     fieldData['cerf-result'] = cleanedData.englishCefrHtml;
+  } else {
+    console.log('⚠️  No CEFR HTML found in form data');
   }
 
   // Map each field
