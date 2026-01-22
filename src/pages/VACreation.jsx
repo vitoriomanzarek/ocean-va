@@ -404,7 +404,7 @@ export default function VACreation() {
         setShowSuccess(true)
         setMessage({ 
           type: 'success', 
-          text: `✅ ${result.message || 'VA created successfully!'} It has been saved as draft in Webflow CMS and is ready for review.` 
+          text: `✅ ${result.message || 'VA created successfully!'} It has been published automatically in Webflow CMS.` 
         })
         // Scroll to top to show success message
         window.scrollTo({ top: 0, behavior: 'smooth' })

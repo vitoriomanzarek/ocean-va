@@ -328,7 +328,7 @@ async function createVAItem(data) {
     {
       fieldData,
       isArchived: false,
-      isDraft: true, // Create as draft - requires manual review before publishing
+      isDraft: false, // Publish automatically - no manual review required
     }
   );
 
