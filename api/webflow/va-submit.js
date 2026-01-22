@@ -271,21 +271,33 @@ async function formatDataForWebflow(formData) {
   }
 
   // Handle Main Categories: map mainCategory to both 'main-category' (PlainText) and 'main-categories' (multi-reference)
-  if (formData.mainCategory) {
+  // Support both camelCase (mainCategory) and kebab-case (main-category) from form
+  const mainCategoryValue = formData.mainCategory || formData['main-category'];
+  
+  if (mainCategoryValue) {
+    console.log('📋 Main Category value received:', mainCategoryValue);
+    
     // Send to 'main-category' (PlainText field)
-    fieldData['main-category'] = formData.mainCategory;
+    fieldData['main-category'] = mainCategoryValue;
     
     // Also send to 'main-categories' (multi-reference) using IDs
-    const mainCategoriesIds = await mapMainCategoryToIds(formData.mainCategory);
+    const mainCategoriesIds = await mapMainCategoryToIds(mainCategoryValue);
+    console.log('📋 Main Categories IDs mapped:', mainCategoriesIds);
+    
     if (mainCategoriesIds.length > 0) {
       fieldData['main-categories'] = mainCategoriesIds;
+    } else {
+      console.warn('⚠️  No Main Category IDs found for:', mainCategoryValue);
     }
+  } else {
+    console.warn('⚠️  No mainCategory value found in formData');
   }
 
-  // Remove 'language' and 'mainCategory' from cleanedData to avoid duplicate mapping
+  // Remove 'language', 'mainCategory', and 'main-category' from cleanedData to avoid duplicate mapping
   const cleanedData = { ...formData };
   delete cleanedData.language;
   delete cleanedData.mainCategory;
+  delete cleanedData['main-category'];
 
   // Handle video thumbnail: generate automatically if not provided
   // The field is now in FIELD_MAPPING, so if provided by form it will be mapped automatically
@@ -312,7 +324,7 @@ async function formatDataForWebflow(formData) {
 
   // Map each field
   Object.keys(FIELD_MAPPING).forEach(formKey => {
-    // Skip 'language' and 'mainCategory' fields - we handle them separately
+    // Skip 'language', 'mainCategory', and 'main-category' fields - we handle them separately
     if (formKey === 'language' || formKey === 'mainCategory' || formKey === 'main-category') {
       return;
     }
@@ -395,15 +407,51 @@ async function generateUniqueSlug(baseSlug) {
 async function createVAItem(data) {
   const { fieldData } = await formatDataForWebflow(data);
   
+  console.log('📤 Creating VA item with fieldData:', JSON.stringify(fieldData, null, 2));
+  console.log('📤 Publishing settings: isDraft=false, isArchived=false');
+  
+  const requestBody = {
+    fieldData,
+    isArchived: false,
+    isDraft: false, // Publish automatically - no manual review required
+  };
+  
+  console.log('📤 Request body:', JSON.stringify(requestBody, null, 2));
+  
+  // Create the item
   const response = await webflowRequest(
     `/collections/${VA_COLLECTION_ID}/items`,
     'POST',
-    {
-      fieldData,
-      isArchived: false,
-      isDraft: false, // Publish automatically - no manual review required
-    }
+    requestBody
   );
+
+  console.log('✅ VA created successfully. Response:', JSON.stringify(response, null, 2));
+  
+  // Get the item ID
+  const itemId = response.id || response.item?.id;
+  
+  if (itemId) {
+    console.log('📊 Item ID:', itemId);
+    console.log('📊 Item status before publish:', response.item?.isDraft ? 'DRAFT' : 'PUBLISHED');
+    
+    // Explicitly publish the item to ensure it's not queued
+    try {
+      console.log('📤 Publishing item explicitly...');
+      await webflowRequest(
+        `/collections/${VA_COLLECTION_ID}/items/publish`,
+        'POST',
+        {
+          itemIds: [itemId]
+        }
+      );
+      console.log('✅ Item published explicitly');
+    } catch (publishError) {
+      console.warn('⚠️  Could not publish item explicitly (may already be published):', publishError.message);
+      // Continue anyway - item might already be published
+    }
+  } else {
+    console.warn('⚠️  No item ID found in response');
+  }
 
   return response;
 }
