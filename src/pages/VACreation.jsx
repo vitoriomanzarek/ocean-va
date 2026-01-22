@@ -345,9 +345,14 @@ export default function VACreation() {
 
     try {
       // Prepare form data
+      const slug = formData.slug || generateSlug(formData.name)
+      const profileSlug = `${slug}-ocean-va-profile`
+      const profileUrl = `https://www.oceanvirtualassistant.com/${profileSlug}`
+      
       const submitData = {
         name: formData.name,
-        slug: formData.slug || generateSlug(formData.name),
+        slug: slug,
+        'profile-slug-2': profileUrl, // Full URL for profile page
         'main-category': formData.mainCategory,
         'experience-years': formData.experienceYears,
         language: formData.language,

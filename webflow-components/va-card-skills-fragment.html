@@ -1,0 +1,131 @@
+<!-- VA CARD SKILLS FRAGMENT -->
+<!-- Replace the Specialization section in card template with this -->
+<!-- 
+  INSTRUCTIONS:
+  1. In Webflow card template, find the Specialization section
+  2. REPLACE IT COMPLETELY with this custom code fragment (don't add alongside it)
+  3. Make sure you remove any existing Specialization field display (including Rich Text fields)
+  4. Ensure the card has access to {{skills-tags}} field (PlainText, comma-separated)
+  5. The field "skills-tags" contains comma-separated skills from the form
+  
+  IMPORTANT: If you see duplicate "Specialization" sections or unformatted text,
+  you may have a {{skills-richtext}} field displayed. Remove it from the template.
+-->
+
+<div class="va-grid-tags" id="va-skills-tags-{{slug}}">
+  <!-- Skills will be populated by JavaScript -->
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  // Wait for DOM to be ready
+  function initSkills() {
+    // Get slug and skills from Webflow CMS fields
+    const slug = '{{slug}}' || '';
+    const skillsString = '{{skills-tags}}' || '';
+    
+    // Debug: Check what we're getting
+    console.log('VA Card Skills Debug - Slug:', slug);
+    console.log('VA Card Skills Debug - Skills String:', skillsString);
+    
+    // Parse skills from comma or semicolon-separated string
+    // Handle both formats: "Skill1, Skill2" and "Skill1; Skill2"
+    // Also decode HTML entities like &amp; to &
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = skillsString;
+    const decodedString = tempDiv.textContent || tempDiv.innerText || skillsString;
+    
+    const allSkills = decodedString
+      .split(/[,;]/) // Split by comma OR semicolon
+      .map(s => s.trim())
+      .filter(Boolean);
+    
+    console.log('VA Card Skills Debug - Parsed Skills:', allSkills);
+    
+    const container = document.getElementById(`va-skills-tags-${slug}`);
+    if (!container) {
+      console.warn('VA Card Skills: Container not found for slug:', slug);
+      return; // Container not found, skip
+    }
+    
+    // Clear any existing content (in case there's Rich Text content)
+    container.innerHTML = '';
+    
+    if (allSkills.length === 0) {
+      console.warn('VA Card Skills: No skills found for slug:', slug);
+      return; // No skills to display
+    }
+    
+    // Display first 4 skills
+    const MAX_SKILLS = 4;
+    const displaySkills = allSkills.slice(0, MAX_SKILLS);
+    const remainingCount = allSkills.length - MAX_SKILLS;
+    
+    // Create skill tags as separate elements
+    displaySkills.forEach((skill, index) => {
+      const tag = document.createElement('span');
+      tag.className = 'va-grid-tag';
+      tag.textContent = skill;
+      tag.setAttribute('data-skill-index', index);
+      container.appendChild(tag);
+    });
+    
+    // Add "+N more" indicator if there are more skills
+    if (remainingCount > 0) {
+      const moreTag = document.createElement('span');
+      moreTag.className = 'va-grid-tag va-grid-tag-more';
+      moreTag.textContent = `+${remainingCount} more`;
+      container.appendChild(moreTag);
+    }
+    
+    console.log('VA Card Skills: Successfully created', displaySkills.length, 'tags for slug:', slug);
+  }
+  
+  // Try to run immediately
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSkills);
+  } else {
+    // DOM already ready, but wait a bit for Webflow to render
+    setTimeout(initSkills, 100);
+  }
+})();
+</script>
+
+<style>
+/* Ensure tags container styles - Use class selector to avoid breaking other elements */
+.va-grid-tags[id^="va-skills-tags-"] {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure individual tag styles - Only apply to tags within our skills container */
+.va-grid-tags[id^="va-skills-tags-"] .va-grid-tag {
+  background: #c8f0e8 !important;
+  color: #1a8b7e !important;
+  padding: 6px 14px !important;
+  border-radius: 16px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border: 1px solid #a8e5d8 !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* "+N more" tag styles */
+.va-grid-tags[id^="va-skills-tags-"] .va-grid-tag-more {
+  background: #e8f9f6 !important;
+  color: #1a8b7e !important;
+  border: 1px solid #1eb8a6 !important;
+  font-weight: 600 !important;
+  cursor: default !important;
+}
+</style>

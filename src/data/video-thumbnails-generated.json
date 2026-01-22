@@ -1,0 +1,920 @@
+[
+  {
+    "name": "Arlene",
+    "slug": "arlene",
+    "cmsId": "69712b3dd18bdbd665eef0d8",
+    "videoUrl": "https://youtu.be/Y5lqxuK_0QY",
+    "videoId": "Y5lqxuK_0QY",
+    "currentThumbnail": "https://img.youtube.com/vi/Y5lqxuK_0QY/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/Y5lqxuK_0QY/sddefault.jpg"
+  },
+  {
+    "name": "Drue",
+    "slug": "drue",
+    "cmsId": "696fe6aca147a400ddf2be53",
+    "videoUrl": "https://youtu.be/wAn-WpR-5Jw",
+    "videoId": "wAn-WpR-5Jw",
+    "currentThumbnail": "https://img.youtube.com/vi/wAn-WpR-5Jw/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/wAn-WpR-5Jw/sddefault.jpg"
+  },
+  {
+    "name": "Charley",
+    "slug": "charley",
+    "cmsId": "696fceec1dc5d0464ce5e2f4",
+    "videoUrl": "https://youtu.be/qSeLs2Hg2EQ",
+    "videoId": "qSeLs2Hg2EQ",
+    "currentThumbnail": "https://img.youtube.com/vi/qSeLs2Hg2EQ/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/qSeLs2Hg2EQ/sddefault.jpg"
+  },
+  {
+    "name": "victor test 100",
+    "slug": "victor-test-100-dcf96",
+    "cmsId": "696f1ede643dad218808a404",
+    "videoUrl": "https://www.youtube.com/embed/Y5lqxuK_0QY",
+    "videoId": "Y5lqxuK_0QY",
+    "currentThumbnail": "https://img.youtube.com/vi/Y5lqxuK_0QY/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/Y5lqxuK_0QY/sddefault.jpg"
+  },
+  {
+    "name": "Karl Loyd",
+    "slug": "karl-loyd",
+    "cmsId": "696ea434305edbe6e53f7358",
+    "videoUrl": "https://youtu.be/1YPljewNi6M",
+    "videoId": "1YPljewNi6M",
+    "currentThumbnail": "https://img.youtube.com/vi/1YPljewNi6M/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/1YPljewNi6M/sddefault.jpg"
+  },
+  {
+    "name": "Maximiliano",
+    "slug": "maximiliano-ulgv6",
+    "cmsId": "696a86b2d5ed430382cf18ab",
+    "videoUrl": "https://youtu.be/I2rs6jISN4E",
+    "videoId": "I2rs6jISN4E",
+    "currentThumbnail": "https://img.youtube.com/vi/I2rs6jISN4E/hqdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/I2rs6jISN4E/sddefault.jpg"
+  },
+  {
+    "name": "Aaron",
+    "slug": "aaron-a0d16",
+    "cmsId": "69695325a35247ab9d61fff5",
+    "videoUrl": "https://youtu.be/vvkXJrCw9Tg",
+    "videoId": "vvkXJrCw9Tg",
+    "currentThumbnail": "https://img.youtube.com/vi/vvkXJrCw9Tg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/vvkXJrCw9Tg/sddefault.jpg"
+  },
+  {
+    "name": "Andrea",
+    "slug": "andrea",
+    "cmsId": "696555612dfbf9d11af64b06",
+    "videoUrl": "https://youtu.be/t9ltQNUVG7U",
+    "videoId": "t9ltQNUVG7U",
+    "currentThumbnail": "https://img.youtube.com/vi/t9ltQNUVG7U/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/t9ltQNUVG7U/sddefault.jpg"
+  },
+  {
+    "name": "Karl",
+    "slug": "karl-bd0a3",
+    "cmsId": "695d70bb817fe323368bd413",
+    "videoUrl": "https://www.youtube.com/watch?v=W6f_dt2kiIY",
+    "videoId": "W6f_dt2kiIY",
+    "currentThumbnail": "https://img.youtube.com/vi/W6f_dt2kiIY/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/W6f_dt2kiIY/sddefault.jpg"
+  },
+  {
+    "name": "Sheila Marie",
+    "slug": "sheila-marie",
+    "cmsId": "6954416b4c4f5993f14b3c0e",
+    "videoUrl": "https://youtu.be/BoMYNQUMono",
+    "videoId": "BoMYNQUMono",
+    "currentThumbnail": "https://img.youtube.com/vi/BoMYNQUMono/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/BoMYNQUMono/sddefault.jpg"
+  },
+  {
+    "name": "Bernadette",
+    "slug": "bernadette-abellana",
+    "cmsId": "694b0260096a55e446df421e",
+    "videoUrl": "https://youtu.be/I20XQPhenIQ",
+    "videoId": "I20XQPhenIQ",
+    "currentThumbnail": "https://img.youtube.com/vi/I20XQPhenIQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/I20XQPhenIQ/sddefault.jpg"
+  },
+  {
+    "name": "Vicente",
+    "slug": "vicente-penaflor",
+    "cmsId": "694b021cd025d0b4379705b3",
+    "videoUrl": "https://youtu.be/SPTGcnSro0c",
+    "videoId": "SPTGcnSro0c",
+    "currentThumbnail": "https://img.youtube.com/vi/SPTGcnSro0c/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/SPTGcnSro0c/sddefault.jpg"
+  },
+  {
+    "name": "Ruel",
+    "slug": "ruel",
+    "cmsId": "6944849cae55ce44765a5c64",
+    "videoUrl": "https://youtu.be/_JZ0165Vy7I",
+    "videoId": "_JZ0165Vy7I",
+    "currentThumbnail": "https://img.youtube.com/vi/_JZ0165Vy7I/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/_JZ0165Vy7I/sddefault.jpg"
+  },
+  {
+    "name": "Francis Aldrin",
+    "slug": "francis-aldrin",
+    "cmsId": "6941a0258c4a748fe6939f7e",
+    "videoUrl": "https://youtu.be/j7mlXZIEMx4",
+    "videoId": "j7mlXZIEMx4",
+    "currentThumbnail": "https://img.youtube.com/vi/j7mlXZIEMx4/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/j7mlXZIEMx4/sddefault.jpg"
+  },
+  {
+    "name": "Juname",
+    "slug": "juname",
+    "cmsId": "69419ee97eecfa8aad625e47",
+    "videoUrl": "https://youtu.be/XOGqxYdZUQo",
+    "videoId": "XOGqxYdZUQo",
+    "currentThumbnail": "https://img.youtube.com/vi/XOGqxYdZUQo/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/XOGqxYdZUQo/sddefault.jpg"
+  },
+  {
+    "name": "Andres",
+    "slug": "andres",
+    "cmsId": "69419d749b64a30b91b74eea",
+    "videoUrl": "https://youtu.be/uoZyHjqKUf0",
+    "videoId": "uoZyHjqKUf0",
+    "currentThumbnail": "https://img.youtube.com/vi/uoZyHjqKUf0/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/uoZyHjqKUf0/sddefault.jpg"
+  },
+  {
+    "name": "Kempee",
+    "slug": "kempee",
+    "cmsId": "693c4d4e611900189cda1f21",
+    "videoUrl": "https://www.youtube.com/watch?v=ZmFlljLqk8A",
+    "videoId": "ZmFlljLqk8A",
+    "currentThumbnail": "https://img.youtube.com/vi/ZmFlljLqk8A/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/ZmFlljLqk8A/sddefault.jpg"
+  },
+  {
+    "name": "Patricia Nicole",
+    "slug": "patricia-nicole",
+    "cmsId": "693b8909dc5555f230e74a92",
+    "videoUrl": "https://www.youtube.com/watch?v=FyWn81O0_Cw",
+    "videoId": "FyWn81O0_Cw",
+    "currentThumbnail": "https://img.youtube.com/vi/FyWn81O0_Cw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/FyWn81O0_Cw/sddefault.jpg"
+  },
+  {
+    "name": "Alyssa",
+    "slug": "alyssa",
+    "cmsId": "693b847fac184ce7c97aa43a",
+    "videoUrl": "https://www.youtube.com/watch?v=kZAbAQbl2nQ",
+    "videoId": "kZAbAQbl2nQ",
+    "currentThumbnail": "https://img.youtube.com/vi/kZAbAQbl2nQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/kZAbAQbl2nQ/sddefault.jpg"
+  },
+  {
+    "name": "Maria Christine",
+    "slug": "maria-christine",
+    "cmsId": "693a04858a40d12e474e353a",
+    "videoUrl": "https://youtu.be/TL1QaMuoYl4",
+    "videoId": "TL1QaMuoYl4",
+    "currentThumbnail": "https://img.youtube.com/vi/TL1QaMuoYl4/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/TL1QaMuoYl4/sddefault.jpg"
+  },
+  {
+    "name": "Ella",
+    "slug": "ella",
+    "cmsId": "693a02617a81734d363c385e",
+    "videoUrl": "https://youtu.be/t7jf15Vh1fQ",
+    "videoId": "t7jf15Vh1fQ",
+    "currentThumbnail": "https://img.youtube.com/vi/t7jf15Vh1fQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/t7jf15Vh1fQ/sddefault.jpg"
+  },
+  {
+    "name": "Gabriela",
+    "slug": "gabriela",
+    "cmsId": "6939e96a27f942887b189f5a",
+    "videoUrl": "https://youtu.be/fI_suKDX1AI",
+    "videoId": "fI_suKDX1AI",
+    "currentThumbnail": "https://img.youtube.com/vi/fI_suKDX1AI/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/fI_suKDX1AI/sddefault.jpg"
+  },
+  {
+    "name": "Louise",
+    "slug": "louise-a-siloterio",
+    "cmsId": "692eef2fa123a022b383a029",
+    "videoUrl": "https://youtu.be/n1-Hsi-PVaU",
+    "videoId": "n1-Hsi-PVaU",
+    "currentThumbnail": "https://img.youtube.com/vi/n1-Hsi-PVaU/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/n1-Hsi-PVaU/sddefault.jpg"
+  },
+  {
+    "name": "Randean",
+    "slug": "randean",
+    "cmsId": "69260f4526ed9b6ba9f325d2",
+    "videoUrl": "https://youtu.be/fCALjhTtCnw",
+    "videoId": "fCALjhTtCnw",
+    "currentThumbnail": "https://img.youtube.com/vi/fCALjhTtCnw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/fCALjhTtCnw/sddefault.jpg"
+  },
+  {
+    "name": "Maridel",
+    "slug": "maridel",
+    "cmsId": "69260f434c763b460bbb2a12",
+    "videoUrl": "https://youtu.be/umEKzjx9998",
+    "videoId": "umEKzjx9998",
+    "currentThumbnail": "https://img.youtube.com/vi/umEKzjx9998/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/umEKzjx9998/sddefault.jpg"
+  },
+  {
+    "name": "Jane",
+    "slug": "jane",
+    "cmsId": "69260f414c763b460bbb28af",
+    "videoUrl": "https://youtu.be/h9_pwiuwUFU",
+    "videoId": "h9_pwiuwUFU",
+    "currentThumbnail": "https://img.youtube.com/vi/h9_pwiuwUFU/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/h9_pwiuwUFU/sddefault.jpg"
+  },
+  {
+    "name": "Joy",
+    "slug": "joy",
+    "cmsId": "69260f3e3222ce039d52901f",
+    "videoUrl": "https://youtu.be/3UFjywIi89w",
+    "videoId": "3UFjywIi89w",
+    "currentThumbnail": "https://img.youtube.com/vi/3UFjywIi89w/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/3UFjywIi89w/sddefault.jpg"
+  },
+  {
+    "name": "Joan Rose",
+    "slug": "joan-rose",
+    "cmsId": "69260f3b6a22d7149f58818e",
+    "videoUrl": "https://youtu.be/cebExm1rt00",
+    "videoId": "cebExm1rt00",
+    "currentThumbnail": "https://img.youtube.com/vi/cebExm1rt00/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/cebExm1rt00/sddefault.jpg"
+  },
+  {
+    "name": "Samantha",
+    "slug": "samantha",
+    "cmsId": "69260f358de0559aaf9efb67",
+    "videoUrl": "https://youtu.be/8wbHfjJ0ZCM",
+    "videoId": "8wbHfjJ0ZCM",
+    "currentThumbnail": "https://img.youtube.com/vi/8wbHfjJ0ZCM/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/8wbHfjJ0ZCM/sddefault.jpg"
+  },
+  {
+    "name": "Patricio",
+    "slug": "patricio",
+    "cmsId": "69260f31cddc3e1ce0db7f41",
+    "videoUrl": "https://youtu.be/U7bLbb9XqoQ",
+    "videoId": "U7bLbb9XqoQ",
+    "currentThumbnail": "https://img.youtube.com/vi/U7bLbb9XqoQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/U7bLbb9XqoQ/sddefault.jpg"
+  },
+  {
+    "name": "Marco",
+    "slug": "marco",
+    "cmsId": "69260f2f4c763b460bbb1e56",
+    "videoUrl": "https://youtu.be/vORSwa7MKZk",
+    "videoId": "vORSwa7MKZk",
+    "currentThumbnail": "https://img.youtube.com/vi/vORSwa7MKZk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/vORSwa7MKZk/sddefault.jpg"
+  },
+  {
+    "name": "Jose Luis",
+    "slug": "jose-luis",
+    "cmsId": "69260f22e1beb3abb6b331a0",
+    "videoUrl": "https://youtu.be/d1kaFwMps4M",
+    "videoId": "d1kaFwMps4M",
+    "currentThumbnail": "https://img.youtube.com/vi/d1kaFwMps4M/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/d1kaFwMps4M/sddefault.jpg"
+  },
+  {
+    "name": "Jomer",
+    "slug": "jomer-daniel",
+    "cmsId": "69260f15f9853a3857ad0554",
+    "videoUrl": "https://youtu.be/E5hCtCVYZCA",
+    "videoId": "E5hCtCVYZCA",
+    "currentThumbnail": "https://img.youtube.com/vi/E5hCtCVYZCA/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/E5hCtCVYZCA/sddefault.jpg"
+  },
+  {
+    "name": "Hugo",
+    "slug": "hugo",
+    "cmsId": "69260f068d75af2b77e22842",
+    "videoUrl": "https://youtu.be/V_OCQi_k9tg",
+    "videoId": "V_OCQi_k9tg",
+    "currentThumbnail": "https://img.youtube.com/vi/V_OCQi_k9tg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/V_OCQi_k9tg/sddefault.jpg"
+  },
+  {
+    "name": "Gael",
+    "slug": "gael",
+    "cmsId": "69260f04e1beb3abb6b326c5",
+    "videoUrl": "https://youtu.be/ve0Wkpkpuh0",
+    "videoId": "ve0Wkpkpuh0",
+    "currentThumbnail": "https://img.youtube.com/vi/ve0Wkpkpuh0/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/ve0Wkpkpuh0/sddefault.jpg"
+  },
+  {
+    "name": "Fabiola",
+    "slug": "fabiola",
+    "cmsId": "69260efcb9b195d9afea3620",
+    "videoUrl": "https://youtu.be/3ZajTF8-OrM",
+    "videoId": "3ZajTF8-OrM",
+    "currentThumbnail": "https://img.youtube.com/vi/3ZajTF8-OrM/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/3ZajTF8-OrM/sddefault.jpg"
+  },
+  {
+    "name": "Angel",
+    "slug": "angel",
+    "cmsId": "69260eeb002e11654a362d68",
+    "videoUrl": "https://youtu.be/Owvvup1s1YM",
+    "videoId": "Owvvup1s1YM",
+    "currentThumbnail": "https://img.youtube.com/vi/Owvvup1s1YM/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/Owvvup1s1YM/sddefault.jpg"
+  },
+  {
+    "name": "Ana Gabriela",
+    "slug": "ana-gabriela",
+    "cmsId": "69260ee6ee2acb0b0bca0e67",
+    "videoUrl": "https://youtu.be/npu-s5q1i3g",
+    "videoId": "npu-s5q1i3g",
+    "currentThumbnail": "https://img.youtube.com/vi/npu-s5q1i3g/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/npu-s5q1i3g/sddefault.jpg"
+  },
+  {
+    "name": "Ximena",
+    "slug": "ximena-4e77d",
+    "cmsId": "69260e2c1cb676355a677486",
+    "videoUrl": "https://youtu.be/2CCpjQR5eO4",
+    "videoId": "2CCpjQR5eO4",
+    "currentThumbnail": "https://img.youtube.com/vi/2CCpjQR5eO4/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/2CCpjQR5eO4/sddefault.jpg"
+  },
+  {
+    "name": "Kathleen",
+    "slug": "kathleen",
+    "cmsId": "6920b20be9c2d300fb2ce2d3",
+    "videoUrl": "https://www.youtube.com/watch?v=t84q0i_wMfs",
+    "videoId": "t84q0i_wMfs",
+    "currentThumbnail": "https://img.youtube.com/vi/t84q0i_wMfs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/t84q0i_wMfs/sddefault.jpg"
+  },
+  {
+    "name": "Albert",
+    "slug": "albert",
+    "cmsId": "6920ae7e0f07fb7c7a79a9f5",
+    "videoUrl": "https://youtu.be/4sfqBgJ6h3w",
+    "videoId": "4sfqBgJ6h3w",
+    "currentThumbnail": "https://img.youtube.com/vi/4sfqBgJ6h3w/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/4sfqBgJ6h3w/sddefault.jpg"
+  },
+  {
+    "name": "Janet",
+    "slug": "janet",
+    "cmsId": "6920a189e4ac04c59eed6dd8",
+    "videoUrl": "https://www.youtube.com/watch?v=ifyF-owgkDw",
+    "videoId": "ifyF-owgkDw",
+    "currentThumbnail": "https://img.youtube.com/vi/ifyF-owgkDw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/ifyF-owgkDw/sddefault.jpg"
+  },
+  {
+    "name": "Mina",
+    "slug": "mina",
+    "cmsId": "691cc053ad37be937376f569",
+    "videoUrl": "https://youtu.be/k4jmdy8ifrE",
+    "videoId": "k4jmdy8ifrE",
+    "currentThumbnail": "https://img.youtube.com/vi/k4jmdy8ifrE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/k4jmdy8ifrE/sddefault.jpg"
+  },
+  {
+    "name": "AC",
+    "slug": "ac",
+    "cmsId": "691cc052138d8a985cc7c691",
+    "videoUrl": "https://youtu.be/mfyGOi9mo58",
+    "videoId": "mfyGOi9mo58",
+    "currentThumbnail": "https://img.youtube.com/vi/mfyGOi9mo58/sddefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/mfyGOi9mo58/sddefault.jpg"
+  },
+  {
+    "name": "Grace",
+    "slug": "grace",
+    "cmsId": "691cc051fafd92a39e7269c5",
+    "videoUrl": "https://youtu.be/J08tAud6nTQ",
+    "videoId": "J08tAud6nTQ",
+    "currentThumbnail": "https://img.youtube.com/vi/J08tAud6nTQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/J08tAud6nTQ/sddefault.jpg"
+  },
+  {
+    "name": "Yvette",
+    "slug": "yvette",
+    "cmsId": "691cc0517c622857f4bb8f27",
+    "videoUrl": "https://youtu.be/oiZlHPfAjbg",
+    "videoId": "oiZlHPfAjbg",
+    "currentThumbnail": "https://img.youtube.com/vi/oiZlHPfAjbg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/oiZlHPfAjbg/sddefault.jpg"
+  },
+  {
+    "name": "Tricia",
+    "slug": "tricia",
+    "cmsId": "691b8a173297968c5ed5977a",
+    "videoUrl": "https://youtu.be/VClb24kDU7s",
+    "videoId": "VClb24kDU7s",
+    "currentThumbnail": "https://img.youtube.com/vi/VClb24kDU7s/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/VClb24kDU7s/sddefault.jpg"
+  },
+  {
+    "name": "Ximena G.",
+    "slug": "ximena",
+    "cmsId": "691b8a166363a512c63ab178",
+    "videoUrl": "https://youtu.be/UQ2JcPPjEnE",
+    "videoId": "UQ2JcPPjEnE",
+    "currentThumbnail": "https://img.youtube.com/vi/UQ2JcPPjEnE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/UQ2JcPPjEnE/sddefault.jpg"
+  },
+  {
+    "name": "Sandra",
+    "slug": "sandra",
+    "cmsId": "691b8a1676470b927f67f195",
+    "videoUrl": "https://youtu.be/xrNMiTNBkcg",
+    "videoId": "xrNMiTNBkcg",
+    "currentThumbnail": "https://img.youtube.com/vi/xrNMiTNBkcg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/xrNMiTNBkcg/sddefault.jpg"
+  },
+  {
+    "name": "Rochelle",
+    "slug": "rochelle",
+    "cmsId": "691b8a1673a372902012f13c",
+    "videoUrl": "https://youtu.be/aCJyNu79nto",
+    "videoId": "aCJyNu79nto",
+    "currentThumbnail": "https://img.youtube.com/vi/aCJyNu79nto/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/aCJyNu79nto/sddefault.jpg"
+  },
+  {
+    "name": "Rejean",
+    "slug": "rejean",
+    "cmsId": "691b8a15f0e2ab9fb3ed29ca",
+    "videoUrl": "https://youtu.be/yeJ_lskQovU",
+    "videoId": "yeJ_lskQovU",
+    "currentThumbnail": "https://img.youtube.com/vi/yeJ_lskQovU/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/yeJ_lskQovU/sddefault.jpg"
+  },
+  {
+    "name": "Rainier",
+    "slug": "rainier",
+    "cmsId": "691b8a15cb665bff98aba813",
+    "videoUrl": "https://youtu.be/Gl_Rijv44Ec",
+    "videoId": "Gl_Rijv44Ec",
+    "currentThumbnail": "https://img.youtube.com/vi/Gl_Rijv44Ec/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/Gl_Rijv44Ec/sddefault.jpg"
+  },
+  {
+    "name": "Rafael",
+    "slug": "rafael",
+    "cmsId": "691b8a153f849707c908757e",
+    "videoUrl": "https://youtu.be/S19B0sRiohI",
+    "videoId": "S19B0sRiohI",
+    "currentThumbnail": "https://img.youtube.com/vi/S19B0sRiohI/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/S19B0sRiohI/sddefault.jpg"
+  },
+  {
+    "name": "Melissa",
+    "slug": "melissa",
+    "cmsId": "691b8a1406c5b174787e6f7a",
+    "videoUrl": "https://youtu.be/6dB2M8wAkjE",
+    "videoId": "6dB2M8wAkjE",
+    "currentThumbnail": "https://img.youtube.com/vi/6dB2M8wAkjE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/6dB2M8wAkjE/sddefault.jpg"
+  },
+  {
+    "name": "Maria",
+    "slug": "maria",
+    "cmsId": "691b8a137bbc6e74fefb276d",
+    "videoUrl": "https://youtu.be/TNXDeGsyIkM",
+    "videoId": "TNXDeGsyIkM",
+    "currentThumbnail": "https://img.youtube.com/vi/TNXDeGsyIkM/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/TNXDeGsyIkM/sddefault.jpg"
+  },
+  {
+    "name": "Maria D.",
+    "slug": "maria-d",
+    "cmsId": "691b8a122c4d3609e83d3517",
+    "videoUrl": "https://youtu.be/ALQNI3jsBLs",
+    "videoId": "ALQNI3jsBLs",
+    "currentThumbnail": "https://img.youtube.com/vi/ALQNI3jsBLs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/ALQNI3jsBLs/sddefault.jpg"
+  },
+  {
+    "name": "Lois",
+    "slug": "lois",
+    "cmsId": "691b8a122c4d3609e83d3505",
+    "videoUrl": "https://youtu.be/HSCzM1jVsaE",
+    "videoId": "HSCzM1jVsaE",
+    "currentThumbnail": "https://img.youtube.com/vi/HSCzM1jVsaE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/HSCzM1jVsaE/sddefault.jpg"
+  },
+  {
+    "name": "Kevin",
+    "slug": "kevin",
+    "cmsId": "691b8a110ed00c53499d1ca7",
+    "videoUrl": "https://youtu.be/MnlRVthsUYE",
+    "videoId": "MnlRVthsUYE",
+    "currentThumbnail": "https://img.youtube.com/vi/MnlRVthsUYE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/MnlRVthsUYE/sddefault.jpg"
+  },
+  {
+    "name": "Janice",
+    "slug": "janice",
+    "cmsId": "691b8a116363a512c63aad54",
+    "videoUrl": "https://youtu.be/P8gcQHNJwsk",
+    "videoId": "P8gcQHNJwsk",
+    "currentThumbnail": "https://img.youtube.com/vi/P8gcQHNJwsk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/P8gcQHNJwsk/sddefault.jpg"
+  },
+  {
+    "name": "Israel",
+    "slug": "israel",
+    "cmsId": "691b8a116363a512c63aad24",
+    "videoUrl": "https://youtu.be/aSLhEc15mN4",
+    "videoId": "aSLhEc15mN4",
+    "currentThumbnail": "https://img.youtube.com/vi/aSLhEc15mN4/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/aSLhEc15mN4/sddefault.jpg"
+  },
+  {
+    "name": "Guillermo",
+    "slug": "guillermo",
+    "cmsId": "691b8a10cb665bff98aba584",
+    "videoUrl": "https://youtu.be/sLtVFyK2b7s",
+    "videoId": "sLtVFyK2b7s",
+    "currentThumbnail": "https://img.youtube.com/vi/sLtVFyK2b7s/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/sLtVFyK2b7s/sddefault.jpg"
+  },
+  {
+    "name": "Gonzalo",
+    "slug": "gonzalo",
+    "cmsId": "691b8a102c4d3609e83d348c",
+    "videoUrl": "https://youtu.be/DYky1VhKGNQ",
+    "videoId": "DYky1VhKGNQ",
+    "currentThumbnail": "https://img.youtube.com/vi/DYky1VhKGNQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/DYky1VhKGNQ/sddefault.jpg"
+  },
+  {
+    "name": "Fernanda",
+    "slug": "fernanda",
+    "cmsId": "691b8a0f0ed00c53499d1c3e",
+    "videoUrl": "https://youtu.be/7ngbNodl3es",
+    "videoId": "7ngbNodl3es",
+    "currentThumbnail": "https://img.youtube.com/vi/7ngbNodl3es/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/7ngbNodl3es/sddefault.jpg"
+  },
+  {
+    "name": "Ellen",
+    "slug": "ellen",
+    "cmsId": "691b8a0f1cb39e61086359cf",
+    "videoUrl": "https://youtu.be/zgEzkCfI3Pw",
+    "videoId": "zgEzkCfI3Pw",
+    "currentThumbnail": "https://img.youtube.com/vi/zgEzkCfI3Pw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/zgEzkCfI3Pw/sddefault.jpg"
+  },
+  {
+    "name": "Dayana",
+    "slug": "dayana",
+    "cmsId": "691b8a0fe352cae9bc806982",
+    "videoUrl": "https://youtu.be/1xTnx_3MRPA",
+    "videoId": "1xTnx_3MRPA",
+    "currentThumbnail": "https://img.youtube.com/vi/1xTnx_3MRPA/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/1xTnx_3MRPA/sddefault.jpg"
+  },
+  {
+    "name": "Dawn",
+    "slug": "dawn",
+    "cmsId": "691b8a0f3f849707c90873a1",
+    "videoUrl": "https://youtu.be/fMWR-UrNXAg",
+    "videoId": "fMWR-UrNXAg",
+    "currentThumbnail": "https://img.youtube.com/vi/fMWR-UrNXAg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/fMWR-UrNXAg/sddefault.jpg"
+  },
+  {
+    "name": "Christine",
+    "slug": "christine",
+    "cmsId": "691b8a0e3297968c5ed594df",
+    "videoUrl": "https://youtu.be/m0n5unGQ1Bk",
+    "videoId": "m0n5unGQ1Bk",
+    "currentThumbnail": "https://img.youtube.com/vi/m0n5unGQ1Bk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/m0n5unGQ1Bk/sddefault.jpg"
+  },
+  {
+    "name": "Carolina",
+    "slug": "carolina",
+    "cmsId": "691b8a0e3297968c5ed594b7",
+    "videoUrl": "https://youtu.be/_3cmkdxncdg",
+    "videoId": "_3cmkdxncdg",
+    "currentThumbnail": "https://img.youtube.com/vi/_3cmkdxncdg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/_3cmkdxncdg/sddefault.jpg"
+  },
+  {
+    "name": "Brandon L.",
+    "slug": "brandon",
+    "cmsId": "691b8a0df83ddf1a08c15961",
+    "videoUrl": "https://youtu.be/PVmxKa19Mz0",
+    "videoId": "PVmxKa19Mz0",
+    "currentThumbnail": "https://img.youtube.com/vi/PVmxKa19Mz0/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/PVmxKa19Mz0/sddefault.jpg"
+  },
+  {
+    "name": "Balbina",
+    "slug": "balbina",
+    "cmsId": "691b8a0d89b222b6b472933c",
+    "videoUrl": "https://youtu.be/sESom3C4Tjk",
+    "videoId": "sESom3C4Tjk",
+    "currentThumbnail": "https://img.youtube.com/vi/sESom3C4Tjk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/sESom3C4Tjk/sddefault.jpg"
+  },
+  {
+    "name": "Ana Victoria",
+    "slug": "ana-victoria",
+    "cmsId": "691b8a0d1cb39e610863582d",
+    "videoUrl": "https://youtu.be/1d4dWgjd0fE",
+    "videoId": "1d4dWgjd0fE",
+    "currentThumbnail": "https://img.youtube.com/vi/1d4dWgjd0fE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/1d4dWgjd0fE/sddefault.jpg"
+  },
+  {
+    "name": "Ana",
+    "slug": "ana",
+    "cmsId": "691b8a0c0569661eecba9e82",
+    "videoUrl": "https://youtu.be/XloA9MBGtGA",
+    "videoId": "XloA9MBGtGA",
+    "currentThumbnail": "https://img.youtube.com/vi/XloA9MBGtGA/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/XloA9MBGtGA/sddefault.jpg"
+  },
+  {
+    "name": "Pavel",
+    "slug": "pavel",
+    "cmsId": "691b8a0b59789e6de7cf8158",
+    "videoUrl": "https://youtu.be/_reMSeE_gyY",
+    "videoId": "_reMSeE_gyY",
+    "currentThumbnail": "https://img.youtube.com/vi/_reMSeE_gyY/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/_reMSeE_gyY/sddefault.jpg"
+  },
+  {
+    "name": "Jill",
+    "slug": "jill",
+    "cmsId": "691b8a0be00a0398d8a56cbf",
+    "videoUrl": "https://youtu.be/7yREE7oxSu0",
+    "videoId": "7yREE7oxSu0",
+    "currentThumbnail": "https://img.youtube.com/vi/7yREE7oxSu0/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/7yREE7oxSu0/sddefault.jpg"
+  },
+  {
+    "name": "Jasmine",
+    "slug": "jasmine",
+    "cmsId": "691b8a0bcd945b1d360713e6",
+    "videoUrl": "https://youtu.be/WhdFCM1GABs",
+    "videoId": "WhdFCM1GABs",
+    "currentThumbnail": "https://img.youtube.com/vi/WhdFCM1GABs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/WhdFCM1GABs/sddefault.jpg"
+  },
+  {
+    "name": "Gizelle",
+    "slug": "gizelle",
+    "cmsId": "691b8a0a0ed00c53499d1af9",
+    "videoUrl": "https://youtu.be/xkbMKgYarbk",
+    "videoId": "xkbMKgYarbk",
+    "currentThumbnail": "https://img.youtube.com/vi/xkbMKgYarbk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/xkbMKgYarbk/sddefault.jpg"
+  },
+  {
+    "name": "Rona Mae",
+    "slug": "rona",
+    "cmsId": "691b8a0ae00a0398d8a56c88",
+    "videoUrl": "https://youtu.be/eHrDpnlAeoc",
+    "videoId": "eHrDpnlAeoc",
+    "currentThumbnail": "https://img.youtube.com/vi/eHrDpnlAeoc/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/eHrDpnlAeoc/sddefault.jpg"
+  },
+  {
+    "name": "Raydon",
+    "slug": "raydon",
+    "cmsId": "691b8a0a6363a512c63aa8f3",
+    "videoUrl": "https://youtu.be/2OIkxzcz-pw",
+    "videoId": "2OIkxzcz-pw",
+    "currentThumbnail": "https://img.youtube.com/vi/2OIkxzcz-pw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/2OIkxzcz-pw/sddefault.jpg"
+  },
+  {
+    "name": "Michelle",
+    "slug": "michelle",
+    "cmsId": "691b8a09cb665bff98aba0ca",
+    "videoUrl": "https://youtu.be/sjVqZfkunbY",
+    "videoId": "sjVqZfkunbY",
+    "currentThumbnail": "https://img.youtube.com/vi/sjVqZfkunbY/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/sjVqZfkunbY/sddefault.jpg"
+  },
+  {
+    "name": "Ma. Venus",
+    "slug": "ma-venus",
+    "cmsId": "691b8a0806c5b174787e6bfc",
+    "videoUrl": "https://youtu.be/AgUkZKEWzkw",
+    "videoId": "AgUkZKEWzkw",
+    "currentThumbnail": "https://img.youtube.com/vi/AgUkZKEWzkw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/AgUkZKEWzkw/sddefault.jpg"
+  },
+  {
+    "name": "Lorenz",
+    "slug": "lorenz",
+    "cmsId": "691b8a08e352cae9bc806861",
+    "videoUrl": "https://youtu.be/3if5VzuvLNc",
+    "videoId": "3if5VzuvLNc",
+    "currentThumbnail": "https://img.youtube.com/vi/3if5VzuvLNc/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/3if5VzuvLNc/sddefault.jpg"
+  },
+  {
+    "name": "Laurice",
+    "slug": "laurice",
+    "cmsId": "691b8a0759789e6de7cf80ad",
+    "videoUrl": "https://youtu.be/9cz71wjqIX8",
+    "videoId": "9cz71wjqIX8",
+    "currentThumbnail": "https://img.youtube.com/vi/9cz71wjqIX8/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/9cz71wjqIX8/sddefault.jpg"
+  },
+  {
+    "name": "Joji Marie",
+    "slug": "joji",
+    "cmsId": "691b8a073297968c5ed59133",
+    "videoUrl": "https://youtu.be/5N_z80i4KrQ",
+    "videoId": "5N_z80i4KrQ",
+    "currentThumbnail": "https://img.youtube.com/vi/5N_z80i4KrQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/5N_z80i4KrQ/sddefault.jpg"
+  },
+  {
+    "name": "Joel",
+    "slug": "joel",
+    "cmsId": "691b8a066363a512c63aa688",
+    "videoUrl": "https://youtu.be/5n99ZiMc0fs",
+    "videoId": "5n99ZiMc0fs",
+    "currentThumbnail": "https://img.youtube.com/vi/5n99ZiMc0fs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/5n99ZiMc0fs/sddefault.jpg"
+  },
+  {
+    "name": "Jimmy",
+    "slug": "jimmy",
+    "cmsId": "691b8a066363a512c63aa61c",
+    "videoUrl": "https://youtu.be/rKDnjVB-dxE",
+    "videoId": "rKDnjVB-dxE",
+    "currentThumbnail": "https://img.youtube.com/vi/rKDnjVB-dxE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/rKDnjVB-dxE/sddefault.jpg"
+  },
+  {
+    "name": "Jerome",
+    "slug": "jerome",
+    "cmsId": "691b8a066363a512c63aa5e1",
+    "videoUrl": "https://youtu.be/aomGUtRlOiE",
+    "videoId": "aomGUtRlOiE",
+    "currentThumbnail": "https://img.youtube.com/vi/aomGUtRlOiE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/aomGUtRlOiE/sddefault.jpg"
+  },
+  {
+    "name": "Javier",
+    "slug": "javier",
+    "cmsId": "691b8a051d8feff943c71247",
+    "videoUrl": "https://youtu.be/UCqesVIO_7M",
+    "videoId": "UCqesVIO_7M",
+    "currentThumbnail": "https://img.youtube.com/vi/UCqesVIO_7M/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/UCqesVIO_7M/sddefault.jpg"
+  },
+  {
+    "name": "Jay Alvin",
+    "slug": "jay",
+    "cmsId": "691b8a05f83ddf1a08c15210",
+    "videoUrl": "https://youtu.be/GUe3uCkW8-4",
+    "videoId": "GUe3uCkW8-4",
+    "currentThumbnail": "https://img.youtube.com/vi/GUe3uCkW8-4/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/GUe3uCkW8-4/sddefault.jpg"
+  },
+  {
+    "name": "Geraldine",
+    "slug": "geraldine",
+    "cmsId": "691b8a043297968c5ed58f4e",
+    "videoUrl": "https://youtu.be/OAEGigybmFM",
+    "videoId": "OAEGigybmFM",
+    "currentThumbnail": "https://img.youtube.com/vi/OAEGigybmFM/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/OAEGigybmFM/sddefault.jpg"
+  },
+  {
+    "name": "Francis",
+    "slug": "francis",
+    "cmsId": "691b8a04cb665bff98ab9f04",
+    "videoUrl": "https://youtu.be/Atdu3qVBHLs",
+    "videoId": "Atdu3qVBHLs",
+    "currentThumbnail": "https://img.youtube.com/vi/Atdu3qVBHLs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/Atdu3qVBHLs/sddefault.jpg"
+  },
+  {
+    "name": "Emmanuel",
+    "slug": "emmanuel",
+    "cmsId": "691b8a043297968c5ed58e6d",
+    "videoUrl": "https://youtu.be/dZaAfgmaQwk",
+    "videoId": "dZaAfgmaQwk",
+    "currentThumbnail": "https://img.youtube.com/vi/dZaAfgmaQwk/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/dZaAfgmaQwk/sddefault.jpg"
+  },
+  {
+    "name": "Cherry Mae",
+    "slug": "cherry",
+    "cmsId": "691b8a036363a512c63aa36e",
+    "videoUrl": "https://youtu.be/DIfncidHCpY",
+    "videoId": "DIfncidHCpY",
+    "currentThumbnail": "https://img.youtube.com/vi/DIfncidHCpY/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/DIfncidHCpY/sddefault.jpg"
+  },
+  {
+    "name": "Antonio",
+    "slug": "antonio",
+    "cmsId": "691b8a030ed00c53499d1879",
+    "videoUrl": "https://youtu.be/3b3R9YoLumE",
+    "videoId": "3b3R9YoLumE",
+    "currentThumbnail": "https://img.youtube.com/vi/3b3R9YoLumE/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/3b3R9YoLumE/sddefault.jpg"
+  },
+  {
+    "name": "Abigail",
+    "slug": "abigail",
+    "cmsId": "691b8a02cd945b1d36071152",
+    "videoUrl": "https://youtu.be/z3hiwu0mPc8",
+    "videoId": "z3hiwu0mPc8",
+    "currentThumbnail": "https://img.youtube.com/vi/z3hiwu0mPc8/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/z3hiwu0mPc8/sddefault.jpg"
+  },
+  {
+    "name": "Moises",
+    "slug": "moises",
+    "cmsId": "691b8a014c78138967234375",
+    "videoUrl": "https://youtu.be/tbz0iRIWaps",
+    "videoId": "tbz0iRIWaps",
+    "currentThumbnail": "https://img.youtube.com/vi/tbz0iRIWaps/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/tbz0iRIWaps/sddefault.jpg"
+  },
+  {
+    "name": "Maria Paula",
+    "slug": "maria-paula",
+    "cmsId": "691b8a013297968c5ed58c1c",
+    "videoUrl": "https://youtu.be/yxgaoJEpdGg",
+    "videoId": "yxgaoJEpdGg",
+    "currentThumbnail": "https://img.youtube.com/vi/yxgaoJEpdGg/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/yxgaoJEpdGg/sddefault.jpg"
+  },
+  {
+    "name": "Karen",
+    "slug": "karen",
+    "cmsId": "691b8a003f849707c9086eb4",
+    "videoUrl": "https://youtu.be/TXb9ONnF310",
+    "videoId": "TXb9ONnF310",
+    "currentThumbnail": "https://img.youtube.com/vi/TXb9ONnF310/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/TXb9ONnF310/sddefault.jpg"
+  },
+  {
+    "name": "Joana",
+    "slug": "joana",
+    "cmsId": "691b8a0076470b927f67e85d",
+    "videoUrl": "https://youtu.be/PrZ7xZryyjQ",
+    "videoId": "PrZ7xZryyjQ",
+    "currentThumbnail": "https://img.youtube.com/vi/PrZ7xZryyjQ/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/PrZ7xZryyjQ/sddefault.jpg"
+  },
+  {
+    "name": "Ivan",
+    "slug": "ivan",
+    "cmsId": "691b8a00f0e2ab9fb3ed2103",
+    "videoUrl": "https://youtu.be/dHojsDPmfHc",
+    "videoId": "dHojsDPmfHc",
+    "currentThumbnail": "https://img.youtube.com/vi/dHojsDPmfHc/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/dHojsDPmfHc/sddefault.jpg"
+  },
+  {
+    "name": "Dafne",
+    "slug": "dafne",
+    "cmsId": "691b89fff0e2ab9fb3ed20f1",
+    "videoUrl": "https://youtu.be/habJY_0mpjs",
+    "videoId": "habJY_0mpjs",
+    "currentThumbnail": "https://img.youtube.com/vi/habJY_0mpjs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/habJY_0mpjs/sddefault.jpg"
+  },
+  {
+    "name": "Alejandro",
+    "slug": "alejandro",
+    "cmsId": "691b89ff35de2e0351765716",
+    "videoUrl": "https://youtu.be/a_cRiGRSLEs",
+    "videoId": "a_cRiGRSLEs",
+    "currentThumbnail": "https://img.youtube.com/vi/a_cRiGRSLEs/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/a_cRiGRSLEs/sddefault.jpg"
+  },
+  {
+    "name": "Adrian",
+    "slug": "adrian",
+    "cmsId": "691b89fef0e2ab9fb3ed20b4",
+    "videoUrl": "https://youtu.be/k5OatPLSORw",
+    "videoId": "k5OatPLSORw",
+    "currentThumbnail": "https://img.youtube.com/vi/k5OatPLSORw/maxresdefault.jpg",
+    "newThumbnail": "https://img.youtube.com/vi/k5OatPLSORw/sddefault.jpg"
+  }
+]

@@ -1,0 +1,1502 @@
+[
+  {
+    "name": "Aaron",
+    "slug": "aaron-a0d16",
+    "cmsId": "69695325a35247ab9d61fff5",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/vvkXJrCw9Tg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Andrea",
+    "slug": "andrea",
+    "cmsId": "696555612dfbf9d11af64b06",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/t9ltQNUVG7U/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Karl",
+    "slug": "karl-bd0a3",
+    "cmsId": "695d70bb817fe323368bd413",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "AMS360",
+          "EZLYNX",
+          "PL RATER",
+          "QUOTERUSH",
+          "HAWKSOFT",
+          "DUCK CREEK",
+          "NOWCERTS",
+          "BETTER AGENCY",
+          "ZENDESK",
+          "AVAYA",
+          "LIGHTSPEED"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AMS360</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>EZLYNX</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>PL RATER</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>QUOTERUSH</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>HAWKSOFT</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>DUCK CREEK</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>NOWCERTS</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>BETTER AGENCY</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>ZENDESK</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AVAYA</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>LIGHTSPEED</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/W6f_dt2kiIY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Sheila Marie",
+    "slug": "sheila-marie",
+    "cmsId": "6954416b4c4f5993f14b3c0e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/BoMYNQUMono/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Bernadette",
+    "slug": "bernadette-abellana",
+    "cmsId": "694b0260096a55e446df421e",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Loan Origination Systems (LOS)",
+          "Mortgage Compliance Platforms",
+          "Document Management & Archiving Systems",
+          "Microsoft Office Suite",
+          "Internal Banking & Financial Systems"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Loan Origination Systems (LOS)</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Mortgage Compliance Platforms</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Document Management &amp; Archiving Systems</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office Suite</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Internal Banking &amp; Financial Systems</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/I20XQPhenIQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Vicente",
+    "slug": "vicente-penaflor",
+    "cmsId": "694b021cd025d0b4379705b3",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "AMS360",
+          "Applied Epic",
+          "EZLynx",
+          "Quote Rush",
+          "Applied Rater",
+          "Microsoft Teams",
+          "Outlook",
+          "Excel",
+          "Avaya"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AMS360</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Applied Epic</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>EZLynx</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Quote Rush</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Applied Rater</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Teams</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Outlook</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Excel</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Avaya</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/SPTGcnSro0c/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ruel",
+    "slug": "ruel",
+    "cmsId": "6944849cae55ce44765a5c64",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/_JZ0165Vy7I/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Francis Aldrin",
+    "slug": "francis-aldrin",
+    "cmsId": "6941a0258c4a748fe6939f7e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/j7mlXZIEMx4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Juname",
+    "slug": "juname",
+    "cmsId": "69419ee97eecfa8aad625e47",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/XOGqxYdZUQo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Andres",
+    "slug": "andres",
+    "cmsId": "69419d749b64a30b91b74eea",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/uoZyHjqKUf0/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Kempee",
+    "slug": "kempee",
+    "cmsId": "693c4d4e611900189cda1f21",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/ZmFlljLqk8A/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Patricia Nicole",
+    "slug": "patricia-nicole",
+    "cmsId": "693b8909dc5555f230e74a92",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/FyWn81O0_Cw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Alyssa",
+    "slug": "alyssa",
+    "cmsId": "693b847fac184ce7c97aa43a",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/kZAbAQbl2nQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Maria Christine",
+    "slug": "maria-christine",
+    "cmsId": "693a04858a40d12e474e353a",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/TL1QaMuoYl4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ella",
+    "slug": "ella",
+    "cmsId": "693a02617a81734d363c385e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/t7jf15Vh1fQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Gabriela",
+    "slug": "gabriela",
+    "cmsId": "6939e96a27f942887b189f5a",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/fI_suKDX1AI/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Louise",
+    "slug": "louise-a-siloterio",
+    "cmsId": "692eef2fa123a022b383a029",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Arrive CRM",
+          "Yardi / ERDI",
+          "AppFolio",
+          "Follow Up Boss",
+          "Trello",
+          "Asana",
+          "Monday.com",
+          "Slack",
+          "RingCentral",
+          "Google Workspace"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Arrive CRM</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Yardi / ERDI</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AppFolio</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Follow Up Boss</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Trello</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Asana</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Monday.com</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Slack</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>RingCentral</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Workspace</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/n1-Hsi-PVaU/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Randean",
+    "slug": "randean",
+    "cmsId": "69260f4526ed9b6ba9f325d2",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/fCALjhTtCnw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Maridel",
+    "slug": "maridel",
+    "cmsId": "69260f434c763b460bbb2a12",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/umEKzjx9998/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jane",
+    "slug": "jane",
+    "cmsId": "69260f414c763b460bbb28af",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/h9_pwiuwUFU/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Joy",
+    "slug": "joy",
+    "cmsId": "69260f3e3222ce039d52901f",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/3UFjywIi89w/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Joan Rose",
+    "slug": "joan-rose",
+    "cmsId": "69260f3b6a22d7149f58818e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/cebExm1rt00/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Samantha",
+    "slug": "samantha",
+    "cmsId": "69260f358de0559aaf9efb67",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/8wbHfjJ0ZCM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Patricio",
+    "slug": "patricio",
+    "cmsId": "69260f31cddc3e1ce0db7f41",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/U7bLbb9XqoQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Marco",
+    "slug": "marco",
+    "cmsId": "69260f2f4c763b460bbb1e56",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/vORSwa7MKZk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jose Luis",
+    "slug": "jose-luis",
+    "cmsId": "69260f22e1beb3abb6b331a0",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/d1kaFwMps4M/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jomer",
+    "slug": "jomer-daniel",
+    "cmsId": "69260f15f9853a3857ad0554",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/E5hCtCVYZCA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Hugo",
+    "slug": "hugo",
+    "cmsId": "69260f068d75af2b77e22842",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/V_OCQi_k9tg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Gael",
+    "slug": "gael",
+    "cmsId": "69260f04e1beb3abb6b326c5",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/ve0Wkpkpuh0/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Fabiola",
+    "slug": "fabiola",
+    "cmsId": "69260efcb9b195d9afea3620",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/3ZajTF8-OrM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Branko",
+    "slug": "branko",
+    "cmsId": "69260ef2ee2acb0b0bca149c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/nGI5xLNM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Angel",
+    "slug": "angel",
+    "cmsId": "69260eeb002e11654a362d68",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/Owvvup1s1YM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ana Gabriela",
+    "slug": "ana-gabriela",
+    "cmsId": "69260ee6ee2acb0b0bca0e67",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/npu-s5q1i3g/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ximena",
+    "slug": "ximena-4e77d",
+    "cmsId": "69260e2c1cb676355a677486",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "AWS",
+          "Slack",
+          "Canva",
+          "Salesforce",
+          "Sugar CRM",
+          "Microsoft Office",
+          "Google Workspace"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AWS</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Slack</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Canva</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Salesforce</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Sugar CRM</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Workspace</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/2CCpjQR5eO4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Kathleen",
+    "slug": "kathleen",
+    "cmsId": "6920b20be9c2d300fb2ce2d3",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/t84q0i_wMfs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Albert",
+    "slug": "albert",
+    "cmsId": "6920ae7e0f07fb7c7a79a9f5",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/4sfqBgJ6h3w/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Janet",
+    "slug": "janet",
+    "cmsId": "6920a189e4ac04c59eed6dd8",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/ifyF-owgkDw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Mina",
+    "slug": "mina",
+    "cmsId": "691cc053ad37be937376f569",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/k4jmdy8ifrE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "AC",
+    "slug": "ac",
+    "cmsId": "691cc052138d8a985cc7c691",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/mfyGOi9mo58/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Grace",
+    "slug": "grace",
+    "cmsId": "691cc051fafd92a39e7269c5",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "HawkSoft",
+          "NowCerts",
+          "AgencyZoom",
+          "PL Rater",
+          "EZLynx",
+          "Carrier Portals",
+          "Microsoft Office",
+          "Google Workspace",
+          "Slack"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>HawkSoft</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>NowCerts</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AgencyZoom</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>PL Rater</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>EZLynx</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Carrier Portals</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Workspace</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Slack</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/J08tAud6nTQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Yvette",
+    "slug": "yvette",
+    "cmsId": "691cc0517c622857f4bb8f27",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/oiZlHPfAjbg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Tricia",
+    "slug": "tricia",
+    "cmsId": "691b8a173297968c5ed5977a",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/VClb24kDU7s/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ximena G.",
+    "slug": "ximena",
+    "cmsId": "691b8a166363a512c63ab178",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/UQ2JcPPjEnE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Sandra",
+    "slug": "sandra",
+    "cmsId": "691b8a1676470b927f67f195",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/xrNMiTNBkcg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Rochelle",
+    "slug": "rochelle",
+    "cmsId": "691b8a1673a372902012f13c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/aCJyNu79nto/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Rejean",
+    "slug": "rejean",
+    "cmsId": "691b8a15f0e2ab9fb3ed29ca",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/yeJ_lskQovU/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Rainier",
+    "slug": "rainier",
+    "cmsId": "691b8a15cb665bff98aba813",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/Gl_Rijv44Ec/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Rafael",
+    "slug": "rafael",
+    "cmsId": "691b8a153f849707c908757e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/S19B0sRiohI/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Melissa",
+    "slug": "melissa",
+    "cmsId": "691b8a1406c5b174787e6f7a",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/6dB2M8wAkjE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Maria",
+    "slug": "maria",
+    "cmsId": "691b8a137bbc6e74fefb276d",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/TNXDeGsyIkM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Maria D.",
+    "slug": "maria-d",
+    "cmsId": "691b8a122c4d3609e83d3517",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/ALQNI3jsBLs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Lois",
+    "slug": "lois",
+    "cmsId": "691b8a122c4d3609e83d3505",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/HSCzM1jVsaE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Kevin",
+    "slug": "kevin",
+    "cmsId": "691b8a110ed00c53499d1ca7",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/MnlRVthsUYE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Janice",
+    "slug": "janice",
+    "cmsId": "691b8a116363a512c63aad54",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/P8gcQHNJwsk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Israel",
+    "slug": "israel",
+    "cmsId": "691b8a116363a512c63aad24",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/aSLhEc15mN4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Guillermo",
+    "slug": "guillermo",
+    "cmsId": "691b8a10cb665bff98aba584",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/sLtVFyK2b7s/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Gonzalo",
+    "slug": "gonzalo",
+    "cmsId": "691b8a102c4d3609e83d348c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/DYky1VhKGNQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Fernanda",
+    "slug": "fernanda",
+    "cmsId": "691b8a0f0ed00c53499d1c3e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/7ngbNodl3es/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ellen",
+    "slug": "ellen",
+    "cmsId": "691b8a0f1cb39e61086359cf",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Ezlynx",
+          "Nowcerts",
+          "Zoho",
+          "Dialpad",
+          "Zendesk",
+          "Smart Lookup",
+          "Google Calendar",
+          "Google Suite",
+          "Microsoft Excel (Advanced)"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Ezlynx</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Nowcerts</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zoho</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Dialpad</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zendesk</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Smart Lookup</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Calendar</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Suite</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Excel (Advanced)</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/zgEzkCfI3Pw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dayana",
+    "slug": "dayana",
+    "cmsId": "691b8a0fe352cae9bc806982",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/1xTnx_3MRPA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dawn",
+    "slug": "dawn",
+    "cmsId": "691b8a0f3f849707c90873a1",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/fMWR-UrNXAg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Christine",
+    "slug": "christine",
+    "cmsId": "691b8a0e3297968c5ed594df",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/m0n5unGQ1Bk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Carolina",
+    "slug": "carolina",
+    "cmsId": "691b8a0e3297968c5ed594b7",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/_3cmkdxncdg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Brandon L.",
+    "slug": "brandon",
+    "cmsId": "691b8a0df83ddf1a08c15961",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Salesforce",
+          "SQL",
+          "Power BI",
+          "Buildium",
+          "AppFolio",
+          "Microsoft Office"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Salesforce</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>SQL</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Power BI</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Buildium</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AppFolio</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/PVmxKa19Mz0/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Balbina",
+    "slug": "balbina",
+    "cmsId": "691b8a0d89b222b6b472933c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/sESom3C4Tjk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ana Victoria",
+    "slug": "ana-victoria",
+    "cmsId": "691b8a0d1cb39e610863582d",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/1d4dWgjd0fE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ana",
+    "slug": "ana",
+    "cmsId": "691b8a0c0569661eecba9e82",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Canva",
+          "Zoho CRM",
+          "Opera Software",
+          "Microsoft Office",
+          "Zoom Workplace",
+          "Google Workspace"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Canva</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zoho CRM</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Opera Software</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zoom Workplace</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Workspace</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/XloA9MBGtGA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Pavel",
+    "slug": "pavel",
+    "cmsId": "691b8a0b59789e6de7cf8158",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/_reMSeE_gyY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jill",
+    "slug": "jill",
+    "cmsId": "691b8a0be00a0398d8a56cbf",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/7yREE7oxSu0/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jasmine",
+    "slug": "jasmine",
+    "cmsId": "691b8a0bcd945b1d360713e6",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/WhdFCM1GABs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Gizelle",
+    "slug": "gizelle",
+    "cmsId": "691b8a0a0ed00c53499d1af9",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/xkbMKgYarbk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Rona Mae",
+    "slug": "rona",
+    "cmsId": "691b8a0ae00a0398d8a56c88",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Ezlynx",
+          "AMS",
+          "QQ Catalyst",
+          "Slack",
+          "Canva",
+          "Adobe Photoshop",
+          "Ring Central",
+          "Microsoft Office",
+          "Microsoft Teams"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Ezlynx</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AMS</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>QQ Catalyst</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Slack</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Canva</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Adobe Photoshop</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Ring Central</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Teams</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/eHrDpnlAeoc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Raydon",
+    "slug": "raydon",
+    "cmsId": "691b8a0a6363a512c63aa8f3",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/2OIkxzcz-pw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Michelle",
+    "slug": "michelle",
+    "cmsId": "691b8a09cb665bff98aba0ca",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/sjVqZfkunbY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ma. Venus",
+    "slug": "ma-venus",
+    "cmsId": "691b8a0806c5b174787e6bfc",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/AgUkZKEWzkw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Lorenz",
+    "slug": "lorenz",
+    "cmsId": "691b8a08e352cae9bc806861",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/3if5VzuvLNc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Laurice",
+    "slug": "laurice",
+    "cmsId": "691b8a0759789e6de7cf80ad",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/9cz71wjqIX8/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Joji Marie",
+    "slug": "joji",
+    "cmsId": "691b8a073297968c5ed59133",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Applied Epic",
+          "Zendesk",
+          "Salesforce",
+          "Google Workspace",
+          "Microsoft Office"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Applied Epic</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zendesk</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Salesforce</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Google Workspace</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/5N_z80i4KrQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Joel",
+    "slug": "joel",
+    "cmsId": "691b8a066363a512c63aa688",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/5n99ZiMc0fs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jimmy",
+    "slug": "jimmy",
+    "cmsId": "691b8a066363a512c63aa61c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/rKDnjVB-dxE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jerome",
+    "slug": "jerome",
+    "cmsId": "691b8a066363a512c63aa5e1",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/aomGUtRlOiE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Javier",
+    "slug": "javier",
+    "cmsId": "691b8a051d8feff943c71247",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/UCqesVIO_7M/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jay Alvin",
+    "slug": "jay",
+    "cmsId": "691b8a05f83ddf1a08c15210",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "AMS360",
+          "Ezlynx",
+          "Ringcentral",
+          "Dialpad",
+          "Multiple Carrier Platforms"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>AMS360</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Ezlynx</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Ringcentral</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Dialpad</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Multiple Carrier Platforms</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/GUe3uCkW8-4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Geraldine",
+    "slug": "geraldine",
+    "cmsId": "691b8a043297968c5ed58f4e",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/OAEGigybmFM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Francis",
+    "slug": "francis",
+    "cmsId": "691b8a04cb665bff98ab9f04",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/Atdu3qVBHLs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Emmanuel",
+    "slug": "emmanuel",
+    "cmsId": "691b8a043297968c5ed58e6d",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/dZaAfgmaQwk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Cherry Mae",
+    "slug": "cherry",
+    "cmsId": "691b8a036363a512c63aa36e",
+    "needsTools": true,
+    "needsEquipment": true,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": {
+        "raw": [
+          "Applied Epic",
+          "Quickbooks",
+          "Canva",
+          "Slack",
+          "Loom",
+          "Krisp",
+          "Microsoft Office",
+          "Citrix Workspace",
+          "Notion",
+          "Zoom Workplace",
+          "Docusign",
+          "Capcut"
+        ],
+        "html": "<div class=\"va-tools-list\"><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Applied Epic</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Quickbooks</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Canva</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Slack</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Loom</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Krisp</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Microsoft Office</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Citrix Workspace</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Notion</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Zoom Workplace</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Docusign</span></div><div class=\"va-tool-item\"><span class=\"va-tool-checkmark\">✓</span><span>Capcut</span></div></div>"
+      },
+      "equipment": {
+        "raw": [
+          "Two-Monitor Setup",
+          "Noise-Cancelling Headset"
+        ],
+        "html": "<div class=\"va-equipment-list\"><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9.75 17L9 20m0 0l-.75 3M9 20H5m4 0h10m0 0l.75 3M19 20l.75 3M19 20h4m-4 0h.01M9 17h10a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z\"></path></svg><span>Two-Monitor Setup</span></div><div class=\"va-equipment-item\"><svg class=\"va-equipment-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3\"></path></svg><span>Noise-Cancelling Headset</span></div></div>"
+      },
+      "videoThumbnail": "https://img.youtube.com/vi/DIfncidHCpY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Antonio",
+    "slug": "antonio",
+    "cmsId": "691b8a030ed00c53499d1879",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/3b3R9YoLumE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Abigail",
+    "slug": "abigail",
+    "cmsId": "691b8a02cd945b1d36071152",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/z3hiwu0mPc8/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Moises",
+    "slug": "moises",
+    "cmsId": "691b8a014c78138967234375",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/tbz0iRIWaps/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Maria Paula",
+    "slug": "maria-paula",
+    "cmsId": "691b8a013297968c5ed58c1c",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/yxgaoJEpdGg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Karen",
+    "slug": "karen",
+    "cmsId": "691b8a003f849707c9086eb4",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/TXb9ONnF310/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Joana",
+    "slug": "joana",
+    "cmsId": "691b8a0076470b927f67e85d",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/PrZ7xZryyjQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ivan",
+    "slug": "ivan",
+    "cmsId": "691b8a00f0e2ab9fb3ed2103",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/dHojsDPmfHc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dafne",
+    "slug": "dafne",
+    "cmsId": "691b89fff0e2ab9fb3ed20f1",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/habJY_0mpjs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Alejandro",
+    "slug": "alejandro",
+    "cmsId": "691b89ff35de2e0351765716",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/a_cRiGRSLEs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Adrian",
+    "slug": "adrian",
+    "cmsId": "691b89fef0e2ab9fb3ed20b4",
+    "needsTools": false,
+    "needsEquipment": false,
+    "needsThumbnail": true,
+    "extracted": {
+      "tools": null,
+      "equipment": null,
+      "videoThumbnail": "https://img.youtube.com/vi/k5OatPLSORw/maxresdefault.jpg"
+    }
+  }
+]

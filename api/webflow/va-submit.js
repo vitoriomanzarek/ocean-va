@@ -19,6 +19,8 @@ const FIELD_MAPPING = {
   // Basic Info
   name: 'name',
   slug: 'slug',
+  'profile-slug-2': 'profile-slug-2', // Link field for profile URL
+  'profileSlug': 'profile-slug-2', // Support camelCase from form
   'main-category': 'main-category',
   'mainCategory': 'main-category', // Support camelCase from form
   'main-categories': 'main-categories', // Multi-reference

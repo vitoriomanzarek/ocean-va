@@ -1,0 +1,159 @@
+<!-- VA CARD VIDEO MODAL CSS -->
+<!-- Add this to page Head Code (once per page, not per card) -->
+<!-- 
+  INSTRUCTIONS:
+  1. Go to Settings > Custom Code > Head Code
+  2. Paste this entire code block
+  3. Only add once per page (not per card)
+  This styles the video modal for all VA cards on the page
+-->
+
+<style>
+/* Video Button Styles - Matching original va-grid-btn-secondary */
+.va-grid-btn-secondary {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: white;
+  color: #1eb8a6;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  flex: 0 0 auto;
+}
+
+.va-grid-btn-secondary:hover {
+  border-color: #1eb8a6;
+  transform: translateY(-2px);
+}
+
+/* Video Modal Container */
+.va-card-video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Video Modal Content Container */
+.va-card-video-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 8px;
+  overflow: visible; /* Allow close button to be visible outside */
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s ease;
+  z-index: 10001;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Video Iframe - contained with border-radius */
+.va-card-video-modal-content iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Close Button */
+.va-card-video-modal-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 44px;
+  height: 44px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 10002;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto;
+}
+
+.va-card-video-modal-close:hover {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+
+.va-card-video-modal-close:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .va-card-video-modal-content {
+    width: 95%;
+    max-width: none;
+  }
+  
+  .va-card-video-modal-close {
+    top: -40px;
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .va-card-video-modal-content {
+    width: 98%;
+    border-radius: 4px;
+  }
+  
+  .va-card-video-modal-close {
+    top: -35px;
+    font-size: 28px;
+    width: 36px;
+    height: 36px;
+  }
+}
+</style>

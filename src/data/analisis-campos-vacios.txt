@@ -1,0 +1,880 @@
+════════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DE CAMPOS VACÍOS EN CMS
+════════════════════════════════════════════════════════════════════════════════
+
+Fecha: 1/20/2026, 7:32:28 PM
+
+Total VAs en CMS: 105
+VAs con campos vacíos: 101
+
+────────────────────────────────────────────────────────────────────────────────
+ESTADÍSTICAS POR CAMPO:
+────────────────────────────────────────────────────────────────────────────────
+Campo                              Vacíos    Total     % Vacío
+────────────────────────────────────────────────────────────────────────────────
+Title                              100       105       95.2%
+Summary                            20        105       19.0%
+Tagline                            20        105       19.0%
+Thumbnail Description              82        105       78.1%
+Skills Richtext                    100       105       95.2%
+Tools Richtext                     100       105       95.2%
+Equipment Richtext                 100       105       95.2%
+Employment Summary                 99        105       94.3%
+Employment Richtext                39        105       37.1%
+Education Richtext                 64        105       61.0%
+DISC Type                          99        105       94.3%
+DISC Description                   33        105       31.4%
+English Test Type                  99        105       94.3%
+English Score                      100       105       95.2%
+English Description                33        105       31.4%
+CEFR Result                        99        105       94.3%
+Video URL                          3         105       2.9%
+Video Thumbnail                    100       105       95.2%
+Skills Tags                        27        105       25.7%
+Tools Tags                         28        105       26.7%
+Equipment Tags                     37        105       35.2%
+Experience Years                   0         105       0.0%
+Availability                       0         105       0.0%
+Language                           0         105       0.0%
+
+────────────────────────────────────────────────────────────────────────────────
+VAs CON CAMPOS VACÍOS (Top 20):
+────────────────────────────────────────────────────────────────────────────────
+
+1. Randean (randean)
+   CMS ID: 69260f4526ed9b6ba9f325d2
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: ENGLISH-SPEAKING EXECUTIVE VA
+      - Summary: She is a versatile professional with over 8 years of experie...
+      - Tagline: Randean brings over 8 years of comprehensive experience in c...
+      - Thumbnail Description: Randean is an adaptable customer service and real estate pro...
+      - Skills Richtext: <span class="va-skill-tag">Customer Service</span><span clas...
+      - Employment Summary: Randean brings over 8 years of comprehensive experience in c...
+      - Employment Richtext: [{"company":"POWER ISA","position":"Real Estate Virtual Assi...
+      - Education Richtext: [{"school":"PORTMORE COMMUNITY COLLEGE","degree":"General Ed...
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S)
+      - English Test Type: EF English Test
+      - English Description: Demonstrates fluent and clear speech with natural pronunciat...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Customer Service, Appointment Setting, Recruitment Support, ...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+2. Maridel (maridel)
+   CMS ID: 69260f434c763b460bbb2a12
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: EXECUTIVE VIRTUAL ASSISTANT
+      - Summary: Maridel is a highly experienced Virtual Assistant and Custom...
+      - Tagline: Maridel is the ideal Virtual Assistant for insurance agencie...
+      - Thumbnail Description: Billing expertise, Financial analysis, Customer relationship...
+      - Skills Richtext: <span class="va-skill-tag">Billing</span><span class="va-ski...
+      - Employment Summary: Maridel is an exceptional Executive Assistant with over 10 y...
+      - Employment Richtext: [{"company":"ETL MED HEALTH AND WELLNESS HUB","position":"Sa...
+      - Education Richtext: []
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates fluent and coherent communication with clear pr...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Billing, Settlements, Account Management, Executive VA Suppo...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+3. Jane (jane)
+   CMS ID: 69260f414c763b460bbb28af
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: MARKETING SEO VIRTUAL ASSISTANT
+      - Summary: Jane is a proactive and adaptable Virtual Assistant with exp...
+      - Tagline: Jane is the ideal Virtual Assistant for businesses and entre...
+      - Thumbnail Description: Digital marketing, Social media management, E-commerce opera...
+      - Skills Richtext: <span class="va-skill-tag">Website Design &amp; Maintenance<...
+      - Employment Summary: Jane has 2 years of Marketing and SEO experience from Seight...
+      - Employment Richtext: [{"company":"SEIGHTON GROUP OF COMPANIES","position":"Busine...
+      - Education Richtext: []
+      - DISC Type: S
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 90
+      - English Description: Shows excellent fluency and clear pronunciation. Uses a wide...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Website Design & Maintenance, Campaign Execution, Market Res...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+4. Joy (joy)
+   CMS ID: 69260f3e3222ce039d52901f
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: CRM & MARKETING SUPPORT VA
+      - Summary: Joy is a highly organized and dependable Real Estate Virtual...
+      - Tagline: Joy is the ideal Virtual Assistant for agencies and property...
+      - Thumbnail Description: CRM systems, Email marketing, Lead management, Real estate s...
+      - Skills Richtext: <span class="va-skill-tag">CRM Setup &amp; Automation</span>...
+      - Employment Summary: Joy have 2 years of Marketing/Funnels Experience from Rental...
+      - Employment Richtext: [{"company":"RENTALZ / MVL - REMOTE","position":"Real Estate...
+      - Education Richtext: []
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Speaks fluently with clear pronunciation and minor pauses. U...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: CRM Setup & Automation, Email Marketing Campaigns, Keyword R...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+5. Joan Rose (joan-rose)
+   CMS ID: 69260f3b6a22d7149f58818e
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: E-COMMERCE & DIGITAL MARKETING SPECIALIST
+      - Summary: Joan Rose is a versatile Virtual Assistant with strong exper...
+      - Tagline: Joan is the ideal Virtual Assistant for e-commerce businesse...
+      - Thumbnail Description: E-commerce management, Digital marketing, Customer service, ...
+      - Skills Richtext: <span class="va-skill-tag">E-Commerce &amp; Digital Marketin...
+      - Employment Summary: Joan Rose gained over 5 years of experience in WordPress, Sh...
+      - Employment Richtext: [{"company":"INTELEGENCIA BPO LLC","position":"Executive Ass...
+      - Education Richtext: []
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 95
+      - English Description: Speaks with exceptional fluency and precision, using a wide ...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: E-Commerce & Digital Marketing Support, Payroll Processing, ...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+6. Samantha (samantha)
+   CMS ID: 69260f358de0559aaf9efb67
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: BILINGUAL DIGITAL MARKETER | SEO & BRANDING SPECIALIST
+      - Summary: Samantha is a bilingual digital marketer with expertise in S...
+      - Tagline: Samantha uses creativity and strategy for measurable growth....
+      - Thumbnail Description: SEO, branding, organic campaigns, KPI-driven content, and bi...
+      - Skills Richtext: <span class="va-skill-tag">Organic Campaigns</span><span cla...
+      - Employment Summary: Samantha brings 5 years of marketing and SEO experience, cul...
+      - Employment Richtext: [{"company":"U.S.-BASED BANK, MEXICO CITY","position":"Custo...
+      - Education Richtext: []
+      - DISC Type: S+I
+      - DISC Description: Steadiness (S) – Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 90
+      - English Description: Speaks fluently and confidently with clear pronunciation and...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Organic Campaigns, Keyword Research, Reporting, Community Bu...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+7. Patricio (patricio)
+   CMS ID: 69260f31cddc3e1ce0db7f41
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: MARKETING VIRTUAL ASSISTANT | SEO/SEM SPECIALIST
+      - Summary: Patricio is a bilingual Virtual Assistant and Digital Market...
+      - Tagline: Patricio is the ideal Virtual Assistant for marketing agenci...
+      - Thumbnail Description: SEO/SEM campaigns, Paid advertising, Google Ads, Meta Ads, L...
+      - Skills Richtext: <span class="va-skill-tag">SEO/SEM Campaign Strategy</span><...
+      - Employment Summary: Patricio possesses 7 years of extensive Digital Marketing ex...
+      - Employment Richtext: [{"company":"JELLYFISH MEXICO","position":"Paid Search Analy...
+      - Education Richtext: []
+      - DISC Type: S
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates clear communication with generally good pronunc...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: SEO/SEM Campaign Strategy, Google Ads & Meta Ads, Multimedia...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+8. Marco (marco)
+   CMS ID: 69260f2f4c763b460bbb1e56
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: MARKETING & PROJECT MANAGEMENT SPECIALIST
+      - Summary: Marco is a bilingual Virtual Assistant (Spanish-English) and...
+      - Tagline: Marco is the ideal Virtual Assistant for marketing agencies,...
+      - Thumbnail Description: Digital campaigns, e-commerce operations, creative marketing...
+      - Skills Richtext: <span class="va-skill-tag">Digital Campaign Planning &amp; E...
+      - Employment Summary: Marco has 10 years of experience in Marketing and SEO
+      - Employment Richtext: [{"company":"DIFRENTT COMPANY – REMOTE","position":"Marketin...
+      - Education Richtext: []
+      - DISC Type: I+D
+      - DISC Description: Influence (I) - Charismatic and engaging, I-type VAs excel i...
+      - English Test Type: EF English Test
+      - English Score: 95
+      - English Description: Shows exceptional fluency and pronunciation with native-like...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Digital Campaign Planning & Execution, Cross-Channel Adverti...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+9. Jose Luis (jose-luis)
+   CMS ID: 69260f22e1beb3abb6b331a0
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: MARKETING SEO SPECIALIST
+      - Summary: Jose Luis is a bilingual Virtual Assistant (Spanish-English)...
+      - Tagline: Jose Luis is the ideal Virtual Assistant for marketing agenc...
+      - Thumbnail Description: Digital marketing, E-commerce management, SEO/SEM, Social me...
+      - Skills Richtext: <span class="va-skill-tag">Digital Marketing Strategy</span>...
+      - Employment Summary: Jose Luis has 5 years of experience in Marketing and SEO, wo...
+      - Employment Richtext: [{"company":"ENTROPY I MAKE IT REAL","position":"Senior Acco...
+      - Education Richtext: []
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates strong fluency and clear pronunciation. Uses ad...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Digital Marketing Strategy, Social Media Marketing, Website ...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+10. Jomer (jomer-daniel)
+   CMS ID: 69260f15f9853a3857ad0554
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: BILINGUAL VIRTUAL ASSISTANT
+      - Summary: Daniel is an experienced Executive Virtual Assistant with ov...
+      - Tagline: Daniel is an ideal Virtual Assistant for executives and grow...
+      - Thumbnail Description: Executive support, Back-office operations, Recruitment suppo...
+      - Skills Richtext: <span class="va-skill-tag">Project Planning &amp; Scheduling...
+      - Employment Summary: Jomer Daniel gained his 5 years of experience in WordPress, ...
+      - Employment Richtext: [{"company":"CORPOWEB ASSISTANCE","position":"Virtual Assist...
+      - Education Richtext: [{"school":"Universidad Autónoma de Bucaramanga","degree":"B...
+      - DISC Type: S+I
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates fluent and coherent communication with clear pr...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Project Planning & Scheduling, Payroll & Back-Office Operati...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+11. Hugo (hugo)
+   CMS ID: 69260f068d75af2b77e22842
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: MARKETING SEO VIRTUAL ASSISTANT
+      - Summary: Hugo is a bilingual Virtual Assistant (Spanish-English) with...
+      - Tagline: Hugo is the ideal Virtual Assistant for marketing agencies, ...
+      - Thumbnail Description: Digital marketing, Social media management, E-commerce opera...
+      - Skills Richtext: <span class="va-skill-tag">SEO Specialist</span><span class=...
+      - Employment Summary: Hugo is a skilled professional with 8 years of experience in...
+      - Employment Richtext: [{"company":"TATA CONSULTANCY SERVICES - REMOTE","position":...
+      - Education Richtext: []
+      - DISC Type: C
+      - DISC Description: Conscientiousness (C) - Detail-oriented and organized, C-typ...
+      - English Test Type: EF English Test
+      - English Description: Communicates clearly and naturally with good fluency and acc...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: SEO Specialist, Content Creation, Product Listing Management...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+12. Gael (gael)
+   CMS ID: 69260f04e1beb3abb6b326c5
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: BILINGUAL VIRTUAL ASSISTANT
+      - Summary: Gael is a versatile Virtual Assistant with over 7 years of e...
+      - Tagline: Gael is an ideal Virtual Assistant for executives, health-ca...
+      - Thumbnail Description: Executive assistance, Interpretation, Quality assurance, Adm...
+      - Skills Richtext: <span class="va-skill-tag">Document Translation &amp; Transc...
+      - Employment Summary: Gael gained her 10 years of experience in WordPress, adminis...
+      - Employment Richtext: [{"company":"LANGUAGEBRIDGE SOLUTIONS","position":"HR Specia...
+      - Education Richtext: [{"school":"Universidad San Ignacio de Loyola","degree":"Int...
+      - DISC Type: S+I
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 70
+      - English Description: Speaks clearly with generally good fluency and pronunciation...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Document Translation & Transcription, Quality Assurance, Pro...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+13. Fabiola (fabiola)
+   CMS ID: 69260efcb9b195d9afea3620
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: MARKETING & SEO VIRTUAL ASSISTANT
+      - Summary: Fabiola is a bilingual Virtual Assistant (Spanish-English) w...
+      - Tagline: Fabiola is the ideal Virtual Assistant for marketing agencie...
+      - Thumbnail Description: Marketing strategy, Executive support, Project management, D...
+      - Skills Richtext: <span class="va-skill-tag">Google Ads &amp; Analytics Report...
+      - Employment Summary: Fabiola has 7 years of Marketing and SEO experience, gained ...
+      - Employment Richtext: [{"company":"IMC MARKETING - REMOTE","position":"Content Spe...
+      - Education Richtext: []
+      - DISC Type: D+C
+      - DISC Description: Dominance (D) - Proactive and goal-driven, D-type VAs take i...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates strong fluency and clear pronunciation. Uses ad...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Google Ads & Analytics Reporting, Cross-Functional Team Lead...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+14. Branko (branko)
+   CMS ID: 69260ef2ee2acb0b0bca149c
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: BILINGUAL ENGLISH-SPANISH VA
+      - Summary: Bilingual virtual assistant, experienced in handling complex...
+      - Tagline: Branko is the ideal Virtual Assistant for businesses seeking...
+      - Thumbnail Description: He's prepared to drive immediate results for your business! ...
+      - Skills Richtext: <span class="va-skill-tag">Lead Generation &amp; List Buildi...
+      - Employment Summary: Branko has over 4 years of experience in Marketing and Socia...
+      - Employment Richtext: [{"company":"OCEAN VIRTUAL ASSISTANT SOLUTIONS","position":"...
+      - Education Richtext: [{"school":"Universidad de Los Andes Mérida, Venezuela","deg...
+      - DISC Type: S
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Speaks fluently with clear pronunciation and minimal pauses....
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Lead Generation & List Building, Email & Calendar, Social Me...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+15. Angel (angel)
+   CMS ID: 69260eeb002e11654a362d68
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: DIGITAL MARKETING & SEO STRATEGIST
+      - Summary: Angel is a bilingual Virtual Assistant with expertise in dig...
+      - Tagline: Angel is the ideal Virtual Assistant for marketing agencies,...
+      - Thumbnail Description: Digital marketing, e-commerce, advertising strategy, Shopify...
+      - Skills Richtext: <span class="va-skill-tag">Digital Advertising</span><span c...
+      - Employment Summary: Angel have 4 years of digital marketing experience, cultivat...
+      - Employment Richtext: [{"company":"TIME TO PACK","position":"Marketing & E-commerc...
+      - Education Richtext: [{"school":"Bachelor of Marketing and Digital Media","degree...
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 90
+      - English Description: Demonstrates excellent fluency and natural pronunciation wit...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Digital Advertising, Web Analytics, Sales Funnel Development...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+16. Ana Gabriela (ana-gabriela)
+   CMS ID: 69260ee6ee2acb0b0bca0e67
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: BILINGUAL VIRTUAL ASSISTANT | EXECUTIVE
+      - Summary: Ana Gabriela is a highly organized Virtual Assistant with ov...
+      - Tagline: Ana Gabriela is an ideal Virtual Assistant for executives, e...
+      - Thumbnail Description: Executive assistance, administrative operations, confidentia...
+      - Skills Richtext: <span class="va-skill-tag">Board Presentations</span><span c...
+      - Employment Summary: Ana Gabriela gained her 5 years of experience
+      - Employment Richtext: [{"company":"ETERN LATAM","position":"Executive Assistant","...
+      - Education Richtext: [{"school":"Humanitas University","degree":"Bachelor in Psyc...
+      - DISC Type: S+I
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Score: 70
+      - English Description: Speaks clearly with generally good fluency and pronunciation...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Board Presentations, Protocol Development, Critical Thinking...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+17. Ximena (ximena-4e77d)
+   CMS ID: 69260e2c1cb676355a677486
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 15 campo(s) vacío(s):
+      - Title: BILINGUAL VIRTUAL ASSISTANT | EXEC ASSISTANT
+      - Summary: Ximena is a bilingual Virtual Assistant (Spanish-English) wi...
+      - Tagline: Ximena is the ideal Virtual Assistant for companies seeking ...
+      - Thumbnail Description: Customer service, sales, billing, insurance support, policyh...
+      - Skills Richtext: <span class="va-skill-tag">Customer Service &amp; Retention<...
+      - Employment Summary: Ximena brings a strong foundation in customer management, sa...
+      - Employment Richtext: [{"company":"AUTO RISKS SOLUTIONS","position":"Customer Serv...
+      - Education Richtext: []
+      - DISC Type: I
+      - DISC Description: Influence (I) - Charismatic and engaging, I-type VAs excel i...
+      - English Test Type: EF English Test
+      - English Score: 7
+      - English Description: Speaks fluently and coherently with generally clear pronunci...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Customer Service & Retention, Technical Support, Patient Ass...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+18. Kathleen (kathleen)
+   CMS ID: 6920b20be9c2d300fb2ce2d3
+   Estado: Draft
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: ENGLISH SPEAKING VA | LOAN SERVICES & CLIENT SUPPORT
+      - Summary: Kathleen has over five years of experience supporting U.S. c...
+      - Tagline: Kathleen brings a detail-oriented, compliance-driven approac...
+      - Thumbnail Description: 5 YEARS OF EXPERIENCE • LOAN OPERATIONS • DOCUMENT COMPLIANC...
+      - Skills Richtext: <span class="va-skill-tag">Loan Application</span><span clas...
+      - Employment Summary: Kathleen gained five years of loan processing and servicing ...
+      - Employment Richtext: [{"company":"JP MORGAN CHASE & CO.","position":"CLIENT OPERA...
+      - Education Richtext: []
+      - DISC Type: S+C
+      - DISC Description: Steadiness (S) & Conscientiousness (C) - Reliable and patien...
+      - English Test Type: EF English Test
+      - English Description: Communicates clearly with steady pronunciation and smooth pa...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Loan Application, Document Verification, Compliance, Client ...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+19. Albert (albert)
+   CMS ID: 6920ae7e0f07fb7c7a79a9f5
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: ENGLISH-SPEAKING VA | INSURANCE SPECIALIST
+      - Summary: Albert has three years of experience supporting U.S. insuran...
+      - Tagline: Albert is an excellent option for agencies seeking a highly ...
+      - Thumbnail Description: 3 YEARS INSURANCE EXPERIENCE • PERSONAL & COMMERCIAL LINES •...
+      - Skills Richtext: <span class="va-skill-tag">Personal Lines</span><span class=...
+      - Employment Summary: Albert has three years of Personal and Commercial Lines insu...
+      - Employment Richtext: [{"company":"HOLDEN INSURANCE AGENCY (Freelance)","position"...
+      - Education Richtext: []
+      - DISC Type: C+S
+      - DISC Description: Conscientiousness (C) & Steadiness (S) - Detail-oriented and...
+      - English Test Type: EF English Test
+      - English Description: Speaks clearly and fluently with good pronunciation, showing...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Personal Lines, Commercial Lines, Quotations, Remarketing, R...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+20. Janet (janet)
+   CMS ID: 6920a189e4ac04c59eed6dd8
+   Estado: Published
+   Campos vacíos: 20
+   ⚠️  CSV tiene datos para 14 campo(s) vacío(s):
+      - Title: ENGLISH-SPEAKING VA | LOAN & MORTGAGE PROCESSING
+      - Summary: Janet Balderas brings close to two years of experience in th...
+      - Tagline: Janet brings a strong blend of underwriting accuracy, docume...
+      - Thumbnail Description: 2 YEARS OF CREDIT UNDERWRITING SPECIALIST • LOAN & MORTGAGE ...
+      - Skills Richtext: <span class="va-skill-tag">Credit Underwriting</span><span c...
+      - Employment Summary: Janet has 2 years of experience in credit underwriting and b...
+      - Employment Richtext: [{"company":"HSBC DATA ELECTRONIC PROCESSING INC.","position...
+      - Education Richtext: [{"school":"(CLIENT TO PROVIDE)","degree":"BANKING / FINANCE...
+      - DISC Type: S
+      - DISC Description: Steadiness (S) - Dependable and patient, S-type VAs provide ...
+      - English Test Type: EF English Test
+      - English Description: Demonstrates excellent fluency and clear pronunciation with ...
+      - CEFR Result: <div class="va-cefr-item"><div class="va-cefr-bubble va-cefr...
+      - Skills Tags: Credit Underwriting, Loan Application, Mortgage Processing, ...
+   Campos faltantes:
+      - Title (title-2)
+      - Summary (summary)
+      - Tagline (tagline)
+      - Thumbnail Description (thumbnail-description)
+      - Skills Richtext (skills-richtext)
+      - Tools Richtext (tools-richtext)
+      - Equipment Richtext (equipment-richtext)
+      - Employment Summary (employment-summary)
+      - Employment Richtext (employment-richtext)
+      - Education Richtext (education-richtext)
+      - DISC Type (disc-type-2)
+      - DISC Description (disc-description)
+      - English Test Type (type-of-english-test)
+      - English Score (english-score-3)
+      - English Description (english-description)
+      - CEFR Result (cerf-result)
+      - Video Thumbnail (video-thumbnail-2)
+      - Skills Tags (skills-tags)
+      - Tools Tags (tools-tags)
+      - Equipment Tags (equipment-tags)
+
+... y 81 VAs más con campos vacíos
+
+════════════════════════════════════════════════════════════════════════════════
+RECOMENDACIONES:
+════════════════════════════════════════════════════════════════════════════════
+1. 101 VAs tienen campos vacíos que pueden completarse desde el CSV
+2. Revisa los VAs con más campos vacíos primero
+3. Los campos marcados con ⚠️ tienen datos disponibles en el CSV para actualizar
+════════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,130 @@
+<!-- VA CARD VIDEO MODAL JAVASCRIPT -->
+<!-- Add this to page Footer Code (once per page, not per card) -->
+<!-- 
+  INSTRUCTIONS:
+  1. Go to Settings > Custom Code > Footer Code
+  2. Paste this entire code block
+  3. Only add once per page (not per card)
+  This handles modal functionality for all VA cards on the page
+-->
+
+<script>
+(function() {
+  'use strict';
+  
+  /**
+   * Extract YouTube video ID from URL
+   * Supports various YouTube URL formats:
+   * - https://www.youtube.com/watch?v=VIDEO_ID
+   * - https://youtu.be/VIDEO_ID
+   * - https://www.youtube.com/embed/VIDEO_ID
+   */
+  function extractVideoId(url) {
+    if (!url) return null;
+    
+    // Try different YouTube URL patterns
+    const patterns = [
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
+      /youtube\.com\/watch\?.*v=([^&\n?#]+)/,
+      /^([a-zA-Z0-9_-]{11})$/ // Direct video ID
+    ];
+    
+    for (const pattern of patterns) {
+      const match = url.match(pattern);
+      if (match && match[1]) {
+        return match[1];
+      }
+    }
+    
+    return null;
+  }
+  
+  /**
+   * Open video modal for a VA card
+   * @param {string} slug - VA slug (used for unique modal ID)
+   * @param {string} videoUrl - YouTube video URL
+   */
+  window.openCardVideoModal = function(slug, videoUrl) {
+    if (!slug || !videoUrl) {
+      console.warn('VA Card Video Modal: Missing slug or video URL');
+      return;
+    }
+    
+    const videoId = extractVideoId(videoUrl);
+    if (!videoId) {
+      console.warn('VA Card Video Modal: Invalid video URL:', videoUrl);
+      return;
+    }
+    
+    const modal = document.getElementById(`va-card-video-modal-${slug}`);
+    const iframe = document.getElementById(`va-card-video-iframe-${slug}`);
+    
+    if (!modal || !iframe) {
+      console.warn('VA Card Video Modal: Modal or iframe not found for slug:', slug);
+      return;
+    }
+    
+    // Set iframe source and show modal
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    
+    // Focus trap for accessibility
+    const closeButton = modal.querySelector('.va-card-video-modal-close');
+    if (closeButton) {
+      closeButton.focus();
+    }
+  };
+  
+  /**
+   * Close video modal for a VA card
+   * @param {string} slug - VA slug (used for unique modal ID)
+   */
+  window.closeCardVideoModal = function(slug) {
+    if (!slug) {
+      console.warn('VA Card Video Modal: Missing slug');
+      return;
+    }
+    
+    const modal = document.getElementById(`va-card-video-modal-${slug}`);
+    const iframe = document.getElementById(`va-card-video-iframe-${slug}`);
+    
+    if (modal && iframe) {
+      // Stop video and hide modal
+      iframe.src = '';
+      modal.style.display = 'none';
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  };
+  
+  /**
+   * Close modal when clicking outside the video content
+   */
+  document.addEventListener('click', function(e) {
+    // Check if click is on modal background (not on modal content)
+    if (e.target.classList.contains('va-card-video-modal')) {
+      const modalId = e.target.id;
+      const slug = modalId.replace('va-card-video-modal-', '');
+      if (slug) {
+        closeCardVideoModal(slug);
+      }
+    }
+  });
+  
+  /**
+   * Close modal with Escape key
+   */
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      // Find all open modals
+      const openModals = document.querySelectorAll('.va-card-video-modal[style*="flex"]');
+      openModals.forEach(modal => {
+        const slug = modal.id.replace('va-card-video-modal-', '');
+        if (slug) {
+          closeCardVideoModal(slug);
+        }
+      });
+    }
+  });
+})();
+</script>

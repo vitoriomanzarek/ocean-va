@@ -1,0 +1,2432 @@
+{
+  "total": 105,
+  "byField": {
+    "employment-richtext": {
+      "total": 105,
+      "empty": 1,
+      "issues": [
+        "5 accordion(s) con descripción vacía",
+        "1 accordion(s) con descripción vacía",
+        "4 accordion(s) con descripción vacía",
+        "8 accordion(s) con descripción vacía",
+        "3 accordion(s) con descripción vacía",
+        "6 accordion(s) con descripción vacía",
+        "11 accordion(s) con descripción vacía",
+        "Campo vacío",
+        "16 accordion(s) con descripción vacía",
+        "2 accordion(s) con descripción vacía",
+        "7 accordion(s) con descripción vacía",
+        "No tiene estructura de accordion",
+        "No tiene header de accordion",
+        "No tiene content de accordion"
+      ]
+    },
+    "education-richtext": {
+      "total": 105,
+      "empty": 54,
+      "issues": [
+        "No tiene estructura va-education-item",
+        "No tiene clase va-education-school",
+        "No tiene clase va-education-degree",
+        "Campo vacío"
+      ]
+    },
+    "tools-richtext": {
+      "total": 105,
+      "empty": 15,
+      "issues": [
+        "Campo vacío"
+      ]
+    },
+    "equipment-richtext": {
+      "total": 105,
+      "empty": 15,
+      "issues": [
+        "Campo vacío"
+      ]
+    },
+    "employment-summary": {
+      "total": 105,
+      "empty": 3,
+      "issues": [
+        "Tiene etiquetas HTML que no funcionan (debería ser texto plano)",
+        "Campo vacío"
+      ]
+    }
+  },
+  "vasWithIssues": [
+    {
+      "name": "Charley",
+      "slug": "charley",
+      "cmsId": "696fceec1dc5d0464ce5e2f4",
+      "fields": {
+        "employment-summary": {
+          "isEmpty": false,
+          "issues": [
+            "Tiene etiquetas HTML que no funcionan (debería ser texto plano)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Karl Loyd",
+      "slug": "karl-loyd",
+      "cmsId": "696ea434305edbe6e53f7358",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "employment-summary": {
+          "isEmpty": false,
+          "issues": [
+            "Tiene etiquetas HTML que no funcionan (debería ser texto plano)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maximiliano",
+      "slug": "maximiliano-ulgv6",
+      "cmsId": "696a86b2d5ed430382cf18ab",
+      "fields": {
+        "employment-summary": {
+          "isEmpty": false,
+          "issues": [
+            "Tiene etiquetas HTML que no funcionan (debería ser texto plano)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Aaron",
+      "slug": "aaron-a0d16",
+      "cmsId": "69695325a35247ab9d61fff5",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "1 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "employment-summary": {
+          "isEmpty": false,
+          "issues": [
+            "Tiene etiquetas HTML que no funcionan (debería ser texto plano)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Andrea",
+      "slug": "andrea",
+      "cmsId": "696555612dfbf9d11af64b06",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lady Ann",
+      "slug": "lady-ann",
+      "cmsId": "69654f956f49a9951c89a365",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Karl",
+      "slug": "karl-bd0a3",
+      "cmsId": "695d70bb817fe323368bd413",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "8 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sheila Marie",
+      "slug": "sheila-marie",
+      "cmsId": "6954416b4c4f5993f14b3c0e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "8 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Bernadette",
+      "slug": "bernadette-abellana",
+      "cmsId": "694b0260096a55e446df421e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "3 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Vicente",
+      "slug": "vicente-penaflor",
+      "cmsId": "694b021cd025d0b4379705b3",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "3 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ruel",
+      "slug": "ruel",
+      "cmsId": "6944849cae55ce44765a5c64",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Francis Aldrin",
+      "slug": "francis-aldrin",
+      "cmsId": "6941a0258c4a748fe6939f7e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Juname",
+      "slug": "juname",
+      "cmsId": "69419ee97eecfa8aad625e47",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "6 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Andres",
+      "slug": "andres",
+      "cmsId": "69419d749b64a30b91b74eea",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "3 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Kempee",
+      "slug": "kempee",
+      "cmsId": "693c4d4e611900189cda1f21",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "11 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Patricia Nicole",
+      "slug": "patricia-nicole",
+      "cmsId": "693b8909dc5555f230e74a92",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "6 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Alyssa",
+      "slug": "alyssa",
+      "cmsId": "693b847fac184ce7c97aa43a",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maria Christine",
+      "slug": "maria-christine",
+      "cmsId": "693a04858a40d12e474e353a",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "6 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ella",
+      "slug": "ella",
+      "cmsId": "693a02617a81734d363c385e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gabriela",
+      "slug": "gabriela",
+      "cmsId": "6939e96a27f942887b189f5a",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Louise",
+      "slug": "louise-a-siloterio",
+      "cmsId": "692eef2fa123a022b383a029",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Randean",
+      "slug": "randean",
+      "cmsId": "69260f4526ed9b6ba9f325d2",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "16 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maridel",
+      "slug": "maridel",
+      "cmsId": "69260f434c763b460bbb2a12",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "11 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jane",
+      "slug": "jane",
+      "cmsId": "69260f414c763b460bbb28af",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "2 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Joy",
+      "slug": "joy",
+      "cmsId": "69260f3e3222ce039d52901f",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "2 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Joan Rose",
+      "slug": "joan-rose",
+      "cmsId": "69260f3b6a22d7149f58818e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "3 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Samantha",
+      "slug": "samantha",
+      "cmsId": "69260f358de0559aaf9efb67",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Patricio",
+      "slug": "patricio",
+      "cmsId": "69260f31cddc3e1ce0db7f41",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Marco",
+      "slug": "marco",
+      "cmsId": "69260f2f4c763b460bbb1e56",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jose Luis",
+      "slug": "jose-luis",
+      "cmsId": "69260f22e1beb3abb6b331a0",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jomer",
+      "slug": "jomer-daniel",
+      "cmsId": "69260f15f9853a3857ad0554",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Hugo",
+      "slug": "hugo",
+      "cmsId": "69260f068d75af2b77e22842",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gael",
+      "slug": "gael",
+      "cmsId": "69260f04e1beb3abb6b326c5",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "4 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fabiola",
+      "slug": "fabiola",
+      "cmsId": "69260efcb9b195d9afea3620",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Branko",
+      "slug": "branko",
+      "cmsId": "69260ef2ee2acb0b0bca149c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "7 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Angel",
+      "slug": "angel",
+      "cmsId": "69260eeb002e11654a362d68",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "2 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ana Gabriela",
+      "slug": "ana-gabriela",
+      "cmsId": "69260ee6ee2acb0b0bca0e67",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "3 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ximena",
+      "slug": "ximena-4e77d",
+      "cmsId": "69260e2c1cb676355a677486",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "5 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Kathleen",
+      "slug": "kathleen",
+      "cmsId": "6920b20be9c2d300fb2ce2d3",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "1 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Albert",
+      "slug": "albert",
+      "cmsId": "6920ae7e0f07fb7c7a79a9f5",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "2 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Janet",
+      "slug": "janet",
+      "cmsId": "6920a189e4ac04c59eed6dd8",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "6 accordion(s) con descripción vacía"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mina",
+      "slug": "mina",
+      "cmsId": "691cc053ad37be937376f569",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "AC",
+      "slug": "ac",
+      "cmsId": "691cc052138d8a985cc7c691",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grace",
+      "slug": "grace",
+      "cmsId": "691cc051fafd92a39e7269c5",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Yvette",
+      "slug": "yvette",
+      "cmsId": "691cc0517c622857f4bb8f27",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Anahi",
+      "slug": "anahi",
+      "cmsId": "691cc050fafd92a39e726909",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tricia",
+      "slug": "tricia",
+      "cmsId": "691b8a173297968c5ed5977a",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ximena G.",
+      "slug": "ximena",
+      "cmsId": "691b8a166363a512c63ab178",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sandra",
+      "slug": "sandra",
+      "cmsId": "691b8a1676470b927f67f195",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rochelle",
+      "slug": "rochelle",
+      "cmsId": "691b8a1673a372902012f13c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rejean",
+      "slug": "rejean",
+      "cmsId": "691b8a15f0e2ab9fb3ed29ca",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rainier",
+      "slug": "rainier",
+      "cmsId": "691b8a15cb665bff98aba813",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rafael",
+      "slug": "rafael",
+      "cmsId": "691b8a153f849707c908757e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Patricia",
+      "slug": "patricia",
+      "cmsId": "691b8a146363a512c63aaf87",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Melissa",
+      "slug": "melissa",
+      "cmsId": "691b8a1406c5b174787e6f7a",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maria",
+      "slug": "maria",
+      "cmsId": "691b8a137bbc6e74fefb276d",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maria D.",
+      "slug": "maria-d",
+      "cmsId": "691b8a122c4d3609e83d3517",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "employment-summary": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lois",
+      "slug": "lois",
+      "cmsId": "691b8a122c4d3609e83d3505",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Kevin",
+      "slug": "kevin",
+      "cmsId": "691b8a110ed00c53499d1ca7",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Janice",
+      "slug": "janice",
+      "cmsId": "691b8a116363a512c63aad54",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Israel",
+      "slug": "israel",
+      "cmsId": "691b8a116363a512c63aad24",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Guillermo",
+      "slug": "guillermo",
+      "cmsId": "691b8a10cb665bff98aba584",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gonzalo",
+      "slug": "gonzalo",
+      "cmsId": "691b8a102c4d3609e83d348c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fernanda",
+      "slug": "fernanda",
+      "cmsId": "691b8a0f0ed00c53499d1c3e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ellen",
+      "slug": "ellen",
+      "cmsId": "691b8a0f1cb39e61086359cf",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "employment-summary": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dayana",
+      "slug": "dayana",
+      "cmsId": "691b8a0fe352cae9bc806982",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dawn",
+      "slug": "dawn",
+      "cmsId": "691b8a0f3f849707c90873a1",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Christine",
+      "slug": "christine",
+      "cmsId": "691b8a0e3297968c5ed594df",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Carolina",
+      "slug": "carolina",
+      "cmsId": "691b8a0e3297968c5ed594b7",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Brandon L.",
+      "slug": "brandon",
+      "cmsId": "691b8a0df83ddf1a08c15961",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Balbina",
+      "slug": "balbina",
+      "cmsId": "691b8a0d89b222b6b472933c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "employment-summary": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ana Victoria",
+      "slug": "ana-victoria",
+      "cmsId": "691b8a0d1cb39e610863582d",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ana",
+      "slug": "ana",
+      "cmsId": "691b8a0c0569661eecba9e82",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pavel",
+      "slug": "pavel",
+      "cmsId": "691b8a0b59789e6de7cf8158",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jill",
+      "slug": "jill",
+      "cmsId": "691b8a0be00a0398d8a56cbf",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jasmine",
+      "slug": "jasmine",
+      "cmsId": "691b8a0bcd945b1d360713e6",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gizelle",
+      "slug": "gizelle",
+      "cmsId": "691b8a0a0ed00c53499d1af9",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rona Mae",
+      "slug": "rona",
+      "cmsId": "691b8a0ae00a0398d8a56c88",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Raydon",
+      "slug": "raydon",
+      "cmsId": "691b8a0a6363a512c63aa8f3",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Michelle",
+      "slug": "michelle",
+      "cmsId": "691b8a09cb665bff98aba0ca",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ma. Venus",
+      "slug": "ma-venus",
+      "cmsId": "691b8a0806c5b174787e6bfc",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lorenz",
+      "slug": "lorenz",
+      "cmsId": "691b8a08e352cae9bc806861",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Laurice",
+      "slug": "laurice",
+      "cmsId": "691b8a0759789e6de7cf80ad",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Joji Marie",
+      "slug": "joji",
+      "cmsId": "691b8a073297968c5ed59133",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Joel",
+      "slug": "joel",
+      "cmsId": "691b8a066363a512c63aa688",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jimmy",
+      "slug": "jimmy",
+      "cmsId": "691b8a066363a512c63aa61c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jerome",
+      "slug": "jerome",
+      "cmsId": "691b8a066363a512c63aa5e1",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Javier",
+      "slug": "javier",
+      "cmsId": "691b8a051d8feff943c71247",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jay Alvin",
+      "slug": "jay",
+      "cmsId": "691b8a05f83ddf1a08c15210",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Geraldine",
+      "slug": "geraldine",
+      "cmsId": "691b8a043297968c5ed58f4e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Francis",
+      "slug": "francis",
+      "cmsId": "691b8a04cb665bff98ab9f04",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Emmanuel",
+      "slug": "emmanuel",
+      "cmsId": "691b8a043297968c5ed58e6d",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cherry Mae",
+      "slug": "cherry",
+      "cmsId": "691b8a036363a512c63aa36e",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        },
+        "tools-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        },
+        "equipment-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Antonio",
+      "slug": "antonio",
+      "cmsId": "691b8a030ed00c53499d1879",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Abigail",
+      "slug": "abigail",
+      "cmsId": "691b8a02cd945b1d36071152",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Moises",
+      "slug": "moises",
+      "cmsId": "691b8a014c78138967234375",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maria Paula",
+      "slug": "maria-paula",
+      "cmsId": "691b8a013297968c5ed58c1c",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Karen",
+      "slug": "karen",
+      "cmsId": "691b8a003f849707c9086eb4",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Joana",
+      "slug": "joana",
+      "cmsId": "691b8a0076470b927f67e85d",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ivan",
+      "slug": "ivan",
+      "cmsId": "691b8a00f0e2ab9fb3ed2103",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dafne",
+      "slug": "dafne",
+      "cmsId": "691b89fff0e2ab9fb3ed20f1",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": true,
+          "issues": [
+            "Campo vacío"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Alejandro",
+      "slug": "alejandro",
+      "cmsId": "691b89ff35de2e0351765716",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Adrian",
+      "slug": "adrian",
+      "cmsId": "691b89fef0e2ab9fb3ed20b4",
+      "fields": {
+        "employment-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura de accordion",
+            "No tiene header de accordion",
+            "No tiene content de accordion"
+          ]
+        },
+        "education-richtext": {
+          "isEmpty": false,
+          "issues": [
+            "No tiene estructura va-education-item",
+            "No tiene clase va-education-school",
+            "No tiene clase va-education-degree"
+          ]
+        }
+      }
+    }
+  ]
+}

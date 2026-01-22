@@ -1,0 +1,104 @@
+════════════════════════════════════════════════════════════════════════════════
+LISTA DE ERRORES DE DISC TYPE PARA ACTUALIZAR MANUALMENTE EN WEBFLOW
+════════════════════════════════════════════════════════════════════════════════
+
+Los siguientes 7 VAs tienen valores de DISC Type que Webflow no acepta.
+Actualiza manualmente estos valores en Webflow CMS.
+
+════════════════════════════════════════════════════════════════════════════════
+
+1. FABIOLA
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Fabiola
+   Slug: fabiola
+   CMS ID: 69260efcb9b195d9afea3620
+   Valor actual en CSV: D+C
+   Error: "Value is not an allowed Option: 'D+C'"
+   
+   ✅ SOLUCIÓN: Cambiar a "C+D" (orden alfabético)
+
+2. MELISSA
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Melissa
+   Slug: melissa
+   CMS ID: 691b8a1406c5b174787e6f7a
+   Valor actual en CSV: I+S
+   Error: "Value is not an allowed Option: 'I+S'"
+   
+   ✅ SOLUCIÓN: Cambiar a "S+I" (orden alfabético)
+
+3. MARIA (Maria Fernanda)
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Maria
+   Slug: maria
+   CMS ID: 691b8a137bbc6e74fefb276d
+   Valor actual en CSV: I+S
+   Error: "Value is not an allowed Option: 'I+S'"
+   
+   ✅ SOLUCIÓN: Cambiar a "S+I" (orden alfabético)
+
+4. GUILLERMO
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Guillermo
+   Slug: guillermo
+   CMS ID: 691b8a10cb665bff98aba584
+   Valor actual en CSV: C+D
+   Error: "Value is not an allowed Option: 'C+D'"
+   
+   ✅ SOLUCIÓN: Cambiar a "D+C" (orden alfabético)
+
+5. FERNANDA
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Fernanda
+   Slug: fernanda
+   CMS ID: 691b8a0f0ed00c53499d1c3e
+   Valor actual en CSV: I+S
+   Error: "Value is not an allowed Option: 'I+S'"
+   
+   ✅ SOLUCIÓN: Cambiar a "S+I" (orden alfabético)
+
+6. CHRISTINE
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Christine
+   Slug: christine
+   CMS ID: 691b8a0e3297968c5ed594df
+   Valor actual en CSV: C+D
+   Error: "Value is not an allowed Option: 'C+D'"
+   
+   ✅ SOLUCIÓN: Cambiar a "D+C" (orden alfabético)
+
+7. MARIA PAULA
+   ────────────────────────────────────────────────────────────────────────────
+   Nombre en Webflow: Maria Paula
+   Slug: maria-paula
+   CMS ID: 691b8a013297968c5ed58c1c
+   Valor actual en CSV: I+S
+   Error: "Value is not an allowed Option: 'I+S'"
+   
+   ✅ SOLUCIÓN: Cambiar a "S+I" (orden alfabético)
+
+════════════════════════════════════════════════════════════════════════════════
+RESUMEN
+════════════════════════════════════════════════════════════════════════════════
+
+Total VAs con errores: 7
+
+Cambios necesarios:
+- D+C → C+D: Fabiola (1 VA)
+- I+S → S+I: Melissa, Maria, Fernanda, Maria Paula (4 VAs)
+- C+D → D+C: Guillermo, Christine (2 VAs)
+
+════════════════════════════════════════════════════════════════════════════════
+INSTRUCCIONES
+════════════════════════════════════════════════════════════════════════════════
+
+1. Abre Webflow CMS
+2. Busca cada VA por su nombre en la lista anterior
+3. Ve al campo "Disc Type" (disc-type-2)
+4. Cambia el valor según la solución indicada
+5. Guarda los cambios
+
+NOTA: Webflow requiere que los valores combinados estén en orden alfabético.
+Por ejemplo: "C+D" (C antes que D), "S+I" (I antes que S), etc.
+
+════════════════════════════════════════════════════════════════════════════════

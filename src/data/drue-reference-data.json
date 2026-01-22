@@ -1,0 +1,49 @@
+{
+  "name": "Drue",
+  "slug": "drue",
+  "url": "https://www.oceanvirtualassistant.com/virtual-assistants/drue",
+  "extracted": {
+    "tools": [],
+    "equipment": [
+      "Two-Monitor Setup",
+      "Noise-Cancelling Headset"
+    ],
+    "employmentHistory": [
+      {
+        "company": "THE INSURANCE ARTIST",
+        "position": "Service Agent and Data Management Specialist",
+        "period": "Current",
+        "description": "• Provided internal service support for U.S. insurance agencies\n• Managed policy endorsements, renewals, and quoting assistance\n• Worked with carrier portals and agency management systems\n• Maintained accurate policy records and workflows\n• Supported personal auto and home insurance operations"
+      },
+      {
+        "company": "ALG SERVICES",
+        "position": "Team Leader – Handyman and Technician Bookings",
+        "period": "Previous",
+        "description": "• Led team operations for service bookings and scheduling\n• Coordinated handyman and technician assignments\n• Ensured efficient service delivery and client satisfaction"
+      },
+      {
+        "company": "ONYX – SUPPORT ZEBRA",
+        "position": "Foundations Trainer / Quality Analyst",
+        "period": "Nov 2020 – Apr 2021",
+        "description": "• Delivered foundational training programs for new team members\n• Conducted quality assurance reviews and performance analysis\n• Ensured training standards and operational compliance\n• Supported team development and skill building"
+      },
+      {
+        "company": "SUPPORT ZEBRA",
+        "position": "Language Skills Development Trainer",
+        "period": "Feb 2018 – Nov 2020",
+        "description": "• Developed and delivered language skills training programs\n• Focused on English communication for professional settings\n• Supported team members in improving communication effectiveness\n• Created training materials and assessment tools"
+      }
+    ],
+    "education": [
+      {
+        "school": "The International University",
+        "degree": "B.S. Computer Science",
+        "year": "1988 – 1991"
+      }
+    ],
+    "employmentSummary": "Drue is an insurance support professional with hands-on experience in personal auto and home insurance, providing internal service support for U.S. agencies. He has worked with endorsements, renewals, and quoting assistance across multiple states, using carrier portals and agency management systems to maintain accurate policy records and workflows. With extensive experience in training, quality assurance, customer service, and data management, Drue brings structured support focused on accuracy, consistency, and carrier compliance to help insurance agencies manage personal lines operations efficiently.",
+    "discType": "S+I",
+    "englishScore": "80/B1",
+    "videoThumbnail": "https://img.youtube.com/vi/wAn-WpR-5Jw/hqdefault.jpg"
+  }
+}

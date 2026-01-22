@@ -1,0 +1,48 @@
+<!-- VA CARD VIDEO MODAL FRAGMENT -->
+<!-- Add ONLY this HTML to each card template -->
+<!-- 
+  INSTRUCTIONS:
+  1. In Webflow card template, find the video button (usually in footer)
+  2. REPLACE IT COMPLETELY with the button code below
+  3. Add the modal HTML at the end of the card (before closing card container)
+  4. Add the CSS fragment (va-card-video-modal-css.html) to page Head Code (ONCE per page)
+  5. Add the JavaScript fragment (va-card-video-modal-js.html) to page Footer Code (ONCE per page)
+  6. Make sure the card has access to {{video}} field (Link field with YouTube URL)
+  7. Make sure the card has access to {{slug}} field for unique modal IDs
+  
+  IMPORTANT: 
+  - This fragment contains ONLY the HTML (button + modal)
+  - CSS and JavaScript must be added separately to the page (not per card)
+  - This prevents duplicating CSS/JS 39+ times when you have many cards
+-->
+
+<!-- Video Button (replace existing button in card footer) -->
+<button 
+  class="va-grid-btn-secondary" 
+  title="Watch Video"
+  onclick="openCardVideoModal('{{slug}}', '{{video}}')"
+  type="button">
+  ▶
+</button>
+
+<!-- Video Modal HTML (add at end of card, before closing card container) -->
+<div id="va-card-video-modal-{{slug}}" class="va-card-video-modal" style="display: none;">
+  <div class="va-card-video-modal-content">
+    <button 
+      class="va-card-video-modal-close" 
+      onclick="closeCardVideoModal('{{slug}}')"
+      type="button"
+      aria-label="Close video modal">
+      ×
+    </button>
+    <iframe 
+      id="va-card-video-iframe-{{slug}}"
+      width="100%" 
+      height="100%" 
+      src="" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>

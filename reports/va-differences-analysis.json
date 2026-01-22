@@ -1,0 +1,2047 @@
+{
+  "timestamp": "2026-01-22T02:07:40.664Z",
+  "summary": {
+    "totalProfiles": 101,
+    "slugDifferences": 100,
+    "templateFields": 21,
+    "cmsFields": 33
+  },
+  "urlMapping": [
+    {
+      "index": 1,
+      "oldSlug": "ac-ocean-va-profile",
+      "newSlug": "ac",
+      "oldName": "ac",
+      "newName": "ac",
+      "normalizedOld": "ac",
+      "normalizedNew": "ac",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 2,
+      "oldSlug": "aaron-ocean-va-profile",
+      "newSlug": "aaron-a0d16",
+      "oldName": "aaron",
+      "newName": "aaron a0d16",
+      "normalizedOld": "aaron",
+      "normalizedNew": "aarona0d16",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 3,
+      "oldSlug": "abigail-ocean-va-profile",
+      "newSlug": "abigail",
+      "oldName": "abigail",
+      "newName": "abigail",
+      "normalizedOld": "abigail",
+      "normalizedNew": "abigail",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 4,
+      "oldSlug": "albert-ocean-va-profile",
+      "newSlug": "albert",
+      "oldName": "albert",
+      "newName": "albert",
+      "normalizedOld": "albert",
+      "normalizedNew": "albert",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 5,
+      "oldSlug": "alejandro-ocean-va-profile",
+      "newSlug": "alejandro",
+      "oldName": "alejandro",
+      "newName": "alejandro",
+      "normalizedOld": "alejandro",
+      "normalizedNew": "alejandro",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 6,
+      "oldSlug": "alyssa-ocean-va-profile",
+      "newSlug": "alyssa",
+      "oldName": "alyssa",
+      "newName": "alyssa",
+      "normalizedOld": "alyssa",
+      "normalizedNew": "alyssa",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 7,
+      "oldSlug": "ana-s-ocean-va-profile",
+      "newSlug": "ana",
+      "oldName": "ana s",
+      "newName": "ana",
+      "normalizedOld": "anas",
+      "normalizedNew": "ana",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 8,
+      "oldSlug": "ana-gabriela-ocean-va-profile",
+      "newSlug": "ana-gabriela",
+      "oldName": "ana gabriela",
+      "newName": "ana gabriela",
+      "normalizedOld": "anagabriela",
+      "normalizedNew": "anagabriela",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 9,
+      "oldSlug": "ana-victoria-ocean-va-profile",
+      "newSlug": "ana-victoria",
+      "oldName": "ana victoria",
+      "newName": "ana victoria",
+      "normalizedOld": "anavictoria",
+      "normalizedNew": "anavictoria",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 10,
+      "oldSlug": "anahi-ocean-va-profile",
+      "newSlug": "anahi",
+      "oldName": "anahi",
+      "newName": "anahi",
+      "normalizedOld": "anahi",
+      "normalizedNew": "anahi",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 11,
+      "oldSlug": "andrea-ocean-va-profile",
+      "newSlug": "andrea",
+      "oldName": "andrea",
+      "newName": "andrea",
+      "normalizedOld": "andrea",
+      "normalizedNew": "andrea",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 12,
+      "oldSlug": "andres-ocean-va-profile",
+      "newSlug": "andres",
+      "oldName": "andres",
+      "newName": "andres",
+      "normalizedOld": "andres",
+      "normalizedNew": "andres",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 13,
+      "oldSlug": "angel-ocean-va-profile",
+      "newSlug": "angel",
+      "oldName": "angel",
+      "newName": "angel",
+      "normalizedOld": "angel",
+      "normalizedNew": "angel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 14,
+      "oldSlug": "antonio-ocean-va-profile",
+      "newSlug": "antonio",
+      "oldName": "antonio",
+      "newName": "antonio",
+      "normalizedOld": "antonio",
+      "normalizedNew": "antonio",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 15,
+      "oldSlug": "balbina-ocean-va-profile",
+      "newSlug": "balbina",
+      "oldName": "balbina",
+      "newName": "balbina",
+      "normalizedOld": "balbina",
+      "normalizedNew": "balbina",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 16,
+      "oldSlug": "bernadette-ocean-va-profile",
+      "newSlug": "bernadette-abellana",
+      "oldName": "bernadette",
+      "newName": "bernadette abellana",
+      "normalizedOld": "bernadette",
+      "normalizedNew": "bernadetteabellana",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 17,
+      "oldSlug": "brandon-l-ocean-va-profile",
+      "newSlug": "brandon",
+      "oldName": "brandon l",
+      "newName": "brandon",
+      "normalizedOld": "brandonl",
+      "normalizedNew": "brandon",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 18,
+      "oldSlug": "branko-ocean-va-profile",
+      "newSlug": "branko",
+      "oldName": "branko",
+      "newName": "branko",
+      "normalizedOld": "branko",
+      "normalizedNew": "branko",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 19,
+      "oldSlug": "charley-ocean-va-profile",
+      "newSlug": "charley",
+      "oldName": "charley",
+      "newName": "charley",
+      "normalizedOld": "charley",
+      "normalizedNew": "charley",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 20,
+      "oldSlug": "cherry-mae-ocean-va-profile",
+      "newSlug": "cherry",
+      "oldName": "cherry mae",
+      "newName": "cherry",
+      "normalizedOld": "cherrymae",
+      "normalizedNew": "cherry",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 21,
+      "oldSlug": "christine-ocean-va-profile",
+      "newSlug": "christine",
+      "oldName": "christine",
+      "newName": "christine",
+      "normalizedOld": "christine",
+      "normalizedNew": "christine",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 22,
+      "oldSlug": "dafne-ocean-va-profile",
+      "newSlug": "dafne",
+      "oldName": "dafne",
+      "newName": "dafne",
+      "normalizedOld": "dafne",
+      "normalizedNew": "dafne",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 23,
+      "oldSlug": "dawn-ocean-va-profile",
+      "newSlug": "dawn",
+      "oldName": "dawn",
+      "newName": "dawn",
+      "normalizedOld": "dawn",
+      "normalizedNew": "dawn",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 24,
+      "oldSlug": "dayana-ocean-va-profile",
+      "newSlug": "dayana",
+      "oldName": "dayana",
+      "newName": "dayana",
+      "normalizedOld": "dayana",
+      "normalizedNew": "dayana",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 25,
+      "oldSlug": "drue-ocean-va-profile",
+      "newSlug": "drue",
+      "oldName": "drue",
+      "newName": "drue",
+      "normalizedOld": "drue",
+      "normalizedNew": "drue",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 26,
+      "oldSlug": "ella-ocean-va-profile",
+      "newSlug": "ella",
+      "oldName": "ella",
+      "newName": "ella",
+      "normalizedOld": "ella",
+      "normalizedNew": "ella",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 27,
+      "oldSlug": "ellen-rose-ocean-va-profile",
+      "newSlug": "ellen",
+      "oldName": "ellen rose",
+      "newName": "ellen",
+      "normalizedOld": "ellenrose",
+      "normalizedNew": "ellen",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 28,
+      "oldSlug": "emmanuel-ocean-va-profile",
+      "newSlug": "emmanuel",
+      "oldName": "emmanuel",
+      "newName": "emmanuel",
+      "normalizedOld": "emmanuel",
+      "normalizedNew": "emmanuel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 29,
+      "oldSlug": "fabiola-ocean-va-profile",
+      "newSlug": "fabiola",
+      "oldName": "fabiola",
+      "newName": "fabiola",
+      "normalizedOld": "fabiola",
+      "normalizedNew": "fabiola",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 30,
+      "oldSlug": "fernanda-ocean-va-profile",
+      "newSlug": "fernanda",
+      "oldName": "fernanda",
+      "newName": "fernanda",
+      "normalizedOld": "fernanda",
+      "normalizedNew": "fernanda",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 31,
+      "oldSlug": "francis-ocean-va-profile",
+      "newSlug": "francis",
+      "oldName": "francis",
+      "newName": "francis",
+      "normalizedOld": "francis",
+      "normalizedNew": "francis",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 32,
+      "oldSlug": "francis-aldrin-ocean-va-profile",
+      "newSlug": "francis-aldrin",
+      "oldName": "francis aldrin",
+      "newName": "francis aldrin",
+      "normalizedOld": "francisaldrin",
+      "normalizedNew": "francisaldrin",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 33,
+      "oldSlug": "gabriela-ocean-va-profile",
+      "newSlug": "gabriela",
+      "oldName": "gabriela",
+      "newName": "gabriela",
+      "normalizedOld": "gabriela",
+      "normalizedNew": "gabriela",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 34,
+      "oldSlug": "gael-ocean-va-profile",
+      "newSlug": "gael",
+      "oldName": "gael",
+      "newName": "gael",
+      "normalizedOld": "gael",
+      "normalizedNew": "gael",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 35,
+      "oldSlug": "geraldine-ocean-va-profile",
+      "newSlug": "geraldine",
+      "oldName": "geraldine",
+      "newName": "geraldine",
+      "normalizedOld": "geraldine",
+      "normalizedNew": "geraldine",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 36,
+      "oldSlug": "gizelle-ocean-va-profile",
+      "newSlug": "gizelle",
+      "oldName": "gizelle",
+      "newName": "gizelle",
+      "normalizedOld": "gizelle",
+      "normalizedNew": "gizelle",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 37,
+      "oldSlug": "gonzalo-ocean-va-profile",
+      "newSlug": "gonzalo",
+      "oldName": "gonzalo",
+      "newName": "gonzalo",
+      "normalizedOld": "gonzalo",
+      "normalizedNew": "gonzalo",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 38,
+      "oldSlug": "grace-carmel-ocean-va-profile",
+      "newSlug": "grace",
+      "oldName": "grace carmel",
+      "newName": "grace",
+      "normalizedOld": "gracecarmel",
+      "normalizedNew": "grace",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 39,
+      "oldSlug": "guillermo-ocean-va-profile",
+      "newSlug": "guillermo",
+      "oldName": "guillermo",
+      "newName": "guillermo",
+      "normalizedOld": "guillermo",
+      "normalizedNew": "guillermo",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 40,
+      "oldSlug": "hugo-ocean-va-profile",
+      "newSlug": "hugo",
+      "oldName": "hugo",
+      "newName": "hugo",
+      "normalizedOld": "hugo",
+      "normalizedNew": "hugo",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 41,
+      "oldSlug": "israel-ocean-va-profile",
+      "newSlug": "israel",
+      "oldName": "israel",
+      "newName": "israel",
+      "normalizedOld": "israel",
+      "normalizedNew": "israel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 42,
+      "oldSlug": "ivan-ocean-va-profile",
+      "newSlug": "ivan",
+      "oldName": "ivan",
+      "newName": "ivan",
+      "normalizedOld": "ivan",
+      "normalizedNew": "ivan",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 43,
+      "oldSlug": "jane-ocean-va-profile",
+      "newSlug": "jane",
+      "oldName": "jane",
+      "newName": "jane",
+      "normalizedOld": "jane",
+      "normalizedNew": "jane",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 44,
+      "oldSlug": "janet-ocean-va-profile",
+      "newSlug": "janet",
+      "oldName": "janet",
+      "newName": "janet",
+      "normalizedOld": "janet",
+      "normalizedNew": "janet",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 45,
+      "oldSlug": "janice-ocean-va-profile",
+      "newSlug": "janice",
+      "oldName": "janice",
+      "newName": "janice",
+      "normalizedOld": "janice",
+      "normalizedNew": "janice",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 46,
+      "oldSlug": "jasmine-ocean-va-profile",
+      "newSlug": "jasmine",
+      "oldName": "jasmine",
+      "newName": "jasmine",
+      "normalizedOld": "jasmine",
+      "normalizedNew": "jasmine",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 47,
+      "oldSlug": "javier-ocean-va-profile",
+      "newSlug": "javier",
+      "oldName": "javier",
+      "newName": "javier",
+      "normalizedOld": "javier",
+      "normalizedNew": "javier",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 48,
+      "oldSlug": "jay-alvin-ocean-va-profile",
+      "newSlug": "jay",
+      "oldName": "jay alvin",
+      "newName": "jay",
+      "normalizedOld": "jayalvin",
+      "normalizedNew": "jay",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 49,
+      "oldSlug": "jerome-ocean-va-profile",
+      "newSlug": "jerome",
+      "oldName": "jerome",
+      "newName": "jerome",
+      "normalizedOld": "jerome",
+      "normalizedNew": "jerome",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 50,
+      "oldSlug": "jill-ocean-va-profile",
+      "newSlug": "jill",
+      "oldName": "jill",
+      "newName": "jill",
+      "normalizedOld": "jill",
+      "normalizedNew": "jill",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 51,
+      "oldSlug": "jimmy-ocean-va-profile",
+      "newSlug": "jimmy",
+      "oldName": "jimmy",
+      "newName": "jimmy",
+      "normalizedOld": "jimmy",
+      "normalizedNew": "jimmy",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 52,
+      "oldSlug": "joan-rose-ocean-va-profile",
+      "newSlug": "joan-rose",
+      "oldName": "joan rose",
+      "newName": "joan rose",
+      "normalizedOld": "joanrose",
+      "normalizedNew": "joanrose",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 53,
+      "oldSlug": "joana-ocean-va-profile",
+      "newSlug": "joana",
+      "oldName": "joana",
+      "newName": "joana",
+      "normalizedOld": "joana",
+      "normalizedNew": "joana",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 54,
+      "oldSlug": "joel-ocean-va-profile",
+      "newSlug": "joel",
+      "oldName": "joel",
+      "newName": "joel",
+      "normalizedOld": "joel",
+      "normalizedNew": "joel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 55,
+      "oldSlug": "joji-marie-ocean-va-profile",
+      "newSlug": "joji",
+      "oldName": "joji marie",
+      "newName": "joji",
+      "normalizedOld": "jojimarie",
+      "normalizedNew": "joji",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 56,
+      "oldSlug": "jomer-daniel-ocean-va-profile",
+      "newSlug": "jomer-daniel",
+      "oldName": "jomer daniel",
+      "newName": "jomer daniel",
+      "normalizedOld": "jomerdaniel",
+      "normalizedNew": "jomerdaniel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 57,
+      "oldSlug": "jose-luis-ocean-va-profile",
+      "newSlug": "jose-luis",
+      "oldName": "jose luis",
+      "newName": "jose luis",
+      "normalizedOld": "joseluis",
+      "normalizedNew": "joseluis",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 58,
+      "oldSlug": "joy-ocean-va-profile",
+      "newSlug": "joy",
+      "oldName": "joy",
+      "newName": "joy",
+      "normalizedOld": "joy",
+      "normalizedNew": "joy",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 59,
+      "oldSlug": "juname-ocean-va-profile",
+      "newSlug": "juname",
+      "oldName": "juname",
+      "newName": "juname",
+      "normalizedOld": "juname",
+      "normalizedNew": "juname",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 60,
+      "oldSlug": "karen-ocean-va-profile",
+      "newSlug": "karen",
+      "oldName": "karen",
+      "newName": "karen",
+      "normalizedOld": "karen",
+      "normalizedNew": "karen",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 61,
+      "oldSlug": "karl-ocean-va-profile",
+      "newSlug": "karl-bd0a3",
+      "oldName": "karl",
+      "newName": "karl bd0a3",
+      "normalizedOld": "karl",
+      "normalizedNew": "karlbd0a3",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 62,
+      "oldSlug": "karl-loyd-ocean-va-profile",
+      "newSlug": "karl-loyd",
+      "oldName": "karl loyd",
+      "newName": "karl loyd",
+      "normalizedOld": "karlloyd",
+      "normalizedNew": "karlloyd",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 63,
+      "oldSlug": "kathleen-ocean-va-profile",
+      "newSlug": "kathleen",
+      "oldName": "kathleen",
+      "newName": "kathleen",
+      "normalizedOld": "kathleen",
+      "normalizedNew": "kathleen",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 64,
+      "oldSlug": "kempee-ocean-va-profile",
+      "newSlug": "kempee",
+      "oldName": "kempee",
+      "newName": "kempee",
+      "normalizedOld": "kempee",
+      "normalizedNew": "kempee",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 65,
+      "oldSlug": "kevin-ocean-va-profile",
+      "newSlug": "kevin",
+      "oldName": "kevin",
+      "newName": "kevin",
+      "normalizedOld": "kevin",
+      "normalizedNew": "kevin",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 66,
+      "oldSlug": "lady-ann-ocean-va-profile",
+      "newSlug": "lady-ann",
+      "oldName": "lady ann",
+      "newName": "lady ann",
+      "normalizedOld": "ladyann",
+      "normalizedNew": "ladyann",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 67,
+      "oldSlug": "laurice-ocean-va-profile",
+      "newSlug": "laurice",
+      "oldName": "laurice",
+      "newName": "laurice",
+      "normalizedOld": "laurice",
+      "normalizedNew": "laurice",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 68,
+      "oldSlug": "lois-ocean-va-profile",
+      "newSlug": "lois",
+      "oldName": "lois",
+      "newName": "lois",
+      "normalizedOld": "lois",
+      "normalizedNew": "lois",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 69,
+      "oldSlug": "lorenz-ocean-va-profile",
+      "newSlug": "lorenz",
+      "oldName": "lorenz",
+      "newName": "lorenz",
+      "normalizedOld": "lorenz",
+      "normalizedNew": "lorenz",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 70,
+      "oldSlug": "louise-ocean-va-profile",
+      "newSlug": "louise-a-siloterio",
+      "oldName": "louise",
+      "newName": "louise a siloterio",
+      "normalizedOld": "louise",
+      "normalizedNew": "louiseasiloterio",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 71,
+      "oldSlug": "ma-venus-ocean-va-profile",
+      "newSlug": "ma-venus",
+      "oldName": "ma venus",
+      "newName": "ma venus",
+      "normalizedOld": "mavenus",
+      "normalizedNew": "mavenus",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 72,
+      "oldSlug": "marco-ocean-va-profile",
+      "newSlug": "marco",
+      "oldName": "marco",
+      "newName": "marco",
+      "normalizedOld": "marco",
+      "normalizedNew": "marco",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 73,
+      "oldSlug": "maria-ocean-va-profile",
+      "newSlug": "maria",
+      "oldName": "maria",
+      "newName": "maria",
+      "normalizedOld": "maria",
+      "normalizedNew": "maria",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 74,
+      "oldSlug": "maria-christine-ocean-va-profile",
+      "newSlug": "maria-christine",
+      "oldName": "maria christine",
+      "newName": "maria christine",
+      "normalizedOld": "mariachristine",
+      "normalizedNew": "mariachristine",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 75,
+      "oldSlug": "maria-paula-ocean-va-profile",
+      "newSlug": "maria-paula",
+      "oldName": "maria paula",
+      "newName": "maria paula",
+      "normalizedOld": "mariapaula",
+      "normalizedNew": "mariapaula",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 76,
+      "oldSlug": "maridel-ocean-va-profile",
+      "newSlug": "maridel",
+      "oldName": "maridel",
+      "newName": "maridel",
+      "normalizedOld": "maridel",
+      "normalizedNew": "maridel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 77,
+      "oldSlug": "arlene-ocean-va-profile",
+      "newSlug": "arlene",
+      "oldName": "arlene",
+      "newName": "arlene",
+      "normalizedOld": "arlene",
+      "normalizedNew": "arlene",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 78,
+      "oldSlug": "melissa-ocean-va-profile",
+      "newSlug": "melissa",
+      "oldName": "melissa",
+      "newName": "melissa",
+      "normalizedOld": "melissa",
+      "normalizedNew": "melissa",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 79,
+      "oldSlug": "michelle-ocean-va-profile",
+      "newSlug": "michelle",
+      "oldName": "michelle",
+      "newName": "michelle",
+      "normalizedOld": "michelle",
+      "normalizedNew": "michelle",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 80,
+      "oldSlug": "mina-ocean-va-profile",
+      "newSlug": "mina",
+      "oldName": "mina",
+      "newName": "mina",
+      "normalizedOld": "mina",
+      "normalizedNew": "mina",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 81,
+      "oldSlug": "moises-ocean-va-profile",
+      "newSlug": "moises",
+      "oldName": "moises",
+      "newName": "moises",
+      "normalizedOld": "moises",
+      "normalizedNew": "moises",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 82,
+      "oldSlug": "patricia-ocean-va-profile",
+      "newSlug": "patricia",
+      "oldName": "patricia",
+      "newName": "patricia",
+      "normalizedOld": "patricia",
+      "normalizedNew": "patricia",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 83,
+      "oldSlug": "patricia-nicole-ocean-va-profile",
+      "newSlug": "patricia-nicole",
+      "oldName": "patricia nicole",
+      "newName": "patricia nicole",
+      "normalizedOld": "patricianicole",
+      "normalizedNew": "patricianicole",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 84,
+      "oldSlug": "patricio-ocean-va-profile",
+      "newSlug": "patricio",
+      "oldName": "patricio",
+      "newName": "patricio",
+      "normalizedOld": "patricio",
+      "normalizedNew": "patricio",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 85,
+      "oldSlug": "pavel-ocean-va-profile",
+      "newSlug": "pavel",
+      "oldName": "pavel",
+      "newName": "pavel",
+      "normalizedOld": "pavel",
+      "normalizedNew": "pavel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 86,
+      "oldSlug": "rafael-ocean-va-profile",
+      "newSlug": "rafael",
+      "oldName": "rafael",
+      "newName": "rafael",
+      "normalizedOld": "rafael",
+      "normalizedNew": "rafael",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 87,
+      "oldSlug": "rainier-ocean-va-profile",
+      "newSlug": "rainier",
+      "oldName": "rainier",
+      "newName": "rainier",
+      "normalizedOld": "rainier",
+      "normalizedNew": "rainier",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 88,
+      "oldSlug": "randean-ocean-va-profile",
+      "newSlug": "randean",
+      "oldName": "randean",
+      "newName": "randean",
+      "normalizedOld": "randean",
+      "normalizedNew": "randean",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 89,
+      "oldSlug": "raydon-ocean-va-profile",
+      "newSlug": "raydon",
+      "oldName": "raydon",
+      "newName": "raydon",
+      "normalizedOld": "raydon",
+      "normalizedNew": "raydon",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 90,
+      "oldSlug": "rejean-ocean-va-profile",
+      "newSlug": "rejean",
+      "oldName": "rejean",
+      "newName": "rejean",
+      "normalizedOld": "rejean",
+      "normalizedNew": "rejean",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 91,
+      "oldSlug": "rochelle-ocean-va-profile",
+      "newSlug": "rochelle",
+      "oldName": "rochelle",
+      "newName": "rochelle",
+      "normalizedOld": "rochelle",
+      "normalizedNew": "rochelle",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 92,
+      "oldSlug": "rona-mae-ocean-va-profile",
+      "newSlug": "rona",
+      "oldName": "rona mae",
+      "newName": "rona",
+      "normalizedOld": "ronamae",
+      "normalizedNew": "rona",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 93,
+      "oldSlug": "ruel-ocean-va-profile",
+      "newSlug": "ruel",
+      "oldName": "ruel",
+      "newName": "ruel",
+      "normalizedOld": "ruel",
+      "normalizedNew": "ruel",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 94,
+      "oldSlug": "samantha-ocean-va-profile",
+      "newSlug": "samantha",
+      "oldName": "samantha",
+      "newName": "samantha",
+      "normalizedOld": "samantha",
+      "normalizedNew": "samantha",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 95,
+      "oldSlug": "sandra-ocean-va-profile",
+      "newSlug": "sandra",
+      "oldName": "sandra",
+      "newName": "sandra",
+      "normalizedOld": "sandra",
+      "normalizedNew": "sandra",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 96,
+      "oldSlug": "sheila-marie-ocean-va-profile",
+      "newSlug": "sheila-marie",
+      "oldName": "sheila marie",
+      "newName": "sheila marie",
+      "normalizedOld": "sheilamarie",
+      "normalizedNew": "sheilamarie",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 97,
+      "oldSlug": "tricia-ocean-va-profile",
+      "newSlug": "tricia",
+      "oldName": "tricia",
+      "newName": "tricia",
+      "normalizedOld": "tricia",
+      "normalizedNew": "tricia",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 98,
+      "oldSlug": "vicente-ocean-va-profile",
+      "newSlug": "vicente-penaflor",
+      "oldName": "vicente",
+      "newName": "vicente penaflor",
+      "normalizedOld": "vicente",
+      "normalizedNew": "vicentepenaflor",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 99,
+      "oldSlug": "ximena-ocean-va-profile",
+      "newSlug": "ximena-4e77d",
+      "oldName": "ximena",
+      "newName": "ximena 4e77d",
+      "normalizedOld": "ximena",
+      "normalizedNew": "ximena4e77d",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 100,
+      "oldSlug": "ximena-g-ocean-va-profile",
+      "newSlug": "ximena",
+      "oldName": "ximena g",
+      "newName": "ximena",
+      "normalizedOld": "ximenag",
+      "normalizedNew": "ximena",
+      "match": true,
+      "differences": []
+    },
+    {
+      "index": 101,
+      "oldSlug": "yvette-ocean-va-profile",
+      "newSlug": "yvette",
+      "oldName": "yvette",
+      "newName": "yvette",
+      "normalizedOld": "yvette",
+      "normalizedNew": "yvette",
+      "match": true,
+      "differences": []
+    }
+  ],
+  "slugDifferences": [
+    {
+      "name": "ac",
+      "oldSlug": "ac-ocean-va-profile",
+      "newSlug": "ac",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "aaron",
+      "oldSlug": "aaron-ocean-va-profile",
+      "newSlug": "aaron-a0d16",
+      "type": "has-suffix-id",
+      "details": "New URL has unique identifier suffix"
+    },
+    {
+      "name": "abigail",
+      "oldSlug": "abigail-ocean-va-profile",
+      "newSlug": "abigail",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "albert",
+      "oldSlug": "albert-ocean-va-profile",
+      "newSlug": "albert",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "alejandro",
+      "oldSlug": "alejandro-ocean-va-profile",
+      "newSlug": "alejandro",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "alyssa",
+      "oldSlug": "alyssa-ocean-va-profile",
+      "newSlug": "alyssa",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ana s",
+      "oldSlug": "ana-s-ocean-va-profile",
+      "newSlug": "ana",
+      "type": "name-shortened",
+      "details": "Name shortened (ana-s -> ana)"
+    },
+    {
+      "name": "ana gabriela",
+      "oldSlug": "ana-gabriela-ocean-va-profile",
+      "newSlug": "ana-gabriela",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ana victoria",
+      "oldSlug": "ana-victoria-ocean-va-profile",
+      "newSlug": "ana-victoria",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "anahi",
+      "oldSlug": "anahi-ocean-va-profile",
+      "newSlug": "anahi",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "andrea",
+      "oldSlug": "andrea-ocean-va-profile",
+      "newSlug": "andrea",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "andres",
+      "oldSlug": "andres-ocean-va-profile",
+      "newSlug": "andres",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "angel",
+      "oldSlug": "angel-ocean-va-profile",
+      "newSlug": "angel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "antonio",
+      "oldSlug": "antonio-ocean-va-profile",
+      "newSlug": "antonio",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "balbina",
+      "oldSlug": "balbina-ocean-va-profile",
+      "newSlug": "balbina",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "bernadette",
+      "oldSlug": "bernadette-ocean-va-profile",
+      "newSlug": "bernadette-abellana",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "brandon l",
+      "oldSlug": "brandon-l-ocean-va-profile",
+      "newSlug": "brandon",
+      "type": "removed-middle-initial",
+      "details": "Middle initial removed in new URL"
+    },
+    {
+      "name": "branko",
+      "oldSlug": "branko-ocean-va-profile",
+      "newSlug": "branko",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "charley",
+      "oldSlug": "charley-ocean-va-profile",
+      "newSlug": "charley",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "cherry mae",
+      "oldSlug": "cherry-mae-ocean-va-profile",
+      "newSlug": "cherry",
+      "type": "name-shortened",
+      "details": "Name shortened (cherry-mae -> cherry)"
+    },
+    {
+      "name": "christine",
+      "oldSlug": "christine-ocean-va-profile",
+      "newSlug": "christine",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "dafne",
+      "oldSlug": "dafne-ocean-va-profile",
+      "newSlug": "dafne",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "dawn",
+      "oldSlug": "dawn-ocean-va-profile",
+      "newSlug": "dawn",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "dayana",
+      "oldSlug": "dayana-ocean-va-profile",
+      "newSlug": "dayana",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "drue",
+      "oldSlug": "drue-ocean-va-profile",
+      "newSlug": "drue",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ella",
+      "oldSlug": "ella-ocean-va-profile",
+      "newSlug": "ella",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ellen rose",
+      "oldSlug": "ellen-rose-ocean-va-profile",
+      "newSlug": "ellen",
+      "type": "name-shortened",
+      "details": "Name shortened (ellen-rose -> ellen)"
+    },
+    {
+      "name": "emmanuel",
+      "oldSlug": "emmanuel-ocean-va-profile",
+      "newSlug": "emmanuel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "fabiola",
+      "oldSlug": "fabiola-ocean-va-profile",
+      "newSlug": "fabiola",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "fernanda",
+      "oldSlug": "fernanda-ocean-va-profile",
+      "newSlug": "fernanda",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "francis",
+      "oldSlug": "francis-ocean-va-profile",
+      "newSlug": "francis",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "francis aldrin",
+      "oldSlug": "francis-aldrin-ocean-va-profile",
+      "newSlug": "francis-aldrin",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "gabriela",
+      "oldSlug": "gabriela-ocean-va-profile",
+      "newSlug": "gabriela",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "gael",
+      "oldSlug": "gael-ocean-va-profile",
+      "newSlug": "gael",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "geraldine",
+      "oldSlug": "geraldine-ocean-va-profile",
+      "newSlug": "geraldine",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "gizelle",
+      "oldSlug": "gizelle-ocean-va-profile",
+      "newSlug": "gizelle",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "gonzalo",
+      "oldSlug": "gonzalo-ocean-va-profile",
+      "newSlug": "gonzalo",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "grace carmel",
+      "oldSlug": "grace-carmel-ocean-va-profile",
+      "newSlug": "grace",
+      "type": "name-shortened",
+      "details": "Name shortened (grace-carmel -> grace)"
+    },
+    {
+      "name": "guillermo",
+      "oldSlug": "guillermo-ocean-va-profile",
+      "newSlug": "guillermo",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "hugo",
+      "oldSlug": "hugo-ocean-va-profile",
+      "newSlug": "hugo",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "israel",
+      "oldSlug": "israel-ocean-va-profile",
+      "newSlug": "israel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ivan",
+      "oldSlug": "ivan-ocean-va-profile",
+      "newSlug": "ivan",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jane",
+      "oldSlug": "jane-ocean-va-profile",
+      "newSlug": "jane",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "janet",
+      "oldSlug": "janet-ocean-va-profile",
+      "newSlug": "janet",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "janice",
+      "oldSlug": "janice-ocean-va-profile",
+      "newSlug": "janice",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jasmine",
+      "oldSlug": "jasmine-ocean-va-profile",
+      "newSlug": "jasmine",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "javier",
+      "oldSlug": "javier-ocean-va-profile",
+      "newSlug": "javier",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jay alvin",
+      "oldSlug": "jay-alvin-ocean-va-profile",
+      "newSlug": "jay",
+      "type": "name-shortened",
+      "details": "Name shortened (jay-alvin -> jay)"
+    },
+    {
+      "name": "jerome",
+      "oldSlug": "jerome-ocean-va-profile",
+      "newSlug": "jerome",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jill",
+      "oldSlug": "jill-ocean-va-profile",
+      "newSlug": "jill",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jimmy",
+      "oldSlug": "jimmy-ocean-va-profile",
+      "newSlug": "jimmy",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "joan rose",
+      "oldSlug": "joan-rose-ocean-va-profile",
+      "newSlug": "joan-rose",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "joana",
+      "oldSlug": "joana-ocean-va-profile",
+      "newSlug": "joana",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "joel",
+      "oldSlug": "joel-ocean-va-profile",
+      "newSlug": "joel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "joji marie",
+      "oldSlug": "joji-marie-ocean-va-profile",
+      "newSlug": "joji",
+      "type": "name-shortened",
+      "details": "Name shortened (joji-marie -> joji)"
+    },
+    {
+      "name": "jomer daniel",
+      "oldSlug": "jomer-daniel-ocean-va-profile",
+      "newSlug": "jomer-daniel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "jose luis",
+      "oldSlug": "jose-luis-ocean-va-profile",
+      "newSlug": "jose-luis",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "joy",
+      "oldSlug": "joy-ocean-va-profile",
+      "newSlug": "joy",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "juname",
+      "oldSlug": "juname-ocean-va-profile",
+      "newSlug": "juname",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "karen",
+      "oldSlug": "karen-ocean-va-profile",
+      "newSlug": "karen",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "karl",
+      "oldSlug": "karl-ocean-va-profile",
+      "newSlug": "karl-bd0a3",
+      "type": "has-suffix-id",
+      "details": "New URL has unique identifier suffix"
+    },
+    {
+      "name": "kathleen",
+      "oldSlug": "kathleen-ocean-va-profile",
+      "newSlug": "kathleen",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "kempee",
+      "oldSlug": "kempee-ocean-va-profile",
+      "newSlug": "kempee",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "kevin",
+      "oldSlug": "kevin-ocean-va-profile",
+      "newSlug": "kevin",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "lady ann",
+      "oldSlug": "lady-ann-ocean-va-profile",
+      "newSlug": "lady-ann",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "laurice",
+      "oldSlug": "laurice-ocean-va-profile",
+      "newSlug": "laurice",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "lois",
+      "oldSlug": "lois-ocean-va-profile",
+      "newSlug": "lois",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "lorenz",
+      "oldSlug": "lorenz-ocean-va-profile",
+      "newSlug": "lorenz",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "louise",
+      "oldSlug": "louise-ocean-va-profile",
+      "newSlug": "louise-a-siloterio",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ma venus",
+      "oldSlug": "ma-venus-ocean-va-profile",
+      "newSlug": "ma-venus",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "marco",
+      "oldSlug": "marco-ocean-va-profile",
+      "newSlug": "marco",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "maria",
+      "oldSlug": "maria-ocean-va-profile",
+      "newSlug": "maria",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "maria christine",
+      "oldSlug": "maria-christine-ocean-va-profile",
+      "newSlug": "maria-christine",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "maria paula",
+      "oldSlug": "maria-paula-ocean-va-profile",
+      "newSlug": "maria-paula",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "maridel",
+      "oldSlug": "maridel-ocean-va-profile",
+      "newSlug": "maridel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "arlene",
+      "oldSlug": "arlene-ocean-va-profile",
+      "newSlug": "arlene",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "melissa",
+      "oldSlug": "melissa-ocean-va-profile",
+      "newSlug": "melissa",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "michelle",
+      "oldSlug": "michelle-ocean-va-profile",
+      "newSlug": "michelle",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "mina",
+      "oldSlug": "mina-ocean-va-profile",
+      "newSlug": "mina",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "moises",
+      "oldSlug": "moises-ocean-va-profile",
+      "newSlug": "moises",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "patricia",
+      "oldSlug": "patricia-ocean-va-profile",
+      "newSlug": "patricia",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "patricia nicole",
+      "oldSlug": "patricia-nicole-ocean-va-profile",
+      "newSlug": "patricia-nicole",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "patricio",
+      "oldSlug": "patricio-ocean-va-profile",
+      "newSlug": "patricio",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "pavel",
+      "oldSlug": "pavel-ocean-va-profile",
+      "newSlug": "pavel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "rafael",
+      "oldSlug": "rafael-ocean-va-profile",
+      "newSlug": "rafael",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "rainier",
+      "oldSlug": "rainier-ocean-va-profile",
+      "newSlug": "rainier",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "randean",
+      "oldSlug": "randean-ocean-va-profile",
+      "newSlug": "randean",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "raydon",
+      "oldSlug": "raydon-ocean-va-profile",
+      "newSlug": "raydon",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "rejean",
+      "oldSlug": "rejean-ocean-va-profile",
+      "newSlug": "rejean",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "rochelle",
+      "oldSlug": "rochelle-ocean-va-profile",
+      "newSlug": "rochelle",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "rona mae",
+      "oldSlug": "rona-mae-ocean-va-profile",
+      "newSlug": "rona",
+      "type": "name-shortened",
+      "details": "Name shortened (rona-mae -> rona)"
+    },
+    {
+      "name": "ruel",
+      "oldSlug": "ruel-ocean-va-profile",
+      "newSlug": "ruel",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "samantha",
+      "oldSlug": "samantha-ocean-va-profile",
+      "newSlug": "samantha",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "sandra",
+      "oldSlug": "sandra-ocean-va-profile",
+      "newSlug": "sandra",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "sheila marie",
+      "oldSlug": "sheila-marie-ocean-va-profile",
+      "newSlug": "sheila-marie",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "tricia",
+      "oldSlug": "tricia-ocean-va-profile",
+      "newSlug": "tricia",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "vicente",
+      "oldSlug": "vicente-ocean-va-profile",
+      "newSlug": "vicente-penaflor",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "ximena",
+      "oldSlug": "ximena-ocean-va-profile",
+      "newSlug": "ximena-4e77d",
+      "type": "has-suffix-id",
+      "details": "New URL has unique identifier suffix"
+    },
+    {
+      "name": "ximena g",
+      "oldSlug": "ximena-g-ocean-va-profile",
+      "newSlug": "ximena",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    },
+    {
+      "name": "yvette",
+      "oldSlug": "yvette-ocean-va-profile",
+      "newSlug": "yvette",
+      "type": "slug-changed",
+      "details": "Slug structure changed"
+    }
+  ],
+  "templateFields": [
+    "cerf-result",
+    "disc-description",
+    "disc-type-2",
+    "education-richtext",
+    "employment-richtext",
+    "employment-summary",
+    "english-description",
+    "english-score-3",
+    "equipment-richtext",
+    "image.url",
+    "name",
+    "skills-richtext",
+    "slug",
+    "summary",
+    "tagline",
+    "thumbnail-description",
+    "title",
+    "tools-richtext",
+    "type-of-english-test",
+    "video-thumbnail",
+    "video-url"
+  ],
+  "cmsFields": [
+    {
+      "slug": "main-category",
+      "displayName": "Main Category",
+      "type": "PlainText"
+    },
+    {
+      "slug": "main-categories",
+      "displayName": "Main Categories",
+      "type": "MultiReference"
+    },
+    {
+      "slug": "experience-years",
+      "displayName": "Experience (Years)",
+      "type": "PlainText"
+    },
+    {
+      "slug": "languages",
+      "displayName": "Languages",
+      "type": "PlainText"
+    },
+    {
+      "slug": "lenguage",
+      "displayName": "Lenguage",
+      "type": "Option"
+    },
+    {
+      "slug": "availability",
+      "displayName": "Availability",
+      "type": "PlainText"
+    },
+    {
+      "slug": "summary",
+      "displayName": "Summary",
+      "type": "RichText"
+    },
+    {
+      "slug": "tagline",
+      "displayName": "Tagline",
+      "type": "PlainText"
+    },
+    {
+      "slug": "thumbnail-description",
+      "displayName": "Thumbnail Description",
+      "type": "PlainText"
+    },
+    {
+      "slug": "image",
+      "displayName": "VA Image",
+      "type": "Image"
+    },
+    {
+      "slug": "profile-slug-2",
+      "displayName": "Profile Slug",
+      "type": "Link"
+    },
+    {
+      "slug": "specialization",
+      "displayName": "Specialization",
+      "type": "MultiReference"
+    },
+    {
+      "slug": "video",
+      "displayName": "Video",
+      "type": "Link"
+    },
+    {
+      "slug": "video-thumbnail-2",
+      "displayName": "Video Thumbnail",
+      "type": "PlainText"
+    },
+    {
+      "slug": "disc-description",
+      "displayName": "DISC Description",
+      "type": "RichText"
+    },
+    {
+      "slug": "english-description",
+      "displayName": "English Description",
+      "type": "RichText"
+    },
+    {
+      "slug": "tools-tags",
+      "displayName": "Tools tags",
+      "type": "PlainText"
+    },
+    {
+      "slug": "equipment-tags",
+      "displayName": "Equipment tags",
+      "type": "PlainText"
+    },
+    {
+      "slug": "skills-tags",
+      "displayName": "Skills tags",
+      "type": "PlainText"
+    },
+    {
+      "slug": "english-level",
+      "displayName": "English level",
+      "type": "PlainText"
+    },
+    {
+      "slug": "employment-richtext",
+      "displayName": "Employment richtext",
+      "type": "RichText"
+    },
+    {
+      "slug": "education-richtext",
+      "displayName": "Education richtext",
+      "type": "RichText"
+    },
+    {
+      "slug": "disc-type-2",
+      "displayName": "Disc Type",
+      "type": "Option"
+    },
+    {
+      "slug": "employment-summary",
+      "displayName": "Employment Summary",
+      "type": "PlainText"
+    },
+    {
+      "slug": "title-2",
+      "displayName": "Title",
+      "type": "PlainText"
+    },
+    {
+      "slug": "type-of-english-test",
+      "displayName": "Type of English Test",
+      "type": "PlainText"
+    },
+    {
+      "slug": "cerf-result",
+      "displayName": "CERF Result",
+      "type": "RichText"
+    },
+    {
+      "slug": "skills-richtext",
+      "displayName": "Skills Richtext",
+      "type": "RichText"
+    },
+    {
+      "slug": "tools-richtext",
+      "displayName": "Tools Richtext",
+      "type": "RichText"
+    },
+    {
+      "slug": "equipment-richtext",
+      "displayName": "Equipment Richtext",
+      "type": "RichText"
+    },
+    {
+      "slug": "english-score-3",
+      "displayName": "English score",
+      "type": "PlainText"
+    },
+    {
+      "slug": "name",
+      "displayName": "Name",
+      "type": "PlainText"
+    },
+    {
+      "slug": "slug",
+      "displayName": "Slug",
+      "type": "PlainText"
+    }
+  ],
+  "drueFields": [
+    "video",
+    "profile-slug-2",
+    "disc-type-2",
+    "name",
+    "title-2",
+    "experience-years",
+    "languages",
+    "availability",
+    "main-category",
+    "video-thumbnail-2",
+    "summary",
+    "tagline",
+    "thumbnail-description",
+    "skills-tags",
+    "skills-richtext",
+    "tools-tags",
+    "tools-richtext",
+    "equipment-tags",
+    "equipment-richtext",
+    "employment-summary",
+    "employment-richtext",
+    "education-richtext",
+    "disc-description",
+    "type-of-english-test",
+    "english-score-3",
+    "english-description",
+    "cerf-result",
+    "image",
+    "slug",
+    "main-categories",
+    "specialization"
+  ]
+}

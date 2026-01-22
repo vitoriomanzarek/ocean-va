@@ -1,0 +1,739 @@
+════════════════════════════════════════════════════════════════════════════════
+ACTUALIZACIÓN DE CAMPOS VACÍOS
+════════════════════════════════════════════════════════════════════════════════
+Fecha: 1/20/2026, 7:40:01 PM
+Modo: REAL (actualización)
+
+📥 Obteniendo VAs del CMS de Webflow...
+✅ Total VAs en CMS: 105
+
+📄 Leyendo CSV...
+✅ Total VAs en CSV: 103
+
+🔄 Procesando actualizaciones...
+
+✅ Procesados 105 VAs
+📊 VAs a actualizar: 98
+
+🔄 Ejecutando actualizaciones...
+
+────────────────────────────────────────────────────────────────────────────────
+[1/98] Karl Loyd (karl-loyd)
+   CMS ID: 696ea434305edbe6e53f7358
+   Estado: Published
+   Campos a actualizar: 2
+   Campos: employment-richtext, education-richtext
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[2/98] Aaron (aaron-a0d16)
+   CMS ID: 69695325a35247ab9d61fff5
+   Estado: Published
+   Campos a actualizar: 3
+   Campos: title-2, skills-richtext, employment-richtext
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[3/98] Andrea (andrea)
+   CMS ID: 696555612dfbf9d11af64b06
+   Estado: Published
+   Campos a actualizar: 11
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[4/98] Lady Ann (lady-ann)
+   CMS ID: 69654f956f49a9951c89a365
+   Estado: Published
+   Campos a actualizar: 11
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[5/98] Karl (karl-bd0a3)
+   CMS ID: 695d70bb817fe323368bd413
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[6/98] Sheila Marie (sheila-marie)
+   CMS ID: 6954416b4c4f5993f14b3c0e
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[7/98] Bernadette (bernadette-abellana)
+   CMS ID: 694b0260096a55e446df421e
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[8/98] Vicente (vicente-penaflor)
+   CMS ID: 694b021cd025d0b4379705b3
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[9/98] Ruel (ruel)
+   CMS ID: 6944849cae55ce44765a5c64
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[10/98] Francis Aldrin (francis-aldrin)
+   CMS ID: 6941a0258c4a748fe6939f7e
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[11/98] Juname (juname)
+   CMS ID: 69419ee97eecfa8aad625e47
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[12/98] Andres (andres)
+   CMS ID: 69419d749b64a30b91b74eea
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[13/98] Kempee (kempee)
+   CMS ID: 693c4d4e611900189cda1f21
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, type-of-english-test, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[14/98] Patricia Nicole (patricia-nicole)
+   CMS ID: 693b8909dc5555f230e74a92
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, type-of-english-test, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[15/98] Alyssa (alyssa)
+   CMS ID: 693b847fac184ce7c97aa43a
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[16/98] Maria Christine (maria-christine)
+   CMS ID: 693a04858a40d12e474e353a
+   Estado: Published
+   Campos a actualizar: 11
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[17/98] Ella (ella)
+   CMS ID: 693a02617a81734d363c385e
+   Estado: Published
+   Campos a actualizar: 11
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[18/98] Gabriela (gabriela)
+   CMS ID: 6939e96a27f942887b189f5a
+   Estado: Draft
+   Campos a actualizar: 11
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[19/98] Louise (louise-a-siloterio)
+   CMS ID: 692eef2fa123a022b383a029
+   Estado: Published
+   Campos a actualizar: 10
+   Campos: title-2, skills-richtext, employment-summary, employment-richtext, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[20/98] Randean (randean)
+   CMS ID: 69260f4526ed9b6ba9f325d2
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[21/98] Maridel (maridel)
+   CMS ID: 69260f434c763b460bbb2a12
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[22/98] Jane (jane)
+   CMS ID: 69260f414c763b460bbb28af
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[23/98] Joy (joy)
+   CMS ID: 69260f3e3222ce039d52901f
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[24/98] Joan Rose (joan-rose)
+   CMS ID: 69260f3b6a22d7149f58818e
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[25/98] Samantha (samantha)
+   CMS ID: 69260f358de0559aaf9efb67
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[26/98] Patricio (patricio)
+   CMS ID: 69260f31cddc3e1ce0db7f41
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[27/98] Marco (marco)
+   CMS ID: 69260f2f4c763b460bbb1e56
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[28/98] Jose Luis (jose-luis)
+   CMS ID: 69260f22e1beb3abb6b331a0
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[29/98] Jomer (jomer-daniel)
+   CMS ID: 69260f15f9853a3857ad0554
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[30/98] Hugo (hugo)
+   CMS ID: 69260f068d75af2b77e22842
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[31/98] Gael (gael)
+   CMS ID: 69260f04e1beb3abb6b326c5
+   Estado: Published
+   Campos a actualizar: 16
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[32/98] Fabiola (fabiola)
+   CMS ID: 69260efcb9b195d9afea3620
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'D+C'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[33/98] Branko (branko)
+   CMS ID: 69260ef2ee2acb0b0bca149c
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[34/98] Angel (angel)
+   CMS ID: 69260eeb002e11654a362d68
+   Estado: Published
+   Campos a actualizar: 16
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[35/98] Ana Gabriela (ana-gabriela)
+   CMS ID: 69260ee6ee2acb0b0bca0e67
+   Estado: Published
+   Campos a actualizar: 16
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[36/98] Ximena (ximena-4e77d)
+   CMS ID: 69260e2c1cb676355a677486
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-score-3, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[37/98] Kathleen (kathleen)
+   CMS ID: 6920b20be9c2d300fb2ce2d3
+   Estado: Draft
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[38/98] Albert (albert)
+   CMS ID: 6920ae7e0f07fb7c7a79a9f5
+   Estado: Published
+   Campos a actualizar: 14
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[39/98] Janet (janet)
+   CMS ID: 6920a189e4ac04c59eed6dd8
+   Estado: Published
+   Campos a actualizar: 15
+   Campos: title-2, summary, tagline, thumbnail-description, skills-richtext, employment-summary, employment-richtext, education-richtext, disc-type-2, disc-description, type-of-english-test, english-description, cerf-result, cerf-result, skills-tags
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[40/98] Mina (mina)
+   CMS ID: 691cc053ad37be937376f569
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[41/98] AC (ac)
+   CMS ID: 691cc052138d8a985cc7c691
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[42/98] Grace (grace)
+   CMS ID: 691cc051fafd92a39e7269c5
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[43/98] Yvette (yvette)
+   CMS ID: 691cc0517c622857f4bb8f27
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[44/98] Anahi (anahi)
+   CMS ID: 691cc050fafd92a39e726909
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[45/98] Tricia (tricia)
+   CMS ID: 691b8a173297968c5ed5977a
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[46/98] Ximena G. (ximena)
+   CMS ID: 691b8a166363a512c63ab178
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[47/98] Sandra (sandra)
+   CMS ID: 691b8a1676470b927f67f195
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[48/98] Rochelle (rochelle)
+   CMS ID: 691b8a1673a372902012f13c
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[49/98] Rejean (rejean)
+   CMS ID: 691b8a15f0e2ab9fb3ed29ca
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[50/98] Rainier (rainier)
+   CMS ID: 691b8a15cb665bff98aba813
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[51/98] Rafael (rafael)
+   CMS ID: 691b8a153f849707c908757e
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[52/98] Patricia (patricia)
+   CMS ID: 691b8a146363a512c63aaf87
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[53/98] Melissa (melissa)
+   CMS ID: 691b8a1406c5b174787e6f7a
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[54/98] Maria (maria)
+   CMS ID: 691b8a137bbc6e74fefb276d
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[55/98] Lois (lois)
+   CMS ID: 691b8a122c4d3609e83d3505
+   Estado: Draft
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[56/98] Kevin (kevin)
+   CMS ID: 691b8a110ed00c53499d1ca7
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[57/98] Janice (janice)
+   CMS ID: 691b8a116363a512c63aad54
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[58/98] Israel (israel)
+   CMS ID: 691b8a116363a512c63aad24
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[59/98] Guillermo (guillermo)
+   CMS ID: 691b8a10cb665bff98aba584
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[60/98] Gonzalo (gonzalo)
+   CMS ID: 691b8a102c4d3609e83d348c
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[61/98] Fernanda (fernanda)
+   CMS ID: 691b8a0f0ed00c53499d1c3e
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[62/98] Dayana (dayana)
+   CMS ID: 691b8a0fe352cae9bc806982
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[63/98] Dawn (dawn)
+   CMS ID: 691b8a0f3f849707c90873a1
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[64/98] Christine (christine)
+   CMS ID: 691b8a0e3297968c5ed594df
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[65/98] Carolina (carolina)
+   CMS ID: 691b8a0e3297968c5ed594b7
+   Estado: Draft
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[66/98] Brandon L. (brandon)
+   CMS ID: 691b8a0df83ddf1a08c15961
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[67/98] Ana Victoria (ana-victoria)
+   CMS ID: 691b8a0d1cb39e610863582d
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[68/98] Ana (ana)
+   CMS ID: 691b8a0c0569661eecba9e82
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[69/98] Pavel (pavel)
+   CMS ID: 691b8a0b59789e6de7cf8158
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+D'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[70/98] Jill (jill)
+   CMS ID: 691b8a0be00a0398d8a56cbf
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[71/98] Jasmine (jasmine)
+   CMS ID: 691b8a0bcd945b1d360713e6
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[72/98] Gizelle (gizelle)
+   CMS ID: 691b8a0a0ed00c53499d1af9
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[73/98] Rona Mae (rona)
+   CMS ID: 691b8a0ae00a0398d8a56c88
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[74/98] Raydon (raydon)
+   CMS ID: 691b8a0a6363a512c63aa8f3
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[75/98] Michelle (michelle)
+   CMS ID: 691b8a09cb665bff98aba0ca
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[76/98] Ma. Venus (ma-venus)
+   CMS ID: 691b8a0806c5b174787e6bfc
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[77/98] Lorenz (lorenz)
+   CMS ID: 691b8a08e352cae9bc806861
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[78/98] Laurice (laurice)
+   CMS ID: 691b8a0759789e6de7cf80ad
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[79/98] Joji Marie (joji)
+   CMS ID: 691b8a073297968c5ed59133
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[80/98] Joel (joel)
+   CMS ID: 691b8a066363a512c63aa688
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[81/98] Jimmy (jimmy)
+   CMS ID: 691b8a066363a512c63aa61c
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[82/98] Jerome (jerome)
+   CMS ID: 691b8a066363a512c63aa5e1
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[83/98] Javier (javier)
+   CMS ID: 691b8a051d8feff943c71247
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[84/98] Jay Alvin (jay)
+   CMS ID: 691b8a05f83ddf1a08c15210
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[85/98] Geraldine (geraldine)
+   CMS ID: 691b8a043297968c5ed58f4e
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[86/98] Francis (francis)
+   CMS ID: 691b8a04cb665bff98ab9f04
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[87/98] Emmanuel (emmanuel)
+   CMS ID: 691b8a043297968c5ed58e6d
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[88/98] Cherry Mae (cherry)
+   CMS ID: 691b8a036363a512c63aa36e
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[89/98] Antonio (antonio)
+   CMS ID: 691b8a030ed00c53499d1879
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[90/98] Abigail (abigail)
+   CMS ID: 691b8a02cd945b1d36071152
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[91/98] Moises (moises)
+   CMS ID: 691b8a014c78138967234375
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[92/98] Maria Paula (maria-paula)
+   CMS ID: 691b8a013297968c5ed58c1c
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'I+S'"}]}
+────────────────────────────────────────────────────────────────────────────────
+[93/98] Karen (karen)
+   CMS ID: 691b8a003f849707c9086eb4
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[94/98] Joana (joana)
+   CMS ID: 691b8a0076470b927f67e85d
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[95/98] Ivan (ivan)
+   CMS ID: 691b8a00f0e2ab9fb3ed2103
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[96/98] Dafne (dafne)
+   CMS ID: 691b89fff0e2ab9fb3ed20f1
+   Estado: Published
+   Campos a actualizar: 8
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[97/98] Alejandro (alejandro)
+   CMS ID: 691b89ff35de2e0351765716
+   Estado: Published
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ✅ Actualizado exitosamente
+────────────────────────────────────────────────────────────────────────────────
+[98/98] Adrian (adrian)
+   CMS ID: 691b89fef0e2ab9fb3ed20b4
+   Estado: Draft
+   Campos a actualizar: 9
+   Campos: title-2, thumbnail-description, skills-richtext, employment-summary, disc-type-2, type-of-english-test, english-score-3, cerf-result, cerf-result
+   ❌ Error al actualizar: Webflow API Error (400): Validation Error
+   Detalles: {"message":"Validation Error","code":"validation_error","externalReference":null,"details":[{"param":"disc-type-2","description":"Value is not an allowed Option: 'C+S'"}]}
+
+════════════════════════════════════════════════════════════════════════════════
+RESUMEN FINAL:
+════════════════════════════════════════════════════════════════════════════════
+VAs actualizados: 72
+Campos actualizados: 727
+VAs sin datos en CSV: 4
+════════════════════════════════════════════════════════════════════════════════

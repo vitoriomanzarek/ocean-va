@@ -34,14 +34,53 @@
     background: white;
     padding: 32px 20px;
     border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 80px;
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .va-filters.sticky-active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 80px;
+    z-index: 50;
+    padding: 16px 20px;
+  }
+
+  .va-filters.sticky-active .va-filters-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .va-filters.sticky-active .va-filter-label {
+    margin-bottom: 8px;
+    font-size: 11px;
+  }
+
+  .va-filters.sticky-active .va-filter-button {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .va-filters.sticky-active .va-search-input {
+    padding: 8px 12px;
+    font-size: 13px;
   }
 
   .va-filters-container {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
+  }
+
+  .va-filter-toggle {
+    display: none;
   }
 
   .va-filter-group {
@@ -166,15 +205,63 @@
     }
   }
 
+  .va-filter-toggle {
+    display: none;
+    width: 100%;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .va-filter-toggle:hover {
+    border-color: #049d98;
+    color: #049d98;
+  }
+
+  .va-filter-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-size: 10px;
+    color: #6b7280;
+  }
+
+  .va-filter-toggle.active .va-filter-toggle-icon {
+    transform: rotate(180deg);
+  }
+
   /* Mobile */
   @media (max-width: 640px) {
     .va-filters {
-      padding: 24px 16px;
+      padding: 16px;
+    }
+
+    .va-filter-toggle {
+      display: flex;
+      margin-bottom: 0;
     }
 
     .va-filters-container {
+      display: none;
       grid-template-columns: 1fr;
       gap: 20px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .va-filters-container.mobile-open {
+      display: grid;
     }
 
     .va-filter-options {
@@ -185,11 +272,28 @@
       padding: 8px 12px;
       font-size: 13px;
     }
+
+    .va-filters.sticky-active {
+      padding: 12px 16px;
+    }
+
+    .va-filters.sticky-active .va-filters-container {
+      margin-top: 12px;
+      padding-top: 12px;
+    }
   }
 </style>
 
 <section class="va-filters">
-  <div class="va-filters-container">
+  <button class="va-filter-toggle" type="button" aria-controls="va-filters-container" aria-expanded="false" id="filterToggle">
+    <span>Filter by</span>
+    <span class="va-filter-toggle-icon">
+      <svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+      </svg>
+    </span>
+  </button>
+  <div class="va-filters-container" id="va-filters-container">
     <!-- Availability Filter -->
     <div class="va-filter-group">
       <label class="va-filter-label">Availability</label>
@@ -197,7 +301,6 @@
         <button type="button" class="va-filter-button active" data-filter="availability" data-value="All">All</button>
         <button type="button" class="va-filter-button" data-filter="availability" data-value="Full Time">Full Time</button>
         <button type="button" class="va-filter-button" data-filter="availability" data-value="Part Time">Part Time</button>
-        <button type="button" class="va-filter-button" data-filter="availability" data-value="Assigned">Assigned</button>
       </div>
     </div>
 
@@ -213,27 +316,16 @@
 
     <!-- Search Input -->
     <div class="va-filter-group">
-      <label class="va-filter-label">Search by Name</label>
+      <label class="va-filter-label">Search by Keyword</label>
       <input 
         type="text" 
         class="va-search-input" 
         id="searchInput" 
-        placeholder="Search VA name..."
+        placeholder="Search by keyword (name, skills, tools, experience...)"
         autocomplete="off"
       >
     </div>
 
-    <!-- Main Category Filter -->
-    <div class="va-filter-group">
-      <label class="va-filter-label">Main Category</label>
-      <select 
-        class="va-category-select" 
-        id="categorySelect"
-      >
-        <option value="All">All Categories</option>
-        <!-- Options will be populated dynamically -->
-      </select>
-    </div>
   </div>
 </section>
 
@@ -253,7 +345,6 @@
 <script>
   // Get filter elements
   const searchInput = document.getElementById('searchInput');
-  const categorySelect = document.getElementById('categorySelect');
   const availabilityButtons = document.querySelectorAll('[data-filter="availability"]');
   const languageButtons = document.querySelectorAll('[data-filter="language"]');
 
@@ -261,55 +352,9 @@
   let currentFilters = {
     search: '',
     availability: 'All',
-    language: 'All',
-    mainCategory: 'All'
+    language: 'All'
   };
 
-
-  // Manual list of main categories
-  const MAIN_CATEGORIES = [
-    'Mortgage Specialist',
-    'Marketing Virtual Assistant',
-    'Insurance Virtual Assistant',
-    'Healthcare Virtual Assistant',
-    'Executive Virtual Assistant'
-  ];
-
-  // Function to populate category dropdown with manual categories
-  function populateCategoryDropdown() {
-    const categorySelect = document.getElementById('categorySelect');
-    if (!categorySelect) {
-      console.warn('Category select element not found');
-      return;
-    }
-    
-    // Clear existing options
-    categorySelect.innerHTML = '<option value="All">All Categories</option>';
-    
-    // Add manual categories as options
-    MAIN_CATEGORIES.forEach(category => {
-      const option = document.createElement('option');
-      option.value = category;
-      option.textContent = category;
-      categorySelect.appendChild(option);
-      
-      // Log each category being added
-      console.log('Added category to dropdown:', {
-        value: category,
-        length: category.length,
-        chars: Array.from(category).map(c => `${c}(${c.charCodeAt(0)})`).join(' ')
-      });
-    });
-
-    console.log('Categories dropdown populated with', MAIN_CATEGORIES.length, 'categories:', MAIN_CATEGORIES);
-    console.log('Dropdown options:', Array.from(categorySelect.options).map(opt => ({
-      value: opt.value,
-      text: opt.textContent
-    })));
-  }
-
-  // Make function globally accessible
-  window.populateCategoryDropdown = populateCategoryDropdown;
 
   // Function to dispatch filter change event
   function dispatchFilterChange() {
@@ -373,27 +418,187 @@
     }
   });
 
-  // Handle category dropdown change
-  categorySelect.addEventListener('change', (e) => {
-    const selectedValue = e.target.value;
-    console.log('Category dropdown changed to:', selectedValue);
-    currentFilters.mainCategory = selectedValue;
-    dispatchFilterChange();
-  });
-
-  // Populate categories immediately (no need to wait for collection)
-  function initializeCategories() {
-    populateCategoryDropdown();
-  }
-
-  // Initialize on page load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeCategories);
-  } else {
-    initializeCategories();
-  }
 
   console.log('VA Filters initialized');
+</script>
+
+<script>
+/**
+ * Mobile Filter Toggle
+ * Handles the mobile dropdown toggle for filters
+ */
+(function() {
+  const filterToggle = document.getElementById('filterToggle');
+  const filtersContainer = document.getElementById('va-filters-container');
+  
+  if (!filterToggle || !filtersContainer) return;
+  
+  filterToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const isOpen = filtersContainer.classList.contains('mobile-open');
+    
+    if (isOpen) {
+      filtersContainer.classList.remove('mobile-open');
+      filterToggle.classList.remove('active');
+      filterToggle.setAttribute('aria-expanded', 'false');
+    } else {
+      filtersContainer.classList.add('mobile-open');
+      filterToggle.classList.add('active');
+      filterToggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+  
+  // Close on outside click (optional)
+  document.addEventListener('click', function(e) {
+    if (!filterToggle.contains(e.target) && !filtersContainer.contains(e.target)) {
+      if (window.innerWidth <= 640) {
+        filtersContainer.classList.remove('mobile-open');
+        filterToggle.classList.remove('active');
+        filterToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+  
+  // Handle window resize - show filters on desktop, hide toggle
+  function handleResize() {
+    if (window.innerWidth > 640) {
+      filtersContainer.classList.add('mobile-open');
+      filterToggle.classList.remove('active');
+      filterToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  
+  window.addEventListener('resize', handleResize);
+  
+  // Initial check
+  handleResize();
+  
+  console.log('Mobile filter toggle initialized');
+})();
+</script>
+
+<script>
+/**
+ * Sticky Filter Enhancement
+ * Makes the filter section stay visible even when scrolling past its container
+ * and respects the navbar height
+ */
+(function() {
+  const filtersSection = document.querySelector('.va-filters');
+  if (!filtersSection) return;
+  
+  let initialOffsetTop = null;
+  let navbarHeight = null;
+  let isFixed = false;
+  
+  // Detect navbar height dynamically
+  function getNavbarHeight() {
+    if (navbarHeight !== null) return navbarHeight;
+    
+    // Try common navbar selectors
+    const navbar = document.querySelector('nav') || 
+                  document.querySelector('.navbar') || 
+                  document.querySelector('[class*="nav"]') ||
+                  document.querySelector('header');
+    
+    if (navbar) {
+      const height = navbar.offsetHeight || navbar.clientHeight;
+      if (height > 0) {
+        navbarHeight = height;
+        return navbarHeight;
+      }
+    }
+    
+    // Default fallback
+    navbarHeight = 80;
+    return navbarHeight;
+  }
+  
+  // Initialize the initial position
+  function initializePosition() {
+    if (initialOffsetTop === null) {
+      initialOffsetTop = filtersSection.offsetTop;
+    }
+    const navHeight = getNavbarHeight();
+    filtersSection.style.top = navHeight + 'px';
+    
+    // Update the sticky-active class top as well
+    const styleId = 'va-filters-sticky-style';
+    let style = document.getElementById(styleId);
+    if (!style) {
+      style = document.createElement('style');
+      style.id = styleId;
+      document.head.appendChild(style);
+    }
+    style.textContent = `
+      .va-filters.sticky-active {
+        top: ${navHeight}px !important;
+      }
+    `;
+  }
+  
+  // Check if filters should be fixed - improved logic
+  function checkStickyPosition() {
+    if (initialOffsetTop === null) {
+      initializePosition();
+      return;
+    }
+    
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const navHeight = getNavbarHeight();
+    const shouldBeFixed = scrollTop >= initialOffsetTop - navHeight;
+    
+    // Only toggle if state needs to change (prevents flickering)
+    if (shouldBeFixed && !isFixed) {
+      filtersSection.classList.add('sticky-active');
+      isFixed = true;
+    } else if (!shouldBeFixed && isFixed) {
+      filtersSection.classList.remove('sticky-active');
+      isFixed = false;
+    }
+  }
+  
+  // Initialize
+  function init() {
+    initializePosition();
+    // Wait a bit for page to fully load
+    setTimeout(() => {
+      initialOffsetTop = filtersSection.offsetTop;
+      checkStickyPosition();
+    }, 100);
+  }
+  
+  // Update on scroll with throttling
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        checkStickyPosition();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+  
+  // Update on resize (navbar might change height)
+  window.addEventListener('resize', () => {
+    navbarHeight = null; // Reset to recalculate
+    initialOffsetTop = filtersSection.offsetTop; // Recalculate initial position
+    initializePosition();
+    checkStickyPosition();
+  });
+  
+  // Initialize on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+  
+  console.log('Sticky filter enhancement initialized');
+})();
 </script>
 
 <script>
@@ -410,8 +615,7 @@
   let activeFilters = {
     search: '',
     availability: 'All',
-    language: 'All',
-    mainCategory: 'All'
+    language: 'All'
   };
   
   // Function to update results counter
@@ -491,92 +695,6 @@
     return text;
   }
 
-  // Diagnostic function to check if main-category field is working
-  // Call this in browser console: window.checkMainCategoryField()
-  window.checkMainCategoryField = function() {
-    const cards = Array.from(document.querySelectorAll('.w-dyn-item')).filter(card => {
-      return card.textContent.includes('EXPERIENCE') && card.textContent.includes('LANGUAGE');
-    });
-    
-    if (cards.length === 0) {
-      console.warn('No VA cards found');
-      return;
-    }
-    
-    console.log('=== MAIN CATEGORY FIELD DIAGNOSIS ===');
-    console.log(`Checking ${cards.length} VA cards...`);
-    console.log('The filter uses partial matching (contains) - it will match if the field contains the selected category.\n');
-    
-    const results = [];
-    const allCategories = new Set();
-    
-    cards.forEach((card, index) => {
-      const mainCategoryField = getFieldValue(card, 'main-category');
-      const mainCategoryElement = card.querySelector('[data-field="main-category"]');
-      
-      // Test filtering with each available category
-      const testCategories = [
-        'Mortgage Specialist',
-        'Marketing Virtual Assistant',
-        'Insurance Virtual Assistant',
-        'Healthcare Virtual Assistant',
-        'Executive Virtual Assistant'
-      ];
-      
-      const matches = testCategories.filter(cat => {
-        return mainCategoryField && mainCategoryField.toLowerCase().includes(cat.toLowerCase());
-      });
-      
-      results.push({
-        cardIndex: index,
-        hasMainCategoryField: !!mainCategoryElement,
-        mainCategoryValue: mainCategoryField || '(empty)',
-        wouldMatchCategories: matches
-      });
-      
-      // Extract individual categories from comma-separated values
-      if (mainCategoryField) {
-        const categories = mainCategoryField.split(',').map(c => c.trim());
-        categories.forEach(cat => {
-          if (cat) allCategories.add(cat);
-        });
-      }
-      
-      if (index < 5) {
-        console.log(`Card ${index}:`, {
-          mainCategory: mainCategoryField || '(empty)',
-          hasField: !!mainCategoryElement,
-          wouldMatch: matches.length > 0 ? matches : 'None'
-        });
-      }
-    });
-    
-    const withField = results.filter(r => r.hasMainCategoryField).length;
-    const withValue = results.filter(r => r.mainCategoryValue && r.mainCategoryValue !== '(empty)').length;
-    const withMatches = results.filter(r => r.wouldMatchCategories.length > 0).length;
-    
-    console.log(`\nSummary:`);
-    console.log(`- Cards with "main-category" field: ${withField}/${cards.length}`);
-    console.log(`- Cards with values: ${withValue}/${cards.length}`);
-    console.log(`- Cards that would match at least one category: ${withMatches}/${cards.length}`);
-    
-    if (withField === 0) {
-      console.error('❌ No cards have "main-category" field! Add it to your card design in Webflow.');
-    } else if (withValue === 0) {
-      console.warn('⚠️ Field exists but has no values. Add categories in Webflow CMS.');
-    } else if (withMatches === 0) {
-      console.warn('⚠️ Field has values but none match the filter categories. Check category names.');
-    } else {
-      console.log('✅ Category filtering is working!');
-    }
-    
-    // Show all unique categories found in the field
-    console.log(`\nAll unique categories found in main-category field:`, Array.from(allCategories).sort());
-    
-    console.log('=== END DIAGNOSIS ===');
-    return results;
-  };
-
   // Function to filter VA cards
   function filterVACards() {
     console.log('\n=== FILTERING VA CARDS ===');
@@ -598,17 +716,12 @@
       return;
     }
 
-    // Debug: Check first card for main-category field
-    if (cards.length > 0) {
-      const firstCard = cards[0];
-      const mainCategoryElement = firstCard.querySelector('[data-field="main-category"]');
-      const mainCategoryValue = getFieldValue(firstCard, 'main-category');
-      console.log('First card - main-category element found:', !!mainCategoryElement);
-      console.log('First card - main-category value:', mainCategoryValue || '(empty)');
-      if (mainCategoryElement) {
-        console.log('First card - main-category element HTML:', mainCategoryElement.outerHTML.substring(0, 200));
+      // Debug: Log first card structure
+      if (cards.length > 0) {
+        console.log('First card HTML:', cards[0].innerHTML);
+        console.log('First card classes:', cards[0].className);
+        console.log('All text content:', cards[0].textContent);
       }
-    }
 
     cards.forEach((card, index) => {
       // Get VA data from Webflow fields
@@ -640,10 +753,39 @@
       // Get main-category field (plain text field that can contain multiple categories separated by commas)
       // Example: "Executive Virtual Assistant, Healthcare Virtual Assistant, Insurance Virtual Assistant"
       const mainCategory = getFieldValue(card, 'main-category') || '';
+      
+      // Get title/position
+      const title = getFieldValue(card, 'title') || '';
+      
+      // Get experience years
+      const experienceYears = getFieldValue(card, 'experience-years') || '';
+      
+      // Extract skills/specializations from tags
+      const skillTags = card.querySelectorAll('.va-grid-tag, .va-skill-tag, [class*="skill"], [class*="specialization"]');
+      const skillsArray = Array.from(skillTags).map(tag => tag.textContent.trim().toLowerCase()).filter(Boolean);
+      const skillsText = skillsArray.join(' ');
+      
+      // Extract tools from tags (if they exist in cards)
+      const toolTags = card.querySelectorAll('[class*="tool"], [class*="va-tool"]');
+      const toolsArray = Array.from(toolTags).map(tag => tag.textContent.trim().toLowerCase()).filter(Boolean);
+      const toolsText = toolsArray.join(' ');
+      
+      // Build comprehensive searchable text from all card fields
+      // Combine all searchable content into one string
+      const searchableContent = [
+        name,                                    // Name
+        title.toLowerCase(),                     // Title/Position
+        mainCategory.toLowerCase(),              // Main Category
+        language.toLowerCase(),                  // Language
+        availability.toLowerCase(),              // Availability
+        experienceYears.toLowerCase(),           // Experience Years
+        skillsText,                              // Skills/Specializations
+        toolsText                                // Tools
+      ].filter(Boolean).join(' ');
 
-      // Check search filter (search in name or main category)
-      const searchTerm = activeFilters.search.toLowerCase();
-      const searchMatch = !searchTerm || name.includes(searchTerm) || (mainCategory && mainCategory.toLowerCase().includes(searchTerm));
+      // Check search filter - search across all fields
+      const searchTerm = activeFilters.search.toLowerCase().trim();
+      const searchMatch = !searchTerm || searchableContent.includes(searchTerm);
 
       // Check availability filter
       const availabilityMatch = activeFilters.availability === 'All' || 
@@ -653,91 +795,8 @@
       const languageMatch = activeFilters.language === 'All' || 
                            (language && language.includes(activeFilters.language));
 
-      // Check main category filter - uses partial match (contains)
-      // This allows filtering when main-category contains multiple values like:
-      // "Executive Virtual Assistant, Healthcare Virtual Assistant"
-      // It will match if any part of the field contains the selected category
-      let categoryMatch = true; // Default to true (show all)
-      
-      if (activeFilters.mainCategory && activeFilters.mainCategory !== 'All') {
-        if (!mainCategory || mainCategory.trim() === '') {
-          // If field is empty and a category is selected, hide the card
-          categoryMatch = false;
-        } else {
-          // Normalize both values: lowercase, trim, normalize spaces
-          const normalizeText = (text) => {
-            return text.toLowerCase()
-                      .trim()
-                      .replace(/\s+/g, ' ') // Replace multiple spaces with single space
-                      .replace(/[,\-]/g, ' ') // Replace commas and dashes with spaces
-                      .trim();
-          };
-          
-          const categoryNormalized = normalizeText(activeFilters.mainCategory);
-          const fieldNormalized = normalizeText(mainCategory);
-          
-          // Check if the field contains the selected category
-          // Also check individual words in case of comma-separated values
-          const categoryWords = categoryNormalized.split(/\s+/);
-          const fieldWords = fieldNormalized.split(/\s+/);
-          
-          // Match if field contains the full category phrase OR all words of the category
-          const fullMatch = fieldNormalized.includes(categoryNormalized);
-          const wordMatch = categoryWords.every(word => 
-            word.length > 2 && fieldWords.some(fieldWord => fieldWord.includes(word))
-          );
-          
-          categoryMatch = fullMatch || wordMatch;
-          
-          // Debug for first few cards
-          if (index < 3) {
-            console.log('Category filter details:', {
-              selectedCategory: activeFilters.mainCategory,
-              fieldValue: mainCategory,
-              categoryNormalized: categoryNormalized,
-              fieldNormalized: fieldNormalized,
-              fullMatch: fullMatch,
-              wordMatch: wordMatch,
-              finalMatch: categoryMatch
-            });
-          }
-        }
-      }
-
-      // Debug first few cards to see what's happening
-      if (index < 3 || (mainCategory && mainCategory.toLowerCase().includes('executive'))) {
-        console.log(`\n=== Card ${index} Filter Check ===`);
-        console.log('Filters active:', activeFilters);
-        console.log('Card data:', {
-          name: name,
-          availability: availability,
-          language: language,
-          mainCategory: mainCategory || '(empty)',
-          mainCategoryLength: mainCategory ? mainCategory.length : 0,
-          mainCategoryChars: mainCategory ? Array.from(mainCategory).map(c => c.charCodeAt(0)) : []
-        });
-        console.log('Filter results:', {
-          searchMatch: searchMatch,
-          availabilityMatch: availabilityMatch,
-          languageMatch: languageMatch,
-          categoryMatch: categoryMatch
-        });
-        console.log('Will show:', searchMatch && availabilityMatch && languageMatch && categoryMatch);
-        
-        // Extra debug for category matching
-        if (activeFilters.mainCategory && activeFilters.mainCategory !== 'All') {
-          console.log('Category matching details:', {
-            selected: activeFilters.mainCategory,
-            field: mainCategory,
-            selectedLower: activeFilters.mainCategory.toLowerCase(),
-            fieldLower: mainCategory ? mainCategory.toLowerCase() : '',
-            includesCheck: mainCategory ? mainCategory.toLowerCase().includes(activeFilters.mainCategory.toLowerCase()) : false
-          });
-        }
-      }
-
       // Show/hide card based on all filters
-      const shouldShow = searchMatch && availabilityMatch && languageMatch && categoryMatch;
+      const shouldShow = searchMatch && availabilityMatch && languageMatch;
       
       if (shouldShow) {
         card.style.display = '';
@@ -753,13 +812,6 @@
     console.log(`Showing ${visibleCount} out of ${cards.length} VA cards`);
     console.log(`Active filters:`, activeFilters);
     
-    if (visibleCount === 0 && cards.length > 0) {
-      console.warn('\n⚠️ No cards visible! Possible issues:');
-      console.warn('1. Check if main-category field is added to cards in Webflow');
-      console.warn('2. Check if category values in CMS match the filter options');
-      console.warn('3. Run window.checkMainCategoryField() in console to diagnose');
-    }
-    console.log('========================\n');
   }
 
   // Listen for filter changes
@@ -772,25 +824,7 @@
   // Initial filter on page load
   window.addEventListener('load', () => {
     filterVACards();
-    // Try to populate categories when collection is ready
-    if (window.populateCategoryDropdown) {
-      setTimeout(() => {
-        console.log('Attempting to populate categories from filter script...');
-        window.populateCategoryDropdown();
-      }, 1000);
-    }
   });
-
-  // Also try after filtering (collection might be ready then)
-  setTimeout(() => {
-    if (window.populateCategoryDropdown) {
-      const cards = document.querySelectorAll('.w-dyn-item');
-      if (cards.length > 0) {
-        console.log('Populating categories after collection load...');
-        window.populateCategoryDropdown();
-      }
-    }
-  }, 2000);
 
   console.log('VA Grid Filter Listener initialized for Webflow collections');
 })();

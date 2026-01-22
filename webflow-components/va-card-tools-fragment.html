@@ -1,0 +1,133 @@
+<!-- VA CARD TOOLS FRAGMENT -->
+<!-- Add this section to card template for tools display (optional, for future filtering) -->
+<!-- 
+  INSTRUCTIONS:
+  1. Add this custom code fragment to card template where you want tools to appear
+  2. Can be placed below skills or in a separate section
+  3. Ensure the card has access to {{tools-tags}} field (PlainText, comma-separated)
+  4. The field "tools-tags" contains comma-separated tools from the form
+  5. This is optional and can be hidden with CSS if not needed initially
+-->
+
+<div class="va-grid-tags" id="va-tools-tags-{{slug}}" style="display: none;">
+  <!-- Tools will be populated by JavaScript -->
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  // Wait for DOM to be ready
+  function initTools() {
+    // Get slug and tools from Webflow CMS fields
+    const slug = '{{slug}}' || '';
+    const toolsString = '{{tools-tags}}' || '';
+    
+    // Debug: Check what we're getting
+    console.log('VA Card Tools Debug - Slug:', slug);
+    console.log('VA Card Tools Debug - Tools String:', toolsString);
+    
+    // Parse tools from comma or semicolon-separated string
+    // Handle both formats: "Tool1, Tool2" and "Tool1; Tool2"
+    // Also decode HTML entities like &amp; to &
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = toolsString;
+    const decodedString = tempDiv.textContent || tempDiv.innerText || toolsString;
+    
+    const allTools = decodedString
+      .split(/[,;]/) // Split by comma OR semicolon
+      .map(t => t.trim())
+      .filter(Boolean);
+    
+    console.log('VA Card Tools Debug - Parsed Tools:', allTools);
+    
+    const container = document.getElementById(`va-tools-tags-${slug}`);
+    
+    if (!container) {
+      console.warn('VA Card Tools: Container not found for slug:', slug);
+      return;
+    }
+    
+    // Clear any existing content (in case there's Rich Text content)
+    container.innerHTML = '';
+    
+    if (allTools.length === 0) {
+      console.warn('VA Card Tools: No tools found for slug:', slug);
+      return; // No tools to display
+    }
+    
+    // Display first 4 tools (or all if less than 4)
+    const MAX_TOOLS = 4;
+    const displayTools = allTools.slice(0, MAX_TOOLS);
+    const remainingCount = allTools.length - MAX_TOOLS;
+    
+    // Create tool tags as separate elements
+    displayTools.forEach((tool, index) => {
+      const tag = document.createElement('span');
+      tag.className = 'va-grid-tag va-grid-tag-tool';
+      tag.textContent = tool;
+      tag.setAttribute('data-tool-index', index);
+      container.appendChild(tag);
+    });
+    
+    // Add "+N more" indicator if there are more tools
+    if (remainingCount > 0) {
+      const moreTag = document.createElement('span');
+      moreTag.className = 'va-grid-tag va-grid-tag-tool va-grid-tag-more';
+      moreTag.textContent = `+${remainingCount} more`;
+      container.appendChild(moreTag);
+    }
+    
+    // Show the tools container if tools exist
+    container.style.display = 'flex';
+    
+    console.log('VA Card Tools: Successfully created', displayTools.length, 'tags for slug:', slug);
+  }
+  
+  // Try to run immediately
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTools);
+  } else {
+    // DOM already ready, but wait a bit for Webflow to render
+    setTimeout(initTools, 100);
+  }
+})();
+</script>
+
+<style>
+/* Ensure tools container styles - Use specific selector to avoid breaking other elements */
+.va-grid-tags[id^="va-tools-tags-"] {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Tool tag styles - Different from skills to avoid confusion */
+/* Lighter background, different border style */
+.va-grid-tags[id^="va-tools-tags-"] .va-grid-tag-tool {
+  background: #f0f9f7 !important;
+  color: #0d5a52 !important;
+  padding: 6px 14px !important;
+  border-radius: 16px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border: 1px dashed #1eb8a6 !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* "+N more" tag styles for tools */
+.va-grid-tags[id^="va-tools-tags-"] .va-grid-tag-more {
+  background: #e8f9f6 !important;
+  color: #0d5a52 !important;
+  border: 1px dashed #1eb8a6 !important;
+  font-weight: 600 !important;
+  cursor: default !important;
+}
+</style>

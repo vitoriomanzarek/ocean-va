@@ -1,0 +1,131 @@
+════════════════════════════════════════════════════════════════════════════════
+REPORTE DE COMPARACIÓN: CMS vs CSV
+════════════════════════════════════════════════════════════════════════════════
+
+Fecha: 1/20/2026, 7:22:22 PM
+
+Total VAs en CMS: 105
+Total VAs en CSV: 103
+
+────────────────────────────────────────────────────────────────────────────────
+VAs NUEVOS (No existen en CMS):
+────────────────────────────────────────────────────────────────────────────────
+1. ARLENE (slug: arlene)
+
+Total VAs nuevos: 1
+
+────────────────────────────────────────────────────────────────────────────────
+VAs EXISTENTES (Ya están en CMS):
+────────────────────────────────────────────────────────────────────────────────
+1. AC (slug: ac)
+   CMS ID: 691cc052138d8a985cc7c691
+   Match por: slug
+   Estado en CMS: Published
+
+2. AARON (slug: aaron)
+   CMS ID: 69695325a35247ab9d61fff5
+   Match por: name
+   Estado en CMS: Published
+
+3. ABIGAIL FAITH (slug: abigail)
+   CMS ID: 691b8a02cd945b1d36071152
+   Match por: slug
+   Estado en CMS: Published
+
+4. ADRIAN (slug: adrian)
+   CMS ID: 691b89fef0e2ab9fb3ed20b4
+   Match por: slug
+   Estado en CMS: Draft
+
+5. ALBERT (slug: albert)
+   CMS ID: 6920ae7e0f07fb7c7a79a9f5
+   Match por: slug
+   Estado en CMS: Published
+
+6. ALEJANDRO (slug: alejandro)
+   CMS ID: 691b89ff35de2e0351765716
+   Match por: slug
+   Estado en CMS: Published
+
+7. ALYSSA (slug: alyssa)
+   CMS ID: 693b847fac184ce7c97aa43a
+   Match por: slug
+   Estado en CMS: Published
+
+8. ANA (slug: ana-s)
+   CMS ID: 691b8a0c0569661eecba9e82
+   Match por: slug
+   Estado en CMS: Published
+
+9. ANA GABRIELA (slug: ana-gabriela)
+   CMS ID: 69260ee6ee2acb0b0bca0e67
+   Match por: slug
+   Estado en CMS: Published
+
+10. ANA VICTORIA (slug: ana-victoria)
+   CMS ID: 691b8a0d1cb39e610863582d
+   Match por: slug
+   Estado en CMS: Published
+
+11. ANAHI (slug: anahi)
+   CMS ID: 691cc050fafd92a39e726909
+   Match por: slug
+   Estado en CMS: Published
+
+12. ANDREA (slug: andrea)
+   CMS ID: 696555612dfbf9d11af64b06
+   Match por: slug
+   Estado en CMS: Published
+
+13. ANDRES (slug: andres)
+   CMS ID: 69419d749b64a30b91b74eea
+   Match por: slug
+   Estado en CMS: Published
+
+14. ANGEL (slug: angel)
+   CMS ID: 69260eeb002e11654a362d68
+   Match por: slug
+   Estado en CMS: Published
+
+15. ANTONIO (slug: antonio)
+   CMS ID: 691b8a030ed00c53499d1879
+   Match por: slug
+   Estado en CMS: Published
+
+16. Balbina (slug: balbina)
+   CMS ID: 691b8a0d89b222b6b472933c
+   Match por: slug
+   Estado en CMS: Published
+
+17. BERNADETTE (slug: bernadette)
+   CMS ID: 694b0260096a55e446df421e
+   Match por: name
+   Estado en CMS: Published
+
+18. BRANDON L. (slug: brandon-l)
+   CMS ID: 691b8a0df83ddf1a08c15961
+   Match por: slug
+   Estado en CMS: Published
+
+19. BRANKO (slug: branko)
+   CMS ID: 69260ef2ee2acb0b0bca149c
+   Match por: slug
+   Estado en CMS: Published
+
+20. CAROLINA (slug: carolina)
+   CMS ID: 691b8a0e3297968c5ed594b7
+   Match por: slug
+   Estado en CMS: Draft
+
+... y 82 más
+
+Total VAs existentes: 102
+
+════════════════════════════════════════════════════════════════════════════════
+RECOMENDACIONES:
+════════════════════════════════════════════════════════════════════════════════
+1. Solo cargar los 1 VAs nuevos al CMS
+2. Los 102 VAs existentes NO se sobrescribirán
+3. Si necesitas actualizar un VA existente, hazlo manualmente por ID
+4. Revisa el CSV generado: carga-vas-nuevos-y-actualizaciones.csv
+════════════════════════════════════════════════════════════════════════════════
