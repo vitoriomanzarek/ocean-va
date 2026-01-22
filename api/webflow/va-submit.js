@@ -11,6 +11,7 @@ import 'dotenv/config';
 
 const WEBFLOW_API_BASE = 'https://api.webflow.com/v2';
 const VA_COLLECTION_ID = process.env.WEBFLOW_VA_COLLECTION_ID || '691b82a97542c69f3f77fa76';
+const MAIN_CATEGORIES_COLLECTION_ID = process.env.WEBFLOW_MAIN_CATEGORIES_COLLECTION_ID || '691f65ddf62cb29a405fc022';
 
 /**
  * Field mapping: Form field names → Webflow CMS field slugs
@@ -26,7 +27,7 @@ const FIELD_MAPPING = {
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
   'experienceYears': 'experience-years', // Support camelCase from form
-  language: 'languages', // Map to 'languages' field (PlainText) - the actual field in CMS
+  language: 'language', // Map to 'language' field (Option) - for filtering
   languages: 'languages', // PlainText field
   availability: 'availability',
   
@@ -196,24 +197,95 @@ function generateVideoThumbnail(videoUrl) {
 }
 
 /**
+ * Get Main Categories IDs from Webflow
+ * Returns a Map of category name (lowercase) -> item ID
+ */
+let mainCategoriesCache = null;
+async function getMainCategoriesIds() {
+  // Use cache if available
+  if (mainCategoriesCache) {
+    return mainCategoriesCache;
+  }
+
+  try {
+    const response = await webflowRequest(
+      `/collections/${MAIN_CATEGORIES_COLLECTION_ID}/items`
+    );
+    
+    const map = new Map();
+    if (response.items && Array.isArray(response.items)) {
+      response.items.forEach(item => {
+        const name = item.fieldData?.name;
+        if (name) {
+          // Store by lowercase name for case-insensitive matching
+          map.set(name.toLowerCase(), item.id);
+          // Also store by slug if available
+          if (item.fieldData?.slug) {
+            map.set(item.fieldData.slug.toLowerCase(), item.id);
+          }
+        }
+      });
+    }
+    
+    mainCategoriesCache = map;
+    return map;
+  } catch (error) {
+    console.error('Error fetching Main Categories:', error);
+    // Return empty map on error
+    return new Map();
+  }
+}
+
+/**
+ * Map category name to Main Categories IDs
+ */
+async function mapMainCategoryToIds(categoryName) {
+  if (!categoryName) return [];
+  
+  const categoriesMap = await getMainCategoriesIds();
+  const categoryId = categoriesMap.get(categoryName.toLowerCase());
+  
+  if (categoryId) {
+    return [categoryId];
+  } else {
+    console.warn(`⚠️  Main Category not found: ${categoryName}`);
+    return [];
+  }
+}
+
+/**
  * Format form data for Webflow CMS API
  */
-function formatDataForWebflow(formData) {
+async function formatDataForWebflow(formData) {
   const fieldData = {};
 
-  // Handle language field: convert 'language' to 'languages' (PlainText)
-  // The CMS has 'languages' as PlainText, not 'language' as Option
-  if (formData.language && !formData.languages) {
-    formData.languages = formData.language;
+  // Handle language field: send to both 'language' (Option) and 'languages' (PlainText)
+  if (formData.language) {
+    // Send to 'language' (Option field) for filtering
+    fieldData['language'] = formData.language;
+    // Also send to 'languages' (PlainText field) if not already set
+    if (!formData.languages) {
+      fieldData['languages'] = formData.language;
+    }
   }
-  // Remove 'language' if present to avoid sending it
-  const cleanedData = { ...formData };
-  delete cleanedData.language;
-
-  // Add languages field if it exists
+  
+  // Add languages field if it exists (PlainText)
   if (formData.languages) {
     fieldData['languages'] = formData.languages;
   }
+
+  // Handle Main Categories: map mainCategory to main-categories (multi-reference) using IDs
+  if (formData.mainCategory) {
+    const mainCategoriesIds = await mapMainCategoryToIds(formData.mainCategory);
+    if (mainCategoriesIds.length > 0) {
+      fieldData['main-categories'] = mainCategoriesIds;
+    }
+  }
+
+  // Remove 'language' and 'mainCategory' from cleanedData to avoid duplicate mapping
+  const cleanedData = { ...formData };
+  delete cleanedData.language;
+  delete cleanedData.mainCategory;
 
   // Handle video thumbnail: generate automatically if not provided
   // The field is now in FIELD_MAPPING, so if provided by form it will be mapped automatically
@@ -240,8 +312,8 @@ function formatDataForWebflow(formData) {
 
   // Map each field
   Object.keys(FIELD_MAPPING).forEach(formKey => {
-    // Skip 'language' field - we handle it separately
-    if (formKey === 'language') {
+    // Skip 'language' and 'mainCategory' fields - we handle them separately
+    if (formKey === 'language' || formKey === 'mainCategory' || formKey === 'main-category') {
       return;
     }
     
@@ -259,7 +331,8 @@ function formatDataForWebflow(formData) {
     }
 
     // Handle multi-reference fields (convert to array format)
-    if (['main-categories', 'specialization'].includes(webflowSlug)) {
+    // Note: main-categories is already handled above, so skip it here
+    if (['specialization'].includes(webflowSlug)) {
       if (Array.isArray(value)) {
         fieldData[webflowSlug] = value; // Already array of IDs
       } else if (typeof value === 'string') {
@@ -320,7 +393,7 @@ async function generateUniqueSlug(baseSlug) {
  * Create new VA item in Webflow CMS
  */
 async function createVAItem(data) {
-  const { fieldData } = formatDataForWebflow(data);
+  const { fieldData } = await formatDataForWebflow(data);
   
   const response = await webflowRequest(
     `/collections/${VA_COLLECTION_ID}/items`,
@@ -339,7 +412,7 @@ async function createVAItem(data) {
  * Update existing VA item
  */
 async function updateVAItem(itemId, data) {
-  const { fieldData } = formatDataForWebflow(data);
+  const { fieldData } = await formatDataForWebflow(data);
   
   // When updating, set as draft to require review
   const updateData = {
