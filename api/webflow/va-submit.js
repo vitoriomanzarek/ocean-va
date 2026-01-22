@@ -27,8 +27,8 @@ const FIELD_MAPPING = {
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
   'experienceYears': 'experience-years', // Support camelCase from form
-  language: 'languages', // Map to 'languages' field (can be PlainText or Option)
-  languages: 'languages', // PlainText/Option field
+  language: 'lenguage', // Map to 'lenguage' field (Option) - note: typo in Webflow field name
+  languages: 'languages', // PlainText field
   availability: 'availability',
   
   // Multimedia
@@ -259,19 +259,23 @@ async function mapMainCategoryToIds(categoryName) {
 async function formatDataForWebflow(formData) {
   const fieldData = {};
 
-  // Handle language field: send to 'languages' field (can be PlainText or Option)
+  // Handle language field: send only to 'languages' (PlainText)
   if (formData.language) {
-    // Map 'language' to 'languages' field
+    // Map 'language' to 'languages' field (PlainText)
     fieldData['languages'] = formData.language;
   }
   
-  // Add languages field if it exists (PlainText/Option)
+  // Add languages field if it exists (PlainText)
   if (formData.languages) {
     fieldData['languages'] = formData.languages;
   }
 
-  // Handle Main Categories: map mainCategory to main-categories (multi-reference) using IDs
+  // Handle Main Categories: map mainCategory to both 'main-category' (PlainText) and 'main-categories' (multi-reference)
   if (formData.mainCategory) {
+    // Send to 'main-category' (PlainText field)
+    fieldData['main-category'] = formData.mainCategory;
+    
+    // Also send to 'main-categories' (multi-reference) using IDs
     const mainCategoriesIds = await mapMainCategoryToIds(formData.mainCategory);
     if (mainCategoriesIds.length > 0) {
       fieldData['main-categories'] = mainCategoriesIds;
