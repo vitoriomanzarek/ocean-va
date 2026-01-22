@@ -27,8 +27,8 @@ const FIELD_MAPPING = {
   'main-categories': 'main-categories', // Multi-reference
   'experience-years': 'experience-years',
   'experienceYears': 'experience-years', // Support camelCase from form
-  language: 'language', // Map to 'language' field (Option) - for filtering
-  languages: 'languages', // PlainText field
+  language: 'languages', // Map to 'languages' field (can be PlainText or Option)
+  languages: 'languages', // PlainText/Option field
   availability: 'availability',
   
   // Multimedia
@@ -259,17 +259,13 @@ async function mapMainCategoryToIds(categoryName) {
 async function formatDataForWebflow(formData) {
   const fieldData = {};
 
-  // Handle language field: send to both 'language' (Option) and 'languages' (PlainText)
+  // Handle language field: send to 'languages' field (can be PlainText or Option)
   if (formData.language) {
-    // Send to 'language' (Option field) for filtering
-    fieldData['language'] = formData.language;
-    // Also send to 'languages' (PlainText field) if not already set
-    if (!formData.languages) {
-      fieldData['languages'] = formData.language;
-    }
+    // Map 'language' to 'languages' field
+    fieldData['languages'] = formData.language;
   }
   
-  // Add languages field if it exists (PlainText)
+  // Add languages field if it exists (PlainText/Option)
   if (formData.languages) {
     fieldData['languages'] = formData.languages;
   }
