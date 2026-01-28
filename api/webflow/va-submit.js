@@ -259,10 +259,16 @@ async function mapMainCategoryToIds(categoryName) {
 async function formatDataForWebflow(formData) {
   const fieldData = {};
 
-  // Handle language field: send only to 'languages' (PlainText)
+  // Handle language field: send to both 'lenguage' (Option) and 'languages' (PlainText)
   if (formData.language) {
-    // Map 'language' to 'languages' field (PlainText)
+    console.log('📋 Language value received:', formData.language);
+    // Map 'language' to 'languages' field (PlainText) - primary field
     fieldData['languages'] = formData.language;
+    // Also try to map to 'lenguage' (Option field) if it exists in FIELD_MAPPING
+    // Note: 'lenguage' has a typo in Webflow field name
+    if (FIELD_MAPPING.language) {
+      fieldData[FIELD_MAPPING.language] = formData.language;
+    }
   }
   
   // Add languages field if it exists (PlainText)
@@ -326,6 +332,19 @@ async function formatDataForWebflow(formData) {
   Object.keys(FIELD_MAPPING).forEach(formKey => {
     // Skip 'language', 'mainCategory', and 'main-category' fields - we handle them separately
     if (formKey === 'language' || formKey === 'mainCategory' || formKey === 'main-category') {
+      return;
+    }
+    
+    // Handle availability field
+    if (formKey === 'availability') {
+      const webflowSlug = FIELD_MAPPING[formKey];
+      const value = cleanedData[formKey];
+      if (value !== undefined && value !== null && value !== '') {
+        console.log('📋 Availability value received:', value);
+        fieldData[webflowSlug] = value;
+      } else {
+        console.warn('⚠️  No availability value found in formData');
+      }
       return;
     }
     
@@ -514,6 +533,14 @@ export default async function handler(req, res) {
 
   try {
     const formData = req.body;
+    
+    // Log received data for debugging
+    console.log('📥 Received form data:', {
+      name: formData.name,
+      mainCategory: formData.mainCategory || formData['main-category'],
+      language: formData.language,
+      availability: formData.availability
+    });
 
     // Basic validation
     if (!formData.name || !formData.summary || !formData.tagline) {

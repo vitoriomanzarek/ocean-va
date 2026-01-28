@@ -388,11 +388,29 @@ export default function VACreation() {
         'education-richtext': generateEducationHTML(educationEntries)
       }
 
-      // Remove empty fields
+      // Log data before removing empty fields
+      console.log('📤 Form data before cleanup:', {
+        mainCategory: submitData['main-category'],
+        language: submitData.language,
+        availability: submitData.availability
+      })
+
+      // Remove empty fields (but keep mainCategory, language, and availability even if empty for API processing)
       Object.keys(submitData).forEach(key => {
+        // Don't remove mainCategory, language, or availability - let API handle them
+        if (key === 'main-category' || key === 'language' || key === 'availability') {
+          return
+        }
         if (submitData[key] === '' || submitData[key] === null || submitData[key] === undefined) {
           delete submitData[key]
         }
+      })
+      
+      // Log data after cleanup
+      console.log('📤 Form data after cleanup:', {
+        mainCategory: submitData['main-category'],
+        language: submitData.language,
+        availability: submitData.availability
       })
 
       const response = await fetch(API_ENDPOINT, {
