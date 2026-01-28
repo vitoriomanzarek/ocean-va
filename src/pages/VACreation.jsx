@@ -42,6 +42,7 @@ const MAIN_CATEGORIES = [
   'Healthcare Virtual Assistant',
   'Insurance Virtual Assistant',
   'Marketing Virtual Assistant',
+  'Real Estate Assistant',
   'Mortgage Specialist'
 ]
 
