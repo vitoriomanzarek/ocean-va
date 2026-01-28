@@ -15,6 +15,10 @@ const DISC_DESCRIPTIONS = {
   'S': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
   'C': 'Conscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
   'D+I': 'Dominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+  'I+S': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nSteadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
+  'C+S': 'Conscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.\n\nSteadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
+  'I+D': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nDominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
+  'C+D': 'Conscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.\n\nDominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
   'S+I': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
   'S+C': 'Steadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.'
 }
@@ -1172,7 +1176,7 @@ export default function VACreation() {
                         </div>
                       </div>
                     `}
-                    example="D, I, S, C, D+I, S+I, or S+C"
+                    example="D, I, S, C, C+D, C+S, D+I, I+D, I+S, S+C, or S+I"
                   />
                 </label>
                 <select
@@ -1187,9 +1191,13 @@ export default function VACreation() {
                   <option value="I">I</option>
                   <option value="S">S</option>
                   <option value="C">C</option>
+                  <option value="C+D">C+D</option>
+                  <option value="C+S">C+S</option>
                   <option value="D+I">D+I</option>
-                  <option value="S+I">S+I</option>
+                  <option value="I+D">I+D</option>
+                  <option value="I+S">I+S</option>
                   <option value="S+C">S+C</option>
+                  <option value="S+I">S+I</option>
                 </select>
               </div>
             </div>
