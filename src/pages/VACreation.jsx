@@ -15,6 +15,7 @@ const DISC_DESCRIPTIONS = {
   'S': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
   'C': 'Conscientiousness (C) - Detail-oriented and organized. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
   'D+I': 'Dominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
+  'D+C': 'Dominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and push projects forward.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
   'I+S': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nSteadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
   'C+S': 'Conscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.\n\nSteadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.',
   'I+D': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nDominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
@@ -1209,6 +1210,7 @@ export default function VACreation() {
                   <option value="I">I</option>
                   <option value="S">S</option>
                   <option value="C">C</option>
+                  <option value="D+C">D+C</option>
                   <option value="C+D">C+D</option>
                   <option value="C+S">C+S</option>
                   <option value="D+I">D+I</option>

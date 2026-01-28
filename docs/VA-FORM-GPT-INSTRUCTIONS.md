@@ -91,7 +91,7 @@ Equipment: {comma-separated list of equipment the VA has, e.g.: Laptop, Two Moni
 {If education is unclear, write "No clear education information in documents" as Degree, and LEAVE BLANK for Year.}
 
 [DISC]
-DISC Type: {if the documents explicitly state D, I, S, C, C+D, C+S, D+I, I+D, I+S, S+C, S+I, or similar, write it exactly; if not mentioned, write LEAVE BLANK}
+DISC Type: {if the documents explicitly state D, I, S, C, D+C, C+D, C+S, D+I, I+D, I+S, S+C, S+I, or similar, write it exactly; if not mentioned, write LEAVE BLANK}
 DISC Description: {if there is an official DISC description, clean it and summarize in 3–5 sentences; if not present, write LEAVE BLANK and do NOT invent.}
 
 [ENGLISH]
