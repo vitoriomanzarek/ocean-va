@@ -75,8 +75,18 @@
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr auto;
     gap: 32px;
+    align-items: end;
+  }
+
+  .va-results-counter {
+    text-align: right;
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+    padding-bottom: 0;
+    white-space: nowrap;
   }
 
   .va-filter-toggle {
@@ -203,6 +213,12 @@
       grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
+
+    .va-results-counter {
+      grid-column: 1 / -1;
+      text-align: left;
+      margin-top: 8px;
+    }
   }
 
   .va-filter-toggle {
@@ -326,21 +342,15 @@
       >
     </div>
 
+    <!-- Results Counter -->
+    <div class="va-filter-group" style="display: flex; flex-direction: column; justify-content: flex-end;">
+      <div id="va-results-counter" class="va-results-counter">
+        Showing 62 of 62 VAs
+      </div>
+    </div>
+
   </div>
 </section>
-
-<!-- Results Counter -->
-<div id="va-results-counter" style="
-  text-align: center;
-  padding: 24px 20px;
-  margin: 20px 0;
-  font-size: 14px;
-  color: #6b7280;
-  font-weight: 500;
-  border-bottom: 1px solid #e5e7eb;
-">
-  Showing 62 of 62 VAs
-</div>
 
 <script>
   // Get filter elements
@@ -623,32 +633,25 @@
     let counter = document.getElementById('va-results-counter');
     
     if (!counter) {
-      // Try multiple selectors to find collection wrapper
-      let collectionWrapper = document.querySelector('.w-dyn-list') || 
-                             document.querySelector('[data-w-id]') ||
-                             document.querySelector('[role="region"]') ||
-                             document.querySelector('main') ||
-                             document.body;
-      
-      if (collectionWrapper) {
+      // Try to find the results counter placeholder in the filters container
+      const filtersContainer = document.querySelector('.va-filters-container');
+      if (filtersContainer) {
+        // Find the results counter group or create it
+        let counterGroup = filtersContainer.querySelector('.va-filter-group:has(#va-results-counter)') ||
+                          filtersContainer.querySelector('.va-results-counter').parentElement;
+        
+        if (!counterGroup) {
+          // Create the counter group
+          counterGroup = document.createElement('div');
+          counterGroup.className = 'va-filter-group';
+          counterGroup.style.cssText = 'display: flex; flex-direction: column; justify-content: flex-end;';
+          filtersContainer.appendChild(counterGroup);
+        }
+        
         counter = document.createElement('div');
         counter.id = 'va-results-counter';
-        counter.style.cssText = `
-          text-align: center;
-          padding: 24px 20px;
-          margin: 20px 0;
-          font-size: 14px;
-          color: #6b7280;
-          font-weight: 500;
-          border-bottom: 1px solid #e5e7eb;
-        `;
-        
-        // Insert before the collection wrapper or at the top
-        if (collectionWrapper.parentNode) {
-          collectionWrapper.parentNode.insertBefore(counter, collectionWrapper);
-        } else {
-          collectionWrapper.insertBefore(counter, collectionWrapper.firstChild);
-        }
+        counter.className = 'va-results-counter';
+        counterGroup.appendChild(counter);
       }
     }
     

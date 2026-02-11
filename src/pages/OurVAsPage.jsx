@@ -761,29 +761,7 @@ const OurVAsPage = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet our Virtual Assistants</h1>
-              
-              {/* Category Buttons */}
-              <div className="flex flex-wrap gap-3 mb-8">
-                <Link 
-                  to="/our-vas"
-                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
-                >
-                  Insurance Virtual Assistants
-                </Link>
-                <Link 
-                  to="/executive-admin-vas"
-                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
-                >
-                  Executive / Admin VAs
-                </Link>
-                <Link 
-                  to="/ovas-property-management-assistants"
-                  className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-4 py-2 rounded-full text-sm transition-all shadow-lg hover:shadow-xl"
-                >
-                  Property Management Assistants
-                </Link>
-              </div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">{pageTitle}</h1>
             </div>
           </div>
         </header>
