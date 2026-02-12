@@ -32,12 +32,13 @@
 <style>
     .va-filters {
       background: white;
-      padding: 32px 20px;
+      padding: 40px 20px;
       border-bottom: 1px solid #e5e7eb;
       position: sticky;
       top: 80px;
       z-index: 50;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 80px;
     }
   
     .va-filters.sticky-active {
@@ -47,7 +48,8 @@
       width: 100%;
       top: 80px;
       z-index: 50;
-      padding: 16px 20px;
+      padding: 20px 20px;
+      margin-bottom: 0;
     }
   
     .va-filters.sticky-active .va-filters-container {
@@ -75,7 +77,7 @@
       max-width: 1400px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr auto;
       gap: 32px;
       align-items: end;
     }
@@ -207,20 +209,6 @@
       display: none !important;
     }
   
-    /* Tablet */
-    @media (max-width: 1024px) {
-      .va-filters-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-      }
-
-      .va-results-counter {
-        grid-column: 1 / -1;
-        text-align: left;
-        margin-top: 8px;
-      }
-    }
-  
     .va-filter-toggle {
       display: none;
       width: 100%;
@@ -237,12 +225,12 @@
       align-items: center;
       gap: 8px;
     }
-  
+
     .va-filter-toggle:hover {
       border-color: #049d98;
       color: #049d98;
     }
-  
+
     .va-filter-toggle-icon {
       display: inline-flex;
       align-items: center;
@@ -251,22 +239,22 @@
       font-size: 10px;
       color: #6b7280;
     }
-  
+
     .va-filter-toggle.active .va-filter-toggle-icon {
       transform: rotate(180deg);
     }
-  
-    /* Mobile */
-    @media (max-width: 640px) {
+
+    /* Tablet and below - Show dropdown toggle */
+    @media (max-width: 1080px) {
       .va-filters {
-        padding: 16px;
+        padding: 20px;
       }
-  
+
       .va-filter-toggle {
         display: flex;
         margin-bottom: 0;
       }
-  
+
       .va-filters-container {
         display: none;
         grid-template-columns: 1fr;
@@ -275,27 +263,32 @@
         padding-top: 16px;
         border-top: 1px solid #e5e7eb;
       }
-  
+
       .va-filters-container.mobile-open {
         display: grid;
       }
-  
+
       .va-filter-options {
         gap: 6px;
       }
-  
+
       .va-filter-button {
         padding: 8px 12px;
         font-size: 13px;
       }
-  
+
       .va-filters.sticky-active {
         padding: 12px 16px;
       }
-  
+
       .va-filters.sticky-active .va-filters-container {
         margin-top: 12px;
         padding-top: 12px;
+      }
+
+      .va-results-counter {
+        text-align: left;
+        margin-top: 8px;
       }
     }
   </style>
@@ -315,9 +308,24 @@
         <label class="va-filter-label">Language</label>
         <div class="va-filter-options" id="languageOptions">
           <button type="button" class="va-filter-button active" data-filter="language" data-value="All">All</button>
-          <button type="button" class="va-filter-button" data-filter="language" data-value="English">English</button>
           <button type="button" class="va-filter-button" data-filter="language" data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button>
         </div>
+      </div>
+
+      <!-- VA Category Navigation (Dropdown) -->
+      <div class="va-filter-group">
+        <label class="va-filter-label">VA Category</label>
+        <select 
+          class="va-category-select" 
+          id="vaCategorySelect"
+        >
+          <option value="">Current Category</option>
+          <option value="/ovas-current-vas">Insurance Virtual Assistants</option>
+          <option value="/ovas-executive-admin-virtual-assistant">Executive / Admin VAs</option>
+          <option value="/ovas-property-management-assistants">Property Management Assistants</option>
+          <option value="/ovas-mortgage-processing-assistant">Mortgage Processing Assistant</option>
+          <option value="/ovas-medical-assistant">Medical Assistant Specialist</option>
+        </select>
       </div>
   
       <!-- Search Input -->
@@ -346,6 +354,7 @@
     // Get filter elements
     const searchInput = document.getElementById('searchInput');
     const languageButtons = document.querySelectorAll('[data-filter="language"]');
+    const categorySelect = document.getElementById('vaCategorySelect');
   
     // Store current filters
     let currentFilters = {
@@ -382,6 +391,16 @@
         dispatchFilterChange();
       });
     });
+  
+    // Handle VA Category navigation dropdown
+    if (categorySelect) {
+      categorySelect.addEventListener('change', (e) => {
+        const value = e.target.value;
+        if (value && typeof window !== 'undefined') {
+          window.location.href = value;
+        }
+      });
+    }
   
     // Handle search input - real-time filtering
     searchInput.addEventListener('input', (e) => {
@@ -432,7 +451,7 @@
     // Close on outside click (optional)
     document.addEventListener('click', function(e) {
       if (!filterToggle.contains(e.target) && !filtersContainer.contains(e.target)) {
-        if (window.innerWidth <= 640) {
+        if (window.innerWidth <= 1080) {
           filtersContainer.classList.remove('mobile-open');
           filterToggle.classList.remove('active');
           filterToggle.setAttribute('aria-expanded', 'false');
@@ -442,7 +461,7 @@
     
     // Handle window resize - show filters on desktop, hide toggle
     function handleResize() {
-      if (window.innerWidth > 640) {
+      if (window.innerWidth > 1080) {
         filtersContainer.classList.add('mobile-open');
         filterToggle.classList.remove('active');
         filterToggle.setAttribute('aria-expanded', 'false');

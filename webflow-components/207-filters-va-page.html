@@ -32,12 +32,13 @@
 <style>
   .va-filters {
     background: white;
-    padding: 32px 20px;
+    padding: 40px 20px;
     border-bottom: 1px solid #e5e7eb;
     position: sticky;
     top: 80px;
     z-index: 50;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 80px;
   }
 
   .va-filters.sticky-active {
@@ -47,7 +48,8 @@
     width: 100%;
     top: 80px;
     z-index: 50;
-    padding: 16px 20px;
+    padding: 20px 20px;
+    margin-bottom: 0;
   }
 
   .va-filters.sticky-active .va-filters-container {
@@ -207,20 +209,6 @@
     display: none !important;
   }
 
-  /* Tablet */
-  @media (max-width: 1024px) {
-    .va-filters-container {
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .va-results-counter {
-      grid-column: 1 / -1;
-      text-align: left;
-      margin-top: 8px;
-    }
-  }
-
   .va-filter-toggle {
     display: none;
     width: 100%;
@@ -256,10 +244,10 @@
     transform: rotate(180deg);
   }
 
-  /* Mobile */
-  @media (max-width: 640px) {
+  /* Tablet and below - Show dropdown toggle */
+  @media (max-width: 1080px) {
     .va-filters {
-      padding: 16px;
+      padding: 20px;
     }
 
     .va-filter-toggle {
@@ -297,10 +285,15 @@
       margin-top: 12px;
       padding-top: 12px;
     }
+
+    .va-results-counter {
+      text-align: left;
+      margin-top: 8px;
+    }
   }
 </style>
 
-<section class="va-filters">
+  <section class="va-filters">
   <button class="va-filter-toggle" type="button" aria-controls="va-filters-container" aria-expanded="false" id="filterToggle">
     <span>Filter by</span>
     <span class="va-filter-toggle-icon">
@@ -310,24 +303,29 @@
     </span>
   </button>
   <div class="va-filters-container" id="va-filters-container">
-    <!-- Availability Filter -->
-    <div class="va-filter-group">
-      <label class="va-filter-label">Availability</label>
-      <div class="va-filter-options" id="availabilityOptions">
-        <button type="button" class="va-filter-button active" data-filter="availability" data-value="All">All</button>
-        <button type="button" class="va-filter-button" data-filter="availability" data-value="Full Time">Full Time</button>
-        <button type="button" class="va-filter-button" data-filter="availability" data-value="Part Time">Part Time</button>
-      </div>
-    </div>
-
     <!-- Language Filter -->
     <div class="va-filter-group">
       <label class="va-filter-label">Language</label>
       <div class="va-filter-options" id="languageOptions">
         <button type="button" class="va-filter-button active" data-filter="language" data-value="All">All</button>
-        <button type="button" class="va-filter-button" data-filter="language" data-value="English">English</button>
         <button type="button" class="va-filter-button" data-filter="language" data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button>
       </div>
+    </div>
+
+    <!-- VA Category Navigation (Dropdown) -->
+    <div class="va-filter-group">
+      <label class="va-filter-label">VA Category</label>
+      <select 
+        class="va-category-select" 
+        id="vaCategorySelect"
+      >
+        <option value="">Current Category</option>
+        <option value="/ovas-current-vas">Insurance Virtual Assistants</option>
+        <option value="/ovas-executive-admin-virtual-assistant">Executive / Admin VAs</option>
+        <option value="/ovas-property-management-assistants">Property Management Assistants</option>
+        <option value="/ovas-mortgage-processing-assistant">Mortgage Processing Assistant</option>
+        <option value="/ovas-medical-assistant">Medical Assistant Specialist</option>
+      </select>
     </div>
 
     <!-- Search Input -->
@@ -355,13 +353,12 @@
 <script>
   // Get filter elements
   const searchInput = document.getElementById('searchInput');
-  const availabilityButtons = document.querySelectorAll('[data-filter="availability"]');
   const languageButtons = document.querySelectorAll('[data-filter="language"]');
+  const categorySelect = document.getElementById('vaCategorySelect');
 
   // Store current filters
   let currentFilters = {
     search: '',
-    availability: 'All',
     language: 'All'
   };
 
@@ -375,25 +372,6 @@
     document.dispatchEvent(event);
     console.log('Filters changed:', currentFilters);
   }
-
-  // Handle availability button clicks
-  availabilityButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      
-      // Remove active class from all availability buttons
-      availabilityButtons.forEach(btn => btn.classList.remove('active'));
-      
-      // Add active class to clicked button
-      button.classList.add('active');
-      
-      // Update filter
-      currentFilters.availability = button.dataset.value;
-      
-      // Dispatch event
-      dispatchFilterChange();
-    });
-  });
 
   // Handle language button clicks
   languageButtons.forEach(button => {
@@ -413,6 +391,16 @@
       dispatchFilterChange();
     });
   });
+
+  // Handle VA Category navigation dropdown
+  if (categorySelect) {
+    categorySelect.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value && typeof window !== 'undefined') {
+        window.location.href = value;
+      }
+    });
+  }
 
   // Handle search input - real-time filtering
   searchInput.addEventListener('input', (e) => {
@@ -463,7 +451,7 @@
   // Close on outside click (optional)
   document.addEventListener('click', function(e) {
     if (!filterToggle.contains(e.target) && !filtersContainer.contains(e.target)) {
-      if (window.innerWidth <= 640) {
+      if (window.innerWidth <= 1080) {
         filtersContainer.classList.remove('mobile-open');
         filterToggle.classList.remove('active');
         filterToggle.setAttribute('aria-expanded', 'false');
@@ -473,7 +461,7 @@
   
   // Handle window resize - show filters on desktop, hide toggle
   function handleResize() {
-    if (window.innerWidth > 640) {
+    if (window.innerWidth > 1080) {
       filtersContainer.classList.add('mobile-open');
       filterToggle.classList.remove('active');
       filterToggle.setAttribute('aria-expanded', 'false');
