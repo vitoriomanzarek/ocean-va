@@ -237,18 +237,54 @@ async function getMainCategoriesIds() {
 }
 
 /**
+ * Category name aliases mapping
+ * Maps common variations to the correct category name in Webflow
+ */
+const CATEGORY_ALIASES = {
+  'real estate assistant': 'Real Estate Virtual Assistant',
+  'property management virtual assistant': 'Real Estate Virtual Assistant',
+  'property management assistant': 'Real Estate Virtual Assistant',
+  'property management va': 'Real Estate Virtual Assistant',
+  'real estate va': 'Real Estate Virtual Assistant',
+};
+
+/**
  * Map category name to Main Categories IDs
+ * Handles aliases and variations of category names
  */
 async function mapMainCategoryToIds(categoryName) {
   if (!categoryName) return [];
   
   const categoriesMap = await getMainCategoriesIds();
-  const categoryId = categoriesMap.get(categoryName.toLowerCase());
+  
+  // Normalize the category name (lowercase, trim)
+  const normalizedName = categoryName.toLowerCase().trim();
+  
+  // Check if there's an alias for this category name
+  const aliasedName = CATEGORY_ALIASES[normalizedName] || categoryName;
+  const normalizedAliasedName = aliasedName.toLowerCase().trim();
+  
+  // Try to find the category ID
+  let categoryId = categoriesMap.get(normalizedName);
+  
+  // If not found, try with the aliased name
+  if (!categoryId) {
+    categoryId = categoriesMap.get(normalizedAliasedName);
+  }
+  
+  // If still not found, try with slug format (replace spaces with hyphens)
+  if (!categoryId) {
+    const slugFormat = normalizedAliasedName.replace(/\s+/g, '-');
+    categoryId = categoriesMap.get(slugFormat);
+  }
   
   if (categoryId) {
+    console.log(`✅ Main Category mapped: "${categoryName}" -> ID: ${categoryId}`);
     return [categoryId];
   } else {
-    console.warn(`⚠️  Main Category not found: ${categoryName}`);
+    console.warn(`⚠️  Main Category not found: "${categoryName}"`);
+    console.warn(`   Tried aliases: "${aliasedName}"`);
+    console.warn(`   Available categories:`, Array.from(categoriesMap.keys()).slice(0, 10));
     return [];
   }
 }
@@ -292,8 +328,13 @@ async function formatDataForWebflow(formData) {
     
     if (mainCategoriesIds.length > 0) {
       fieldData['main-categories'] = mainCategoriesIds;
+      console.log('✅ Main Categories field will be sent to Webflow');
     } else {
       console.warn('⚠️  No Main Category IDs found for:', mainCategoryValue);
+      console.warn('⚠️  The main-categories field will NOT be sent. The VA will be created but may need manual category assignment.');
+      // Log available categories for debugging
+      const categoriesMap = await getMainCategoriesIds();
+      console.warn('   Available categories in Webflow:', Array.from(categoriesMap.keys()).join(', '));
     }
   } else {
     console.warn('⚠️  No mainCategory value found in formData');
