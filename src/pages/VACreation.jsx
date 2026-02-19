@@ -21,7 +21,8 @@ const DISC_DESCRIPTIONS = {
   'I+D': 'Influence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.\n\nDominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
   'C+D': 'Conscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.\n\nDominance (D) - Proactive and goal-driven. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.',
   'S+I': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nInfluence (I) - Charismatic and engaging. I-type VAs excel in client communication, networking, and keeping teams motivated.',
-  'S+C': 'Steadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.'
+  'S+C': 'Steadiness (S) - Calm, patient, and service-oriented. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nConscientiousness (C) - Detail-focused and precise. C-type VAs ensure accuracy, maintain structured systems, and deliver high-quality work.',
+  'S+D': 'Steadiness (S) - Dependable and patient. S-type VAs provide consistent support, build strong client relationships, and ensure smooth workflows.\n\nDominance (D) - Direct, decisive, and results-oriented. D-type VAs take initiative, solve problems efficiently, and thrive in fast-paced environments.'
 }
 
 const ENGLISH_DESCRIPTIONS = {
@@ -1195,7 +1196,7 @@ export default function VACreation() {
                         </div>
                       </div>
                     `}
-                    example="D, I, S, C, C+D, C+S, D+I, I+D, I+S, S+C, or S+I"
+                    example="D, I, S, C, C+D, C+S, D+I, I+D, I+S, S+C, S+D, or S+I"
                   />
                 </label>
                 <select
@@ -1217,6 +1218,7 @@ export default function VACreation() {
                   <option value="I+D">I+D</option>
                   <option value="I+S">I+S</option>
                   <option value="S+C">S+C</option>
+                  <option value="S+D">S+D</option>
                   <option value="S+I">S+I</option>
                 </select>
               </div>
