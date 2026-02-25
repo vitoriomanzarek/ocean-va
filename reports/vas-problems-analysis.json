@@ -1,0 +1,356 @@
+{
+  "ac": {
+    "found": true,
+    "name": "AC",
+    "issues": [
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 1,
+    "highSeverityCount": 0
+  },
+  "aaron-a0d16": {
+    "found": true,
+    "name": "Aaron",
+    "issues": [
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 1,
+    "highSeverityCount": 0
+  },
+  "abigail": {
+    "found": true,
+    "name": "Abigail",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 0
+  },
+  "albert": {
+    "found": true,
+    "name": "Albert",
+    "issues": [
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 1,
+    "highSeverityCount": 0
+  },
+  "alejandro": {
+    "found": true,
+    "name": "Alejandro",
+    "issues": [
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 1,
+    "highSeverityCount": 0
+  },
+  "alyssa": {
+    "found": true,
+    "name": "Alyssa",
+    "issues": [
+      {
+        "type": "missing",
+        "field": "employment-richtext",
+        "severity": "high"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 1
+  },
+  "ana": {
+    "found": true,
+    "name": "Ana",
+    "issues": [
+      {
+        "type": "duplicate",
+        "field": "education-richtext",
+        "count": 2,
+        "severity": "high"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 1
+  },
+  "ana-gabriela": {
+    "found": true,
+    "name": "Ana Gabriela",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 3,
+    "highSeverityCount": 0
+  },
+  "ana-victoria": {
+    "found": true,
+    "name": "Ana Victoria",
+    "issues": [],
+    "issueCount": 0,
+    "highSeverityCount": 0
+  },
+  "anahi": {
+    "found": true,
+    "name": "Anahi",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "duplicate",
+        "field": "education-richtext",
+        "count": 2,
+        "severity": "high"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "video",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 4,
+    "highSeverityCount": 1
+  },
+  "andrea": {
+    "found": true,
+    "name": "Andrea",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 3,
+    "highSeverityCount": 0
+  },
+  "andres": {
+    "found": true,
+    "name": "Andres",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 0
+  },
+  "angel": {
+    "found": true,
+    "name": "Angel",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 3,
+    "highSeverityCount": 0
+  },
+  "antonio": {
+    "found": true,
+    "name": "Antonio",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 1,
+    "highSeverityCount": 0
+  },
+  "balbina": {
+    "found": true,
+    "name": "Balbina",
+    "issues": [
+      {
+        "type": "missing",
+        "field": "employment-summary",
+        "severity": "high"
+      },
+      {
+        "type": "duplicate",
+        "field": "education-richtext",
+        "count": 2,
+        "severity": "high"
+      },
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "type-of-english-test",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "skills-richtext",
+        "severity": "high"
+      },
+      {
+        "type": "missing",
+        "field": "thumbnail-description",
+        "severity": "medium"
+      },
+      {
+        "type": "missing",
+        "field": "cerf-result",
+        "severity": "high"
+      }
+    ],
+    "issueCount": 7,
+    "highSeverityCount": 4
+  },
+  "bernadette-abellana": {
+    "found": true,
+    "name": "Bernadette",
+    "issues": [
+      {
+        "type": "structure",
+        "field": "employment-richtext",
+        "issue": "Missing bullet points",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "disc-description",
+        "issue": "Missing line breaks between paragraphs",
+        "severity": "low"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 0
+  },
+  "brandon": {
+    "found": true,
+    "name": "Brandon L.",
+    "issues": [
+      {
+        "type": "missing",
+        "field": "education-richtext",
+        "issue": "Missing year",
+        "severity": "medium"
+      },
+      {
+        "type": "format",
+        "field": "education-richtext",
+        "issue": "Weird characters found",
+        "characters": [
+          "ó",
+          "é"
+        ],
+        "severity": "medium"
+      }
+    ],
+    "issueCount": 2,
+    "highSeverityCount": 0
+  }
+}

@@ -196,9 +196,17 @@
 
   /* Tools List */
   .va-tools-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .va-tools-list {
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 
   .va-tools-list.two-column {

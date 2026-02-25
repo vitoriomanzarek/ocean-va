@@ -17,6 +17,7 @@
   
   1. En Webflow Designer, FUERA del Custom Code, agrega elementos Text (Rich Text):
      - Text con ID: "va-summary-source" → Conecta al campo "Summary" (Rich Text)
+     - Text con ID: "va-disc-type-source" → Conecta al campo "DISC Type 2" (Option field - mostrará el valor del Option)
      - Text con ID: "va-disc-description-source" → Conecta al campo "DISC Description" (Rich Text)
      - Text con ID: "va-english-description-source" → Conecta al campo "English Description" (Rich Text)
      - Text con ID: "va-skills-source" → Conecta al campo "Skills Richtext" (Rich Text)
@@ -26,14 +27,14 @@
      - Text con ID: "va-cefr-source" → Conecta al campo "CERF Result" (Rich Text)
      - Text con ID: "va-education-source" → Conecta al campo "Education Richtext" (Rich Text)
   
-  NOTA: El campo "Video Thumbnail" se usa directamente con {{video-thumbnail-2}} en el Custom Code
+  NOTA: El campo "Video Thumbnail" se usa directamente con {{wf {&quot;path&quot;:&quot;video-thumbnail-2&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }} en el Custom Code
         (es Plain Text, slug: video-thumbnail-2, no necesita elemento oculto)
   
   2. Oculta estos elementos con CSS:
      - Selecciona cada elemento → Settings → Custom Attributes
      - Agrega: style="display: none !important;"
      - O en el CSS global:
-       #va-summary-source, #va-disc-description-source, #va-english-description-source,
+       #va-summary-source, #va-disc-type-source, #va-disc-description-source, #va-english-description-source,
        #va-skills-source, #va-tools-source, #va-equipment-source,
        #va-employment-source, #va-cefr-source, #va-education-source {
          display: none !important;
@@ -45,8 +46,8 @@
   NOTAS:
   - Los estilos están inline fusionados en el <style> tag
   - Los campos Plain Text se usan como texto simple con {{field-slug}}
-  - Las imágenes usan {{image.url}} o {{image.src}}
-  - El video usa {{video}} (campo Link)
+  - Las imágenes usan {{wf {&quot;path&quot;:&quot;image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\} }} o {{wf {&quot;path&quot;:&quot;image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\} }}
+  - El video usa {{wf {&quot;path&quot;:&quot;video&quot;,&quot;type&quot;:&quot;Link&quot;\} }} (campo Link)
 -->
 
 <style>
@@ -213,9 +214,17 @@
   }
 
   .va-tools-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .va-tools-list {
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 
   .va-tools-list.two-column {
@@ -905,14 +914,14 @@
         <!-- Image Container -->
         <div class="va-image-container">
           <div class="va-image-frame">
-            <img src="{{image.url}}" alt="{{name}}" loading="lazy">
+            <img src="{{wf {&quot;path&quot;:&quot;image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\} }}" alt="{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}" loading="lazy">
           </div>
         </div>
 
         <!-- Info Box -->
         <div class="va-info-box">
-          <h1 class="va-profile-name">{{name}}</h1>
-          <p class="va-title">{{title-2}}</p>
+          <h1 class="va-profile-name">{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</h1>
+          <p class="va-title">{{wf {&quot;path&quot;:&quot;title-2&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</p>
           <!-- Summary: Se llena desde elemento Text de Webflow oculto -->
           <div class="va-summary" id="va-summary-target"></div>
           
@@ -942,8 +951,8 @@
             <h3 class="va-column-header">VIDEO</h3>
             <!-- Video Container -->
             <div class="va-video-container" 
-                 id="va-video-container-{{slug}}"
-                 style="background-image: url('{{video-thumbnail-2}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                 id="va-video-container-{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}"
+                 style="background-image: url('{{wf {&quot;path&quot;:&quot;video-thumbnail-2&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
               <div class="va-video-overlay">
                 <div>
                   <svg class="va-video-play-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -955,10 +964,10 @@
             </div>
             
             <!-- Video Modal -->
-            <div id="va-video-modal-{{slug}}" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
+            <div id="va-video-modal-{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; align-items: center; justify-content: center;">
               <div style="position: relative; width: 90%; max-width: 900px; aspect-ratio: 16/9;">
                 <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <button onclick="document.getElementById('va-video-modal-{{slug}}').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
+                <button onclick="document.getElementById('va-video-modal-{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}').style.display='none'" style="position: absolute; top: -50px; right: 0; background: transparent; border: none; font-size: 40px; cursor: pointer; color: white; padding: 0; line-height: 1; font-weight: bold;">×</button>
               </div>
             </div>
           </div>
@@ -966,12 +975,12 @@
 
         <!-- Thumbnail Description -->
         <div class="va-thumbnail-box">
-          <p class="va-thumbnail-text">{{thumbnail-description}}</p>
+          <p class="va-thumbnail-text">{{wf {&quot;path&quot;:&quot;thumbnail-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</p>
         </div>
 
         <!-- Tagline -->
         <div class="va-tagline-box">
-          <p class="va-tagline-text">{{tagline}}</p>
+          <p class="va-tagline-text">{{wf {&quot;path&quot;:&quot;tagline&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</p>
         </div>
       </div>
     </div>
@@ -985,7 +994,7 @@
         IMPORTANTE: employment-summary es Plain Text, así que funciona en Custom Code.
         Si en el futuro cambia a Rich Text, usa un elemento Text de Webflow aquí.
       -->
-      <div class="va-employment-summary">{{employment-summary}}</div>
+      <div class="va-employment-summary">{{wf {&quot;path&quot;:&quot;employment-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</div>
       
       <h3 class="va-employment-history-title">EMPLOYMENT HISTORY</h3>
       <div class="va-employment-list" id="va-employment-target"></div>
@@ -1004,7 +1013,7 @@
             DISC PERSONALITY RESULT
           </h3>
           <div class="va-disc-result">
-            <div class="va-disc-badge">{{disc-type-2}}</div>
+            <div class="va-disc-badge" id="va-disc-type-target"></div>
             <div class="va-disc-description" id="va-disc-description-target"></div>
           </div>
         </div>
@@ -1014,10 +1023,10 @@
       <section class="va-english-section">
         <div class="va-english-container">
           <h3 style="font-size: 14px; font-weight: 700; color: white; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.05em;">
-            {{type-of-english-test}}
+            {{wf {&quot;path&quot;:&quot;type-of-english-test&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}
           </h3>
           <div class="va-english-result">
-            <div class="va-english-score">{{english-score-3}}</div>
+            <div class="va-english-score">{{wf {&quot;path&quot;:&quot;english-score-3&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}</div>
             <div class="va-english-description" id="va-english-description-target"></div>
           </div>
         </div>
@@ -1051,9 +1060,9 @@
 <script>
 (function() {
   try {
-    var videoUrl = '{{video}}' || '';
-    var videoThumbnail = '{{video-thumbnail-2}}' || '';
-    var slug = '{{slug}}' || '';
+    var videoUrl = '{{wf {&quot;path&quot;:&quot;video&quot;,&quot;type&quot;:&quot;Link&quot;\} }}' || '';
+    var videoThumbnail = '{{wf {&quot;path&quot;:&quot;video-thumbnail-2&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}' || '';
+    var slug = '{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}' || '';
     
     // Check if variables are actually replaced (not still template literals)
     if (videoUrl.indexOf('{{') >= 0 || slug.indexOf('{{') >= 0) {
@@ -1132,9 +1141,27 @@
 (function() {
   'use strict';
   
+  // DISC Type ID to Name mapping (fallback when Webflow shows ID instead of text)
+  var discTypeIdMap = {
+    '98fc52fe67a221da1b7ff13c642f9c86': 'D',
+    '6e45ac02de98a68482a875d8646ab49e': 'I',
+    '49ee7f5fd4baca315009cca5bb4cb60f': 'S',
+    'c612290ce9a805d70e5f8dd3d5870a21': 'C',
+    'b68c0c2b2f05478c7ffa034f4349ba80': 'D+I',
+    '83cbc127c3ccd02e1cb91bea429d21c0': 'S+I',
+    '66849bb5e3c9eca1b8d887bfec208b4d': 'S+C',
+    'cdbecaf82c1b7ec9592d5f9c0594c9c8': 'C+D',
+    'bd8e1c987130a11400b1e154d86078e4': 'C+S',
+    '261831e3c092bba1d0db2ff4dd00bd14': 'I+D',
+    '4618c8cf391c319461c4fdf1a5eae8b8': 'I+S',
+    'db8b318cc2c0f800fb7de5a012eb0041': 'D+C',
+    '840f41c14f4a5cc76f6030d3ef8c0d10': 'S+D'
+  };
+  
   function copyContent() {
     var fields = [
       ['va-summary-source', 'va-summary-target'],
+      ['va-disc-type-source', 'va-disc-type-target'],
       ['va-disc-description-source', 'va-disc-description-target'],
       ['va-english-description-source', 'va-english-description-target'],
       ['va-skills-source', 'va-skills-target'],
@@ -1162,6 +1189,106 @@
         if (source && target) {
           var content = source.innerHTML;
           
+          // Special handling for DISC Type - verify content exists and is valid
+          if (fields[i][0] === 'va-disc-type-source') {
+            console.log('🔵 DISC Type Copy Check:', {
+              sourceExists: !!source,
+              targetExists: !!target,
+              sourceContent: content ? content.substring(0, 50) : 'N/A',
+              contentLength: content ? content.length : 0,
+              isId: content ? /^[a-f0-9]{32}$/i.test(content.trim()) : false
+            });
+            
+            if (!content || content.trim() === '') {
+              console.warn('⚠️  DISC Type source element is empty. Make sure the disc-type-2 field in Webflow CMS has a value.');
+              if (target) {
+                target.innerHTML = 'N/A';
+              }
+            } else if (/^[a-f0-9]{32}$/i.test(content.trim())) {
+              console.warn('⚠️  DISC Type contains an ID instead of text. Attempting to get the actual option name...');
+              
+              // Try multiple methods to get the actual text value
+              var actualText = null;
+              
+              // Method 1: Try textContent/innerText (most reliable)
+              var textContent = source ? (source.textContent || source.innerText || '').trim() : '';
+              if (textContent && !/^[a-f0-9]{32}$/i.test(textContent)) {
+                actualText = textContent;
+                console.log('✅ Found text via textContent:', actualText);
+              }
+              
+              // Method 2: Try to get from data attributes or Webflow binding
+              if (!actualText && source) {
+                // Check for Webflow data attributes
+                var wfField = source.getAttribute('data-wf-field');
+                var wfText = source.getAttribute('data-wf-text');
+                if (wfText && wfText.trim() && !/^[a-f0-9]{32}$/i.test(wfText.trim())) {
+                  actualText = wfText.trim();
+                  console.log('✅ Found text via data-wf-text:', actualText);
+                }
+              }
+              
+              // Method 3: Try to get visible text (if element has child nodes with text)
+              if (!actualText && source) {
+                var children = source.childNodes;
+                for (var j = 0; j < children.length; j++) {
+                  var child = children[j];
+                  if (child.nodeType === 3) { // Text node
+                    var nodeText = child.textContent.trim();
+                    if (nodeText && !/^[a-f0-9]{32}$/i.test(nodeText)) {
+                      actualText = nodeText;
+                      console.log('✅ Found text via child text node:', actualText);
+                      break;
+                    }
+                  }
+                }
+              }
+              
+              // Method 4: Try to get from title or aria-label
+              if (!actualText && source) {
+                var title = source.getAttribute('title') || source.getAttribute('aria-label');
+                if (title && title.trim() && !/^[a-f0-9]{32}$/i.test(title.trim())) {
+                  actualText = title.trim();
+                  console.log('✅ Found text via title/aria-label:', actualText);
+                }
+              }
+              
+              // Method 5: Use ID mapping as last resort
+              if (!actualText && content.trim()) {
+                var idKey = content.trim().toLowerCase();
+                if (discTypeIdMap[idKey]) {
+                  actualText = discTypeIdMap[idKey];
+                  console.log('✅ Found text via ID mapping:', actualText);
+                }
+              }
+              
+              // If we found actual text, use it; otherwise show N/A
+              if (actualText) {
+                if (target) {
+                  target.innerHTML = actualText;
+                  console.log('✅ DISC Type updated to:', actualText);
+                }
+              } else {
+                console.error('❌ Could not extract DISC Type text from ID. The element may not be properly connected in Webflow Designer.');
+                console.error('💡 SOLUTION:');
+                console.error('   1. Go to Webflow Designer');
+                console.error('   2. Find the Text element with ID "va-disc-type-source"');
+                console.error('   3. Re-connect it to the "DISC Type 2" field (even if it\'s already connected)');
+                console.error('   4. Make sure the field is set to display the Option NAME, not the ID');
+                console.error('   5. Publish the site and clear browser cache');
+                if (target) {
+                  target.innerHTML = 'N/A';
+                }
+              }
+            } else {
+              console.log('✅ DISC Type content found:', content.trim());
+              if (target) {
+                target.innerHTML = content;
+              }
+            }
+            continue; // Skip to next field, DISC Type is handled
+          }
+          
           // Special handling for CEFR - verify content exists
           if (fields[i][0] === 'va-cefr-source') {
             if (!content || content.trim() === '') {
@@ -1171,7 +1298,36 @@
             }
           }
           
-          target.innerHTML = content;
+          // Special handling for Education - hide section if empty
+          if (fields[i][0] === 'va-education-source') {
+            var educationSection = document.querySelector('.va-education-section');
+            if (!content || content.trim() === '' || content.trim() === '<div class="va-education-item"></div>') {
+              if (educationSection) {
+                educationSection.style.display = 'none';
+              }
+              continue; // Don't copy empty content, skip to next field
+            } else {
+              if (educationSection) {
+                educationSection.style.display = '';
+              }
+            }
+          }
+          
+          // Default: copy content for all fields
+          if (target) {
+            target.innerHTML = content;
+          }
+        } else {
+          // Log missing elements for DISC Type specifically
+          if (fields[i][0] === 'va-disc-type-source') {
+            console.error('❌ DISC Type elements missing:', {
+              sourceExists: !!source,
+              targetExists: !!target,
+              sourceId: fields[i][0],
+              targetId: fields[i][1]
+            });
+            console.error('💡 Make sure you have added a Text element with ID "va-disc-type-source" in Webflow Designer and connected it to the "DISC Type 2" field.');
+          }
         }
       } catch(e) {
         if (fields[i][0] === 'va-cefr-source') {
@@ -1184,3 +1340,6 @@
   setTimeout(copyContent, 2000);
 })();
 </script>
+
+<!-- SCHEMA MARKUP: Include va-profile-schema-markup-dynamic.html here -->
+<!-- Or copy the schema markup code from va-profile-schema-markup-dynamic.html -->

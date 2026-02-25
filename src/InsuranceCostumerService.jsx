@@ -32,8 +32,8 @@ function InsuranceCostumerService() {
             <div>
               <HeroPlaceholder 
                 title="Insurance Customer Service Representative"
-                description="Professional customer service representative handling insurance inquiries with expertise and care. (1200x800px recommended)"
-                imageSrc="/images/Services/customer-service-hero.webp"
+                description="Professional insurance customer service representative handling client inquiries with expertise and care. (1200x800px recommended)"
+                imageSrc="/images/Services/insurance-customer-service-hero.webp"
                 imageAlt="Insurance Customer Service Representative handling client interactions"
               />
             </div>

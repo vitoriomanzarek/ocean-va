@@ -223,8 +223,8 @@ function AppContent() {
           {/* Contact Us Page */}
           <Route path="/contact-us" element={<ContactUs />} />
           
-          {/* Careers Page */}
-          <Route path="/careers" element={<Careers />} />
+          {/* Careers Page - Disabled */}
+          {/* <Route path="/careers" element={<Careers />} /> */}
           
           {/* Blogs Page */}
           <Route path="/blogs" element={<Blogs />} />

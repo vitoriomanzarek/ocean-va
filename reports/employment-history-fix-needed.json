@@ -1,0 +1,153 @@
+{
+  "analysis": {
+    "ac": {
+      "name": "AC",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "aaron-a0d16": {
+      "name": "Aaron",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "albert": {
+      "name": "Albert",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "ana": {
+      "name": "Ana",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "ana-gabriela": {
+      "name": "Ana Gabriela",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "ana-victoria": {
+      "name": "Ana Victoria",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "anahi": {
+      "name": "Anahi",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "andrea": {
+      "name": "Andrea",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "andres": {
+      "name": "Andres",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "angel": {
+      "name": "Angel",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "antonio": {
+      "name": "Antonio",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "balbina": {
+      "name": "Balbina",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    },
+    "bernadette-abellana": {
+      "name": "Bernadette",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": false,
+      "isEmpty": false,
+      "needsFix": true
+    },
+    "brandon": {
+      "name": "Brandon L.",
+      "hasCompanyTitle": true,
+      "hasBulletPoints": true,
+      "isEmpty": false,
+      "needsFix": false
+    }
+  },
+  "needsManualFix": [
+    {
+      "slug": "anahi",
+      "name": "Anahi",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    },
+    {
+      "slug": "andrea",
+      "name": "Andrea",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    },
+    {
+      "slug": "andres",
+      "name": "Andres",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    },
+    {
+      "slug": "angel",
+      "name": "Angel",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    },
+    {
+      "slug": "antonio",
+      "name": "Antonio",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    },
+    {
+      "slug": "bernadette-abellana",
+      "name": "Bernadette",
+      "issues": [
+        "Missing bullet points"
+      ],
+      "currentHtml": "<div class=\"va-employment-accordion\"><div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\"><div class=\"va-employmen..."
+    }
+  ],
+  "template": "<div class=\"va-employment-accordion\">\n<div class=\"va-employment-accordion-header\" onclick=\"this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');\">\n<div class=\"va-employment-accordion-title\">\n<h4 class=\"va-employment-accordion-company\">COMPANY NAME</h4>\n<p class=\"va-employment-accordion-position\">Position Title</p>\n<p class=\"va-employment-accordion-period\">Period</p>\n</div>\n<svg class=\"va-employment-accordion-icon\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\">\n<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 9l-7 7-7-7\"></path>\n</svg>\n</div>\n<div class=\"va-employment-accordion-content\">\n<p class=\"va-employment-accordion-description\">\n<p>• Bullet 1</p><p>• Bullet 2</p><p>• Bullet 3</p>\n</p>\n</div>\n</div>"
+}

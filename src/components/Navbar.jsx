@@ -46,7 +46,6 @@ export default function Navbar() {
       ]
     },
     { name: 'Blogs', href: '/blogs' },
-    { name: 'Careers', href: '/careers' },
     { name: 'About Us', href: '/about-us' },
   ]
 

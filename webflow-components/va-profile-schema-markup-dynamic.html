@@ -1,0 +1,216 @@
+<!--
+  VA PROFILE SCHEMA MARKUP - DYNAMIC TEMPLATE FOR WEBFLOW
+  ========================================================
+  
+  INSTRUCCIONES DE USO:
+  1. Agregar este código en Settings > Custom Code > Head Code del Collection Template
+  2. Los campos CMS se reemplazan automáticamente por Webflow usando {{field-slug}}
+  
+  CAMPOS CMS REQUERIDOS:
+  - name: Nombre del VA
+  - title-2 o title: Título/Rol (ej: "Insurance Virtual Assistant")
+  - profile-slug-2: Slug del perfil (puede ser URL completa o solo slug)
+  - summary: Descripción (Rich Text - se usará para construir description)
+  - experience-years: Años de experiencia
+  - languages: Idiomas (ej: "English", "Bilingual (EN-ES)")
+  - image: Campo Image del CMS
+  - video: URL del video de YouTube
+  
+  NOTA: Este script genera UN SOLO schema Person para evitar duplicados.
+  Elimina cualquier otro schema estático que pueda estar en el template.
+-->
+
+<!-- 
+  VERSIÓN MEJORADA CON JAVASCRIPT (ÚNICA VERSIÓN):
+  Esta versión extrae datos del DOM y construye el schema dinámicamente,
+  permitiendo manejar campos Rich Text y Multi-reference más fácilmente.
+  Incluye validaciones para evitar placeholders y URLs mal formadas.
+-->
+
+<script>
+(function() {
+  'use strict';
+  
+  // Esperar a que el DOM esté listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', buildSchema);
+  } else {
+    buildSchema();
+  }
+  
+  function buildSchema() {
+    // Función para obtener texto de un elemento
+    function getText(selector, fallback) {
+      const el = document.querySelector(selector);
+      return el ? (el.innerText || el.textContent || '').trim() : (fallback || '');
+    }
+    
+    // Función para obtener imagen
+    function getImage() {
+      const img = document.querySelector('.va-image-frame img') || 
+                  document.querySelector('[data-wf-field="image"] img');
+      return img ? img.src : '';
+    }
+    
+    // Función para construir URL del perfil (CORREGIDA)
+    function getProfileUrl() {
+      // Intentar obtener profile-slug-2 desde el DOM
+      const profileSlugField = getText('[data-wf-field="profile-slug-2"]', '');
+      
+      // Si profile-slug-2 ya es una URL completa, usarla directamente
+      if (profileSlugField && profileSlugField.startsWith('http')) {
+        return profileSlugField;
+      }
+      
+      // Si profile-slug-2 es solo un slug, construir la URL
+      if (profileSlugField) {
+        // Remover cualquier URL base que pueda estar incluida
+        const slug = profileSlugField.replace(/^https?:\/\/[^\/]+/, '').replace(/^\//, '');
+        return 'https://www.oceanvirtualassistant.com/' + slug;
+      }
+      
+      // Fallback: usar el slug del CMS o la URL actual
+      const slug = getText('[data-wf-field="slug"]', '') || 
+                   window.location.pathname.split('/').pop();
+      
+      if (slug) {
+        return 'https://www.oceanvirtualassistant.com/' + slug;
+      }
+      
+      return window.location.href;
+    }
+    
+    // Obtener datos
+    const name = getText('.va-profile-name', '{{name}}');
+    const title = getText('[data-wf-field="title-2"]', '{{title-2}}') || 
+                  getText('[data-wf-field="title"]', '{{title}}');
+    const experience = getText('[data-wf-field="experience-years"]', '{{experience-years}}');
+    const languages = getText('[data-wf-field="languages"]', '{{languages}}') || 'English';
+    const summary = getText('.va-summary', '');
+    const imageUrl = getImage() || '{{image.url}}';
+    
+    // Obtener video URL
+    let videoUrl = getText('[data-wf-field="video"]', '') ||
+                   getText('[data-wf-field="video-url"]', '') ||
+                   '{{video}}';
+    
+    // Si videoUrl está vacío o contiene placeholders, intentar extraer del DOM
+    if (!videoUrl || videoUrl.includes('{{')) {
+      const videoContainer = document.querySelector('.va-video-container');
+      if (videoContainer) {
+        const onclick = videoContainer.getAttribute('onclick');
+        if (onclick) {
+          const match = onclick.match(/youtube\.com\/watch\?v=([^"&\s]+)/);
+          if (match) {
+            videoUrl = 'https://www.youtube.com/watch?v=' + match[1];
+          }
+        }
+        // También intentar desde data attributes
+        const dataVideo = videoContainer.getAttribute('data-video-url');
+        if (dataVideo) {
+          videoUrl = dataVideo;
+        }
+      }
+    }
+    
+    // Validar que videoUrl sea una URL válida antes de incluirla
+    if (videoUrl && (videoUrl.includes('{{') || !videoUrl.startsWith('http'))) {
+      videoUrl = null;
+    }
+    
+    // Obtener specializations (desde skills o specialization field)
+    const specializations = [];
+    const skillsContainer = document.querySelector('.va-skills-container');
+    if (skillsContainer) {
+      const skillTags = skillsContainer.querySelectorAll('.va-skill-tag');
+      skillTags.forEach(tag => {
+        const skill = (tag.innerText || tag.textContent || '').trim();
+        if (skill) {
+          // Convertir a formato knowsAbout (lowercase, con guiones)
+          const formatted = skill.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          if (formatted && !specializations.includes(formatted)) {
+            specializations.push(formatted);
+          }
+        }
+      });
+    }
+    
+    // Construir descripción
+    let description = name + ' is a ' + title + '.';
+    if (experience && !experience.includes('{{')) {
+      description += ' with ' + experience + ' years of experience.';
+    }
+    if (languages && !languages.includes('{{')) {
+      description += ' fluent in ' + languages + '.';
+    }
+    
+    // Agregar parte del summary si está disponible
+    if (summary) {
+      const summaryPreview = summary.substring(0, 150).replace(/\s+\S*$/, '');
+      if (summaryPreview) {
+        description += ' ' + summaryPreview + '.';
+      }
+    }
+    
+    // Validar que los campos requeridos no sean placeholders
+    if (name.includes('{{') || title.includes('{{')) {
+      console.warn('Schema markup: Campos requeridos contienen placeholders, no se generará el schema');
+      return;
+    }
+    
+    // Construir schema
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": name,
+      "jobTitle": title,
+      "url": getProfileUrl(),
+      "description": description,
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ocean Virtual Assistant",
+        "url": "https://www.oceanvirtualassistant.com"
+      }
+    };
+    
+    // Solo agregar image si es una URL válida
+    if (imageUrl && !imageUrl.includes('{{') && imageUrl.startsWith('http')) {
+      schema.image = imageUrl;
+    }
+    
+    // Solo agregar sameAs si videoUrl es válido
+    if (videoUrl) {
+      schema.sameAs = [videoUrl];
+    }
+    
+    // Agregar knowsAbout si hay specializations
+    if (specializations.length > 0) {
+      schema.knowsAbout = specializations;
+    }
+    
+    // Remover TODOS los schemas anteriores (estáticos y dinámicos)
+    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+    existingScripts.forEach(script => {
+      // Solo remover si es nuestro schema o si contiene "Person"
+      try {
+        const content = script.textContent || '';
+        if (script.hasAttribute('data-va-schema') || content.includes('"@type": "Person"')) {
+          script.remove();
+        }
+      } catch (e) {
+        // Si hay error parseando, remover de todas formas si tiene el atributo
+        if (script.hasAttribute('data-va-schema')) {
+          script.remove();
+        }
+      }
+    });
+    
+    // Insertar nuevo schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-va-schema', 'true');
+    script.textContent = JSON.stringify(schema, null, 2);
+    document.head.appendChild(script);
+  }
+})();
+</script>
