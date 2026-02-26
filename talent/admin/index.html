@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talent Admin | Ocean Virtual Assistant</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          sans-serif;
+        background-color: #f3f4f6;
+        color: #111827;
+      }
+      .admin-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .admin-header {
+        background: linear-gradient(135deg, #024a47 0%, #037b77 50%, #049d98 100%);
+        color: #fff;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .admin-header-title {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .admin-header-sub {
+        font-size: 13px;
+        opacity: 0.85;
+      }
+      #logout-btn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .admin-main {
+        max-width: 1100px;
+        margin: 24px auto 40px;
+        padding: 0 16px;
+        width: 100%;
+        flex: 1;
+      }
+      #login-section {
+        max-width: 480px;
+        margin: 40px auto 0;
+      }
+      #login-section h2,
+      #login-section p {
+        text-align: center;
+      }
+      .admin-card {
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #e5e7eb;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      }
+      .admin-card h2 {
+        margin: 0 0 8px;
+        font-size: 22px;
+      }
+      .admin-card p {
+        margin: 0 0 20px;
+        color: #6b7280;
+        font-size: 14px;
+      }
+      .field {
+        margin-bottom: 16px;
+      }
+      .field label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #374151;
+      }
+      .field input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        font-size: 14px;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .field input:focus {
+        border-color: #037b77;
+        box-shadow: 0 0 0 1px rgba(3, 123, 119, 0.35);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .btn-primary {
+        background-color: #037b77;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background-color: #02635f;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+        transform: translateY(-1px);
+      }
+      .btn-secondary {
+        background-color: #e5e7eb;
+        color: #111827;
+      }
+      .btn-secondary:hover {
+        background-color: #d1d5db;
+      }
+      .btn-danger {
+        background-color: #b91c1c;
+        color: #fff;
+      }
+      .btn-danger:hover {
+        background-color: #991b1b;
+      }
+      .btn-sm {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 6px;
+      }
+      .btn-link {
+        background: transparent;
+        border: none;
+        color: #f9fafb;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 4px 8px;
+      }
+      .btn-link:hover {
+        text-decoration: underline;
+      }
+      .row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .row > div {
+        flex: 1;
+        min-width: 220px;
+      }
+      .mt-16 {
+        margin-top: 16px;
+      }
+      .mt-24 {
+        margin-top: 24px;
+      }
+      .mt-8 {
+        margin-top: 8px;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .error {
+        font-size: 13px;
+        color: #b91c1c;
+        margin-top: 4px;
+      }
+      .notice {
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        margin-bottom: 12px;
+      }
+      .notice-info {
+        background-color: #e0f2fe;
+        color: #075985;
+      }
+      .notice-error {
+        background-color: #fee2e2;
+        color: #b91c1c;
+      }
+      .hidden {
+        display: none;
+      }
+      .vacancies-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .vacancies-list {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .vacancy-item {
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 12px 14px;
+        background-color: #f9fafb;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+      .vacancy-main {
+        min-width: 0;
+      }
+      .vacancy-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 2px;
+        word-break: break-word;
+      }
+      .vacancy-url {
+        font-size: 12px;
+        color: #0369a1;
+        word-break: break-all;
+      }
+      .vacancy-meta {
+        font-size: 12px;
+        color: #6b7280;
+        margin-top: 2px;
+      }
+      .vacancy-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-shrink: 0;
+      }
+      @media (min-width: 640px) {
+        .vacancy-actions {
+          flex-direction: row;
+        }
+      }
+      .empty-state {
+        text-align: center;
+        font-size: 14px;
+        color: #6b7280;
+        padding: 16px 0;
+      }
+      .loading-state {
+        text-align: center;
+        font-size: 14px;
+        color: #037b77;
+        padding: 20px 0;
+      }
+      .loading-state::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        vertical-align: middle;
+        border: 2px solid #e5e7eb;
+        border-top-color: #037b77;
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      .btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+      .wrong-port-banner {
+        background: #b91c1c;
+        color: #fff;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .wrong-port-banner a {
+        color: #fef08a;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrong-port-banner" class="wrong-port-banner hidden">
+      Estás en el puerto equivocado: la API no está aquí y verás 404. Abre el admin desde donde corre el servidor (ej. <a id="correct-admin-link" href="#">http://localhost:3000/admin</a>).
+    </div>
+    <div class="admin-page">
+      <header class="admin-header">
+        <div>
+          <div class="admin-header-title">Talent Admin</div>
+          <div class="admin-header-sub">Manage open roles for Ocean Virtual Assistant</div>
+        </div>
+        <button id="logout-btn" class="btn-link hidden" type="button">Log out</button>
+      </header>
+
+      <main class="admin-main">
+        <section id="login-section" class="admin-card">
+          <h2>Admin Login</h2>
+          <p>Sign in to manage the vacancies shown on the Talent page.</p>
+
+          <div id="login-error" class="notice notice-error hidden"></div>
+
+          <form id="login-form">
+            <div class="field">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text" autocomplete="username" required />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+            <div class="text-right mt-16">
+              <button class="btn btn-primary" type="submit">Sign in</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="admin-section" class="admin-card hidden mt-24">
+          <div class="vacancies-header">
+            <div>
+              <h2 class="mt-0">Vacancies</h2>
+              <p class="mt-0" style="margin-top: 4px">
+                These roles will appear on the Talent landing page.
+              </p>
+            </div>
+            <button id="new-btn" class="btn btn-primary btn-sm" type="button">
+              + New vacancy
+            </button>
+          </div>
+
+          <div id="admin-message" class="notice hidden mt-16"></div>
+
+          <div id="vacancies-list" class="vacancies-list"></div>
+
+          <hr class="mt-24" />
+
+          <div class="mt-16">
+            <h3 id="form-title" style="margin: 0 0 8px; font-size: 16px">Create vacancy</h3>
+            <p style="margin: 0 0 12px; font-size: 13px; color: #6b7280">
+              Fill in the fields below. <strong>Title</strong> and <strong>URL</strong> are required.
+              If you leave the button label empty, it will default to
+              <em>View job on Indeed</em>.
+            </p>
+
+            <form id="vacancy-form">
+              <div class="field">
+                <label for="title">Title *</label>
+                <input id="title" name="title" type="text" required />
+              </div>
+              <div class="field">
+                <label for="url">URL *</label>
+                <input id="url" name="url" type="url" required />
+                <div class="error" id="url-error" style="display: none">
+                  Please enter a valid URL (including https://).
+                </div>
+              </div>
+              <div class="field">
+                <label for="buttonLabel">Button label (optional)</label>
+                <input
+                  id="buttonLabel"
+                  name="buttonLabel"
+                  type="text"
+                  placeholder="View job on Indeed"
+                />
+              </div>
+              <div class="row mt-16" style="justify-content: flex-end">
+                <div style="flex: 0 0 auto">
+                  <button id="cancel-edit" class="btn btn-secondary btn-sm" type="button">
+                    Cancel
+                  </button>
+                  <button class="btn btn-primary btn-sm" type="submit">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      (function () {
+        const TOKEN_KEY = 'talentAdminToken';
+        // Si abres el admin desde otro puerto (ej. Live Server 8081), pon aquí la URL base de la API.
+        // Ejemplo: 'http://localhost:3000' cuando usas "npx vercel dev" en el puerto 3000.
+        const API_BASE = '';
+
+        const loginSection = document.getElementById('login-section');
+        const adminSection = document.getElementById('admin-section');
+        const loginForm = document.getElementById('login-form');
+        const loginError = document.getElementById('login-error');
+        const logoutBtn = document.getElementById('logout-btn');
+
+        const listEl = document.getElementById('vacancies-list');
+        const adminMessage = document.getElementById('admin-message');
+        const newBtn = document.getElementById('new-btn');
+
+        const form = document.getElementById('vacancy-form');
+        const formTitle = document.getElementById('form-title');
+        const titleInput = document.getElementById('title');
+        const urlInput = document.getElementById('url');
+        const buttonLabelInput = document.getElementById('buttonLabel');
+        const urlError = document.getElementById('url-error');
+        const cancelEditBtn = document.getElementById('cancel-edit');
+        const saveBtn = form.querySelector('button[type="submit"]');
+
+        let token = localStorage.getItem(TOKEN_KEY) || '';
+        let vacancies = [];
+        let editingId = null;
+        let isSaving = false;
+
+        function showLogin() {
+          loginSection.classList.remove('hidden');
+          adminSection.classList.add('hidden');
+          logoutBtn.classList.add('hidden');
+        }
+
+        function showAdmin() {
+          loginSection.classList.add('hidden');
+          adminSection.classList.remove('hidden');
+          logoutBtn.classList.remove('hidden');
+          loadVacancies();
+        }
+
+        function setAdminMessage(text, type) {
+          if (!text) {
+            adminMessage.classList.add('hidden');
+            adminMessage.textContent = '';
+            adminMessage.classList.remove('notice-info', 'notice-error');
+            return;
+          }
+          adminMessage.textContent = text;
+          adminMessage.classList.remove('hidden');
+          adminMessage.classList.remove('notice-info', 'notice-error');
+          adminMessage.classList.add(type === 'error' ? 'notice-error' : 'notice-info');
+        }
+
+        function renderVacancies() {
+          listEl.innerHTML = '';
+          if (!Array.isArray(vacancies) || vacancies.length === 0) {
+            const empty = document.createElement('div');
+            empty.className = 'empty-state';
+            empty.textContent = 'No vacancies created yet.';
+            listEl.appendChild(empty);
+            return;
+          }
+
+          vacancies.forEach((vacancy) => {
+            const item = document.createElement('div');
+            item.className = 'vacancy-item';
+
+            const main = document.createElement('div');
+            main.className = 'vacancy-main';
+
+            const title = document.createElement('div');
+            title.className = 'vacancy-title';
+            title.textContent = vacancy.title || '(No title)';
+
+            const url = document.createElement('div');
+            url.className = 'vacancy-url';
+            url.textContent = vacancy.url || '';
+
+            const meta = document.createElement('div');
+            meta.className = 'vacancy-meta';
+            const label =
+              typeof vacancy.buttonLabel === 'string' && vacancy.buttonLabel.trim()
+                ? vacancy.buttonLabel.trim()
+                : 'View job on Indeed';
+            meta.textContent = 'Button label: ' + label;
+
+            main.appendChild(title);
+            main.appendChild(url);
+            main.appendChild(meta);
+
+            const actions = document.createElement('div');
+            actions.className = 'vacancy-actions';
+
+            const editBtn = document.createElement('button');
+            editBtn.type = 'button';
+            editBtn.className = 'btn btn-secondary btn-sm';
+            editBtn.textContent = 'Edit';
+            editBtn.addEventListener('click', () => {
+              editingId = vacancy.id;
+              formTitle.textContent = 'Edit vacancy';
+              titleInput.value = vacancy.title || '';
+              urlInput.value = vacancy.url || '';
+              buttonLabelInput.value = vacancy.buttonLabel || '';
+              urlError.style.display = 'none';
+              titleInput.focus();
+              form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.type = 'button';
+            deleteBtn.className = 'btn btn-danger btn-sm';
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.addEventListener('click', async () => {
+              if (!token) {
+                setAdminMessage('Session expired. Please log in again.', 'error');
+                showLogin();
+                return;
+              }
+              const confirmed = window.confirm('Delete this vacancy?');
+              if (!confirmed) return;
+
+              deleteBtn.disabled = true;
+              deleteBtn.textContent = 'Deleting…';
+              setAdminMessage('Deleting…', 'info');
+              try {
+                const res = await fetch(API_BASE + '/api/vacancies/' + encodeURIComponent(vacancy.id), {
+                  method: 'DELETE',
+                  headers: {
+                    Authorization: 'Bearer ' + token,
+                  },
+                });
+                if (res.status === 401) {
+                  token = '';
+                  localStorage.removeItem(TOKEN_KEY);
+                  setAdminMessage('Session expired. Please log in again.', 'error');
+                  showLogin();
+                  deleteBtn.disabled = false;
+                  deleteBtn.textContent = 'Delete';
+                  return;
+                }
+                if (!res.ok && res.status !== 204) {
+                  throw new Error('Failed to delete vacancy');
+                }
+                await loadVacancies();
+                setAdminMessage('Vacancy deleted.', 'info');
+              } catch (err) {
+                console.error(err);
+                setAdminMessage('Error deleting vacancy.', 'error');
+              } finally {
+                deleteBtn.disabled = false;
+                deleteBtn.textContent = 'Delete';
+              }
+            });
+
+            actions.appendChild(editBtn);
+            actions.appendChild(deleteBtn);
+
+            item.appendChild(main);
+            item.appendChild(actions);
+            listEl.appendChild(item);
+          });
+        }
+
+        async function loadVacancies() {
+          listEl.innerHTML = '<div class="loading-state">Loading vacancies…</div>';
+          setAdminMessage('', 'info');
+          try {
+            const res = await fetch(API_BASE + '/api/vacancies');
+            if (!res.ok) {
+              if (res.status === 404) {
+                listEl.innerHTML = '';
+                setAdminMessage(
+                  'API no encontrada (404). Abre esta página desde donde corre "npx vercel dev", ej. http://localhost:3000/admin',
+                  'error'
+                );
+                return;
+              }
+              throw new Error('Failed to load vacancies');
+            }
+            vacancies = await res.json();
+            renderVacancies();
+          } catch (err) {
+            console.error(err);
+            listEl.innerHTML = '';
+            setAdminMessage('Error loading vacancies.', 'error');
+          }
+        }
+
+        loginForm.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          loginError.classList.add('hidden');
+          loginError.textContent = '';
+
+          const formData = new FormData(loginForm);
+          const username = (formData.get('username') || '').toString().trim();
+          const password = (formData.get('password') || '').toString();
+
+          if (!username || !password) {
+            loginError.textContent = 'Please enter username and password.';
+            loginError.classList.remove('hidden');
+            return;
+          }
+
+          try {
+            const res = await fetch(API_BASE + '/api/login', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ username, password }),
+            });
+            const data = await res.json().catch(() => ({}));
+
+            if (!res.ok || !data.token) {
+              loginError.textContent = data.error || 'Invalid credentials.';
+              loginError.classList.remove('hidden');
+              return;
+            }
+
+            token = data.token;
+            localStorage.setItem(TOKEN_KEY, token);
+            loginForm.reset();
+            showAdmin();
+          } catch (err) {
+            console.error(err);
+            loginError.textContent = 'Error connecting to server.';
+            loginError.classList.remove('hidden');
+          }
+        });
+
+        logoutBtn.addEventListener('click', () => {
+          token = '';
+          localStorage.removeItem(TOKEN_KEY);
+          setAdminMessage('', 'info');
+          showLogin();
+        });
+
+        newBtn.addEventListener('click', () => {
+          editingId = null;
+          formTitle.textContent = 'Create vacancy';
+          form.reset();
+          urlError.style.display = 'none';
+          titleInput.focus();
+        });
+
+        cancelEditBtn.addEventListener('click', () => {
+          editingId = null;
+          formTitle.textContent = 'Create vacancy';
+          form.reset();
+          urlError.style.display = 'none';
+        });
+
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          if (isSaving) return;
+          urlError.style.display = 'none';
+          setAdminMessage('', 'info');
+
+          if (!token) {
+            setAdminMessage('Session expired. Please log in again.', 'error');
+            showLogin();
+            return;
+          }
+
+          const title = titleInput.value.trim();
+          const url = urlInput.value.trim();
+          const buttonLabel = buttonLabelInput.value.trim();
+
+          if (!title || !url) {
+            setAdminMessage('Title and URL are required.', 'error');
+            return;
+          }
+
+          try {
+            // Basic URL validation to give instant feedback
+            new URL(url);
+          } catch {
+            urlError.style.display = 'block';
+            return;
+          }
+
+          const payload = {
+            title,
+            url,
+          };
+          if (buttonLabel) {
+            payload.buttonLabel = buttonLabel;
+          }
+
+          const isEdit = !!editingId;
+          const endpoint = isEdit
+            ? API_BASE + '/api/vacancies/' + encodeURIComponent(editingId)
+            : API_BASE + '/api/vacancies';
+          const method = isEdit ? 'PUT' : 'POST';
+
+          try {
+            isSaving = true;
+            saveBtn.disabled = true;
+            saveBtn.textContent = 'Saving…';
+            cancelEditBtn.disabled = true;
+            setAdminMessage('Saving…', 'info');
+
+            const res = await fetch(endpoint, {
+              method,
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: 'Bearer ' + token,
+              },
+              body: JSON.stringify(payload),
+            });
+
+            const data = await res.json().catch(() => ({}));
+
+            if (res.status === 401) {
+              token = '';
+              localStorage.removeItem(TOKEN_KEY);
+              setAdminMessage('Session expired. Please log in again.', 'error');
+              showLogin();
+              return;
+            }
+
+            if (!res.ok) {
+              let errMsg = data.detail
+                ? data.error + ': ' + data.detail
+                : (data.error || 'Error saving vacancy.');
+              if (res.status === 404) {
+                errMsg =
+                  'API no encontrada (404). Abre esta página desde el mismo servidor que la API. Si usas "npx vercel dev", entra a http://localhost:3000/admin (o el puerto que indique la terminal).';
+              }
+              setAdminMessage(errMsg, 'error');
+              return;
+            }
+
+            const createdOrUpdated = data;
+            vacancies = Array.isArray(vacancies) ? [...vacancies] : [];
+            if (isEdit) {
+              const idx = vacancies.findIndex((v) => v.id === editingId);
+              if (idx !== -1) vacancies[idx] = { ...vacancies[idx], ...createdOrUpdated };
+            } else {
+              vacancies.push(createdOrUpdated);
+            }
+            renderVacancies();
+            setAdminMessage(isEdit ? 'Vacancy updated.' : 'Vacancy created.', 'info');
+            editingId = null;
+            formTitle.textContent = 'Create vacancy';
+            form.reset();
+
+            await loadVacancies();
+          } catch (err) {
+            console.error(err);
+            setAdminMessage('Error saving vacancy.', 'error');
+          } finally {
+            isSaving = false;
+            saveBtn.disabled = false;
+            saveBtn.textContent = 'Save';
+            cancelEditBtn.disabled = false;
+          }
+        });
+
+        // Aviso si se abre desde puerto equivocado (ej. Live Server 8081)
+        const wrongPortBanner = document.getElementById('wrong-port-banner');
+        const correctAdminLink = document.getElementById('correct-admin-link');
+        if (wrongPortBanner && (window.location.port === '8081' || window.location.port === '5500')) {
+          wrongPortBanner.classList.remove('hidden');
+          const base = window.location.protocol + '//' + window.location.hostname + ':3000';
+          if (correctAdminLink) {
+            correctAdminLink.href = base + '/admin';
+            correctAdminLink.textContent = base + '/admin';
+          }
+        }
+
+        // Initial state
+        if (token) {
+          showAdmin();
+        } else {
+          showLogin();
+        }
+      })();
+    </script>
+  </body>
+</html>
+

@@ -27,3 +27,5 @@ Thumbs.db
 # MCP Configuration Documentation
 mcp-config-review.md
 verify-github-mcp.md
+.vercel
+.env*.local
