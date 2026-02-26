@@ -303,7 +303,7 @@
       <main class="admin-main">
         <section id="login-section" class="admin-card">
           <h2>Admin Login</h2>
-          <p>Sign in to manage the vacancies shown on the Talent page.</p>
+          <p>Sign in to manage the job posts shown on the Talent page.</p>
 
           <div id="login-error" class="notice notice-error hidden"></div>
 
@@ -331,13 +331,13 @@
         <section id="admin-section" class="admin-card hidden mt-24">
           <div class="vacancies-header">
             <div>
-              <h2 class="mt-0">Vacancies</h2>
+              <h2 class="mt-0">Job posts</h2>
               <p class="mt-0" style="margin-top: 4px">
-                These roles will appear on the Talent landing page.
+                These job posts will appear on the Talent landing page.
               </p>
             </div>
             <button id="new-btn" class="btn btn-primary btn-sm" type="button">
-              + New vacancy
+              + New job post
             </button>
           </div>
 
@@ -348,7 +348,7 @@
           <hr class="mt-24" />
 
           <div class="mt-16">
-            <h3 id="form-title" style="margin: 0 0 8px; font-size: 16px">Create vacancy</h3>
+            <h3 id="form-title" style="margin: 0 0 8px; font-size: 16px">Create job post</h3>
             <p style="margin: 0 0 12px; font-size: 13px; color: #6b7280">
               Fill in the fields below. <strong>Title</strong> and <strong>URL</strong> are required.
               If you leave the button label empty, it will default to
@@ -452,7 +452,7 @@
           if (!Array.isArray(vacancies) || vacancies.length === 0) {
             const empty = document.createElement('div');
             empty.className = 'empty-state';
-            empty.textContent = 'No vacancies created yet.';
+            empty.textContent = 'No job posts yet.';
             listEl.appendChild(empty);
             return;
           }
@@ -493,7 +493,7 @@
             editBtn.textContent = 'Edit';
             editBtn.addEventListener('click', () => {
               editingId = vacancy.id;
-              formTitle.textContent = 'Edit vacancy';
+              formTitle.textContent = 'Edit job post';
               titleInput.value = vacancy.title || '';
               urlInput.value = vacancy.url || '';
               buttonLabelInput.value = vacancy.buttonLabel || '';
@@ -512,7 +512,7 @@
                 showLogin();
                 return;
               }
-              const confirmed = window.confirm('Delete this vacancy?');
+              const confirmed = window.confirm('Delete this job post?');
               if (!confirmed) return;
 
               deleteBtn.disabled = true;
@@ -535,13 +535,13 @@
                   return;
                 }
                 if (!res.ok && res.status !== 204) {
-                  throw new Error('Failed to delete vacancy');
+                  throw new Error('Failed to delete job post');
                 }
                 await loadVacancies();
-                setAdminMessage('Vacancy deleted.', 'info');
+                setAdminMessage('Job post deleted.', 'info');
               } catch (err) {
                 console.error(err);
-                setAdminMessage('Error deleting vacancy.', 'error');
+                setAdminMessage('Error deleting job post.', 'error');
               } finally {
                 deleteBtn.disabled = false;
                 deleteBtn.textContent = 'Delete';
@@ -558,7 +558,7 @@
         }
 
         async function loadVacancies() {
-          listEl.innerHTML = '<div class="loading-state">Loading vacancies…</div>';
+          listEl.innerHTML = '<div class="loading-state">Loading job posts…</div>';
           setAdminMessage('', 'info');
           try {
             const res = await fetch(API_BASE + '/api/vacancies');
@@ -571,14 +571,14 @@
                 );
                 return;
               }
-              throw new Error('Failed to load vacancies');
+              throw new Error('Failed to load job posts');
             }
             vacancies = await res.json();
             renderVacancies();
           } catch (err) {
             console.error(err);
             listEl.innerHTML = '';
-            setAdminMessage('Error loading vacancies.', 'error');
+            setAdminMessage('Error loading job posts.', 'error');
           }
         }
 
@@ -633,7 +633,7 @@
 
         newBtn.addEventListener('click', () => {
           editingId = null;
-          formTitle.textContent = 'Create vacancy';
+          formTitle.textContent = 'Create job post';
           form.reset();
           urlError.style.display = 'none';
           titleInput.focus();
@@ -641,7 +641,7 @@
 
         cancelEditBtn.addEventListener('click', () => {
           editingId = null;
-          formTitle.textContent = 'Create vacancy';
+          formTitle.textContent = 'Create job post';
           form.reset();
           urlError.style.display = 'none';
         });
@@ -718,7 +718,7 @@
             if (!res.ok) {
               let errMsg = data.detail
                 ? data.error + ': ' + data.detail
-                : (data.error || 'Error saving vacancy.');
+                : (data.error || 'Error saving job post.');
               if (res.status === 404) {
                 errMsg =
                   'API no encontrada (404). Abre esta página desde el mismo servidor que la API. Si usas "npx vercel dev", entra a http://localhost:3000/admin (o el puerto que indique la terminal).';
@@ -736,15 +736,15 @@
               vacancies.push(createdOrUpdated);
             }
             renderVacancies();
-            setAdminMessage(isEdit ? 'Vacancy updated.' : 'Vacancy created.', 'info');
+            setAdminMessage(isEdit ? 'Job post updated.' : 'Job post created.', 'info');
             editingId = null;
-            formTitle.textContent = 'Create vacancy';
+            formTitle.textContent = 'Create job post';
             form.reset();
 
             await loadVacancies();
           } catch (err) {
             console.error(err);
-            setAdminMessage('Error saving vacancy.', 'error');
+            setAdminMessage('Error saving job post.', 'error');
           } finally {
             isSaving = false;
             saveBtn.disabled = false;
