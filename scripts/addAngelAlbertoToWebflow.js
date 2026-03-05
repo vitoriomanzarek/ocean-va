@@ -24,9 +24,9 @@ if (!siteId) {
 const client = new WebflowApiClient(token);
 
 // Angel Alberto's data
-const angelData = {
+export const angelData = {
   name: 'Angel Alberto',
-  title: 'BILINGUAL VA | INSURANCE VIRTUAL ASSISTANT',
+  title: 'BILINGUAL VA | Insurance Virtual Assistant',
   experienceYears: '4+ years',
   languages: 'Bilingual (EN-ES)',
   availability: 'Full Time',
@@ -34,11 +34,11 @@ const angelData = {
 
   // Summary
   summary:
-    'Angel is a multilingual Virtual Assistant with strong experience in insurance customer service, sales support, client retention, and portfolio management in international environments. He has supported U.S.-based insurance clients, handling policy inquiries, endorsements, billing support, quoting, and relationship management. Angel is focused on delivering professional, empathetic support that helps maintain client loyalty and drive revenue growth.',
+    'Angel is a highly skilled multilingual Virtual Assistant with strong experience in insurance customer service, sales, client retention, and portfolio management across international environments. He has supported U.S.-based clients through his role with Allstate (Qualfon). His background also includes experience as an insurance agent and broker, managing client portfolios, prospecting new business, and developing tailored financial protection plans.',
 
   // Tagline
   tagline:
-    'Multilingual insurance virtual assistant supporting client relationships, policy servicing, and revenue growth with professionalism and empathy.',
+    'Angel is an excellent Virtual Assistant for insurance agencies, seeking a multilingual professional who can support client relationships, policy servicing and revenue growth with professionalism and empathy.',
 
   // Thumbnail Description
   thumbnailDescription:
@@ -58,28 +58,28 @@ const angelData = {
 
   // Skills (for tags + rich text)
   allSkills: [
-    'Insurance Customer Service',
-    'Policy Support',
-    'Endorsements',
+    'Personal Lines',
+    'Commercial Business',
+    'Policy Quoting',
+    'Endorsement Processing',
+    'Renewal Management',
+    'Underwriting Support',
     'Billing',
-    'Quoting Assistance',
-    'Client Retention',
-    'Cancellation Prevention',
-    'Sales & Portfolio Management',
-    'Account Recovery',
-    'Collections Negotiation',
-    'Customer Onboarding',
-    'Relationship Management',
-    'Administrative Documentation',
-    'Cross-Department Coordination',
+    'COI Processing',
+    'Cross-Selling & Upselling',
+    'Retention Strategies',
+    'Cancellation Management',
   ],
 
   // Tools & Platforms
   tools: [
-    'Microsoft Office (Advanced)',
+    'MS Office',
+    'Google Workspace',
+    'Zoho',
+    'Pipedrive',
+    'Microsoft Dynamics',
     'CRM & Customer Management Platforms',
-    'Insurance Systems & Client Portals',
-    'Email and phone communication tools',
+    'Carriers Websites',
   ],
 
   // Equipment

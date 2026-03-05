@@ -1,0 +1,457 @@
+<!-- Marketing Assistant - Tech Stack Section with Modal for Webflow -->
+
+<section class="marketing-assistant-tech-stack">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .marketing-assistant-tech-stack {
+      width: 100%;
+      background-color: #f9fafb;
+      padding: 64px 20px;
+    }
+
+    .marketing-assistant-tech-stack-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .marketing-assistant-tech-stack-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .marketing-assistant-tech-stack-header h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #037b77;
+      margin-bottom: 16px;
+    }
+
+    .marketing-assistant-tech-stack-header p {
+      font-size: 20px;
+      color: #6b7280;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    .marketing-assistant-tech-stack-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1152px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      .marketing-assistant-tech-stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .marketing-assistant-tech-stack-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .marketing-assistant-tech-card-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+    }
+
+    .marketing-assistant-tech-card-category {
+      font-size: 18px;
+      font-weight: 700;
+      color: #037b77;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .marketing-assistant-tech-card {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e5e7eb;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+
+    .marketing-assistant-tech-card:hover {
+      border-color: #049d98;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .marketing-assistant-tech-card-logos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      min-height: 48px;
+    }
+
+    .marketing-assistant-tech-card img {
+      height: 64px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .marketing-assistant-tech-card img.img-large {
+      height: 80px;
+    }
+
+    .marketing-assistant-tech-card img.img-small {
+      height: 48px;
+    }
+
+    .marketing-assistant-tech-card img.img-webflow {
+      height: 96px;
+    }
+
+    .marketing-assistant-tech-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .marketing-assistant-tech-modal.active {
+      display: flex;
+    }
+
+    .marketing-assistant-tech-modal-content {
+      background: white;
+      border-radius: 12px;
+      max-width: 672px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .marketing-assistant-tech-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .marketing-assistant-tech-modal-header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .marketing-assistant-tech-modal-header-left h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .marketing-assistant-tech-modal-header-left p {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .marketing-assistant-tech-modal-close {
+      font-size: 32px;
+      font-weight: 700;
+      color: #9ca3af;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .marketing-assistant-tech-modal-close:hover {
+      color: #6b7280;
+    }
+
+    .marketing-assistant-tech-modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .marketing-assistant-tech-modal-section h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #037b77;
+      margin-bottom: 8px;
+    }
+
+    .marketing-assistant-tech-modal-section p {
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .marketing-assistant-tech-modal-footer {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .marketing-assistant-tech-modal-button {
+      width: 100%;
+      background: #037b77;
+      color: white;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .marketing-assistant-tech-modal-button:hover {
+      background: #049d98;
+    }
+  </style>
+
+  <div class="marketing-assistant-tech-stack-container">
+    <div class="marketing-assistant-tech-stack-header">
+      <h2>Marketing Assistant Tech Stack</h2>
+      <p>
+        Some of our client's tools. Our marketing VAs work inside your existing automation, design,
+        email, and analytics stack to execute campaigns with consistency and precision.
+      </p>
+    </div>
+
+    <div class="marketing-assistant-tech-stack-grid">
+      <!-- Automation -->
+      <div class="marketing-assistant-tech-card-wrapper">
+        <div class="marketing-assistant-tech-card-category">Automation</div>
+        <div
+          class="marketing-assistant-tech-card"
+          onclick="openMarketingTechModal('marketing-automation')"
+        >
+          <div class="marketing-assistant-tech-card-logos">
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e710c27a32976db1d345_go%20high%20level%20logo.webp"
+              alt="GoHighLevel automation platform logo"
+              class="img-large"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e11217a2f889ab3fecff_active%20campaign.webp"
+              alt="ActiveCampaign marketing automation logo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="marketing-assistant-tech-card-wrapper">
+        <div class="marketing-assistant-tech-card-category">Design</div>
+        <div
+          class="marketing-assistant-tech-card"
+          onclick="openMarketingTechModal('marketing-design')"
+        >
+          <div class="marketing-assistant-tech-card-logos">
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e112bd86d57464a5faad_Canva.webp"
+              alt="Canva Pro design platform logo"
+              class="img-large"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e1127b39122cc505bf6b_adobe%20creative%20cloud.webp"
+              alt="Adobe Creative Cloud logo for Photoshop and Illustrator"
+              class="img-large"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Marketing -->
+      <div class="marketing-assistant-tech-card-wrapper">
+        <div class="marketing-assistant-tech-card-category">Email Marketing</div>
+        <div
+          class="marketing-assistant-tech-card"
+          onclick="openMarketingTechModal('marketing-email')"
+        >
+          <div class="marketing-assistant-tech-card-logos">
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e11274f6fc5266eae370_mailchimp.webp"
+              alt="Mailchimp email marketing platform logo"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e112328495ab719ae38e_klaviyo.webp"
+              alt="Klaviyo email and SMS marketing logo"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e112adbeceae61571f59_Brevo.webp"
+              alt="Brevo email marketing and automation logo"
+              class="img-small"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Web & Analytics -->
+      <div class="marketing-assistant-tech-card-wrapper">
+        <div class="marketing-assistant-tech-card-category">Web &amp; Analytics</div>
+        <div
+          class="marketing-assistant-tech-card"
+          onclick="openMarketingTechModal('marketing-web-analytics')"
+        >
+          <div class="marketing-assistant-tech-card-logos">
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e113924bcc9ffe6fee7c_wordpress.webp"
+              alt="WordPress website platform logo"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e112e167dad6ee77ca1d_webflow.webp"
+              alt="Webflow website builder logo"
+              class="img-large img-webflow"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/66e9b3f71eb321a17e92218a/69a5e1d181e68c50ca67e1f1_google_analytics.webp"
+              alt="Google Analytics 4 logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="marketingTechModal"
+    class="marketing-assistant-tech-modal"
+    onclick="closeMarketingTechModal(event)"
+  >
+    <div class="marketing-assistant-tech-modal-content" onclick="event.stopPropagation()">
+      <div class="marketing-assistant-tech-modal-header">
+        <div class="marketing-assistant-tech-modal-header-left">
+          <div>
+            <h3 id="marketingModalTitle"></h3>
+            <p id="marketingModalSubtitle" style="display: none"></p>
+          </div>
+        </div>
+        <button class="marketing-assistant-tech-modal-close" onclick="closeMarketingTechModal()">
+          &times;
+        </button>
+      </div>
+
+      <div class="marketing-assistant-tech-modal-body">
+        <div class="marketing-assistant-tech-modal-section">
+          <h4 id="marketingModalWhatTitle"></h4>
+          <p id="marketingModalDescription"></p>
+        </div>
+        <div class="marketing-assistant-tech-modal-section">
+          <h4 id="marketingModalUseTitle"></h4>
+          <p id="marketingModalUseCase"></p>
+        </div>
+      </div>
+
+      <div class="marketing-assistant-tech-modal-footer">
+        <button class="marketing-assistant-tech-modal-button" onclick="closeMarketingTechModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const marketingTechData = {
+      'marketing-automation': {
+        title: 'Automation',
+        subtitle: 'GoHighLevel (GHL) / ActiveCampaign',
+        description:
+          'Automation platforms like GoHighLevel and ActiveCampaign orchestrate your funnels, nurture sequences, and follow-ups so prospects and customers never fall through the cracks.',
+        useCase:
+          'Our Marketing Assistants build and maintain campaigns, update pipelines, manage tags and segments, launch automations, and monitor performance so your offers, follow-ups, and reminders are always running on schedule.',
+      },
+      'marketing-design': {
+        title: 'Design',
+        subtitle: 'Canva Pro / Adobe Creative Cloud',
+        description:
+          'Design tools are the backbone of visual marketing, from social media graphics and ads to downloadable lead magnets and branded collateral.',
+        useCase:
+          'Our VAs use Canva Pro and Adobe tools to create on-brand graphics, resize and repurpose creatives for multiple channels, and keep templates organized so your content looks consistent across every campaign.',
+      },
+      'marketing-email': {
+        title: 'Email Marketing',
+        subtitle: 'Mailchimp / Klaviyo / Brevo',
+        description:
+          'Email marketing platforms manage your lists, campaigns, and automations so you can communicate with subscribers at scale.',
+        useCase:
+          'Our Marketing Assistants build campaigns and flows, schedule broadcasts, clean and segment lists, set up basic A/B tests, and monitor key metrics like opens, clicks, and unsubscribe trends to keep your email program healthy.',
+      },
+      'marketing-web-analytics': {
+        title: 'Web & Analytics',
+        subtitle: 'WordPress / Webflow / Google Analytics 4',
+        description:
+          'Web platforms and analytics tools power your digital presence and help you understand how visitors are discovering and engaging with your brand.',
+        useCase:
+          'Our VAs update landing pages and content in WordPress or Webflow, coordinate basic on-page SEO updates, and pull GA4 reports or dashboards so your team can make data-informed marketing decisions.',
+      },
+    };
+
+    function openMarketingTechModal(toolId) {
+      const data = marketingTechData[toolId];
+      if (!data) return;
+
+      const modal = document.getElementById('marketingTechModal');
+      const title = document.getElementById('marketingModalTitle');
+      const subtitle = document.getElementById('marketingModalSubtitle');
+      const description = document.getElementById('marketingModalDescription');
+      const useCase = document.getElementById('marketingModalUseCase');
+      const whatTitle = document.getElementById('marketingModalWhatTitle');
+      const useTitle = document.getElementById('marketingModalUseTitle');
+
+      title.textContent = data.title;
+      subtitle.textContent = data.subtitle || '';
+      subtitle.style.display = data.subtitle ? 'block' : 'none';
+
+      description.textContent = data.description;
+      useCase.textContent = data.useCase;
+
+      const toolsLabel = data.subtitle || data.title;
+      whatTitle.textContent = 'What is ' + toolsLabel + '?';
+      useTitle.textContent = 'How our VAs use it?';
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMarketingTechModal(event) {
+      if (
+        event &&
+        event.target !== event.currentTarget &&
+        event.target.closest('.marketing-assistant-tech-modal-content')
+      ) {
+        return;
+      }
+      const modal = document.getElementById('marketingTechModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
+</section>
+

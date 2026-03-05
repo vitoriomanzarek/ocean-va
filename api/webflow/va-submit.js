@@ -319,8 +319,12 @@ async function formatDataForWebflow(formData) {
   if (mainCategoryValue) {
     console.log('📋 Main Category value received:', mainCategoryValue);
     
-    // Send to 'main-category' (PlainText field)
-    fieldData['main-category'] = mainCategoryValue;
+    // Send to 'main-category' (PlainText field) with special case for Real Estate
+    const mainCategoryPlainText =
+      mainCategoryValue === 'Real Estate Virtual Assistant'
+        ? 'Real Estate Virtual Assistant, Property Management Assistant'
+        : mainCategoryValue;
+    fieldData['main-category'] = mainCategoryPlainText;
     
     // Also send to 'main-categories' (multi-reference) using IDs
     const mainCategoriesIds = await mapMainCategoryToIds(mainCategoryValue);
