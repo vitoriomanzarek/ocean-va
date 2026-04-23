@@ -7,6 +7,13 @@ import Footer from './components/Footer'
 import Schema from './components/Schema'
 import ProtectedRoute from './components/ProtectedRoute'
 
+// Admin panel
+import AdminLayout from './admin/AdminLayout'
+import VAList from './admin/pages/VAList'
+import VAEditor from './admin/pages/VAEditor'
+import BlogList from './admin/pages/BlogList'
+import BlogEditor from './admin/pages/BlogEditor'
+
 // Pages - General
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -121,7 +128,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 function AppContent() {
   const location = useLocation()
 
-  const hideNavbarFooter = location.pathname === '/va-creation' || location.pathname === '/va-login'
+  const hideNavbarFooter = location.pathname === '/va-creation' || location.pathname === '/va-login' || location.pathname.startsWith('/admin')
 
   const useVANavbar = !hideNavbarFooter && (
     location.pathname.includes('vas') ||
@@ -246,6 +253,20 @@ function AppContent() {
           {/* Legal Pages */}
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          {/* Admin panel */}
+          <Route
+            path="/admin"
+            element={<ProtectedRoute><AdminLayout /></ProtectedRoute>}
+          >
+            <Route index element={<VAList />} />
+            <Route path="vas" element={<VAList />} />
+            <Route path="vas/new" element={<VAEditor />} />
+            <Route path="vas/:slug" element={<VAEditor />} />
+            <Route path="blogs" element={<BlogList />} />
+            <Route path="blogs/new" element={<BlogEditor />} />
+            <Route path="blogs/:slug" element={<BlogEditor />} />
+          </Route>
 
           {/* Utility / Dev */}
           <Route path="/va-login" element={<VALogin />} />

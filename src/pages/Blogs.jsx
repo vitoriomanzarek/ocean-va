@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { Calendar, Search, ChevronLeft, ChevronRight } from 'lucide-react'
-import blogData from '../data/blogData.json'
+import { useBlogData } from '../hooks/useBlogData'
 
 const PAGE_SIZE = 12
 
@@ -43,6 +43,7 @@ function BlogCard({ post }) {
 }
 
 export default function Blogs() {
+  const blogData = useBlogData()
   const [search, setSearch] = useState('')
   const [page, setPage] = useState(1)
 
@@ -55,7 +56,7 @@ export default function Blogs() {
         p.excerpt.toLowerCase().includes(term) ||
         (p.authorName || '').toLowerCase().includes(term)
     )
-  }, [search])
+  }, [search, blogData])
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE)
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)

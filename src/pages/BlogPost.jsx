@@ -1,10 +1,11 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Calendar, ArrowLeft, User } from 'lucide-react'
-import blogData from '../data/blogData.json'
+import { useBlogData } from '../hooks/useBlogData'
 
 export default function BlogPost() {
   const { slug } = useParams()
+  const blogData = useBlogData()
   const post = blogData.find(p => p.slug === slug)
 
   if (!post) {

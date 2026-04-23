@@ -2,11 +2,12 @@ import React, { useState, useMemo } from 'react';
 import VAFilters from '../../components/OurVAs/VAFilters';
 import VAGrid from '../../components/OurVAs/VAGrid';
 import VAStickyCTA from '../../components/OurVAs/VAStickyCTA';
-import vasData from '../../data/vasData.json';
+import { useVasData } from '../../hooks/useVasData';
 import './OurCurrentVAs.css';
 
 // Insurance VAs page — shows all active (non-assigned, non-inactive) VAs
 export default function OurCurrentVAs() {
+  const vasData = useVasData();
   const [filters, setFilters] = useState({
     availability: 'All',
     language: 'All',
@@ -31,7 +32,7 @@ export default function OurCurrentVAs() {
         }
         return true;
       });
-  }, [filters]);
+  }, [filters, vasData]);
 
   return (
     <div className="our-current-vas-page">

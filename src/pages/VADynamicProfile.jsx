@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import vasData from '../data/vasData.json'
+import { useVasData } from '../hooks/useVasData'
 import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -78,6 +78,7 @@ function adaptVA(va) {
 
 export default function VADynamicProfile() {
   const { slug } = useParams()
+  const vasData = useVasData()
   const va = vasData.find(v => v.slug === slug)
 
   if (!va) {

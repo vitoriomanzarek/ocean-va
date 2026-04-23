@@ -13,7 +13,7 @@ export default function VALogin() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const from = location.state?.from?.pathname || '/va-creation'
+  const from = location.state?.from?.pathname || '/admin'
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -34,8 +34,8 @@ export default function VALogin() {
     <div className="va-login-wrapper">
       <div className="va-login-container">
         <header className="va-login-header">
-          <h1 className="va-login-title">VA Form Access</h1>
-          <p className="va-login-subtitle">Please enter your credentials to access the VA creation form</p>
+          <h1 className="va-login-title">Ocean VA Admin</h1>
+          <p className="va-login-subtitle">Sign in to manage virtual assistants and blog content</p>
         </header>
 
         <form className="va-login-form" onSubmit={handleSubmit}>

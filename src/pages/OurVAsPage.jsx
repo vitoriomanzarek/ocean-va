@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import VAGrid from '../components/OurVAs/VAGrid';
 import VAStickyCTA from '../components/OurVAs/VAStickyCTA';
-import vasData from '../data/vasData.json';
+import { useVasData } from '../hooks/useVasData';
 
 const CATEGORY_CONFIG = {
   insurance: {
@@ -32,6 +32,7 @@ const CATEGORY_CONFIG = {
 }
 
 export default function OurVAsPage({ type }) {
+  const vasData = useVasData();
   const config = CATEGORY_CONFIG[type] || {
     title: 'All Virtual Assistants',
     subtitle: 'Meet the full Ocean VA team.',
@@ -54,7 +55,7 @@ export default function OurVAsPage({ type }) {
         }
         return true;
       });
-  }, [type, search, availability]);
+  }, [type, search, availability, vasData]);
 
   return (
     <div className="min-h-screen bg-white">
