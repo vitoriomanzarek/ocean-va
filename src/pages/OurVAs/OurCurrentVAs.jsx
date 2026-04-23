@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import VAFilters from '../../components/OurVAs/VAFilters';
 import VAGrid from '../../components/OurVAs/VAGrid';
 import VAStickyCTA from '../../components/OurVAs/VAStickyCTA';
-import { vasData } from '../../data/vasData';
+import vasData from '../../data/vasData.json';
 import './OurCurrentVAs.css';
 
+// Insurance VAs page — shows all active (non-assigned, non-inactive) VAs
 export default function OurCurrentVAs() {
   const [filters, setFilters] = useState({
     availability: 'All',
@@ -13,76 +13,30 @@ export default function OurCurrentVAs() {
     search: ''
   });
 
-  // Filter the VAs based on selected filters
   const filteredVAs = useMemo(() => {
-    return vasData.filter((va) => {
-      // Availability filter
-      if (filters.availability !== 'All' && va.disponibilidad !== filters.availability) {
-        return false;
-      }
-
-      // Language filter
-      if (filters.language !== 'All' && va.idiomas !== filters.language) {
-        return false;
-      }
-
-      // Search filter - search in ALL fields
-      if (filters.search) {
-        const searchTerm = filters.search.toLowerCase().trim();
-        
-        // Build searchable text from all VA fields
-        const searchableFields = [
-          va.nombre || '',                           // Name
-          va.categoría_principal || '',              // Main Category
-          va.años_experiencia?.toString() || '',     // Experience years
-          va.idiomas || '',                          // Language
-          va.disponibilidad || '',                   // Availability
-          va.título || '',                           // Title (if exists)
-        ];
-        
-        // Add specializations (array or string)
-        if (va.especialización) {
-          if (Array.isArray(va.especialización)) {
-            searchableFields.push(...va.especialización);
-          } else if (typeof va.especialización === 'string') {
-            searchableFields.push(va.especialización);
-          }
+    return vasData
+      .filter(va => va.availability !== 'Not Active')
+      .filter(va => {
+        if (filters.availability !== 'All' && va.availability !== filters.availability) return false;
+        if (filters.language !== 'All' && va.languages !== filters.language) return false;
+        if (filters.search) {
+          const term = filters.search.toLowerCase();
+          const text = [
+            va.name, va.mainCategory, va.title,
+            va.availability, va.languages, va.experience,
+            ...(va.specialization || []),
+            ...(va.skills || []),
+          ].join(' ').toLowerCase();
+          if (!text.includes(term)) return false;
         }
-        
-        // Add skills (if exists)
-        if (va.habilidades) {
-          if (Array.isArray(va.habilidades)) {
-            searchableFields.push(...va.habilidades);
-          } else if (typeof va.habilidades === 'string') {
-            searchableFields.push(va.habilidades);
-          }
-        }
-        
-        // Combine all fields and search
-        const searchableText = searchableFields
-          .map(field => field.toLowerCase())
-          .join(' ');
-        
-        if (!searchableText.includes(searchTerm)) {
-          return false;
-        }
-      }
-
-      return true;
-    });
+        return true;
+      });
   }, [filters]);
-
-  const handleFilterChange = (filterType, value) => {
-    setFilters((prev) => ({
-      ...prev,
-      [filterType]: value
-    }));
-  };
 
   return (
     <div className="our-current-vas-page">
-      {/* Hero Section */}
-      <section 
+      {/* Hero */}
+      <section
         className="relative bg-cover bg-center text-white py-20 md:py-32"
         style={{
           backgroundImage: 'url(/images/VAs/our-va-hero.png)',
@@ -90,28 +44,22 @@ export default function OurCurrentVAs() {
           backgroundPosition: 'center'
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        
+        <div className="absolute inset-0 bg-black bg-opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Insurance Virtual Assistants</h1>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Our Virtual Assistants</h1>
+          <p className="text-lg text-white/80">Meet the talent behind Ocean VA</p>
         </div>
       </section>
 
-      {/* Filters Section */}
-      <VAFilters filters={filters} onFilterChange={handleFilterChange} />
+      {/* Filters */}
+      <VAFilters filters={filters} onFilterChange={(k, v) => setFilters(p => ({ ...p, [k]: v }))} />
 
-      {/* Results count */}
+      {/* Count */}
       <div className="va-results-info">
         <p>Showing {filteredVAs.length} virtual assistant{filteredVAs.length !== 1 ? 's' : ''}</p>
       </div>
 
-      {/* Grid Section */}
       <VAGrid vas={filteredVAs} isLoading={false} />
-
-      {/* Sticky CTA */}
       <VAStickyCTA />
     </div>
   );

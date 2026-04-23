@@ -21,6 +21,86 @@
   }
 }
 
+/* ── Webflow Employment Accordion (rendered from CMS HTML) ── */
+.va-employment-html .va-employment-accordion {
+  background: rgba(255,255,255,0.1);
+  border-left: 4px solid #5eead4;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.va-employment-html .va-employment-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.va-employment-html .va-employment-accordion-title { flex: 1; }
+.va-employment-html .va-employment-accordion-company {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #99f6e4;
+  margin: 0;
+}
+.va-employment-html .va-employment-accordion-position {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ccfbf1;
+  margin: 0;
+}
+.va-employment-html .va-employment-accordion-period {
+  font-size: 0.75rem;
+  color: #99f6e4;
+  margin: 0;
+}
+.va-employment-html .va-employment-accordion-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: white;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.va-employment-html .va-employment-accordion-header.active .va-employment-accordion-icon {
+  transform: rotate(180deg);
+}
+.va-employment-html .va-employment-accordion-content {
+  display: none;
+  padding: 0 1.5rem 1.25rem;
+}
+.va-employment-html .va-employment-accordion-content.active { display: block; }
+.va-employment-html .va-employment-accordion-description {
+  font-size: 0.875rem;
+  color: white;
+  line-height: 1.6;
+  margin: 0.25rem 0;
+}
+
+/* ── Webflow Education HTML ── */
+.va-education-html .va-education-item {
+  background: rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+}
+.va-education-html .va-education-school {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  margin: 0 0 0.25rem;
+}
+.va-education-html .va-education-degree {
+  color: #ccfbf1;
+  font-weight: 600;
+  margin: 0;
+}
+.va-education-html .va-education-date {
+  font-size: 0.875rem;
+  color: #99f6e4;
+  margin: 0;
+}
+
 @layer components {
   .btn-primary {
     @apply bg-ocean-600 hover:bg-ocean-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;

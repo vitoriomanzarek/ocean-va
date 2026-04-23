@@ -101,6 +101,9 @@ import SandraProfile from './pages/SandraProfile'
 import XimenaGProfile from './pages/XimenaGProfile'
 import GabrielaRodriguezProfile from './pages/GabrielaRodriguezProfile'
 
+// Dynamic VA Profile (CMS-driven)
+import VADynamicProfile from './pages/VADynamicProfile'
+
 // Pages - Utility
 import VACreation from './pages/VACreation'
 import VALogin from './pages/VALogin'
@@ -167,7 +170,10 @@ function AppContent() {
           <Route path="/ovas-mortgage-processing-assistant" element={<OurVAsPage type="mortgage" />} />
           <Route path="/ovas-medical-assistant" element={<OurVAsPage type="medical" />} />
 
-          {/* VA Profiles */}
+          {/* Dynamic VA Profiles (CMS-driven, canonical URL) */}
+          <Route path="/virtual-assistants/:slug" element={<VADynamicProfile />} />
+
+          {/* Legacy VA Profiles (kept for backwards-compat redirects) */}
           <Route path="/abigail-ocean-va-profile" element={<AbigailProfile />} />
           <Route path="/adrian-ocean-va-profile" element={<AdrianProfile />} />
           <Route path="/alejandro-ocean-va-profile" element={<AlejandroProfile />} />

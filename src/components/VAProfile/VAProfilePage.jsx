@@ -176,19 +176,28 @@ export default function VAProfilePage({ vaData }) {
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-8">EMPLOYMENT HISTORY</h2>
-          <p className="text-white mb-8 leading-relaxed">{vaData.employmentSummary}</p>
+          {vaData.employmentSummary && (
+            <p className="text-white mb-8 leading-relaxed">{vaData.employmentSummary}</p>
+          )}
 
-          {/* Jobs */}
-          <div className="space-y-4">
-            {vaData.employmentHistory.map((job, idx) => (
-              <div key={idx} className="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-teal-300">
-                <h3 className="text-teal-200 font-bold text-lg">{job.company}</h3>
-                <p className="text-teal-100 font-semibold">{job.position}</p>
-                <p className="text-teal-100 text-sm mb-2">{job.period}</p>
-                <p className="text-white text-sm leading-relaxed whitespace-pre-line">{job.description}</p>
-              </div>
-            ))}
-          </div>
+          {/* HTML version (from Webflow CMS export) */}
+          {vaData.employmentHtml ? (
+            <div className="va-employment-html space-y-4 text-white"
+              dangerouslySetInnerHTML={{ __html: vaData.employmentHtml }}
+            />
+          ) : vaData.employmentHistory ? (
+            /* Structured version (legacy individual profile pages) */
+            <div className="space-y-4">
+              {vaData.employmentHistory.map((job, idx) => (
+                <div key={idx} className="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-teal-300">
+                  <h3 className="text-teal-200 font-bold text-lg">{job.company}</h3>
+                  <p className="text-teal-100 font-semibold">{job.position}</p>
+                  <p className="text-teal-100 text-sm mb-2">{job.period}</p>
+                  <p className="text-white text-sm leading-relaxed whitespace-pre-line">{job.description}</p>
+                </div>
+              ))}
+            </div>
+          ) : null}
         </div>
       </section>
 
@@ -305,17 +314,27 @@ export default function VAProfilePage({ vaData }) {
       </section>
 
       {/* Education Section */}
-      <section className="py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8">EDUCATION</h2>
-          <div className="bg-white bg-opacity-10 p-8 rounded-lg mb-6">
-            <h3 className="text-white font-bold text-lg mb-2">{vaData.education.school}</h3>
-            <p className="text-teal-100 font-semibold">{vaData.education.degree}</p>
-            <p className="text-teal-100 text-sm">{vaData.education.date}</p>
-          </div>
+      {(vaData.educationHtml || vaData.education) && (
+        <section className="py-12 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-8">EDUCATION</h2>
 
-        </div>
-      </section>
+            {/* HTML version (from Webflow CMS export) */}
+            {vaData.educationHtml ? (
+              <div className="va-education-html text-white"
+                dangerouslySetInnerHTML={{ __html: vaData.educationHtml }}
+              />
+            ) : vaData.education ? (
+              /* Structured version (legacy) */
+              <div className="bg-white bg-opacity-10 p-8 rounded-lg mb-6">
+                <h3 className="text-white font-bold text-lg mb-2">{vaData.education.school}</h3>
+                <p className="text-teal-100 font-semibold">{vaData.education.degree}</p>
+                <p className="text-teal-100 text-sm">{vaData.education.date}</p>
+              </div>
+            ) : null}
+          </div>
+        </section>
+      )}
 
       {/* CTA Section - Sticky Footer */}
       <section className="fixed bottom-0 left-0 right-0 py-4 px-4 bg-white shadow-md z-40">

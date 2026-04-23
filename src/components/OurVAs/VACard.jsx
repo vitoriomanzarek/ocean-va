@@ -1,104 +1,93 @@
 import React from 'react';
-import { ArrowRight, Play, Calendar, Globe, Building2, Shield } from 'lucide-react';
+import { ArrowRight, Play, Calendar, Globe } from 'lucide-react';
 import './VACard.css';
 
 export default function VACard({ va }) {
-  const getAvailabilityBadgeColor = (disponibilidad) => {
-    switch (disponibilidad) {
-      case 'Full Time':
-        return 'badge-full-time';
-      case 'Part Time':
-        return 'badge-part-time';
-      case 'Assigned':
-        return 'badge-assigned';
-      default:
-        return 'badge-full-time';
+  const getAvailabilityBadgeColor = (availability) => {
+    switch (availability) {
+      case 'Full Time': return 'badge-full-time';
+      case 'Part Time': return 'badge-part-time';
+      case 'Assigned': return 'badge-assigned';
+      default: return 'badge-full-time';
     }
   };
 
-  const getExperienceText = (years) => {
-    if (years === null || years === undefined) return 'Trained';
-    if (years < 1) return `${Math.round(years * 12)} months`;
-    return `${years} years`;
-  };
+  const profileUrl = va.profileSlug || `/virtual-assistants/${va.slug}`;
 
   return (
     <div className="va-card">
-      {/* Image Section - Left side with circular image */}
+      {/* Image */}
       <div className="va-card-image-section">
         <div className="va-card-image-container">
           <img
-            src={va.imagen || `https://api.dicebear.com/7.x/avataaars/svg?seed=${va.nombre}`}
-            alt={va.nombre}
+            src={va.image || `https://api.dicebear.com/7.x/avataaars/svg?seed=${va.name}`}
+            alt={va.name}
             className="va-card-image"
           />
-          <span className={`va-availability-badge ${getAvailabilityBadgeColor(va.disponibilidad)}`}>
-            {va.disponibilidad}
+          <span className={`va-availability-badge ${getAvailabilityBadgeColor(va.availability)}`}>
+            {va.availability}
           </span>
         </div>
       </div>
 
-      {/* Content Section - Right side */}
+      {/* Content */}
       <div className="va-card-content">
         <div className="va-card-header">
           <div className="va-text-content">
-            <h3 className="va-card-name">{va.nombre}</h3>
-            
-            <div className="va-role-badge">
-              {va.categorías[0] === 'Healthcare VA' ? (
-                <>
-                  <Building2 size={14} />
-                  <span>Healthcare Virtual Assistant</span>
-                </>
-              ) : (
-                <>
-                  <Shield size={14} />
-                  <span>Insurance Virtual Assistant</span>
-                </>
-              )}
-            </div>
+            <h3 className="va-card-name">{va.name}</h3>
+
+            {va.title && (
+              <p className="va-card-title text-xs text-gray-500 uppercase tracking-wide mb-2">
+                {va.title}
+              </p>
+            )}
 
             <div className="va-info-row">
               <div className="va-info-item">
                 <div className="va-info-label">Experience</div>
                 <div className="va-info-value">
                   <Calendar size={16} />
-                  {getExperienceText(va.años_experiencia)}
+                  {va.experience || '—'}
                 </div>
               </div>
               <div className="va-info-item">
                 <div className="va-info-label">Language</div>
                 <div className="va-info-value">
                   <Globe size={16} />
-                  {va.idiomas}
+                  {va.languages || '—'}
                 </div>
               </div>
             </div>
 
-            <div className="va-specialization">
-              <div className="va-specialization-title">Specialization</div>
-              <div className="va-tags-container">
-                {va.especialización.map((spec, idx) => (
-                  <span key={idx} className="va-tag">
-                    {spec}
-                  </span>
-                ))}
+            {va.specialization && va.specialization.length > 0 && (
+              <div className="va-specialization">
+                <div className="va-specialization-title">Specialization</div>
+                <div className="va-tags-container">
+                  {va.specialization.slice(0, 4).map((spec, idx) => (
+                    <span key={idx} className="va-tag">{spec}</span>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
 
         <div className="va-buttons-container">
-          <a
-            href={`/${va.slug}`}
-            className="va-button va-button-primary"
-          >
+          <a href={profileUrl} className="va-button va-button-primary">
             View Profile
             <ArrowRight size={16} />
           </a>
-          <button className="va-button va-button-secondary" title="Watch Video">
-            <Play size={16} />
-          </button>
+          {va.video && (
+            <a
+              href={va.video}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="va-button va-button-secondary"
+              title="Watch Video"
+            >
+              <Play size={16} />
+            </a>
+          )}
         </div>
       </div>
     </div>

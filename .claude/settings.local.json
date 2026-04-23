@@ -15,7 +15,9 @@
       "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/virtual-administrative-assistant\"|\"https://www.oceanvirtualassistant.com/services/administrative-assistant\"|g' src/pages/services/VirtualAdminAssistant.jsx)",
       "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/virtual-assistant-services\"|\"https://www.oceanvirtualassistant.com/services/general-virtual-assistant\"|g' src/pages/services/VirtualAssistantServices.jsx)",
       "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/marketing-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/services/marketing-assistant\"|g' src/pages/services/MarketingVA.jsx)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 scripts/csv-to-vasdata.py)"
     ]
   }
 }
