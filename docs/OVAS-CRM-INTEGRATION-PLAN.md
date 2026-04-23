@@ -1,90 +1,79 @@
-# OVAS CRM ↔ Ocean VA — Integration Plan
+# OVAS CRM — Integration Plan
+> Ocean VA public site + OVAS CRM internal platform
 
 ## Context
 
 | Project | Stack | Deploy | Purpose |
 |---|---|---|---|
 | **Ocean VA** (this repo) | Vite + React + Tailwind | Vercel | Public marketing site |
-| **OVAS CRM** (`ovas-internal`) | Next.js 16 + Prisma + PostgreSQL (Neon) | Vercel | Internal operations: recruiting, pipeline, placements |
+| **OVAS CRM** (`ovas-internal`) | Next.js 16 + Prisma + PostgreSQL (Neon) | Vercel | Internal ops: recruiting, pipeline, placements |
 
-The goal: OVAS CRM becomes the **source of truth** for VA profiles and blog content. Ocean VA reads from it — no more Webflow.
+**Goal:** OVAS CRM becomes the single source of truth for VA profiles and blog content — no more Webflow.
+
+---
+
+## Phase Roadmap
+
+| Phase | What | Status |
+|---|---|---|
+| **0** | vasData.json + dynamic VA profiles (`/virtual-assistants/:slug`) | ✅ Done |
+| **1** | blogData.json + `/blogs` listing + `/blogs/:slug` post pages | ✅ Done |
+| **2** | OVAS CRM: public VA API + publish toggle + Ocean VA client fetch | Next sprint |
+| **3** | OVAS CRM: Blog module (Prisma model + editor UI + public API) | Sprint +2 |
+| **4** | OVAS CRM: Module 03 auto-profile generation pipeline | Sprint +3 |
+| **5** | Ocean VA → Next.js migration (SSG/ISR for SEO) | Sprint +4 |
 
 ---
 
 ## Part 1 — VA Management
 
-### Current state (post this migration)
-- `src/data/vasData.json` — 150 VAs, generated from Webflow CSV export
-- `/virtual-assistants/:slug` — dynamic profile pages powered by the JSON
-- Update process: re-export CSV from Webflow → run `scripts/csv-to-vasdata.py` → commit
+### Phase 0 — Static JSON (DONE)
+- `src/data/vasData.json` — 150 VAs generated from Webflow CMS CSV export
+- `scripts/csv-to-vasdata.py` — re-run when a new CSV is exported
+- `/virtual-assistants/:slug` — one dynamic page handles all 150 profiles
+- OurVAs listing pages — filter by category, availability, search
 
-### Target state
-- OVAS CRM Postgres `Candidate` table = source of truth for VAs
-- Ocean VA fetches VA data from a OVAS CRM public API endpoint at Vercel build time
-- Updating a VA in OVAS CRM → triggers a Vercel deploy hook → site rebuilds automatically
-
----
-
-### What needs to be built
+### Phase 2 — OVAS CRM as live source (Next sprint)
 
 #### In OVAS CRM (`ovas-internal`)
 
 **1. Extend `Candidate` model with public-site fields**
-
-Add to `prisma/schema.prisma`:
 ```prisma
 model Candidate {
-  // existing fields...
+  // ... existing fields
 
   // Public site fields
-  publishedToSite   Boolean   @default(false)
-  profileSlug       String?   @unique
-  siteTitle         String?
-  siteTagline       String?
-  siteImage         String?   // Vercel Blob URL (post Remove.bg processing)
-  siteVideo         String?   // YouTube URL
-  siteVideoThumb    String?
-  siteThumbDesc     String?
-  siteAvailability  String?   // Full Time | Part Time | Assigned
-  siteMainCategory  String?
+  publishedToSite    Boolean   @default(false)
+  profileSlug        String?   @unique
+  siteTitle          String?
+  siteTagline        String?
+  siteImage          String?   // Vercel Blob URL after Remove.bg processing
+  siteVideo          String?   // YouTube URL
+  siteVideoThumb     String?
+  siteThumbDesc      String?
+  siteAvailability   String?   // Full Time | Part Time | Assigned
+  siteMainCategory   String?
   siteSpecialization String[]
-  siteTools         String[]
-  siteSkills        String[]
-  siteEquipment     String[]
+  siteTools          String[]
+  siteSkills         String[]
+  siteEquipment      String[]
+  siteEmploymentHtml String?   @db.Text
+  siteEducationHtml  String?   @db.Text
 }
 ```
 
-**2. Public VA API endpoint**
-
-New file: `src/app/api/public/vas/route.ts`
+**2. Public VA API endpoint** — `src/app/api/public/vas/route.ts`
 ```ts
-// GET /api/public/vas
-// Returns all published VAs (publishedToSite = true)
-// No auth required — public endpoint
-// Rate-limited by Vercel Edge
-
+// GET /api/public/vas — no auth, cached 5 min
 export async function GET() {
   const vas = await prisma.candidate.findMany({
     where: { publishedToSite: true },
-    select: {
-      profileSlug: true,
-      name: true,
-      siteTitle: true,
-      siteTagline: true,
-      siteImage: true,
-      siteVideo: true,
-      siteVideoThumb: true,
-      siteThumbDesc: true,
-      siteAvailability: true,
-      siteMainCategory: true,
-      siteSpecialization: true,
-      siteTools: true,
-      siteSkills: true,
-      siteEquipment: true,
-      discType: true,
-      englishLevel: true,
-      // ... employment/education richtext fields
-    }
+    select: { profileSlug:true, name:true, siteTitle:true, siteTagline:true,
+              siteImage:true, siteVideo:true, siteVideoThumb:true,
+              siteAvailability:true, siteMainCategory:true,
+              siteSpecialization:true, siteTools:true, siteSkills:true,
+              siteEquipment:true, discType:true, englishLevel:true,
+              siteEmploymentHtml:true, siteEducationHtml:true }
   })
   return Response.json(vas, {
     headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' }
@@ -92,18 +81,12 @@ export async function GET() {
 }
 ```
 
-**3. "Publish to Site" toggle in Candidate detail UI**
+**3. "Publish to Site" toggle** in candidate detail UI (ADMIN/RECRUITER)
+- Toggle → PATCH `/api/candidates/[id]` with `publishedToSite`
+- "Preview Profile" link → `oceanvirtualassistant.com/virtual-assistants/[slug]`
 
-In `src/components/candidate-details-inline.tsx`:
-- Add a "Published to Site" toggle (ADMIN/RECRUITER only)
-- When toggled → PATCH `/api/candidates/[id]` with `publishedToSite: true`
-- Also add a "Preview Profile" link → opens `oceanvirtualassistant.com/virtual-assistants/[slug]`
-
-**4. Vercel deploy webhook trigger**
-
-When `publishedToSite` changes → call Vercel Deploy Hook:
+**4. Vercel deploy hook** — trigger rebuild on publish:
 ```ts
-// In PATCH /api/candidates/[id]/route.ts
 if (changed('publishedToSite') || changed('siteImage') || changed('siteTitle')) {
   await fetch(process.env.OCEAN_VA_DEPLOY_HOOK_URL, { method: 'POST' })
 }
@@ -111,127 +94,119 @@ if (changed('publishedToSite') || changed('siteImage') || changed('siteTitle')) 
 
 #### In Ocean VA (this repo)
 
-**5. Replace static JSON with API fetch at build time**
-
-Option A (simplest for Vite SPA — client-side fetch):
+**5. `src/hooks/useVasData.js`** — fetch from CRM with JSON fallback:
 ```js
-// src/hooks/useVasData.js
 import { useState, useEffect } from 'react'
+import localData from '../data/vasData.json'
 
 export function useVasData() {
-  const [vas, setVas] = useState([])
+  const [vas, setVas] = useState(localData) // instant render from JSON
   useEffect(() => {
-    fetch('https://ovas-internal.vercel.app/api/public/vas')
+    const url = import.meta.env.VITE_CRM_API_URL
+    if (!url) return
+    fetch(`${url}/api/public/vas`)
       .then(r => r.json())
       .then(setVas)
+      .catch(() => {}) // keep local JSON on error
   }, [])
   return vas
 }
 ```
 
-Option B (better for SEO — convert to Next.js or use Vercel Edge Config):
-- Migrate Ocean VA from Vite to Next.js (separate task)
-- Use `getStaticProps` / `generateStaticParams` to pre-render all VA profiles at build time
-- Vercel deploy hook auto-triggers rebuild when CRM publishes a change
+**6. Wire listing + profile pages** to use `useVasData()` hook.
 
-**Recommendation: Start with Option A (client-side fetch)**  
-The public site doesn't need VA profiles indexed per-page for SEO right now. Migrate to Next.js as a separate phase when SEO becomes a priority.
+### Phase 4 — Module 03 auto-generation (Sprint +3)
+"OVAS Dream Job" pipeline stage in CRM → OpenAI generates `siteTagline`, `siteTitle`, `siteThumbDesc` → recruiter reviews in draft view → publishes to site with one click + Vercel deploy hook fires.
 
 ---
 
-### Data migration path
+## Part 2 — Blog
 
-1. **Phase 1 (done):** vasData.json from CSV — 150 VAs, manual update via script
-2. **Phase 2:** OVAS CRM API endpoint + `publishedToSite` flag + Ocean VA fetches from API
-3. **Phase 3:** Module 03 in OVAS CRM: "OVAS Dream Job" pipeline stage → auto-generate profile fields via OpenAI → recruiter reviews → publish toggle → deploy hook
+### Blog CSV Analysis (Webflow export)
 
----
+| Metric | Value |
+|---|---|
+| Total posts | **692** |
+| All published | ✅ 692/692 |
+| Has content (HTML) | ✅ 692/692 |
+| Content length | 2,069 – 44,882 chars (avg 7,094) |
+| Cover image | ✅ 689/692 (Webflow CDN) |
+| Author name | ⚠️ 313/692 (45%) — incomplete |
+| Author picture | ⚠️ 224/692 (32%) — incomplete |
+| Encoding issues | Minor — `U+2019` ('), `U+2014` (—), `U+200D` (ZWJ) — fixed in conversion script |
 
-## Part 2 — Blog Management
+**Images:** All 689 on `cdn.prod.website-files.com` — accessible until Webflow plan is cancelled. Future: migrate to Vercel Blob / Cloudflare Images.
 
-### Current state
-- `/blogs` — static placeholder page (no real content)
-- Webflow had CMS blog posts
+**Author data:** Incomplete in Webflow — not critical for Phase 1. OVAS CRM editor will capture proper author on new posts.
 
-### Architecture
+### Phase 1 — Static JSON (DONE)
+- `src/data/blogData.json` — 692 posts from Webflow CSV
+- `scripts/csv-to-blogdata.py` — conversion script with encoding fixes
+- `/blogs` — listing page: grid, search, pagination
+- `/blogs/:slug` — individual post with cover image + HTML content
 
-#### In OVAS CRM — add Blog module
+### Phase 3 — OVAS CRM Blog module (Sprint +2)
 
-**1. New Prisma model**
+#### In OVAS CRM (`ovas-internal`)
+
+**1. BlogPost Prisma model**
 ```prisma
 model BlogPost {
-  id          String    @id @default(cuid())
-  slug        String    @unique
-  title       String
-  excerpt     String
-  body        String    @db.Text  // Markdown or HTML
-  coverImage  String?
-  category    String?
-  tags        String[]
-  author      String?
-  publishedAt DateTime?
-  published   Boolean   @default(false)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  authorUser  User?     @relation(fields: [authorUserId], references: [id])
+  id           String    @id @default(cuid())
+  slug         String    @unique
+  title        String
+  excerpt      String    @db.Text
+  body         String    @db.Text  // HTML (rich text editor output)
+  coverImage   String?             // Vercel Blob URL
+  authorName   String?
+  authorImage  String?
+  published    Boolean   @default(false)
+  publishedAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  authorUser   User?     @relation(fields: [authorUserId], references: [id])
   authorUserId String?
 }
 ```
 
-**2. Blog API endpoints**
+**2. Public Blog API**
 ```
-GET  /api/public/blog              → list published posts (paginated)
-GET  /api/public/blog/[slug]       → single post
-POST /api/blog                     → create draft (ADMIN/MEDIA)
-PATCH /api/blog/[id]               → update post
-DELETE /api/blog/[id]              → delete post
+GET /api/public/blog              — paginated list (title, slug, excerpt, coverImage, publishedAt)
+GET /api/public/blog/[slug]       — full post with body HTML
 ```
 
-**3. Blog editor UI in OVAS CRM**
-- Route: `/dashboard/blog` — list of posts
-- Route: `/dashboard/blog/new` — create with Markdown editor
-- Route: `/dashboard/blog/[id]/edit` — edit
-- Roles: ADMIN, MEDIA
-
-#### In Ocean VA — consume blog API
-
-**`src/pages/Blogs.jsx`** — fetch from CRM API:
-```js
-// Client-side fetch (or build-time if migrated to Next.js)
-const posts = await fetch('https://ovas-internal.vercel.app/api/public/blog').then(r => r.json())
+**3. Blog editor UI** — roles: ADMIN, MEDIA
+```
+/dashboard/blog                   — list drafts + published
+/dashboard/blog/new               — create with rich text editor (Tiptap or Quill)
+/dashboard/blog/[id]/edit         — edit + publish toggle
 ```
 
-**`/blogs/:slug`** — new route for individual blog posts
+**4. Seed migration** — import all 692 posts from `blogData.json` into Postgres via seed script.
+
+#### In Ocean VA (this repo)
+
+**5. `src/hooks/useBlogData.js`** — fetch from CRM with JSON fallback (same pattern as `useVasData`).
+
+**6. Update `/blogs` + `/blogs/:slug`** to use hook.
 
 ---
 
-## Summary: What to Build
+## Part 3 — Images (Sprint +4)
 
-### OVAS CRM (`ovas-internal`)
+Both VAs and Blog have images on Webflow CDN. Long-term:
 
-| Task | Priority | Effort |
+| Asset | Current | Target |
 |---|---|---|
-| Extend Candidate with site fields (`publishedToSite`, `profileSlug`, `siteImage`, etc.) | High | S |
-| `GET /api/public/vas` endpoint | High | S |
-| "Publish to Site" toggle in candidate UI | High | M |
-| Vercel deploy hook trigger on publish | Medium | S |
-| BlogPost Prisma model | Medium | S |
-| `GET /api/public/blog` + `/api/public/blog/[slug]` | Medium | M |
-| Blog editor UI (`/dashboard/blog`) | Medium | L |
+| VA profile photos | Webflow CDN | Vercel Blob (after Remove.bg) |
+| Blog cover images | Webflow CDN | Cloudflare Images or Vercel Blob |
+| Author avatars | Webflow CDN | Vercel Blob |
 
-### Ocean VA (this repo)
-
-| Task | Priority | Effort |
-|---|---|---|
-| `useVasData` hook — fetch from CRM API (with JSON fallback) | High | S |
-| Wire `OurCurrentVAs` + `OurVAsPage` to hook | High | S |
-| Wire `VADynamicProfile` to hook | High | S |
-| Add `/blogs/:slug` route + page component | Medium | M |
-| Update `Blogs.jsx` to fetch from CRM API | Medium | S |
+Migration: bulk-download CDN images → upload to Vercel Blob → update URLs in DB.
 
 ---
 
-## Environment Variables Needed
+## Environment Variables
 
 ### OVAS CRM
 ```
@@ -245,12 +220,26 @@ VITE_CRM_API_URL=https://ovas-internal.vercel.app
 
 ---
 
-## Phase Roadmap
+## Summary: What to Build in OVAS CRM
 
-| Phase | What | When |
-|---|---|---|
-| **0 (done)** | vasData.json from CSV, dynamic profiles, new slug URLs | Now |
-| **1** | OVAS CRM public VA API + publish toggle + Ocean VA client fetch | Next sprint |
-| **2** | Blog model + editor in CRM + blog pages on public site | Sprint +2 |
-| **3** | Module 03 auto-profile generation → publish pipeline | Sprint +3 |
-| **4** | Ocean VA → Next.js migration (SSG for SEO) | Sprint +4 |
+| Task | Phase | Priority | Effort |
+|---|---|---|---|
+| Extend Candidate with site fields | 2 | High | S |
+| `GET /api/public/vas` | 2 | High | S |
+| Publish toggle in candidate UI | 2 | High | M |
+| Vercel deploy hook on publish | 2 | Medium | S |
+| BlogPost Prisma model | 3 | High | S |
+| `GET /api/public/blog` + `/[slug]` | 3 | High | M |
+| Blog editor UI | 3 | High | L |
+| Seed 692 posts from blogData.json | 3 | Medium | S |
+| Module 03 auto-profile gen | 4 | Medium | L |
+
+## Summary: What to Build in Ocean VA
+
+| Task | Phase | Priority | Effort |
+|---|---|---|---|
+| `useVasData` hook (CRM + fallback) | 2 | High | S |
+| Wire VA pages to hook | 2 | High | S |
+| `useBlogData` hook (CRM + fallback) | 3 | High | S |
+| Wire blog pages to hook | 3 | High | S |
+| Next.js migration (SSG/ISR) | 5 | Medium | XL |

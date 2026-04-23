@@ -12,6 +12,7 @@ import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import Careers from './pages/Careers'
 import Blogs from './pages/Blogs'
+import BlogPost from './pages/BlogPost'
 import FAQsPage from './pages/FAQsPage'
 import PricingPage from './pages/PricingPage'
 
@@ -239,6 +240,7 @@ function AppContent() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQsPage />} />
 
           {/* Legal Pages */}
