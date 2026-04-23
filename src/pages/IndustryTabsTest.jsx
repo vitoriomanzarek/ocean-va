@@ -1,5 +1,5 @@
 import React from 'react'
-import IndustryTabsSection from './components/IndustryTabsSection'
+import IndustryTabsSection from '../components/IndustryTabsSection'
 
 const IndustryTabsTest = () => {
   return (

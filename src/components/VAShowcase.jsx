@@ -60,7 +60,7 @@ export default function VAShowcase() {
             Want to see all of our available VAs with full Bio?
           </p>
           <a
-            href="https://www.oceanvirtualassistant.com/ovas-current-vas"
+            href="/ovas-current-vas"
             className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             View All Available VAs

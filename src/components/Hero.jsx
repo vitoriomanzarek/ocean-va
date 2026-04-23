@@ -28,7 +28,7 @@ export default function Hero() {
               • Stop Drowning in Service Tasks
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a href="https://www.oceanvirtualassistant.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg text-center">
+              <a href="/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg text-center">
                 Book a Free Call
               </a>
               <a href="#pricing" className="bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-4 rounded-lg border-2 border-white transition-all text-center">

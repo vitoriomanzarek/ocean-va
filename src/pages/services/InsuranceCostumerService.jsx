@@ -1,9 +1,9 @@
 import React from 'react'
-import BookingDemo from './components/BookingDemo'
-import FAQSection from './components/FAQSection'
-import Pricing from './components/Pricing'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import { insuranceCsrFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import FAQSection from '../../components/FAQSection'
+import Pricing from '../../components/Pricing'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import { insuranceCsrFaqs } from '../../data/faqs'
 
 function InsuranceCostumerService() {
   return (

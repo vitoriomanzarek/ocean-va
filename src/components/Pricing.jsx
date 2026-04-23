@@ -74,7 +74,7 @@ export default function Pricing() {
         {/* Part-time availability note */}
         <div className="mt-6 text-center">
           <p className="text-gray-600">
-            Need fewer hours? <a href="https://www.oceanvirtualassistant.com/contact-us" className="text-ocean-600 hover:text-ocean-700 font-semibold">Ask about our Part-Time plan</a>
+            Need fewer hours? <a href="/contact-us" className="text-ocean-600 hover:text-ocean-700 font-semibold">Ask about our Part-Time plan</a>
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function Pricing() {
               </p>
             </div>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="/contact-us" 
               className="inline-block mt-4 text-ocean-600 hover:text-ocean-700 font-semibold"
             >
               Calculate Your Savings →

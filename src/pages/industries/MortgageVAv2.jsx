@@ -5,14 +5,14 @@ import {
   ClipboardCheck, FileCheck, TrendingUp, Settings,
   Zap, Globe, DollarSign, Star
 } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { mortgageFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { mortgageFaqs } from '../../data/faqs'
 
 // Helper component for partner logos with fallback
 function PartnerLogo({ partner }) {
@@ -248,7 +248,7 @@ export default function MortgageVA() {
     "areaServed": "US",
     "description": "Certified mortgage virtual assistants for loan file setup, document collection, LOS updates (Encompass, LendingPad, Calyx), closing and funding support, post-closing QC, and pre-qualification. Trusted by leading mortgage companies.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-and-lending"
   }
 
   // Partners/Certifications logos data - Using local images from Mortgage logos folder

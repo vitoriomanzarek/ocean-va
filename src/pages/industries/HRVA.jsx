@@ -1,13 +1,13 @@
 import React from 'react'
 import { Briefcase, Users, FileText, CheckSquare, MessageCircle } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { hrFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { hrFaqs } from '../../data/faqs'
 
 export default function HRVA() {
   const handleScroll = (e, targetId) => {
@@ -26,7 +26,7 @@ export default function HRVA() {
     "areaServed": "US",
     "description": "HR virtual assistants for recruiting coordination, interview scheduling, onboarding, and people-ops support.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/hr-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/industries/hr"
   }
 
   return (

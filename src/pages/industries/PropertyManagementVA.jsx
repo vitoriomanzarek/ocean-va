@@ -1,15 +1,16 @@
 import React from 'react'
-import { Ticket, FileText, Globe, CheckCircle, Package } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { techFaqs } from './data/faqs'
+import { Home, Wrench, FileText, Calendar, DollarSign } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { propertyManagementFaqs } from '../../data/faqs'
 
-export default function TechVA() {
+export default function PropertyManagementVA() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -21,12 +22,12 @@ export default function TechVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Tech Virtual Assistant",
+    "name": "Property Management Virtual Assistant",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Technical virtual assistants for ops coordination, documentation, QA checks, light website updates, and support triage.",
-    "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/tech-virtual-assistant"
+    "description": "Virtual assistants for property management: tenant inquiries, maintenance coordination, listings, renewals, and accounting support.",
+    "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
+    "url": "https://www.oceanvirtualassistant.com/industries/property-management"
   }
 
   return (
@@ -39,10 +40,10 @@ export default function TechVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Tech Virtual Assistant
+                Property Management Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Give your technical teams a force‑multiplier. We handle coordination, documentation, support triage, and QA checks—so engineers can ship.
+                Respond faster to tenants and vendors, keep listings fresh, and coordinate maintenance—all without adding office overhead.
               </p>
               <HeroCTAs />
             </div>
@@ -50,10 +51,10 @@ export default function TechVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Tech VA Hero Image"
-                description="Technical team collaborating on projects, documentation, and support. (1200x800px recommended)"
-                imageSrc="/images/Industries/tech-va-hero.webp"
-                imageAlt="Tech Virtual Assistant supporting engineering team"
+                title="Property Management VA Hero Image"
+                description="Property management team handling tenant inquiries, maintenance coordination, and listings. (1200x800px recommended)"
+                imageSrc="/images/Industries/property-management-va-hero.webp"
+                imageAlt="Property Management Virtual Assistant coordinating operations"
               />
             </div>
           </div>
@@ -64,17 +65,17 @@ export default function TechVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your tech VA handles the coordination that keeps your technical operations running smoothly.
+            Your property management VA handles daily operations across your portfolio.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: Ticket, title: 'Support Triage', description: 'Ticket triage, prioritization, and stakeholder updates' },
-            { icon: FileText, title: 'Documentation', description: 'Release notes, documentation, and knowledge base upkeep' },
-            { icon: Globe, title: 'Content Updates', description: 'Light website/content updates in your CMS' },
-            { icon: CheckCircle, title: 'QA Support', description: 'QA checklists, regression logs, and bug reproduction steps' },
-            { icon: Package, title: 'Vendor Coordination', description: 'Vendor coordination, licensing, renewals, and asset tracking' }
+            { icon: Home, title: 'Tenant Communications', description: 'Tenant calls, emails, and showings coordination' },
+            { icon: Wrench, title: 'Maintenance Coordination', description: 'Maintenance requests, vendor scheduling, and updates' },
+            { icon: FileText, title: 'Listings & Applications', description: 'Listings and lead follow‑ups; application processing' },
+            { icon: Calendar, title: 'Move-In/Out', description: 'Move‑in/out checklists and deposit paperwork' },
+            { icon: DollarSign, title: 'Accounting Support', description: 'Light accounting support: charges, receipts, and reports' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -85,28 +86,28 @@ export default function TechVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Technical support that keeps your engineering teams focused on shipping." />
+      <WhyOceanSection subtitle="Property management expertise that keeps your portfolio running smoothly." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Real results that improve your technical operations."
+        subtitle="Real results that improve your property operations."
         outcomes={[
-          { icon: '🎯', title: 'Fewer Interruptions', description: 'Fewer interruptions for technical teams' },
-          { icon: '📚', title: 'Clearer Documentation', description: 'Clearer documentation and faster onboarding' },
-          { icon: '✨', title: 'Cleaner Backlogs', description: 'Cleaner backlogs and stakeholder communication' }
+          { icon: '⚡', title: 'Faster Response Times', description: 'Faster response times and happier residents' },
+          { icon: '📁', title: 'Clean Unit Files', description: 'Clean unit files and on‑time renewals' },
+          { icon: '✅', title: 'Less Chaos', description: 'Less chaos for property managers' }
         ]}
       />
 
       <BookingDemo id="booking" />
 
-      <FAQSection faqs={techFaqs} />
+      <FAQSection faqs={propertyManagementFaqs} />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Ready to Empower Your Technical Teams?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Improve Your Property Management?</h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated tech VA who handles coordination so your engineers can focus on shipping.
+            Get started today with a dedicated VA who keeps your properties running smoothly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

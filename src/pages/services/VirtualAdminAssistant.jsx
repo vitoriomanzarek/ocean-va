@@ -1,14 +1,14 @@
 import React from 'react'
 import { Check, Calendar, Mail, FileText, Plane, Users, DollarSign, Shield, Globe } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { adminAssistantFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { adminAssistantFaqs } from '../../data/faqs'
 
 export default function VirtualAdminAssistant() {
   const handleScroll = (e, targetId) => {
@@ -27,7 +27,7 @@ export default function VirtualAdminAssistant() {
     "areaServed": "US",
     "description": "Dedicated virtual administrative assistant for inbox, calendar, documents, travel, research, and operations.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/virtual-administrative-assistant"
+    "url": "https://www.oceanvirtualassistant.com/services/administrative-assistant"
   }
 
   return (

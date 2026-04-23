@@ -1,14 +1,14 @@
 import React from 'react'
 import { Phone, MessageSquare, Mail, AlertCircle, BarChart3 } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { customerServiceFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { customerServiceFaqs } from '../../data/faqs'
 
 export default function CustomerServiceVA() {
   const handleScroll = (e, targetId) => {
@@ -27,7 +27,7 @@ export default function CustomerServiceVA() {
     "areaServed": "US",
     "description": "Dedicated customer service assistants for phone, chat, and email, including bilingual English–Spanish support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/customer-service-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/services/customer-service-representative"
   }
 
   return (

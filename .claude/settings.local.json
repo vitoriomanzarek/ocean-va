@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.oceanvirtualassistant.com)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(xargs grep *)",
+      "Bash(xargs sed *)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/industries/ecommerce-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/industries/e-commerce\"|g' src/pages/industries/EcommerceVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/industries/finance-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/industries/finance\"|g' src/pages/industries/FinanceVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/industries/hr-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/industries/hr\"|g' src/pages/industries/HRVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/industries/medical-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/industries/healthcare\"|g' src/pages/industries/MedicalVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/industries/mortgage-and-lending\"|g' src/pages/industries/MortgageVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/customer-service-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/services/customer-service-representative\"|g' src/pages/services/CustomerServiceVA.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/virtual-transaction-coordinator\"|\"https://www.oceanvirtualassistant.com/services/transaction-coordinator\"|g' src/pages/services/VirtualTransactionCoordinator.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/virtual-administrative-assistant\"|\"https://www.oceanvirtualassistant.com/services/administrative-assistant\"|g' src/pages/services/VirtualAdminAssistant.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/virtual-assistant-services\"|\"https://www.oceanvirtualassistant.com/services/general-virtual-assistant\"|g' src/pages/services/VirtualAssistantServices.jsx)",
+      "Bash(sed -i 's|\"https://www.oceanvirtualassistant.com/services/marketing-virtual-assistant\"|\"https://www.oceanvirtualassistant.com/services/marketing-assistant\"|g' src/pages/services/MarketingVA.jsx)",
+      "Bash(npm run *)"
+    ]
+  }
+}

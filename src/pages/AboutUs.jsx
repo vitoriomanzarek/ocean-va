@@ -1,5 +1,5 @@
 import React from 'react'
-import BookingDemo from './components/BookingDemo'
+import BookingDemo from '../components/BookingDemo'
 
 export default function AboutUs() {
   const stats = [
@@ -106,7 +106,7 @@ export default function AboutUs() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://www.oceanvirtualassistant.com/contact-us" 
+                  href="/contact-us" 
                   className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
                 >
                   Book a Free Call
@@ -390,7 +390,7 @@ export default function AboutUs() {
               Find out how a dedicated virtual assistant can help your business operate with more focus and less stress.
             </p>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="/contact-us" 
               className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-12 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Schedule a Discovery Call

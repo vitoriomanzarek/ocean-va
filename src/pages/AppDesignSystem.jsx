@@ -1,18 +1,18 @@
 import React from 'react'
-import '../webflow-components-design-system/design-system.css'
-import HeroHome from './components/HeroHome'
-import ClientLogos from './components/ClientLogos'
-import Stats from './components/Stats'
-import ComparisonTable from './components/ComparisonTable'
-import Timeline from './components/Timeline'
-import Pricing from './components/Pricing'
-import VAShowcase from './components/VAShowcase'
-import ServicesIndustriesShowcase from './components/ServicesIndustriesShowcase'
-import Testimonials from './components/Testimonials'
-import BookingDemo from './components/BookingDemo'
-import FAQMini from './components/FAQMini'
-import ServicesGrid from './components/ServicesGrid'
-import MediaGallery from './components/MediaGallery'
+import '../../webflow-components-design-system/design-system.css'
+import HeroHome from '../components/HeroHome'
+import ClientLogos from '../components/ClientLogos'
+import Stats from '../components/Stats'
+import ComparisonTable from '../components/ComparisonTable'
+import Timeline from '../components/Timeline'
+import Pricing from '../components/Pricing'
+import VAShowcase from '../components/VAShowcase'
+import ServicesIndustriesShowcase from '../components/ServicesIndustriesShowcase'
+import Testimonials from '../components/Testimonials'
+import BookingDemo from '../components/BookingDemo'
+import FAQMini from '../components/FAQMini'
+import ServicesGrid from '../components/ServicesGrid'
+import MediaGallery from '../components/MediaGallery'
 
 function AppDesignSystem() {
   const handleScroll = (e, targetId) => {
@@ -189,7 +189,7 @@ function AppDesignSystem() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="/contact-us" 
               className="ds-button ds-button-white ds-button-lg"
             >
               Book a Free Call

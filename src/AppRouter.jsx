@@ -3,27 +3,42 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import NavbarVA from './components/NavbarVA'
 import App from './App'
-import AppDesignSystem from './AppDesignSystem'
-import InsuranceVirtualAssistant from './InsuranceVirtualAssistant'
-import InsuranceCostumerService from './InsuranceCostumerService'
-import VirtualAdminAssistant from './VirtualAdminAssistant'
-import CustomerServiceVA from './CustomerServiceVA'
-import MarketingVA from './MarketingVA'
-import VirtualTransactionCoordinator from './VirtualTransactionCoordinator'
-import SDRVA from './SDRVA'
-import VirtualAssistantServices from './VirtualAssistantServices'
-import SmallBusinessVA from './SmallBusinessVA'
-import EcommerceVA from './EcommerceVA'
-import FinanceVA from './FinanceVA'
-import PropertyManagementVA from './PropertyManagementVA'
-import MedicalVA from './MedicalVA'
-import HRVA from './HRVA'
-import TechVA from './TechVA'
-import MortgageVA from './MortgageVA'
-import MortgageVAv2 from './MortgageVA-v2'
-import VirtualReceptionist from './VirtualReceptionist'
-import RealEstateVA from './RealEstateVA'
-import PricingPage from './PricingPage'
+import Footer from './components/Footer'
+import Schema from './components/Schema'
+import ProtectedRoute from './components/ProtectedRoute'
+
+// Pages - General
+import AboutUs from './pages/AboutUs'
+import ContactUs from './pages/ContactUs'
+import Careers from './pages/Careers'
+import Blogs from './pages/Blogs'
+import FAQsPage from './pages/FAQsPage'
+import PricingPage from './pages/PricingPage'
+
+// Pages - Services
+import InsuranceCostumerService from './pages/services/InsuranceCostumerService'
+import VirtualAdminAssistant from './pages/services/VirtualAdminAssistant'
+import CustomerServiceVA from './pages/services/CustomerServiceVA'
+import MarketingVA from './pages/services/MarketingVA'
+import VirtualTransactionCoordinator from './pages/services/VirtualTransactionCoordinator'
+import SDRVA from './pages/services/SDRVA'
+import VirtualAssistantServices from './pages/services/VirtualAssistantServices'
+import VirtualReceptionist from './pages/services/VirtualReceptionist'
+
+// Pages - Industries
+import InsuranceVirtualAssistant from './pages/industries/InsuranceVirtualAssistant'
+import SmallBusinessVA from './pages/industries/SmallBusinessVA'
+import EcommerceVA from './pages/industries/EcommerceVA'
+import FinanceVA from './pages/industries/FinanceVA'
+import PropertyManagementVA from './pages/industries/PropertyManagementVA'
+import MedicalVA from './pages/industries/MedicalVA'
+import HRVA from './pages/industries/HRVA'
+import TechVA from './pages/industries/TechVA'
+import MortgageVA from './pages/industries/MortgageVA'
+import MortgageVAv2 from './pages/industries/MortgageVAv2'
+import RealEstateVA from './pages/industries/RealEstateVA'
+
+// Pages - VA Profiles
 import OurVAsPage from './pages/OurVAsPage'
 import OurCurrentVAs from './pages/OurVAs/OurCurrentVAs'
 import AbigailProfile from './pages/AbigailProfile'
@@ -85,78 +100,74 @@ import RochelleProfile from './pages/RochelleProfile'
 import SandraProfile from './pages/SandraProfile'
 import XimenaGProfile from './pages/XimenaGProfile'
 import GabrielaRodriguezProfile from './pages/GabrielaRodriguezProfile'
-import AboutUs from './AboutUs'
-import ContactUs from './ContactUs'
-import Careers from './Careers'
-import Blogs from './Blogs'
-import FAQsPage from './FAQsPage'
-import Schema from './components/Schema'
-import Footer from './components/Footer'
-import IndustryTabsTest from './IndustryTabsTest'
-import DesignSystemShowcase from '../webflow-components-design-system/DesignSystemShowcase'
-import '../webflow-components-design-system/DesignSystemShowcase.css'
-import HomepageDemo from './pages/HomepageDemo'
+
+// Pages - Utility
 import VACreation from './pages/VACreation'
 import VALogin from './pages/VALogin'
-import ProtectedRoute from './components/ProtectedRoute'
+import HomepageDemo from './pages/HomepageDemo'
+import IndustryTabsTest from './pages/IndustryTabsTest'
+import AppDesignSystem from './pages/AppDesignSystem'
+import DesignSystemShowcase from '../webflow-components-design-system/DesignSystemShowcase'
+import '../webflow-components-design-system/DesignSystemShowcase.css'
+
+// Legal Pages
+import TermsAndConditions from './pages/TermsAndConditions'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function AppContent() {
   const location = useLocation()
-  
-  // Don't show navbar/footer on login or VA creation pages
+
   const hideNavbarFooter = location.pathname === '/va-creation' || location.pathname === '/va-login'
-  
-  // Use NavbarVA for VA-related pages
-  const useVANavbar = !hideNavbarFooter && (location.pathname.includes('vas') || 
-      location.pathname.includes('insurance-agents') ||
-      location.pathname.includes('profile'))
-  
+
+  const useVANavbar = !hideNavbarFooter && (
+    location.pathname.includes('vas') ||
+    location.pathname.includes('insurance-agents') ||
+    location.pathname.includes('profile')
+  )
+
   return (
     <>
       <Schema />
       {!hideNavbarFooter && (useVANavbar ? <NavbarVA /> : <Navbar />)}
       <main>
         <Routes>
+          {/* Homepage */}
           <Route path="/" element={<App />} />
-          <Route path="/home-design-system" element={<AppDesignSystem />} />
-          <Route path="/insurance" element={<InsuranceVirtualAssistant />} />
-          
-          {/* Services Routes */}
+
+          {/* Services */}
           <Route path="/services/insurance-customer-service-representative" element={<InsuranceCostumerService />} />
-          <Route path="/services/virtual-administrative-assistant" element={<VirtualAdminAssistant />} />
-          <Route path="/services/customer-service-virtual-assistant" element={<CustomerServiceVA />} />
-          <Route path="/services/marketing-virtual-assistant" element={<MarketingVA />} />
-          <Route path="/services/virtual-transaction-coordinator" element={<VirtualTransactionCoordinator />} />
-          <Route path="/services/sdr-virtual-assistant" element={<SDRVA />} />
-          <Route path="/services/virtual-assistant-services" element={<VirtualAssistantServices />} />
-          
-          {/* Industries Routes */}
-          <Route path="/industries/small-business-virtual-assistant" element={<SmallBusinessVA />} />
-          <Route path="/industries/ecommerce-virtual-assistant" element={<EcommerceVA />} />
-          <Route path="/industries/finance-virtual-assistant" element={<FinanceVA />} />
-          <Route path="/industries/property-management-virtual-assistant" element={<PropertyManagementVA />} />
-          <Route path="/industries/medical-virtual-assistant" element={<MedicalVA />} />
-          <Route path="/industries/hr-virtual-assistant" element={<HRVA />} />
-          <Route path="/industries/tech-virtual-assistant" element={<TechVA />} />
-          <Route path="/industries/mortgage-virtual-assistant" element={<MortgageVA />} />
-          <Route path="/industries/mortgage-and-lending" element={<MortgageVAv2 />} />
-          
-          {/* Virtual Receptionist */}
+          <Route path="/services/administrative-assistant" element={<VirtualAdminAssistant />} />
+          <Route path="/services/customer-service-representative" element={<CustomerServiceVA />} />
+          <Route path="/services/marketing-assistant" element={<MarketingVA />} />
+          <Route path="/services/transaction-coordinator" element={<VirtualTransactionCoordinator />} />
+          <Route path="/services/sales-development-inside-sales" element={<SDRVA />} />
+          <Route path="/services/general-virtual-assistant" element={<VirtualAssistantServices />} />
           <Route path="/services/virtual-receptionist" element={<VirtualReceptionist />} />
-          
-          {/* Real Estate Virtual Assistant */}
+
+          {/* Industries */}
+          <Route path="/industries/insurance-virtual-assistant" element={<InsuranceVirtualAssistant />} />
           <Route path="/industries/real-estate-virtual-assistant" element={<RealEstateVA />} />
-          
-          {/* Pricing Page */}
+          <Route path="/industries/small-business" element={<SmallBusinessVA />} />
+          <Route path="/industries/e-commerce" element={<EcommerceVA />} />
+          <Route path="/industries/finance" element={<FinanceVA />} />
+          <Route path="/industries/property-management" element={<PropertyManagementVA />} />
+          <Route path="/industries/healthcare" element={<MedicalVA />} />
+          <Route path="/industries/hr" element={<HRVA />} />
+          <Route path="/industries/technology" element={<TechVA />} />
+          <Route path="/industries/mortgage-and-lending" element={<MortgageVAv2 />} />
+
+          {/* Pricing */}
           <Route path="/pricing" element={<PricingPage />} />
-          
-          {/* Our VAs Page */}
+
+          {/* Our VAs */}
           <Route path="/ovas-current-vas" element={<OurCurrentVAs />} />
           <Route path="/our-vas" element={<OurVAsPage />} />
-          <Route path="/insurance-vas" element={<OurVAsPage type="insurance" />} />
-          <Route path="/executive-admin-vas" element={<OurVAsPage type="executive" />} />
-          
-          {/* VA Profile Pages */}
+          <Route path="/ovas-executive-admin-virtual-assistant" element={<OurVAsPage type="executive" />} />
+          <Route path="/ovas-property-management-assistants" element={<OurVAsPage type="property" />} />
+          <Route path="/ovas-mortgage-processing-assistant" element={<OurVAsPage type="mortgage" />} />
+          <Route path="/ovas-medical-assistant" element={<OurVAsPage type="medical" />} />
+
+          {/* VA Profiles */}
           <Route path="/abigail-ocean-va-profile" element={<AbigailProfile />} />
           <Route path="/adrian-ocean-va-profile" element={<AdrianProfile />} />
           <Route path="/alejandro-ocean-va-profile" element={<AlejandroProfile />} />
@@ -216,43 +227,25 @@ function AppContent() {
           <Route path="/sandra-ocean-va-profile" element={<SandraProfile />} />
           <Route path="/ximena-g-ocean-va-profile" element={<XimenaGProfile />} />
           <Route path="/gabriela-rodriguez-ocean-va-profile" element={<GabrielaRodriguezProfile />} />
-          
-          {/* About Us Page */}
+
+          {/* Main Pages */}
           <Route path="/about-us" element={<AboutUs />} />
-          
-          {/* Contact Us Page */}
           <Route path="/contact-us" element={<ContactUs />} />
-          
-          {/* Careers Page - Disabled */}
-          {/* <Route path="/careers" element={<Careers />} /> */}
-          
-          {/* Blogs Page */}
+          <Route path="/careers" element={<Careers />} />
           <Route path="/blogs" element={<Blogs />} />
-          
-          {/* FAQs Page */}
           <Route path="/faq" element={<FAQsPage />} />
-          
-          {/* Test Page for Industry Tabs */}
-          <Route path="/test-industry-tabs" element={<IndustryTabsTest />} />
-          
-          {/* Design System Showcase */}
-          <Route path="/design-system" element={<DesignSystemShowcase />} />
-          
-          {/* Homepage Demo with Design System */}
-          <Route path="/homepage-demo" element={<HomepageDemo />} />
-          
-          {/* VA Login */}
+
+          {/* Legal Pages */}
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          {/* Utility / Dev */}
           <Route path="/va-login" element={<VALogin />} />
-          
-          {/* VA Creation Form (Protected) */}
-          <Route 
-            path="/va-creation" 
-            element={
-              <ProtectedRoute>
-                <VACreation />
-              </ProtectedRoute>
-            } 
-          />
+          <Route path="/va-creation" element={<ProtectedRoute><VACreation /></ProtectedRoute>} />
+          <Route path="/home-design-system" element={<AppDesignSystem />} />
+          <Route path="/design-system" element={<DesignSystemShowcase />} />
+          <Route path="/homepage-demo" element={<HomepageDemo />} />
+          <Route path="/test-industry-tabs" element={<IndustryTabsTest />} />
         </Routes>
       </main>
 

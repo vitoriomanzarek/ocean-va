@@ -63,7 +63,7 @@ export default function TestimonialsAdditional() {
 
       <div className="bg-ocean-600 text-white p-8 rounded-xl max-w-4xl mx-auto text-center">
         <p className="text-2xl font-bold mb-4">Ready to see results like these in your agency?</p>
-        <a href="https://www.oceanvirtualassistant.com/contact-us" className="inline-block bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg mb-3">
+        <a href="/contact-us" className="inline-block bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg mb-3">
           Schedule Your Discovery Call
         </a>
         <p className="text-ocean-100 text-sm">

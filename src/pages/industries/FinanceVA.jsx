@@ -1,14 +1,14 @@
 import React from 'react'
 import { Calculator, FileText, DollarSign, BarChart3, Users } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { financeFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { financeFaqs } from '../../data/faqs'
 
 export default function FinanceVA() {
   const schema = {
@@ -19,7 +19,7 @@ export default function FinanceVA() {
     "areaServed": "US",
     "description": "Finance virtual assistants for bookkeeping, reconciliations, AR/AP, reporting, and advisor support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/finance-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/industries/finance"
   }
 
   return (
@@ -102,7 +102,7 @@ export default function FinanceVA() {
             Get started today with a dedicated finance VA who keeps your books accurate and current.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://www.oceanvirtualassistant.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a href="/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
               Book a Discovery Call
             </a>
             <a href="#pricing" className="bg-ocean-600 hover:bg-ocean-500 text-white font-bold px-8 py-4 rounded-lg border-2 border-white transition-all duration-200">

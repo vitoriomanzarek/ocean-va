@@ -332,7 +332,7 @@ const HomepageDemo = () => {
             Get started with Ocean Virtual Assistant today and transform your business operations.
           </p>
           <div className="homepage-cta-buttons">
-            <a href="https://www.oceanvirtualassistant.com/contact-us" className="homepage-button-white">
+            <a href="/contact-us" className="homepage-button-white">
               Book a Free Call
             </a>
             <a href="#pricing" className="homepage-button-outline">

@@ -1,15 +1,15 @@
 import React from 'react'
-import { UserPlus, Calendar, FileCheck, DollarSign, MessageSquare } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { medicalFaqs } from './data/faqs'
+import { FileText, Users, Database, Calendar, BarChart3 } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { mortgageFaqs } from '../../data/faqs'
 
-export default function MedicalVA() {
+export default function MortgageVA() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -21,12 +21,12 @@ export default function MedicalVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Medical Virtual Assistant",
+    "name": "Mortgage Virtual Assistant",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Medical virtual assistants for patient intake, scheduling, eligibility checks, billing follow-ups, and patient support.",
+    "description": "Mortgage virtual assistants for loan file setup, document collection, LOS updates, partner coordination, and pipeline status.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/medical-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-and-lending"
   }
 
   return (
@@ -39,10 +39,10 @@ export default function MedicalVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Medical Virtual Assistant
+                Mortgage Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and follow‑ups—so providers can focus on care.
+                Keep files moving and borrowers informed. Your mortgage VA supports doc collection, LOS updates, status calls, and milestone reminders.
               </p>
               <HeroCTAs />
             </div>
@@ -50,10 +50,10 @@ export default function MedicalVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Medical VA Hero Image"
-                description="Medical office environment or healthcare professionals. (1200x800px recommended)"
-                imageSrc="/images/Industries/medical-va-hero.webp"
-                imageAlt="Medical Virtual Assistant supporting healthcare team"
+                title="Mortgage VA Hero Image"
+                description="Mortgage professionals managing loan files, documentation, and client coordination. (1200x800px recommended)"
+                imageSrc="/images/Industries/mortgage-va-hero.webp"
+                imageAlt="Mortgage Virtual Assistant managing loan files and documentation"
               />
             </div>
           </div>
@@ -64,17 +64,17 @@ export default function MedicalVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your medical VA handles the tasks that keep your practice running smoothly.
+            Your mortgage VA handles the coordination that keeps your loan pipeline moving.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: UserPlus, title: 'Patient Intake', description: 'New patient intake and records requests' },
-            { icon: Calendar, title: 'Scheduling', description: 'Scheduling, reminders, and waitlist management' },
-            { icon: FileCheck, title: 'Eligibility Checks', description: 'Insurance eligibility/benefit checks and prior auth coordination' },
-            { icon: DollarSign, title: 'Billing Support', description: 'Billing questions and follow‑ups; payment plan reminders' },
-            { icon: MessageSquare, title: 'Patient Outreach', description: 'Portal messages and post‑visit outreach per your scripts' }
+            { icon: FileText, title: 'Loan File Setup', description: 'Loan file setup and doc checklists' },
+            { icon: Users, title: 'Document Collection', description: 'Borrower and partner outreach for missing docs' },
+            { icon: Database, title: 'LOS Updates', description: 'LOS updates and conditions tracking' },
+            { icon: Calendar, title: 'Status Communications', description: 'Status calls/emails and calendar coordination' },
+            { icon: BarChart3, title: 'Pipeline Summaries', description: 'Weekly pipeline summaries for LO/processor teams' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -85,28 +85,28 @@ export default function MedicalVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Healthcare support that keeps patients informed and providers focused on care." />
+      <WhyOceanSection subtitle="Mortgage support that keeps your loan pipeline moving and borrowers informed." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Real results that improve your practice operations."
+        subtitle="Real results that improve your mortgage operations."
         outcomes={[
-          { icon: '⏱️', title: 'Faster Access', description: 'Faster access and fewer no‑shows' },
-          { icon: '✅', title: 'Cleaner Eligibility', description: 'Cleaner eligibility and fewer billing surprises' },
-          { icon: '😊', title: 'Happier Patients', description: 'Happier patients through timely responses' }
+          { icon: '📋', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status' },
+          { icon: '😊', title: 'Better Experience', description: 'Better borrower experience' },
+          { icon: '💼', title: 'More Time to Originate', description: 'More time for loan officers to originate' }
         ]}
       />
 
       <BookingDemo id="booking" />
 
-      <FAQSection faqs={medicalFaqs} />
+      <FAQSection faqs={mortgageFaqs} />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Ready to Improve Your Practice Operations?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Accelerate Your Loan Pipeline?</h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated medical VA who keeps your practice running smoothly and patients happy.
+            Get started today with a dedicated mortgage VA who keeps your files moving and borrowers informed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

@@ -1,12 +1,12 @@
 import React from 'react';
-import Pricing from './components/Pricing';
-import BookingDemo from './components/BookingDemo';
-import Testimonials from './components/Testimonials';
-import VAShowcase from './components/VAShowcase';
-import Timeline from './components/Timeline';
-import Stats from './components/Stats';
-import FAQ from './components/FAQ';
-import GoogleReviews from './components/GoogleReviews';
+import Pricing from '../components/Pricing';
+import BookingDemo from '../components/BookingDemo';
+import Testimonials from '../components/Testimonials';
+import VAShowcase from '../components/VAShowcase';
+import Timeline from '../components/Timeline';
+import Stats from '../components/Stats';
+import FAQ from '../components/FAQ';
+import GoogleReviews from '../components/GoogleReviews';
 
 const PricingPage = () => {
   const handleScrollToBooking = (e) => {

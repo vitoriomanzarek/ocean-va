@@ -1,15 +1,15 @@
 import React from 'react'
-import { FileText, Users, Database, Calendar, BarChart3 } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { mortgageFaqs } from './data/faqs'
+import { Package, ShoppingCart, MessageSquare, Image, BarChart3 } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQ from '../../components/FAQ'
 
-export default function MortgageVA() {
+export default function EcommerceVA() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -21,12 +21,12 @@ export default function MortgageVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Mortgage Virtual Assistant",
+    "name": "Ecommerce Virtual Assistant",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Mortgage virtual assistants for loan file setup, document collection, LOS updates, partner coordination, and pipeline status.",
-    "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant"
+    "description": "Ecommerce virtual assistants for listings, order ops, returns, support, and catalog QA across major platforms.",
+    "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
+    "url": "https://www.oceanvirtualassistant.com/industries/e-commerce"
   }
 
   return (
@@ -39,10 +39,10 @@ export default function MortgageVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Mortgage Virtual Assistant
+                Ecommerce Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Keep files moving and borrowers informed. Your mortgage VA supports doc collection, LOS updates, status calls, and milestone reminders.
+                Keep your store fast and accurate. We handle listings, order ops, returns, support, and catalog QA across your platforms.
               </p>
               <HeroCTAs />
             </div>
@@ -50,10 +50,10 @@ export default function MortgageVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Mortgage VA Hero Image"
-                description="Mortgage professionals managing loan files, documentation, and client coordination. (1200x800px recommended)"
-                imageSrc="/images/Industries/mortgage-va-hero.webp"
-                imageAlt="Mortgage Virtual Assistant managing loan files and documentation"
+                title="Ecommerce VA Hero Image"
+                description="Ecommerce operations team managing orders, inventory, and customer service. (1200x800px recommended)"
+                imageSrc="/images/Industries/ecommerce-va-hero.webp"
+                imageAlt="Ecommerce Virtual Assistant managing online store operations"
               />
             </div>
           </div>
@@ -64,17 +64,17 @@ export default function MortgageVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your mortgage VA handles the coordination that keeps your loan pipeline moving.
+            Your ecommerce VA keeps your store running smoothly across all platforms.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: FileText, title: 'Loan File Setup', description: 'Loan file setup and doc checklists' },
-            { icon: Users, title: 'Document Collection', description: 'Borrower and partner outreach for missing docs' },
-            { icon: Database, title: 'LOS Updates', description: 'LOS updates and conditions tracking' },
-            { icon: Calendar, title: 'Status Communications', description: 'Status calls/emails and calendar coordination' },
-            { icon: BarChart3, title: 'Pipeline Summaries', description: 'Weekly pipeline summaries for LO/processor teams' }
+            { icon: Package, title: 'Product Listings', description: 'Product listings, variations, and merchandising updates' },
+            { icon: ShoppingCart, title: 'Order Operations', description: 'Order status, returns/exchanges, and RMA coordination' },
+            { icon: MessageSquare, title: 'Marketplace Support', description: 'Marketplace messaging (Amazon/eBay/etc.) and store chat/email' },
+            { icon: Image, title: 'Catalog QA', description: 'Catalog QA—images, attributes, tags, and redirects' },
+            { icon: BarChart3, title: 'Ads & Promos', description: 'Basic ads/reporting support and promo updates' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -85,28 +85,28 @@ export default function MortgageVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Mortgage support that keeps your loan pipeline moving and borrowers informed." />
+      <WhyOceanSection subtitle="Ecommerce expertise that scales with your store." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Real results that improve your mortgage operations."
+        subtitle="Measurable improvements in your ecommerce operations."
         outcomes={[
-          { icon: '📋', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status' },
-          { icon: '😊', title: 'Better Experience', description: 'Better borrower experience' },
-          { icon: '💼', title: 'More Time to Originate', description: 'More time for loan officers to originate' }
+          { icon: '✓', title: 'Fewer Errors', description: 'Fewer catalog/order errors' },
+          { icon: '⭐', title: 'Higher Reviews', description: 'Faster responses and higher reviews' },
+          { icon: '🚀', title: 'Reliable Execution', description: 'Reliable promo and merchandising execution' }
         ]}
       />
 
       <BookingDemo id="booking" />
 
-      <FAQSection faqs={mortgageFaqs} />
+      <FAQ />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Ready to Accelerate Your Loan Pipeline?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Scale Your Ecommerce Store?</h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated mortgage VA who keeps your files moving and borrowers informed.
+            Get started today with a dedicated ecommerce VA who keeps your operations running smoothly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

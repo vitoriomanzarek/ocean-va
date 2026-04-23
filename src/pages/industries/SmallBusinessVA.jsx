@@ -1,16 +1,15 @@
 import React from 'react'
-import { Home, Wrench, FileText, Calendar, DollarSign } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { propertyManagementFaqs } from './data/faqs'
+import { Phone, Calendar, DollarSign, Share2, Users } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQ from '../../components/FAQ'
 
-export default function PropertyManagementVA() {
+export default function SmallBusinessVA() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -22,12 +21,12 @@ export default function PropertyManagementVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Property Management Virtual Assistant",
+    "name": "Virtual Assistant for Small Business",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Virtual assistants for property management: tenant inquiries, maintenance coordination, listings, renewals, and accounting support.",
+    "description": "Virtual assistants for small businesses: phones, scheduling, billing support, marketing, and admin.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/property-management-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/industries/small-business"
   }
 
   return (
@@ -40,10 +39,10 @@ export default function PropertyManagementVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Property Management Virtual Assistant
+                Virtual Assistant for Small Business
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Respond faster to tenants and vendors, keep listings fresh, and coordinate maintenance—all without adding office overhead.
+                Owners shouldn't be stuck in inbox and admin. Bring on a dedicated VA to answer calls, book appointments, manage follow‑ups, and keep projects on track.
               </p>
               <HeroCTAs />
             </div>
@@ -51,10 +50,10 @@ export default function PropertyManagementVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Property Management VA Hero Image"
-                description="Property management team handling tenant inquiries, maintenance coordination, and listings. (1200x800px recommended)"
-                imageSrc="/images/Industries/property-management-va-hero.webp"
-                imageAlt="Property Management Virtual Assistant coordinating operations"
+                title="Small Business VA Hero Image"
+                description="Diverse small business team working together, showing productivity, collaboration, and growth. (1200x800px recommended)"
+                imageSrc="/images/Industries/small-business-va-hero.webp"
+                imageAlt="Small Business Virtual Assistant team collaborating"
               />
             </div>
           </div>
@@ -65,17 +64,17 @@ export default function PropertyManagementVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your property management VA handles daily operations across your portfolio.
+            Your small business VA handles the daily tasks that keep your business running.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: Home, title: 'Tenant Communications', description: 'Tenant calls, emails, and showings coordination' },
-            { icon: Wrench, title: 'Maintenance Coordination', description: 'Maintenance requests, vendor scheduling, and updates' },
-            { icon: FileText, title: 'Listings & Applications', description: 'Listings and lead follow‑ups; application processing' },
-            { icon: Calendar, title: 'Move-In/Out', description: 'Move‑in/out checklists and deposit paperwork' },
-            { icon: DollarSign, title: 'Accounting Support', description: 'Light accounting support: charges, receipts, and reports' }
+            { icon: Phone, title: 'Phones & Scheduling', description: 'Phones and appointment scheduling' },
+            { icon: DollarSign, title: 'Billing & Follow-ups', description: 'Quotes, invoices, and payment follow‑ups' },
+            { icon: Calendar, title: 'Inbox & Calendar', description: 'Inbox/calendar management and customer follow‑ups' },
+            { icon: Share2, title: 'Social & Reviews', description: 'Social posts, local listings, and review replies' },
+            { icon: Users, title: 'Bookkeeping & Vendors', description: 'Light bookkeeping and vendor coordination' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -86,28 +85,28 @@ export default function PropertyManagementVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Property management expertise that keeps your portfolio running smoothly." />
+      <WhyOceanSection subtitle="Small business support that understands your needs." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Real results that improve your property operations."
+        subtitle="Real results that help your small business thrive."
         outcomes={[
-          { icon: '⚡', title: 'Faster Response Times', description: 'Faster response times and happier residents' },
-          { icon: '📁', title: 'Clean Unit Files', description: 'Clean unit files and on‑time renewals' },
-          { icon: '✅', title: 'Less Chaos', description: 'Less chaos for property managers' }
+          { icon: '📞', title: 'Fewer Missed Calls', description: 'Fewer missed calls and faster responses' },
+          { icon: '💰', title: 'Better Cash Flow', description: 'Better cash flow via on‑time follow‑ups' },
+          { icon: '⏰', title: 'More Time to Lead', description: 'More time for owners to lead and sell' }
         ]}
       />
 
       <BookingDemo id="booking" />
 
-      <FAQSection faqs={propertyManagementFaqs} />
+      <FAQ />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Ready to Improve Your Property Management?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Grow Your Small Business?</h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated VA who keeps your properties running smoothly.
+            Get started today with a dedicated VA who handles your daily operations so you can focus on growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

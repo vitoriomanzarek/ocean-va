@@ -1,15 +1,15 @@
 import React from 'react'
-import { Phone, Calendar, DollarSign, Share2, Users } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import { UserPlus, Calendar, FileCheck, DollarSign, MessageSquare } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { medicalFaqs } from '../../data/faqs'
 
-export default function SmallBusinessVA() {
+export default function MedicalVA() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -21,12 +21,12 @@ export default function SmallBusinessVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Virtual Assistant for Small Business",
+    "name": "Medical Virtual Assistant",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Virtual assistants for small businesses: phones, scheduling, billing support, marketing, and admin.",
-    "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/small-business-virtual-assistant"
+    "description": "Medical virtual assistants for patient intake, scheduling, eligibility checks, billing follow-ups, and patient support.",
+    "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
+    "url": "https://www.oceanvirtualassistant.com/industries/healthcare"
   }
 
   return (
@@ -39,10 +39,10 @@ export default function SmallBusinessVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Virtual Assistant for Small Business
+                Medical Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Owners shouldn't be stuck in inbox and admin. Bring on a dedicated VA to answer calls, book appointments, manage follow‑ups, and keep projects on track.
+                Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and follow‑ups—so providers can focus on care.
               </p>
               <HeroCTAs />
             </div>
@@ -50,10 +50,10 @@ export default function SmallBusinessVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Small Business VA Hero Image"
-                description="Diverse small business team working together, showing productivity, collaboration, and growth. (1200x800px recommended)"
-                imageSrc="/images/Industries/small-business-va-hero.webp"
-                imageAlt="Small Business Virtual Assistant team collaborating"
+                title="Medical VA Hero Image"
+                description="Medical office environment or healthcare professionals. (1200x800px recommended)"
+                imageSrc="/images/Industries/medical-va-hero.webp"
+                imageAlt="Medical Virtual Assistant supporting healthcare team"
               />
             </div>
           </div>
@@ -64,17 +64,17 @@ export default function SmallBusinessVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your small business VA handles the daily tasks that keep your business running.
+            Your medical VA handles the tasks that keep your practice running smoothly.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: Phone, title: 'Phones & Scheduling', description: 'Phones and appointment scheduling' },
-            { icon: DollarSign, title: 'Billing & Follow-ups', description: 'Quotes, invoices, and payment follow‑ups' },
-            { icon: Calendar, title: 'Inbox & Calendar', description: 'Inbox/calendar management and customer follow‑ups' },
-            { icon: Share2, title: 'Social & Reviews', description: 'Social posts, local listings, and review replies' },
-            { icon: Users, title: 'Bookkeeping & Vendors', description: 'Light bookkeeping and vendor coordination' }
+            { icon: UserPlus, title: 'Patient Intake', description: 'New patient intake and records requests' },
+            { icon: Calendar, title: 'Scheduling', description: 'Scheduling, reminders, and waitlist management' },
+            { icon: FileCheck, title: 'Eligibility Checks', description: 'Insurance eligibility/benefit checks and prior auth coordination' },
+            { icon: DollarSign, title: 'Billing Support', description: 'Billing questions and follow‑ups; payment plan reminders' },
+            { icon: MessageSquare, title: 'Patient Outreach', description: 'Portal messages and post‑visit outreach per your scripts' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -85,28 +85,28 @@ export default function SmallBusinessVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Small business support that understands your needs." />
+      <WhyOceanSection subtitle="Healthcare support that keeps patients informed and providers focused on care." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Real results that help your small business thrive."
+        subtitle="Real results that improve your practice operations."
         outcomes={[
-          { icon: '📞', title: 'Fewer Missed Calls', description: 'Fewer missed calls and faster responses' },
-          { icon: '💰', title: 'Better Cash Flow', description: 'Better cash flow via on‑time follow‑ups' },
-          { icon: '⏰', title: 'More Time to Lead', description: 'More time for owners to lead and sell' }
+          { icon: '⏱️', title: 'Faster Access', description: 'Faster access and fewer no‑shows' },
+          { icon: '✅', title: 'Cleaner Eligibility', description: 'Cleaner eligibility and fewer billing surprises' },
+          { icon: '😊', title: 'Happier Patients', description: 'Happier patients through timely responses' }
         ]}
       />
 
       <BookingDemo id="booking" />
 
-      <FAQ />
+      <FAQSection faqs={medicalFaqs} />
 
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">Ready to Grow Your Small Business?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Improve Your Practice Operations?</h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated VA who handles your daily operations so you can focus on growth.
+            Get started today with a dedicated medical VA who keeps your practice running smoothly and patients happy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

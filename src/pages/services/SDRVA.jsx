@@ -1,14 +1,14 @@
 import React from 'react'
 import { Search, List, Calendar, Database, BarChart3 } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { sdrFaqs } from './data/faqs'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { sdrFaqs } from '../../data/faqs'
 
 export default function SDRVA() {
   const handleScroll = (e, targetId) => {
@@ -27,7 +27,7 @@ export default function SDRVA() {
     "areaServed": "US",
     "description": "Sales development support for research, sequencing, CRM hygiene, and meeting scheduling.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/sdr-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/services/sales-development-inside-sales"
   }
 
   return (

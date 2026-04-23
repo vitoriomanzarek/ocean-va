@@ -1,16 +1,16 @@
 import React from 'react'
-import { Check, Share2, FileText, Mail, Palette, BarChart3, Users, Globe, DollarSign, Shield } from 'lucide-react'
-import BookingDemo from './components/BookingDemo'
-import HeroCTAs from './components/HeroCTAs'
-import HeroPlaceholder from './components/HeroPlaceholder'
-import WhyOceanSection from './components/WhyOceanSection'
-import OutcomesSection from './components/OutcomesSection'
-import HowItWorksSection from './components/HowItWorksSection'
-import Pricing from './components/Pricing'
-import FAQSection from './components/FAQSection'
-import { marketingFaqs } from './data/faqs'
+import { Check, FileCheck, Edit3, Home, Calendar, ClipboardList, Users, Globe, DollarSign, Shield } from 'lucide-react'
+import BookingDemo from '../../components/BookingDemo'
+import HeroCTAs from '../../components/HeroCTAs'
+import HeroPlaceholder from '../../components/HeroPlaceholder'
+import WhyOceanSection from '../../components/WhyOceanSection'
+import OutcomesSection from '../../components/OutcomesSection'
+import HowItWorksSection from '../../components/HowItWorksSection'
+import Pricing from '../../components/Pricing'
+import FAQSection from '../../components/FAQSection'
+import { transactionCoordinatorFaqs } from '../../data/faqs'
 
-export default function MarketingVA() {
+export default function VirtualTransactionCoordinator() {
   const handleScroll = (e, targetId) => {
     e.preventDefault()
     const element = document.getElementById(targetId)
@@ -22,12 +22,12 @@ export default function MarketingVA() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Marketing Virtual Assistant",
+    "name": "Virtual Transaction Coordinator (Real Estate)",
     "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
     "areaServed": "US",
-    "description": "Marketing virtual assistants for content, social, email, basic design, and reporting with bilingual support.",
+    "description": "Contract-to-close coordination: checklists, signatures, vendor coordination, contingency tracking, and status updates.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/marketing-virtual-assistant"
+    "url": "https://www.oceanvirtualassistant.com/services/transaction-coordinator"
   }
 
   return (
@@ -42,10 +42,10 @@ export default function MarketingVA() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Marketing Virtual Assistant
+                Virtual Transaction Coordinator (Real Estate)
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Execute more campaigns without adding headcount. Your marketing VA supports content, social, email, and reporting—so your strategists can focus on growth.
+                Contract‑to‑close without the scramble. We handle checklists, docs, signatures, vendor coordination, and reminders—so agents and teams never miss a milestone.
               </p>
               <HeroCTAs />
             </div>
@@ -53,10 +53,10 @@ export default function MarketingVA() {
             {/* Right Column - Image Placeholder */}
             <div>
               <HeroPlaceholder 
-                title="Marketing VA Hero Image"
-                description="Marketing professionals collaborating on campaigns, social media, content creation with modern tools. (1200x800px recommended)"
-                imageSrc="/images/Industries/marketing-va-hero.webp"
-                imageAlt="Marketing Virtual Assistant team managing campaigns"
+                title="Transaction Coordinator Hero Image"
+                description="Transaction coordinator managing contracts, documents, vendor coordination in real estate. (1200x800px recommended)"
+                imageSrc="/images/Services/transaction-coordinator-hero.webp"
+                imageAlt="Virtual Transaction Coordinator managing real estate deals"
               />
             </div>
           </div>
@@ -68,36 +68,36 @@ export default function MarketingVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">What We Do</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your marketing VA handles execution so your team can focus on strategy and growth.
+            Your transaction coordinator keeps every deal on track from contract to close.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
-              icon: Share2,
-              title: 'Social Media',
-              description: 'Social content scheduling and community responses'
+              icon: FileCheck,
+              title: 'File Setup',
+              description: 'Open file, verify contract terms, and create checklists'
             },
             {
-              icon: FileText,
-              title: 'Content & SEO',
-              description: 'Blog drafting, repurposing, and on‑page updates (SEO‑friendly)'
+              icon: Edit3,
+              title: 'Signatures & Disclosures',
+              description: 'Coordinate signatures and disclosures (DocuSign, Dotloop, etc.)'
             },
             {
-              icon: Mail,
-              title: 'Email Marketing',
-              description: 'Email builds, lists, segmentation, and QA'
+              icon: Home,
+              title: 'Vendor Coordination',
+              description: 'Order inspections, appraisals, title/escrow, and HOA docs'
             },
             {
-              icon: Palette,
-              title: 'Creative & Web',
-              description: 'Basic creative in Canva/Figma; landing page updates in your CMS'
+              icon: Calendar,
+              title: 'Deadline Tracking',
+              description: 'Track contingencies and dates; send reminders to all parties'
             },
             {
-              icon: BarChart3,
-              title: 'Reporting',
-              description: 'Reporting snapshots (traffic, leads, pipeline proxies)'
+              icon: ClipboardList,
+              title: 'Status Updates',
+              description: 'Update MLS/CRM and deliver weekly status summaries'
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
@@ -109,27 +109,27 @@ export default function MarketingVA() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="Marketing support that aligns with your brand and executes consistently." />
+      <WhyOceanSection subtitle="Real estate transaction expertise that keeps deals moving smoothly." />
 
       <Pricing />
 
       <OutcomesSection 
-        subtitle="Amplify your marketing output without expanding your team."
+        subtitle="Smoother transactions and happier clients from start to finish."
         outcomes={[
           {
-            icon: '📈',
-            title: 'More Output',
-            description: 'More output from your existing strategy'
+            icon: '✓',
+            title: 'Fewer Missed Deadlines',
+            description: 'Fewer missed deadlines and clean audits'
           },
           {
-            icon: '✅',
-            title: 'On-Time Execution',
-            description: 'Cleaner, on‑time campaign execution'
+            icon: '😊',
+            title: 'Better Client Experience',
+            description: 'Better client experience with proactive communication'
           },
           {
-            icon: '📊',
-            title: 'Consistent Reporting',
-            description: 'Consistent reporting and insight loops'
+            icon: '🏆',
+            title: 'More Deals Closed',
+            description: 'More deals closed with less chaos'
           }
         ]}
       />
@@ -138,46 +138,46 @@ export default function MarketingVA() {
       <BookingDemo id="booking" />
 
       <HowItWorksSection 
-        subtitle="Get your marketing VA integrated and executing quickly."
+        subtitle="Get your transaction coordinator integrated into your workflow quickly."
         steps={[
           {
             step: '1',
-            title: 'Brief',
-            description: 'Share your marketing goals, channels, and current workflows'
+            title: 'Intake',
+            description: 'Share your transaction process, forms, and vendor contacts'
           },
           {
             step: '2',
-            title: 'Candidate Shortlist',
-            description: 'We present marketing-savvy candidates matched to your needs'
+            title: 'Shortlist',
+            description: 'We present real estate-experienced candidates'
           },
           {
             step: '3',
             title: 'Interview',
-            description: 'You select the VA who fits your brand and style'
+            description: 'You select the coordinator who fits your team'
           },
           {
             step: '4',
-            title: 'Access & Style Guide',
-            description: 'Onboard to your tools, brand guidelines, and content calendar'
+            title: 'SOPs & Templates',
+            description: 'Onboard to your systems, checklists, and compliance requirements'
           },
           {
             step: '5',
-            title: 'Weekly/Monthly Plan',
-            description: 'Ongoing execution with regular check-ins and QA'
+            title: 'Live Files with QA',
+            description: 'Start coordinating transactions with ongoing quality assurance'
           }
         ]}
       />
 
-      <FAQSection faqs={marketingFaqs} />
+      <FAQSection faqs={transactionCoordinatorFaqs} />
 
       {/* CTA Section */}
       <section className="section-container bg-ocean-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Scale Your Marketing?
+            Ready to Streamline Your Transactions?
           </h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated marketing VA who executes your campaigns consistently and professionally.
+            Get started today with a dedicated transaction coordinator who keeps your deals on track from contract to close.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
