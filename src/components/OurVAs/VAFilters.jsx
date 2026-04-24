@@ -2,7 +2,7 @@ import React from 'react';
 import './VAFilters.css';
 
 export default function VAFilters({ filters, onFilterChange }) {
-  const availabilityOptions = ['All', 'Full Time', 'Part Time', 'Assigned'];
+  const availabilityOptions = ['All', 'Full Time', 'Part Time'];
   const languageOptions = ['All', 'Bilingual (EN-ES)', 'English'];
 
   return (

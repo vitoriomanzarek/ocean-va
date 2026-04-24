@@ -93,7 +93,6 @@ export default function OurVAsPage({ type }) {
             <option value="All">All Availability</option>
             <option value="Full Time">Full Time</option>
             <option value="Part Time">Part Time</option>
-            <option value="Assigned">Assigned</option>
           </select>
           <span className="text-sm text-gray-500">{filtered.length} VA{filtered.length !== 1 ? 's' : ''}</span>
         </div>

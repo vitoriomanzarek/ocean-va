@@ -3,15 +3,6 @@ import { ArrowRight, Play, Calendar, Globe } from 'lucide-react';
 import './VACard.css';
 
 export default function VACard({ va }) {
-  const getAvailabilityBadgeColor = (availability) => {
-    switch (availability) {
-      case 'Full Time': return 'badge-full-time';
-      case 'Part Time': return 'badge-part-time';
-      case 'Assigned': return 'badge-assigned';
-      default: return 'badge-full-time';
-    }
-  };
-
   const profileUrl = va.profileSlug || `/virtual-assistants/${va.slug}`;
 
   return (
@@ -24,9 +15,6 @@ export default function VACard({ va }) {
             alt={va.name}
             className="va-card-image"
           />
-          <span className={`va-availability-badge ${getAvailabilityBadgeColor(va.availability)}`}>
-            {va.availability}
-          </span>
         </div>
       </div>
 

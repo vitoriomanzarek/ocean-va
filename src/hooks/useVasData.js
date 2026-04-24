@@ -22,10 +22,13 @@ export function mergeVAs(overrides, publishedOnly = false) {
   return publishedOnly ? all.filter(va => va.published !== false) : all
 }
 
-// Public-facing hook — only returns published, non-inactive VAs.
+// Availabilities shown on the public site (Assigned = working with a client, not available to hire)
+const PUBLIC_AVAILABILITIES = new Set(['Full Time', 'Part Time'])
+
+// Public-facing hook — only published + actually available VAs.
 export function useVasData() {
   return useMemo(() => {
     const overrides = loadOverrides()
-    return mergeVAs(overrides, true).filter(va => va.availability !== 'Not Active')
+    return mergeVAs(overrides, true).filter(va => PUBLIC_AVAILABILITIES.has(va.availability))
   }, [])
 }
