@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Phone, MessageSquare, Calendar, Users, BarChart3, CheckCircle } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,7 +23,7 @@ export default function VirtualReceptionist() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Virtual Receptionist",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "availableLanguage": ["English", "Spanish"],
     "description": "Virtual receptionist services for live call answering, appointment booking, lead qualification, and 24/7 coverage with bilingual support.",
@@ -52,7 +52,7 @@ export default function VirtualReceptionist() {
                 Virtual Receptionist
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Never miss a call or lead. Your virtual receptionist answers 24/7, books appointments, qualifies leads, and keeps your team informed—all with a personal touch.
+                Never miss a call or lead. Your virtual receptionist answers 24/7, books appointments, qualifies leads, and keeps your team informedâ€”all with a personal touch.
               </p>
               <HeroCTAs />
             </div>
@@ -75,9 +75,9 @@ export default function VirtualReceptionist() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: '🌍', title: 'Bilingual Reception', desc: 'English/Spanish support for all your customers' },
-              { icon: '⚡', title: '2–3 Day Start', desc: 'No startup fees, fast onboarding' },
-              { icon: '⭐', title: 'Top 1% Talent', desc: '30-day training in real operations' },
+              { icon: 'ðŸŒ', title: 'Bilingual Reception', desc: 'English/Spanish support for all your customers' },
+              { icon: 'âš¡', title: '2â€“3 Day Start', desc: 'No startup fees, fast onboarding' },
+              { icon: 'â­', title: 'Top 1% Talent', desc: '30-day training in real operations' },
             ].map((item, idx) => (
               <div key={idx} className="text-center">
                 <div className="text-4xl mb-3">{item.icon}</div>
@@ -89,18 +89,18 @@ export default function VirtualReceptionist() {
         </div>
       </section>
 
-      {/* Problem → Outcome */}
+      {/* Problem â†’ Outcome */}
       <section className="section-container bg-gradient-to-br from-ocean-50 to-white py-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-red-600 mb-4">❌ The Problem</h3>
+              <h3 className="text-2xl font-bold text-red-600 mb-4">âŒ The Problem</h3>
               <p className="text-gray-700 leading-relaxed">
                 When calls go to voicemail, you lose deals and trust. Leads get frustrated, callbacks take hours, and your pipeline suffers while you're stuck managing the phones.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-green-600 mb-4">✅ The Outcome</h3>
+              <h3 className="text-2xl font-bold text-green-600 mb-4">âœ… The Outcome</h3>
               <p className="text-gray-700 leading-relaxed">
                 Our receptionists pick up live, greet on-brand, route smartly, and book appointments. Your pipeline goes up, NPS improves, and you focus on what matters.
               </p>
@@ -144,17 +144,17 @@ export default function VirtualReceptionist() {
         subtitle="Measurable improvements in lead capture and customer satisfaction."
         outcomes={[
           {
-            icon: '📞',
+            icon: 'ðŸ“ž',
             title: 'Zero Missed Calls',
             description: '95%+ call capture with < 3 rings to answer'
           },
           {
-            icon: '📅',
+            icon: 'ðŸ“…',
             title: 'More Booked Appointments',
             description: '90% scheduling compliance and automated confirmations'
           },
           {
-            icon: '😊',
+            icon: 'ðŸ˜Š',
             title: 'Higher NPS',
             description: 'Professional, bilingual support that delights customers'
           }
@@ -165,7 +165,7 @@ export default function VirtualReceptionist() {
       <BookingDemo id="booking" />
 
       <HowItWorksSection 
-        subtitle="Get your virtual receptionist live in 2–3 business days."
+        subtitle="Get your virtual receptionist live in 2â€“3 business days."
         steps={[
           {
             step: '1',
@@ -174,7 +174,7 @@ export default function VirtualReceptionist() {
           },
           {
             step: '2',
-            title: 'Onboarding (2–3 Days)',
+            title: 'Onboarding (2â€“3 Days)',
             description: 'Connect phone numbers, inboxes, calendars, and CRM'
           },
           {
@@ -224,7 +224,7 @@ export default function VirtualReceptionist() {
             Ready to Stop Missing Calls?
           </h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Get started today with a dedicated virtual receptionist who answers, qualifies, and books—so you grow.
+            Get started today with a dedicated virtual receptionist who answers, qualifies, and booksâ€”so you grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -247,3 +247,4 @@ export default function VirtualReceptionist() {
     </>
   )
 }
+

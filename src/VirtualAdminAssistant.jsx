@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Check, Calendar, Mail, FileText, Plane, Users, DollarSign, Shield, Globe } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function VirtualAdminAssistant() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Virtual Administrative Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Dedicated virtual administrative assistant for inbox, calendar, documents, travel, research, and operations.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/virtual-administrative-assistant"
+    "url": "https://hirewags.com/services/virtual-administrative-assistant"
   }
 
   return (
@@ -44,7 +44,7 @@ export default function VirtualAdminAssistant() {
                 Hire a Virtual Administrative Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                A dedicated admin who keeps your inbox, calendar, documents, and day‑to‑day operations moving—without the overhead of a full‑time, in‑office hire.
+                A dedicated admin who keeps your inbox, calendar, documents, and dayâ€‘toâ€‘day operations movingâ€”without the overhead of a fullâ€‘time, inâ€‘office hire.
               </p>
               <HeroCTAs />
             </div>
@@ -76,12 +76,12 @@ export default function VirtualAdminAssistant() {
             {
               icon: Mail,
               title: 'Inbox & Communication',
-              description: 'Inbox triage, follow‑ups, and scheduling'
+              description: 'Inbox triage, followâ€‘ups, and scheduling'
             },
             {
               icon: Calendar,
               title: 'Calendar Management',
-              description: 'Calendar management, meeting prep, and note‑taking'
+              description: 'Calendar management, meeting prep, and noteâ€‘taking'
             },
             {
               icon: FileText,
@@ -96,7 +96,7 @@ export default function VirtualAdminAssistant() {
             {
               icon: Users,
               title: 'Vendor Coordination',
-              description: 'Vendor coordination, forms, and compliance to‑dos'
+              description: 'Vendor coordination, forms, and compliance toâ€‘dos'
             },
             {
               icon: DollarSign,
@@ -113,7 +113,7 @@ export default function VirtualAdminAssistant() {
         </div>
       </section>
 
-      <WhyOceanSection subtitle="More than just a service—a dedicated teammate who understands your business." />
+      <WhyOceanSection subtitle="More than just a serviceâ€”a dedicated teammate who understands your business." />
 
       <Pricing />
 
@@ -121,17 +121,17 @@ export default function VirtualAdminAssistant() {
         subtitle="Real results that transform how you work every day."
         outcomes={[
           {
-            icon: '✓',
+            icon: 'âœ“',
             title: 'Fewer Missed Messages',
             description: 'Stay on top of deadlines and communications'
           },
           {
-            icon: '⏰',
+            icon: 'â°',
             title: 'More Time on Priorities',
-            description: 'Focus on what matters—not admin tasks'
+            description: 'Focus on what mattersâ€”not admin tasks'
           },
           {
-            icon: '📁',
+            icon: 'ðŸ“',
             title: 'Clean, Searchable Docs',
             description: 'Organized processes and documentation'
           }

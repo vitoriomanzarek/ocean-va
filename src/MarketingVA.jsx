@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Check, Share2, FileText, Mail, Palette, BarChart3, Users, Globe, DollarSign, Shield } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function MarketingVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Marketing Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Marketing virtual assistants for content, social, email, basic design, and reporting with bilingual support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/marketing-virtual-assistant"
+    "url": "https://hirewags.com/services/marketing-virtual-assistant"
   }
 
   return (
@@ -45,7 +45,7 @@ export default function MarketingVA() {
                 Marketing Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Execute more campaigns without adding headcount. Your marketing VA supports content, social, email, and reporting—so your strategists can focus on growth.
+                Execute more campaigns without adding headcount. Your marketing VA supports content, social, email, and reportingâ€”so your strategists can focus on growth.
               </p>
               <HeroCTAs />
             </div>
@@ -82,7 +82,7 @@ export default function MarketingVA() {
             {
               icon: FileText,
               title: 'Content & SEO',
-              description: 'Blog drafting, repurposing, and on‑page updates (SEO‑friendly)'
+              description: 'Blog drafting, repurposing, and onâ€‘page updates (SEOâ€‘friendly)'
             },
             {
               icon: Mail,
@@ -117,17 +117,17 @@ export default function MarketingVA() {
         subtitle="Amplify your marketing output without expanding your team."
         outcomes={[
           {
-            icon: '📈',
+            icon: 'ðŸ“ˆ',
             title: 'More Output',
             description: 'More output from your existing strategy'
           },
           {
-            icon: '✅',
+            icon: 'âœ…',
             title: 'On-Time Execution',
-            description: 'Cleaner, on‑time campaign execution'
+            description: 'Cleaner, onâ€‘time campaign execution'
           },
           {
-            icon: '📊',
+            icon: 'ðŸ“Š',
             title: 'Consistent Reporting',
             description: 'Consistent reporting and insight loops'
           }

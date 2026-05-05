@@ -1,4 +1,4 @@
-import VAProfilePage from '../components/VAProfile/VAProfilePage'
+﻿import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 export default function JaniceProfile() {
   const janiceData = {
@@ -39,20 +39,20 @@ export default function JaniceProfile() {
       'Noise-Cancelling Headset'
     ],
     
-    employmentSummary: 'Janice brings strong administrative experience from her current role at Ocean Virtual Assistant Solutions, where she supports executive-level operations. From her 10-year tenure at SM Development Corporation, she gained insurance-related experience assisting with legal documentation, contract reviews, and client inquiries tied to real estate transactions. Her combined experience demonstrates expertise in executive support, administrative excellence, legal document management, and real estate coordination. Her strengths include strong organizational skills, attention to detail, executive-level communication, legal acumen, and business operations excellence.',
+    employmentSummary: 'Janice brings strong administrative experience from her current role at WAGS, where she supports executive-level operations. From her 10-year tenure at SM Development Corporation, she gained insurance-related experience assisting with legal documentation, contract reviews, and client inquiries tied to real estate transactions. Her combined experience demonstrates expertise in executive support, administrative excellence, legal document management, and real estate coordination. Her strengths include strong organizational skills, attention to detail, executive-level communication, legal acumen, and business operations excellence.',
     
     employmentHistory: [
       {
         company: 'OCEAN VIRTUAL ASSISTANT',
         position: 'Virtual Assistant/Executive Assistant',
         period: 'AUG 2023 - PRESENT',
-        description: '• Supports the CEO with daily executive tasks, including calendar and email management, inventory tracking, report creation, and coordination of garment shipments.'
+        description: 'â€¢ Supports the CEO with daily executive tasks, including calendar and email management, inventory tracking, report creation, and coordination of garment shipments.'
       },
       {
         company: 'SM DEVELOPMENT CORPORATION',
         position: 'Legal Supervisor',
         period: 'JUL 2013 - APR 2023',
-        description: '• Provided legal and administrative support by drafting and reviewing contracts, managing legal documentation for real estate transactions, assisting with civil case filings, and handling client inquiries.'
+        description: 'â€¢ Provided legal and administrative support by drafting and reviewing contracts, managing legal documentation for real estate transactions, assisting with civil case filings, and handling client inquiries.'
       }
     ],
     
@@ -87,3 +87,4 @@ export default function JaniceProfile() {
 
   return <VAProfilePage vaData={janiceData} />
 }
+

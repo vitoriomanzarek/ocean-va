@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import ContactHero from './components/ContactHero'
 import BookingDemo from './components/BookingDemo'
 import GoogleReviews from './components/GoogleReviews'
@@ -26,7 +26,7 @@ export default function ContactUs() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 text-ocean-100">
-            Join hundreds of businesses that have streamlined their operations with Ocean Virtual Assistant. Let's get started today.
+            Join hundreds of businesses that have streamlined their operations with WAGS. Let's get started today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -47,3 +47,4 @@ export default function ContactUs() {
     </>
   )
 }
+

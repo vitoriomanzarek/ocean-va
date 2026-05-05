@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 
 // This is a backup of the original BookingDemo component
 // Replaced with Calendly integration on 2025-10-23
@@ -44,7 +44,7 @@ export default function BookingDemoOriginal() {
           {/* Top Section - Booking Info */}
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 max-w-3xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Ocean Virtual Assistant Solutions
+              WAGS
             </h3>
             
             <div className="space-y-3 mb-6">
@@ -158,3 +158,4 @@ export default function BookingDemoOriginal() {
     </section>
   )
 }
+

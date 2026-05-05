@@ -1,26 +1,26 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function Testimonials() {
   const testimonials = [
     {
       name: 'Dustin Lewis',
       date: '2024-10-7',
-      text: 'Ocean VA Solutions has been a game changer for my agency. Their VAs handle complex tasks like COIs and billing audits with ease. They\'re truly part of my core team—customers even ask for them by name! Great service, unbeatable pricing, and top-notch professionalism. Highly recommend'
+      text: 'WAGS Solutions has been a game changer for my agency. Their VAs handle complex tasks like COIs and billing audits with ease. They\'re truly part of my core teamâ€”customers even ask for them by name! Great service, unbeatable pricing, and top-notch professionalism. Highly recommend'
     },
     {
       name: 'Albert Johnson III',
       date: '2024-11-18',
-      text: 'Ocean VA has a great addition to our team. Maria is doing an outstanding job with our day to day operations and service to our customers.'
+      text: 'WAGS has a great addition to our team. Maria is doing an outstanding job with our day to day operations and service to our customers.'
     },
     {
       name: 'Donnie Browne',
       date: '2024-04-4',
-      text: 'Running my insurance agency without Ocean VA Solutions would be unimaginable. Our virtual assistant has seamlessly integrated into our team, handling everything from appointment scheduling to policy updates. Their dedication and professionalism have enabled us to deliver exceptional service to our clients while also freeing up valuable time for strategic planning and business development.'
+      text: 'Running my insurance agency without WAGS Solutions would be unimaginable. Our virtual assistant has seamlessly integrated into our team, handling everything from appointment scheduling to policy updates. Their dedication and professionalism have enabled us to deliver exceptional service to our clients while also freeing up valuable time for strategic planning and business development.'
     },
     {
       name: 'Joan Luistro',
       date: '2024-12-3',
-      text: 'Amazing service! Marketing my listings was always a challenge because I simply didn\'t have the time. But after hiring a virtual assistant from Ocean VA Solutions, I now have someone who handles all my marketing materials. She creates professional flyers, schedules posts, and even helps with my email campaigns. I\'ve noticed an increase in interest and leads in just three weeks.'
+      text: 'Amazing service! Marketing my listings was always a challenge because I simply didn\'t have the time. But after hiring a virtual assistant from WAGS Solutions, I now have someone who handles all my marketing materials. She creates professional flyers, schedules posts, and even helps with my email campaigns. I\'ve noticed an increase in interest and leads in just three weeks.'
     }
   ]
 

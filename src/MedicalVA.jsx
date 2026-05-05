@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { UserPlus, Calendar, FileCheck, DollarSign, MessageSquare } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function MedicalVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Medical Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Medical virtual assistants for patient intake, scheduling, eligibility checks, billing follow-ups, and patient support.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/medical-virtual-assistant"
+    "url": "https://hirewags.com/industries/medical-virtual-assistant"
   }
 
   return (
@@ -42,7 +42,7 @@ export default function MedicalVA() {
                 Medical Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and follow‑ups—so providers can focus on care.
+                Give patients timely, accurate help. Your medical VA supports intake, scheduling, eligibility checks, and followâ€‘upsâ€”so providers can focus on care.
               </p>
               <HeroCTAs />
             </div>
@@ -73,8 +73,8 @@ export default function MedicalVA() {
             { icon: UserPlus, title: 'Patient Intake', description: 'New patient intake and records requests' },
             { icon: Calendar, title: 'Scheduling', description: 'Scheduling, reminders, and waitlist management' },
             { icon: FileCheck, title: 'Eligibility Checks', description: 'Insurance eligibility/benefit checks and prior auth coordination' },
-            { icon: DollarSign, title: 'Billing Support', description: 'Billing questions and follow‑ups; payment plan reminders' },
-            { icon: MessageSquare, title: 'Patient Outreach', description: 'Portal messages and post‑visit outreach per your scripts' }
+            { icon: DollarSign, title: 'Billing Support', description: 'Billing questions and followâ€‘ups; payment plan reminders' },
+            { icon: MessageSquare, title: 'Patient Outreach', description: 'Portal messages and postâ€‘visit outreach per your scripts' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <item.icon className="w-12 h-12 text-ocean-600 mb-4" />
@@ -92,9 +92,9 @@ export default function MedicalVA() {
       <OutcomesSection 
         subtitle="Real results that improve your practice operations."
         outcomes={[
-          { icon: '⏱️', title: 'Faster Access', description: 'Faster access and fewer no‑shows' },
-          { icon: '✅', title: 'Cleaner Eligibility', description: 'Cleaner eligibility and fewer billing surprises' },
-          { icon: '😊', title: 'Happier Patients', description: 'Happier patients through timely responses' }
+          { icon: 'â±ï¸', title: 'Faster Access', description: 'Faster access and fewer noâ€‘shows' },
+          { icon: 'âœ…', title: 'Cleaner Eligibility', description: 'Cleaner eligibility and fewer billing surprises' },
+          { icon: 'ðŸ˜Š', title: 'Happier Patients', description: 'Happier patients through timely responses' }
         ]}
       />
 

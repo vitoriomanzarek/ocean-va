@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Ticket, FileText, Globe, CheckCircle, Package } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function TechVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Tech Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Technical virtual assistants for ops coordination, documentation, QA checks, light website updates, and support triage.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/tech-virtual-assistant"
+    "url": "https://hirewags.com/industries/tech-virtual-assistant"
   }
 
   return (
@@ -42,7 +42,7 @@ export default function TechVA() {
                 Tech Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Give your technical teams a force‑multiplier. We handle coordination, documentation, support triage, and QA checks—so engineers can ship.
+                Give your technical teams a forceâ€‘multiplier. We handle coordination, documentation, support triage, and QA checksâ€”so engineers can ship.
               </p>
               <HeroCTAs />
             </div>
@@ -92,9 +92,9 @@ export default function TechVA() {
       <OutcomesSection 
         subtitle="Real results that improve your technical operations."
         outcomes={[
-          { icon: '🎯', title: 'Fewer Interruptions', description: 'Fewer interruptions for technical teams' },
-          { icon: '📚', title: 'Clearer Documentation', description: 'Clearer documentation and faster onboarding' },
-          { icon: '✨', title: 'Cleaner Backlogs', description: 'Cleaner backlogs and stakeholder communication' }
+          { icon: 'ðŸŽ¯', title: 'Fewer Interruptions', description: 'Fewer interruptions for technical teams' },
+          { icon: 'ðŸ“š', title: 'Clearer Documentation', description: 'Clearer documentation and faster onboarding' },
+          { icon: 'âœ¨', title: 'Cleaner Backlogs', description: 'Cleaner backlogs and stakeholder communication' }
         ]}
       />
 

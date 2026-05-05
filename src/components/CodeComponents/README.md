@@ -1,4 +1,4 @@
-# Code Components for Webflow
+﻿# Code Components for Webflow
 
 These are React components designed to be exported to Webflow as Code Components.
 
@@ -18,7 +18,7 @@ Hero section component with background image, title, subtitle, and CTA button.
 **Example:**
 ```jsx
 <Hero 
-  title="Welcome to Ocean VA"
+  title="Welcome to WAGS"
   subtitle="Expert Virtual Assistants"
   backgroundImage="https://..."
   ctaText="Book a Call"
@@ -40,7 +40,7 @@ Navigation bar with logo, links, and CTA button. Includes mobile menu.
 **Example:**
 ```jsx
 <Navbar 
-  logo="/img/oceanVALogo.png"
+  logo="/img/wags-logo.png"
   links={[
     { label: 'Home', href: '/', submenu: [] },
     { label: 'Services', href: '/services', submenu: [] }
@@ -162,14 +162,14 @@ Virtual Assistants showcase component with pagination.
 
 ## Next Steps
 
-1. ✅ Create Hero component
-2. ✅ Create Navbar component
-3. ✅ Create Pricing component
-4. ✅ Create VAShowcase component
-5. ⏳ Export to Webflow
-6. ⏳ Integrate in Webflow Designer
-7. ⏳ Testing
-8. ⏳ Publish
+1. âœ… Create Hero component
+2. âœ… Create Navbar component
+3. âœ… Create Pricing component
+4. âœ… Create VAShowcase component
+5. â³ Export to Webflow
+6. â³ Integrate in Webflow Designer
+7. â³ Testing
+8. â³ Publish
 
 ## Files
 
@@ -179,4 +179,5 @@ Virtual Assistants showcase component with pagination.
 - `VAShowcase.jsx` - Virtual Assistants showcase component
 - `index.js` - Exports all components
 - `README.md` - This file
+
 

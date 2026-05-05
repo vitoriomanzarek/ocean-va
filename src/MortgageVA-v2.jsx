@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { 
   FileText, Users, Database, Calendar, BarChart3, 
   CheckCircle2, Building2, Shield, Award, 
@@ -129,7 +129,7 @@ function TechModal({ tool, isOpen, onClose }) {
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600 text-3xl font-bold leading-none"
           >
-            ×
+            Ã—
           </button>
         </div>
         
@@ -185,8 +185,8 @@ const improvedMortgageFaqs = [
     a: 'Yes. We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows. All VAs are trained on mortgage industry compliance and data protection standards.' 
   },
   { 
-    q: 'Are Ocean VA\'s mortgage assistants knowledgeable about LOS systems like Encompass, LendingPad, or Calyx?', 
-    a: 'Yes. Our mortgage VAs have experience with Encompass, LendingPad, Calyx, ARIVE, DocMagic, CLASS VALUATION, Rocket Mortgage, Flōify, and other common LOS and mortgage technology platforms. They can work with your existing tech stack immediately.' 
+    q: 'Are WAGS\'s mortgage assistants knowledgeable about LOS systems like Encompass, LendingPad, or Calyx?', 
+    a: 'Yes. Our mortgage VAs have experience with Encompass, LendingPad, Calyx, ARIVE, DocMagic, CLASS VALUATION, Rocket Mortgage, FlÅify, and other common LOS and mortgage technology platforms. They can work with your existing tech stack immediately.' 
   },
   { 
     q: 'Can a mortgage virtual assistant handle initial client inquiries and pre-qualify leads for a loan officer?', 
@@ -194,11 +194,11 @@ const improvedMortgageFaqs = [
   },
   { 
     q: 'How does hiring a virtual assistant help a mortgage office reduce workload and operating costs?', 
-    a: 'Our mortgage VAs handle time-consuming administrative tasks like document collection, LOS updates, status communications, and pipeline management, allowing loan officers and processors to focus on originating loans and closing deals. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' 
+    a: 'Our mortgage VAs handle time-consuming administrative tasks like document collection, LOS updates, status communications, and pipeline management, allowing loan officers and processors to focus on originating loans and closing deals. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' 
   },
   { 
-    q: 'What is the monthly cost of a mortgage virtual assistant with Ocean VA\'s flat pricing model?', 
-    a: 'Ocean VA uses a simple flat monthly rate starting at $750/month with no setup fees, no lock-in contracts, and free replacements. Pricing is tailored to your specific needs and scope of work.' 
+    q: 'What is the monthly cost of a mortgage virtual assistant with WAGS\'s flat pricing model?', 
+    a: 'WAGS uses a simple flat monthly rate starting at $750/month with no setup fees, no lock-in contracts, and free replacements. Pricing is tailored to your specific needs and scope of work.' 
   },
   { 
     q: 'Do I need to sign a long-term contract for mortgage virtual assistant services, or is it a flexible month-to-month service?', 
@@ -206,14 +206,14 @@ const improvedMortgageFaqs = [
   },
   { 
     q: 'Are there any setup fees or extra costs to start using a mortgage virtual assistant?', 
-    a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service. We also offer free replacements if you\'re not satisfied with your VA.' 
+    a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service. We also offer free replacements if you\'re not satisfied with your VA.' 
   },
   { 
     q: 'Will I have a dedicated mortgage virtual assistant, or do they work for multiple clients?', 
     a: 'You get one dedicated VA who learns your systems and workflow. We never pool your work across a ticket queue. Your VA becomes an extension of your team.' 
   },
   { 
-    q: 'Are Ocean VA\'s mortgage assistants certified or have mortgage industry experience?', 
+    q: 'Are WAGS\'s mortgage assistants certified or have mortgage industry experience?', 
     a: 'Many of our mortgage VAs have LendingPad Loan Processor certifications and experience working with mortgage companies. We also work with partners like AIME (Association of Independent Mortgage Experts) and are familiar with industry standards and best practices.' 
   }
 ]
@@ -244,11 +244,11 @@ export default function MortgageVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Mortgage Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Certified mortgage virtual assistants for loan file setup, document collection, LOS updates (Encompass, LendingPad, Calyx), closing and funding support, post-closing QC, and pre-qualification. Trusted by leading mortgage companies.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant"
+    "url": "https://hirewags.com/industries/mortgage-virtual-assistant"
   }
 
   // Partners/Certifications logos data - Using local images from Mortgage logos folder
@@ -350,10 +350,10 @@ export default function MortgageVA() {
       useCase: 'Loan coordination and status management with Rocket Mortgage'
     },
     { 
-      name: 'Flōify', 
+      name: 'FlÅify', 
       logo: 'https://logo.clearbit.com/floify.com',
       fallback: 'https://www.floify.com/images/floify-logo.png',
-      description: 'Flōify is a loan origination software designed for mortgage brokers and loan officers. Our VAs use Flōify to manage loan applications, collect borrower documents, send status updates, and coordinate with all parties in the loan process.',
+      description: 'FlÅify is a loan origination software designed for mortgage brokers and loan officers. Our VAs use FlÅify to manage loan applications, collect borrower documents, send status updates, and coordinate with all parties in the loan process.',
       useCase: 'Loan application management and borrower communication portal'
     }
   ]
@@ -440,7 +440,7 @@ export default function MortgageVA() {
     }
   ]
 
-  // Why Ocean VA specific benefits for mortgage
+  // Why WAGS specific benefits for mortgage
   const mortgageBenefits = [
     {
       icon: Award,
@@ -524,7 +524,7 @@ export default function MortgageVA() {
               Our Mortgage VA Workflow Process
             </h2>
             <p className="text-xl text-ocean-100 max-w-3xl mx-auto">
-              Comprehensive support across the entire loan lifecycle—from pre-qualification to post-closing QC
+              Comprehensive support across the entire loan lifecycleâ€”from pre-qualification to post-closing QC
             </p>
           </div>
 
@@ -559,7 +559,7 @@ export default function MortgageVA() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Use Cases</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your mortgage VA handles the coordination that keeps your loan pipeline moving—from initial setup to closing and beyond.
+            Your mortgage VA handles the coordination that keeps your loan pipeline movingâ€”from initial setup to closing and beyond.
           </p>
         </div>
 
@@ -631,7 +631,7 @@ export default function MortgageVA() {
         </div>
       </section>
 
-      {/* Why Ocean VA - Mortgage Specific - Full Width */}
+      {/* Why WAGS - Mortgage Specific - Full Width */}
       <div className="w-full bg-gray-50 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <WhyOceanSection 
@@ -650,10 +650,10 @@ export default function MortgageVA() {
           <OutcomesSection 
             subtitle="Real results that improve your mortgage operations."
             outcomes={[
-              { icon: '📋', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status with proactive document collection and LOS updates' },
-              { icon: '😊', title: 'Better Experience', description: 'Better borrower experience with timely status communications and milestone reminders' },
-              { icon: '💼', title: 'More Time to Originate', description: 'More time for loan officers to originate while VAs handle administrative coordination' },
-              { icon: '✅', title: 'Compliance Ready', description: 'Audit-ready files with proper documentation, file stacking, and trailing document management' }
+              { icon: 'ðŸ“‹', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status with proactive document collection and LOS updates' },
+              { icon: 'ðŸ˜Š', title: 'Better Experience', description: 'Better borrower experience with timely status communications and milestone reminders' },
+              { icon: 'ðŸ’¼', title: 'More Time to Originate', description: 'More time for loan officers to originate while VAs handle administrative coordination' },
+              { icon: 'âœ…', title: 'Compliance Ready', description: 'Audit-ready files with proper documentation, file stacking, and trailing document management' }
             ]}
             noBackground={true}
           />
@@ -700,4 +700,5 @@ export default function MortgageVA() {
     </>
   )
 }
+
 

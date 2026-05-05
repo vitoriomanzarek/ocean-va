@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function ComparisonTable() {
   const comparisons = [
@@ -24,7 +24,7 @@ export default function ComparisonTable() {
     },
     {
       feature: 'Language Support',
-      oceanVA: '✓ 10+ Languages',
+      oceanVA: 'âœ“ 10+ Languages',
       typical: 'Limited'
     },
     {
@@ -34,7 +34,7 @@ export default function ComparisonTable() {
     },
     {
       feature: 'HIPAA Compliance',
-      oceanVA: '✓ Fully compliant',
+      oceanVA: 'âœ“ Fully compliant',
       typical: 'Only a few'
     }
   ]
@@ -43,7 +43,7 @@ export default function ComparisonTable() {
     <section className="section-container bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4">
-          Why Insurance Agencies Choose Ocean VA
+          Why Insurance Agencies Choose WAGS
         </h2>
         <p className="text-xl text-gray-600 text-center mb-12">
           See how we compare to typical VA companies
@@ -54,7 +54,7 @@ export default function ComparisonTable() {
             <thead>
               <tr className="bg-gradient-to-r from-ocean-600 to-ocean-700 text-white">
                 <th className="p-4 text-left font-bold">Feature</th>
-                <th className="p-4 text-left font-bold bg-ocean-500">Ocean VA</th>
+                <th className="p-4 text-left font-bold bg-ocean-500">WAGS</th>
                 <th className="p-4 text-left font-bold">Typical VA Companies</th>
               </tr>
             </thead>

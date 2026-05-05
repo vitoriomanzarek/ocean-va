@@ -1,357 +1,4 @@
-<!-- FILTERS SECTION FOR OUR CURRENT VAs PAGE -->
-<!-- Based on VAFilters.jsx component - Updated with button toggles -->
-
-<!-- 
-  CONFIGURACIÓN: Usar el campo "main-category" (Plain Text) existente
-  -------------------------------------------------------------------
-  
-  El código usa el campo "main-category" (Plain Text) que ya existe en tu colección.
-  Este campo puede contener múltiples categorías separadas por comas, por ejemplo:
-  - "Executive Virtual Assistant, Healthcare Virtual Assistant, Insurance Virtual Assistant"
-  
-  El filtro funciona con búsqueda parcial (contains), así que si seleccionas:
-  - "Insurance Virtual Assistant" → mostrará todos los VAs que tengan "Insurance Virtual Assistant" 
-    en su campo main-category, incluso si tienen otras categorías también.
-  
-  PASOS:
-  1. En Webflow Designer, abre tu Collection List y el Collection Item (card)
-  2. Asegúrate de que el campo "main-category" esté agregado a la card
-     (puede estar visible u oculto - si está visible, está bien, si quieres ocultarlo,
-      agrega la clase "va-main-category-hidden")
-  3. En el CMS, asegúrate de que cada VA tenga su campo "main-category" con valores como:
-     - "Insurance Virtual Assistant"
-     - "Executive Virtual Assistant, Healthcare Virtual Assistant"
-     - "Marketing Virtual Assistant"
-     - etc.
-  4. Guarda y publica
-  
-  NOTA: El filtro busca si el campo contiene la categoría seleccionada, no requiere
-  coincidencia exacta. Esto permite que VAs con múltiples categorías funcionen correctamente.
--->
-
-<style>
-    .va-filters {
-      background: white;
-      padding: 40px 20px;
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 80px;
-      z-index: 50;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 80px;
-    }
-  
-    .va-filters.sticky-active {
-      position: fixed;
-      left: 0;
-      right: 0;
-      width: 100%;
-      top: 80px;
-      z-index: 50;
-      padding: 20px 20px;
-      margin-bottom: 0;
-    }
-  
-    .va-filters.sticky-active .va-filters-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      gap: 20px;
-    }
-  
-    .va-filters.sticky-active .va-filter-label {
-      margin-bottom: 8px;
-      font-size: 11px;
-    }
-  
-    .va-filters.sticky-active .va-filter-button {
-      padding: 6px 14px;
-      font-size: 13px;
-    }
-  
-    .va-filters.sticky-active .va-search-input {
-      padding: 8px 12px;
-      font-size: 13px;
-    }
-  
-    .va-filters-container {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr auto;
-      gap: 32px;
-      align-items: end;
-    }
-
-    .va-results-counter {
-      text-align: right;
-      font-size: 14px;
-      color: #6b7280;
-      font-weight: 500;
-      padding-bottom: 0;
-      white-space: nowrap;
-    }
-  
-    .va-filter-toggle {
-      display: none;
-    }
-  
-    .va-filter-group {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .va-filter-label {
-      font-size: 12px;
-      font-weight: 700;
-      color: #6b7280;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-    }
-  
-    .va-filter-options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-  
-    .va-filter-button {
-      padding: 8px 16px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      background: white;
-      color: #374151;
-      font-size: 14px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-  
-    .va-filter-button:hover {
-      border-color: #049d98;
-      color: #049d98;
-    }
-  
-    .va-filter-button.active {
-      background: #049d98;
-      color: white;
-      border-color: #049d98;
-    }
-  
-    .va-filter-button.active:hover {
-      background: #037b77;
-      border-color: #037b77;
-    }
-  
-    .va-search-input {
-      padding: 10px 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-size: 14px;
-      font-family: inherit;
-      transition: all 0.2s ease;
-      background: white;
-      color: #374151;
-    }
-  
-    .va-search-input:focus {
-      outline: none;
-      border-color: #049d98;
-      box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
-    }
-  
-    .va-search-input::placeholder {
-      color: #9ca3af;
-    }
-  
-    .va-category-select {
-      padding: 10px 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-size: 14px;
-      font-family: inherit;
-      transition: all 0.2s ease;
-      background: white;
-      color: #374151;
-      cursor: pointer;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 12px center;
-      padding-right: 36px;
-    }
-  
-    .va-category-select:focus {
-      outline: none;
-      border-color: #049d98;
-      box-shadow: 0 0 0 3px rgba(4, 157, 152, 0.1);
-    }
-  
-    .va-category-select:hover {
-      border-color: #049d98;
-    }
-  
-    /* Hide main-category field in VA cards (for filtering purposes) */
-    .va-main-category-hidden {
-      display: none !important;
-      visibility: hidden !important;
-      position: absolute !important;
-      width: 0 !important;
-      height: 0 !important;
-      opacity: 0 !important;
-      overflow: hidden !important;
-    }
-  
-    /* Alternative: If you use a class name, you can also use this */
-    [data-field="main-category"].hidden-field,
-    .main-category-field.hidden {
-      display: none !important;
-    }
-  
-    .va-filter-toggle {
-      display: none;
-      width: 100%;
-      padding: 12px 16px;
-      background: white;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      color: #374151;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .va-filter-toggle:hover {
-      border-color: #049d98;
-      color: #049d98;
-    }
-
-    .va-filter-toggle-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s ease;
-      font-size: 10px;
-      color: #6b7280;
-    }
-
-    .va-filter-toggle.active .va-filter-toggle-icon {
-      transform: rotate(180deg);
-    }
-
-    /* Tablet and below - Show dropdown toggle */
-    @media (max-width: 1080px) {
-      .va-filters {
-        padding: 20px;
-      }
-
-      .va-filter-toggle {
-        display: flex;
-        margin-bottom: 0;
-      }
-
-      .va-filters-container {
-        display: none;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 16px;
-        padding-top: 16px;
-        border-top: 1px solid #e5e7eb;
-      }
-
-      .va-filters-container.mobile-open {
-        display: grid;
-      }
-
-      .va-filter-options {
-        gap: 6px;
-      }
-
-      .va-filter-button {
-        padding: 8px 12px;
-        font-size: 13px;
-      }
-
-      .va-filters.sticky-active {
-        padding: 12px 16px;
-      }
-
-      .va-filters.sticky-active .va-filters-container {
-        margin-top: 12px;
-        padding-top: 12px;
-      }
-
-      .va-results-counter {
-        text-align: left;
-        margin-top: 8px;
-      }
-    }
-  </style>
-  
-  <section class="va-filters">
-    <button class="va-filter-toggle" type="button" aria-controls="va-filters-container" aria-expanded="false" id="filterToggle">
-      <span>Filter by</span>
-      <span class="va-filter-toggle-icon">
-        <svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-        </svg>
-      </span>
-    </button>
-    <div class="va-filters-container" id="va-filters-container">
-      <!-- Language Filter -->
-      <div class="va-filter-group">
-        <label class="va-filter-label">Language</label>
-        <div class="va-filter-options" id="languageOptions">
-          <button type="button" class="va-filter-button active" data-filter="language" data-value="All">All</button>
-          <button type="button" class="va-filter-button" data-filter="language" data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button>
-        </div>
-      </div>
-
-      <!-- VA Category Navigation (Dropdown) -->
-      <div class="va-filter-group">
-        <label class="va-filter-label">VA Category</label>
-        <select 
-          class="va-category-select" 
-          id="vaCategorySelect"
-        >
-          <option value="">Current Category</option>
-          <option value="/ovas-current-vas">Insurance Virtual Assistants</option>
-          <option value="/ovas-executive-admin-virtual-assistant">Executive / Admin VAs</option>
-          <option value="/ovas-property-management-assistants">Property Management Assistants</option>
-          <option value="/ovas-mortgage-processing-assistant">Mortgage Processing Assistant</option>
-          <option value="/ovas-medical-assistant">Medical Assistant Specialist</option>
-        </select>
-      </div>
-  
-      <!-- Search Input -->
-      <div class="va-filter-group">
-        <label class="va-filter-label">Search by Keyword</label>
-        <input 
-          type="text" 
-          class="va-search-input" 
-          id="searchInput" 
-          placeholder="Search by keyword (name, skills, tools, experience...)"
-          autocomplete="off"
-        >
-      </div>
-
-      <!-- Results Counter -->
-      <div class="va-filter-group" style="display: flex; flex-direction: column; justify-content: flex-end;">
-        <div id="va-results-counter" class="va-results-counter">
-          Showing 62 of 62 VAs
-        </div>
-      </div>
-  
-    </div>
-  </section>
-  
-  <script>
-    // Get filter elements
+<style>.va-filters{background:#fff;padding:40px 20px;border-bottom:1px solid #e5e7eb;position:sticky;top:80px;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.05);margin-bottom:80px}.va-filters.sticky-active{position:fixed;left:0;right:0;width:100%;top:80px;z-index:50;padding:20px 20px;margin-bottom:0}.va-filters.sticky-active .va-filters-container{max-width:1400px;margin:0 auto;gap:20px}.va-filters.sticky-active .va-filter-label{margin-bottom:8px;font-size:11px}.va-filters.sticky-active .va-filter-button{padding:6px 14px;font-size:13px}.va-filters.sticky-active .va-search-input{padding:8px 12px;font-size:13px}.va-filters-container{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:32px;align-items:end}.va-results-counter{text-align:right;font-size:14px;color:#6b7280;font-weight:500;padding-bottom:0;white-space:nowrap}.va-filter-toggle{display:none}.va-filter-group{display:flex;flex-direction:column}.va-filter-label{font-size:12px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}.va-filter-options{display:flex;flex-wrap:wrap;gap:8px}.va-filter-button{padding:8px 16px;border:1px solid #d1d5db;border-radius:6px;background:#fff;color:#374151;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s ease;white-space:nowrap}.va-filter-button:hover{border-color:#049d98;color:#049d98}.va-filter-button.active{background:#049d98;color:#fff;border-color:#049d98}.va-filter-button.active:hover{background:#037b77;border-color:#037b77}.va-search-input{padding:10px 12px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;font-family:inherit;transition:all .2s ease;background:#fff;color:#374151}.va-search-input:focus{outline:0;border-color:#049d98;box-shadow:0 0 0 3px rgba(4,157,152,.1)}.va-search-input::placeholder{color:#9ca3af}.va-category-select{padding:10px 12px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;font-family:inherit;transition:all .2s ease;background:#fff;color:#374151;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M6 9L1 4h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px}.va-category-select:focus{outline:0;border-color:#049d98;box-shadow:0 0 0 3px rgba(4,157,152,.1)}.va-category-select:hover{border-color:#049d98}.va-main-category-hidden{display:none!important;visibility:hidden!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;overflow:hidden!important}.main-category-field.hidden,[data-field=main-category].hidden-field{display:none!important}.va-filter-toggle{display:none;width:100%;padding:12px 16px;background:#fff;border:1px solid #d1d5db;border-radius:6px;color:#374151;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s ease;justify-content:space-between;align-items:center;gap:8px}.va-filter-toggle:hover{border-color:#049d98;color:#049d98}.va-filter-toggle-icon{display:inline-flex;align-items:center;justify-content:center;transition:transform .3s ease;font-size:10px;color:#6b7280}.va-filter-toggle.active .va-filter-toggle-icon{transform:rotate(180deg)}.va-mobile-search-close,.va-mobile-clear-filter,.va-mobile-search-actions{display:none}@media (max-width:1080px){.va-filters{padding:20px}.va-filter-toggle{display:flex;margin-bottom:0}.va-filters-container{display:none;grid-template-columns:1fr;gap:20px;margin-top:16px;padding-top:16px;border-top:1px solid #e5e7eb}.va-filters-container.mobile-open{display:grid}.va-filter-options{gap:6px}.va-filter-button{padding:8px 12px;font-size:13px}.va-filters.sticky-active{padding:12px 16px}.va-filters.sticky-active .va-filters-container{margin-top:12px;padding-top:12px}.va-results-counter{text-align:left;margin-top:8px}.va-mobile-search-actions{display:flex;gap:8px;align-self:flex-start;margin-top:10px}.va-mobile-search-close{display:inline-flex;padding:8px 14px;border:1px solid #049d98;border-radius:6px;background:#049d98;color:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}.va-mobile-search-close:hover{background:#037b77;border-color:#037b77}.va-mobile-clear-filter{display:inline-flex;padding:8px 14px;border:1px solid #d1d5db;border-radius:6px;background:#fff;color:#374151;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}.va-mobile-clear-filter:hover{border-color:#049d98;color:#049d98}}</style><section class=va-filters><button class=va-filter-toggle type=button aria-controls=va-filters-container aria-expanded=false id=filterToggle><span>Filter by</span> <span class=va-filter-toggle-icon><svg fill=none height=12 viewBox="0 0 12 12"width=12 xmlns=http://www.w3.org/2000/svg><path d="M3 4.5L6 7.5L9 4.5"stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></span></button><div class=va-filters-container id=va-filters-container><div class=va-filter-group><label class=va-filter-label>Language</label><div class=va-filter-options id=languageOptions><button class="va-filter-button active"type=button data-filter=language data-value=All>All</button> <button class=va-filter-button type=button data-filter=language data-value="Bilingual (EN-ES)">Bilingual (EN-ES)</button></div></div><div class=va-filter-group><label class=va-filter-label>VA Category</label> <select class=va-category-select id=vaCategorySelect><option value="">Current Category<option value=/ovas-current-vas>Insurance Virtual Assistants<option value=/ovas-executive-admin-virtual-assistant>Executive / Admin VAs<option value=/ovas-property-management-assistants>Property Management Assistants<option value=/ovas-mortgage-processing-assistant>Mortgage Processing Assistant<option value=/ovas-medical-assistant>Medical Assistant Specialist</select></div><div class=va-filter-group><label class=va-filter-label>Search by Keyword</label> <input autocomplete=off class=va-search-input id=searchInput placeholder="Search by keyword (name, skills, tools, experience...)"><div class=va-mobile-search-actions><button class=va-mobile-search-close id=mobileSearchClose type=button>Search</button><button class=va-mobile-clear-filter id=mobileClearFilter type=button>Clear Filter</button></div></div><div class=va-filter-group style=display:flex;flex-direction:column;justify-content:flex-end><div class=va-results-counter id=va-results-counter>Showing 62 of 62 VAs</div></div></div></section><script>// Get filter elements
     const searchInput = document.getElementById('searchInput');
     const languageButtons = document.querySelectorAll('[data-filter="language"]');
     const categorySelect = document.getElementById('vaCategorySelect');
@@ -417,17 +64,15 @@
     });
   
   
-    console.log('VA Filters initialized');
-  </script>
-  
-  <script>
-  /**
+    console.log('VA Filters initialized');</script><script>/**
    * Mobile Filter Toggle
    * Handles the mobile dropdown toggle for filters
    */
   (function() {
     const filterToggle = document.getElementById('filterToggle');
     const filtersContainer = document.getElementById('va-filters-container');
+    const mobileSearchClose = document.getElementById('mobileSearchClose');
+    const mobileClearFilter = document.getElementById('mobileClearFilter');
     
     if (!filterToggle || !filtersContainer) return;
     
@@ -447,6 +92,46 @@
         filterToggle.setAttribute('aria-expanded', 'true');
       }
     });
+
+    if (mobileSearchClose) {
+      mobileSearchClose.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (window.innerWidth <= 1080) {
+          filtersContainer.classList.remove('mobile-open');
+          filterToggle.classList.remove('active');
+          filterToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    if (mobileClearFilter) {
+      mobileClearFilter.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (typeof searchInput !== 'undefined' && searchInput) {
+          searchInput.value = '';
+        }
+        if (typeof categorySelect !== 'undefined' && categorySelect) {
+          categorySelect.value = '';
+        }
+        if (typeof currentFilters !== 'undefined') {
+          currentFilters.search = '';
+          currentFilters.language = 'All';
+        }
+        if (typeof languageButtons !== 'undefined' && languageButtons.length) {
+          languageButtons.forEach(btn => btn.classList.remove('active'));
+          const allButton = Array.from(languageButtons).find(btn => btn.dataset.value === 'All');
+          if (allButton) allButton.classList.add('active');
+        }
+        if (typeof dispatchFilterChange === 'function') {
+          dispatchFilterChange();
+        }
+        if (window.innerWidth <= 1080) {
+          filtersContainer.classList.remove('mobile-open');
+          filterToggle.classList.remove('active');
+          filterToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
     
     // Close on outside click (optional)
     document.addEventListener('click', function(e) {
@@ -474,11 +159,7 @@
     handleResize();
     
     console.log('Mobile filter toggle initialized');
-  })();
-  </script>
-  
-  <script>
-  /**
+  })();</script><script>/**
    * Sticky Filter Enhancement
    * Makes the filter section stay visible even when scrolling past its container
    * and respects the navbar height
@@ -596,11 +277,7 @@
     }
     
     console.log('Sticky filter enhancement initialized');
-  })();
-  </script>
-  
-  <script>
-  /**
+  })();</script><script>/**
    * VA Grid Filter Listener - Webflow Native Collections
    * Listens to filter changes and filters Webflow collection cards
    * 
@@ -814,6 +491,4 @@
     });
   
     console.log('VA Grid Filter Listener initialized for Webflow collections');
-  })();
-  
-  </script>
+  })();</script>

@@ -1,4 +1,4 @@
-import VAProfilePage from '../components/VAProfile/VAProfilePage'
+﻿import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 export default function DafneProfile() {
   const dafneData = {
@@ -35,32 +35,32 @@ export default function DafneProfile() {
       'Noise-Cancelling Headset'
     ],
     
-    employmentSummary: 'Dafne has 1 year of insurance experience, gained as a Virtual Assistant at Ocean Virtual Assistant Solutions from July 2024 to October 2025, where she provided accurate quotes for personal lines insurance. Prior to this, she worked as a Medical and Auto Insurance Qualifier at Boomsourcing in August 2022, focusing on outbound calls. Her earlier roles include Customer Service Representative at Surge Call BPO - USA and Bilingual Customer Service Representative at Atento, where she handled various customer inquiries and managed orders.',
+    employmentSummary: 'Dafne has 1 year of insurance experience, gained as a Virtual Assistant at WAGS from July 2024 to October 2025, where she provided accurate quotes for personal lines insurance. Prior to this, she worked as a Medical and Auto Insurance Qualifier at Boomsourcing in August 2022, focusing on outbound calls. Her earlier roles include Customer Service Representative at Surge Call BPO - USA and Bilingual Customer Service Representative at Atento, where she handled various customer inquiries and managed orders.',
     
     employmentHistory: [
       {
         company: 'OCEAN VIRTUAL ASSISTANT SOLUTIONS',
         position: 'Virtual Assistant',
         period: 'JUL 2024 - OCT 2025',
-        description: '• Resolved billing inquiries in a timely and professional manner, improving customer satisfaction.\n• Provided accurate quotes for personal lines insurance, resulting in increased sales.\n• Developed strong relationships with clients through effective email communication and issue resolution.'
+        description: 'â€¢ Resolved billing inquiries in a timely and professional manner, improving customer satisfaction.\nâ€¢ Provided accurate quotes for personal lines insurance, resulting in increased sales.\nâ€¢ Developed strong relationships with clients through effective email communication and issue resolution.'
       },
       {
         company: 'BOOMSOURCING',
         position: 'Medical and Auto Insurance Qualifier',
         period: 'AUG 2022',
-        description: '• Outbound calls.\n• More than 400 calls a day.'
+        description: 'â€¢ Outbound calls.\nâ€¢ More than 400 calls a day.'
       },
       {
         company: 'SURGE CALL BPO - USA',
         position: 'Customer Service Representative',
         period: 'FEB 2022 - JUL 2022',
-        description: '• Making refunds if customer is not happy with the products.\n• Cancelling memberships and subscriptions upon customer request.\n• Resolving billing-shipping questions.\n• Described product highlights.\n• Used to have 25 different campaigns.\n• Became a manager for one camp.'
+        description: 'â€¢ Making refunds if customer is not happy with the products.\nâ€¢ Cancelling memberships and subscriptions upon customer request.\nâ€¢ Resolving billing-shipping questions.\nâ€¢ Described product highlights.\nâ€¢ Used to have 25 different campaigns.\nâ€¢ Became a manager for one camp.'
       },
       {
         company: 'ATENTO',
         position: 'Bilingual Customer Service Representative',
         period: 'OCT 2021 - DEC 2021',
-        description: '• Processed orders, credits and raised returns.\n• Answered up to 90 calls per day in busy, fast-paced office for both English and Spanish-speaking customers.\n• Described product highlights and benefits to help guide purchasing decisions.'
+        description: 'â€¢ Processed orders, credits and raised returns.\nâ€¢ Answered up to 90 calls per day in busy, fast-paced office for both English and Spanish-speaking customers.\nâ€¢ Described product highlights and benefits to help guide purchasing decisions.'
       }
     ],
     
@@ -88,3 +88,4 @@ export default function DafneProfile() {
 
   return <VAProfilePage vaData={dafneData} />
 }
+

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Home, Users, FileText, Calendar, MessageSquare, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -24,7 +24,7 @@ export default function RealEstateVA() {
     "@type": "Service",
     "name": "Real Estate Virtual Assistant",
     "serviceType": "Real Estate Administrative & Transaction Support",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "availableLanguage": ["English", "Spanish"],
     "description": "Real estate virtual assistant for lead management, listing coordination, transaction support, and property management.",
@@ -52,7 +52,7 @@ export default function RealEstateVA() {
                 Real Estate Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                From lead intake to closing day, your REVA keeps deals moving and clients delighted—while you focus on showings and negotiations.
+                From lead intake to closing day, your REVA keeps deals moving and clients delightedâ€”while you focus on showings and negotiations.
               </p>
               <HeroCTAs />
             </div>
@@ -107,20 +107,20 @@ export default function RealEstateVA() {
             <div>
               <h3 className="text-2xl font-bold text-ocean-700 mb-4">Lead & Marketing</h3>
               <ul className="space-y-3 text-gray-700">
-                <li>✓ Speed-to-lead calling/texting within minutes</li>
-                <li>✓ Buyer/seller intake & pre-qualification</li>
-                <li>✓ Drip campaigns & nurture sequences</li>
-                <li>✓ Open house follow-up & review requests</li>
-                <li>✓ Social posting & DM responses</li>
+                <li>âœ“ Speed-to-lead calling/texting within minutes</li>
+                <li>âœ“ Buyer/seller intake & pre-qualification</li>
+                <li>âœ“ Drip campaigns & nurture sequences</li>
+                <li>âœ“ Open house follow-up & review requests</li>
+                <li>âœ“ Social posting & DM responses</li>
               </ul>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-ocean-700 mb-4">Listings & Showings</h3>
               <ul className="space-y-3 text-gray-700">
-                <li>✓ MLS data entry, photos, remarks</li>
-                <li>✓ Lockbox codes & showing windows</li>
-                <li>✓ Feedback surveys & weekly seller reports</li>
-                <li>✓ Showing coordination & confirmations</li>
+                <li>âœ“ MLS data entry, photos, remarks</li>
+                <li>âœ“ Lockbox codes & showing windows</li>
+                <li>âœ“ Feedback surveys & weekly seller reports</li>
+                <li>âœ“ Showing coordination & confirmations</li>
               </ul>
             </div>
           </div>
@@ -129,21 +129,21 @@ export default function RealEstateVA() {
             <div>
               <h3 className="text-2xl font-bold text-ocean-700 mb-4">Transactions</h3>
               <ul className="space-y-3 text-gray-700">
-                <li>✓ Offer templates & e-sign packets</li>
-                <li>✓ Dates & deadlines management</li>
-                <li>✓ Contingency tracking</li>
-                <li>✓ Coordination with lender/title/HOA</li>
-                <li>✓ CD/ALTA milestone reminders</li>
+                <li>âœ“ Offer templates & e-sign packets</li>
+                <li>âœ“ Dates & deadlines management</li>
+                <li>âœ“ Contingency tracking</li>
+                <li>âœ“ Coordination with lender/title/HOA</li>
+                <li>âœ“ CD/ALTA milestone reminders</li>
               </ul>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-ocean-700 mb-4">Property Management (Optional)</h3>
               <ul className="space-y-3 text-gray-700">
-                <li>✓ Tenant inquiries & application screening</li>
-                <li>✓ Lease prep & onboarding</li>
-                <li>✓ Renewal notices</li>
-                <li>✓ Work orders & vendor dispatch</li>
-                <li>✓ Resident updates & follow-ups</li>
+                <li>âœ“ Tenant inquiries & application screening</li>
+                <li>âœ“ Lease prep & onboarding</li>
+                <li>âœ“ Renewal notices</li>
+                <li>âœ“ Work orders & vendor dispatch</li>
+                <li>âœ“ Resident updates & follow-ups</li>
               </ul>
             </div>
           </div>
@@ -185,19 +185,19 @@ export default function RealEstateVA() {
         subtitle="Real results that transform your real estate business."
         outcomes={[
           {
-            icon: '⚡',
+            icon: 'âš¡',
             title: 'Faster Lead Response',
-            description: 'Speed-to-lead within minutes → higher conversion'
+            description: 'Speed-to-lead within minutes â†’ higher conversion'
           },
           {
-            icon: '📋',
+            icon: 'ðŸ“‹',
             title: 'Smoother Closings',
-            description: 'Fewer admin bottlenecks → zero missed deadlines'
+            description: 'Fewer admin bottlenecks â†’ zero missed deadlines'
           },
           {
-            icon: '😊',
+            icon: 'ðŸ˜Š',
             title: 'Happier Clients',
-            description: 'Proactive updates → more referrals & repeat business'
+            description: 'Proactive updates â†’ more referrals & repeat business'
           }
         ]}
       />
@@ -222,7 +222,7 @@ export default function RealEstateVA() {
           },
           {
             step: '4',
-            title: 'Onboarding (2–3 Days)',
+            title: 'Onboarding (2â€“3 Days)',
             description: 'Connect CRM, MLS, calendar, e-sign tools, and validate workflows'
           },
           {
@@ -297,3 +297,4 @@ function CheckIcon() {
     </svg>
   )
 }
+

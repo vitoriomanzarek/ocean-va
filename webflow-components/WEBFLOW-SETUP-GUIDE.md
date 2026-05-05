@@ -1,6 +1,6 @@
-# Webflow Setup Guide - Ocean VA Design System
+﻿# Webflow Setup Guide - WAGS Design System
 
-## 📋 Índice
+## ðŸ“‹ Ãndice
 1. [Importar Design System CSS](#importar-design-system-css)
 2. [Usar Componentes HTML](#usar-componentes-html)
 3. [Estructura de Carpetas](#estructura-de-carpetas)
@@ -9,76 +9,76 @@
 
 ---
 
-## 🎨 Importar Design System CSS
+## ðŸŽ¨ Importar Design System CSS
 
-### Opción 1: Cargar CSS Global en Webflow (Recomendado)
+### OpciÃ³n 1: Cargar CSS Global en Webflow (Recomendado)
 
-1. **Ve a Project Settings** → **Custom Code**
-2. **En la sección "Head Code"**, agrega:
+1. **Ve a Project Settings** â†’ **Custom Code**
+2. **En la secciÃ³n "Head Code"**, agrega:
 
 ```html
 <link rel="stylesheet" href="https://raw.githubusercontent.com/vitoriomanzarek/ocean-va/main/webflow-components/design-system.css">
 ```
 
-O descarga el archivo `design-system.css` y súbelo a tu proyecto Webflow.
+O descarga el archivo `design-system.css` y sÃºbelo a tu proyecto Webflow.
 
-### Opción 2: Copiar CSS en Webflow Custom Code
+### OpciÃ³n 2: Copiar CSS en Webflow Custom Code
 
 1. **Abre el archivo `design-system.css`**
 2. **Copia todo el contenido**
-3. **Ve a Project Settings** → **Custom Code** → **Head Code**
+3. **Ve a Project Settings** â†’ **Custom Code** â†’ **Head Code**
 4. **Pega el CSS dentro de tags `<style>`:**
 
 ```html
 <style>
-/* Pega aquí todo el contenido de design-system.css */
+/* Pega aquÃ­ todo el contenido de design-system.css */
 </style>
 ```
 
 ---
 
-## 🧩 Usar Componentes HTML
+## ðŸ§© Usar Componentes HTML
 
 ### Paso 1: Crear HTML Embed
-1. En tu página de Webflow, agrega un elemento **HTML Embed**
+1. En tu pÃ¡gina de Webflow, agrega un elemento **HTML Embed**
 2. Copia el contenido del archivo HTML del componente (ej: `03-navbar-header.html`)
-3. Pégalo en el HTML Embed
+3. PÃ©galo en el HTML Embed
 
 ### Paso 2: Personalizar Links
-Reemplaza los links según tu estructura en Webflow:
-- `/services/...` → Tu URL de servicios
-- `/industries/...` → Tu URL de industrias
-- `/contact-us` → Tu URL de contacto
+Reemplaza los links segÃºn tu estructura en Webflow:
+- `/services/...` â†’ Tu URL de servicios
+- `/industries/...` â†’ Tu URL de industrias
+- `/contact-us` â†’ Tu URL de contacto
 
-### Paso 3: Personalizar Imágenes
-Si necesitas cambiar URLs de imágenes, busca `raw.githubusercontent.com` y reemplaza con tus URLs.
+### Paso 3: Personalizar ImÃ¡genes
+Si necesitas cambiar URLs de imÃ¡genes, busca `raw.githubusercontent.com` y reemplaza con tus URLs.
 
 ---
 
-## 📁 Estructura de Carpetas
+## ðŸ“ Estructura de Carpetas
 
 ```
 webflow-components/
-├── design-system.css                    # CSS Global (importar primero)
-├── 01-comparison-table.html             # Tabla de comparación
-├── 02-client-logos-carousel.html        # Carrusel de logos
-├── 03-navbar-header.html                # Header/Navbar
-├── 04-hero-section.html                 # Hero section
-├── 05-footer.html                       # Footer
-├── 06-stats-section.html                # Stats section
-├── 07-pricing-section.html              # Pricing section
-├── 08-timeline-section.html             # Timeline section
-├── 09-testimonials-section.html         # Testimonials section
-├── 10-faq-section.html                  # FAQ section
-├── 11-services-industries-showcase.html # Services & Industries
-├── 12-va-showcase.html                  # VA Showcase
-├── README.md                            # Documentación
-└── WEBFLOW-SETUP-GUIDE.md              # Este archivo
+â”œâ”€â”€ design-system.css                    # CSS Global (importar primero)
+â”œâ”€â”€ 01-comparison-table.html             # Tabla de comparaciÃ³n
+â”œâ”€â”€ 02-client-logos-carousel.html        # Carrusel de logos
+â”œâ”€â”€ 03-navbar-header.html                # Header/Navbar
+â”œâ”€â”€ 04-hero-section.html                 # Hero section
+â”œâ”€â”€ 05-footer.html                       # Footer
+â”œâ”€â”€ 06-stats-section.html                # Stats section
+â”œâ”€â”€ 07-pricing-section.html              # Pricing section
+â”œâ”€â”€ 08-timeline-section.html             # Timeline section
+â”œâ”€â”€ 09-testimonials-section.html         # Testimonials section
+â”œâ”€â”€ 10-faq-section.html                  # FAQ section
+â”œâ”€â”€ 11-services-industries-showcase.html # Services & Industries
+â”œâ”€â”€ 12-va-showcase.html                  # VA Showcase
+â”œâ”€â”€ README.md                            # DocumentaciÃ³n
+â””â”€â”€ WEBFLOW-SETUP-GUIDE.md              # Este archivo
 ```
 
 ---
 
-## 🎯 Clases Disponibles
+## ðŸŽ¯ Clases Disponibles
 
 ### Botones
 ```html
@@ -180,7 +180,7 @@ webflow-components/
 
 ---
 
-## 🎨 Colores & Variables
+## ðŸŽ¨ Colores & Variables
 
 ### Colores Ocean
 - `--ocean-50`: `#e6fffe` (muy claro)
@@ -228,7 +228,7 @@ webflow-components/
 
 ---
 
-## 📱 Breakpoints
+## ðŸ“± Breakpoints
 
 - **Mobile**: < 480px
 - **Tablet**: 481px - 768px
@@ -236,22 +236,22 @@ webflow-components/
 
 ---
 
-## 🚀 Flujo de Trabajo Recomendado
+## ðŸš€ Flujo de Trabajo Recomendado
 
 1. **Importa `design-system.css`** en Project Settings
-2. **Crea tus páginas** usando HTML Embeds con los componentes
+2. **Crea tus pÃ¡ginas** usando HTML Embeds con los componentes
 3. **Usa las clases CSS** para personalizar estilos
 4. **Personaliza colores** usando las variables CSS
 5. **Prueba en mobile** para asegurar responsividad
 
 ---
 
-## 💡 Tips & Tricks
+## ðŸ’¡ Tips & Tricks
 
 ### Combinar Clases
 ```html
 <div class="card p-lg shadow-md rounded-lg hover-lift">
-  Combina múltiples clases para crear estilos complejos
+  Combina mÃºltiples clases para crear estilos complejos
 </div>
 ```
 
@@ -271,21 +271,22 @@ webflow-components/
 ```html
 <div class="grid grid-3">
   <!-- En desktop: 3 columnas -->
-  <!-- En tablet: 1 columna (automático) -->
-  <!-- En mobile: 1 columna (automático) -->
+  <!-- En tablet: 1 columna (automÃ¡tico) -->
+  <!-- En mobile: 1 columna (automÃ¡tico) -->
 </div>
 ```
 
 ---
 
-## 📞 Soporte
+## ðŸ“ž Soporte
 
 Si necesitas ayuda:
-1. Revisa el archivo `README.md` para documentación de componentes
-2. Verifica que `design-system.css` esté cargado correctamente
-3. Asegúrate de que los links estén personalizados para tu sitio
+1. Revisa el archivo `README.md` para documentaciÃ³n de componentes
+2. Verifica que `design-system.css` estÃ© cargado correctamente
+3. AsegÃºrate de que los links estÃ©n personalizados para tu sitio
 
 ---
 
-**Última actualización**: Oct 29, 2025
-**Versión**: 1.0
+**Ãšltima actualizaciÃ³n**: Oct 29, 2025
+**VersiÃ³n**: 1.0
+

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Clock, DollarSign, Award, Globe } from 'lucide-react'
 
 export default function Hero() {
@@ -24,11 +24,11 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-lg md:text-xl mb-8 text-ocean-50">
-              • Cut Admin Costs 70% <br />
-              • Stop Drowning in Service Tasks
+              â€¢ Cut Admin Costs 70% <br />
+              â€¢ Stop Drowning in Service Tasks
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a href="https://www.oceanvirtualassistant.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg text-center">
+              <a href="https://hirewags.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all shadow-lg text-center">
                 Book a Free Call
               </a>
               <a href="#pricing" className="bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-4 rounded-lg border-2 border-white transition-all text-center">
@@ -59,7 +59,7 @@ export default function Hero() {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/BSKxhV7nfmg"
-                title="Ocean Virtual Assistant Video"
+                title="WAGS Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -13,7 +13,7 @@ export default function VAProfilePage({ vaData }) {
     }}>
       {/* Back to VAs Link */}
       <div className="max-w-7xl mx-auto px-4 py-4">
-        <Link to="/our-vas" className="flex items-center text-white hover:text-gray-200 transition-colors">
+        <Link to="/ovas-our-vas" className="flex items-center text-white hover:text-gray-200 transition-colors">
           <ArrowLeft size={20} className="mr-2" />
           Back to VAs
         </Link>
@@ -323,7 +323,7 @@ export default function VAProfilePage({ vaData }) {
           {/* Desktop Version - All buttons visible */}
           <div className="hidden md:flex flex-wrap justify-center gap-4">
             <a
-              href="/our-vas"
+              href="/ovas-our-vas"
               className="bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-6 py-2 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Insurance Virtual Assistants
@@ -359,7 +359,7 @@ export default function VAProfilePage({ vaData }) {
             {showCTAMenu && (
               <div className="absolute bottom-16 left-4 right-4 bg-white rounded-lg shadow-lg overflow-hidden">
                 <a
-                  href="/our-vas"
+                  href="/ovas-our-vas"
                   onClick={() => setShowCTAMenu(false)}
                   className="block w-full text-center bg-white hover:bg-gray-50 text-ocean-600 font-bold px-6 py-2 text-sm transition-all duration-200 border-b border-gray-200"
                 >

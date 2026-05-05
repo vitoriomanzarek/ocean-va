@@ -152,7 +152,7 @@ function AppContent() {
           
           {/* Our VAs Page */}
           <Route path="/ovas-current-vas" element={<OurCurrentVAs />} />
-          <Route path="/our-vas" element={<OurVAsPage />} />
+          <Route path="/ovas-our-vas" element={<OurVAsPage />} />
           <Route path="/insurance-vas" element={<OurVAsPage type="insurance" />} />
           <Route path="/executive-admin-vas" element={<OurVAsPage type="executive" />} />
           

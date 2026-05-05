@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import './DesignSystemShowcase.css';
 
 const DesignSystemShowcase = () => {
@@ -103,9 +103,9 @@ const DesignSystemShowcase = () => {
       <div className="ds-showcase-container">
         {/* Header */}
         <header className="ds-showcase-header">
-          <h1 className="ds-showcase-title">Ocean VA Design System</h1>
+          <h1 className="ds-showcase-title">WAGS Design System</h1>
           <p className="ds-showcase-subtitle">
-            Sistema de diseño unificado para componentes Webflow
+            Sistema de diseÃ±o unificado para componentes Webflow
           </p>
         </header>
 
@@ -415,4 +415,5 @@ const DesignSystemShowcase = () => {
 };
 
 export default DesignSystemShowcase;
+
 

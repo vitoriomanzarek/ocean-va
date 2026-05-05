@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Mail, Phone, Share2, TrendingUp, Database } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function VirtualAssistantServices() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Virtual Assistant Services",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Dedicated virtual assistant services for admin, support, marketing, sales, and operations with bilingual availability.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/virtual-assistant-services"
+    "url": "https://hirewags.com/services/virtual-assistant-services"
   }
 
   return (
@@ -43,7 +43,7 @@ export default function VirtualAssistantServices() {
                 Virtual Assistant Services
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                One partner, many use cases. Hire a dedicated VA to cover admin, customer service, marketing, sales support, and operations—matched to your tools and SOPs.
+                One partner, many use cases. Hire a dedicated VA to cover admin, customer service, marketing, sales support, and operationsâ€”matched to your tools and SOPs.
               </p>
               <HeroCTAs />
             </div>
@@ -93,9 +93,9 @@ export default function VirtualAssistantServices() {
       <OutcomesSection 
         subtitle="Real business impact from dedicated virtual assistant support."
         outcomes={[
-          { icon: '💰', title: 'Lower Overhead', description: 'Lower overhead with higher output' },
-          { icon: '✅', title: 'Cleaner Systems', description: 'Cleaner systems and fewer dropped balls' },
-          { icon: '🚀', title: 'More Capacity', description: "Capacity for projects you've postponed" }
+          { icon: 'ðŸ’°', title: 'Lower Overhead', description: 'Lower overhead with higher output' },
+          { icon: 'âœ…', title: 'Cleaner Systems', description: 'Cleaner systems and fewer dropped balls' },
+          { icon: 'ðŸš€', title: 'More Capacity', description: "Capacity for projects you've postponed" }
         ]}
       />
 

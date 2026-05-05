@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src="/img/oceanVALogo.png" alt="Ocean VA" className="h-12" />
+              <img src="/img/wags-logo.png" alt="WAGS" className="h-12" />
             </a>
           </div>
 

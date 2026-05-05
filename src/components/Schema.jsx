@@ -1,12 +1,12 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function Schema() {
   const schemas = {
     organization: {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Ocean Virtual Assistant Solutions",
-      "url": "https://www.oceanvirtualassistant.com",
+      "name": "WAGS",
+      "url": "https://hirewags.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Stuart",
@@ -20,7 +20,7 @@ export default function Schema() {
       "serviceType": "Insurance Virtual Assistant",
       "provider": {
         "@type": "Organization",
-        "name": "Ocean Virtual Assistant Solutions"
+        "name": "WAGS"
       },
       "offers": [
         {

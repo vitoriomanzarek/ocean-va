@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Search, List, Calendar, Database, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function SDRVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "SDR Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Sales development support for research, sequencing, CRM hygiene, and meeting scheduling.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/sdr-virtual-assistant"
+    "url": "https://hirewags.com/services/sdr-virtual-assistant"
   }
 
   return (
@@ -43,7 +43,7 @@ export default function SDRVA() {
                 SDR Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Give reps clean lists, clear next steps, and more booked meetings. Your SDR VA powers research, sequencing, and follow‑ups across your tools.
+                Give reps clean lists, clear next steps, and more booked meetings. Your SDR VA powers research, sequencing, and followâ€‘ups across your tools.
               </p>
               <HeroCTAs />
             </div>
@@ -114,17 +114,17 @@ export default function SDRVA() {
         subtitle="More meetings, better data, and higher conversion rates."
         outcomes={[
           {
-            icon: '🎯',
-            title: 'More Quality At‑Bats',
-            description: 'More quality at‑bats for sellers'
+            icon: 'ðŸŽ¯',
+            title: 'More Quality Atâ€‘Bats',
+            description: 'More quality atâ€‘bats for sellers'
           },
           {
-            icon: '📈',
+            icon: 'ðŸ“ˆ',
             title: 'Higher Reply Rates',
             description: 'Higher reply and show rates from consistent execution'
           },
           {
-            icon: '📊',
+            icon: 'ðŸ“Š',
             title: 'Cleaner Data',
             description: 'Cleaner data for forecasting'
           }

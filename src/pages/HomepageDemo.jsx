@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+﻿import React, { useEffect } from 'react'
 import '../../webflow-components-design-system/design-system.css'
 
 const HomepageDemo = () => {
@@ -231,7 +231,7 @@ const HomepageDemo = () => {
               <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: 'var(--ds-shadow-xl)', minHeight: '500px' }}>
                 <img 
                   src="/img/positive-woman.jpg" 
-                  alt="Ocean Virtual Assistant" 
+                  alt="WAGS" 
                   style={{ width: '100%', height: '100%', minHeight: '500px', objectFit: 'cover' }}
                   onError={(e) => {
                     e.target.onerror = null
@@ -248,25 +248,25 @@ const HomepageDemo = () => {
                 <span className="homepage-hero-title-accent">Achieve More</span>
               </h1>
               <p className="ds-text-xl homepage-hero-description">
-                Boost productivity, save time, cut costs, and focus on what matters with expert support from Ocean Virtual Assistants.
+                Boost productivity, save time, cut costs, and focus on what matters with expert support from WAGSs.
               </p>
               
               {/* Trust Badges */}
               <div className="homepage-trust-badges">
                 <div className="homepage-trust-badge">
-                  <span className="homepage-trust-badge-icon">⭐</span>
+                  <span className="homepage-trust-badge-icon">â­</span>
                   <span className="homepage-trust-badge-text">Top 1% Talent</span>
                 </div>
                 <div className="homepage-trust-badge">
-                  <span className="homepage-trust-badge-icon">⚡</span>
+                  <span className="homepage-trust-badge-icon">âš¡</span>
                   <span className="homepage-trust-badge-text">Start in 2-3 Days</span>
                 </div>
                 <div className="homepage-trust-badge">
-                  <span className="homepage-trust-badge-icon">💰</span>
+                  <span className="homepage-trust-badge-icon">ðŸ’°</span>
                   <span className="homepage-trust-badge-text">No Setup Fees</span>
                 </div>
                 <div className="homepage-trust-badge">
-                  <span className="homepage-trust-badge-icon">🌐</span>
+                  <span className="homepage-trust-badge-icon">ðŸŒ</span>
                   <span className="homepage-trust-badge-text">10+ Languages</span>
                 </div>
               </div>
@@ -329,10 +329,10 @@ const HomepageDemo = () => {
             Ready to save ON TIME & up to 70% on costs?
           </h2>
           <p className="ds-text-xl homepage-cta-description">
-            Get started with Ocean Virtual Assistant today and transform your business operations.
+            Get started with WAGS today and transform your business operations.
           </p>
           <div className="homepage-cta-buttons">
-            <a href="https://www.oceanvirtualassistant.com/contact-us" className="homepage-button-white">
+            <a href="https://hirewags.com/contact-us" className="homepage-button-white">
               Book a Free Call
             </a>
             <a href="#pricing" className="homepage-button-outline">
@@ -346,5 +346,6 @@ const HomepageDemo = () => {
 }
 
 export default HomepageDemo
+
 
 

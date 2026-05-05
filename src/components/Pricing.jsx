@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Check } from 'lucide-react'
 
 export default function Pricing() {
@@ -30,11 +30,11 @@ export default function Pricing() {
   return (
     <section id="pricing" className="section-container">
       <h2 className="text-4xl font-bold text-center mb-4">
-        Transparent Pricing — No Startup Fees
+        Transparent Pricing â€” No Startup Fees
       </h2>
       <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-        We don't hide our pricing—we believe in transparency. 
-        One simple plan—scale up or down anytime.
+        We don't hide our pricingâ€”we believe in transparency. 
+        One simple planâ€”scale up or down anytime.
       </p>
 
       <div className="max-w-2xl mx-auto">
@@ -74,7 +74,7 @@ export default function Pricing() {
         {/* Part-time availability note */}
         <div className="mt-6 text-center">
           <p className="text-gray-600">
-            Need fewer hours? <a href="https://www.oceanvirtualassistant.com/contact-us" className="text-ocean-600 hover:text-ocean-700 font-semibold">Ask about our Part-Time plan</a>
+            Need fewer hours? <a href="https://hirewags.com/contact-us" className="text-ocean-600 hover:text-ocean-700 font-semibold">Ask about our Part-Time plan</a>
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ export default function Pricing() {
       {/* ROI Calculator Box */}
       <div className="mt-12 max-w-4xl mx-auto p-8 bg-ocean-50 rounded-xl border-2 border-ocean-200">
         <div className="flex items-start gap-4">
-          <div className="text-4xl">💡</div>
+          <div className="text-4xl">ðŸ’¡</div>
           <div className="flex-1">
             <h4 className="font-bold text-ocean-900 text-xl mb-3">Compare: Full-time US employee costs $40K-60K/year + benefits</h4>
             <div className="space-y-2 text-gray-800">
@@ -90,17 +90,17 @@ export default function Pricing() {
                 <strong>In-house Employee:</strong> $40,000-$60,000/year + benefits (~$50,000-$75,000 total)
               </p>
               <p>
-                <strong>Ocean VA Full-Time:</strong> $15,600/year
+                <strong>WAGS Full-Time:</strong> $15,600/year
               </p>
               <p className="text-lg">
                 <strong>Your Savings:</strong> <span className="text-ocean-700 font-bold text-2xl">$24,000-$44,000/year (60-70%)</span>
               </p>
             </div>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="https://hirewags.com/contact-us" 
               className="inline-block mt-4 text-ocean-600 hover:text-ocean-700 font-semibold"
             >
-              Calculate Your Savings →
+              Calculate Your Savings â†’
             </a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Facebook, Linkedin, Youtube, Instagram } from 'lucide-react'
 
 export default function Footer() {
@@ -8,10 +8,10 @@ export default function Footer() {
         {/* Logo and Description */}
         <div className="mb-10 pb-8 border-b-2 border-ocean-100">
           <div className="flex items-center mb-4">
-            <img src="/img/oceanVALogo.png" alt="Ocean" className="h-14 drop-shadow-md" />
+            <img src="/img/wags-logo.png" alt="WAGS" className="h-14 drop-shadow-md" />
           </div>
           <p className="text-sm max-w-2xl text-gray-700 leading-relaxed">
-            Ocean Virtual Assistant is your trusted partner for efficient and customized virtual assistance services. From office management to specialized industry support, our bilingual assistants are here to streamline your operations. Contact us today to unlock new opportunities and elevate your business to new heights.
+            WAGS is your trusted partner for efficient and customized virtual assistance services. From office management to specialized industry support, our bilingual assistants are here to streamline your operations. Contact us today to unlock new opportunities and elevate your business to new heights.
           </p>
         </div>
 
@@ -21,14 +21,14 @@ export default function Footer() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">SERVICES</h3>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/services/customer-service-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Insurance Customer Service Representative</a></li>
-              <li><a href="/services/virtual-administrative-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Administrative Assistant</a></li>
-              <li><a href="/services/customer-service-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Customer Service Representative</a></li>
-              <li><a href="/services/marketing-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Marketing Assistant</a></li>
-              <li><a href="/services/virtual-receptionist" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Virtual Receptionist</a></li>
-              <li><a href="/services/virtual-transaction-coordinator" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Transaction Coordinator</a></li>
-              <li><a href="/services/sdr-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Sales, Development & Inside Sales</a></li>
-              <li><a href="/services/virtual-assistant-services" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ General Virtual Assistant</a></li>
+              <li><a href="/services/customer-service-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Insurance Customer Service Representative</a></li>
+              <li><a href="/services/virtual-administrative-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Administrative Assistant</a></li>
+              <li><a href="/services/customer-service-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Customer Service Representative</a></li>
+              <li><a href="/services/marketing-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Marketing Assistant</a></li>
+              <li><a href="/services/virtual-receptionist" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Virtual Receptionist</a></li>
+              <li><a href="/services/virtual-transaction-coordinator" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Transaction Coordinator</a></li>
+              <li><a href="/services/sdr-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Sales, Development & Inside Sales</a></li>
+              <li><a href="/services/virtual-assistant-services" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; General Virtual Assistant</a></li>
             </ul>
           </div>
 
@@ -36,16 +36,16 @@ export default function Footer() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">INDUSTRIES</h3>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/insurance" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Insurance</a></li>
-              <li><a href="/industries/real-estate-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Real Estate Virtual Assistant</a></li>
-              <li><a href="/industries/small-business-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Small Business Virtual Assistant</a></li>
-              <li><a href="/industries/ecommerce-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ E-Commerce Virtual Assistant</a></li>
-              <li><a href="/industries/finance-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Finance Virtual Assistant</a></li>
-              <li><a href="/industries/property-management-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Property Management Virtual Assistant</a></li>
-              <li><a href="/industries/medical-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Healthcare Virtual Assistant</a></li>
-              <li><a href="/industries/hr-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ HR Virtual Assistant</a></li>
-              <li><a href="/industries/tech-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Technology Virtual Assistant</a></li>
-              <li><a href="/industries/mortgage-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ Mortgage and Lending Virtual Assistant</a></li>
+              <li><a href="/insurance" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Insurance</a></li>
+              <li><a href="/industries/real-estate-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Real Estate Virtual Assistant</a></li>
+              <li><a href="/industries/small-business-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Small Business Virtual Assistant</a></li>
+              <li><a href="/industries/ecommerce-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; E-Commerce Virtual Assistant</a></li>
+              <li><a href="/industries/finance-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Finance Virtual Assistant</a></li>
+              <li><a href="/industries/property-management-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Property Management Virtual Assistant</a></li>
+              <li><a href="/industries/medical-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Healthcare Virtual Assistant</a></li>
+              <li><a href="/industries/hr-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; HR Virtual Assistant</a></li>
+              <li><a href="/industries/tech-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Technology Virtual Assistant</a></li>
+              <li><a href="/industries/mortgage-virtual-assistant" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; Mortgage and Lending Virtual Assistant</a></li>
             </ul>
           </div>
 
@@ -53,15 +53,15 @@ export default function Footer() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">OTHER PAGES</h3>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/about-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ ABOUT US</a></li>
-              <li><a href="/pricing" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRICING</a></li>
-              <li><a href="/ovas-current-vas" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ OUR VIRTUAL ASSISTANTS</a></li>
-              <li><a href="/faq" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ FAQs</a></li>
-              <li><a href="/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ BLOGS</a></li>
-              <li><a href="/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CAREERS</a></li>
-              <li><a href="/contact-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ CONTACT US</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/terms-and-conditions" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ TERMS & CONDITIONS</a></li>
-              <li><a href="https://www.oceanvirtualassistant.com/privacy-policy" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">→ PRIVACY POLICY</a></li>
+              <li><a href="/about-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; ABOUT US</a></li>
+              <li><a href="/pricing" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; PRICING</a></li>
+              <li><a href="/ovas-current-vas" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; OUR VIRTUAL ASSISTANTS</a></li>
+              <li><a href="/faq" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; FAQs</a></li>
+              <li><a href="/blogs" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; BLOGS</a></li>
+              <li><a href="/careers" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; CAREERS</a></li>
+              <li><a href="/contact-us" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; CONTACT US</a></li>
+              <li><a href="https://hirewags.com/terms-and-conditions" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; TERMS & CONDITIONS</a></li>
+              <li><a href="https://hirewags.com/privacy-policy" className="text-gray-700 hover:text-ocean-600 hover:translate-x-1 inline-block transition-all duration-200">-&gt; PRIVACY POLICY</a></li>
             </ul>
           </div>
 
@@ -89,16 +89,16 @@ export default function Footer() {
         <div className="bg-ocean-50 rounded-lg p-6 shadow-inner border border-ocean-100">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-700">
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <span className="font-medium">📍 Address: 789 SW Federal Highway, Suite 201 Stuart, FL 34994</span>
-              <span className="font-medium">✉️ Email: <a href="mailto:info@oceanvirtualassistant.com" className="text-ocean-600 hover:text-ocean-800 transition-colors font-semibold">info@oceanvirtualassistant.com</a></span>
-              <span className="font-medium">📞 Phone: 772-247-0269</span>
+              <span className="font-medium">Address: 789 SW Federal Highway, Suite 201 Stuart, FL 34994</span>
+              <span className="font-medium">Email: <a href="mailto:info@hirewags.com" className="text-ocean-600 hover:text-ocean-800 transition-colors font-semibold">info@hirewags.com</a></span>
+              <span className="font-medium">Phone: 772-247-0269</span>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm text-gray-600">
-          <p>&copy; 2025 Ocean Virtual Assistant Solutions. All rights reserved.</p>
+          <p>&copy; 2025 WAGS. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import BookingDemo from './components/BookingDemo'
 
 export default function AboutUs() {
@@ -39,17 +39,17 @@ export default function AboutUs() {
 
   const aboutSections = [
     {
-      icon: '📖',
+      icon: 'ðŸ“–',
       title: 'Our Story',
-      description: 'OVAS was founded with one clear goal — to make business support simple, personal, and dependable. We saw how companies struggled to find consistent, skilled virtual assistants and set out to change that.'
+      description: 'OVAS was founded with one clear goal â€” to make business support simple, personal, and dependable. We saw how companies struggled to find consistent, skilled virtual assistants and set out to change that.'
     },
     {
-      icon: '🎯',
+      icon: 'ðŸŽ¯',
       title: 'Our Mission',
       description: 'To empower businesses with dependable, professional virtual assistants while creating meaningful opportunities for talented individuals worldwide. At OVAS, success is built on trust, teamwork, and shared goals.'
     },
     {
-      icon: '🤝',
+      icon: 'ðŸ¤',
       title: 'Our Approach',
       description: 'By focusing on long-term partnerships instead of quick placements, OVAS connects clients with dedicated professionals who become an integral part of their daily operations.'
     }
@@ -96,17 +96,17 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Discover Ocean Virtual Assistant
+                Discover WAGS
               </h1>
               <p className="text-xl md:text-2xl text-ocean-100 mb-8 leading-relaxed">
                 Rooted in Insurance Expertise, Focused on Your Business Success
               </p>
               <p className="text-lg text-ocean-100 mb-8 leading-relaxed">
-                At Ocean Virtual Assistant, we specialize in providing exceptional virtual assistant services to the insurance industry and small businesses. Our roots trace back to Walker Insurance Agency, where we built our foundation. As a leading agency in the insurance sector, we not only run a successful insurance business but also train and vet our virtual assistants through real-world industry experience. This unique background enables us to offer specialized services tailored to your business needs.
+                At WAGS, we specialize in providing exceptional virtual assistant services to the insurance industry and small businesses. Our roots trace back to Walker Insurance Agency, where we built our foundation. As a leading agency in the insurance sector, we not only run a successful insurance business but also train and vet our virtual assistants through real-world industry experience. This unique background enables us to offer specialized services tailored to your business needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://www.oceanvirtualassistant.com/contact-us" 
+                  href="https://hirewags.com/contact-us" 
                   className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
                 >
                   Book a Free Call
@@ -140,7 +140,7 @@ export default function AboutUs() {
         {/* Walker Insurance Legacy Card */}
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-ocean-50 to-blue-50 rounded-lg p-8 mb-12 border border-gray-200">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-3xl">🏢</span>
+            <span className="text-3xl">ðŸ¢</span>
             <h3 className="text-2xl font-bold text-gray-900">Walker Insurance Legacy</h3>
           </div>
           
@@ -150,19 +150,19 @@ export default function AboutUs() {
 
           <div className="space-y-3 mb-6">
             <div className="flex gap-3">
-              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">✓</span>
+              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">âœ“</span>
               <span className="text-gray-700 text-sm">Deep expertise in Homeowners, Auto, Flood, and Commercial</span>
             </div>
             <div className="flex gap-3">
-              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">✓</span>
+              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">âœ“</span>
               <span className="text-gray-700 text-sm">Appointed with Progressive, AAA, Travelers</span>
             </div>
             <div className="flex gap-3">
-              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">✓</span>
+              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">âœ“</span>
               <span className="text-gray-700 text-sm">Partnerships with Safeco | Liberty Mutual</span>
             </div>
             <div className="flex gap-3">
-              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">✓</span>
+              <span className="text-ocean-600 text-lg flex-shrink-0 mt-0.5">âœ“</span>
               <span className="text-gray-700 text-sm">Working with Allstate and Allied | Nationwide</span>
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function AboutUs() {
         {/* Why OVAS Exists */}
         <div className="max-w-4xl mx-auto bg-white rounded-lg p-8 mb-12 border border-gray-200">
           <div className="flex items-center gap-3 mb-6 bg-gradient-to-r from-ocean-600 to-ocean-700 text-white p-4 rounded-lg">
-            <span className="text-2xl">✓</span>
+            <span className="text-2xl">âœ“</span>
             <h3 className="text-2xl font-bold">Why OVAS exists</h3>
           </div>
           
@@ -190,7 +190,7 @@ export default function AboutUs() {
         {/* Built for Florida's Reality */}
         <div className="max-w-4xl mx-auto bg-white rounded-lg p-8 mb-12 border border-gray-200">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-2xl">📈</span>
+            <span className="text-2xl">ðŸ“ˆ</span>
             <h3 className="text-2xl font-bold text-gray-900">Built for Florida's reality</h3>
           </div>
           
@@ -198,7 +198,7 @@ export default function AboutUs() {
           <ul className="space-y-3">
             {challenges.map((challenge, idx) => (
               <li key={idx} className="flex gap-3 text-gray-700">
-                <span className="text-ocean-600 font-bold">•</span>
+                <span className="text-ocean-600 font-bold">â€¢</span>
                 <span>{challenge}</span>
               </li>
             ))}
@@ -209,13 +209,13 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-red-50 rounded-lg p-8 border border-gray-200">
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-2xl">⊘</span>
+              <span className="text-2xl">âŠ˜</span>
               <h3 className="text-2xl font-bold text-gray-900">What you remove with OVAS</h3>
             </div>
             <ul className="space-y-3">
               {removes.map((item, idx) => (
                 <li key={idx} className="flex gap-3 text-gray-700">
-                  <span className="text-red-500 font-bold">✕</span>
+                  <span className="text-red-500 font-bold">âœ•</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -224,13 +224,13 @@ export default function AboutUs() {
 
           <div className="bg-green-50 rounded-lg p-8 border border-gray-200">
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-2xl">✓</span>
+              <span className="text-2xl">âœ“</span>
               <h3 className="text-2xl font-bold text-gray-900">What you gain</h3>
             </div>
             <ul className="space-y-3">
               {gains.map((item, idx) => (
                 <li key={idx} className="flex gap-3 text-gray-700">
-                  <span className="text-ocean-600 font-bold">✓</span>
+                  <span className="text-ocean-600 font-bold">âœ“</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -362,21 +362,21 @@ export default function AboutUs() {
             Our Commitment
           </h2>
           <p className="text-lg text-gray-700 text-center mb-12 leading-relaxed">
-            At OVAS, we measure success by the success of those we serve. Every client, every VA, and every partnership matters. We believe in communication, accountability, and consistent follow-through — values that define who we are and how we work.
+            At OVAS, we measure success by the success of those we serve. Every client, every VA, and every partnership matters. We believe in communication, accountability, and consistent follow-through â€” values that define who we are and how we work.
           </p>
 
           {/* Commitment Values */}
           <div className="flex flex-wrap justify-center gap-8 mb-12">
             <div className="flex items-center gap-3">
-              <span className="text-3xl" style={{ color: '#22c55e !important' }}>⭕</span>
+              <span className="text-3xl" style={{ color: '#22c55e !important' }}>â­•</span>
               <span className="font-bold text-gray-900">Communication</span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-3xl" style={{ color: '#22c55e !important' }}>⭕</span>
+              <span className="text-3xl" style={{ color: '#22c55e !important' }}>â­•</span>
               <span className="font-bold text-gray-900">Accountability</span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-3xl" style={{ color: '#22c55e !important' }}>⭕</span>
+              <span className="text-3xl" style={{ color: '#22c55e !important' }}>â­•</span>
               <span className="font-bold text-gray-900">Follow-through</span>
             </div>
           </div>
@@ -390,7 +390,7 @@ export default function AboutUs() {
               Find out how a dedicated virtual assistant can help your business operate with more focus and less stress.
             </p>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="https://hirewags.com/contact-us" 
               className="inline-block bg-ocean-600 hover:bg-ocean-700 text-white font-bold px-12 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Schedule a Discovery Call
@@ -401,3 +401,4 @@ export default function AboutUs() {
     </>
   )
 }
+

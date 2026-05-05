@@ -1,25 +1,25 @@
-# Guía de Mantenimiento y Escalabilidad
+﻿# GuÃ­a de Mantenimiento y Escalabilidad
 
-Guía completa para mantener, actualizar y escalar los componentes de Webflow.
+GuÃ­a completa para mantener, actualizar y escalar los componentes de Webflow.
 
 ---
 
-## 📋 Tabla de Contenidos
+## ðŸ“‹ Tabla de Contenidos
 
 1. [Mantenimiento Regular](#mantenimiento-regular)
-2. [Actualización de Componentes](#actualización-de-componentes)
+2. [ActualizaciÃ³n de Componentes](#actualizaciÃ³n-de-componentes)
 3. [Escalabilidad](#escalabilidad)
 4. [Monitoreo](#monitoreo)
 5. [Troubleshooting](#troubleshooting)
-6. [Mejores Prácticas](#mejores-prácticas)
+6. [Mejores PrÃ¡cticas](#mejores-prÃ¡cticas)
 
 ---
 
-## 🔧 Mantenimiento Regular
+## ðŸ”§ Mantenimiento Regular
 
 ### Semanal
 - [ ] Revisar errores en consola del navegador
-- [ ] Verificar que todas las imágenes cargan
+- [ ] Verificar que todas las imÃ¡genes cargan
 - [ ] Comprobar que los links funcionan
 - [ ] Revisar analytics de Webflow
 
@@ -33,27 +33,27 @@ Guía completa para mantener, actualizar y escalar los componentes de Webflow.
 - [ ] Revisar navegadores soportados
 - [ ] Actualizar design system si es necesario
 - [ ] Revisar seguridad
-- [ ] Planificar nuevas características
+- [ ] Planificar nuevas caracterÃ­sticas
 
 ### Anual
-- [ ] Auditoría completa de código
+- [ ] AuditorÃ­a completa de cÃ³digo
 - [ ] Refactoring de componentes obsoletos
-- [ ] Actualización de documentación
-- [ ] Planificación de v2.0
+- [ ] ActualizaciÃ³n de documentaciÃ³n
+- [ ] PlanificaciÃ³n de v2.0
 
 ---
 
-## 🔄 Actualización de Componentes
+## ðŸ”„ ActualizaciÃ³n de Componentes
 
 ### Proceso de Cambio
 
-#### 1. Planificación
+#### 1. PlanificaciÃ³n
 ```markdown
 ## Cambio Propuesto
-- Descripción: [qué cambiar]
-- Razón: [por qué cambiar]
-- Impacto: [qué se ve afectado]
-- Riesgo: [qué puede salir mal]
+- DescripciÃ³n: [quÃ© cambiar]
+- RazÃ³n: [por quÃ© cambiar]
+- Impacto: [quÃ© se ve afectado]
+- Riesgo: [quÃ© puede salir mal]
 ```
 
 #### 2. Desarrollo
@@ -74,43 +74,43 @@ Guía completa para mantener, actualizar y escalar los componentes de Webflow.
 - [ ] Animaciones
 ```
 
-#### 4. Documentación
+#### 4. DocumentaciÃ³n
 ```markdown
 # Actualiza CHANGELOG.md
 ## [X.X.X] - YYYY-MM-DD
-### 🔄 Cambios
-- Descripción del cambio
+### ðŸ”„ Cambios
+- DescripciÃ³n del cambio
 ```
 
 #### 5. Deployment
 ```bash
 # En Webflow
-1. Copia el código actualizado
+1. Copia el cÃ³digo actualizado
 2. Pega en HTML Embed
 3. Prueba en preview
 4. Publica cambios
 ```
 
-#### 6. Verificación
+#### 6. VerificaciÃ³n
 ```bash
 # Post-deployment
-- [ ] Verificar en producción
+- [ ] Verificar en producciÃ³n
 - [ ] Revisar analytics
 - [ ] Monitorear errores
 ```
 
 ---
 
-## 📈 Escalabilidad
+## ðŸ“ˆ Escalabilidad
 
 ### Cuando Agregues Nuevos Componentes
 
 #### Paso 1: Crear Archivo
 ```
 webflow-components/
-├── 13-new-component.html  ← Nuevo
-├── design-system.css
-└── README.md
+â”œâ”€â”€ 13-new-component.html  â† Nuevo
+â”œâ”€â”€ design-system.css
+â””â”€â”€ README.md
 ```
 
 #### Paso 2: Estructura Base
@@ -118,11 +118,11 @@ webflow-components/
 <!-- New Component for Webflow -->
 <section class="new-component-section">
   <style>
-    /* Estilos aquí */
+    /* Estilos aquÃ­ */
   </style>
 
   <div class="new-component-container">
-    <!-- Contenido aquí -->
+    <!-- Contenido aquÃ­ -->
   </div>
 </section>
 ```
@@ -131,8 +131,8 @@ webflow-components/
 ```markdown
 # README.md
 ### 13. **13-new-component.html** - New Component
-- Descripción
-- Características
+- DescripciÃ³n
+- CaracterÃ­sticas
 - Responsive
 ```
 
@@ -140,8 +140,8 @@ webflow-components/
 ```markdown
 # CHANGELOG.md
 ## [1.2.0] - YYYY-MM-DD
-### ✨ Agregado
-- 13-new-component.html: Descripción
+### âœ¨ Agregado
+- 13-new-component.html: DescripciÃ³n
 ```
 
 ### Cuando Cambies Design System
@@ -149,18 +149,18 @@ webflow-components/
 #### Impacto de Cambios
 ```
 Color change (ocean-600):
-├── Navbar
-├── Buttons
-├── Links
-├── Hover states
-└── Badges
+â”œâ”€â”€ Navbar
+â”œâ”€â”€ Buttons
+â”œâ”€â”€ Links
+â”œâ”€â”€ Hover states
+â””â”€â”€ Badges
 ```
 
 #### Proceso
 1. **Cambiar variable CSS**
 ```css
 :root {
-  --ocean-600: #049d98;  /* Cambiar aquí */
+  --ocean-600: #049d98;  /* Cambiar aquÃ­ */
 }
 ```
 
@@ -171,7 +171,7 @@ Color change (ocean-600):
 
 3. **Actualizar CHANGELOG**
 ```markdown
-### 🔄 Cambios
+### ðŸ”„ Cambios
 - design-system.css: Actualizado ocean-600
 ```
 
@@ -181,11 +181,11 @@ Color change (ocean-600):
 
 ---
 
-## 📊 Monitoreo
+## ðŸ“Š Monitoreo
 
 ### Webflow Analytics
 
-#### Métricas Clave
+#### MÃ©tricas Clave
 ```
 1. Page Load Time
    - Target: < 3 segundos
@@ -204,10 +204,10 @@ Color change (ocean-600):
    - Comparar performance
 ```
 
-#### Cómo Revisar
+#### CÃ³mo Revisar
 1. Ve a Webflow Dashboard
-2. Analytics → Performance
-3. Revisa últimos 30 días
+2. Analytics â†’ Performance
+3. Revisa Ãºltimos 30 dÃ­as
 4. Identifica tendencias
 
 ### Monitoreo de Errores
@@ -221,26 +221,26 @@ Color change (ocean-600):
 // Errores comunes:
 // 1. 404 - Imagen no encontrada
 // 2. CORS - Problema de origen
-// 3. Syntax Error - Error en código
+// 3. Syntax Error - Error en cÃ³digo
 ```
 
-#### Cómo Reportar
+#### CÃ³mo Reportar
 ```markdown
 # Bug Report
 - Navegador: Chrome 120
 - Dispositivo: Desktop
-- Error: [descripción]
-- Steps: [cómo reproducir]
+- Error: [descripciÃ³n]
+- Steps: [cÃ³mo reproducir]
 - Screenshot: [adjuntar]
 ```
 
 ---
 
-## 🆘 Troubleshooting
+## ðŸ†˜ Troubleshooting
 
-### Problema: Imágenes no cargan
+### Problema: ImÃ¡genes no cargan
 
-**Síntomas**: Imágenes muestran icono de error
+**SÃ­ntomas**: ImÃ¡genes muestran icono de error
 
 **Causas posibles**:
 1. Ruta incorrecta
@@ -251,9 +251,9 @@ Color change (ocean-600):
 **Soluciones**:
 ```bash
 # 1. Verificar ruta
-/images/oceanVALogo.png  ✅ Correcto
-/img/oceanVALogo.png     ❌ Incorrecto
-/images/OceanVALogo.png  ❌ Case-sensitive
+/images/wags-logo.png  âœ… Correcto
+/img/wags-logo.png     âŒ Incorrecto
+/images/OceanVALogo.png  âŒ Case-sensitive
 
 # 2. Verificar en Webflow Assets
 - Abre Assets
@@ -268,7 +268,7 @@ Color change (ocean-600):
 
 ### Problema: Componente se ve roto en mobile
 
-**Síntomas**: Layout no responsive, texto cortado
+**SÃ­ntomas**: Layout no responsive, texto cortado
 
 **Causas posibles**:
 1. Media queries no funcionan
@@ -292,7 +292,7 @@ overflow: hidden;  /* Previene scroll horizontal */
 
 ### Problema: Hover effects no funcionan
 
-**Síntomas**: Hover states no se ven
+**SÃ­ntomas**: Hover states no se ven
 
 **Causas posibles**:
 1. CSS no se aplica
@@ -301,7 +301,7 @@ overflow: hidden;  /* Previene scroll horizontal */
 
 **Soluciones**:
 ```bash
-# 1. Usar !important (último recurso)
+# 1. Usar !important (Ãºltimo recurso)
 .card:hover {
   box-shadow: var(--shadow-lg) !important;
 }
@@ -312,61 +312,61 @@ overflow: hidden;  /* Previene scroll horizontal */
 }
 
 # 3. Revisar en DevTools
-# F12 → Elements → Selecciona elemento
-# Revisa qué CSS se aplica
+# F12 â†’ Elements â†’ Selecciona elemento
+# Revisa quÃ© CSS se aplica
 ```
 
 ### Problema: Animaciones son jarring
 
-**Síntomas**: Animaciones se ven entrecortadas
+**SÃ­ntomas**: Animaciones se ven entrecortadas
 
 **Causas posibles**:
-1. Transición muy rápida
+1. TransiciÃ³n muy rÃ¡pida
 2. Performance issue
 3. Conflicto de animaciones
 
 **Soluciones**:
 ```bash
-# 1. Aumentar duración
+# 1. Aumentar duraciÃ³n
 transition: all 0.2s ease;  /* Aumentar a 0.3s */
 
 # 2. Usar ease-out para entrada
 transition: all 0.2s ease-out;
 
 # 3. Revisar performance
-# Abre DevTools → Performance tab
-# Graba interacción
+# Abre DevTools â†’ Performance tab
+# Graba interacciÃ³n
 # Revisa frame rate
 ```
 
 ---
 
-## ✅ Mejores Prácticas
+## âœ… Mejores PrÃ¡cticas
 
 ### 1. Versionado
 
 ```markdown
 # Estructura recomendada
 webflow-components/
-├── v1.0/
-│   ├── components/
-│   ├── design-system.css
-│   └── README.md
-├── v1.1/
-│   ├── components/
-│   ├── design-system.css
-│   └── README.md
-└── CHANGELOG.md (maestro)
+â”œâ”€â”€ v1.0/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ design-system.css
+â”‚   â””â”€â”€ README.md
+â”œâ”€â”€ v1.1/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ design-system.css
+â”‚   â””â”€â”€ README.md
+â””â”€â”€ CHANGELOG.md (maestro)
 ```
 
-### 2. Documentación
+### 2. DocumentaciÃ³n
 
 **Siempre documenta:**
-- [ ] Qué cambió
-- [ ] Por qué cambió
-- [ ] Cuándo cambió
-- [ ] Quién lo cambió
-- [ ] Cómo probarlo
+- [ ] QuÃ© cambiÃ³
+- [ ] Por quÃ© cambiÃ³
+- [ ] CuÃ¡ndo cambiÃ³
+- [ ] QuiÃ©n lo cambiÃ³
+- [ ] CÃ³mo probarlo
 
 ### 3. Testing
 
@@ -380,17 +380,17 @@ webflow-components/
 
 **Optimizaciones:**
 ```css
-/* ✅ Bueno */
+/* âœ… Bueno */
 transition: all 0.2s ease;
 
-/* ❌ Malo */
+/* âŒ Malo */
 transition: all 0.5s ease;  /* Muy lento */
-transition: all 0s;          /* Sin animación */
+transition: all 0s;          /* Sin animaciÃ³n */
 
-/* ✅ Bueno */
+/* âœ… Bueno */
 will-change: transform;
 
-/* ❌ Malo */
+/* âŒ Malo */
 will-change: *;  /* Afecta performance */
 ```
 
@@ -400,28 +400,28 @@ will-change: *;  /* Afecta performance */
 - [ ] No hay user input
 - [ ] No hay datos sensibles
 - [ ] No hay eval() o innerHTML
-- [ ] Componentes son estáticos
+- [ ] Componentes son estÃ¡ticos
 - [ ] URLs son relativas
 
 ### 6. Mantenibilidad
 
-**Código limpio:**
+**CÃ³digo limpio:**
 ```html
-<!-- ✅ Bueno: Comentarios claros -->
+<!-- âœ… Bueno: Comentarios claros -->
 <!-- Navbar component v1.1 -->
 <!-- Updated: Oct 29, 2025 -->
 
-<!-- ❌ Malo: Sin comentarios -->
+<!-- âŒ Malo: Sin comentarios -->
 <nav class="navbar-wrapper">
 
-<!-- ✅ Bueno: Estructura clara -->
+<!-- âœ… Bueno: Estructura clara -->
 <style>
   /* 1. RESET */
   /* 2. LAYOUT */
   /* 3. COMPONENTS */
 </style>
 
-<!-- ❌ Malo: Estilos desordenados -->
+<!-- âŒ Malo: Estilos desordenados -->
 <style>
   .navbar { ... }
   .button { ... }
@@ -432,40 +432,40 @@ will-change: *;  /* Afecta performance */
 
 ---
 
-## 📅 Calendario de Mantenimiento
+## ðŸ“… Calendario de Mantenimiento
 
 ```
 Octubre 2025
-├── Semana 1: Testing inicial
-├── Semana 2: Documentación
-├── Semana 3: Monitoreo
-└── Semana 4: Planificación v1.2
+â”œâ”€â”€ Semana 1: Testing inicial
+â”œâ”€â”€ Semana 2: DocumentaciÃ³n
+â”œâ”€â”€ Semana 3: Monitoreo
+â””â”€â”€ Semana 4: PlanificaciÃ³n v1.2
 
 Noviembre 2025
-├── Semana 1: Desarrollo v1.2
-├── Semana 2: Testing v1.2
-├── Semana 3: Deployment v1.2
-└── Semana 4: Monitoreo
+â”œâ”€â”€ Semana 1: Desarrollo v1.2
+â”œâ”€â”€ Semana 2: Testing v1.2
+â”œâ”€â”€ Semana 3: Deployment v1.2
+â””â”€â”€ Semana 4: Monitoreo
 
 Diciembre 2025
-├── Semana 1: Auditoría anual
-├── Semana 2: Planificación v2.0
-├── Semana 3: Documentación
-└── Semana 4: Planificación 2026
+â”œâ”€â”€ Semana 1: AuditorÃ­a anual
+â”œâ”€â”€ Semana 2: PlanificaciÃ³n v2.0
+â”œâ”€â”€ Semana 3: DocumentaciÃ³n
+â””â”€â”€ Semana 4: PlanificaciÃ³n 2026
 ```
 
 ---
 
-## 🚀 Roadmap de Escalabilidad
+## ðŸš€ Roadmap de Escalabilidad
 
 ### Corto Plazo (1-2 meses)
 - [ ] Webflow Symbols para componentes reutilizables
-- [ ] Integración con Webflow CMS
+- [ ] IntegraciÃ³n con Webflow CMS
 - [ ] Componentes adicionales (Blog, Contact Form)
 - [ ] Dark mode theme
 
 ### Mediano Plazo (3-6 meses)
-- [ ] API de Webflow para automatización
+- [ ] API de Webflow para automatizaciÃ³n
 - [ ] Sistema de testing automatizado
 - [ ] Dashboard de monitoreo
 - [ ] CI/CD pipeline
@@ -474,11 +474,11 @@ Diciembre 2025
 - [ ] v2.0 con refactoring completo
 - [ ] Componentes avanzados
 - [ ] Integraciones externas
-- [ ] Documentación interactiva
+- [ ] DocumentaciÃ³n interactiva
 
 ---
 
-## 📞 Contacto y Soporte
+## ðŸ“ž Contacto y Soporte
 
 **Para reportar problemas:**
 1. Revisa TESTING-CHECKLIST.md
@@ -487,8 +487,8 @@ Diciembre 2025
 4. Documenta el problema
 5. Contacta al equipo
 
-**Información a incluir:**
-- Navegador y versión
+**InformaciÃ³n a incluir:**
+- Navegador y versiÃ³n
 - Dispositivo (desktop/mobile)
 - Pasos para reproducir
 - Screenshot o video
@@ -496,5 +496,6 @@ Diciembre 2025
 
 ---
 
-**Última actualización**: Oct 29, 2025
-**Versión**: 1.0
+**Ãšltima actualizaciÃ³n**: Oct 29, 2025
+**VersiÃ³n**: 1.0
+

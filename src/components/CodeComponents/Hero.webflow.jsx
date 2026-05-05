@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { declareComponent } from '@webflow/react'
 
 /**
@@ -7,7 +7,7 @@ import { declareComponent } from '@webflow/react'
  * This component is wrapped with @webflow/react for use in Webflow Designer
  */
 const Hero = ({ 
-  title = 'Welcome to Ocean VA',
+  title = 'Welcome to WAGS',
   subtitle = 'Expert Virtual Assistants for Your Business',
   backgroundImage = null,
   ctaText = 'Book a Free Call',
@@ -97,7 +97,7 @@ declareComponent(Hero, {
   props: {
     title: {
       type: 'string',
-      defaultValue: 'Welcome to Ocean VA',
+      defaultValue: 'Welcome to WAGS',
       description: 'Main heading text'
     },
     subtitle: {
@@ -129,3 +129,4 @@ declareComponent(Hero, {
 })
 
 export default Hero
+

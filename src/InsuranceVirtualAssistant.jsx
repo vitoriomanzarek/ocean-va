@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import Hero from './components/Hero'
 import ClientLogos from './components/ClientLogos'
 import Challenges from './components/Challenges'
@@ -38,7 +38,7 @@ function InsuranceVirtualAssistant() {
               What Our Experienced Insurance VAs Handle
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Ocean VAs integrate seamlessly into your existing operations—handling time-consuming 
+              WAGSs integrate seamlessly into your existing operationsâ€”handling time-consuming 
               administrative tasks so your licensed agents can focus on sales, complex underwriting, 
               and high-value client relationships.
             </p>
@@ -47,7 +47,7 @@ function InsuranceVirtualAssistant() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
               {
-                icon: '📋',
+                icon: 'ðŸ“‹',
                 title: 'Policy Servicing & Admin',
                 subtitle: 'Free your agents from paperwork',
                 tasks: [
@@ -60,7 +60,7 @@ function InsuranceVirtualAssistant() {
                 ]
               },
               {
-                icon: '📞',
+                icon: 'ðŸ“ž',
                 title: 'Customer Service & Communication',
                 subtitle: 'Keep clients happy and informed',
                 tasks: [
@@ -73,7 +73,7 @@ function InsuranceVirtualAssistant() {
                 ]
               },
               {
-                icon: '💼',
+                icon: 'ðŸ’¼',
                 title: 'Back Office & Operations',
                 subtitle: 'Streamline your daily operations',
                 tasks: [
@@ -86,7 +86,7 @@ function InsuranceVirtualAssistant() {
                 ]
               },
               {
-                icon: '🌐',
+                icon: 'ðŸŒ',
                 title: 'Multilingual Support & Growth',
                 subtitle: 'Scale without limits',
                 tasks: [
@@ -106,7 +106,7 @@ function InsuranceVirtualAssistant() {
                 <ul className="space-y-2">
                   {category.tasks.map((task, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-ocean-500 mr-2 flex-shrink-0">✓</span>
+                      <span className="text-ocean-500 mr-2 flex-shrink-0">âœ“</span>
                       <span className="text-gray-700 text-sm">{task}</span>
                     </li>
                   ))}
@@ -118,12 +118,12 @@ function InsuranceVirtualAssistant() {
           {/* The Result Section */}
           <div className="bg-ocean-600 text-white p-8 rounded-xl max-w-5xl mx-auto">
             <div className="text-center mb-6">
-              <div className="text-4xl mb-3">🎯</div>
+              <div className="text-4xl mb-3">ðŸŽ¯</div>
               <h3 className="text-3xl font-bold mb-3">
                 The Result: Your Licensed Agents Focus on What Matters Most
               </h3>
               <p className="text-ocean-100 text-lg">
-                While Ocean VAs handle the administrative heavy lifting, your licensed agents can focus on:
+                While WAGSs handle the administrative heavy lifting, your licensed agents can focus on:
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -134,7 +134,7 @@ function InsuranceVirtualAssistant() {
                 'Strategic agency growth'
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center bg-white/10 backdrop-blur-sm p-4 rounded-lg">
-                  <span className="text-2xl mr-3">→</span>
+                  <span className="text-2xl mr-3">â†’</span>
                   <span className="font-medium">{item}</span>
                 </div>
               ))}
@@ -142,23 +142,23 @@ function InsuranceVirtualAssistant() {
           </div>
         </section>
 
-        {/* 3️⃣ DESARROLLO Y PERSUASIÓN */}
+        {/* 3ï¸âƒ£ DESARROLLO Y PERSUASIÃ“N */}
         <WhyOceanVA />
         <StatsSection />
         <BookingDemo />
         <ComparisonTable />
         <Pricing />
 
-        {/* 4️⃣ GENERACIÓN DE CONFIANZA */}
+        {/* 4ï¸âƒ£ GENERACIÃ“N DE CONFIANZA */}
         <TestimonialsFeatured />
         <VAShowcase />
 
-        {/* 5️⃣ REFUERZO DE LA OFERTA */}
+        {/* 5ï¸âƒ£ REFUERZO DE LA OFERTA */}
         <Timeline />
         <ToolExpertise />
         <GoogleReviews />
 
-        {/* 6️⃣ CIERRE Y CONVERSIÓN FINAL */}
+        {/* 6ï¸âƒ£ CIERRE Y CONVERSIÃ“N FINAL */}
         <FAQSection faqs={insuranceVAFaqs} />
 
         {/* Final CTA Section */}
@@ -194,3 +194,4 @@ function InsuranceVirtualAssistant() {
 }
 
 export default InsuranceVirtualAssistant
+

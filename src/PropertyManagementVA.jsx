@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Home, Wrench, FileText, Calendar, DollarSign } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function PropertyManagementVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Property Management Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Virtual assistants for property management: tenant inquiries, maintenance coordination, listings, renewals, and accounting support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/property-management-virtual-assistant"
+    "url": "https://hirewags.com/industries/property-management-virtual-assistant"
   }
 
   return (
@@ -43,7 +43,7 @@ export default function PropertyManagementVA() {
                 Property Management Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Respond faster to tenants and vendors, keep listings fresh, and coordinate maintenance—all without adding office overhead.
+                Respond faster to tenants and vendors, keep listings fresh, and coordinate maintenanceâ€”all without adding office overhead.
               </p>
               <HeroCTAs />
             </div>
@@ -73,8 +73,8 @@ export default function PropertyManagementVA() {
           {[
             { icon: Home, title: 'Tenant Communications', description: 'Tenant calls, emails, and showings coordination' },
             { icon: Wrench, title: 'Maintenance Coordination', description: 'Maintenance requests, vendor scheduling, and updates' },
-            { icon: FileText, title: 'Listings & Applications', description: 'Listings and lead follow‑ups; application processing' },
-            { icon: Calendar, title: 'Move-In/Out', description: 'Move‑in/out checklists and deposit paperwork' },
+            { icon: FileText, title: 'Listings & Applications', description: 'Listings and lead followâ€‘ups; application processing' },
+            { icon: Calendar, title: 'Move-In/Out', description: 'Moveâ€‘in/out checklists and deposit paperwork' },
             { icon: DollarSign, title: 'Accounting Support', description: 'Light accounting support: charges, receipts, and reports' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
@@ -93,9 +93,9 @@ export default function PropertyManagementVA() {
       <OutcomesSection 
         subtitle="Real results that improve your property operations."
         outcomes={[
-          { icon: '⚡', title: 'Faster Response Times', description: 'Faster response times and happier residents' },
-          { icon: '📁', title: 'Clean Unit Files', description: 'Clean unit files and on‑time renewals' },
-          { icon: '✅', title: 'Less Chaos', description: 'Less chaos for property managers' }
+          { icon: 'âš¡', title: 'Faster Response Times', description: 'Faster response times and happier residents' },
+          { icon: 'ðŸ“', title: 'Clean Unit Files', description: 'Clean unit files and onâ€‘time renewals' },
+          { icon: 'âœ…', title: 'Less Chaos', description: 'Less chaos for property managers' }
         ]}
       />
 

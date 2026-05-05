@@ -1,4 +1,4 @@
-import VAProfilePage from '../components/VAProfile/VAProfilePage'
+﻿import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 export default function XimenaGProfile() {
   const ximenaGData = {
@@ -38,26 +38,26 @@ export default function XimenaGProfile() {
       'Noise-Cancelling Headset'
     ],
     
-    employmentSummary: 'Ximena G. has 2 years of insurance experience, gained through her roles at Qualfon, where she worked on the Allstate Insurance Campaign, and Ocean Virtual Assistant Solutions. At Qualfon, she specialized in home and auto insurance policies, providing bilingual customer service to U.S. clients. Her expertise includes managing policy changes, renewals, cancellations, billing, and coordinating with carriers for issue resolution. Additionally, she has strong skills in customer service, training new agents, and cross-selling insurance products to enhance client coverage. She also has experience in educational advisement, demonstrating her ability to provide guidance and manage detailed processes effectively.',
+    employmentSummary: 'Ximena G. has 2 years of insurance experience, gained through her roles at Qualfon, where she worked on the Allstate Insurance Campaign, and WAGS. At Qualfon, she specialized in home and auto insurance policies, providing bilingual customer service to U.S. clients. Her expertise includes managing policy changes, renewals, cancellations, billing, and coordinating with carriers for issue resolution. Additionally, she has strong skills in customer service, training new agents, and cross-selling insurance products to enhance client coverage. She also has experience in educational advisement, demonstrating her ability to provide guidance and manage detailed processes effectively.',
     
     employmentHistory: [
       {
         company: 'OCEAN VIRTUAL ASSISTANT SOLUTIONS',
         position: 'Virtual Assistant',
         period: '2023 - 2025',
-        description: '• Provide remote support to U.S. insurance agencies in policy management, client services, and administrative processes.\n• Manage policies (renewals, endorsements, cancellations, billing).\n• Offer customer service via email, phone, and text.\n• Communicate with carriers for issue resolution.\n• Cross-sell products and train new team members.\n• Oversee payment processing and documentation management.'
+        description: 'â€¢ Provide remote support to U.S. insurance agencies in policy management, client services, and administrative processes.\nâ€¢ Manage policies (renewals, endorsements, cancellations, billing).\nâ€¢ Offer customer service via email, phone, and text.\nâ€¢ Communicate with carriers for issue resolution.\nâ€¢ Cross-sell products and train new team members.\nâ€¢ Oversee payment processing and documentation management.'
       },
       {
         company: 'QUALFON - ALLSTATE INSURANCE CAMPAIGN',
         position: 'Bilingual Customer Service Agent & Training Support',
         period: '2021 - 2023',
-        description: '• Delivered bilingual customer service to U.S. clients for home and auto insurance policies.\n• Assisted in training new agents and maintained service quality standards.\n• Managed policy changes, renewals, cancellations, and billing.\n• Coordinated with carriers to resolve client issues.\n• Trained and mentored new agents.\n• Cross-sold insurance products to strengthen client coverage.'
+        description: 'â€¢ Delivered bilingual customer service to U.S. clients for home and auto insurance policies.\nâ€¢ Assisted in training new agents and maintained service quality standards.\nâ€¢ Managed policy changes, renewals, cancellations, and billing.\nâ€¢ Coordinated with carriers to resolve client issues.\nâ€¢ Trained and mentored new agents.\nâ€¢ Cross-sold insurance products to strengthen client coverage.'
       },
       {
         company: 'UNIVERSIDAD CUGS',
         position: 'Educational Advisor / Call Center',
         period: '2018 - 2019',
-        description: '• Provided guidance to prospective students on admissions and enrollment processes.\n• Handled calls, answered inquiries, and maintained accurate student records while ensuring excellent customer service.\n• Supported students with academic program details and documentation.\n• Managed inbound/outbound calls and follow-ups.\n• Assisted in orientations and enrollment support.'
+        description: 'â€¢ Provided guidance to prospective students on admissions and enrollment processes.\nâ€¢ Handled calls, answered inquiries, and maintained accurate student records while ensuring excellent customer service.\nâ€¢ Supported students with academic program details and documentation.\nâ€¢ Managed inbound/outbound calls and follow-ups.\nâ€¢ Assisted in orientations and enrollment support.'
       }
     ],
     
@@ -85,3 +85,4 @@ export default function XimenaGProfile() {
 
   return <VAProfilePage vaData={ximenaGData} />
 }
+

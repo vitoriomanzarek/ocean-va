@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Pricing from './components/Pricing';
 import BookingDemo from './components/BookingDemo';
 import Testimonials from './components/Testimonials';
@@ -60,7 +60,7 @@ const PricingPage = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-ocean-100 mb-8">
-            Join hundreds of businesses that trust Ocean VA for their virtual assistant needs.
+            Join hundreds of businesses that trust WAGS for their virtual assistant needs.
           </p>
           <button
             onClick={handleScrollToBooking}
@@ -75,3 +75,4 @@ const PricingPage = () => {
 };
 
 export default PricingPage;
+

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Users, Globe, DollarSign, Shield, ImageIcon } from 'lucide-react'
 
 export default function WhyOceanSection({ subtitle, benefits, image = '/images/WhyUs.jpg', noBackground = false }) {
@@ -30,9 +30,9 @@ export default function WhyOceanSection({ subtitle, benefits, image = '/images/W
   return (
     <section className={`${noBackground ? '' : 'section-container bg-gray-50'}`}>
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">Why Ocean VA</h2>
+        <h2 className="text-4xl font-bold mb-4">Why WAGS</h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          {subtitle || 'More than just a service—a dedicated teammate who understands your business.'}
+          {subtitle || 'More than just a serviceâ€”a dedicated teammate who understands your business.'}
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function WhyOceanSection({ subtitle, benefits, image = '/images/W
         {/* Right - Image Placeholder */}
         <div className="bg-gray-100 rounded-lg overflow-hidden aspect-square flex items-center justify-center border-2 border-dashed border-gray-300">
           {image ? (
-            <img src={image} alt="Why Ocean VA" className="w-full h-full object-cover" />
+            <img src={image} alt="Why WAGS" className="w-full h-full object-cover" />
           ) : (
             <div className="text-center">
               <ImageIcon className="w-16 h-16 text-gray-400 mx-auto mb-3" />

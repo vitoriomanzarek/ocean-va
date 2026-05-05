@@ -3,7 +3,16 @@
  * Handles authentication and API calls to Webflow
  */
 
+import { Agent } from 'undici';
+
 const API_BASE_URL = 'https://api.webflow.com/v2';
+
+/** Undici defaults to 10s connect timeout; slow networks hit UND_ERR_CONNECT_TIMEOUT. */
+const webflowDispatcher = new Agent({
+  connectTimeout: 60_000,
+  headersTimeout: 120_000,
+  bodyTimeout: 120_000,
+});
 
 class WebflowApiClient {
   constructor(token) {
@@ -30,7 +39,10 @@ class WebflowApiClient {
     };
 
     try {
-      const response = await fetch(url, config);
+      const response = await fetch(url, {
+        ...config,
+        dispatcher: webflowDispatcher,
+      });
 
       if (!response.ok) {
         const errorText = await response.text();

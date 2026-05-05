@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { ChevronDown, Menu, X } from 'lucide-react'
 
 /**
@@ -12,8 +12,8 @@ import { ChevronDown, Menu, X } from 'lucide-react'
  * - ctaLink: string - CTA button link
  */
 export const Navbar = ({ 
-  logo = '/img/oceanVALogo.png',
-  logoAlt = 'Ocean VA Logo',
+  logo = '/img/wags-logo.png',
+  logoAlt = 'WAGS Logo',
   links = [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services', submenu: [] },
@@ -148,8 +148,8 @@ export const Navbar = ({
 
 Navbar.displayName = 'Navbar'
 Navbar.defaultProps = {
-  logo: '/img/oceanVALogo.png',
-  logoAlt: 'Ocean VA Logo',
+  logo: '/img/wags-logo.png',
+  logoAlt: 'WAGS Logo',
   links: [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services', submenu: [] },
@@ -159,3 +159,4 @@ Navbar.defaultProps = {
   ctaText: 'Book a Demo',
   ctaLink: '#contact'
 }
+

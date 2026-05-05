@@ -1,4 +1,4 @@
-/* Ocean VA Design System - VA Profile Page Styles */
+﻿/* WAGS Design System - VA Profile Page Styles */
 /* Note: This file requires design-system.css to be loaded first for CSS variables */
 
 /* ============================================
@@ -938,4 +938,5 @@
     padding: var(--ds-spacing-4);
   }
 }
+
 

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function Careers() {
   return (
@@ -13,9 +13,10 @@ export default function Careers() {
             minHeight: '800px',
             border: 'none'
           }}
-          title="Ocean Virtual Assistant Careers"
+          title="WAGS Careers"
         />
       </section>
     </>
   )
 }
+

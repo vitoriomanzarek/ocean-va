@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import '../webflow-components-design-system/design-system.css'
 import HeroHome from './components/HeroHome'
 import ClientLogos from './components/ClientLogos'
@@ -34,7 +34,7 @@ function AppDesignSystem() {
               <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: 'var(--ds-shadow-xl)', minHeight: '500px' }}>
                 <img 
                   src="/img/positive-woman.jpg" 
-                  alt="Ocean Virtual Assistant" 
+                  alt="WAGS" 
                   style={{ width: '100%', height: '100%', minHeight: '500px', objectFit: 'cover' }}
                 />
               </div>
@@ -47,16 +47,16 @@ function AppDesignSystem() {
                 <span className="ds-block" style={{ color: 'var(--ds-color-primary-50)' }}>Achieve More</span>
               </h1>
               <p className="ds-text-xl ds-mb-8" style={{ color: 'var(--ds-color-primary-50)' }}>
-                Boost productivity, save time, cut costs, and focus on what matters with expert support from Ocean Virtual Assistants.
+                Boost productivity, save time, cut costs, and focus on what matters with expert support from WAGSs.
               </p>
               
               {/* Trust Badges */}
               <div className="ds-grid ds-grid-4 ds-mb-8" style={{ gap: '12px' }}>
                 {[
-                  { icon: '⭐', text: 'Top 1% Talent' },
-                  { icon: '⚡', text: 'Start in 2-3 Days' },
-                  { icon: '💰', text: 'No Setup Fees' },
-                  { icon: '🌐', text: '10+ Languages' }
+                  { icon: 'â­', text: 'Top 1% Talent' },
+                  { icon: 'âš¡', text: 'Start in 2-3 Days' },
+                  { icon: 'ðŸ’°', text: 'No Setup Fees' },
+                  { icon: 'ðŸŒ', text: '10+ Languages' }
                 ].map((badge, idx) => (
                   <div 
                     key={idx} 
@@ -185,11 +185,11 @@ function AppDesignSystem() {
             Ready to save ON TIME & up to 70% on costs?
           </h2>
           <p className="ds-text-xl ds-mb-8" style={{ color: 'var(--ds-color-primary-50)' }}>
-            Get started with Ocean Virtual Assistant today and transform your business operations.
+            Get started with WAGS today and transform your business operations.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a 
-              href="https://www.oceanvirtualassistant.com/contact-us" 
+              href="https://hirewags.com/contact-us" 
               className="ds-button ds-button-white ds-button-lg"
             >
               Book a Free Call
@@ -221,4 +221,5 @@ function AppDesignSystem() {
 }
 
 export default AppDesignSystem
+
 

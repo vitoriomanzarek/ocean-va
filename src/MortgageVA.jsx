@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { FileText, Users, Database, Calendar, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function MortgageVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Mortgage Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Mortgage virtual assistants for loan file setup, document collection, LOS updates, partner coordination, and pipeline status.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/mortgage-virtual-assistant"
+    "url": "https://hirewags.com/industries/mortgage-virtual-assistant"
   }
 
   return (
@@ -92,9 +92,9 @@ export default function MortgageVA() {
       <OutcomesSection 
         subtitle="Real results that improve your mortgage operations."
         outcomes={[
-          { icon: '📋', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status' },
-          { icon: '😊', title: 'Better Experience', description: 'Better borrower experience' },
-          { icon: '💼', title: 'More Time to Originate', description: 'More time for loan officers to originate' }
+          { icon: 'ðŸ“‹', title: 'Fewer Stalled Files', description: 'Fewer stalled files and clearer status' },
+          { icon: 'ðŸ˜Š', title: 'Better Experience', description: 'Better borrower experience' },
+          { icon: 'ðŸ’¼', title: 'More Time to Originate', description: 'More time for loan officers to originate' }
         ]}
       />
 

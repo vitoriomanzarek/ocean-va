@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Briefcase, Users, FileText, CheckSquare, MessageCircle } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function HRVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "HR Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "HR virtual assistants for recruiting coordination, interview scheduling, onboarding, and people-ops support.",
     "offers": {"@type": "Offer", "price": "750", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/hr-virtual-assistant"
+    "url": "https://hirewags.com/industries/hr-virtual-assistant"
   }
 
   return (
@@ -42,7 +42,7 @@ export default function HRVA() {
                 HR Virtual Assistant
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Free your HR team to focus on people—not paperwork. We coordinate recruiting pipelines, interviews, and onboarding while keeping records tidy.
+                Free your HR team to focus on peopleâ€”not paperwork. We coordinate recruiting pipelines, interviews, and onboarding while keeping records tidy.
               </p>
               <HeroCTAs />
             </div>
@@ -92,9 +92,9 @@ export default function HRVA() {
       <OutcomesSection 
         subtitle="Real results that improve your HR operations."
         outcomes={[
-          { icon: '⚡', title: 'Faster Hiring', description: 'Faster time‑to‑interview and fewer no‑shows' },
-          { icon: '📁', title: 'Clean Files', description: 'Clean, compliant files' },
-          { icon: '⭐', title: 'Better Experience', description: 'Better candidate experience and manager satisfaction' }
+          { icon: 'âš¡', title: 'Faster Hiring', description: 'Faster timeâ€‘toâ€‘interview and fewer noâ€‘shows' },
+          { icon: 'ðŸ“', title: 'Clean Files', description: 'Clean, compliant files' },
+          { icon: 'â­', title: 'Better Experience', description: 'Better candidate experience and manager satisfaction' }
         ]}
       />
 

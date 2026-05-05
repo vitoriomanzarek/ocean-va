@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 
 export default function BookingDemo() {
   // Load Calendly widget script
@@ -30,7 +30,7 @@ export default function BookingDemo() {
           {/* Top Section - Title & Info (Full Width) */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ocean Virtual Assistant Solutions
+              WAGS
             </h3>
             
             <div className="space-y-3">

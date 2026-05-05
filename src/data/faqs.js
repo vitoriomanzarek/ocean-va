@@ -1,15 +1,15 @@
-export const insuranceCsrFaqs = [
+﻿export const insuranceCsrFaqs = [
   { q: 'What tasks can an insurance customer service virtual assistant handle for an insurance agency?', a: 'Typical tasks include policy servicing (endorsements, renewals), COIs and accord forms, quote intake, carrier communications, claims follow-ups, CRM/AMS updates, and inbox/phone coverage.' },
   { q: 'Can a virtual insurance assistant manage claims processing and policy renewals remotely?', a: 'Yes. Your VA can coordinate claims follow-ups, gather documentation, and manage renewals and endorsements while keeping your AMS up to date.' },
   { q: 'How can an insurance virtual assistant improve customer service for my insurance agency?', a: 'By handling policy servicing, COIs, quote intake, carrier communications, claims follow-ups, CRM/AMS updates, and inbox/phone coverage, freeing your team to focus on sales and client relationships.' },
   { q: 'Are insurance virtual assistants familiar with common insurance software and CRM systems?', a: 'We commonly work in Applied Epic/AMS360/EZLynx, QuoteRush and similar insurance tools. Your VA will use the systems you specify.' },
   { q: 'Is it secure to share client policy information and claims data with a virtual assistant?', a: 'Yes. We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
-  { q: 'How much does it cost to hire an insurance customer service virtual assistant per month?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements. Your quote is tailored to role and scope after a quick discovery call.' },
-  { q: 'Is hiring a virtual assistant for insurance more cost-effective than an in-house customer service rep?', a: 'Yes. Ocean VA offers flat monthly pricing with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'How much does it cost to hire an insurance customer service virtual assistant per month?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements. Your quote is tailored to role and scope after a quick discovery call.' },
+  { q: 'Is hiring a virtual assistant for insurance more cost-effective than an in-house customer service rep?', a: 'Yes. WAGS offers flat monthly pricing with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Can I hire an insurance virtual assistant on a part-time basis, or do they only work full-time?', a: 'Yes. We match your preferred time zone and business hours; extended or round-the-clock coverage can be arranged by assigning more than one VA.' },
   { q: 'Will my insurance virtual assistant be dedicated to my agency, or do they work for multiple clients?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
-  { q: 'What training do Ocean VA\'s insurance VAs receive to understand insurance processes and terminology?', a: 'We vet the top 1% of applicants with a 30-day process and industry-specific training so your VA arrives job-ready, with ongoing coaching from our team.' },
-  { q: 'Are Ocean VA\'s insurance customer service assistants bilingual in English and Spanish?', a: 'Yes. Many of our assistants are bilingual (English and Spanish). All VAs are fluent in professional English; we can match Spanish support on request.' },
+  { q: 'What training do WAGS\'s insurance VAs receive to understand insurance processes and terminology?', a: 'We vet the top 1% of applicants with a 30-day process and industry-specific training so your VA arrives job-ready, with ongoing coaching from our team.' },
+  { q: 'Are WAGS\'s insurance customer service assistants bilingual in English and Spanish?', a: 'Yes. Many of our assistants are bilingual (English and Spanish). All VAs are fluent in professional English; we can match Spanish support on request.' },
   { q: 'Do I need to sign a long-term contract to use an insurance virtual assistant service?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
 ]
 
@@ -19,9 +19,9 @@ export const customerServiceFaqs = [
   { q: 'Can a virtual customer service assistant answer phone calls and respond to customer emails for my business?', a: 'Yes. your VA can handle phones, emails, chat, and ticketing while maintaining your brand voice and documentation standards.' },
   { q: 'How can a customer service virtual assistant help increase customer satisfaction and retention?', a: 'By providing responsive, professional support across all channels while documenting interactions and following up on feedback.' },
   { q: 'Will a virtual customer service representative be able to use my helpdesk software or CRM system?', a: 'We\'re comfortable with Zendesk/Freshdesk, Gorgias, Intercom, and CRMs like HubSpot or Salesforce.' },
-  { q: 'Is outsourcing customer support to a virtual assistant a cost-effective solution for my company?', a: 'Yes. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
-  { q: 'Do I need to commit to a long-term contract for Ocean VA\'s customer service assistant services?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees to get started with a virtual customer service assistant?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Is outsourcing customer support to a virtual assistant a cost-effective solution for my company?', a: 'Yes. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'Do I need to commit to a long-term contract for WAGS\'s customer service assistant services?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
+  { q: 'Are there any setup fees to get started with a virtual customer service assistant?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Will I have one dedicated virtual customer service rep for my business or multiple assistants handling inquiries?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
   { q: 'Can a customer service virtual assistant work during my business hours or provide support 24/7 if needed?', a: 'Yes. We match your preferred time zone and business hours; extended coverage can be arranged by assigning more than one VA.' },
   { q: 'Is it safe to give a virtual assistant access to customer data and our customer databases?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
@@ -33,9 +33,9 @@ export const marketingFaqs = [
   { q: 'Can a marketing virtual assistant create content or manage my blog and email newsletter campaigns?', a: 'Yes. your VA can draft posts, blogs, emails, and simple graphics, schedule content, and support paid ads under your strategy and approvals.' },
   { q: 'Will a marketing VA be familiar with tools like SEO software, social media schedulers, or CRM systems?', a: 'We adapt to your software stack quickly, including Hootsuite, Buffer, Mailchimp, and similar tools.' },
   { q: 'How can a virtual marketing assistant help a small business run marketing campaigns more effectively?', a: 'By handling content creation, scheduling, social media management, and campaign coordination so your team can focus on strategy.' },
-  { q: 'Is hiring a marketing virtual assistant a cost-effective way to expand my marketing team?', a: 'Yes. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'Is hiring a marketing virtual assistant a cost-effective way to expand my marketing team?', a: 'Yes. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to sign a long-term contract for marketing virtual assistant services, or is it flexible?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees or onboarding costs for starting with a marketing VA from Ocean VA?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees or onboarding costs for starting with a marketing VA from WAGS?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Do I get a dedicated marketing assistant focused solely on my business and campaigns?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
   { q: 'Can a marketing virtual assistant run bilingual marketing campaigns in both English and Spanish?', a: 'Yes. Many of our assistants are bilingual (English and Spanish). All VAs are fluent in professional English.' },
 ]
@@ -46,9 +46,9 @@ export const sdrFaqs = [
   { q: 'How can a sales development virtual assistant improve my sales pipeline and follow-up process?', a: 'By handling lead research, qualification, outreach, and appointment setting so your sales team can focus on closing deals.' },
   { q: 'Will an SDR virtual assistant make cold calls to prospects, or do they only handle emails and LinkedIn outreach?', a: 'VAs research leads, build lists, run outbound email/LinkedIn sequences, make discovery/qualification calls, set appointments, and keep the CRM updated.' },
   { q: 'Are virtual SDR assistants able to use my CRM and sales tools (like Salesforce or HubSpot) effectively?', a: 'We commonly work in Salesforce, HubSpot, Apollo, and outreach tools you already use.' },
-  { q: 'Is hiring an SDR virtual assistant more cost-effective than bringing on an in-house sales development rep?', a: 'Yes. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'Is hiring an SDR virtual assistant more cost-effective than bringing on an in-house sales development rep?', a: 'Yes. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to sign a long-term contract when adding a virtual sales assistant to my team?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees to begin with a sales development virtual assistant service?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees to begin with a sales development virtual assistant service?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Do I get a dedicated sales development VA who works exclusively for my company\'s sales needs?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
   { q: 'Can a virtual SDR work within my target market\'s time zones and make calls during optimal hours?', a: 'Yes. We match your preferred time zone and business hours; extended coverage can be arranged by assigning more than one VA.' },
 ]
@@ -60,9 +60,9 @@ export const transactionCoordinatorFaqs = [
   { q: 'Is a virtual transaction coordinator familiar with real estate contracts, forms, and paperwork requirements?', a: 'Yes. We adapt to your software stack quickly and follow your compliance and documentation procedures.' },
   { q: 'Can a transaction coordinator VA manage communication between agents, clients, lenders, and title companies?', a: 'Yes. VAs coordinate communications, track documents, and manage status updates across all parties.' },
   { q: 'How does hiring a virtual transaction coordinator save time for a busy Realtor or brokerage?', a: 'By handling administrative coordination, document management, and follow-ups so agents can focus on sales and client relationships.' },
-  { q: 'What is the cost of hiring a virtual transaction coordinator through Ocean VA\'s services?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the cost of hiring a virtual transaction coordinator through WAGS\'s services?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to commit to a long-term agreement, or can I use a transaction coordinator only when needed?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees or onboarding costs to start with a virtual transaction coordinator?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees or onboarding costs to start with a virtual transaction coordinator?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Will I have a dedicated transaction coordinator working on all my real estate files?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
 ]
 
@@ -73,8 +73,8 @@ export const propertyManagementFaqs = [
   { q: 'Will a virtual property management assistant know how to use property management software like AppFolio or Buildium?', a: 'We\'re familiar with AppFolio, Buildium, Rent Manager, Dotloop, and DocuSign, among others.' },
   { q: 'Can a property management virtual assistant advertise rental vacancies and schedule showings for prospects?', a: 'Yes. VAs can manage listings, schedule showings, and coordinate with prospective tenants.' },
   { q: 'How does hiring a virtual assistant reduce the workload and stress for a busy property manager?', a: 'By handling tenant communications, maintenance coordination, rent collection, and administrative tasks.' },
-  { q: 'Is hiring a property management VA more cost-effective than employing an in-office assistant or property manager?', a: 'Yes. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
-  { q: 'What is the cost of a property management virtual assistant through Ocean VA\'s services?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'Is hiring a property management VA more cost-effective than employing an in-office assistant or property manager?', a: 'Yes. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the cost of a property management virtual assistant through WAGS\'s services?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to sign a long-term contract to use a property management virtual assistant?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
   { q: 'Will I have one dedicated virtual assistant managing my property portfolio tasks?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
 ]
@@ -85,10 +85,10 @@ export const medicalFaqs = [
   { q: 'Is a virtual medical assistant familiar with using EHR/EMR systems to update patient records?', a: 'We frequently work in EMR/EHR and secure communication tools per your practice (e.g., Kareo, Athenahealth, SimplePractice).' },
   { q: 'How can a virtual assistant help a doctor\'s office with administrative tasks like filing and follow-ups?', a: 'Medical VAs handle non-clinical admin: patient scheduling, reminders, records updates, insurance verification, and can assist with scribing/transcription per your policy.' },
   { q: 'Is it HIPAA-compliant to use a virtual assistant for handling patient information and medical tasks?', a: 'Yes. we support HIPAA-aligned workflows inside your systems under your policies and access controls.' },
-  { q: 'How does Ocean VA ensure patient data privacy and HIPAA compliance with its medical VAs?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
-  { q: 'What is the cost of a medical virtual assistant per month with Ocean VA\'s pricing?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'How does WAGS ensure patient data privacy and HIPAA compliance with its medical VAs?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
+  { q: 'What is the cost of a medical virtual assistant per month with WAGS\'s pricing?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I have to sign a long-term contract for a medical virtual assistant, or can I use the service as needed?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees to get started with a medical virtual assistant for my practice?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees to get started with a medical virtual assistant for my practice?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Will I have a dedicated medical virtual assistant who learns the ins and outs of my practice?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
 ]
 
@@ -98,9 +98,9 @@ export const financeFaqs = [
   { q: 'Will a virtual finance assistant be familiar with accounting software such as QuickBooks, Xero, or Excel?', a: 'We regularly work with QuickBooks/Xero, Excel/Sheets, and CRMs like Wealthbox or Salesforce.' },
   { q: 'How can a virtual assistant help a CPA or financial advisor with administrative and routine tasks?', a: 'VAs can prepare invoices, record transactions, reconcile accounts, and build reports inside your accounting tools; final review remains with your accountant/CPA.' },
   { q: 'Is it secure and confidential to allow a virtual assistant to work with my financial data?', a: 'Yes. we follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
-  { q: 'How does Ocean VA ensure data security and confidentiality for sensitive financial information?', a: 'We follow confidentiality best practices and can align to KYC/AML documentation workflows you define.' },
+  { q: 'How does WAGS ensure data security and confidentiality for sensitive financial information?', a: 'We follow confidentiality best practices and can align to KYC/AML documentation workflows you define.' },
   { q: 'Can a finance virtual assistant reduce the workload of my in-house accounting team by handling routine tasks?', a: 'Yes. VAs handle bookkeeping support, AP/AR coordination, invoice prep, reconciliations, and report building.' },
-  { q: 'What is the cost of hiring a finance virtual assistant through Ocean VA\'s service?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the cost of hiring a finance virtual assistant through WAGS\'s service?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Is there a contract required for finance virtual assistant services, or can I use the service flexibly?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
   { q: 'Will I have a dedicated virtual assistant for my finance tasks, or different people handling my work?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
 ]
@@ -110,10 +110,10 @@ export const hrFaqs = [
   { q: 'Can a virtual HR assistant help with recruiting tasks like posting jobs, sourcing candidates, and screening resumes?', a: 'Yes. HR VAs post jobs, shortlist candidates, schedule interviews, prepare offer letters, manage HRIS records, and track onboarding paperwork.' },
   { q: 'Will an HR virtual assistant be familiar with HR software or applicant tracking systems (ATS)?', a: 'We often work in BambooHR, Gusto, Zenefits, Greenhouse, Workable, and similar ATS/HRIS tools.' },
   { q: 'Is it secure to share employee data and HR documents with a virtual assistant?', a: 'Yes. we follow strict data-security practices and protect employee PII by using your HRIS/ATS with scoped access and SOPs you approve.' },
-  { q: 'How does Ocean VA ensure confidentiality and data security when handling HR information?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
+  { q: 'How does WAGS ensure confidentiality and data security when handling HR information?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
   { q: 'Can a virtual HR assistant help manage payroll processing or employee time tracking support?', a: 'Yes. VAs can assist with payroll coordination and time tracking support.' },
-  { q: 'Is hiring an HR virtual assistant cost-effective compared to adding another in-house HR staff member?', a: 'Yes. Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
-  { q: 'What is the price per month for an HR virtual assistant service with Ocean VA?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'Is hiring an HR virtual assistant cost-effective compared to adding another in-house HR staff member?', a: 'Yes. WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the price per month for an HR virtual assistant service with WAGS?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to commit to a contract or can I use an HR virtual assistant on a flexible, month-to-month basis?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
   { q: 'Will I have one dedicated HR virtual assistant who learns my company\'s policies and culture?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
 ]
@@ -124,11 +124,11 @@ export const techFaqs = [
   { q: 'Can a tech virtual assistant handle tasks like data entry, internet research, or technical documentation prep?', a: 'VAs handle Tier-1 support, account provisioning, ticket triage, documentation, meeting coordination, backlog grooming support, QA log updates, and license tracking.' },
   { q: 'Are technical virtual assistants familiar with software tools and platforms like project management software or CRMs?', a: 'We\'re comfortable with Jira, Asana, Monday.com, Freshdesk/Zendesk, and automation tools like Zapier/Power Automate.' },
   { q: 'Can a tech virtual assistant provide basic IT support or help-desk tasks for my customers or team?', a: 'Yes. VAs can handle Tier-1 support and help-desk tasks.' },
-  { q: 'What is the cost of a technology virtual assistant through Ocean VA\'s service plans?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the cost of a technology virtual assistant through WAGS\'s service plans?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to sign a long-term contract for tech virtual assistant services, or is it a flexible arrangement?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees to begin working with a tech virtual assistant from Ocean VA?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees to begin working with a tech virtual assistant from WAGS?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
   { q: 'Will I get a dedicated virtual assistant who understands my tech business and projects?', a: 'You get one dedicated VA who learns your systems and workflow; we never pool your work across a ticket queue.' },
-  { q: 'What qualifications or background do Ocean VA\'s tech virtual assistants have? (Are they tech-savvy or have IT experience?)', a: 'We vet the top 1% of applicants with a 30-day process and industry-specific training so your VA arrives job-ready.' },
+  { q: 'What qualifications or background do WAGS\'s tech virtual assistants have? (Are they tech-savvy or have IT experience?)', a: 'We vet the top 1% of applicants with a 30-day process and industry-specific training so your VA arrives job-ready.' },
 ]
 
 export const mortgageFaqs = [
@@ -136,16 +136,16 @@ export const mortgageFaqs = [
   { q: 'Can a virtual assistant help collect borrower documents and prepare mortgage loan applications?', a: 'VAs collect borrower docs, update LOS/CRM records, track conditions, coordinate with title/appraisal, manage status updates, and schedule calls.' },
   { q: 'How can a mortgage virtual assistant assist with follow-ups and communication with loan clients?', a: 'VAs collect borrower docs, update LOS/CRM records, track conditions, coordinate with title/appraisal, manage status updates, and schedule calls.' },
   { q: 'Is it secure to share financial documents and borrower information with a virtual assistant?', a: 'We follow strict data-security practices with principle-of-least-access, NDA/SOP adherence, secure tools, and audit-friendly workflows.' },
-  { q: 'Are Ocean VA\'s mortgage assistants knowledgeable about the loan process and mortgage industry terms?', a: 'VAs collect borrower docs, update LOS/CRM records, track conditions, coordinate with title/appraisal, manage status updates, and schedule calls.' },
+  { q: 'Are WAGS\'s mortgage assistants knowledgeable about the loan process and mortgage industry terms?', a: 'VAs collect borrower docs, update LOS/CRM records, track conditions, coordinate with title/appraisal, manage status updates, and schedule calls.' },
   { q: 'Can a mortgage virtual assistant handle initial client inquiries and pre-qualify leads for a loan officer?', a: 'VAs collect borrower docs, update LOS/CRM records, track conditions, coordinate with title/appraisal, manage status updates, and schedule calls.' },
-  { q: 'How does hiring a virtual assistant help a mortgage office reduce workload and operating costs?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
-  { q: 'What is the monthly cost of a mortgage virtual assistant with Ocean VA\'s flat pricing model?', a: 'Ocean VA uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'How does hiring a virtual assistant help a mortgage office reduce workload and operating costs?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
+  { q: 'What is the monthly cost of a mortgage virtual assistant with WAGS\'s flat pricing model?', a: 'WAGS uses a simple flat monthly rate with no setup fees, no lock-in contracts, and free replacements.' },
   { q: 'Do I need to sign a long-term contract for mortgage virtual assistant services, or is it a flexible month-to-month service?', a: 'Everything is month-to-month. No lock-in or long-term contracts.' },
-  { q: 'Are there any setup fees or extra costs to start using a mortgage virtual assistant?', a: 'No setup fees or hidden charges—just a flat monthly rate that covers the service.' },
+  { q: 'Are there any setup fees or extra costs to start using a mortgage virtual assistant?', a: 'No setup fees or hidden chargesâ€”just a flat monthly rate that covers the service.' },
 ]
 
 export const virtualReceptionistFaqs = [
-  { q: 'What does a Virtual Receptionist do at Ocean VA?', a: 'They answer calls and chats live, qualify leads, book appointments, route or transfer calls, log notes in your CRM, and send confirmations/follow-ups.' },
+  { q: 'What does a Virtual Receptionist do at WAGS?', a: 'They answer calls and chats live, qualify leads, book appointments, route or transfer calls, log notes in your CRM, and send confirmations/follow-ups.' },
   { q: 'Do you cover both phone and chat?', a: 'Yes. phone, website chat, SMS/WhatsApp Business, and shared inbox email.' },
   { q: 'How fast do you answer?', a: 'Our target is under 3 rings with >95% call capture during covered hours.' },
   { q: 'Can you book on our calendar?', a: 'Yes. Google, Outlook, Calendly, Acuity (and others) with custom buffers and meeting types.' },
@@ -154,11 +154,11 @@ export const virtualReceptionistFaqs = [
   { q: 'How do you ensure quality?', a: 'Recorded calls (if enabled), scorecards, weekly coaching, and KPI reviews.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week). No setup fees. Month-to-month.' },
   { q: 'What if a receptionist isn\'t a fit?', a: 'We\'ll replace at no cost and retrain to your playbook.' },
-  { q: 'How do we get started?', a: 'Book a discovery call → share scripts/playbooks → connect tools → go live in 2–3 days.' },
+  { q: 'How do we get started?', a: 'Book a discovery call â†’ share scripts/playbooks â†’ connect tools â†’ go live in 2â€“3 days.' },
 ]
 
 export const adminAssistantFaqs = [
-  { q: 'What does a Virtual Administrative Assistant handle at Ocean VA?', a: 'Calendar, inbox, travel, documents, data entry, research, reporting, and stakeholder coordination.' },
+  { q: 'What does a Virtual Administrative Assistant handle at WAGS?', a: 'Calendar, inbox, travel, documents, data entry, research, reporting, and stakeholder coordination.' },
   { q: 'Can a VAA manage my email and calendar end-to-end?', a: 'Yes. priority sorting, responses from templates, meeting booking, buffers, and daily digests.' },
   { q: 'Do you work in my time zone?', a: 'Yes. your business hours, with optional extended or split coverage.' },
   { q: 'Which tools do you support?', a: 'Google Workspace, Microsoft 365, Slack/Teams, Notion, Asana, Trello, ClickUp, Airtable, Zoom.' },
@@ -167,7 +167,7 @@ export const adminAssistantFaqs = [
   { q: 'Are your assistants bilingual?', a: 'Yes. English and Spanish.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week). No setup fees. Month-to-month.' },
   { q: 'What if the assistant isn\'t a fit?', a: 'We replace and retrain at no cost.' },
-  { q: 'How do we start?', a: 'Discovery → access & priorities → go live in 2–3 days.' },
+  { q: 'How do we start?', a: 'Discovery â†’ access & priorities â†’ go live in 2â€“3 days.' },
 ]
 
 export const ecommerceFaqs = [
@@ -180,7 +180,7 @@ export const ecommerceFaqs = [
   { q: 'Will you manage returns and RMAs?', a: 'Yes. policy verification, labels, refunds/exchanges, and defect tracking.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week). Month-to-month. No setup fees.' },
   { q: 'Can we scale for peak seasons?', a: 'Yes. temporary hours or additional VA coverage.' },
-  { q: 'How do we start?', a: 'Kickoff → access → playbooks → go live in 2–3 days.' },
+  { q: 'How do we start?', a: 'Kickoff â†’ access â†’ playbooks â†’ go live in 2â€“3 days.' },
 ]
 
 export const smallBusinessFaqs = [
@@ -193,7 +193,7 @@ export const smallBusinessFaqs = [
   { q: 'Are your assistants bilingual?', a: 'Yes. English and Spanish.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week), month-to-month, no setup fees.' },
   { q: 'Will I have a dedicated VA?', a: 'Yes. with trained backup for continuity.' },
-  { q: 'How do we get started?', a: 'Discovery call → access & SOPs → launch in 2–3 days.' },
+  { q: 'How do we get started?', a: 'Discovery call â†’ access & SOPs â†’ launch in 2â€“3 days.' },
 ]
 
 export const insuranceVAFaqs = [
@@ -206,7 +206,7 @@ export const insuranceVAFaqs = [
   { q: 'Are your VAs familiar with insurance processes?', a: 'Yes. trained in insurance terminology, compliance, and industry best practices.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week). No setup fees. Month-to-month.' },
   { q: 'What if the VA isn\'t a fit?', a: 'We replace and retrain at no cost.' },
-  { q: 'How do we get started?', a: 'Discovery call → shortlist candidates → interviews → onboarding → go live in 2–3 days.' },
+  { q: 'How do we get started?', a: 'Discovery call â†’ shortlist candidates â†’ interviews â†’ onboarding â†’ go live in 2â€“3 days.' },
 ]
 
 export const generalVAFaqs = [
@@ -219,18 +219,19 @@ export const generalVAFaqs = [
   { q: 'Are your VAs bilingual?', a: 'Yes. English and Spanish support available.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week). No setup fees. Month-to-month.' },
   { q: 'What if the VA isn\'t a fit?', a: 'We replace and retrain at no cost.' },
-  { q: 'How do we get started?', a: 'Discovery call → shortlist candidates → interviews → onboarding → go live in 2–3 days.' },
+  { q: 'How do we get started?', a: 'Discovery call â†’ shortlist candidates â†’ interviews â†’ onboarding â†’ go live in 2â€“3 days.' },
 ]
 
 export const realEstateFaqs = [
   { q: 'What does a REVA handle day-to-day?', a: 'Lead intake and speed-to-lead, listings/MLS updates, showing coordination, feedback, offer packets, transaction coordination, and client updates.' },
   { q: 'Do you call new internet leads fast?', a: 'Yes. <5-minute speed-to-lead during coverage, with call/SMS/email touches logged in your CRM.' },
   { q: 'Which real estate CRMs do you support?', a: 'kvCORE, Follow Up Boss, BoomTown, Chime, Sierra, LionDesk, RealtyJuggernaut (and others).' },
-  { q: 'Can you manage listings in the MLS?', a: 'Yes. data entry, photos, remarks, private remarks, status changes—per broker permissions.' },
+  { q: 'Can you manage listings in the MLS?', a: 'Yes. data entry, photos, remarks, private remarks, status changesâ€”per broker permissions.' },
   { q: 'Do you schedule and confirm showings?', a: 'Yes. ShowingTime (or your tool), agent notifications, and feedback surveys after showings.' },
   { q: 'Do you prepare offer or listing packets?', a: 'Yes. Dotloop, DocuSign, Skyslope templates, disclosures, initials, and routing for signatures.' },
-  { q: 'Will you track dates and deadlines?', a: 'Yes. earnest money, inspections, appraisal, loan milestones, HOA docs, CD/ALTA—no missed deadlines.' },
+  { q: 'Will you track dates and deadlines?', a: 'Yes. earnest money, inspections, appraisal, loan milestones, HOA docs, CD/ALTAâ€”no missed deadlines.' },
   { q: 'What\'s the pricing?', a: 'Starting at $1,300/mo (40h/week), month-to-month, no setup fees.' },
   { q: 'Do you replace if it\'s not a fit?', a: 'Yes. no-cost replacement and retraining aligned to your playbook.' },
-  { q: 'How do we start?', a: 'Discovery call → playbooks/templates → connect tools → launch in 2–3 days.' },
+  { q: 'How do we start?', a: 'Discovery call â†’ playbooks/templates â†’ connect tools â†’ launch in 2â€“3 days.' },
 ]
+

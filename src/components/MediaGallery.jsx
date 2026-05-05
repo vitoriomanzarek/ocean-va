@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { ImageIcon } from 'lucide-react'
 
 export default function MediaGallery() {
@@ -22,7 +22,7 @@ export default function MediaGallery() {
     {
       id: 3,
       title: 'Client Success Stories',
-      description: 'Insurance agencies that have transformed their business with Ocean VA - real results.',
+      description: 'Insurance agencies that have transformed their business with WAGS - real results.',
       placeholder: 'Image of success cases',
       image: '/images/client.jpeg',
       category: 'Success'
@@ -105,23 +105,23 @@ export default function MediaGallery() {
                 Proven Results
               </h3>
               <p className="text-lg text-gray-700 mb-6">
-                Insurance agencies that implemented Ocean VA report:
+                Insurance agencies that implemented WAGS report:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
+                  <span className="text-ocean-600 font-bold mr-3 text-xl">âœ“</span>
                   <span className="text-gray-700">70% reduction in administrative costs</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
+                  <span className="text-ocean-600 font-bold mr-3 text-xl">âœ“</span>
                   <span className="text-gray-700">Increased agent productivity</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
+                  <span className="text-ocean-600 font-bold mr-3 text-xl">âœ“</span>
                   <span className="text-gray-700">Improved customer satisfaction</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-ocean-600 font-bold mr-3 text-xl">✓</span>
+                  <span className="text-ocean-600 font-bold mr-3 text-xl">âœ“</span>
                   <span className="text-gray-700">Scalability without increasing overhead</span>
                 </li>
               </ul>
@@ -132,3 +132,4 @@ export default function MediaGallery() {
     </section>
   )
 }
+

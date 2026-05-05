@@ -1,76 +1,76 @@
-# Configuración de Imágenes - Webflow
+﻿# ConfiguraciÃ³n de ImÃ¡genes - Webflow
 
-## 📁 Estructura de Carpetas Requerida
+## ðŸ“ Estructura de Carpetas Requerida
 
 Para que los componentes funcionen correctamente, necesitas crear esta estructura en Webflow:
 
 ```
 /images/
-├── oceanVALogo.png
-├── positive-woman.jpg
-├── positive-woman.webp
-├── HeroHome.png
-├── client.jpeg
-├── favicon.jpeg
-├── graphics.jpeg
-├── success.webp
-├── team-collab.jpeg
-├── tecnology.jpeg
-├── WhyUs.jpg
-├── BookingDemo.jpeg
-│
-├── about-us/
-│   ├── family-walker.png
-│   ├── logan.png
-│   └── zack.png
-│
-├── careers/
-│   ├── girl1.png
-│   ├── girl2.png
-│   └── girl3.png
-│
-├── VAs/
-│   ├── HeroHome.png
-│   ├── oceanVAlogo.png
-│   ├── our-va-hero.png
-│   ├── positive-woman.jpg
-│   └── positive-woman.webp
-│
-├── logos/
-│   ├── 675c1c8aef521779174c48ef_Pathway.png
-│   ├── 675c1c8b1babe50d26799c80_Level Up.png
-│   ├── 675c1c8b1bd8b8f3abf24794_McGarr.png
-│   ├── 675c1c8b2a076b8d38831029_Bis.png
-│   ├── 675c1c8b2db29a4ae865b059_Fiesta.png
-│   ├── 675c1c8b7a0cfb0322650795_GIG (1).png
-│   ├── 675c1c8b7a0cfb0322650795_GIG.png
-│   ├── 675c1c8b98afbfcdd3f5941d_Ascend (1).png
-│   └── 675c1c8b98afbfcdd3f5941d_Ascend.png
-│
-├── Industries/
-│   ├── ecommerce-va-hero.webp
-│   ├── finance-va-hero.webp
-│   ├── hr-va-hero.webp
-│   ├── marketing-va-hero.webp
-│   ├── medical-va-hero.webp
-│   ├── mortgage-va-hero.webp
-│   ├── property-management-va-hero.webp
-│   ├── real-estate-va-hero.webp
-│   ├── small-business-va-hero.webp
-│   └── tech-va-hero.webp
-│
-└── Services/
-    ├── admin-assistant-hero.webp
-    ├── customer-service-hero.webp
-    ├── sdr-va-hero.webp
-    ├── transaction-coordinator-hero.webp
-    ├── va-services-hero.webp
-    └── virtual-receptionist-hero.webp
+â”œâ”€â”€ wags-logo.png
+â”œâ”€â”€ positive-woman.jpg
+â”œâ”€â”€ positive-woman.webp
+â”œâ”€â”€ HeroHome.png
+â”œâ”€â”€ client.jpeg
+â”œâ”€â”€ favicon.jpeg
+â”œâ”€â”€ graphics.jpeg
+â”œâ”€â”€ success.webp
+â”œâ”€â”€ team-collab.jpeg
+â”œâ”€â”€ tecnology.jpeg
+â”œâ”€â”€ WhyUs.jpg
+â”œâ”€â”€ BookingDemo.jpeg
+â”‚
+â”œâ”€â”€ about-us/
+â”‚   â”œâ”€â”€ family-walker.png
+â”‚   â”œâ”€â”€ logan.png
+â”‚   â””â”€â”€ zack.png
+â”‚
+â”œâ”€â”€ careers/
+â”‚   â”œâ”€â”€ girl1.png
+â”‚   â”œâ”€â”€ girl2.png
+â”‚   â””â”€â”€ girl3.png
+â”‚
+â”œâ”€â”€ VAs/
+â”‚   â”œâ”€â”€ HeroHome.png
+â”‚   â”œâ”€â”€ oceanVAlogo.png
+â”‚   â”œâ”€â”€ our-va-hero.png
+â”‚   â”œâ”€â”€ positive-woman.jpg
+â”‚   â””â”€â”€ positive-woman.webp
+â”‚
+â”œâ”€â”€ logos/
+â”‚   â”œâ”€â”€ 675c1c8aef521779174c48ef_Pathway.png
+â”‚   â”œâ”€â”€ 675c1c8b1babe50d26799c80_Level Up.png
+â”‚   â”œâ”€â”€ 675c1c8b1bd8b8f3abf24794_McGarr.png
+â”‚   â”œâ”€â”€ 675c1c8b2a076b8d38831029_Bis.png
+â”‚   â”œâ”€â”€ 675c1c8b2db29a4ae865b059_Fiesta.png
+â”‚   â”œâ”€â”€ 675c1c8b7a0cfb0322650795_GIG (1).png
+â”‚   â”œâ”€â”€ 675c1c8b7a0cfb0322650795_GIG.png
+â”‚   â”œâ”€â”€ 675c1c8b98afbfcdd3f5941d_Ascend (1).png
+â”‚   â””â”€â”€ 675c1c8b98afbfcdd3f5941d_Ascend.png
+â”‚
+â”œâ”€â”€ Industries/
+â”‚   â”œâ”€â”€ ecommerce-va-hero.webp
+â”‚   â”œâ”€â”€ finance-va-hero.webp
+â”‚   â”œâ”€â”€ hr-va-hero.webp
+â”‚   â”œâ”€â”€ marketing-va-hero.webp
+â”‚   â”œâ”€â”€ medical-va-hero.webp
+â”‚   â”œâ”€â”€ mortgage-va-hero.webp
+â”‚   â”œâ”€â”€ property-management-va-hero.webp
+â”‚   â”œâ”€â”€ real-estate-va-hero.webp
+â”‚   â”œâ”€â”€ small-business-va-hero.webp
+â”‚   â””â”€â”€ tech-va-hero.webp
+â”‚
+â””â”€â”€ Services/
+    â”œâ”€â”€ admin-assistant-hero.webp
+    â”œâ”€â”€ customer-service-hero.webp
+    â”œâ”€â”€ sdr-va-hero.webp
+    â”œâ”€â”€ transaction-coordinator-hero.webp
+    â”œâ”€â”€ va-services-hero.webp
+    â””â”€â”€ virtual-receptionist-hero.webp
 ```
 
 ---
 
-## 🚀 Cómo Subir Imágenes a Webflow
+## ðŸš€ CÃ³mo Subir ImÃ¡genes a Webflow
 
 ### Paso 1: Acceder a Assets
 1. En tu proyecto de Webflow, ve a **Assets** (panel izquierdo)
@@ -83,20 +83,20 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 ### Paso 3: Subir Archivos
 
 **Archivos principales:**
-- `oceanVALogo.png` → `/images/`
-- `positive-woman.jpg` → `/images/`
+- `wags-logo.png` â†’ `/images/`
+- `positive-woman.jpg` â†’ `/images/`
 
 **Logos del carousel:**
-- Todos los archivos `.png` → `/images/logos/`
+- Todos los archivos `.png` â†’ `/images/logos/`
 
 ---
 
-## 📋 Lista de Imágenes Necesarias
+## ðŸ“‹ Lista de ImÃ¡genes Necesarias
 
-### Imágenes Principales (Root)
+### ImÃ¡genes Principales (Root)
 | Archivo | Componente |
 |---------|-----------|
-| oceanVALogo.png | Navbar, Footer |
+| wags-logo.png | Navbar, Footer |
 | positive-woman.jpg | Hero Section |
 | positive-woman.webp | Hero Section (alternativo) |
 | HeroHome.png | Hero Section |
@@ -109,22 +109,22 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 | tecnology.jpeg | Technology Section |
 | WhyUs.jpg | Why Us Section |
 
-### Imágenes About Us
-| Archivo | Ubicación |
+### ImÃ¡genes About Us
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | family-walker.png | /images/about-us/ |
 | logan.png | /images/about-us/ |
 | zack.png | /images/about-us/ |
 
-### Imágenes Careers
-| Archivo | Ubicación |
+### ImÃ¡genes Careers
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | girl1.png | /images/careers/ |
 | girl2.png | /images/careers/ |
 | girl3.png | /images/careers/ |
 
-### Imágenes VAs
-| Archivo | Ubicación |
+### ImÃ¡genes VAs
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | HeroHome.png | /images/VAs/ |
 | oceanVAlogo.png | /images/VAs/ |
@@ -133,7 +133,7 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 | positive-woman.webp | /images/VAs/ |
 
 ### Logos del Carousel
-| Archivo | Ubicación |
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | 675c1c8aef521779174c48ef_Pathway.png | /images/logos/ |
 | 675c1c8b1babe50d26799c80_Level Up.png | /images/logos/ |
@@ -145,8 +145,8 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 | 675c1c8b98afbfcdd3f5941d_Ascend (1).png | /images/logos/ |
 | 675c1c8b98afbfcdd3f5941d_Ascend.png | /images/logos/ |
 
-### Imágenes Industries (10 archivos)
-| Archivo | Ubicación |
+### ImÃ¡genes Industries (10 archivos)
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | ecommerce-va-hero.webp | /images/Industries/ |
 | finance-va-hero.webp | /images/Industries/ |
@@ -159,8 +159,8 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 | small-business-va-hero.webp | /images/Industries/ |
 | tech-va-hero.webp | /images/Industries/ |
 
-### Imágenes Services (6 archivos)
-| Archivo | Ubicación |
+### ImÃ¡genes Services (6 archivos)
+| Archivo | UbicaciÃ³n |
 |---------|-----------|
 | admin-assistant-hero.webp | /images/Services/ |
 | customer-service-hero.webp | /images/Services/ |
@@ -171,16 +171,16 @@ Para que los componentes funcionen correctamente, necesitas crear esta estructur
 
 ---
 
-## 🔗 Descargar Imágenes desde GitHub
+## ðŸ”— Descargar ImÃ¡genes desde GitHub
 
-Si necesitas descargar las imágenes desde el repositorio:
+Si necesitas descargar las imÃ¡genes desde el repositorio:
 
 ```
 https://github.com/vitoriomanzarek/ocean-va/tree/main/public
 ```
 
 **Rutas en el repositorio:**
-- Imágenes principales: `public/img/[nombre]`
+- ImÃ¡genes principales: `public/img/[nombre]`
 - Logos: `public/img/logos/[nombre].png`
 - About Us: `public/img/about-us/[nombre].png`
 - Careers: `public/img/careers/[nombre].png`
@@ -188,71 +188,71 @@ https://github.com/vitoriomanzarek/ocean-va/tree/main/public
 - Industries: `public/images/Industries/[nombre].webp`
 - Services: `public/images/Services/[nombre].webp`
 
-**Total de archivos a subir: ~50 imágenes**
+**Total de archivos a subir: ~50 imÃ¡genes**
 
 ---
 
-## ✅ Verificar Configuración
+## âœ… Verificar ConfiguraciÃ³n
 
-Después de subir las imágenes, verifica que:
+DespuÃ©s de subir las imÃ¡genes, verifica que:
 
-1. ✅ Las imágenes principales estén en `/images/`
-2. ✅ Los logos estén en `/images/logos/`
-3. ✅ Las imágenes de About Us estén en `/images/about-us/`
-4. ✅ Las imágenes de Careers estén en `/images/careers/`
-5. ✅ Las imágenes de VAs estén en `/images/VAs/`
-6. ✅ Las imágenes de Industries estén en `/images/Industries/`
-7. ✅ Las imágenes de Services estén en `/images/Services/`
-8. ✅ Los nombres de archivo sean exactos (case-sensitive)
-9. ✅ Prueba los componentes en preview
-10. ✅ Usa el Webflow Validator Bookmarklet para verificar que todas las imágenes cargan
-
----
-
-## 🎯 Ventajas de Usar Webflow Assets
-
-- ✅ **Sin límites de requests** - Carga ilimitada
-- ✅ **CDN global** - Imágenes optimizadas automáticamente
-- ✅ **Compresión automática** - Mejor rendimiento
-- ✅ **Caché global** - Carga más rápida
-- ✅ **Escalable** - Soporta miles de visitas diarias
-- ✅ **Sin problemas de rate limiting** - A diferencia de GitHub
+1. âœ… Las imÃ¡genes principales estÃ©n en `/images/`
+2. âœ… Los logos estÃ©n en `/images/logos/`
+3. âœ… Las imÃ¡genes de About Us estÃ©n en `/images/about-us/`
+4. âœ… Las imÃ¡genes de Careers estÃ©n en `/images/careers/`
+5. âœ… Las imÃ¡genes de VAs estÃ©n en `/images/VAs/`
+6. âœ… Las imÃ¡genes de Industries estÃ©n en `/images/Industries/`
+7. âœ… Las imÃ¡genes de Services estÃ©n en `/images/Services/`
+8. âœ… Los nombres de archivo sean exactos (case-sensitive)
+9. âœ… Prueba los componentes en preview
+10. âœ… Usa el Webflow Validator Bookmarklet para verificar que todas las imÃ¡genes cargan
 
 ---
 
-## 📝 Notas Importantes
+## ðŸŽ¯ Ventajas de Usar Webflow Assets
+
+- âœ… **Sin lÃ­mites de requests** - Carga ilimitada
+- âœ… **CDN global** - ImÃ¡genes optimizadas automÃ¡ticamente
+- âœ… **CompresiÃ³n automÃ¡tica** - Mejor rendimiento
+- âœ… **CachÃ© global** - Carga mÃ¡s rÃ¡pida
+- âœ… **Escalable** - Soporta miles de visitas diarias
+- âœ… **Sin problemas de rate limiting** - A diferencia de GitHub
+
+---
+
+## ðŸ“ Notas Importantes
 
 - Los nombres de archivo son **case-sensitive**
 - Usa `/images/` (con barra inicial) en las URLs
-- Webflow optimiza automáticamente las imágenes
-- No necesitas hacer nada más después de subir
+- Webflow optimiza automÃ¡ticamente las imÃ¡genes
+- No necesitas hacer nada mÃ¡s despuÃ©s de subir
 
 ---
 
-## 🆘 Solución de Problemas
+## ðŸ†˜ SoluciÃ³n de Problemas
 
-### Las imágenes no cargan
+### Las imÃ¡genes no cargan
 - Verifica que la ruta sea exacta: `/images/nombre.png`
-- Comprueba que el archivo esté en la carpeta correcta
-- Asegúrate de que el nombre sea idéntico (mayúsculas/minúsculas)
+- Comprueba que el archivo estÃ© en la carpeta correcta
+- AsegÃºrate de que el nombre sea idÃ©ntico (mayÃºsculas/minÃºsculas)
 
-### Las imágenes se ven pixeladas
-- Webflow las optimiza automáticamente
+### Las imÃ¡genes se ven pixeladas
+- Webflow las optimiza automÃ¡ticamente
 - Espera a que se procesen completamente
-- Recarga la página
+- Recarga la pÃ¡gina
 
 ### El carousel de logos no funciona
-- Verifica que todos los logos estén en `/images/logos/`
+- Verifica que todos los logos estÃ©n en `/images/logos/`
 - Comprueba los nombres exactos de los archivos
 - Abre la consola del navegador para ver errores
 
 ---
 
-## 📊 Resumen de Carpetas
+## ðŸ“Š Resumen de Carpetas
 
 | Carpeta | Cantidad | Tipo |
 |---------|----------|------|
-| Root (/images/) | 12 | Imágenes principales |
+| Root (/images/) | 12 | ImÃ¡genes principales |
 | /images/logos/ | 9 | Logos de clientes |
 | /images/about-us/ | 3 | Team members |
 | /images/careers/ | 3 | Testimonios |
@@ -263,15 +263,16 @@ Después de subir las imágenes, verifica que:
 
 ---
 
-## 🚀 Próximos Pasos
+## ðŸš€ PrÃ³ximos Pasos
 
-1. **Descargar imágenes** desde GitHub
+1. **Descargar imÃ¡genes** desde GitHub
 2. **Crear carpetas** en Webflow Assets
-3. **Subir imágenes** a cada carpeta
+3. **Subir imÃ¡genes** a cada carpeta
 4. **Verificar URLs** en componentes
 5. **Usar Bookmarklet** para validar carga
 6. **Publicar** componentes en Webflow
 
 ---
 
-**Última actualización**: Oct 30, 2025
+**Ãšltima actualizaciÃ³n**: Oct 30, 2025
+

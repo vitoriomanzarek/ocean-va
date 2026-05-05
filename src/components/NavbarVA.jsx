@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export default function NavbarVA() {
@@ -6,7 +6,7 @@ export default function NavbarVA() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const vaCategories = [
-    { name: 'Insurance Virtual Assistant', href: '/our-vas' },
+    { name: 'Insurance Virtual Assistant', href: '/ovas-current-vas' },
     { name: 'Executive / Admin VA', href: '/executive-admin-vas' },
     { name: 'Property Management Assistants', href: '/ovas-property-management-assistants' },
     { name: 'Mortgage Processing Assistant', href: '/ovas-mortgage-processing-assistant' },
@@ -20,7 +20,7 @@ export default function NavbarVA() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src="/img/oceanVALogo.png" alt="Ocean VA" className="h-12" />
+              <img src="/img/wags-logo.png" alt="WAGS" className="h-12" />
             </a>
           </div>
 
@@ -167,3 +167,4 @@ export default function NavbarVA() {
     </nav>
   )
 }
+

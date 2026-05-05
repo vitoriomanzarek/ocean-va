@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Check, FileCheck, Edit3, Home, Calendar, ClipboardList, Users, Globe, DollarSign, Shield } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function VirtualTransactionCoordinator() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Virtual Transaction Coordinator (Real Estate)",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Contract-to-close coordination: checklists, signatures, vendor coordination, contingency tracking, and status updates.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/virtual-transaction-coordinator"
+    "url": "https://hirewags.com/services/virtual-transaction-coordinator"
   }
 
   return (
@@ -45,7 +45,7 @@ export default function VirtualTransactionCoordinator() {
                 Virtual Transaction Coordinator (Real Estate)
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Contract‑to‑close without the scramble. We handle checklists, docs, signatures, vendor coordination, and reminders—so agents and teams never miss a milestone.
+                Contractâ€‘toâ€‘close without the scramble. We handle checklists, docs, signatures, vendor coordination, and remindersâ€”so agents and teams never miss a milestone.
               </p>
               <HeroCTAs />
             </div>
@@ -117,17 +117,17 @@ export default function VirtualTransactionCoordinator() {
         subtitle="Smoother transactions and happier clients from start to finish."
         outcomes={[
           {
-            icon: '✓',
+            icon: 'âœ“',
             title: 'Fewer Missed Deadlines',
             description: 'Fewer missed deadlines and clean audits'
           },
           {
-            icon: '😊',
+            icon: 'ðŸ˜Š',
             title: 'Better Client Experience',
             description: 'Better client experience with proactive communication'
           },
           {
-            icon: '🏆',
+            icon: 'ðŸ†',
             title: 'More Deals Closed',
             description: 'More deals closed with less chaos'
           }

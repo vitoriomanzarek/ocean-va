@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Phone, Calendar, DollarSign, Share2, Users } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function SmallBusinessVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Virtual Assistant for Small Business",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Virtual assistants for small businesses: phones, scheduling, billing support, marketing, and admin.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/small-business-virtual-assistant"
+    "url": "https://hirewags.com/industries/small-business-virtual-assistant"
   }
 
   return (
@@ -42,7 +42,7 @@ export default function SmallBusinessVA() {
                 Virtual Assistant for Small Business
               </h1>
               <p className="text-lg md:text-xl mb-8 text-ocean-50">
-                Owners shouldn't be stuck in inbox and admin. Bring on a dedicated VA to answer calls, book appointments, manage follow‑ups, and keep projects on track.
+                Owners shouldn't be stuck in inbox and admin. Bring on a dedicated VA to answer calls, book appointments, manage followâ€‘ups, and keep projects on track.
               </p>
               <HeroCTAs />
             </div>
@@ -71,8 +71,8 @@ export default function SmallBusinessVA() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             { icon: Phone, title: 'Phones & Scheduling', description: 'Phones and appointment scheduling' },
-            { icon: DollarSign, title: 'Billing & Follow-ups', description: 'Quotes, invoices, and payment follow‑ups' },
-            { icon: Calendar, title: 'Inbox & Calendar', description: 'Inbox/calendar management and customer follow‑ups' },
+            { icon: DollarSign, title: 'Billing & Follow-ups', description: 'Quotes, invoices, and payment followâ€‘ups' },
+            { icon: Calendar, title: 'Inbox & Calendar', description: 'Inbox/calendar management and customer followâ€‘ups' },
             { icon: Share2, title: 'Social & Reviews', description: 'Social posts, local listings, and review replies' },
             { icon: Users, title: 'Bookkeeping & Vendors', description: 'Light bookkeeping and vendor coordination' }
           ].map((item, idx) => (
@@ -92,9 +92,9 @@ export default function SmallBusinessVA() {
       <OutcomesSection 
         subtitle="Real results that help your small business thrive."
         outcomes={[
-          { icon: '📞', title: 'Fewer Missed Calls', description: 'Fewer missed calls and faster responses' },
-          { icon: '💰', title: 'Better Cash Flow', description: 'Better cash flow via on‑time follow‑ups' },
-          { icon: '⏰', title: 'More Time to Lead', description: 'More time for owners to lead and sell' }
+          { icon: 'ðŸ“ž', title: 'Fewer Missed Calls', description: 'Fewer missed calls and faster responses' },
+          { icon: 'ðŸ’°', title: 'Better Cash Flow', description: 'Better cash flow via onâ€‘time followâ€‘ups' },
+          { icon: 'â°', title: 'More Time to Lead', description: 'More time for owners to lead and sell' }
         ]}
       />
 

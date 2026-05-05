@@ -1,76 +1,76 @@
-# Automatización - Ocean VA Webflow Components
+﻿# AutomatizaciÃ³n - WAGS Webflow Components
 
 Herramientas para automatizar tareas en Webflow.
 
 ---
 
-## 🛠️ Herramientas Disponibles
+## ðŸ› ï¸ Herramientas Disponibles
 
 ### 1. Webflow Validator Bookmarklet
 **Tipo**: Bookmarklet (JavaScript en navegador)
-**Complejidad**: ⭐ Muy Fácil
+**Complejidad**: â­ Muy FÃ¡cil
 **Tiempo**: 2 minutos
 
 Ver: [WEBFLOW-VALIDATOR-BOOKMARKLET.md](WEBFLOW-VALIDATOR-BOOKMARKLET.md)
 
-**Qué hace:**
-- ✅ Valida componentes
-- ✅ Verifica imágenes
-- ✅ Revisa links
-- ✅ Genera reporte
+**QuÃ© hace:**
+- âœ… Valida componentes
+- âœ… Verifica imÃ¡genes
+- âœ… Revisa links
+- âœ… Genera reporte
 
-**Cuándo usar:**
-- Después de copiar componentes
+**CuÃ¡ndo usar:**
+- DespuÃ©s de copiar componentes
 - Antes de publicar
-- Para testing rápido
+- Para testing rÃ¡pido
 
 ---
 
 ### 2. Sync Components Script
 **Tipo**: Node.js Script
-**Complejidad**: ⭐⭐ Fácil
+**Complejidad**: â­â­ FÃ¡cil
 **Tiempo**: 5 minutos
 
 Ver: [sync-components.js](sync-components.js)
 
-**Qué hace:**
-- ✅ Descarga componentes desde GitHub
-- ✅ Guarda localmente
-- ✅ Genera reporte
-- ✅ Valida descarga
+**QuÃ© hace:**
+- âœ… Descarga componentes desde GitHub
+- âœ… Guarda localmente
+- âœ… Genera reporte
+- âœ… Valida descarga
 
-**Cuándo usar:**
+**CuÃ¡ndo usar:**
 - Para mantener copia local
 - Para backup
-- Para sincronización
+- Para sincronizaciÃ³n
 
 ---
 
-## 🚀 Guía Rápida
+## ðŸš€ GuÃ­a RÃ¡pida
 
 ### Bookmarklet (Recomendado Ahora)
 
 #### Paso 1: Crear Bookmarklet
 1. Abre tu navegador
 2. Abre Bookmarks (Ctrl+Shift+B)
-3. Haz clic derecho → "Agregar página a marcadores"
+3. Haz clic derecho â†’ "Agregar pÃ¡gina a marcadores"
 4. Nombre: `Webflow Validator`
 5. URL: [Ver WEBFLOW-VALIDATOR-BOOKMARKLET.md](WEBFLOW-VALIDATOR-BOOKMARKLET.md)
 
 #### Paso 2: Usar
-1. Ve a tu página en Webflow
+1. Ve a tu pÃ¡gina en Webflow
 2. Haz clic en el bookmarklet
-3. Aparecerá reporte en esquina superior derecha
+3. AparecerÃ¡ reporte en esquina superior derecha
 4. Revisa resultados
 
 ---
 
-### Node.js Script (Próximo Mes)
+### Node.js Script (PrÃ³ximo Mes)
 
 #### Paso 1: Instalar Node.js
 ```bash
 # Descargar desde https://nodejs.org
-# Versión LTS recomendada
+# VersiÃ³n LTS recomendada
 ```
 
 #### Paso 2: Usar Script
@@ -97,24 +97,24 @@ node sync-components.js --clean     # Limpia archivos
 
 ---
 
-## 📋 Comparación de Herramientas
+## ðŸ“‹ ComparaciÃ³n de Herramientas
 
-| Característica | Bookmarklet | Node.js Script |
+| CaracterÃ­stica | Bookmarklet | Node.js Script |
 |---|---|---|
-| Instalación | 2 min | 5 min |
-| Complejidad | Muy fácil | Fácil |
-| Validación | ✅ | ✅ |
-| Sincronización | ❌ | ✅ |
-| Backup | ❌ | ✅ |
-| Automatización | ❌ | ✅ |
-| Reporte | ✅ | ✅ |
-| Requiere Node.js | ❌ | ✅ |
+| InstalaciÃ³n | 2 min | 5 min |
+| Complejidad | Muy fÃ¡cil | FÃ¡cil |
+| ValidaciÃ³n | âœ… | âœ… |
+| SincronizaciÃ³n | âŒ | âœ… |
+| Backup | âŒ | âœ… |
+| AutomatizaciÃ³n | âŒ | âœ… |
+| Reporte | âœ… | âœ… |
+| Requiere Node.js | âŒ | âœ… |
 
 ---
 
-## 🎯 Flujo de Trabajo Recomendado
+## ðŸŽ¯ Flujo de Trabajo Recomendado
 
-### Día 1: Setup
+### DÃ­a 1: Setup
 ```bash
 # 1. Crear Bookmarklet (2 min)
 # 2. Copiar componentes a Webflow (30 min)
@@ -124,8 +124,8 @@ node sync-components.js --clean     # Limpia archivos
 
 ### Semana 1: Mantenimiento
 ```bash
-# Cada día:
-# 1. Ejecutar Bookmarklet después de cambios
+# Cada dÃ­a:
+# 1. Ejecutar Bookmarklet despuÃ©s de cambios
 # 2. Revisar reporte
 # 3. Corregir errores
 ```
@@ -134,79 +134,79 @@ node sync-components.js --clean     # Limpia archivos
 ```bash
 # Instalar Node.js
 # Configurar sync script
-# Crear backup automático
+# Crear backup automÃ¡tico
 # Integrar con Git
 ```
 
 ---
 
-## 🔧 Personalización
+## ðŸ”§ PersonalizaciÃ³n
 
 ### Modificar Bookmarklet
 
-El bookmarklet está en `WEBFLOW-VALIDATOR-BOOKMARKLET.md`.
+El bookmarklet estÃ¡ en `WEBFLOW-VALIDATOR-BOOKMARKLET.md`.
 
 Puedes modificar:
 - Colores del reporte
 - Componentes a validar
 - Mensajes de error
-- Exportación de datos
+- ExportaciÃ³n de datos
 
 ### Modificar Script Node.js
 
-El script está en `sync-components.js`.
+El script estÃ¡ en `sync-components.js`.
 
 Puedes modificar:
-- Repositorio (línea 15-20)
-- Archivos a sincronizar (línea 70-90)
-- Directorio de salida (línea 23)
-- Validaciones (línea 150+)
+- Repositorio (lÃ­nea 15-20)
+- Archivos a sincronizar (lÃ­nea 70-90)
+- Directorio de salida (lÃ­nea 23)
+- Validaciones (lÃ­nea 150+)
 
 ---
 
-## 🐛 Troubleshooting
+## ðŸ› Troubleshooting
 
 ### Bookmarklet no funciona
 ```
-1. Verifica que estés en Webflow
+1. Verifica que estÃ©s en Webflow
 2. Abre DevTools (F12)
 3. Ve a Console
 4. Busca errores
-5. Copia el código completo (sin cortes)
+5. Copia el cÃ³digo completo (sin cortes)
 ```
 
 ### Script Node.js falla
 ```
-1. Verifica que Node.js esté instalado
+1. Verifica que Node.js estÃ© instalado
    node --version
 
-2. Verifica que estés en la carpeta correcta
+2. Verifica que estÃ©s en la carpeta correcta
    pwd
 
 3. Revisa el error en consola
    node sync-components.js 2>&1 | head -20
 
-4. Verifica conexión a GitHub
+4. Verifica conexiÃ³n a GitHub
    ping github.com
 ```
 
 ### Reporte muestra errores falsos
 ```
-1. Recarga la página en Webflow
+1. Recarga la pÃ¡gina en Webflow
 2. Espera a que carguen todos los componentes
 3. Ejecuta el bookmarklet nuevamente
-4. Revisa la consola (F12) para más detalles
+4. Revisa la consola (F12) para mÃ¡s detalles
 ```
 
 ---
 
-## 📊 Ejemplos de Uso
+## ðŸ“Š Ejemplos de Uso
 
-### Validar Después de Cambios
+### Validar DespuÃ©s de Cambios
 ```
 1. Haces cambios en Webflow
 2. Ejecutas Bookmarklet
-3. Ves que todo está bien
+3. Ves que todo estÃ¡ bien
 4. Publicas cambios
 ```
 
@@ -228,14 +228,14 @@ Puedes modificar:
 
 ---
 
-## 🚀 Próximas Mejoras
+## ðŸš€ PrÃ³ximas Mejoras
 
 Puedo crear:
 
 - [ ] **Automated Testing Script**
-  - Ejecuta TESTING-CHECKLIST.md automáticamente
+  - Ejecuta TESTING-CHECKLIST.md automÃ¡ticamente
   - Genera reporte
-  - Envía por email
+  - EnvÃ­a por email
 
 - [ ] **Webflow API Integration**
   - Sincroniza componentes directamente
@@ -243,7 +243,7 @@ Puedo crear:
   - Automatiza cambios
 
 - [ ] **GitHub Actions Workflow**
-  - Sincroniza automáticamente
+  - Sincroniza automÃ¡ticamente
   - Ejecuta tests
   - Genera reportes
 
@@ -254,24 +254,24 @@ Puedo crear:
 
 - [ ] **Dashboard de Monitoreo**
   - Visualiza estado de componentes
-  - Gráficos de performance
-  - Histórico de cambios
+  - GrÃ¡ficos de performance
+  - HistÃ³rico de cambios
 
-¿Quieres que cree alguno de estos?
+Â¿Quieres que cree alguno de estos?
 
 ---
 
-## 📝 Notas
+## ðŸ“ Notas
 
 - Todos los scripts son **100% seguros**
-- Solo **leen** información (no modifican)
+- Solo **leen** informaciÃ³n (no modifican)
 - Funcionan **offline** (excepto descarga)
 - Puedes **compartirlos** con tu equipo
-- Se ejecutan **localmente** en tu máquina
+- Se ejecutan **localmente** en tu mÃ¡quina
 
 ---
 
-## 📞 Soporte
+## ðŸ“ž Soporte
 
 Si necesitas ayuda:
 1. Revisa TROUBLESHOOTING en este archivo
@@ -281,4 +281,5 @@ Si necesitas ayuda:
 
 ---
 
-**Última actualización**: Oct 29, 2025
+**Ãšltima actualizaciÃ³n**: Oct 29, 2025
+

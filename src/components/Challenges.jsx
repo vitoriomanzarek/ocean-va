@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function Challenges() {
   const challenges = [
@@ -28,7 +28,7 @@ export default function Challenges() {
     <section className="section-container">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4">
-          Overcome Insurance Agency Challenges with Ocean Virtual Assistant
+          Overcome Insurance Agency Challenges with WAGS
         </h2>
         <p className="text-xl text-gray-600 text-center mb-12">
           Running an insurance agency comes with unique challenges:

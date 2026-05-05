@@ -1,40 +1,40 @@
-# Crear y Usar Bookmarklet - Paso a Paso
+﻿# Crear y Usar Bookmarklet - Paso a Paso
 
-Guía visual y detallada para crear el Webflow Validator Bookmarklet.
-
----
-
-## 📋 Requisitos
-
-- ✅ Navegador web (Chrome, Firefox, Safari, Edge)
-- ✅ Acceso a Webflow
-- ✅ 5 minutos de tiempo
+GuÃ­a visual y detallada para crear el Webflow Validator Bookmarklet.
 
 ---
 
-## 🎯 Paso 1: Copiar el Código del Bookmarklet
+## ðŸ“‹ Requisitos
+
+- âœ… Navegador web (Chrome, Firefox, Safari, Edge)
+- âœ… Acceso a Webflow
+- âœ… 5 minutos de tiempo
+
+---
+
+## ðŸŽ¯ Paso 1: Copiar el CÃ³digo del Bookmarklet
 
 ### 1.1 Abre el archivo WEBFLOW-VALIDATOR-BOOKMARKLET.md
 
 En tu IDE, abre:
 ```
-c:\Users\USER\CascadeProjects\Ocean VA\webflow-components\WEBFLOW-VALIDATOR-BOOKMARKLET.md
+c:\Users\USER\CascadeProjects\WAGS\webflow-components\WEBFLOW-VALIDATOR-BOOKMARKLET.md
 ```
 
-### 1.2 Busca la sección "Copiar el Código"
+### 1.2 Busca la secciÃ³n "Copiar el CÃ³digo"
 
-Busca esta línea:
+Busca esta lÃ­nea:
 ```
-### Paso 2: Copiar el Código
+### Paso 2: Copiar el CÃ³digo
 
-Copia TODO este código (es un bookmarklet):
+Copia TODO este cÃ³digo (es un bookmarklet):
 
 ```javascript
 ```
 
-### 1.3 Copia TODO el código JavaScript
+### 1.3 Copia TODO el cÃ³digo JavaScript
 
-El código comienza con:
+El cÃ³digo comienza con:
 ```javascript
 javascript:(function(){const report={components:[],errors:[],warnings:[],images:[],links:[]};...
 ```
@@ -44,41 +44,41 @@ Y termina con:
 ...})();
 ```
 
-**⚠️ IMPORTANTE**: Copia TODO el código, desde `javascript:` hasta el último `});`
+**âš ï¸ IMPORTANTE**: Copia TODO el cÃ³digo, desde `javascript:` hasta el Ãºltimo `});`
 
 **Consejo**: 
 - Haz triple-click para seleccionar todo el bloque
-- O usa Ctrl+A dentro del bloque de código
+- O usa Ctrl+A dentro del bloque de cÃ³digo
 - Luego Ctrl+C para copiar
 
 ---
 
-## 🌐 Paso 2: Crear el Bookmarklet en tu Navegador
+## ðŸŒ Paso 2: Crear el Bookmarklet en tu Navegador
 
 ### Para Chrome/Edge/Brave:
 
 #### 2.1 Abre el Gestor de Marcadores
 ```
 Atajo: Ctrl+Shift+B (Windows) o Cmd+Shift+B (Mac)
-O: Menú ☰ → Marcadores → Gestor de marcadores
+O: MenÃº â˜° â†’ Marcadores â†’ Gestor de marcadores
 ```
 
 #### 2.2 Haz clic derecho en la barra de marcadores
 ```
 Barra de marcadores (donde ves los marcadores)
 Haz clic derecho
-Selecciona: "Agregar página"
+Selecciona: "Agregar pÃ¡gina"
 ```
 
 #### 2.3 Completa el formulario
 ```
 Nombre: Webflow Validator
-URL: [Pega aquí el código que copiaste]
+URL: [Pega aquÃ­ el cÃ³digo que copiaste]
 Carpeta: Barra de marcadores
 Guardar
 ```
 
-**Resultado**: Deberías ver un botón "Webflow Validator" en tu barra de marcadores
+**Resultado**: DeberÃ­as ver un botÃ³n "Webflow Validator" en tu barra de marcadores
 
 ---
 
@@ -87,7 +87,7 @@ Guardar
 #### 2.1 Abre el Gestor de Marcadores
 ```
 Atajo: Ctrl+Shift+B (Windows) o Cmd+Shift+B (Mac)
-O: Menú ☰ → Marcadores → Administrar marcadores
+O: MenÃº â˜° â†’ Marcadores â†’ Administrar marcadores
 ```
 
 #### 2.2 Haz clic derecho en "Barra de Herramientas"
@@ -101,7 +101,7 @@ Selecciona: "Nuevo marcador"
 #### 2.3 Completa el formulario
 ```
 Nombre: Webflow Validator
-Ubicación: [Pega aquí el código que copiaste]
+UbicaciÃ³n: [Pega aquÃ­ el cÃ³digo que copiaste]
 Carpeta: Barra de Herramientas
 Guardar
 ```
@@ -112,35 +112,35 @@ Guardar
 
 #### 2.1 Abre Preferencias
 ```
-Menú Safari → Preferencias
+MenÃº Safari â†’ Preferencias
 O: Cmd+,
 ```
 
-#### 2.2 Ve a la pestaña "Marcadores"
+#### 2.2 Ve a la pestaÃ±a "Marcadores"
 ```
 Haz clic en "Marcadores"
 ```
 
 #### 2.3 Crea un nuevo marcador
 ```
-Menú Safari → Marcadores → Agregar marcador
+MenÃº Safari â†’ Marcadores â†’ Agregar marcador
 Nombre: Webflow Validator
-URL: [Pega aquí el código que copiaste]
+URL: [Pega aquÃ­ el cÃ³digo que copiaste]
 Agregar
 ```
 
 ---
 
-## ✅ Paso 3: Verificar que se Creó Correctamente
+## âœ… Paso 3: Verificar que se CreÃ³ Correctamente
 
-### 3.1 Busca el botón "Webflow Validator"
+### 3.1 Busca el botÃ³n "Webflow Validator"
 
-Debería estar en tu barra de marcadores:
+DeberÃ­a estar en tu barra de marcadores:
 ```
-[Webflow Validator] ← Así se ve
+[Webflow Validator] â† AsÃ­ se ve
 ```
 
-### 3.2 Haz clic derecho en el botón
+### 3.2 Haz clic derecho en el botÃ³n
 
 Selecciona "Editar":
 ```
@@ -150,22 +150,22 @@ Verifica que:
 - URL: Contiene "const report="
 ```
 
-Si todo está bien, ¡está listo!
+Si todo estÃ¡ bien, Â¡estÃ¡ listo!
 
 ---
 
-## 🚀 Paso 4: Usar el Bookmarklet en Webflow
+## ðŸš€ Paso 4: Usar el Bookmarklet en Webflow
 
-### 4.1 Ve a tu página en Webflow
+### 4.1 Ve a tu pÃ¡gina en Webflow
 
 ```
 1. Abre Webflow en tu navegador
 2. Ve a tu proyecto
-3. Abre una página (ej: Home)
+3. Abre una pÃ¡gina (ej: Home)
 4. Espera a que cargue completamente
 ```
 
-### 4.2 Haz clic en el botón "Webflow Validator"
+### 4.2 Haz clic en el botÃ³n "Webflow Validator"
 
 ```
 En tu barra de marcadores
@@ -176,138 +176,138 @@ Haz clic
 ### 4.3 Espera a que aparezca el reporte
 
 ```
-En la esquina superior derecha de la página
-Aparecerá una caja con el reporte
+En la esquina superior derecha de la pÃ¡gina
+AparecerÃ¡ una caja con el reporte
 ```
 
 ---
 
-## 📊 Paso 5: Interpretar el Reporte
+## ðŸ“Š Paso 5: Interpretar el Reporte
 
 ### 5.1 Estructura del Reporte
 
 ```
-┌─────────────────────────────────────┐
-│ Webflow Validator Report            │
-├─────────────────────────────────────┤
-│ ✅ Componentes (X/12)               │
-│ ✓ navbar-wrapper                    │
-│ ✓ hero-container                    │
-│ ✗ carousel-wrapper                  │
-│                                     │
-│ 🖼️ Imágenes (X/Y)                  │
-│ ✓ /images/logo.png                  │
-│ ✗ /images/missing.png               │
-│                                     │
-│ 🔗 Links (X/Y)                      │
-│ ✓ /contact-us                       │
-│ ✗ (vacío)                           │
-│                                     │
-│ ⚠️ Advertencias (X)                 │
-│ ⚠️ Color ocean-50 no encontrado     │
-│                                     │
-│ [Cerrar] [Ver JSON]                 │
-└─────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Webflow Validator Report            â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ âœ… Componentes (X/12)               â”‚
+â”‚ âœ“ navbar-wrapper                    â”‚
+â”‚ âœ“ hero-container                    â”‚
+â”‚ âœ— carousel-wrapper                  â”‚
+â”‚                                     â”‚
+â”‚ ðŸ–¼ï¸ ImÃ¡genes (X/Y)                  â”‚
+â”‚ âœ“ /images/logo.png                  â”‚
+â”‚ âœ— /images/missing.png               â”‚
+â”‚                                     â”‚
+â”‚ ðŸ”— Links (X/Y)                      â”‚
+â”‚ âœ“ /contact-us                       â”‚
+â”‚ âœ— (vacÃ­o)                           â”‚
+â”‚                                     â”‚
+â”‚ âš ï¸ Advertencias (X)                 â”‚
+â”‚ âš ï¸ Color ocean-50 no encontrado     â”‚
+â”‚                                     â”‚
+â”‚ [Cerrar] [Ver JSON]                 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-### 5.2 Significado de los Símbolos
+### 5.2 Significado de los SÃ­mbolos
 
 ```
-✓ (Verde)   = Todo bien
-✗ (Rojo)    = Problema
-⚠️ (Amarillo) = Advertencia
+âœ“ (Verde)   = Todo bien
+âœ— (Rojo)    = Problema
+âš ï¸ (Amarillo) = Advertencia
 ```
 
 ### 5.3 Ejemplos de Resultados
 
-**✓ Componente encontrado**
+**âœ“ Componente encontrado**
 ```
-✓ navbar-wrapper
-→ El componente está en la página
-```
-
-**✗ Componente no encontrado**
-```
-✗ carousel-wrapper
-→ El componente NO está en la página
-→ Solución: Copia el componente a Webflow
+âœ“ navbar-wrapper
+â†’ El componente estÃ¡ en la pÃ¡gina
 ```
 
-**✓ Imagen cargada**
+**âœ— Componente no encontrado**
 ```
-✓ /images/logo.png
-→ La imagen se cargó correctamente
+âœ— carousel-wrapper
+â†’ El componente NO estÃ¡ en la pÃ¡gina
+â†’ SoluciÃ³n: Copia el componente a Webflow
 ```
 
-**✗ Imagen no cargada**
+**âœ“ Imagen cargada**
 ```
-✗ /images/missing.png
-→ La imagen NO se cargó
-→ Soluciones:
+âœ“ /images/logo.png
+â†’ La imagen se cargÃ³ correctamente
+```
+
+**âœ— Imagen no cargada**
+```
+âœ— /images/missing.png
+â†’ La imagen NO se cargÃ³
+â†’ Soluciones:
   1. Verifica que el archivo exista en /images/
   2. Verifica que el nombre sea exacto (case-sensitive)
-  3. Recarga la página
+  3. Recarga la pÃ¡gina
 ```
 
 ---
 
-## 🔧 Paso 6: Solucionar Problemas Comunes
+## ðŸ”§ Paso 6: Solucionar Problemas Comunes
 
-### Problema: El botón no aparece en la barra de marcadores
+### Problema: El botÃ³n no aparece en la barra de marcadores
 
-**Solución**:
+**SoluciÃ³n**:
 ```
 1. Abre el Gestor de Marcadores (Ctrl+Shift+B)
 2. Busca "Webflow Validator"
-3. Verifica que esté en "Barra de Herramientas"
-4. Si no está, muévelo a la barra
+3. Verifica que estÃ© en "Barra de Herramientas"
+4. Si no estÃ¡, muÃ©velo a la barra
 5. Recarga el navegador
 ```
 
 ### Problema: El bookmarklet no funciona
 
-**Solución**:
+**SoluciÃ³n**:
 ```
 1. Abre DevTools (F12)
-2. Ve a la pestaña "Console"
+2. Ve a la pestaÃ±a "Console"
 3. Busca mensajes de error (rojo)
 4. Copia el error
-5. Verifica que el código comience con "javascript:"
+5. Verifica que el cÃ³digo comience con "javascript:"
 ```
 
 ### Problema: El reporte no aparece
 
-**Solución**:
+**SoluciÃ³n**:
 ```
-1. Recarga la página en Webflow (F5)
+1. Recarga la pÃ¡gina en Webflow (F5)
 2. Espera a que cargue completamente
 3. Haz clic en el bookmarklet nuevamente
-4. Abre DevTools (F12) → Console
+4. Abre DevTools (F12) â†’ Console
 5. Busca si hay errores
 ```
 
-### Problema: Todas las imágenes muestran como error
+### Problema: Todas las imÃ¡genes muestran como error
 
-**Solución**:
+**SoluciÃ³n**:
 ```
-1. Verifica que las imágenes estén en /images/
+1. Verifica que las imÃ¡genes estÃ©n en /images/
 2. Verifica que los nombres sean exactos
-3. Recarga la página (Ctrl+Shift+R para limpiar caché)
+3. Recarga la pÃ¡gina (Ctrl+Shift+R para limpiar cachÃ©)
 4. Haz clic en el bookmarklet nuevamente
 ```
 
 ---
 
-## 📝 Paso 7: Usar el Reporte
+## ðŸ“ Paso 7: Usar el Reporte
 
-### 7.1 Después de Copiar Componentes
+### 7.1 DespuÃ©s de Copiar Componentes
 
 ```
 1. Copias un componente HTML a Webflow
 2. Haces clic en el bookmarklet
 3. Verificas que el componente aparezca en el reporte
-4. Si muestra ✓, está bien
-5. Si muestra ✗, hay un problema
+4. Si muestra âœ“, estÃ¡ bien
+5. Si muestra âœ—, hay un problema
 ```
 
 ### 7.2 Antes de Publicar
@@ -315,165 +315,166 @@ Aparecerá una caja con el reporte
 ```
 1. Haces cambios en Webflow
 2. Haces clic en el bookmarklet
-3. Verificas que no haya ✗ (errores)
-4. Si todo está ✓, publicas
-5. Si hay ✗, corriges primero
+3. Verificas que no haya âœ— (errores)
+4. Si todo estÃ¡ âœ“, publicas
+5. Si hay âœ—, corriges primero
 ```
 
-### 7.3 Para Testing Rápido
+### 7.3 Para Testing RÃ¡pido
 
 ```
 1. Cada vez que hagas cambios
 2. Ejecuta el bookmarklet
-3. Revisa que todo esté bien
-4. Continúa trabajando
+3. Revisa que todo estÃ© bien
+4. ContinÃºa trabajando
 ```
 
 ---
 
-## 🎓 Ejemplo Completo
+## ðŸŽ“ Ejemplo Completo
 
 ### Escenario: Copiar Navbar a Webflow
 
 #### Paso 1: Copiar HTML
 ```
 1. Abre 03-navbar-header.html
-2. Copia TODO el código
+2. Copia TODO el cÃ³digo
 3. Ve a Webflow
 4. Crea un HTML Embed
-5. Pega el código
+5. Pega el cÃ³digo
 ```
 
 #### Paso 2: Verificar
 ```
 1. Haz clic en el bookmarklet
 2. Busca "navbar-wrapper" en el reporte
-3. Si muestra ✓, está bien
-4. Si muestra ✗, hay un problema
+3. Si muestra âœ“, estÃ¡ bien
+4. Si muestra âœ—, hay un problema
 ```
 
-#### Paso 3: Revisar Imágenes
+#### Paso 3: Revisar ImÃ¡genes
 ```
-1. En el reporte, busca la sección "Imágenes"
-2. Busca "/images/oceanVALogo.png"
-3. Si muestra ✓, la imagen cargó
-4. Si muestra ✗, sube la imagen a Webflow
+1. En el reporte, busca la secciÃ³n "ImÃ¡genes"
+2. Busca "/images/wags-logo.png"
+3. Si muestra âœ“, la imagen cargÃ³
+4. Si muestra âœ—, sube la imagen a Webflow
 ```
 
 #### Paso 4: Revisar Links
 ```
-1. En el reporte, busca la sección "Links"
-2. Verifica que todos los links sean válidos
-3. Si hay ✗, actualiza los links según tu estructura
+1. En el reporte, busca la secciÃ³n "Links"
+2. Verifica que todos los links sean vÃ¡lidos
+3. Si hay âœ—, actualiza los links segÃºn tu estructura
 ```
 
 #### Paso 5: Publicar
 ```
-1. Si todo muestra ✓, publicas
-2. Si hay ✗, corriges primero
+1. Si todo muestra âœ“, publicas
+2. Si hay âœ—, corriges primero
 3. Ejecuta el bookmarklet nuevamente
-4. Cuando todo esté ✓, publicas
+4. Cuando todo estÃ© âœ“, publicas
 ```
 
 ---
 
-## ✨ Consejos Útiles
+## âœ¨ Consejos Ãštiles
 
 ### Consejo 1: Guarda el Reporte
 ```
 Haz clic en "Ver JSON"
 Copia el JSON
-Pégalo en un archivo de texto
-Guárdalo como backup
+PÃ©galo en un archivo de texto
+GuÃ¡rdalo como backup
 ```
 
 ### Consejo 2: Comparte el Reporte
 ```
 1. Haz clic en "Ver JSON"
 2. Copia el JSON
-3. Envíalo por email a tu equipo
+3. EnvÃ­alo por email a tu equipo
 4. Todos pueden ver el estado
 ```
 
 ### Consejo 3: Usa Regularmente
 ```
-- Después de cada cambio
+- DespuÃ©s de cada cambio
 - Antes de publicar
-- Una vez al día
-- Antes de una campaña
+- Una vez al dÃ­a
+- Antes de una campaÃ±a
 ```
 
 ### Consejo 4: Automatiza
 ```
-Próximamente:
-- Ejecutar automáticamente cada hora
+PrÃ³ximamente:
+- Ejecutar automÃ¡ticamente cada hora
 - Enviar reporte por email
 - Integrar con Slack
 ```
 
 ---
 
-## 🎯 Checklist Final
+## ðŸŽ¯ Checklist Final
 
 Antes de empezar a usar:
 
-- [ ] Copié el código completo del bookmarklet
-- [ ] Creé el bookmarklet en mi navegador
-- [ ] Veo el botón "Webflow Validator" en la barra
-- [ ] Hice clic en el botón (aparece el reporte)
-- [ ] Entiendo qué significa ✓ y ✗
-- [ ] Sé cómo solucionar problemas comunes
+- [ ] CopiÃ© el cÃ³digo completo del bookmarklet
+- [ ] CreÃ© el bookmarklet en mi navegador
+- [ ] Veo el botÃ³n "Webflow Validator" en la barra
+- [ ] Hice clic en el botÃ³n (aparece el reporte)
+- [ ] Entiendo quÃ© significa âœ“ y âœ—
+- [ ] SÃ© cÃ³mo solucionar problemas comunes
 
 ---
 
-## 📞 Ayuda Rápida
+## ðŸ“ž Ayuda RÃ¡pida
 
 ### Si algo no funciona:
 
 1. **Abre DevTools** (F12)
-2. **Ve a Console** (pestaña)
+2. **Ve a Console** (pestaÃ±a)
 3. **Busca errores** (texto rojo)
 4. **Copia el error**
-5. **Búscalo en Google**
+5. **BÃºscalo en Google**
 
 ### Errores Comunes:
 
 ```
 "Uncaught SyntaxError"
-→ El código está cortado o incompleto
-→ Copia TODO el código nuevamente
+â†’ El cÃ³digo estÃ¡ cortado o incompleto
+â†’ Copia TODO el cÃ³digo nuevamente
 
 "Cannot read property 'querySelector'"
-→ El bookmarklet no puede acceder a la página
-→ Asegúrate de estar en Webflow
+â†’ El bookmarklet no puede acceder a la pÃ¡gina
+â†’ AsegÃºrate de estar en Webflow
 
 "Unexpected token"
-→ El código tiene caracteres especiales
-→ Copia el código nuevamente
+â†’ El cÃ³digo tiene caracteres especiales
+â†’ Copia el cÃ³digo nuevamente
 ```
 
 ---
 
-## 🚀 Próximos Pasos
+## ðŸš€ PrÃ³ximos Pasos
 
 Una vez que el bookmarklet funcione:
 
-1. ✅ Copia todos los componentes a Webflow
-2. ✅ Usa el bookmarklet para validar cada uno
-3. ✅ Sube imágenes a `/images/`
-4. ✅ Ejecuta TESTING-CHECKLIST.md
-5. ✅ Publica con confianza
+1. âœ… Copia todos los componentes a Webflow
+2. âœ… Usa el bookmarklet para validar cada uno
+3. âœ… Sube imÃ¡genes a `/images/`
+4. âœ… Ejecuta TESTING-CHECKLIST.md
+5. âœ… Publica con confianza
 
 ---
 
-**¿Necesitas ayuda?**
+**Â¿Necesitas ayuda?**
 
 Si algo no funciona:
-1. Revisa esta guía nuevamente
+1. Revisa esta guÃ­a nuevamente
 2. Revisa WEBFLOW-VALIDATOR-BOOKMARKLET.md
 3. Abre DevTools (F12) para ver errores
 4. Intenta en otro navegador
 
 ---
 
-**Última actualización**: Oct 29, 2025
+**Ãšltima actualizaciÃ³n**: Oct 29, 2025
+

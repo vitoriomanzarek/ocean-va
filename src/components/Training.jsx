@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { GraduationCap, Users, FileCheck, Headphones } from 'lucide-react'
 
 export default function Training() {
@@ -8,8 +8,8 @@ export default function Training() {
         Our 30-Day Training at Walker Insurance Agency
       </h2>
       <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-        <strong>What sets us apart:</strong> Every Ocean VA completes a rigorous 30-day training program 
-        inside Walker Insurance Agency—a real, operating P&C agency in the U.S.
+        <strong>What sets us apart:</strong> Every WAGS completes a rigorous 30-day training program 
+        inside Walker Insurance Agencyâ€”a real, operating P&C agency in the U.S.
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
@@ -22,7 +22,7 @@ export default function Training() {
           {
             icon: Users,
             title: 'Customer Communication',
-            desc: 'Role-play scenarios for inbound calls, email responses, and client follow-ups—both English and Spanish.'
+            desc: 'Role-play scenarios for inbound calls, email responses, and client follow-upsâ€”both English and Spanish.'
           },
           {
             icon: FileCheck,
@@ -48,7 +48,7 @@ export default function Training() {
       </div>
 
       <div className="max-w-4xl mx-auto bg-ocean-50 p-8 rounded-lg border-2 border-ocean-200">
-        <h3 className="text-2xl font-bold text-ocean-900 mb-4">📚 Training Curriculum Highlights</h3>
+        <h3 className="text-2xl font-bold text-ocean-900 mb-4">ðŸ“š Training Curriculum Highlights</h3>
         <div className="grid md:grid-cols-2 gap-4">
           {[
             'AMS360 & Applied Epic navigation',
@@ -61,7 +61,7 @@ export default function Training() {
             'Data entry accuracy standards'
           ].map((item, idx) => (
             <div key={idx} className="flex items-center">
-              <span className="text-ocean-600 font-bold mr-2">✓</span>
+              <span className="text-ocean-600 font-bold mr-2">âœ“</span>
               <span className="text-gray-800">{item}</span>
             </div>
           ))}

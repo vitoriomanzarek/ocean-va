@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 export default function TestimonialsFeatured() {
   const handleScroll = (e, targetId) => {
@@ -11,7 +11,7 @@ export default function TestimonialsFeatured() {
 
   const testimonials = [
     {
-      quote: "Ocean VA Solutions has been a game changer for my agency. Their VAs handle complex tasks like COIs and billing audits with ease. They're truly part of my core team—customers even ask for them by name! Great service, unbeatable pricing, and top-notch professionalism.",
+      quote: "WAGS Solutions has been a game changer for my agency. Their VAs handle complex tasks like COIs and billing audits with ease. They're truly part of my core teamâ€”customers even ask for them by name! Great service, unbeatable pricing, and top-notch professionalism.",
       name: "Dustin Lewis",
       title: "Owner",
       company: "Lewis Insurance Group",
@@ -25,7 +25,7 @@ export default function TestimonialsFeatured() {
       badge: "Saved 15+ hours per week"
     },
     {
-      quote: "Running my insurance agency without Ocean VA Solutions would be unimaginable. Our virtual assistant has seamlessly integrated into our team, handling everything from appointment scheduling to policy updates. Their dedication has enabled us to deliver exceptional service while freeing up time for strategic planning and business development.",
+      quote: "Running my insurance agency without WAGS Solutions would be unimaginable. Our virtual assistant has seamlessly integrated into our team, handling everything from appointment scheduling to policy updates. Their dedication has enabled us to deliver exceptional service while freeing up time for strategic planning and business development.",
       name: "Donnie Browne",
       title: "Agency Owner",
       company: "",
@@ -40,7 +40,7 @@ export default function TestimonialsFeatured() {
           Real Results from Real Insurance Agencies
         </h2>
         <p className="text-xl text-gray-600">
-          See how Ocean VA has transformed operations for agencies like yours
+          See how WAGS has transformed operations for agencies like yours
         </p>
       </div>
 
@@ -48,12 +48,12 @@ export default function TestimonialsFeatured() {
         {testimonials.map((testimonial, idx) => (
           <div key={idx} className="bg-gray-50 p-8 rounded-xl border border-gray-200 flex flex-col">
             <div className="mb-4">
-              <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
+              <div className="text-yellow-500 text-2xl mb-3">â­â­â­â­â­</div>
               <p className="text-gray-700 italic mb-6 flex-grow">"{testimonial.quote}"</p>
             </div>
             <div className="mt-auto">
               <div className="bg-green-50 px-4 py-2 rounded-lg inline-block mb-4">
-                <span className="text-green-800 font-semibold text-sm">✅ {testimonial.badge}</span>
+                <span className="text-green-800 font-semibold text-sm">âœ… {testimonial.badge}</span>
               </div>
               <div>
                 <p className="font-bold text-gray-900">{testimonial.name}</p>
@@ -68,7 +68,7 @@ export default function TestimonialsFeatured() {
       </div>
 
       <div className="text-center">
-        <p className="text-lg text-gray-700 mb-4">See how Ocean VA can transform your agency too.</p>
+        <p className="text-lg text-gray-700 mb-4">See how WAGS can transform your agency too.</p>
         <a 
           href="#booking" 
           onClick={(e) => handleScroll(e, 'booking')}

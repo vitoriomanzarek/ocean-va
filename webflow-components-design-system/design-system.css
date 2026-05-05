@@ -1,4 +1,4 @@
-/* Ocean VA Design System - CSS Variables and Base Styles */
+﻿/* WAGS Design System - CSS Variables and Base Styles */
 
 :root {
   /* Primary Colors */
@@ -1099,7 +1099,7 @@ body {
 
 .ds-footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--ds-spacing-10);
   margin-bottom: var(--ds-spacing-16);
   border-bottom: 1px solid var(--ds-color-gray-200);
@@ -1113,13 +1113,6 @@ body {
   box-shadow: var(--ds-shadow-base);
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 1024px) {
-  .ds-footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--ds-spacing-8);
-  }
 }
 
 @media (max-width: 768px) {
@@ -1844,7 +1837,7 @@ body {
 }
 
 .ds-results-list li:before {
-  content: "✓";
+  content: "âœ“";
   color: var(--ds-color-primary-900);
   font-weight: var(--ds-font-weight-bold);
   margin-right: var(--ds-spacing-3);
@@ -2222,3 +2215,4 @@ body {
    to keep this file under Webflow's 50,000 character limit.
    Load design-system-va-profiles.css after this file for VA profile pages.
    ============================================ */
+

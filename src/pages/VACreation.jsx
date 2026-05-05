@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+﻿import React, { useState, useEffect } from 'react'
 import './VACreation.css'
 import FieldHelpTooltip from '../components/FieldHelpTooltip'
 
@@ -97,7 +97,7 @@ function generateEmploymentHTML(entries) {
     // Also convert already escaped <br> tags back to actual <br>
     description = description.replace(/&lt;br\s*\/?&gt;/gi, '<br>')
     // Convert bullets if they're plain text to HTML format
-    description = description.replace(/•/g, '•')
+    description = description.replace(/â€¢/g, 'â€¢')
     
     return `<div class="va-employment-accordion"><div class="va-employment-accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');"><div class="va-employment-accordion-title"><h4 class="va-employment-accordion-company">${company}</h4><p class="va-employment-accordion-position">${position}</p><p class="va-employment-accordion-period">${period}</p></div><svg class="va-employment-accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div><div class="va-employment-accordion-content"><p class="va-employment-accordion-description">${description}</p></div></div>`
   }).join('')
@@ -156,7 +156,7 @@ function generateToolsHTML(toolsString) {
   if (tools.length === 0) return ''
   
   const items = tools.map(tool => 
-    `<div class="va-tool-item"><span class="va-tool-checkmark">✓</span><span>${escapeHtml(tool)}</span></div>`
+    `<div class="va-tool-item"><span class="va-tool-checkmark">âœ“</span><span>${escapeHtml(tool)}</span></div>`
   ).join('')
   
   return `<div class="va-tools-list">${items}</div>`
@@ -236,14 +236,14 @@ export default function VACreation() {
   useEffect(() => {
     if (formData.cefrResult) {
       const cefrHTML = generateCEFRHTML(formData.cefrResult)
-      console.log('🔵 CEFR HTML Generated:', {
+      console.log('ðŸ”µ CEFR HTML Generated:', {
         selectedLevel: formData.cefrResult,
         htmlLength: cefrHTML.length,
         htmlPreview: cefrHTML.substring(0, 200) + '...'
       })
       setFormData(prev => ({ ...prev, englishCefrHtml: cefrHTML }))
     } else {
-      console.log('🔵 CEFR Result cleared')
+      console.log('ðŸ”µ CEFR Result cleared')
       setFormData(prev => ({ ...prev, englishCefrHtml: '' }))
     }
   }, [formData.cefrResult])
@@ -354,7 +354,7 @@ export default function VACreation() {
       // Prepare form data
       const slug = formData.slug || generateSlug(formData.name)
       const profileSlug = `${slug}-ocean-va-profile`
-      const profileUrl = `https://www.oceanvirtualassistant.com/${profileSlug}`
+      const profileUrl = `https://hirewags.com/${profileSlug}`
       
       const submitData = {
         name: formData.name,
@@ -391,7 +391,7 @@ export default function VACreation() {
       }
 
       // Log data before removing empty fields
-      console.log('📤 Form data before cleanup:', {
+      console.log('ðŸ“¤ Form data before cleanup:', {
         mainCategory: submitData['main-category'],
         language: submitData.language,
         availability: submitData.availability
@@ -409,7 +409,7 @@ export default function VACreation() {
       })
       
       // Log data after cleanup
-      console.log('📤 Form data after cleanup:', {
+      console.log('ðŸ“¤ Form data after cleanup:', {
         mainCategory: submitData['main-category'],
         language: submitData.language,
         availability: submitData.availability
@@ -429,7 +429,7 @@ export default function VACreation() {
         setShowSuccess(true)
         setMessage({ 
           type: 'success', 
-          text: `✅ ${result.message || 'VA created successfully!'} It has been published automatically in Webflow CMS.` 
+          text: `âœ… ${result.message || 'VA created successfully!'} It has been published automatically in Webflow CMS.` 
         })
         // Scroll to top to show success message
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -447,7 +447,7 @@ export default function VACreation() {
         
         setMessage({ 
           type: 'error', 
-          text: `❌ ${errorMessage}` 
+          text: `âŒ ${errorMessage}` 
         })
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
@@ -455,7 +455,7 @@ export default function VACreation() {
       console.error('Form submission error:', error)
       setMessage({ 
         type: 'error', 
-        text: `❌ ${error.message || 'An error occurred. Please check your connection and try again.'}` 
+        text: `âŒ ${error.message || 'An error occurred. Please check your connection and try again.'}` 
       })
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } finally {
@@ -541,7 +541,7 @@ export default function VACreation() {
                   }}
                   aria-label="Close"
                 >
-                  ×
+                  Ã—
                 </button>
               )}
             </div>
@@ -754,7 +754,7 @@ export default function VACreation() {
                         </div>
                       </div>
                     `}
-                    example="📋 Image Requirements: Format: WEBP | Size: Less than 200 KB | Name: Same as VA name (e.g., maximiliano.webp) | Format: Circular with #E6E6E6 background | Outer circle: Transparent"
+                    example="ðŸ“‹ Image Requirements: Format: WEBP | Size: Less than 200 KB | Name: Same as VA name (e.g., maximiliano.webp) | Format: Circular with #E6E6E6 background | Outer circle: Transparent"
                   />
                 </label>
                 <input
@@ -830,7 +830,7 @@ export default function VACreation() {
                       </div>
                     </div>
                   `}
-                  example="Maximiliano is a bilingual Virtual Assistant (English–Spanish) with solid experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
+                  example="Maximiliano is a bilingual Virtual Assistant (Englishâ€“Spanish) with solid experience in customer service, sales assistance, and insurance support for U.S.-based organizations. He has worked remotely with companies in Texas, supporting customers through phone-based assistance, order management, lead follow-ups, and insurance-related inquiries."
                 />
               </label>
               <textarea
@@ -894,9 +894,9 @@ export default function VACreation() {
                       <div class="diagram-grid">
                         <div class="diagram-column diagram-highlight">
                           <div style="font-weight: 600; margin-bottom: 6px;">TOOLS</div>
-                          <div style="font-size: 10px;">✓ CRM</div>
-                          <div style="font-size: 10px;">✓ EZLynx</div>
-                          <div style="font-size: 10px;">✓ Turbo</div>
+                          <div style="font-size: 10px;">âœ“ CRM</div>
+                          <div style="font-size: 10px;">âœ“ EZLynx</div>
+                          <div style="font-size: 10px;">âœ“ Turbo</div>
                         </div>
                         <div class="diagram-column" style="opacity: 0.6;">
                           EQUIPMENT
@@ -960,7 +960,7 @@ export default function VACreation() {
                         onClick={() => removeEquipmentItem(item)}
                         aria-label={`Remove ${item}`}
                       >
-                        ×
+                        Ã—
                       </button>
                     </span>
                   ))
@@ -982,7 +982,7 @@ export default function VACreation() {
                       disabled={formData.equipment.includes(option)}
                     >
                       {option}
-                      {formData.equipment.includes(option) && <span className="va-equipment-check">✓</span>}
+                      {formData.equipment.includes(option) && <span className="va-equipment-check">âœ“</span>}
                     </button>
                   ))}
                 </div>
@@ -1237,7 +1237,7 @@ export default function VACreation() {
                           <div style="font-size: 10px; font-weight: 600;">DISC</div>
                           <div style="font-size: 10px;">[I+D]</div>
                           <div style="font-size: 9px; margin-top: 4px; opacity: 0.8;">
-                            Influence (I) – Enthusiastic and people-oriented...
+                            Influence (I) â€“ Enthusiastic and people-oriented...
                           </div>
                         </div>
                         <div class="diagram-box" style="opacity: 0.6;">
@@ -1247,7 +1247,7 @@ export default function VACreation() {
                       </div>
                     </div>
                   `}
-                  example="Influence (I) – Enthusiastic and people-oriented, I-type VAs excel at communication, building rapport, and creating positive client experiences. Dominance (D) – Assertive and results-driven, D-type VAs take initiative, drive projects forward, and deliver outcomes efficiently."
+                  example="Influence (I) â€“ Enthusiastic and people-oriented, I-type VAs excel at communication, building rapport, and creating positive client experiences. Dominance (D) â€“ Assertive and results-driven, D-type VAs take initiative, drive projects forward, and deliver outcomes efficiently."
                 />
               </label>
               <textarea
@@ -1510,4 +1510,5 @@ export default function VACreation() {
     </div>
   )
 }
+
 

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Phone, MessageSquare, Mail, AlertCircle, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -23,11 +23,11 @@ export default function CustomerServiceVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Customer Service Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
-    "description": "Dedicated customer service assistants for phone, chat, and email, including bilingual English–Spanish support.",
+    "description": "Dedicated customer service assistants for phone, chat, and email, including bilingual Englishâ€“Spanish support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/services/customer-service-virtual-assistant"
+    "url": "https://hirewags.com/services/customer-service-virtual-assistant"
   }
 
   return (
@@ -97,7 +97,7 @@ export default function CustomerServiceVA() {
             {
               icon: BarChart3,
               title: 'QA & Reporting',
-              description: 'QA checks, CSAT/NPS follow‑ups, and reporting'
+              description: 'QA checks, CSAT/NPS followâ€‘ups, and reporting'
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
@@ -117,17 +117,17 @@ export default function CustomerServiceVA() {
         subtitle="Measurable improvements in customer satisfaction and team efficiency."
         outcomes={[
           {
-            icon: '⚡',
+            icon: 'âš¡',
             title: 'Faster Response Times',
-            description: 'Faster first‑response and resolution times'
+            description: 'Faster firstâ€‘response and resolution times'
           },
           {
-            icon: '😊',
+            icon: 'ðŸ˜Š',
             title: 'Higher CSAT',
-            description: 'Higher CSAT from consistent follow‑through'
+            description: 'Higher CSAT from consistent followâ€‘through'
           },
           {
-            icon: '🎯',
+            icon: 'ðŸŽ¯',
             title: 'More Focus Time',
             description: 'More focus time for your internal team'
           }

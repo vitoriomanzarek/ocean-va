@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Package, ShoppingCart, MessageSquare, Image, BarChart3 } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -22,11 +22,11 @@ export default function EcommerceVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Ecommerce Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Ecommerce virtual assistants for listings, order ops, returns, support, and catalog QA across major platforms.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/ecommerce-virtual-assistant"
+    "url": "https://hirewags.com/industries/ecommerce-virtual-assistant"
   }
 
   return (
@@ -73,7 +73,7 @@ export default function EcommerceVA() {
             { icon: Package, title: 'Product Listings', description: 'Product listings, variations, and merchandising updates' },
             { icon: ShoppingCart, title: 'Order Operations', description: 'Order status, returns/exchanges, and RMA coordination' },
             { icon: MessageSquare, title: 'Marketplace Support', description: 'Marketplace messaging (Amazon/eBay/etc.) and store chat/email' },
-            { icon: Image, title: 'Catalog QA', description: 'Catalog QA—images, attributes, tags, and redirects' },
+            { icon: Image, title: 'Catalog QA', description: 'Catalog QAâ€”images, attributes, tags, and redirects' },
             { icon: BarChart3, title: 'Ads & Promos', description: 'Basic ads/reporting support and promo updates' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
@@ -92,9 +92,9 @@ export default function EcommerceVA() {
       <OutcomesSection 
         subtitle="Measurable improvements in your ecommerce operations."
         outcomes={[
-          { icon: '✓', title: 'Fewer Errors', description: 'Fewer catalog/order errors' },
-          { icon: '⭐', title: 'Higher Reviews', description: 'Faster responses and higher reviews' },
-          { icon: '🚀', title: 'Reliable Execution', description: 'Reliable promo and merchandising execution' }
+          { icon: 'âœ“', title: 'Fewer Errors', description: 'Fewer catalog/order errors' },
+          { icon: 'â­', title: 'Higher Reviews', description: 'Faster responses and higher reviews' },
+          { icon: 'ðŸš€', title: 'Reliable Execution', description: 'Reliable promo and merchandising execution' }
         ]}
       />
 

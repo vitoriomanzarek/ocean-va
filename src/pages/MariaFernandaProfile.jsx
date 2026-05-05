@@ -1,4 +1,4 @@
-import VAProfilePage from '../components/VAProfile/VAProfilePage'
+﻿import VAProfilePage from '../components/VAProfile/VAProfilePage'
 
 export default function MariaFernandaProfile() {
   const mariaFernandaData = {
@@ -39,38 +39,38 @@ export default function MariaFernandaProfile() {
       'Noise-Cancelling Headset'
     ],
     
-    employmentSummary: 'Maria Fernanda has dedicated experience in the insurance industry and customer service. She worked as a Customer Service representative at Seguros Sura, managing client communications and personnel. She served in Human Resources at Serigas del Caribe S.A., working with hiring and payroll management. She worked as a Reception Manager at Mosaic S.A., leading bilingual reception operations. She served as an Executive Assistant at Frcontent LLC, managing Culture and HR department initiatives. Currently, she works as a Customer Service & Administrative Assistant at Ocean VA Solutions, handling insurance client support, policy management, and administrative tasks. Her strengths include strong customer service skills, bilingual communication, attention to detail, administrative excellence, and insurance knowledge.',
+    employmentSummary: 'Maria Fernanda has dedicated experience in the insurance industry and customer service. She worked as a Customer Service representative at Seguros Sura, managing client communications and personnel. She served in Human Resources at Serigas del Caribe S.A., working with hiring and payroll management. She worked as a Reception Manager at Mosaic S.A., leading bilingual reception operations. She served as an Executive Assistant at Frcontent LLC, managing Culture and HR department initiatives. Currently, she works as a Customer Service & Administrative Assistant at WAGS Solutions, handling insurance client support, policy management, and administrative tasks. Her strengths include strong customer service skills, bilingual communication, attention to detail, administrative excellence, and insurance knowledge.',
     
     employmentHistory: [
       {
         company: 'SEGUROS SURA',
         position: 'Customer Service',
         period: '2017',
-        description: '• I was in charge of customer service, recruitment and management of personnel, database monitoring, hiring management.'
+        description: 'â€¢ I was in charge of customer service, recruitment and management of personnel, database monitoring, hiring management.'
       },
       {
         company: 'SERIGAS DEL CARIBE S.A',
         position: 'Human Resource',
         period: '2018 - 2021',
-        description: '• Worked closely with clients and members of the Human Resources team, for hiring and payroll management.'
+        description: 'â€¢ Worked closely with clients and members of the Human Resources team, for hiring and payroll management.'
       },
       {
         company: 'MOSAIC S.A',
         position: 'Reception Manager',
         period: '2021 - 2022',
-        description: '• I worked as a bilingual Reception Manager, leading the management and attention to international clientele, ensuring exceptional service and facilitating fluid communication in two languages.'
+        description: 'â€¢ I worked as a bilingual Reception Manager, leading the management and attention to international clientele, ensuring exceptional service and facilitating fluid communication in two languages.'
       },
       {
         company: 'FRCONTENT LLC',
         position: 'Executive Assistant',
         period: '2022 - 2024',
-        description: '• I worked as an executive assistant and leader of the Culture and HR department in a bilingual international company, supervising executive administrative functions and managing initiatives related to corporate culture and human resources to ensure an efficient and collaborative work environment.'
+        description: 'â€¢ I worked as an executive assistant and leader of the Culture and HR department in a bilingual international company, supervising executive administrative functions and managing initiatives related to corporate culture and human resources to ensure an efficient and collaborative work environment.'
       },
       {
         company: 'OCEAN VA SOLUTIONS',
         position: 'Customer Service & Administrative Assistant',
         period: 'AUG 2024 - JUN 2025',
-        description: '• Managed inbound/outbound calls, email and calendar coordination, and quote generation for insurance clients.\n• Handled policy changes and client records using Ezlynx, Neptune, TWIA, TFPA, and Wellington platforms.\n• Created branded content, presentations, and short videos using Canva and Adobe; supported social media management.\n• Assisted with billing, HR-related tasks, and data organization using advanced Excel skills.'
+        description: 'â€¢ Managed inbound/outbound calls, email and calendar coordination, and quote generation for insurance clients.\nâ€¢ Handled policy changes and client records using Ezlynx, Neptune, TWIA, TFPA, and Wellington platforms.\nâ€¢ Created branded content, presentations, and short videos using Canva and Adobe; supported social media management.\nâ€¢ Assisted with billing, HR-related tasks, and data organization using advanced Excel skills.'
       }
     ],
     
@@ -90,7 +90,7 @@ export default function MariaFernandaProfile() {
     ],
     
     education: {
-      school: 'IE Centro Inca / U. Autónoma del Caribe',
+      school: 'IE Centro Inca / U. AutÃ³noma del Caribe',
       degree: 'Commercial Banking Technique / Maritime and River Administrator',
       date: '2015 - 2017 / 2018 - 2023',
       certifications: [
@@ -112,3 +112,4 @@ export default function MariaFernandaProfile() {
 
   return <VAProfilePage vaData={mariaFernandaData} />
 }
+

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Calculator, FileText, DollarSign, BarChart3, Users } from 'lucide-react'
 import BookingDemo from './components/BookingDemo'
 import HeroCTAs from './components/HeroCTAs'
@@ -15,11 +15,11 @@ export default function FinanceVA() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Finance Virtual Assistant",
-    "provider": {"@type": "Organization", "name": "Ocean Virtual Assistant"},
+    "provider": {"@type": "Organization", "name": "WAGS"},
     "areaServed": "US",
     "description": "Finance virtual assistants for bookkeeping, reconciliations, AR/AP, reporting, and advisor support.",
     "offers": {"@type": "Offer", "price": "1300", "priceCurrency": "USD"},
-    "url": "https://www.oceanvirtualassistant.com/industries/finance-virtual-assistant"
+    "url": "https://hirewags.com/industries/finance-virtual-assistant"
   }
 
   return (
@@ -63,10 +63,10 @@ export default function FinanceVA() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
-            { icon: Calculator, title: 'Reconciliations', description: 'Bank/credit card reconciliations and clean‑up' },
+            { icon: Calculator, title: 'Reconciliations', description: 'Bank/credit card reconciliations and cleanâ€‘up' },
             { icon: DollarSign, title: 'AR/AP', description: 'Invoicing, collections, and vendor bills' },
             { icon: BarChart3, title: 'Reporting', description: 'Report packs, close checklists, and dashboards' },
-            { icon: FileText, title: 'Document Collection', description: 'Document collection and client follow‑ups' },
+            { icon: FileText, title: 'Document Collection', description: 'Document collection and client followâ€‘ups' },
             { icon: Users, title: 'Advisory Support', description: 'Calendar and meeting notes for advisory firms' }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
@@ -85,9 +85,9 @@ export default function FinanceVA() {
       <OutcomesSection 
         subtitle="Real results that improve your financial operations."
         outcomes={[
-          { icon: '📊', title: 'Timely Books', description: 'Timely books and fewer month‑end surprises' },
-          { icon: '💰', title: 'Faster Collections', description: 'Faster collections and vendor accuracy' },
-          { icon: '📈', title: 'Clearer Insights', description: 'Clearer insight for decision‑making' }
+          { icon: 'ðŸ“Š', title: 'Timely Books', description: 'Timely books and fewer monthâ€‘end surprises' },
+          { icon: 'ðŸ’°', title: 'Faster Collections', description: 'Faster collections and vendor accuracy' },
+          { icon: 'ðŸ“ˆ', title: 'Clearer Insights', description: 'Clearer insight for decisionâ€‘making' }
         ]}
       />
 
@@ -102,7 +102,7 @@ export default function FinanceVA() {
             Get started today with a dedicated finance VA who keeps your books accurate and current.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://www.oceanvirtualassistant.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a href="https://hirewags.com/contact-us" className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
               Book a Discovery Call
             </a>
             <a href="#pricing" className="bg-ocean-600 hover:bg-ocean-500 text-white font-bold px-8 py-4 rounded-lg border-2 border-white transition-all duration-200">

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 /**
  * Hero Code Component for Webflow
@@ -12,7 +12,7 @@ import React from 'react'
  * - ctaStyle: 'primary' | 'secondary' - Button style
  */
 export const Hero = ({ 
-  title = 'Welcome to Ocean VA',
+  title = 'Welcome to WAGS',
   subtitle = 'Expert Virtual Assistants for Your Business',
   backgroundImage = null,
   ctaText = 'Book a Free Call',
@@ -97,10 +97,11 @@ export const Hero = ({
 
 Hero.displayName = 'Hero'
 Hero.defaultProps = {
-  title: 'Welcome to Ocean VA',
+  title: 'Welcome to WAGS',
   subtitle: 'Expert Virtual Assistants for Your Business',
   backgroundImage: null,
   ctaText: 'Book a Free Call',
   ctaLink: '#contact',
   ctaStyle: 'primary'
 }
+

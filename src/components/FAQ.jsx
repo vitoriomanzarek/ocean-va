@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export default function FAQ() {
@@ -6,8 +6,8 @@ export default function FAQ() {
   
   const faqs = [
     {
-      q: "What does a virtual assistant from Ocean VA do?",
-      a: "Our VAs handle administrative tasks, customer service, scheduling, data entry, document management, and coordination—freeing your team to focus on high-value work. Services vary by role (Insurance, Admin, Customer Service, etc.)."
+      q: "What does a virtual assistant from WAGS do?",
+      a: "Our VAs handle administrative tasks, customer service, scheduling, data entry, document management, and coordinationâ€”freeing your team to focus on high-value work. Services vary by role (Insurance, Admin, Customer Service, etc.)."
     },
     {
       q: "How fast can we launch? Can I get started in 2-3 days?",
