@@ -6,7 +6,7 @@ export default function Careers() {
       {/* Careers Page Embed */}
       <section className="w-full" style={{minHeight: '800px'}}>
         <iframe 
-          src="https://www.careers-page.com/ocean-virtual-assistant-solutions" 
+          src="https://www.careers-page.com/hirewags" 
           style={{
             width: '100%',
             height: '100%',

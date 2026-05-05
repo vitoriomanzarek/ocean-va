@@ -53,7 +53,7 @@ export default function BookingDemo() {
           <div className="grid items-center" style={{ gridTemplateColumns: '70% 30%', gap: '16px' }}>
             {/* Left - Calendly Widget (70%) */}
             <div className="calendly-inline-widget" 
-                 data-url="https://calendly.com/ocean-virtual-assistant/30min?hide_event_type_details=1&hide_gdpr_banner=1" 
+                 data-url="https://calendly.com/hirewags/30min?hide_event_type_details=1&hide_gdpr_banner=1" 
                  style={{ minWidth: '320px', height: '500px' }}>
             </div>
 

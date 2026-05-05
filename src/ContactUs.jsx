@@ -30,7 +30,7 @@ export default function ContactUs() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://calendly.com/ocean-virtual-assistant/30min" 
+              href="https://calendly.com/hirewags/30min" 
               className="bg-white text-ocean-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Book a Free Call

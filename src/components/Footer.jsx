@@ -69,16 +69,16 @@ export default function Footer() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
             <h3 className="text-ocean-700 font-bold mb-4 text-lg border-b-2 border-ocean-200 pb-2">SOCIAL LINKS</h3>
             <div className="flex gap-3 flex-wrap">
-              <a href="https://www.facebook.com/oceanvirtualassistant" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+              <a href="https://www.facebook.com/hirewags" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="https://www.linkedin.com/company/ocean-virtual-assistant" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+              <a href="https://www.linkedin.com/company/hirewags" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://www.youtube.com/@oceanvirtualassistant" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+              <a href="https://www.youtube.com/@hirewags" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
                 <Youtube className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/oceanvirtualassistant" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+              <a href="https://www.instagram.com/hirewags" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-to-br from-ocean-500 to-ocean-700 hover:from-ocean-600 hover:to-ocean-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
