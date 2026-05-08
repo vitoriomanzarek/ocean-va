@@ -32,15 +32,21 @@ def main():
         reader = csv.DictReader(f)
         rows = list(reader)
 
+    # Slugs that are clearly test/migration entries — skip them entirely
+    SKIP_SLUGS = {'migration-test', 'victor-test-100'}
+
     vas = []
     for row in rows:
-        # Skip archived/draft
+        # Skip archived entries entirely
         if row.get('Archived', '').lower() == 'true':
             continue
 
         slug = row.get('Slug', '').strip()
-        if not slug:
+        if not slug or slug in SKIP_SLUGS:
             continue
+
+        # Webflow Draft=true → published:false (hidden from public, visible in admin)
+        is_draft = row.get('Draft', 'false').strip().lower() == 'true'
 
         va = {
             # Identity
@@ -86,6 +92,10 @@ def main():
             'skillsHtml': row.get('Skills Richtext', '').strip(),
             'toolsHtml': row.get('Tools Richtext', '').strip(),
             'equipmentHtml': row.get('Equipment Richtext', '').strip(),
+            # Published status — mirrors Webflow Draft field
+            # false  = visible on public site (Draft=false in Webflow)
+            # true   = hidden from public, manageable in admin (Draft=true in Webflow)
+            'published': not is_draft,
         }
         vas.append(va)
 
@@ -99,11 +109,16 @@ def main():
     cats = Counter(v['mainCategory'] for v in vas)
     avail = Counter(v['availability'] for v in vas)
 
-    print(f'✅ Generated {OUT_PATH}')
+    print(f'Generated {OUT_PATH}')
     print(f'   Total VAs: {total}')
     print(f'\n   Categories:')
     for cat, count in cats.most_common():
         print(f'     {cat}: {count}')
+    published = Counter(v['published'] for v in vas)
+    print(f'\n   Published/Draft:')
+    print(f'     Published (public): {published.get(True, 0)}')
+    print(f'     Draft (admin only): {published.get(False, 0)}')
+
     print(f'\n   Availability:')
     for a, c in avail.most_common():
         print(f'     {a}: {c}')
