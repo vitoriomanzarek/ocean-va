@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const src = path.join(__dirname, 'index.html');
-const faviconSrc = path.join(__dirname, '..', 'public', 'images', 'favicon.jpeg');
+const faviconSrc = path.join(__dirname, '..', 'public', 'images', 'wags-favicon.png');
 const outDir = path.join(__dirname, 'dist');
 const outFile = path.join(outDir, 'index.html');
-const faviconOut = path.join(outDir, 'favicon.jpeg');
+const faviconOut = path.join(outDir, 'favicon.png');
 const adminSrc = path.join(__dirname, 'admin', 'index.html');
 const adminOutDir = path.join(outDir, 'admin');
 const adminOutFile = path.join(adminOutDir, 'index.html');
@@ -21,7 +21,7 @@ fs.mkdirSync(outDir, { recursive: true });
 fs.copyFileSync(src, outFile);
 if (fs.existsSync(faviconSrc)) {
   fs.copyFileSync(faviconSrc, faviconOut);
-  console.log('✅ Copied favicon to dist/favicon.jpeg');
+  console.log('✅ Copied favicon to dist/favicon.png');
 } else {
   console.warn('⚠️ favicon source not found at', faviconSrc);
 }
