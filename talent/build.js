@@ -27,6 +27,17 @@ if (fs.existsSync(faviconSrc)) {
 }
 console.log('✅ Copied index.html to dist/index.html');
 
+// Copy legal pages (privacy / terms) used by the talent footer for compliance.
+for (const page of ['privacy.html', 'terms.html']) {
+  const pageSrc = path.join(__dirname, page);
+  if (fs.existsSync(pageSrc)) {
+    fs.copyFileSync(pageSrc, path.join(outDir, page));
+    console.log(`✅ Copied ${page} to dist/${page}`);
+  } else {
+    console.warn(`⚠️ ${page} not found at`, pageSrc);
+  }
+}
+
 if (fs.existsSync(adminSrc)) {
   fs.mkdirSync(adminOutDir, { recursive: true });
   fs.copyFileSync(adminSrc, adminOutFile);
